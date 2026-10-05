@@ -2,7 +2,7 @@
 
 A research manuscript and computational project shared for independent mathematical review and possible collaboration.
 
-The work presents an explicit algorithmic synthesis for evaluating certain large truncated polynomial-power sums modulo a prime \(p\). For the admissible genus-one inputs covered by the theorem, it evaluates \(T_f(\mu)\) in \(O(\log p)\) field operations after preparing the curve and its exact Frobenius trace. 
+The work presents an explicit algorithmic synthesis for evaluating certain large truncated polynomial-power sums modulo a prime $\(p\)$. For the admissible genus-one inputs covered by the theorem, it evaluates $\(T_f(\mu)\)$ in $\(O(\log p)\)$ field operations after preparing the curve and its exact Frobenius trace. 
 
 The construction combines three established pillars: Cartier and characteristic-\(p\) descent theory, differentiated Miller recurrences, and elliptic-curve point counting. 
 
@@ -97,8 +97,6 @@ $$
 
 At $p=97$, the example gives $n=24$, $B_n=33$, $a_n=79$ and $U_p(n)=43$. Computing both the prefix and boundary is essential to evaluating the complete weighted sum.
 
-Table 1 is a quarter-point pilot run for seven primes $p\equiv1\pmod4$, with $n=(p-1)/4$, for Cartier-Miller v SageMath 10.8 Harvey `hypellfrob` interval-product kernel. Both implementations compute $B_n$, $a_n$ and $U_p(n)$, including per-input preparation. 
-
 ## Validation and benchmarks
 
 The manuscript reports checks against direct polynomial expansion, independent point counts, kernel identities and an elementary rational-point sum. Reported generic tests include 20,316 admissible queries, with 368 exceptional cases. An independent point-sum verifier agreed on 4,357 queries, including 155 exceptional cases. These checks arose within the AI-assisted research programme.
@@ -106,6 +104,8 @@ The manuscript reports checks against direct polynomial expansion, independent p
 The retained pilot benchmark compares complete quarter-point evaluations with a C++ adapter to SageMath's Harvey interval-product kernel, using BGS-based recurrence techniques. Both methods compute the prefix, boundary and weighted sum, including their per-prime preparation. This compares a recurrence task, not Harvey's full Kedlaya algorithm.
 
 The pilot uses specialized Cornacchia/Gauss trace preparation. It does not benchmark a complete Schoof- or SEA-based implementation. The manuscript documents the timing protocol and limitations; the selected timings do not establish universal speedups or real world workload.
+
+Table 1 is a quarter-point pilot run for seven primes $p\equiv1\pmod4$, with $n=(p-1)/4$, for Cartier-Miller v SageMath 10.8 Harvey `hypellfrob` interval-product kernel. Both implementations compute $B_n$, $a_n$ and $U_p(n)$, including per-input preparation.
 
 **Table 1. Complete quarter-point evaluation in milliseconds**
 
@@ -119,7 +119,7 @@ The pilot uses specialized Cornacchia/Gauss trace preparation. It does not bench
 | 10,000,121 | 2,500,030 | 0.11 | 4.44 |
 | 100,000,037 | 25,000,009 | 0.29 | 16.19 |
 
-*See paper for a detailed explanation of this pilot benchmark*. 
+*See paper for a detailed explanation of the pilot benchmark*. 
 
 ## Review and collaboration
 
