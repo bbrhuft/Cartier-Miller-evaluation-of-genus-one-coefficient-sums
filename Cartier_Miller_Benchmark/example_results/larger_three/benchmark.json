@@ -1,0 +1,1048 @@
+{
+  "utc_started": "2026-10-05T13:10:11.857477+00:00",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "logical_cpus": 9,
+  "settings": {
+    "repetitions": 3,
+    "target_ms": 25,
+    "timeout": 120,
+    "executable": "/tmp/cm_harvey",
+    "harvey_max_prime": 1000000000000,
+    "schoof_max_prime": 1000000000000,
+    "bsgs_max_prime": 10000000000000,
+    "headless": true,
+    "mode": "custom",
+    "count": 7,
+    "start": "97",
+    "factor": "10",
+    "primes": "1000000009 10000000033 100000000069",
+    "backends": "cornacchia,schoof,bsgs,harvey",
+    "output": "/workspace/scratch/679f3ef413b9/cartier_miller_gui/release_runs/larger_three",
+    "queries": 1
+  },
+  "requested_primes": [
+    1000000009,
+    10000000033,
+    100000000069
+  ],
+  "backends": [
+    "cornacchia",
+    "schoof",
+    "bsgs",
+    "harvey"
+  ],
+  "state": "complete",
+  "source_sha256": {
+    "benchmark_engine.py": "a97e618abf8e7955160dbe33f1e1e1e35b25f3ab9bc85b36e9c80c7574fa56fc",
+    "elliptic_prefix.py": "3e79d82c931f41f3091e98f6f65783ce958f13851e2c6f05283efa2152c0634d",
+    "test_validation.py": "4d3231bbe77d8bee488cae260d92e3784ce5fd4921086454213fb894f6b5d59c",
+    "pilot.py": "ec960e18f48e2d14d710e0547cdd2aa54bb6f7d13126b51da6d4b9e9fc652029",
+    "run_windows.py": "faade45774fdbab4d5c4fdb940e1f09b848f23bb128cb67bbe529f20a611cb49",
+    "app.py": "59bcf8bcfac9a5bf1b4658a2f15d2ea03684ff36dc5955f2555cfbbb6a69cf5a",
+    "charts.py": "61977cdfefd8a2bd838e2055f659c39561b5e6e5e75fc2e768a394a55e7c2159",
+    "point_count.py": "cb7712db21bae77ffaddb560452c9862fe5bdd8507eec97478e307d55dc7bf01",
+    "harvey_adapter.cpp": "5cf8114f6711373febff12df8a67ee996c131bc1cbecd6b701e37d305d4dd31b"
+  },
+  "protocol": "Warm calibrated batch means, max 2000 calls, spawn startup/IPC/reference validation/export excluded. Preparation and query measured separately; complete totals measured independently. No trace cache for complete calls. Python backends and C++ Harvey explicitly distinguished. Backend order rotated by prime; no memory measurement.",
+  "schoof_scope": "Elementary independent Python Schoof, not optimized production implementation.",
+  "quarter_scope": "Complete B_L, a_L, U_p(L), L=(p-1)/4 on y^2=x^3+2x; not general-curve setup or multiple distinct queries.",
+  "upstream_provenance": {
+    "sage_tag": "10.8",
+    "commit": "981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c",
+    "files": [
+      {
+        "name": "recurrences_ntl.cpp",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/src/sage/schemes/hyperelliptic_curves/hypellfrob/recurrences_ntl.cpp",
+        "sha256": "da1bbb94c6bc6b22b292f18634f25ed00083d4c395e1f682eb32e924fcda8353"
+      },
+      {
+        "name": "recurrences_ntl.h",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/src/sage/schemes/hyperelliptic_curves/hypellfrob/recurrences_ntl.h",
+        "sha256": "8d5aaccdc26dfca9a684fe0462e1d596f258dc8f2b10dec4f32b34a539b5243f"
+      },
+      {
+        "name": "hypellfrob.cpp",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/src/sage/schemes/hyperelliptic_curves/hypellfrob/hypellfrob.cpp",
+        "sha256": "bf6b22d74e5b80ee9f7886a429c154dd7adcfd3c3be51118adcbfb42f9b6062c"
+      },
+      {
+        "name": "hypellfrob.h",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/src/sage/schemes/hyperelliptic_curves/hypellfrob/hypellfrob.h",
+        "sha256": "14f7677729c4d3c8eda086122a99094af507312dd7bda7d3bd64efcb264409ac"
+      },
+      {
+        "name": "hypellfrob.pyx",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/src/sage/schemes/hyperelliptic_curves/hypellfrob.pyx",
+        "sha256": "53f9dfa6c4bcf51124354da1295e91931cfc3d05b0fa16b2d4f204fd8a2efd05"
+      },
+      {
+        "name": "COPYING.txt",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/COPYING.txt",
+        "sha256": "b9ee4b098b0e631fd53cf1975b08f81c1f9bf369fd0ebbd7277a12813368e5dc"
+      }
+    ]
+  },
+  "harvey_version": {
+    "ntl": "11.5.1",
+    "compiler": "13.3.0",
+    "ntl_threads": 1
+  },
+  "utc_finished": "2026-10-05T13:10:45.108092+00:00",
+  "rows": [
+    {
+      "p": 1000000009,
+      "L": 250000002,
+      "backend": "cornacchia",
+      "method": "CM / Cornacchia\u2013Gauss (Python)",
+      "status": "ok",
+      "B_mod_p": 346728988,
+      "a_L_mod_p": 999992515,
+      "U_mod_p": 886899086,
+      "trace": -7494,
+      "validation": "cross-checked",
+      "repetitions": 3,
+      "message": "",
+      "prep_median_ms": 0.013222626160337553,
+      "query_median_ms": 0.16950432467532467,
+      "total_median_ms": 0.18062354166666666,
+      "total_min_ms": 0.17844810000000003,
+      "total_max_ms": 0.18089285833333332
+    },
+    {
+      "p": 1000000009,
+      "L": 250000002,
+      "backend": "schoof",
+      "method": "CM / deterministic Schoof (Python)",
+      "status": "ok",
+      "B_mod_p": 346728988,
+      "a_L_mod_p": 999992515,
+      "U_mod_p": 886899086,
+      "trace": -7494,
+      "validation": "cross-checked",
+      "repetitions": 3,
+      "message": "",
+      "prep_median_ms": 526.142903,
+      "query_median_ms": 0.19086025675675675,
+      "total_median_ms": 508.923619,
+      "total_min_ms": 496.369646,
+      "total_max_ms": 530.468873
+    },
+    {
+      "p": 1000000009,
+      "L": 250000002,
+      "backend": "bsgs",
+      "method": "CM / certified point-count BSGS (Python)",
+      "status": "ok",
+      "B_mod_p": 346728988,
+      "a_L_mod_p": 999992515,
+      "U_mod_p": 886899086,
+      "trace": -7494,
+      "validation": "cross-checked",
+      "repetitions": 3,
+      "message": "",
+      "prep_median_ms": 0.8540838214285714,
+      "query_median_ms": 0.19420405405405405,
+      "total_median_ms": 1.0742990476190475,
+      "total_min_ms": 1.0721258571428571,
+      "total_max_ms": 1.1484999047619047
+    },
+    {
+      "p": 1000000009,
+      "L": 250000002,
+      "backend": "harvey",
+      "method": "Harvey BGS recurrence (C++)",
+      "status": "ok",
+      "B_mod_p": 346728988,
+      "a_L_mod_p": 999992515,
+      "U_mod_p": 886899086,
+      "trace": -7494,
+      "validation": "cross-checked",
+      "repetitions": 3,
+      "message": "",
+      "setup_median_ms": 0.002814,
+      "kernel_median_ms": 71.519911,
+      "finish_median_ms": 0.004366,
+      "total_median_ms": 71.527102,
+      "total_min_ms": 69.820546,
+      "total_max_ms": 72.024285
+    },
+    {
+      "p": 10000000033,
+      "L": 2500000008,
+      "backend": "schoof",
+      "method": "CM / deterministic Schoof (Python)",
+      "status": "ok",
+      "B_mod_p": 5034640111,
+      "a_L_mod_p": 9999888207,
+      "U_mod_p": 5138308786,
+      "trace": -111826,
+      "validation": "cross-checked",
+      "repetitions": 3,
+      "message": "",
+      "prep_median_ms": 504.616784,
+      "query_median_ms": 0.539843,
+      "total_median_ms": 466.836003,
+      "total_min_ms": 465.716082,
+      "total_max_ms": 472.634928
+    },
+    {
+      "p": 10000000033,
+      "L": 2500000008,
+      "backend": "bsgs",
+      "method": "CM / certified point-count BSGS (Python)",
+      "status": "ok",
+      "B_mod_p": 5034640111,
+      "a_L_mod_p": 9999888207,
+      "U_mod_p": 5138308786,
+      "trace": -111826,
+      "validation": "cross-checked",
+      "repetitions": 3,
+      "message": "",
+      "prep_median_ms": 2.0423739230769233,
+      "query_median_ms": 0.4395970425531915,
+      "total_median_ms": 2.8237079,
+      "total_min_ms": 2.5101874,
+      "total_max_ms": 3.1498811
+    },
+    {
+      "p": 10000000033,
+      "L": 2500000008,
+      "backend": "harvey",
+      "method": "Harvey BGS recurrence (C++)",
+      "status": "ok",
+      "B_mod_p": 5034640111,
+      "a_L_mod_p": 9999888207,
+      "U_mod_p": 5138308786,
+      "trace": -111826,
+      "validation": "cross-checked",
+      "repetitions": 3,
+      "message": "",
+      "setup_median_ms": 0.002464,
+      "kernel_median_ms": 175.544214,
+      "finish_median_ms": 0.004937,
+      "total_median_ms": 175.551625,
+      "total_min_ms": 174.766678,
+      "total_max_ms": 182.080938
+    },
+    {
+      "p": 10000000033,
+      "L": 2500000008,
+      "backend": "cornacchia",
+      "method": "CM / Cornacchia\u2013Gauss (Python)",
+      "status": "ok",
+      "B_mod_p": 5034640111,
+      "a_L_mod_p": 9999888207,
+      "U_mod_p": 5138308786,
+      "trace": -111826,
+      "validation": "cross-checked",
+      "repetitions": 3,
+      "message": "",
+      "prep_median_ms": 0.019443467849223947,
+      "query_median_ms": 0.4642069318181818,
+      "total_median_ms": 0.4856758867924529,
+      "total_min_ms": 0.47050560377358486,
+      "total_max_ms": 0.49660332075471697
+    },
+    {
+      "p": 100000000069,
+      "L": 25000000017,
+      "backend": "bsgs",
+      "method": "CM / certified point-count BSGS (Python)",
+      "status": "ok",
+      "B_mod_p": 40269006628,
+      "a_L_mod_p": 436276,
+      "U_mod_p": 61077008064,
+      "trace": 436276,
+      "validation": "cross-checked",
+      "repetitions": 3,
+      "message": "",
+      "prep_median_ms": 3.856702142857143,
+      "query_median_ms": 0.5395374634146342,
+      "total_median_ms": 4.557855166666667,
+      "total_min_ms": 4.505569833333333,
+      "total_max_ms": 4.575609666666667
+    },
+    {
+      "p": 100000000069,
+      "L": 25000000017,
+      "backend": "harvey",
+      "method": "Harvey BGS recurrence (C++)",
+      "status": "ok",
+      "B_mod_p": 40269006628,
+      "a_L_mod_p": 436276,
+      "U_mod_p": 61077008064,
+      "trace": 436276,
+      "validation": "cross-checked",
+      "repetitions": 3,
+      "message": "",
+      "setup_median_ms": 0.002674,
+      "kernel_median_ms": 605.152266,
+      "finish_median_ms": 0.004447,
+      "total_median_ms": 605.159547,
+      "total_min_ms": 602.389417,
+      "total_max_ms": 610.934588
+    },
+    {
+      "p": 100000000069,
+      "L": 25000000017,
+      "backend": "cornacchia",
+      "method": "CM / Cornacchia\u2013Gauss (Python)",
+      "status": "ok",
+      "B_mod_p": 40269006628,
+      "a_L_mod_p": 436276,
+      "U_mod_p": 61077008064,
+      "trace": 436276,
+      "validation": "cross-checked",
+      "repetitions": 3,
+      "message": "",
+      "prep_median_ms": 0.011193109128345917,
+      "query_median_ms": 0.5459040500000001,
+      "total_median_ms": 0.5677890731707317,
+      "total_min_ms": 0.5367994634146341,
+      "total_max_ms": 0.5692815121951219
+    },
+    {
+      "p": 100000000069,
+      "L": 25000000017,
+      "backend": "schoof",
+      "method": "CM / deterministic Schoof (Python)",
+      "status": "ok",
+      "B_mod_p": 40269006628,
+      "a_L_mod_p": 436276,
+      "U_mod_p": 61077008064,
+      "trace": 436276,
+      "validation": "cross-checked",
+      "repetitions": 3,
+      "message": "",
+      "prep_median_ms": 1848.388196,
+      "query_median_ms": 0.9012116829268293,
+      "total_median_ms": 1933.327944,
+      "total_min_ms": 1851.325363,
+      "total_max_ms": 1977.506097
+    }
+  ],
+  "samples": [
+    {
+      "p": 1000000009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 1185,
+      "mean_ms_per_call": 0.013184645569620254
+    },
+    {
+      "p": 1000000009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 1185,
+      "mean_ms_per_call": 0.013222626160337553
+    },
+    {
+      "p": 1000000009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 1185,
+      "mean_ms_per_call": 0.013598891983122363
+    },
+    {
+      "p": 1000000009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 77,
+      "mean_ms_per_call": 0.17996858441558441
+    },
+    {
+      "p": 1000000009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 77,
+      "mean_ms_per_call": 0.16712588311688312
+    },
+    {
+      "p": 1000000009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 77,
+      "mean_ms_per_call": 0.16950432467532467
+    },
+    {
+      "p": 1000000009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 120,
+      "mean_ms_per_call": 0.18062354166666666
+    },
+    {
+      "p": 1000000009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 120,
+      "mean_ms_per_call": 0.17844810000000003
+    },
+    {
+      "p": 1000000009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 120,
+      "mean_ms_per_call": 0.18089285833333332
+    },
+    {
+      "p": 1000000009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 523.046046
+    },
+    {
+      "p": 1000000009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 526.142903
+    },
+    {
+      "p": 1000000009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 537.664013
+    },
+    {
+      "p": 1000000009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 74,
+      "mean_ms_per_call": 0.19086025675675675
+    },
+    {
+      "p": 1000000009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 74,
+      "mean_ms_per_call": 0.19307812162162163
+    },
+    {
+      "p": 1000000009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 74,
+      "mean_ms_per_call": 0.18870206756756758
+    },
+    {
+      "p": 1000000009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 508.923619
+    },
+    {
+      "p": 1000000009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 496.369646
+    },
+    {
+      "p": 1000000009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 530.468873
+    },
+    {
+      "p": 1000000009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 28,
+      "mean_ms_per_call": 0.8699182499999999
+    },
+    {
+      "p": 1000000009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 28,
+      "mean_ms_per_call": 0.8540838214285714
+    },
+    {
+      "p": 1000000009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 28,
+      "mean_ms_per_call": 0.8496261785714285
+    },
+    {
+      "p": 1000000009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 111,
+      "mean_ms_per_call": 0.19420405405405405
+    },
+    {
+      "p": 1000000009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 111,
+      "mean_ms_per_call": 0.1983976216216216
+    },
+    {
+      "p": 1000000009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 111,
+      "mean_ms_per_call": 0.18873157657657658
+    },
+    {
+      "p": 1000000009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 21,
+      "mean_ms_per_call": 1.1484999047619047
+    },
+    {
+      "p": 1000000009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 21,
+      "mean_ms_per_call": 1.0742990476190475
+    },
+    {
+      "p": 1000000009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 21,
+      "mean_ms_per_call": 1.0721258571428571
+    },
+    {
+      "p": 1000000009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 72.024285
+    },
+    {
+      "p": 1000000009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 71.527102
+    },
+    {
+      "p": 1000000009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 69.820546
+    },
+    {
+      "p": 10000000033,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 530.610222
+    },
+    {
+      "p": 10000000033,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 504.616784
+    },
+    {
+      "p": 10000000033,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 494.627275
+    },
+    {
+      "p": 10000000033,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 35,
+      "mean_ms_per_call": 0.5002148571428572
+    },
+    {
+      "p": 10000000033,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 35,
+      "mean_ms_per_call": 0.5489238571428571
+    },
+    {
+      "p": 10000000033,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 35,
+      "mean_ms_per_call": 0.539843
+    },
+    {
+      "p": 10000000033,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 466.836003
+    },
+    {
+      "p": 10000000033,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 465.716082
+    },
+    {
+      "p": 10000000033,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 472.634928
+    },
+    {
+      "p": 10000000033,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 13,
+      "mean_ms_per_call": 2.063539
+    },
+    {
+      "p": 10000000033,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 13,
+      "mean_ms_per_call": 2.0260228461538463
+    },
+    {
+      "p": 10000000033,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 13,
+      "mean_ms_per_call": 2.0423739230769233
+    },
+    {
+      "p": 10000000033,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 47,
+      "mean_ms_per_call": 0.4395970425531915
+    },
+    {
+      "p": 10000000033,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 47,
+      "mean_ms_per_call": 0.4361749787234042
+    },
+    {
+      "p": 10000000033,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 47,
+      "mean_ms_per_call": 0.4573801063829787
+    },
+    {
+      "p": 10000000033,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 10,
+      "mean_ms_per_call": 2.5101874
+    },
+    {
+      "p": 10000000033,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 10,
+      "mean_ms_per_call": 2.8237079
+    },
+    {
+      "p": 10000000033,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 10,
+      "mean_ms_per_call": 3.1498811
+    },
+    {
+      "p": 10000000033,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 175.551625
+    },
+    {
+      "p": 10000000033,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 174.766678
+    },
+    {
+      "p": 10000000033,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 182.080938
+    },
+    {
+      "p": 10000000033,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 902,
+      "mean_ms_per_call": 0.02008441352549889
+    },
+    {
+      "p": 10000000033,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 902,
+      "mean_ms_per_call": 0.019443467849223947
+    },
+    {
+      "p": 10000000033,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 902,
+      "mean_ms_per_call": 0.018034650776053214
+    },
+    {
+      "p": 10000000033,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 44,
+      "mean_ms_per_call": 0.4642069318181818
+    },
+    {
+      "p": 10000000033,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 44,
+      "mean_ms_per_call": 0.5475596136363636
+    },
+    {
+      "p": 10000000033,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 44,
+      "mean_ms_per_call": 0.43882427272727276
+    },
+    {
+      "p": 10000000033,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 53,
+      "mean_ms_per_call": 0.47050560377358486
+    },
+    {
+      "p": 10000000033,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 53,
+      "mean_ms_per_call": 0.49660332075471697
+    },
+    {
+      "p": 10000000033,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 53,
+      "mean_ms_per_call": 0.4856758867924529
+    },
+    {
+      "p": 100000000069,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 7,
+      "mean_ms_per_call": 3.880271
+    },
+    {
+      "p": 100000000069,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 7,
+      "mean_ms_per_call": 3.821285714285714
+    },
+    {
+      "p": 100000000069,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 7,
+      "mean_ms_per_call": 3.856702142857143
+    },
+    {
+      "p": 100000000069,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 41,
+      "mean_ms_per_call": 0.5364326341463415
+    },
+    {
+      "p": 100000000069,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 41,
+      "mean_ms_per_call": 0.5507754878048781
+    },
+    {
+      "p": 100000000069,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 41,
+      "mean_ms_per_call": 0.5395374634146342
+    },
+    {
+      "p": 100000000069,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 6,
+      "mean_ms_per_call": 4.505569833333333
+    },
+    {
+      "p": 100000000069,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 6,
+      "mean_ms_per_call": 4.557855166666667
+    },
+    {
+      "p": 100000000069,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 6,
+      "mean_ms_per_call": 4.575609666666667
+    },
+    {
+      "p": 100000000069,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 605.159547
+    },
+    {
+      "p": 100000000069,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 610.934588
+    },
+    {
+      "p": 100000000069,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 602.389417
+    },
+    {
+      "p": 100000000069,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 1457,
+      "mean_ms_per_call": 0.011193109128345917
+    },
+    {
+      "p": 100000000069,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 1457,
+      "mean_ms_per_call": 0.011204217570350035
+    },
+    {
+      "p": 100000000069,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 1457,
+      "mean_ms_per_call": 0.01075964241592313
+    },
+    {
+      "p": 100000000069,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 40,
+      "mean_ms_per_call": 0.5459040500000001
+    },
+    {
+      "p": 100000000069,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 40,
+      "mean_ms_per_call": 0.5350132750000001
+    },
+    {
+      "p": 100000000069,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 40,
+      "mean_ms_per_call": 0.566224775
+    },
+    {
+      "p": 100000000069,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 41,
+      "mean_ms_per_call": 0.5692815121951219
+    },
+    {
+      "p": 100000000069,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 41,
+      "mean_ms_per_call": 0.5677890731707317
+    },
+    {
+      "p": 100000000069,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 41,
+      "mean_ms_per_call": 0.5367994634146341
+    },
+    {
+      "p": 100000000069,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 1848.388196
+    },
+    {
+      "p": 100000000069,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 1757.167459
+    },
+    {
+      "p": 100000000069,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 1867.337534
+    },
+    {
+      "p": 100000000069,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 41,
+      "mean_ms_per_call": 0.837444731707317
+    },
+    {
+      "p": 100000000069,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 41,
+      "mean_ms_per_call": 0.9235919512195121
+    },
+    {
+      "p": 100000000069,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 41,
+      "mean_ms_per_call": 0.9012116829268293
+    },
+    {
+      "p": 100000000069,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 1933.327944
+    },
+    {
+      "p": 100000000069,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 1851.325363
+    },
+    {
+      "p": 100000000069,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 1977.506097
+    }
+  ]
+}

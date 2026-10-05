@@ -1,0 +1,6800 @@
+{
+  "utc_started": "2026-10-05T13:09:24.873998+00:00",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "logical_cpus": 9,
+  "settings": {
+    "repetitions": 11,
+    "target_ms": 25,
+    "timeout": 120,
+    "executable": "/tmp/cm_harvey",
+    "harvey_max_prime": 1000000000000,
+    "schoof_max_prime": 1000000000000,
+    "bsgs_max_prime": 10000000000000,
+    "headless": true,
+    "mode": "paper",
+    "count": 7,
+    "start": "97",
+    "factor": "10",
+    "primes": "",
+    "backends": "cornacchia,schoof,bsgs,harvey",
+    "output": "/workspace/scratch/679f3ef413b9/cartier_miller_gui/release_runs/paper_seven",
+    "queries": 1
+  },
+  "requested_primes": [
+    97,
+    1009,
+    10009,
+    100049,
+    1000033,
+    10000121,
+    100000037
+  ],
+  "backends": [
+    "cornacchia",
+    "schoof",
+    "bsgs",
+    "harvey"
+  ],
+  "state": "complete",
+  "source_sha256": {
+    "benchmark_engine.py": "a97e618abf8e7955160dbe33f1e1e1e35b25f3ab9bc85b36e9c80c7574fa56fc",
+    "elliptic_prefix.py": "3e79d82c931f41f3091e98f6f65783ce958f13851e2c6f05283efa2152c0634d",
+    "test_validation.py": "4d3231bbe77d8bee488cae260d92e3784ce5fd4921086454213fb894f6b5d59c",
+    "pilot.py": "ec960e18f48e2d14d710e0547cdd2aa54bb6f7d13126b51da6d4b9e9fc652029",
+    "run_windows.py": "faade45774fdbab4d5c4fdb940e1f09b848f23bb128cb67bbe529f20a611cb49",
+    "app.py": "59bcf8bcfac9a5bf1b4658a2f15d2ea03684ff36dc5955f2555cfbbb6a69cf5a",
+    "charts.py": "61977cdfefd8a2bd838e2055f659c39561b5e6e5e75fc2e768a394a55e7c2159",
+    "point_count.py": "cb7712db21bae77ffaddb560452c9862fe5bdd8507eec97478e307d55dc7bf01",
+    "harvey_adapter.cpp": "5cf8114f6711373febff12df8a67ee996c131bc1cbecd6b701e37d305d4dd31b"
+  },
+  "protocol": "Warm calibrated batch means, max 2000 calls, spawn startup/IPC/reference validation/export excluded. Preparation and query measured separately; complete totals measured independently. No trace cache for complete calls. Python backends and C++ Harvey explicitly distinguished. Backend order rotated by prime; no memory measurement.",
+  "schoof_scope": "Elementary independent Python Schoof, not optimized production implementation.",
+  "quarter_scope": "Complete B_L, a_L, U_p(L), L=(p-1)/4 on y^2=x^3+2x; not general-curve setup or multiple distinct queries.",
+  "upstream_provenance": {
+    "sage_tag": "10.8",
+    "commit": "981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c",
+    "files": [
+      {
+        "name": "recurrences_ntl.cpp",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/src/sage/schemes/hyperelliptic_curves/hypellfrob/recurrences_ntl.cpp",
+        "sha256": "da1bbb94c6bc6b22b292f18634f25ed00083d4c395e1f682eb32e924fcda8353"
+      },
+      {
+        "name": "recurrences_ntl.h",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/src/sage/schemes/hyperelliptic_curves/hypellfrob/recurrences_ntl.h",
+        "sha256": "8d5aaccdc26dfca9a684fe0462e1d596f258dc8f2b10dec4f32b34a539b5243f"
+      },
+      {
+        "name": "hypellfrob.cpp",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/src/sage/schemes/hyperelliptic_curves/hypellfrob/hypellfrob.cpp",
+        "sha256": "bf6b22d74e5b80ee9f7886a429c154dd7adcfd3c3be51118adcbfb42f9b6062c"
+      },
+      {
+        "name": "hypellfrob.h",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/src/sage/schemes/hyperelliptic_curves/hypellfrob/hypellfrob.h",
+        "sha256": "14f7677729c4d3c8eda086122a99094af507312dd7bda7d3bd64efcb264409ac"
+      },
+      {
+        "name": "hypellfrob.pyx",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/src/sage/schemes/hyperelliptic_curves/hypellfrob.pyx",
+        "sha256": "53f9dfa6c4bcf51124354da1295e91931cfc3d05b0fa16b2d4f204fd8a2efd05"
+      },
+      {
+        "name": "COPYING.txt",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/COPYING.txt",
+        "sha256": "b9ee4b098b0e631fd53cf1975b08f81c1f9bf369fd0ebbd7277a12813368e5dc"
+      }
+    ]
+  },
+  "harvey_version": {
+    "ntl": "11.5.1",
+    "compiler": "13.3.0",
+    "ntl_threads": 1
+  },
+  "utc_finished": "2026-10-05T13:10:09.054417+00:00",
+  "rows": [
+    {
+      "p": 97,
+      "L": 24,
+      "backend": "cornacchia",
+      "method": "CM / Cornacchia\u2013Gauss (Python)",
+      "status": "ok",
+      "B_mod_p": 33,
+      "a_L_mod_p": 79,
+      "U_mod_p": 43,
+      "trace": -18,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 0.0011000769999999999,
+      "query_median_ms": 0.044795672025723474,
+      "total_median_ms": 0.045332482328482325,
+      "total_min_ms": 0.04477092515592515,
+      "total_max_ms": 0.047536750519750516
+    },
+    {
+      "p": 97,
+      "L": 24,
+      "backend": "schoof",
+      "method": "CM / deterministic Schoof (Python)",
+      "status": "ok",
+      "B_mod_p": 33,
+      "a_L_mod_p": 79,
+      "U_mod_p": 43,
+      "trace": -18,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 3.337292375,
+      "query_median_ms": 0.04429416077170418,
+      "total_median_ms": 3.3630805,
+      "total_min_ms": 3.24256025,
+      "total_max_ms": 3.441148125
+    },
+    {
+      "p": 97,
+      "L": 24,
+      "backend": "bsgs",
+      "method": "CM / certified point-count BSGS (Python)",
+      "status": "ok",
+      "B_mod_p": 33,
+      "a_L_mod_p": 79,
+      "U_mod_p": 43,
+      "trace": -18,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 0.02840294550408719,
+      "query_median_ms": 0.0445253321299639,
+      "total_median_ms": 0.07713030348258706,
+      "total_min_ms": 0.07330934825870647,
+      "total_max_ms": 0.09152342288557215
+    },
+    {
+      "p": 97,
+      "L": 24,
+      "backend": "harvey",
+      "method": "Harvey BGS recurrence (C++)",
+      "status": "ok",
+      "B_mod_p": 33,
+      "a_L_mod_p": 79,
+      "U_mod_p": 43,
+      "trace": -18,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "setup_median_ms": 0.0003585614973262032,
+      "kernel_median_ms": 0.013161941176470588,
+      "finish_median_ms": 0.0006223903743315508,
+      "total_median_ms": 0.014147064171122995,
+      "total_min_ms": 0.013251727272727273,
+      "total_max_ms": 0.016638566844919787
+    },
+    {
+      "p": 1009,
+      "L": 252,
+      "backend": "schoof",
+      "method": "CM / deterministic Schoof (Python)",
+      "status": "ok",
+      "B_mod_p": 799,
+      "a_L_mod_p": 30,
+      "U_mod_p": 741,
+      "trace": 30,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 3.236828714285714,
+      "query_median_ms": 0.05000643542435424,
+      "total_median_ms": 3.3204475,
+      "total_min_ms": 3.25872525,
+      "total_max_ms": 3.4568625
+    },
+    {
+      "p": 1009,
+      "L": 252,
+      "backend": "bsgs",
+      "method": "CM / certified point-count BSGS (Python)",
+      "status": "ok",
+      "B_mod_p": 799,
+      "a_L_mod_p": 30,
+      "U_mod_p": 741,
+      "trace": 30,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 0.06563547747747747,
+      "query_median_ms": 0.05611097119341564,
+      "total_median_ms": 0.1340410839160839,
+      "total_min_ms": 0.12877457342657345,
+      "total_max_ms": 0.154180006993007
+    },
+    {
+      "p": 1009,
+      "L": 252,
+      "backend": "harvey",
+      "method": "Harvey BGS recurrence (C++)",
+      "status": "ok",
+      "B_mod_p": 799,
+      "a_L_mod_p": 30,
+      "U_mod_p": 741,
+      "trace": 30,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "setup_median_ms": 0.00038562295081967214,
+      "kernel_median_ms": 0.05198802459016393,
+      "finish_median_ms": 0.0007315081967213115,
+      "total_median_ms": 0.053090065573770495,
+      "total_min_ms": 0.0463552868852459,
+      "total_max_ms": 0.05849617213114754
+    },
+    {
+      "p": 1009,
+      "L": 252,
+      "backend": "cornacchia",
+      "method": "CM / Cornacchia\u2013Gauss (Python)",
+      "status": "ok",
+      "B_mod_p": 799,
+      "a_L_mod_p": 30,
+      "U_mod_p": 741,
+      "trace": 30,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 0.0040543085,
+      "query_median_ms": 0.05130890666666667,
+      "total_median_ms": 0.053764405,
+      "total_min_ms": 0.0530849775,
+      "total_max_ms": 0.05646972
+    },
+    {
+      "p": 10009,
+      "L": 2502,
+      "backend": "bsgs",
+      "method": "CM / certified point-count BSGS (Python)",
+      "status": "ok",
+      "B_mod_p": 3719,
+      "a_L_mod_p": 6,
+      "U_mod_p": 9885,
+      "trace": 6,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 0.04874681699346405,
+      "query_median_ms": 0.06010198723404255,
+      "total_median_ms": 0.11174037349397589,
+      "total_min_ms": 0.10904060843373493,
+      "total_max_ms": 0.13165582530120482
+    },
+    {
+      "p": 10009,
+      "L": 2502,
+      "backend": "harvey",
+      "method": "Harvey BGS recurrence (C++)",
+      "status": "ok",
+      "B_mod_p": 3719,
+      "a_L_mod_p": 6,
+      "U_mod_p": 9885,
+      "trace": 6,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "setup_median_ms": 0.0004261958762886598,
+      "kernel_median_ms": 0.12804958762886598,
+      "finish_median_ms": 0.000880721649484536,
+      "total_median_ms": 0.12948948453608247,
+      "total_min_ms": 0.10305013402061855,
+      "total_max_ms": 0.25425646391752577
+    },
+    {
+      "p": 10009,
+      "L": 2502,
+      "backend": "cornacchia",
+      "method": "CM / Cornacchia\u2013Gauss (Python)",
+      "status": "ok",
+      "B_mod_p": 3719,
+      "a_L_mod_p": 6,
+      "U_mod_p": 9885,
+      "trace": 6,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 0.0037553035,
+      "query_median_ms": 0.06371382417582418,
+      "total_median_ms": 0.06842481114551083,
+      "total_min_ms": 0.06553250464396285,
+      "total_max_ms": 0.07013538390092879
+    },
+    {
+      "p": 10009,
+      "L": 2502,
+      "backend": "schoof",
+      "method": "CM / deterministic Schoof (Python)",
+      "status": "ok",
+      "B_mod_p": 3719,
+      "a_L_mod_p": 6,
+      "U_mod_p": 9885,
+      "trace": 6,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 36.135804,
+      "query_median_ms": 0.06227659243697479,
+      "total_median_ms": 36.966809,
+      "total_min_ms": 36.368157,
+      "total_max_ms": 50.586021
+    },
+    {
+      "p": 100049,
+      "L": 25012,
+      "backend": "harvey",
+      "method": "Harvey BGS recurrence (C++)",
+      "status": "ok",
+      "B_mod_p": 81476,
+      "a_L_mod_p": 99619,
+      "U_mod_p": 74814,
+      "trace": -430,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "setup_median_ms": 0.0004457142857142857,
+      "kernel_median_ms": 0.37646197959183675,
+      "finish_median_ms": 0.0007678775510204082,
+      "total_median_ms": 0.3776945918367347,
+      "total_min_ms": 0.3646003469387755,
+      "total_max_ms": 0.38818667346938773
+    },
+    {
+      "p": 100049,
+      "L": 25012,
+      "backend": "cornacchia",
+      "method": "CM / Cornacchia\u2013Gauss (Python)",
+      "status": "ok",
+      "B_mod_p": 81476,
+      "a_L_mod_p": 99619,
+      "U_mod_p": 74814,
+      "trace": -430,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 0.0028115705000000004,
+      "query_median_ms": 0.06266860714285714,
+      "total_median_ms": 0.05994459943181818,
+      "total_min_ms": 0.05728573863636364,
+      "total_max_ms": 0.07001217045454546
+    },
+    {
+      "p": 100049,
+      "L": 25012,
+      "backend": "schoof",
+      "method": "CM / deterministic Schoof (Python)",
+      "status": "ok",
+      "B_mod_p": 81476,
+      "a_L_mod_p": 99619,
+      "U_mod_p": 74814,
+      "trace": -430,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 50.384384,
+      "query_median_ms": 0.06315526872246696,
+      "total_median_ms": 52.988163,
+      "total_min_ms": 49.568742,
+      "total_max_ms": 69.450539
+    },
+    {
+      "p": 100049,
+      "L": 25012,
+      "backend": "bsgs",
+      "method": "CM / certified point-count BSGS (Python)",
+      "status": "ok",
+      "B_mod_p": 81476,
+      "a_L_mod_p": 99619,
+      "U_mod_p": 74814,
+      "trace": -430,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 0.08540950943396226,
+      "query_median_ms": 0.059114883838383835,
+      "total_median_ms": 0.154013989010989,
+      "total_min_ms": 0.14112696703296704,
+      "total_max_ms": 0.17036754945054944
+    },
+    {
+      "p": 1000033,
+      "L": 250008,
+      "backend": "cornacchia",
+      "method": "CM / Cornacchia\u2013Gauss (Python)",
+      "status": "ok",
+      "B_mod_p": 190622,
+      "a_L_mod_p": 1826,
+      "U_mod_p": 266580,
+      "trace": 1826,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 0.0042451935,
+      "query_median_ms": 0.09791473291925466,
+      "total_median_ms": 0.10709158369098712,
+      "total_min_ms": 0.10141647639484978,
+      "total_max_ms": 0.1135598712446352
+    },
+    {
+      "p": 1000033,
+      "L": 250008,
+      "backend": "schoof",
+      "method": "CM / deterministic Schoof (Python)",
+      "status": "ok",
+      "B_mod_p": 190622,
+      "a_L_mod_p": 1826,
+      "U_mod_p": 266580,
+      "trace": 1826,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 110.388915,
+      "query_median_ms": 0.09311620000000001,
+      "total_median_ms": 109.74099,
+      "total_min_ms": 103.73666,
+      "total_max_ms": 119.57741
+    },
+    {
+      "p": 1000033,
+      "L": 250008,
+      "backend": "bsgs",
+      "method": "CM / certified point-count BSGS (Python)",
+      "status": "ok",
+      "B_mod_p": 190622,
+      "a_L_mod_p": 1826,
+      "U_mod_p": 266580,
+      "trace": 1826,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 0.14550146853146853,
+      "query_median_ms": 0.09746234615384616,
+      "total_median_ms": 0.25003205,
+      "total_min_ms": 0.239148375,
+      "total_max_ms": 0.2672254
+    },
+    {
+      "p": 1000033,
+      "L": 250008,
+      "backend": "harvey",
+      "method": "Harvey BGS recurrence (C++)",
+      "status": "ok",
+      "B_mod_p": 190622,
+      "a_L_mod_p": 1826,
+      "U_mod_p": 266580,
+      "trace": 1826,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "setup_median_ms": 0.0006530714285714285,
+      "kernel_median_ms": 1.711328142857143,
+      "finish_median_ms": 0.0012459285714285714,
+      "total_median_ms": 1.7133669285714286,
+      "total_min_ms": 1.6526977857142857,
+      "total_max_ms": 1.949230357142857
+    },
+    {
+      "p": 10000121,
+      "L": 2500030,
+      "backend": "schoof",
+      "method": "CM / deterministic Schoof (Python)",
+      "status": "ok",
+      "B_mod_p": 7163776,
+      "a_L_mod_p": 9997599,
+      "U_mod_p": 3649127,
+      "trace": -2522,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 115.442205,
+      "query_median_ms": 0.11884887581699347,
+      "total_median_ms": 120.494924,
+      "total_min_ms": 113.685154,
+      "total_max_ms": 169.415546
+    },
+    {
+      "p": 10000121,
+      "L": 2500030,
+      "backend": "bsgs",
+      "method": "CM / certified point-count BSGS (Python)",
+      "status": "ok",
+      "B_mod_p": 7163776,
+      "a_L_mod_p": 9997599,
+      "U_mod_p": 3649127,
+      "trace": -2522,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 0.25455491666666663,
+      "query_median_ms": 0.11394414285714287,
+      "total_median_ms": 0.3761698548387097,
+      "total_min_ms": 0.3626798064516129,
+      "total_max_ms": 0.39243111290322585
+    },
+    {
+      "p": 10000121,
+      "L": 2500030,
+      "backend": "harvey",
+      "method": "Harvey BGS recurrence (C++)",
+      "status": "ok",
+      "B_mod_p": 7163776,
+      "a_L_mod_p": 9997599,
+      "U_mod_p": 3649127,
+      "trace": -2522,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "setup_median_ms": 0.0009678333333333333,
+      "kernel_median_ms": 4.348438666666667,
+      "finish_median_ms": 0.001766,
+      "total_median_ms": 4.3511058333333335,
+      "total_min_ms": 4.256706666666666,
+      "total_max_ms": 4.600088166666667
+    },
+    {
+      "p": 10000121,
+      "L": 2500030,
+      "backend": "cornacchia",
+      "method": "CM / Cornacchia\u2013Gauss (Python)",
+      "status": "ok",
+      "B_mod_p": 7163776,
+      "a_L_mod_p": 9997599,
+      "U_mod_p": 3649127,
+      "trace": -2522,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 0.00446659,
+      "query_median_ms": 0.11501822857142857,
+      "total_median_ms": 0.1199191959798995,
+      "total_min_ms": 0.11571294974874372,
+      "total_max_ms": 0.16819493969849247
+    },
+    {
+      "p": 100000037,
+      "L": 25000009,
+      "backend": "bsgs",
+      "method": "CM / certified point-count BSGS (Python)",
+      "status": "ok",
+      "B_mod_p": 31732744,
+      "a_L_mod_p": 19972,
+      "U_mod_p": 26975876,
+      "trace": 19972,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 0.43704930357142857,
+      "query_median_ms": 0.2953752957746479,
+      "total_median_ms": 0.753744625,
+      "total_min_ms": 0.73686971875,
+      "total_max_ms": 0.890228
+    },
+    {
+      "p": 100000037,
+      "L": 25000009,
+      "backend": "harvey",
+      "method": "Harvey BGS recurrence (C++)",
+      "status": "ok",
+      "B_mod_p": 31732744,
+      "a_L_mod_p": 19972,
+      "U_mod_p": 26975876,
+      "trace": 19972,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "setup_median_ms": 0.0017980000000000001,
+      "kernel_median_ms": 15.9550655,
+      "finish_median_ms": 0.0035405000000000002,
+      "total_median_ms": 15.9604135,
+      "total_min_ms": 15.667607499999999,
+      "total_max_ms": 16.923068
+    },
+    {
+      "p": 100000037,
+      "L": 25000009,
+      "backend": "cornacchia",
+      "method": "CM / Cornacchia\u2013Gauss (Python)",
+      "status": "ok",
+      "B_mod_p": 31732744,
+      "a_L_mod_p": 19972,
+      "U_mod_p": 26975876,
+      "trace": 19972,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 0.0038779415,
+      "query_median_ms": 0.29194748387096775,
+      "total_median_ms": 0.2982922,
+      "total_min_ms": 0.28925936470588237,
+      "total_max_ms": 0.35866710588235295
+    },
+    {
+      "p": 100000037,
+      "L": 25000009,
+      "backend": "schoof",
+      "method": "CM / deterministic Schoof (Python)",
+      "status": "ok",
+      "B_mod_p": 31732744,
+      "a_L_mod_p": 19972,
+      "U_mod_p": 26975876,
+      "trace": 19972,
+      "validation": "cross-checked",
+      "repetitions": 11,
+      "message": "",
+      "prep_median_ms": 578.508104,
+      "query_median_ms": 0.3168547638888889,
+      "total_median_ms": 519.266107,
+      "total_min_ms": 511.108671,
+      "total_max_ms": 581.429551
+    }
+  ],
+  "samples": [
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.001087819
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0010950795
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0010872735
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0011099215
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.00109193
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0010982695
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0011000769999999999
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.001106061
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0012088525
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0011016545
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0011301764999999998
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.04521281350482315
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.045116881028938904
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.04486281028938907
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.044605096463022506
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.04393092282958199
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.044795672025723474
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.04429953376205788
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.04538583279742765
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.045114144694533766
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.044058762057877815
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.04461327974276527
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 481,
+      "mean_ms_per_call": 0.04544364241164241
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 481,
+      "mean_ms_per_call": 0.047536750519750516
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 481,
+      "mean_ms_per_call": 0.045165039501039506
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 481,
+      "mean_ms_per_call": 0.04481425571725572
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 481,
+      "mean_ms_per_call": 0.045592615384615384
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 481,
+      "mean_ms_per_call": 0.045332482328482325
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 481,
+      "mean_ms_per_call": 0.04477092515592515
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 481,
+      "mean_ms_per_call": 0.04479033056133056
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 481,
+      "mean_ms_per_call": 0.04591294178794179
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 481,
+      "mean_ms_per_call": 0.04556423700623701
+    },
+    {
+      "p": 97,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 481,
+      "mean_ms_per_call": 0.045103952182952184
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.390800125
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.2181055
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.282182375
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.337292375
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.415062125
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.232979875
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.288405375
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.355426625
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.448264875
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.352608
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.2554105
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.04477386816720257
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.04380054019292605
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.04570501607717042
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.043494553054662384
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.043592321543408356
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.043438524115755626
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.045756797427652735
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.04522624115755627
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.04429416077170418
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.04484506752411575
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 311,
+      "mean_ms_per_call": 0.0437206463022508
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.37463875
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.42511325
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.334432
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.320448875
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.372859875
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.417308
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.342080625
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.3200395
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.24256025
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.441148125
+    },
+    {
+      "p": 97,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.3630805
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 367,
+      "mean_ms_per_call": 0.02954476566757493
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 367,
+      "mean_ms_per_call": 0.028381852861035423
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 367,
+      "mean_ms_per_call": 0.028375438692098093
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 367,
+      "mean_ms_per_call": 0.028438828337874658
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 367,
+      "mean_ms_per_call": 0.028430043596730244
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 367,
+      "mean_ms_per_call": 0.029889035422343325
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 367,
+      "mean_ms_per_call": 0.02840294550408719
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 367,
+      "mean_ms_per_call": 0.028643463215258853
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 367,
+      "mean_ms_per_call": 0.028163136239782015
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 367,
+      "mean_ms_per_call": 0.028289318801089917
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 367,
+      "mean_ms_per_call": 0.028358711171662127
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 277,
+      "mean_ms_per_call": 0.04456669314079423
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 277,
+      "mean_ms_per_call": 0.04544560649819494
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 277,
+      "mean_ms_per_call": 0.045762281588447654
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 277,
+      "mean_ms_per_call": 0.0452732238267148
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 277,
+      "mean_ms_per_call": 0.04515131046931408
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 277,
+      "mean_ms_per_call": 0.044128321299638985
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 277,
+      "mean_ms_per_call": 0.04392238628158845
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 277,
+      "mean_ms_per_call": 0.04429568231046931
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 277,
+      "mean_ms_per_call": 0.044274422382671486
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 277,
+      "mean_ms_per_call": 0.04352439711191335
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 277,
+      "mean_ms_per_call": 0.0445253321299639
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 201,
+      "mean_ms_per_call": 0.07603685074626866
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 201,
+      "mean_ms_per_call": 0.07713030348258706
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 201,
+      "mean_ms_per_call": 0.07336266169154229
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 201,
+      "mean_ms_per_call": 0.07330934825870647
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 201,
+      "mean_ms_per_call": 0.07339937810945274
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 201,
+      "mean_ms_per_call": 0.07450713432835822
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 201,
+      "mean_ms_per_call": 0.08251775124378109
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 201,
+      "mean_ms_per_call": 0.08595735323383084
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 201,
+      "mean_ms_per_call": 0.0881408656716418
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 201,
+      "mean_ms_per_call": 0.09152342288557215
+    },
+    {
+      "p": 97,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 201,
+      "mean_ms_per_call": 0.08397143781094528
+    },
+    {
+      "p": 97,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 187,
+      "mean_ms_per_call": 0.013583791443850267
+    },
+    {
+      "p": 97,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 187,
+      "mean_ms_per_call": 0.013895133689839571
+    },
+    {
+      "p": 97,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 187,
+      "mean_ms_per_call": 0.013350935828877005
+    },
+    {
+      "p": 97,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 187,
+      "mean_ms_per_call": 0.013251727272727273
+    },
+    {
+      "p": 97,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 187,
+      "mean_ms_per_call": 0.013577983957219252
+    },
+    {
+      "p": 97,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 187,
+      "mean_ms_per_call": 0.016638566844919787
+    },
+    {
+      "p": 97,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 187,
+      "mean_ms_per_call": 0.014519144385026737
+    },
+    {
+      "p": 97,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 187,
+      "mean_ms_per_call": 0.014722727272727273
+    },
+    {
+      "p": 97,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 187,
+      "mean_ms_per_call": 0.014732652406417112
+    },
+    {
+      "p": 97,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 187,
+      "mean_ms_per_call": 0.014147064171122995
+    },
+    {
+      "p": 97,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 187,
+      "mean_ms_per_call": 0.014228187165775402
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 7,
+      "mean_ms_per_call": 3.2465502857142856
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 7,
+      "mean_ms_per_call": 3.2952492857142857
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 7,
+      "mean_ms_per_call": 3.236828714285714
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 7,
+      "mean_ms_per_call": 3.2312948571428572
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 7,
+      "mean_ms_per_call": 3.210419857142857
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 7,
+      "mean_ms_per_call": 3.2945524285714285
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 7,
+      "mean_ms_per_call": 3.2412594285714285
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 7,
+      "mean_ms_per_call": 3.3415102857142855
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 7,
+      "mean_ms_per_call": 3.2087630000000003
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 7,
+      "mean_ms_per_call": 3.1984751428571427
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 7,
+      "mean_ms_per_call": 3.1737355714285718
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 271,
+      "mean_ms_per_call": 0.04990052029520295
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 271,
+      "mean_ms_per_call": 0.05180484132841328
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 271,
+      "mean_ms_per_call": 0.055391752767527676
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 271,
+      "mean_ms_per_call": 0.04959231734317343
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 271,
+      "mean_ms_per_call": 0.051235033210332105
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 271,
+      "mean_ms_per_call": 0.0496729889298893
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 271,
+      "mean_ms_per_call": 0.050359760147601476
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 271,
+      "mean_ms_per_call": 0.05000643542435424
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 271,
+      "mean_ms_per_call": 0.04935650922509225
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 271,
+      "mean_ms_per_call": 0.049867335793357934
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 271,
+      "mean_ms_per_call": 0.05200742804428044
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.4568625
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.31287025
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.417127625
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.296559875
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.4541485
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.25872525
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.298249875
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.340722375
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.42049125
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.3204475
+    },
+    {
+      "p": 1009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 8,
+      "mean_ms_per_call": 3.260446625
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 222,
+      "mean_ms_per_call": 0.06519821171171171
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 222,
+      "mean_ms_per_call": 0.06606254954954956
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 222,
+      "mean_ms_per_call": 0.06517732882882883
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 222,
+      "mean_ms_per_call": 0.07113137837837838
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 222,
+      "mean_ms_per_call": 0.06563547747747747
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 222,
+      "mean_ms_per_call": 0.06387103153153154
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 222,
+      "mean_ms_per_call": 0.0648112927927928
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 222,
+      "mean_ms_per_call": 0.06543811711711713
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 222,
+      "mean_ms_per_call": 0.06866277927927929
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 222,
+      "mean_ms_per_call": 0.07094385135135135
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 222,
+      "mean_ms_per_call": 0.07756410810810811
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 243,
+      "mean_ms_per_call": 0.05611097119341564
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 243,
+      "mean_ms_per_call": 0.05426120576131687
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 243,
+      "mean_ms_per_call": 0.05323133333333333
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 243,
+      "mean_ms_per_call": 0.055269152263374484
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 243,
+      "mean_ms_per_call": 0.056367152263374486
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 243,
+      "mean_ms_per_call": 0.05489283950617284
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 243,
+      "mean_ms_per_call": 0.06547625925925926
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 243,
+      "mean_ms_per_call": 0.06007978600823045
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 243,
+      "mean_ms_per_call": 0.05500856790123457
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 243,
+      "mean_ms_per_call": 0.05928425102880658
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 243,
+      "mean_ms_per_call": 0.06121174485596708
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.13199631468531467
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.13687197202797202
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.13657608391608392
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.1404793146853147
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.12877457342657345
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.1340410839160839
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.154180006993007
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.1460314965034965
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.12903916083916084
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.13236511888111888
+    },
+    {
+      "p": 1009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.13274623776223776
+    },
+    {
+      "p": 1009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 122,
+      "mean_ms_per_call": 0.04673245081967213
+    },
+    {
+      "p": 1009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 122,
+      "mean_ms_per_call": 0.0476447868852459
+    },
+    {
+      "p": 1009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 122,
+      "mean_ms_per_call": 0.0463552868852459
+    },
+    {
+      "p": 1009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 122,
+      "mean_ms_per_call": 0.04886815573770492
+    },
+    {
+      "p": 1009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 122,
+      "mean_ms_per_call": 0.05849617213114754
+    },
+    {
+      "p": 1009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 122,
+      "mean_ms_per_call": 0.055883688524590164
+    },
+    {
+      "p": 1009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 122,
+      "mean_ms_per_call": 0.04921953278688525
+    },
+    {
+      "p": 1009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 122,
+      "mean_ms_per_call": 0.05460431147540984
+    },
+    {
+      "p": 1009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 122,
+      "mean_ms_per_call": 0.05394637704918033
+    },
+    {
+      "p": 1009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 122,
+      "mean_ms_per_call": 0.05314356557377049
+    },
+    {
+      "p": 1009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 122,
+      "mean_ms_per_call": 0.053090065573770495
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0039770795
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0041078725
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.004079836
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.00396748
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0039108575
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.003960445
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0040204585
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0040543085
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.004145583
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.00468932
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.004369834
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 225,
+      "mean_ms_per_call": 0.05184138222222222
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 225,
+      "mean_ms_per_call": 0.052482457777777776
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 225,
+      "mean_ms_per_call": 0.05144403555555556
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 225,
+      "mean_ms_per_call": 0.049672666666666664
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 225,
+      "mean_ms_per_call": 0.05200184
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 225,
+      "mean_ms_per_call": 0.05024551555555556
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 225,
+      "mean_ms_per_call": 0.05089478222222222
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 225,
+      "mean_ms_per_call": 0.05301328444444445
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 225,
+      "mean_ms_per_call": 0.05123150222222222
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 225,
+      "mean_ms_per_call": 0.05130890666666667
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 225,
+      "mean_ms_per_call": 0.04904663555555556
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 400,
+      "mean_ms_per_call": 0.0530849775
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 400,
+      "mean_ms_per_call": 0.05383293250000001
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 400,
+      "mean_ms_per_call": 0.053351197499999996
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 400,
+      "mean_ms_per_call": 0.053143115
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 400,
+      "mean_ms_per_call": 0.053475605
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 400,
+      "mean_ms_per_call": 0.0538769725
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 400,
+      "mean_ms_per_call": 0.0555227475
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 400,
+      "mean_ms_per_call": 0.05646972
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 400,
+      "mean_ms_per_call": 0.053764405
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 400,
+      "mean_ms_per_call": 0.05417456
+    },
+    {
+      "p": 1009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 400,
+      "mean_ms_per_call": 0.0534594575
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 306,
+      "mean_ms_per_call": 0.04928905555555556
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 306,
+      "mean_ms_per_call": 0.04840333660130719
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 306,
+      "mean_ms_per_call": 0.05051311437908497
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 306,
+      "mean_ms_per_call": 0.04897833660130719
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 306,
+      "mean_ms_per_call": 0.04842480718954248
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 306,
+      "mean_ms_per_call": 0.04874681699346405
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 306,
+      "mean_ms_per_call": 0.04836193464052288
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 306,
+      "mean_ms_per_call": 0.04769729738562092
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 306,
+      "mean_ms_per_call": 0.049657669934640526
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 306,
+      "mean_ms_per_call": 0.04845531045751634
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 306,
+      "mean_ms_per_call": 0.048991
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 235,
+      "mean_ms_per_call": 0.06262166382978723
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 235,
+      "mean_ms_per_call": 0.06046716170212766
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 235,
+      "mean_ms_per_call": 0.05956698723404255
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 235,
+      "mean_ms_per_call": 0.05919754468085106
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 235,
+      "mean_ms_per_call": 0.06010198723404255
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 235,
+      "mean_ms_per_call": 0.05947868510638298
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 235,
+      "mean_ms_per_call": 0.05989116595744681
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 235,
+      "mean_ms_per_call": 0.059139714893617024
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 235,
+      "mean_ms_per_call": 0.061489225531914896
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 235,
+      "mean_ms_per_call": 0.06804830212765957
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 235,
+      "mean_ms_per_call": 0.06141464680851064
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 166,
+      "mean_ms_per_call": 0.1298282530120482
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 166,
+      "mean_ms_per_call": 0.11366206024096386
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 166,
+      "mean_ms_per_call": 0.11174037349397589
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 166,
+      "mean_ms_per_call": 0.11250107831325301
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 166,
+      "mean_ms_per_call": 0.11159329518072289
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 166,
+      "mean_ms_per_call": 0.10915898192771085
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 166,
+      "mean_ms_per_call": 0.1091535481927711
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 166,
+      "mean_ms_per_call": 0.10904060843373493
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 166,
+      "mean_ms_per_call": 0.1096009578313253
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 166,
+      "mean_ms_per_call": 0.12704903012048194
+    },
+    {
+      "p": 10009,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 166,
+      "mean_ms_per_call": 0.13165582530120482
+    },
+    {
+      "p": 10009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 97,
+      "mean_ms_per_call": 0.11341796907216495
+    },
+    {
+      "p": 10009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 97,
+      "mean_ms_per_call": 0.1547558969072165
+    },
+    {
+      "p": 10009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 97,
+      "mean_ms_per_call": 0.11010241237113402
+    },
+    {
+      "p": 10009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 97,
+      "mean_ms_per_call": 0.11464757731958763
+    },
+    {
+      "p": 10009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 97,
+      "mean_ms_per_call": 0.10305013402061855
+    },
+    {
+      "p": 10009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 97,
+      "mean_ms_per_call": 0.105662
+    },
+    {
+      "p": 10009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 97,
+      "mean_ms_per_call": 0.13818748453608248
+    },
+    {
+      "p": 10009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 97,
+      "mean_ms_per_call": 0.1296209793814433
+    },
+    {
+      "p": 10009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 97,
+      "mean_ms_per_call": 0.12948948453608247
+    },
+    {
+      "p": 10009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 97,
+      "mean_ms_per_call": 0.13777890721649486
+    },
+    {
+      "p": 10009,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 97,
+      "mean_ms_per_call": 0.25425646391752577
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.003732119
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0037371915
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0036101395
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.004006053
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0037553035
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0041762835
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0036682549999999996
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.003880688
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0038711540000000003
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.003635897
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.003916055
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.06363243956043955
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.06764351648351649
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.06371382417582418
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.06404386813186813
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.07062664835164835
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.0636107087912088
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.06396947252747252
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.06566802197802198
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.06306726373626373
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.06282614285714286
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.0631361043956044
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 323,
+      "mean_ms_per_call": 0.06869586377708978
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 323,
+      "mean_ms_per_call": 0.0695779040247678
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 323,
+      "mean_ms_per_call": 0.06842481114551083
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 323,
+      "mean_ms_per_call": 0.06878534365325077
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 323,
+      "mean_ms_per_call": 0.06682018885448916
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 323,
+      "mean_ms_per_call": 0.07013538390092879
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 323,
+      "mean_ms_per_call": 0.06561978328173375
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 323,
+      "mean_ms_per_call": 0.06771906811145512
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 323,
+      "mean_ms_per_call": 0.06553250464396285
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 323,
+      "mean_ms_per_call": 0.06704082352941176
+    },
+    {
+      "p": 10009,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 323,
+      "mean_ms_per_call": 0.06908401857585139
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 36.40421
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 37.302062
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 35.778688
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 1,
+      "mean_ms_per_call": 36.135804
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 1,
+      "mean_ms_per_call": 36.302851
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 1,
+      "mean_ms_per_call": 35.787711
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 1,
+      "mean_ms_per_call": 35.809183
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 1,
+      "mean_ms_per_call": 36.101824
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 1,
+      "mean_ms_per_call": 36.900371
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 1,
+      "mean_ms_per_call": 37.580293
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 1,
+      "mean_ms_per_call": 36.060903
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 238,
+      "mean_ms_per_call": 0.0631255756302521
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 238,
+      "mean_ms_per_call": 0.0651201974789916
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 238,
+      "mean_ms_per_call": 0.06227659243697479
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 238,
+      "mean_ms_per_call": 0.06145622268907563
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 238,
+      "mean_ms_per_call": 0.06289536134453781
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 238,
+      "mean_ms_per_call": 0.06131572268907563
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 238,
+      "mean_ms_per_call": 0.06071854201680672
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 238,
+      "mean_ms_per_call": 0.06087709243697479
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 238,
+      "mean_ms_per_call": 0.06049590336134454
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 238,
+      "mean_ms_per_call": 0.0626318193277311
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 238,
+      "mean_ms_per_call": 0.06365122268907564
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 36.45204
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 36.704372
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 37.156147
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 1,
+      "mean_ms_per_call": 36.966809
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 1,
+      "mean_ms_per_call": 37.188204
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 1,
+      "mean_ms_per_call": 36.678544
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 1,
+      "mean_ms_per_call": 36.449516
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 1,
+      "mean_ms_per_call": 37.124621
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 1,
+      "mean_ms_per_call": 36.368157
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 1,
+      "mean_ms_per_call": 39.941382
+    },
+    {
+      "p": 10009,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 1,
+      "mean_ms_per_call": 50.586021
+    },
+    {
+      "p": 100049,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 49,
+      "mean_ms_per_call": 0.3776945918367347
+    },
+    {
+      "p": 100049,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 49,
+      "mean_ms_per_call": 0.38818667346938773
+    },
+    {
+      "p": 100049,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 49,
+      "mean_ms_per_call": 0.38120771428571426
+    },
+    {
+      "p": 100049,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 49,
+      "mean_ms_per_call": 0.3655596530612245
+    },
+    {
+      "p": 100049,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 49,
+      "mean_ms_per_call": 0.3691949183673469
+    },
+    {
+      "p": 100049,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 49,
+      "mean_ms_per_call": 0.38556118367346937
+    },
+    {
+      "p": 100049,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 49,
+      "mean_ms_per_call": 0.3834831020408163
+    },
+    {
+      "p": 100049,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 49,
+      "mean_ms_per_call": 0.3740072857142857
+    },
+    {
+      "p": 100049,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 49,
+      "mean_ms_per_call": 0.38795077551020407
+    },
+    {
+      "p": 100049,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 49,
+      "mean_ms_per_call": 0.3736268979591837
+    },
+    {
+      "p": 100049,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 49,
+      "mean_ms_per_call": 0.3646003469387755
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0029672245
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0031583865
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0026455155
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0027997580000000003
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0029711255
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0029458034999999996
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.002762027
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.002880877
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0028082305000000003
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0027438099999999997
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0028115705000000004
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 224,
+      "mean_ms_per_call": 0.06080956696428571
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 224,
+      "mean_ms_per_call": 0.06279955357142857
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 224,
+      "mean_ms_per_call": 0.05980505357142857
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 224,
+      "mean_ms_per_call": 0.06277483035714286
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 224,
+      "mean_ms_per_call": 0.06029474553571429
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 224,
+      "mean_ms_per_call": 0.06266860714285714
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 224,
+      "mean_ms_per_call": 0.05915024553571429
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 224,
+      "mean_ms_per_call": 0.05651331696428571
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 224,
+      "mean_ms_per_call": 0.06271049107142858
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 224,
+      "mean_ms_per_call": 0.06492952232142857
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 224,
+      "mean_ms_per_call": 0.06585816964285715
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 352,
+      "mean_ms_per_call": 0.06628548579545455
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 352,
+      "mean_ms_per_call": 0.07001217045454546
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 352,
+      "mean_ms_per_call": 0.06167977272727272
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 352,
+      "mean_ms_per_call": 0.061204028409090915
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 352,
+      "mean_ms_per_call": 0.057383153409090906
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 352,
+      "mean_ms_per_call": 0.05728573863636364
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 352,
+      "mean_ms_per_call": 0.05956415340909091
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 352,
+      "mean_ms_per_call": 0.05762920170454545
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 352,
+      "mean_ms_per_call": 0.05994459943181818
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 352,
+      "mean_ms_per_call": 0.06373578977272727
+    },
+    {
+      "p": 100049,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 352,
+      "mean_ms_per_call": 0.05884158238636363
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 49.437398
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 49.772012
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 52.822829
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 1,
+      "mean_ms_per_call": 60.708746
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 1,
+      "mean_ms_per_call": 48.278229
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 1,
+      "mean_ms_per_call": 49.98814
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 1,
+      "mean_ms_per_call": 50.398345
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 1,
+      "mean_ms_per_call": 50.384384
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 1,
+      "mean_ms_per_call": 49.456326
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 1,
+      "mean_ms_per_call": 50.596286
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 1,
+      "mean_ms_per_call": 61.796811
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 227,
+      "mean_ms_per_call": 0.06315526872246696
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 227,
+      "mean_ms_per_call": 0.06512875330396475
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 227,
+      "mean_ms_per_call": 0.06835522907488986
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 227,
+      "mean_ms_per_call": 0.06179339647577092
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 227,
+      "mean_ms_per_call": 0.06874598678414097
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 227,
+      "mean_ms_per_call": 0.06357152422907489
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 227,
+      "mean_ms_per_call": 0.06095797797356828
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 227,
+      "mean_ms_per_call": 0.06593218502202644
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 227,
+      "mean_ms_per_call": 0.05784029515418502
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 227,
+      "mean_ms_per_call": 0.06292594713656388
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 227,
+      "mean_ms_per_call": 0.0594885859030837
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 52.988163
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 69.450539
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 68.037512
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 1,
+      "mean_ms_per_call": 52.309893
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 1,
+      "mean_ms_per_call": 54.299697
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 1,
+      "mean_ms_per_call": 51.0937
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 1,
+      "mean_ms_per_call": 51.459139
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 1,
+      "mean_ms_per_call": 53.551243
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 1,
+      "mean_ms_per_call": 52.437631
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 1,
+      "mean_ms_per_call": 57.667943
+    },
+    {
+      "p": 100049,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 1,
+      "mean_ms_per_call": 49.568742
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 212,
+      "mean_ms_per_call": 0.08386430660377359
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 212,
+      "mean_ms_per_call": 0.08561065566037736
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 212,
+      "mean_ms_per_call": 0.08094580188679244
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 212,
+      "mean_ms_per_call": 0.08806375
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 212,
+      "mean_ms_per_call": 0.0805072358490566
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 212,
+      "mean_ms_per_call": 0.08540950943396226
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 212,
+      "mean_ms_per_call": 0.08860034905660377
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 212,
+      "mean_ms_per_call": 0.0965506037735849
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 212,
+      "mean_ms_per_call": 0.0802059858490566
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 212,
+      "mean_ms_per_call": 0.08606613679245283
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 212,
+      "mean_ms_per_call": 0.08276234905660378
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 198,
+      "mean_ms_per_call": 0.06105673737373737
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 198,
+      "mean_ms_per_call": 0.06404973737373737
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 198,
+      "mean_ms_per_call": 0.05792156060606061
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 198,
+      "mean_ms_per_call": 0.05793475757575757
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 198,
+      "mean_ms_per_call": 0.059114883838383835
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 198,
+      "mean_ms_per_call": 0.05901013636363636
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 198,
+      "mean_ms_per_call": 0.06550303535353535
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 198,
+      "mean_ms_per_call": 0.059438035353535354
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 198,
+      "mean_ms_per_call": 0.060302186868686866
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 198,
+      "mean_ms_per_call": 0.05829519191919192
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 198,
+      "mean_ms_per_call": 0.058023424242424244
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 91,
+      "mean_ms_per_call": 0.1656384945054945
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 91,
+      "mean_ms_per_call": 0.15489156043956043
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 91,
+      "mean_ms_per_call": 0.17036754945054944
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 91,
+      "mean_ms_per_call": 0.15952905494505495
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 91,
+      "mean_ms_per_call": 0.1429346923076923
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 91,
+      "mean_ms_per_call": 0.1461185054945055
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 91,
+      "mean_ms_per_call": 0.15153098901098902
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 91,
+      "mean_ms_per_call": 0.14746026373626375
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 91,
+      "mean_ms_per_call": 0.14112696703296704
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 91,
+      "mean_ms_per_call": 0.154013989010989
+    },
+    {
+      "p": 100049,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 91,
+      "mean_ms_per_call": 0.15687745054945054
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0044400360000000005
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0042306324999999995
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0042096615000000006
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0042451935
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0043553865
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.004420658
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0042005685
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0042238225
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.004483415
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.004407393
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0042417290000000005
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 161,
+      "mean_ms_per_call": 0.09761864596273293
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 161,
+      "mean_ms_per_call": 0.09175937888198758
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 161,
+      "mean_ms_per_call": 0.09645488198757764
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 161,
+      "mean_ms_per_call": 0.09153868322981366
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 161,
+      "mean_ms_per_call": 0.09354860869565217
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 161,
+      "mean_ms_per_call": 0.10141722360248447
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 161,
+      "mean_ms_per_call": 0.14226235403726709
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 161,
+      "mean_ms_per_call": 0.1101078695652174
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 161,
+      "mean_ms_per_call": 0.14750222360248447
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 161,
+      "mean_ms_per_call": 0.09791473291925466
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 161,
+      "mean_ms_per_call": 0.09818873913043479
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 233,
+      "mean_ms_per_call": 0.10593885407725322
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 233,
+      "mean_ms_per_call": 0.10141647639484978
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 233,
+      "mean_ms_per_call": 0.1135598712446352
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 233,
+      "mean_ms_per_call": 0.1073392017167382
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 233,
+      "mean_ms_per_call": 0.10752380686695279
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 233,
+      "mean_ms_per_call": 0.10535451502145923
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 233,
+      "mean_ms_per_call": 0.1070309356223176
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 233,
+      "mean_ms_per_call": 0.11227871244635193
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 233,
+      "mean_ms_per_call": 0.10709158369098712
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 233,
+      "mean_ms_per_call": 0.10495443776824034
+    },
+    {
+      "p": 1000033,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 233,
+      "mean_ms_per_call": 0.1116401330472103
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 127.663082
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 111.461256
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 110.464126
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 1,
+      "mean_ms_per_call": 112.708445
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 1,
+      "mean_ms_per_call": 110.388915
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 1,
+      "mean_ms_per_call": 110.736813
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 1,
+      "mean_ms_per_call": 107.59721
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 1,
+      "mean_ms_per_call": 107.774602
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 1,
+      "mean_ms_per_call": 107.197781
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 1,
+      "mean_ms_per_call": 103.061124
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 1,
+      "mean_ms_per_call": 103.071288
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 180,
+      "mean_ms_per_call": 0.09639637222222222
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 180,
+      "mean_ms_per_call": 0.09460867777777777
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 180,
+      "mean_ms_per_call": 0.09244465555555556
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 180,
+      "mean_ms_per_call": 0.09304709444444445
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 180,
+      "mean_ms_per_call": 0.09389234444444444
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 180,
+      "mean_ms_per_call": 0.09311620000000001
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 180,
+      "mean_ms_per_call": 0.0957812888888889
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 180,
+      "mean_ms_per_call": 0.09224452777777778
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 180,
+      "mean_ms_per_call": 0.09261245555555554
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 180,
+      "mean_ms_per_call": 0.09393874444444444
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 180,
+      "mean_ms_per_call": 0.09299574444444444
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 103.73666
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 112.150281
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 119.57741
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 1,
+      "mean_ms_per_call": 107.664279
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 1,
+      "mean_ms_per_call": 106.789409
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 1,
+      "mean_ms_per_call": 109.74099
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 1,
+      "mean_ms_per_call": 110.829375
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 1,
+      "mean_ms_per_call": 111.384723
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 1,
+      "mean_ms_per_call": 105.811539
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 1,
+      "mean_ms_per_call": 110.253966
+    },
+    {
+      "p": 1000033,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 1,
+      "mean_ms_per_call": 105.437026
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.15204474825174824
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.14550146853146853
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.13643403496503495
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.1472034895104895
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.14306136363636365
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.15081580419580418
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.1410913986013986
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.1436397692307692
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.1455663846153846
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.13774870629370628
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 143,
+      "mean_ms_per_call": 0.15028865734265734
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.10101521978021978
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.09762290659340658
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.09617318681318682
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.09382852197802198
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.09746234615384616
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.10425697252747251
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.09425624175824175
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.10437984615384616
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.09556003846153846
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.10351131318681318
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 182,
+      "mean_ms_per_call": 0.0948860164835165
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 80,
+      "mean_ms_per_call": 0.265430625
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 80,
+      "mean_ms_per_call": 0.246492075
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 80,
+      "mean_ms_per_call": 0.251499225
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 80,
+      "mean_ms_per_call": 0.2672254
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 80,
+      "mean_ms_per_call": 0.239148375
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 80,
+      "mean_ms_per_call": 0.2643029625
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 80,
+      "mean_ms_per_call": 0.2458354875
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 80,
+      "mean_ms_per_call": 0.246472675
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 80,
+      "mean_ms_per_call": 0.24131683750000002
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 80,
+      "mean_ms_per_call": 0.2574605125
+    },
+    {
+      "p": 1000033,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 80,
+      "mean_ms_per_call": 0.25003205
+    },
+    {
+      "p": 1000033,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 14,
+      "mean_ms_per_call": 1.8977795714285715
+    },
+    {
+      "p": 1000033,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 14,
+      "mean_ms_per_call": 1.7141975714285715
+    },
+    {
+      "p": 1000033,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 14,
+      "mean_ms_per_call": 1.7055066428571428
+    },
+    {
+      "p": 1000033,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 14,
+      "mean_ms_per_call": 1.949230357142857
+    },
+    {
+      "p": 1000033,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 14,
+      "mean_ms_per_call": 1.7133669285714286
+    },
+    {
+      "p": 1000033,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 14,
+      "mean_ms_per_call": 1.7026369285714287
+    },
+    {
+      "p": 1000033,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 14,
+      "mean_ms_per_call": 1.6910055
+    },
+    {
+      "p": 1000033,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 14,
+      "mean_ms_per_call": 1.7141439285714286
+    },
+    {
+      "p": 1000033,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 14,
+      "mean_ms_per_call": 1.6526977857142857
+    },
+    {
+      "p": 1000033,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 14,
+      "mean_ms_per_call": 1.6908597857142857
+    },
+    {
+      "p": 1000033,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 14,
+      "mean_ms_per_call": 1.7201772857142856
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 111.567883
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 112.131934
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 112.721334
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 1,
+      "mean_ms_per_call": 114.226343
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 1,
+      "mean_ms_per_call": 115.442205
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 1,
+      "mean_ms_per_call": 112.736135
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 1,
+      "mean_ms_per_call": 118.881496
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 1,
+      "mean_ms_per_call": 123.980383
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 1,
+      "mean_ms_per_call": 116.211429
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 1,
+      "mean_ms_per_call": 121.823954
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 1,
+      "mean_ms_per_call": 115.453071
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 153,
+      "mean_ms_per_call": 0.11389386274509805
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 153,
+      "mean_ms_per_call": 0.11188541176470589
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 153,
+      "mean_ms_per_call": 0.12320569281045751
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 153,
+      "mean_ms_per_call": 0.1167641045751634
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 153,
+      "mean_ms_per_call": 0.11563093464052288
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 153,
+      "mean_ms_per_call": 0.13388961437908498
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 153,
+      "mean_ms_per_call": 0.12055891503267974
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 153,
+      "mean_ms_per_call": 0.13041658169934642
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 153,
+      "mean_ms_per_call": 0.13433831372549018
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 153,
+      "mean_ms_per_call": 0.11555755555555557
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 153,
+      "mean_ms_per_call": 0.11884887581699347
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 118.577267
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 124.076189
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 118.884369
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 1,
+      "mean_ms_per_call": 140.731284
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 1,
+      "mean_ms_per_call": 126.605423
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 1,
+      "mean_ms_per_call": 120.494924
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 1,
+      "mean_ms_per_call": 122.958256
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 1,
+      "mean_ms_per_call": 120.378242
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 1,
+      "mean_ms_per_call": 119.802284
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 1,
+      "mean_ms_per_call": 169.415546
+    },
+    {
+      "p": 10000121,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 1,
+      "mean_ms_per_call": 113.685154
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 84,
+      "mean_ms_per_call": 0.25489361904761904
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 84,
+      "mean_ms_per_call": 0.25455491666666663
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 84,
+      "mean_ms_per_call": 0.2537240357142857
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 84,
+      "mean_ms_per_call": 0.2541528928571428
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 84,
+      "mean_ms_per_call": 0.25495227380952384
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 84,
+      "mean_ms_per_call": 0.25267010714285715
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 84,
+      "mean_ms_per_call": 0.2557807619047619
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 84,
+      "mean_ms_per_call": 0.2503754166666667
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 84,
+      "mean_ms_per_call": 0.36954536904761903
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 84,
+      "mean_ms_per_call": 0.2698511547619048
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 84,
+      "mean_ms_per_call": 0.24942163095238096
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 154,
+      "mean_ms_per_call": 0.10882731818181818
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 154,
+      "mean_ms_per_call": 0.11003383766233767
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 154,
+      "mean_ms_per_call": 0.10966257142857143
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 154,
+      "mean_ms_per_call": 0.11395357142857145
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 154,
+      "mean_ms_per_call": 0.11448110389610389
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 154,
+      "mean_ms_per_call": 0.11707422077922079
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 154,
+      "mean_ms_per_call": 0.11394414285714287
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 154,
+      "mean_ms_per_call": 0.11025435714285715
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 154,
+      "mean_ms_per_call": 0.11530517532467531
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 154,
+      "mean_ms_per_call": 0.11395792857142856
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 154,
+      "mean_ms_per_call": 0.11164022727272728
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.38208825806451613
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.37042398387096775
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.3626798064516129
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.37667029032258065
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.3761698548387097
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.3667913709677419
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.39201435483870967
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.3749942741935484
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.39243111290322585
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.38500079032258067
+    },
+    {
+      "p": 10000121,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.3680194838709678
+    },
+    {
+      "p": 10000121,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 6,
+      "mean_ms_per_call": 4.365799166666667
+    },
+    {
+      "p": 10000121,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 6,
+      "mean_ms_per_call": 4.318846833333334
+    },
+    {
+      "p": 10000121,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 6,
+      "mean_ms_per_call": 4.256706666666666
+    },
+    {
+      "p": 10000121,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 6,
+      "mean_ms_per_call": 4.600088166666667
+    },
+    {
+      "p": 10000121,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 6,
+      "mean_ms_per_call": 4.3511058333333335
+    },
+    {
+      "p": 10000121,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 6,
+      "mean_ms_per_call": 4.345447666666667
+    },
+    {
+      "p": 10000121,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 6,
+      "mean_ms_per_call": 4.334735333333334
+    },
+    {
+      "p": 10000121,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 6,
+      "mean_ms_per_call": 4.5533675
+    },
+    {
+      "p": 10000121,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 6,
+      "mean_ms_per_call": 4.353341333333333
+    },
+    {
+      "p": 10000121,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 6,
+      "mean_ms_per_call": 4.421424666666667
+    },
+    {
+      "p": 10000121,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 6,
+      "mean_ms_per_call": 4.287144666666666
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0051209639999999996
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.005066279
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0046588029999999996
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0045477140000000004
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0043649399999999994
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.004314595500000001
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.004440296
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.00491115
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.00446659
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0042631945
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0040560195
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 105,
+      "mean_ms_per_call": 0.11438234285714287
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 105,
+      "mean_ms_per_call": 0.11635353333333334
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 105,
+      "mean_ms_per_call": 0.11501822857142857
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 105,
+      "mean_ms_per_call": 0.11172012380952381
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 105,
+      "mean_ms_per_call": 0.10941033333333333
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 105,
+      "mean_ms_per_call": 0.1140629238095238
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 105,
+      "mean_ms_per_call": 0.11510281904761904
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 105,
+      "mean_ms_per_call": 0.12173975238095239
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 105,
+      "mean_ms_per_call": 0.12432394285714286
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 105,
+      "mean_ms_per_call": 0.11618070476190476
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 105,
+      "mean_ms_per_call": 0.1125387619047619
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 199,
+      "mean_ms_per_call": 0.12137843718592965
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 199,
+      "mean_ms_per_call": 0.12149186432160805
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 199,
+      "mean_ms_per_call": 0.1366689648241206
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 199,
+      "mean_ms_per_call": 0.16819493969849247
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 199,
+      "mean_ms_per_call": 0.11780693467336684
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 199,
+      "mean_ms_per_call": 0.11571294974874372
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 199,
+      "mean_ms_per_call": 0.11649459798994974
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 199,
+      "mean_ms_per_call": 0.1199191959798995
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 199,
+      "mean_ms_per_call": 0.11592098994974874
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 199,
+      "mean_ms_per_call": 0.11651775376884421
+    },
+    {
+      "p": 10000121,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 199,
+      "mean_ms_per_call": 0.12575644221105528
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 56,
+      "mean_ms_per_call": 0.4366318928571428
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 56,
+      "mean_ms_per_call": 0.4293243392857143
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 56,
+      "mean_ms_per_call": 0.4428020714285714
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 56,
+      "mean_ms_per_call": 0.45024107142857145
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 56,
+      "mean_ms_per_call": 0.4499992857142857
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 56,
+      "mean_ms_per_call": 0.44665148214285716
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 56,
+      "mean_ms_per_call": 0.43704930357142857
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 56,
+      "mean_ms_per_call": 0.44702273214285715
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 56,
+      "mean_ms_per_call": 0.43319146428571426
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 56,
+      "mean_ms_per_call": 0.43199291071428575
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 56,
+      "mean_ms_per_call": 0.4282609821428571
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 71,
+      "mean_ms_per_call": 0.30747708450704225
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 71,
+      "mean_ms_per_call": 0.2883862676056338
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 71,
+      "mean_ms_per_call": 0.29591002816901407
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 71,
+      "mean_ms_per_call": 0.29926822535211267
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 71,
+      "mean_ms_per_call": 0.2953752957746479
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 71,
+      "mean_ms_per_call": 0.2890686901408451
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 71,
+      "mean_ms_per_call": 0.29023335211267604
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 71,
+      "mean_ms_per_call": 0.2863622957746479
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 71,
+      "mean_ms_per_call": 0.29746456338028165
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 71,
+      "mean_ms_per_call": 0.2941752394366197
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 71,
+      "mean_ms_per_call": 0.3193140985915493
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 32,
+      "mean_ms_per_call": 0.753744625
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 32,
+      "mean_ms_per_call": 0.890228
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 32,
+      "mean_ms_per_call": 0.73686971875
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 32,
+      "mean_ms_per_call": 0.747137375
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 32,
+      "mean_ms_per_call": 0.76073584375
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 32,
+      "mean_ms_per_call": 0.75154009375
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 32,
+      "mean_ms_per_call": 0.7428319375
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 32,
+      "mean_ms_per_call": 0.75451825
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 32,
+      "mean_ms_per_call": 0.78175653125
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 32,
+      "mean_ms_per_call": 0.742011375
+    },
+    {
+      "p": 100000037,
+      "backend": "bsgs",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 32,
+      "mean_ms_per_call": 0.78576809375
+    },
+    {
+      "p": 100000037,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 2,
+      "mean_ms_per_call": 15.68953
+    },
+    {
+      "p": 100000037,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 2,
+      "mean_ms_per_call": 15.740475
+    },
+    {
+      "p": 100000037,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 2,
+      "mean_ms_per_call": 15.667607499999999
+    },
+    {
+      "p": 100000037,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 2,
+      "mean_ms_per_call": 15.682444
+    },
+    {
+      "p": 100000037,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 2,
+      "mean_ms_per_call": 16.1297185
+    },
+    {
+      "p": 100000037,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 2,
+      "mean_ms_per_call": 15.793403000000001
+    },
+    {
+      "p": 100000037,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 2,
+      "mean_ms_per_call": 16.169552
+    },
+    {
+      "p": 100000037,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 2,
+      "mean_ms_per_call": 15.9604135
+    },
+    {
+      "p": 100000037,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 2,
+      "mean_ms_per_call": 16.923068
+    },
+    {
+      "p": 100000037,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 2,
+      "mean_ms_per_call": 16.5870175
+    },
+    {
+      "p": 100000037,
+      "backend": "harvey",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 2,
+      "mean_ms_per_call": 16.3421825
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.004487364999999999
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0039078505
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0040056755
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.003760729
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0038779415
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0039254165
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.004006286
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0038377025
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.003794579
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.003714446
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 2000,
+      "mean_ms_per_call": 0.0038316385
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.30515872580645165
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.2975121451612903
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.29194748387096775
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.2829382258064516
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.28522129032258065
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.3055741774193549
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.2877272419354839
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.30661135483870966
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.28646279032258065
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.3869958225806452
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 62,
+      "mean_ms_per_call": 0.29092953225806456
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 85,
+      "mean_ms_per_call": 0.29342137647058825
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 85,
+      "mean_ms_per_call": 0.30114877647058824
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 85,
+      "mean_ms_per_call": 0.3270444823529412
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 85,
+      "mean_ms_per_call": 0.35866710588235295
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 85,
+      "mean_ms_per_call": 0.2904154352941176
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 85,
+      "mean_ms_per_call": 0.28925936470588237
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 85,
+      "mean_ms_per_call": 0.2978765411764706
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 85,
+      "mean_ms_per_call": 0.2982922
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 85,
+      "mean_ms_per_call": 0.3189846
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 85,
+      "mean_ms_per_call": 0.30153970588235296
+    },
+    {
+      "p": 100000037,
+      "backend": "cornacchia",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 85,
+      "mean_ms_per_call": 0.29616743529411765
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 552.747824
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 572.172577
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 534.46155
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 4,
+      "batch_size": 1,
+      "mean_ms_per_call": 606.879356
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 5,
+      "batch_size": 1,
+      "mean_ms_per_call": 616.488854
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 6,
+      "batch_size": 1,
+      "mean_ms_per_call": 603.079084
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 7,
+      "batch_size": 1,
+      "mean_ms_per_call": 604.428503
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 8,
+      "batch_size": 1,
+      "mean_ms_per_call": 552.080243
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 9,
+      "batch_size": 1,
+      "mean_ms_per_call": 578.508104
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 10,
+      "batch_size": 1,
+      "mean_ms_per_call": 603.158256
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "preparation",
+      "sample": 11,
+      "batch_size": 1,
+      "mean_ms_per_call": 563.749283
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 1,
+      "batch_size": 72,
+      "mean_ms_per_call": 0.3411049583333334
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 2,
+      "batch_size": 72,
+      "mean_ms_per_call": 0.3244936666666667
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 3,
+      "batch_size": 72,
+      "mean_ms_per_call": 0.33522406944444444
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 4,
+      "batch_size": 72,
+      "mean_ms_per_call": 0.31300756944444447
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 5,
+      "batch_size": 72,
+      "mean_ms_per_call": 0.30626706944444443
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 6,
+      "batch_size": 72,
+      "mean_ms_per_call": 0.2988665833333333
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 7,
+      "batch_size": 72,
+      "mean_ms_per_call": 0.3168547638888889
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 8,
+      "batch_size": 72,
+      "mean_ms_per_call": 0.29566868055555556
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 9,
+      "batch_size": 72,
+      "mean_ms_per_call": 0.3495674444444445
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 10,
+      "batch_size": 72,
+      "mean_ms_per_call": 0.3717892361111111
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "prepared_query",
+      "sample": 11,
+      "batch_size": 72,
+      "mean_ms_per_call": 0.2959684166666667
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 1,
+      "batch_size": 1,
+      "mean_ms_per_call": 548.659526
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 2,
+      "batch_size": 1,
+      "mean_ms_per_call": 518.585078
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 3,
+      "batch_size": 1,
+      "mean_ms_per_call": 516.863981
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 4,
+      "batch_size": 1,
+      "mean_ms_per_call": 521.753248
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 5,
+      "batch_size": 1,
+      "mean_ms_per_call": 519.266107
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 6,
+      "batch_size": 1,
+      "mean_ms_per_call": 511.108671
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 7,
+      "batch_size": 1,
+      "mean_ms_per_call": 536.157742
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 8,
+      "batch_size": 1,
+      "mean_ms_per_call": 578.309297
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 9,
+      "batch_size": 1,
+      "mean_ms_per_call": 581.429551
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 10,
+      "batch_size": 1,
+      "mean_ms_per_call": 513.439467
+    },
+    {
+      "p": 100000037,
+      "backend": "schoof",
+      "component": "total",
+      "sample": 11,
+      "batch_size": 1,
+      "mean_ms_per_call": 517.330354
+    }
+  ]
+}

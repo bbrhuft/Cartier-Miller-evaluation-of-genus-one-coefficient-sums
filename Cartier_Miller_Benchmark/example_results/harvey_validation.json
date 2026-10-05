@@ -1,0 +1,69 @@
+{
+  "utc_started": "2026-10-05T12:58:20Z",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "python_executable": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "cpu": "AMD EPYC 9V74 80-Core Processor",
+  "machine": "x86_64",
+  "processor_count": 9,
+  "environment": {
+    "MSYSTEM": null,
+    "WSL_DISTRO_NAME": null,
+    "NTL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null
+  },
+  "kernel_version": {
+    "ntl": "11.5.1",
+    "compiler": "13.3.0",
+    "ntl_threads": 1
+  },
+  "upstream": {
+    "sage_tag": "10.8",
+    "commit": "981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c",
+    "files": [
+      {
+        "name": "recurrences_ntl.cpp",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/src/sage/schemes/hyperelliptic_curves/hypellfrob/recurrences_ntl.cpp",
+        "sha256": "da1bbb94c6bc6b22b292f18634f25ed00083d4c395e1f682eb32e924fcda8353"
+      },
+      {
+        "name": "recurrences_ntl.h",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/src/sage/schemes/hyperelliptic_curves/hypellfrob/recurrences_ntl.h",
+        "sha256": "8d5aaccdc26dfca9a684fe0462e1d596f258dc8f2b10dec4f32b34a539b5243f"
+      },
+      {
+        "name": "hypellfrob.cpp",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/src/sage/schemes/hyperelliptic_curves/hypellfrob/hypellfrob.cpp",
+        "sha256": "bf6b22d74e5b80ee9f7886a429c154dd7adcfd3c3be51118adcbfb42f9b6062c"
+      },
+      {
+        "name": "hypellfrob.h",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/src/sage/schemes/hyperelliptic_curves/hypellfrob/hypellfrob.h",
+        "sha256": "14f7677729c4d3c8eda086122a99094af507312dd7bda7d3bd64efcb264409ac"
+      },
+      {
+        "name": "hypellfrob.pyx",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/src/sage/schemes/hyperelliptic_curves/hypellfrob.pyx",
+        "sha256": "53f9dfa6c4bcf51124354da1295e91931cfc3d05b0fa16b2d4f204fd8a2efd05"
+      },
+      {
+        "name": "COPYING.txt",
+        "url": "https://raw.githubusercontent.com/sagemath/sage/981d7d71a2738778c9e3fb4fdf67a0fd3ce0c19c/COPYING.txt",
+        "sha256": "b9ee4b098b0e631fd53cf1975b08f81c1f9bf369fd0ebbd7277a12813368e5dc"
+      }
+    ]
+  },
+  "validation": {
+    "all_stopping_indices": 10809,
+    "exact_binomial_checks": 2130,
+    "miller_cross_checks": 328,
+    "forced_big_cross_checks": 26,
+    "large_modulus_checks": 7,
+    "invalid_input_checks": 3,
+    "multiplication_order_check": "passed",
+    "primes_all_indices": 92,
+    "status": "passed"
+  },
+  "adapter_sha256": "5cf8114f6711373febff12df8a67ee996c131bc1cbecd6b701e37d305d4dd31b",
+  "miller_source_sha256": "3e79d82c931f41f3091e98f6f65783ce958f13851e2c6f05283efa2152c0634d"
+}
