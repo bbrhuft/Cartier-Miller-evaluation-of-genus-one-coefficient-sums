@@ -2,11 +2,11 @@
 
 A research manuscript and computational project shared for independent mathematical review and possible collaboration.
 
-**Status:** This is an unrefereed research draft with substantial generative-AI assistance. Numerical checks support the formulas, but do not replace independent review of the proofs. The precise novelty of the exceptional normalization remains open to specialist assessment.
+**Status:** This is an unrefereed research draft created with substantial generative-AI assistance. Numerical checks support the formulas, but do not replace independent review of the proofs. The precise novelty of this work remains open to specialist assessment.
 
-## What the project does
+## What the evaluation does
 
-Cartier–Miller evaluates certain large truncated polynomial-power sums modulo a prime through elliptic-curve arithmetic, rather than accumulating their terms individually.
+Cartier–Miller evaluates certain large truncated polynomial-power sums modulo prime through elliptic-curve arithmetic in $O(\log p)$ complexity after trace preparation; combined with Schoof’s algorithm, this yields deterministic polynomial time in $log p$. 
 
 Let $p\geq7$ be prime, put $h=(p-1)/2$, and let $f\in\mathbb F_p[w]$ be squarefree of degree three or four, initially normalized by $f(0)=1$. Write
 
@@ -25,6 +25,12 @@ S_f(\lambda)
 $$
 
 The cutoff is fixed at degree below $p$; the evaluation point varies. This is not a general algorithm for arbitrary stopping indices in central-binomial sums. Inputs with $f(0)\ne0$ can be normalized, with the factor $f(0)^h$ restored afterward.
+
+**References**:
+
+Cartier, P. (1957). Une nouvelle opération sur les formes différentielles. *Comptes Rendus de l’Académie des Sciences*, 244, 426–428. https://zbmath.org/?q=an:0077.04502
+
+Miller, V. S. (2004). The Weil pairing, and its efficient calculation. *Journal of Cryptology*, 17(4), 235–261. https://doi.org/10.1007/s00145-004-0315-8  
 
 ## The identity and exceptional case
 
