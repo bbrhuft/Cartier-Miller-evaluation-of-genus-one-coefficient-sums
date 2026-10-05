@@ -12,7 +12,7 @@ Its potential contribution lies in the explicit coefficient-sum identity, the ex
 
 ## What the evaluation does
 
-Cartier–Miller evaluates certain large truncated polynomial-power sums modulo a prime through elliptic-curve arithmetic in $O(\log p)$ complexity after trace preparation; combined with Schoof’s algorithm, this yields deterministic polynomial time in $log p$. 
+Cartier–Miller evaluates certain large truncated polynomial-power sums modulo a prime through elliptic-curve arithmetic in $O(\log p)$ complexity after trace preparation; combined with Schoof’s algorithm (in the worked example) this yields deterministic polynomial time in $log p$. 
 
 Let $p\geq7$ be prime, put $h=(p-1)/2$, and let $f\in\mathbb F_p[w]$ be squarefree of degree three or four, initially normalized by $f(0)=1$. Write
 
