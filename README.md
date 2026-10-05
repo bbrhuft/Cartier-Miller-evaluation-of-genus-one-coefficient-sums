@@ -65,7 +65,7 @@ Practical exact trace preparation may instead use SEA or an automatic routine su
 
 ![Illustrative cost complexity of Cartier-Miller with Shoof and SEA prep compared to Harvey BGS](https://github.com/bbrhuft/Cartier-Miller-evaluation-of-genus-one-coefficient-sums/blob/main/Cartier-Miller-With-SEA.jpg) 
 
-Illustrative cost complexity of Cartier-Miller with Shoof (dotted) or SEA (solid) point counting compared to Bostan-Gaudry-Schost (BGS). 
+Illustrative cost complexity of Cartier-Miller with Shoof (dotted) or SEA (solid) point counting compared SageMath's Harvey interval-product kernel, using a Bostan–Gaudry–Schost BGS) based recurrence technique. 
 
 ## Worked application: the original quarter-point sum
 
