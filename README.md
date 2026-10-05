@@ -2,6 +2,12 @@
 
 A research manuscript and computational project shared for independent mathematical review and possible collaboration.
 
+The work presents an explicit algorithmic synthesis for evaluating certain large truncated polynomial-power sums modulo a prime \(p\). For the admissible genus-one inputs covered by the theorem, it evaluates \(T_f(\mu)\) in \(O(\log p)\) field operations after preparing the curve and its exact Frobenius trace. 
+
+The construction combines three established pillars: Cartier and characteristic-\(p\) descent theory, differentiated Miller recurrences, and elliptic-curve point counting. 
+
+Its potential contribution lies in the explicit coefficient-sum identity, the exact normalization of the exceptional case, and their computational application. Whether these results are new or already implicit in the existing literature remains a question for independent review.
+
 **Status:** This is an unrefereed research draft created with substantial generative-AI assistance. Numerical checks support the formulas, but do not replace independent review of the proofs. The precise novelty of this work remains open to specialist assessment.
 
 ## What the evaluation does
