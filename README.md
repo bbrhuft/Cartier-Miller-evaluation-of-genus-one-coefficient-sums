@@ -73,22 +73,6 @@ Practical exact trace preparation may instead use SEA or an automatic routine su
 
 Illustrative cost complexity of Cartier-Miller with Shoof (dotted) or SEA (solid) point counting compared SageMath's Harvey interval-product kernel, using a Bostan–Gaudry–Schost (BGS) based recurrence technique. 
 
-Table 1 is a quarter-point pilot run for seven primes $p\equiv1\pmod4$, with $n=(p-1)/4$, for Cartier-Miller v SageMath 10.8 Harvey `hypellfrob` interval-product kernel. Both implementations compute $B_n$, $a_n$ and $U_p(n)$, including per-input preparation. 
-
-**Table 1. Complete quarter-point evaluation in milliseconds**
-
-| Prime $p$ | Stopping index $n$ | Cartier–Miller Python | Harvey BGS C++ |
-|--:|--:|--:|--:|
-| 97 | 24 | 0.05 | 0.01 |
-| 1,009 | 252 | 0.06 | 0.05 |
-| 10,009 | 2,502 | 0.07 | 0.10 |
-| 100,049 | 25,012 | 0.09 | 0.54 |
-| 1,000,033 | 250,008 | 0.10 | 1.78 |
-| 10,000,121 | 2,500,030 | 0.11 | 4.44 |
-| 100,000,037 | 25,000,009 | 0.29 | 16.19 |
-
-*See paper for a detailed explanation of this pilot benchmark*. 
-
 ## Worked application: the original quarter-point sum
 
 For $p=4n+1\geq13$, define
@@ -106,6 +90,22 @@ U_p(n)\equiv4B_n+\frac94a_n\pmod p.
 $$
 
 At $p=97$, the example gives $n=24$, $B_n=33$, $a_n=79$ and $U_p(n)=43$. Computing both the prefix and boundary is essential to evaluating the complete weighted sum.
+
+Table 1 is a quarter-point pilot run for seven primes $p\equiv1\pmod4$, with $n=(p-1)/4$, for Cartier-Miller v SageMath 10.8 Harvey `hypellfrob` interval-product kernel. Both implementations compute $B_n$, $a_n$ and $U_p(n)$, including per-input preparation. 
+
+**Table 1. Complete quarter-point evaluation in milliseconds**
+
+| Prime $p$ | Stopping index $n$ | Cartier–Miller Python | Harvey BGS C++ |
+|--:|--:|--:|--:|
+| 97 | 24 | 0.05 | 0.01 |
+| 1,009 | 252 | 0.06 | 0.05 |
+| 10,009 | 2,502 | 0.07 | 0.10 |
+| 100,049 | 25,012 | 0.09 | 0.54 |
+| 1,000,033 | 250,008 | 0.10 | 1.78 |
+| 10,000,121 | 2,500,030 | 0.11 | 4.44 |
+| 100,000,037 | 25,000,009 | 0.29 | 16.19 |
+
+*See paper for a detailed explanation of this pilot benchmark*. 
 
 ## Validation and benchmarks
 
