@@ -61,7 +61,11 @@ T_{\mathrm{total}}
 +O\!\left(N_q(\log p)^3\right).
 $$
 
-Practical exact trace preparation may instead use SEA or an automatic routine such as PARI/GP's `ellap`. Such choices do not replace Schoof in the stated deterministic worst-case proof. Complexity illustrations are not measured timings.
+Practical exact trace preparation may instead use SEA or an automatic routine such as PARI/GP's `ellap`, replacing Schoof in the stated deterministic worst-case proof. Complexity illustrations are not measured timings.
+
+![Illustrative cost complexity of Cartier-Miller with Shoof and SEA prep compared to Harvey BGS](https://github.com/bbrhuft/Cartier-Miller-evaluation-of-genus-one-coefficient-sums/blob/main/Cartier-Miller-With-SEA.jpg) 
+
+Illustrative cost complexity of Cartier-Miller with Shoof (dotted) or SEA (solid) point counting compared to Bostan-Gaudry-Schost (BGS). 
 
 ## Worked application: the original quarter-point sum
 
