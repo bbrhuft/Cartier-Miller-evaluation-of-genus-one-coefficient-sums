@@ -1,10 +1,10 @@
 # Cartier–Miller evaluation of genus-one coefficient sums
 
-A research manuscript and computational project shared for independent mathematical review and possible collaboration.
+A research manuscript and computational project is shared for independent mathematical review and possible collaboration.
 
-The work presents an explicit algorithmic synthesis for evaluating certain large truncated polynomial-power sums modulo a prime $\(p\)$. For the admissible genus-one inputs covered by the theorem, it evaluates $\(T_f(\mu)\)$ in $\(O(\log p)\)$ field operations after preparing the curve and its exact Frobenius trace. 
+The work presents a method for evaluating certain large truncated polynomial-power sums modulo a prime $\(p\)$. For the admissible genus-one inputs covered by the theorem, it evaluates $\(T_f(\mu)\)$ in $\(O(\log p)\)$ field operations after preparing the curve and its exact Frobenius trace. 
 
-The construction combines three established pillars: Cartier and characteristic-\(p\) descent theory, differentiated Miller recurrences, and elliptic-curve point counting. 
+The construction combines three established pillars: Cartier and characteristic $p$ descent theory, differentiated Miller recurrences, and elliptic-curve point counting. 
 
 Its potential contribution lies in the explicit coefficient-sum identity, the exact normalization of the exceptional case, and their computational application. Whether these results are new or already implicit in the existing literature remains a question for independent review.
 
@@ -73,11 +73,11 @@ T_{\mathrm{total}}
 +O\!\left(N_q(\log p)^3\right).
 $$
 
-Practical exact trace preparation may instead use SEA or an automatic routine such as PARI/GP's `ellap`, replacing Schoof in the stated deterministic worst-case proof. Complexity illustrations are not measured timings.
+Practical exact trace preparation may instead use SEA or an automatic routine such as PARI/GP's `ellap`, replacing Schoof in the stated deterministic worst-case proof. 
 
 ![Illustrative cost complexity of Cartier-Miller with Shoof and SEA prep compared to Harvey BGS](https://github.com/bbrhuft/Cartier-Miller-evaluation-of-genus-one-coefficient-sums/blob/main/Cartier-Miller-With-SEA.jpg) 
 
-Illustrative cost complexity of Cartier-Miller with Shoof (dotted) or SEA (solid) point counting compared SageMath's Harvey interval-product kernel, using a Bostan–Gaudry–Schost (BGS) based recurrence technique. 
+Illustrative cost complexity of Cartier-Miller with Shoof (dotted) or SEA (solid) point counting compared SageMath's Harvey interval-product kernel, using a Bostan–Gaudry–Schost (BGS) based recurrence technique. Complexity illustrations are not measured timings.
 
 ## Worked application: the original quarter-point sum
 
@@ -133,4 +133,4 @@ Please open an issue to discuss a proof gap, counterexample, literature connecti
 
 Generative AI was used extensively in mathematical exploration, programming, computational checking and manuscript preparation under the author's direction. This project is shared transparently to invite human assessment and contribution; AI-generated feedback is not human peer review.
 
-The manuscript contains the full proofs, mathematical references and benchmark details. This project does not claim to introduce the Cartier operator, Miller recurrence, characteristic-$p$ additive transfer or point-counting algorithms.
+The manuscript contains the full proofs, mathematical references and benchmark details. This project does not claim to introduce the Cartier operator, Miller recurrence, characteristic $p$ additive transfer or point-counting algorithms.
