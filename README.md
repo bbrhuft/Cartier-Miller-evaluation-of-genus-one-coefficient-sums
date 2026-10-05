@@ -105,7 +105,7 @@ The retained pilot benchmark compares complete quarter-point evaluations with a 
 
 The pilot uses specialized Cornacchia/Gauss trace preparation. It does not benchmark a complete Schoof- or SEA-based implementation. The manuscript documents the timing protocol and limitations; the selected timings do not establish universal speedups or real world workload.
 
-Table 1 is a quarter-point pilot run for seven primes $p\equiv1\pmod4$, with $n=(p-1)/4$, for Cartier-Miller v SageMath 10.8 Harvey `hypellfrob` interval-product kernel. Both implementations compute $B_n$, $a_n$ and $U_p(n)$, including per-input preparation.
+Table 1 is a quarter-point pilot run for seven primes $p\equiv1\pmod4$, with $n=(p-1)/4$, for Cartier-Miller v SageMath 10.8 Harvey `hypellfrob` interval-product kernel, which uses the Bostan–Gaudry–Schost algorithm (BGS). Both implementations compute $B_n$, $a_n$ and $U_p(n)$, including per-input preparation.
 
 **Table 1. Complete quarter-point evaluation in milliseconds**
 
