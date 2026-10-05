@@ -93,6 +93,14 @@ At $p=97$, the example gives $n=24$, $B_n=33$, $a_n=79$ and $U_p(n)=43$. Computi
 
 Table 1 is a quarter-point pilot run for seven primes $p\equiv1\pmod4$, with $n=(p-1)/4$, for Cartier-Miller v SageMath 10.8 Harvey `hypellfrob` interval-product kernel. Both implementations compute $B_n$, $a_n$ and $U_p(n)$, including per-input preparation. 
 
+## Validation and benchmarks
+
+The manuscript reports checks against direct polynomial expansion, independent point counts, kernel identities and an elementary rational-point sum. Reported generic tests include 20,316 admissible queries, with 368 exceptional cases. An independent point-sum verifier agreed on 4,357 queries, including 155 exceptional cases. These checks arose within the AI-assisted research programme.
+
+The retained pilot benchmark compares complete quarter-point evaluations with a C++ adapter to SageMath's Harvey interval-product kernel, using BGS-based recurrence techniques. Both methods compute the prefix, boundary and weighted sum, including their per-prime preparation. This compares a recurrence task, not Harvey's full Kedlaya algorithm.
+
+The pilot uses specialized Cornacchia/Gauss trace preparation. It does not benchmark a complete Schoof- or SEA-based implementation. The manuscript documents the timing protocol and limitations; the selected timings do not establish universal speedups or real world workload.
+
 **Table 1. Complete quarter-point evaluation in milliseconds**
 
 | Prime $p$ | Stopping index $n$ | Cartier–Miller Python | Harvey BGS C++ |
@@ -106,14 +114,6 @@ Table 1 is a quarter-point pilot run for seven primes $p\equiv1\pmod4$, with $n=
 | 100,000,037 | 25,000,009 | 0.29 | 16.19 |
 
 *See paper for a detailed explanation of this pilot benchmark*. 
-
-## Validation and benchmarks
-
-The manuscript reports checks against direct polynomial expansion, independent point counts, kernel identities and an elementary rational-point sum. Reported generic tests include 20,316 admissible queries, with 368 exceptional cases. An independent point-sum verifier agreed on 4,357 queries, including 155 exceptional cases. These checks arose within the AI-assisted research programme.
-
-The retained pilot benchmark compares complete quarter-point evaluations with a C++ adapter to SageMath's Harvey interval-product kernel, using BGS-based recurrence techniques. Both methods compute the prefix, boundary and weighted sum, including their per-prime preparation. This compares a recurrence task, not Harvey's full Kedlaya algorithm.
-
-The pilot uses specialized Cornacchia/Gauss trace preparation. It does not benchmark a complete Schoof- or SEA-based implementation. The manuscript documents the timing protocol and limitations; the selected timings do not establish universal speedups or real world workload.
 
 ## Review and collaboration
 
