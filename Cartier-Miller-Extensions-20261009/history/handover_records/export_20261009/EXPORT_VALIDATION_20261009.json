@@ -1,0 +1,105 @@
+{
+  "date": "2026-10-09",
+  "scope": "9 October continuation: hash/smoke verifier, rounded-third validator (recorded separately in its results/validation.json), fresh transport cross-check, unchanged CLI examples; no exhaustive older suites rerun; no benchmark",
+  "pre_change_verify_handover": {
+    "status": "passed",
+    "hashed_files": 321,
+    "note": "run on the received archive before any edit"
+  },
+  "rounded_third_validator": {
+    "status": "passed",
+    "limit": 20000,
+    "primes_2_mod_3": 1136,
+    "dense_power_checks": 57,
+    "contrast_primes_1_mod_3": 330,
+    "failures": 0,
+    "source_sha256": {
+      "validate_rounded_third.py": "df7447ad4e836cfe15745aea0ee79f8e92aeeeef859f824f60ee35ab9cc558de",
+      "retained elliptic_prefix.py": "3e79d82c931f41f3091e98f6f65783ce958f13851e2c6f05283efa2152c0634d"
+    }
+  },
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-I",
+        "verify_handover.py"
+      ],
+      "returncode": 0,
+      "stdout_tail": "{\n  \"status\": \"passed\",\n  \"hashed_files\": 327,\n  \"fixtures\": \"p=73 target, normalized cubic, B=0-chain rejections, ineligible primes, 63-bit member, eight exact p=97 witnesses, rounded-third boundary at seven primes\",\n  \"scope\": \"hash verification and small correctness smoke check only; not the validation suite\",\n  \"python\": \"3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]\",\n  \"platform\": \"Linux-6.18.44-fc-v80-x86_64-with-glibc2.39\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-I",
+        "research/rounded_third_boundary_20261009/independent_transport_check.py"
+      ],
+      "returncode": 0,
+      "stdout_tail": "transport ok 432 bad 0 | depth-one A=0 family checks 36\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-E",
+        "-s",
+        "research/depth_two_recognition_20261006/core/cli.py",
+        "--p",
+        "17",
+        "--short",
+        "8",
+        "2"
+      ],
+      "returncode": 0,
+      "stdout_tail": "tial_scale\": 1\n          },\n          {\n            \"source\": [\n              11,\n              5\n            ],\n            \"root\": 9,\n            \"target\": [\n              16,\n              0\n            ],\n            \"differential_scale\": 1\n          }\n        ],\n        \"length\": 2,\n        \"beta_multiplier\": 2\n      },\n      \"recognition_field_work\": \"O(1), excludes trace/prime validation\",\n      \"square_root_search_used\": false\n    }\n  ],\n  \"scope\": \"ordinary A=0,p=1mod3 or B=0,p=1mod4 seeded rational depth<=2 closure\",\n  \"graph_search_used\": false,\n  \"square_root_search_used\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-E",
+        "-s",
+        "research/depth_two_recognition_20261006/core/cli.py",
+        "--p",
+        "13",
+        "--f",
+        "1",
+        "12",
+        "0",
+        "9",
+        "--trusted-trace",
+        "-2",
+        "--mu",
+        "7"
+      ],
+      "returncode": 0,
+      "stdout_tail": "  \"beta_multiplier\": 3\n    },\n    \"recognition_field_work\": \"O(1), excludes trace/prime validation\",\n    \"square_root_search_used\": false\n  },\n  \"trusted_exact_trace\": -2,\n  \"status\": \"prepared_from_caller_trusted_trace\",\n  \"query\": {\n    \"status\": \"computed_from_trusted_data\",\n    \"p\": 13,\n    \"f\": [\n      1,\n      12,\n      0,\n      9\n    ],\n    \"mu\": 7,\n    \"lambda\": 2,\n    \"H\": 11,\n    \"K\": 8,\n    \"T\": 2,\n    \"S\": 2,\n    \"ordinary\": true,\n    \"preparation_method\": \"direct_depth_two_caller_supplied_exact_trace\",\n    \"query_field_operations\": \"O(1)\",\n    \"root_finding_included\": false\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-E",
+        "-s",
+        "research/depth_three_recognition_20261007/core/cli.py",
+        "--p",
+        "73",
+        "--f",
+        "1",
+        "4",
+        "0",
+        "37",
+        "--cm",
+        "--unbounded-sign-test",
+        "--mu",
+        "9"
+      ],
+      "returncode": 0,
+      "stdout_tail": " prime: recognition O(1); expected O(log^2 p) field work including square-root searches and <=5 expected raw sign trials; Cornacchia polynomial bit work; capped attempts may be inconclusive\"\n  },\n  \"status\": \"prepared_by_cm_trace\",\n  \"query\": {\n    \"status\": \"exact_mod_p\",\n    \"p\": 73,\n    \"f\": [\n      1,\n      4,\n      0,\n      37\n    ],\n    \"mu\": 9,\n    \"lambda\": 65,\n    \"H\": 10,\n    \"K\": 55,\n    \"T\": 3,\n    \"S\": 3,\n    \"ordinary\": true,\n    \"preparation_method\": \"direct_depth_three_cm_cornacchia_las_vegas_sign\",\n    \"query_field_operations\": \"O(1)\",\n    \"root_finding_included\": false\n  }\n}\n",
+      "stderr": ""
+    }
+  ],
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "note": "CLI examples run with python -E -s because they import sibling modules from their own directory; -I disables that."
+}

@@ -1,0 +1,9 @@
+{
+  "RECOGNITION_THEORY.md": "b4ef8e46b50ddba5bab3e67b4e6bd0ef0063dabf0c5314313ccefcd0f332ec44",
+  "check_integer_invariants.py": "459fe79552d3240a3a97409d2934ce5e56d818398d96777965d00bf6d70d0626",
+  "check_recognition.py": "1466463cc0384c5f756477e5c1a2ce64a869f12a24bb24c6497ec258a1ca6d83",
+  "exceptional_reductions.csv": "feabd04fa758f764cb3574d3354a267b5199daad75f990a4034f694669bf097d",
+  "integer_invariants.json": "9160687134209a5f1de92efcd9d93f96d6ee44e7c2a6e35d256d83e984c638df",
+  "parameter_checks.csv": "cc844a90f9840fcdaba894aabb7c7365ca9227aa97c7a0203967b4ca95ff20b4",
+  "validation.json": "258b6258d3585981fdf7cb059db63214cf12d9f8ee38dbeb6a1c9e6661230ee4"
+}

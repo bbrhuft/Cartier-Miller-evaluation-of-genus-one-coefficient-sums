@@ -1,0 +1,17 @@
+{
+  "consolidated_date": "2026-10-07",
+  "original_archive_sha256": "58cfe0e72b41f6858796da36f96098154ce20b2052421e970f8a75bcd7be140d",
+  "repository_url": null,
+  "repository_commit": null,
+  "github_inspected": false,
+  "manuscript": {
+    "relative_path": "previous_handover/original_handover/manuscript/Cartier_Miller_Paper_Revised_20261005.pdf",
+    "sha256": "196800df388896700e63d4733b4fc3de2cc9541158e1308cfe2523033ff9d700",
+    "preserved_byte_for_byte": true
+  },
+  "original_validation": "historical_validation; inherited worker report also retained under independent",
+  "current_validation": "research/depth_three_recognition_20261007/core/validation.json and consolidation_validation.json",
+  "pari_available_for_current_validation": false,
+  "symbolic_sympy_scripts_rerun": false,
+  "new_performance_benchmark": false
+}

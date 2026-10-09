@@ -1,0 +1,44 @@
+{
+  "transport_cases": 15872,
+  "transport_primes": [
+    7,
+    11,
+    13,
+    17,
+    19,
+    23,
+    29,
+    31,
+    37,
+    41,
+    43,
+    47,
+    53,
+    59
+  ],
+  "singular_quotients_skipped": 0,
+  "dual_cases": 15872,
+  "chain_cases": 384,
+  "chain_edges": 960,
+  "family_members": {
+    "depth1_B0": 2000,
+    "depth1_A0": 2028,
+    "depth2_B0": 1504,
+    "depth2_A0": 1824
+  },
+  "family_singular_skipped": {
+    "depth1_B0": 0,
+    "depth1_A0": 0,
+    "depth2_B0": 0,
+    "depth2_A0": 0
+  },
+  "failures": 0,
+  "status": "passed",
+  "seed": 20261009,
+  "scope": "replacement reconstruction of the documented closure checks; independent dense powers; finite evidence, not proof",
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.44-fc-v80-x86_64-with-glibc2.39",
+  "source_sha256": {
+    "check_closure_replacement.py": "aba56c08ae14d685841c715692595f0e74105b2b291f18c5156b14abc4690c5c"
+  }
+}

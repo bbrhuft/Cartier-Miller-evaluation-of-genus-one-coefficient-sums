@@ -1,0 +1,393 @@
+{
+  "status": "passed",
+  "prime_range": "all primes 7 <= p <= 251",
+  "maximum_depth": 4,
+  "class_key": "minimum coefficient pair over (A,B)->(d^2 A,d^3 B), d nonzero square",
+  "seed_scope": "every nonzero A for B=0,p=1mod4 and every nonzero B for A=0,p=1mod3; all special twists",
+  "root_discovery": "independent brute-force F_p scan, O(p) per displayed model; validation only",
+  "pruned_equals_unpruned_minimal_class_depths": true,
+  "checked_edges": 514,
+  "coefficient_models": 12974,
+  "all_isomorphism_classes": 12288,
+  "depth3_new_classes": 64,
+  "depth4_new_classes": 32,
+  "depth3_new_j_total": 32,
+  "depth4_new_j_total": 16,
+  "depth3_primes_with_new_j": [
+    73,
+    89,
+    97,
+    113,
+    193,
+    233,
+    241
+  ],
+  "depth4_primes_with_new_j": [
+    193,
+    241
+  ],
+  "saturated_maximum_minimal_depth": 4,
+  "saturated_classes_added_after_depth4": 0,
+  "saturation_scope": "finite true F_p isomorphism graph completely exhausted at these primes only",
+  "ordinary_seed_trace_but_unreachable_classes": 780,
+  "ordinary_seed_trace_but_unreachable_with_rational_two_torsion": 496,
+  "depth3_first_new_j_example": {
+    "p": 73,
+    "depth": 3,
+    "seed": [
+      0,
+      7
+    ],
+    "forward_models": [
+      [
+        0,
+        7
+      ],
+      [
+        39,
+        8
+      ],
+      [
+        50,
+        22
+      ],
+      [
+        4,
+        16
+      ]
+    ],
+    "forward_roots": [
+      42,
+      54,
+      1
+    ],
+    "target": [
+      4,
+      16
+    ],
+    "target_canonical_key": [
+      1,
+      2
+    ],
+    "target_square_scale_to_key": 37,
+    "j": 20,
+    "H": 10,
+    "beta": 4,
+    "inverse_roots": [
+      71,
+      6,
+      43
+    ],
+    "inverse_endpoint": [
+      0,
+      7
+    ],
+    "inverse_beta_multiplier": 15,
+    "differential_scales": [
+      1,
+      1,
+      1
+    ],
+    "new_j_at_depth": true
+  },
+  "depth4_first_new_j_example": {
+    "p": 193,
+    "depth": 4,
+    "seed": [
+      0,
+      11
+    ],
+    "forward_models": [
+      [
+        0,
+        11
+      ],
+      [
+        61,
+        49
+      ],
+      [
+        105,
+        132
+      ],
+      [
+        125,
+        155
+      ],
+      [
+        131,
+        85
+      ]
+    ],
+    "forward_roots": [
+      47,
+      12,
+      118,
+      56
+    ],
+    "target": [
+      131,
+      85
+    ],
+    "target_canonical_key": [
+      1,
+      25
+    ],
+    "target_square_scale_to_key": 118,
+    "j": 61,
+    "H": 191,
+    "beta": 81,
+    "inverse_roots": [
+      81,
+      21,
+      2,
+      160
+    ],
+    "inverse_endpoint": [
+      0,
+      74
+    ],
+    "inverse_beta_multiplier": 56,
+    "differential_scales": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "new_j_at_depth": true
+  },
+  "same_trace_reachability_counterexample": {
+    "p": 13,
+    "input": [
+      1,
+      1
+    ],
+    "easy_seed_same_trace": [
+      7,
+      0
+    ],
+    "exact_trace": -4,
+    "input_H_beta": [
+      9,
+      8
+    ],
+    "full_rational_two_isogeny_component": [
+      {
+        "model": [
+          1,
+          1
+        ],
+        "outgoing": [
+          {
+            "root": 7,
+            "target_model": [
+              2,
+              3
+            ],
+            "target_class": [
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      {
+        "model": [
+          2,
+          3
+        ],
+        "outgoing": [
+          {
+            "root": 12,
+            "target_model": [
+              3,
+              12
+            ],
+            "target_class": [
+              1,
+              1
+            ]
+          }
+        ]
+      }
+    ],
+    "status": "same trace and rational two-torsion do not imply easy-seed reachability"
+  },
+  "old_j_new_isomorphism_class_examples": [],
+  "unreached_ordinary_examples": [
+    {
+      "p": 7,
+      "A": 1,
+      "B": 1,
+      "j": 1,
+      "trace": 3,
+      "H": 3,
+      "beta": 3,
+      "ordinary": true,
+      "rational_two_torsion_roots": 0,
+      "minimum_depth_through4": "",
+      "minimum_depth_saturated": "",
+      "matches_seed_trace": false
+    },
+    {
+      "p": 7,
+      "A": 1,
+      "B": 3,
+      "j": 5,
+      "trace": 2,
+      "H": 2,
+      "beta": 3,
+      "ordinary": true,
+      "rational_two_torsion_roots": 1,
+      "minimum_depth_through4": "",
+      "minimum_depth_saturated": "",
+      "matches_seed_trace": false
+    },
+    {
+      "p": 7,
+      "A": 1,
+      "B": 4,
+      "j": 5,
+      "trace": -2,
+      "H": 5,
+      "beta": 3,
+      "ordinary": true,
+      "rational_two_torsion_roots": 1,
+      "minimum_depth_through4": "",
+      "minimum_depth_saturated": "",
+      "matches_seed_trace": false
+    },
+    {
+      "p": 11,
+      "A": 1,
+      "B": 1,
+      "j": 9,
+      "trace": -2,
+      "H": 9,
+      "beta": 9,
+      "ordinary": true,
+      "rational_two_torsion_roots": 1,
+      "minimum_depth_through4": "",
+      "minimum_depth_saturated": "",
+      "matches_seed_trace": false
+    },
+    {
+      "p": 11,
+      "A": 1,
+      "B": 2,
+      "j": 2,
+      "trace": -4,
+      "H": 7,
+      "beta": 6,
+      "ordinary": true,
+      "rational_two_torsion_roots": 3,
+      "minimum_depth_through4": "",
+      "minimum_depth_saturated": "",
+      "matches_seed_trace": false
+    },
+    {
+      "p": 11,
+      "A": 1,
+      "B": 3,
+      "j": 3,
+      "trace": -6,
+      "H": 5,
+      "beta": 1,
+      "ordinary": true,
+      "rational_two_torsion_roots": 1,
+      "minimum_depth_through4": "",
+      "minimum_depth_saturated": "",
+      "matches_seed_trace": false
+    },
+    {
+      "p": 13,
+      "A": 1,
+      "B": 1,
+      "j": 7,
+      "trace": -4,
+      "H": 9,
+      "beta": 8,
+      "ordinary": true,
+      "rational_two_torsion_roots": 1,
+      "minimum_depth_through4": "",
+      "minimum_depth_saturated": "",
+      "matches_seed_trace": true
+    },
+    {
+      "p": 13,
+      "A": 1,
+      "B": 5,
+      "j": 3,
+      "trace": 5,
+      "H": 5,
+      "beta": 1,
+      "ordinary": true,
+      "rational_two_torsion_roots": 0,
+      "minimum_depth_through4": "",
+      "minimum_depth_saturated": "",
+      "matches_seed_trace": true
+    },
+    {
+      "p": 13,
+      "A": 1,
+      "B": 6,
+      "j": 9,
+      "trace": 1,
+      "H": 1,
+      "beta": 9,
+      "ordinary": true,
+      "rational_two_torsion_roots": 0,
+      "minimum_depth_through4": "",
+      "minimum_depth_saturated": "",
+      "matches_seed_trace": false
+    },
+    {
+      "p": 17,
+      "A": 1,
+      "B": 2,
+      "j": 1,
+      "trace": -6,
+      "H": 11,
+      "beta": 5,
+      "ordinary": true,
+      "rational_two_torsion_roots": 1,
+      "minimum_depth_through4": "",
+      "minimum_depth_saturated": "",
+      "matches_seed_trace": false
+    },
+    {
+      "p": 17,
+      "A": 1,
+      "B": 3,
+      "j": 3,
+      "trace": 1,
+      "H": 1,
+      "beta": 6,
+      "ordinary": true,
+      "rational_two_torsion_roots": 0,
+      "minimum_depth_through4": "",
+      "minimum_depth_saturated": "",
+      "matches_seed_trace": false
+    },
+    {
+      "p": 17,
+      "A": 1,
+      "B": 4,
+      "j": 4,
+      "trace": 4,
+      "H": 4,
+      "beta": 12,
+      "ordinary": true,
+      "rational_two_torsion_roots": 1,
+      "minimum_depth_through4": "",
+      "minimum_depth_saturated": "",
+      "matches_seed_trace": false
+    }
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "source_sha256": "635d7ac6a8b8c189e30474b0029f756050376fcb76068f599765be8b3e801e0c",
+  "benchmark": false
+}

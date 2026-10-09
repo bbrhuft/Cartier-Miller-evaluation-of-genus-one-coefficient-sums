@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "scope": "new sign-bound certificates and code changes; not a benchmark",
+  "finite_lemma_witnesses": 8,
+  "sampler_base_models": 40,
+  "uncovered_status_regressions": 8,
+  "counterexample": {
+    "p": 97,
+    "A": 0,
+    "B": 19,
+    "order": 112,
+    "trace": -14,
+    "candidate_orders": [
+      84,
+      112
+    ],
+    "all_points_killed_by": 28,
+    "why_retained": "generic sign trial can be inconclusive forever; recognized depth-three premise is essential"
+  },
+  "forced_cap_status": "trace_sign_inconclusive",
+  "environment": {
+    "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+    "platform": "Linux-6.18.44-fc-v80-x86_64-with-glibc2.39"
+  },
+  "source_sha256": {
+    "depth_three_recognize.py": "86832fee1aacec26b21a76050f521b7995dd699c32c3ba1ba0fe3c23b3f719e2",
+    "cli.py": "c137e17c9ba64dc0f1c1ef86fa02298b5cab3c2ff7f8413ded7b27702c3b4e3c",
+    "validate_consolidation.py": "47ce2dcaddac406dc26cbeb5e0fccab8fa5f28c63e665d5e7f4bd573ecfe7769"
+  }
+}

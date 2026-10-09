@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-09",
+  "layout": "this release, run from a scratch copy so that retained evidence files were not overwritten",
+  "runner": "python -B -E -s, 17 jobs in parallel on 2 cores; wall times are indicative only and are not a benchmark",
+  "all_passed": true,
+  "jobs": [
+    {
+      "job": "verify",
+      "command": "python verify_release.py",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 0.7
+    },
+    {
+      "job": "branch",
+      "command": "python research/branch_point_20261006/validate.py",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 20.0
+    },
+    {
+      "job": "d2_direct",
+      "command": "python research/depth_two_recognition_20261006/core/validate_direct.py",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 6.9
+    },
+    {
+      "job": "d2_recog",
+      "command": "python research/depth_two_recognition_20261006/theory/check_recognition.py",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 1.0
+    },
+    {
+      "job": "d2_int",
+      "command": "python research/depth_two_recognition_20261006/theory/check_integer_invariants.py",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 0.3
+    },
+    {
+      "job": "d2_audit",
+      "command": "python research/depth_two_recognition_20261006/audit/audit_depth_three.py",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 10.9
+    },
+    {
+      "job": "d3_validate",
+      "command": "python research/depth_three_recognition_20261007/core/validate_depth_three.py",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 29.3
+    },
+    {
+      "job": "d3_consol",
+      "command": "python research/depth_three_recognition_20261007/core/validate_consolidation.py",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 1.9
+    },
+    {
+      "job": "d3_int",
+      "command": "python research/depth_three_recognition_20261007/theory/check_integer_invariants_depth3.py",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 0.6
+    },
+    {
+      "job": "d3_derive",
+      "command": "python research/depth_three_recognition_20261007/theory/derive_family.py",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 6.1
+    },
+    {
+      "job": "d3_transport",
+      "command": "python research/depth_three_recognition_20261007/theory/verify_transport.py",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 4.3
+    },
+    {
+      "job": "ind_cartier",
+      "command": "python research/depth_three_recognition_20261007/independent/indep_cartier.py",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 10.1
+    },
+    {
+      "job": "ind_attack",
+      "command": "python research/depth_three_recognition_20261007/independent/indep_attack.py",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 7.3
+    },
+    {
+      "job": "ind_extra",
+      "command": "python research/depth_three_recognition_20261007/independent/indep_extra.py",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 15.0
+    },
+    {
+      "job": "ind_symbolic",
+      "command": "python research/depth_three_recognition_20261007/independent/indep_symbolic.py",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 9.7
+    },
+    {
+      "job": "rounded",
+      "command": "python research/rounded_third_boundary_20261009/validate_rounded_third.py",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 19.4
+    },
+    {
+      "job": "transport",
+      "command": "python research/rounded_third_boundary_20261009/independent_transport_check.py",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 18.6
+    }
+  ],
+  "optional_dependencies": {
+    "sympy": "1.14.0",
+    "cypari2": "2.2.4",
+    "pari": "2.17.2"
+  },
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.44-fc-v80-x86_64-with-glibc2.39"
+}

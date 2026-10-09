@@ -1,0 +1,126 @@
+{
+  "status": "regression fixtures for the depth-three recognizer; not a uniform-family proof",
+  "family": "depth3_0_disc_-192",
+  "eligible_primes": "p = 1 mod 24",
+  "alpha_1_e_g_eg": [
+    -1095,
+    -540,
+    -540,
+    -420
+  ],
+  "gamma_1_e_g_eg": [
+    -22198,
+    -13860,
+    -16380,
+    -8820
+  ],
+  "beta_multiplier_over_r_1_e_g_eg": [
+    -7,
+    -6,
+    -6,
+    -2
+  ],
+  "p73_target": {
+    "A": 4,
+    "B": 16,
+    "e": 21,
+    "g": 41,
+    "r": 42,
+    "beta_multiplier": 15,
+    "H": 10,
+    "beta": 4,
+    "trace": 10,
+    "forward_roots": [
+      42,
+      54,
+      1
+    ],
+    "reverse_roots": [
+      71,
+      6,
+      43
+    ],
+    "reverse_endpoint": [
+      0,
+      7
+    ]
+  },
+  "p73_normalized_cubic": {
+    "f_low_to_high": [
+      1,
+      4,
+      0,
+      37
+    ],
+    "short_model": [
+      2,
+      55
+    ],
+    "r": 15,
+    "beta_multiplier": 21,
+    "beta": 64,
+    "H": 10,
+    "K": 55,
+    "mu": 9,
+    "T": 3,
+    "cornacchia": {
+      "x": 5,
+      "y": 1,
+      "t0": 10
+    }
+  },
+  "p73_B0_chain_depth3_rejected": [
+    [
+      16,
+      27
+    ],
+    [
+      2,
+      59
+    ],
+    [
+      6,
+      6
+    ],
+    [
+      48,
+      51
+    ],
+    [
+      53,
+      34
+    ],
+    [
+      17,
+      37
+    ],
+    [
+      51,
+      5
+    ],
+    [
+      42,
+      18
+    ]
+  ],
+  "ineligible_prime_examples": [
+    13,
+    37,
+    89,
+    113,
+    167
+  ],
+  "large_prime_example": {
+    "p": 5010494561323287457,
+    "A": 1124631670051949116,
+    "B": 2436829839617862053,
+    "e": 4430896344599208715,
+    "g": 427820977815309078,
+    "r": 4617654584706064830,
+    "beta_multiplier": 1756975745120615708,
+    "t0": 2279614370,
+    "f": 278063772,
+    "x": 1139807185,
+    "y": 278063772
+  }
+}

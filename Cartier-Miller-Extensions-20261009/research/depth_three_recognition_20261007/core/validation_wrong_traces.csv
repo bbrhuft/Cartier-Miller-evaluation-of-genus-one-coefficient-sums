@@ -1,0 +1,5 @@
+trace,case,rejected,error
+11,odd_impossible,True,supplied trace violates the family condition 4p - t^2 = 192 f^2 with f >= 1
+0,zero_impossible,True,supplied trace violates the family condition 4p - t^2 = 192 f^2 with f >= 1
+12,hasse_ok_but_not_192_form,True,supplied trace violates the family condition 4p - t^2 = 192 f^2 with f >= 1
+-10,wrong_sign,True,supplied trace has the wrong sign: a rational point is killed only by p+1-(10)

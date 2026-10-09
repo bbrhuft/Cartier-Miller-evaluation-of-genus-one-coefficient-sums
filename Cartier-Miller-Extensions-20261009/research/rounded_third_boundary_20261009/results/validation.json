@@ -1,0 +1,28 @@
+{
+  "primes_2_mod_3": 1136,
+  "theorem_R_checks": 1136,
+  "corollary_U_checks": 1136,
+  "inversion_checks": 1136,
+  "branch_bridge_checks": 1136,
+  "dense_power_checks": 57,
+  "retained_prefix_checks": 1136,
+  "U_to_a_recoveries": 1135,
+  "p17_degenerate": {
+    "p": 17,
+    "U_L": 7,
+    "B_L": 6,
+    "note": "34/9 = 0 mod 17, so U_p(L) = 4 B_L"
+  },
+  "contrast_primes_1_mod_3": 330,
+  "failures": 0,
+  "limit": 20000,
+  "dense_limit": 600,
+  "status": "passed",
+  "scope": "finite evidence for Theorems R and E and bridge (B6); not proof; no timings",
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.44-fc-v80-x86_64-with-glibc2.39",
+  "source_sha256": {
+    "validate_rounded_third.py": "c187e67f44b40f7b6b9a15ee0509ed09c138b9be0592413260e4eb0df84f92fd",
+    "retained elliptic_prefix.py": "3e79d82c931f41f3091e98f6f65783ce958f13851e2c6f05283efa2152c0634d"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "hashed_files": 131,
+  "fixtures": "p=73 target, normalized cubic, B=0-chain rejections, ineligible primes, 63-bit member, eight exact p=97 witnesses, rounded-third boundary at seven primes",
+  "scope": "hash verification and small correctness smoke check only; not the validation suite",
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.44-fc-v80-x86_64-with-glibc2.39"
+}

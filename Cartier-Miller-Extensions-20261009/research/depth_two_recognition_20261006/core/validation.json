@@ -1,0 +1,117 @@
+{
+  "status": "passed",
+  "counts": {
+    "membership_inputs": 137086,
+    "recognized": 4960,
+    "negative_inputs": 132126,
+    "coefficient_pairs": 4960,
+    "normalized_originals": 66,
+    "branch_queries": 154,
+    "twist_certificates": 9920
+  },
+  "family_counts": {
+    "easy_0": 852,
+    "depth1_0": 852,
+    "easy_1728": 820,
+    "depth2_0": 768,
+    "depth1_1728": 820,
+    "depth2_1728": 848
+  },
+  "range": "all nonsingular short cubics at everyprime7..127; independent seed graph <=2",
+  "seed": 202610062323,
+  "depth3_example": {
+    "p": 73,
+    "short_model": [
+      4,
+      16
+    ],
+    "trace": 10,
+    "beta": 4,
+    "roots": [
+      71,
+      6,
+      43
+    ],
+    "normalized_f": [
+      1,
+      4,
+      0,
+      37
+    ],
+    "normalized_K": 55,
+    "mu": 9,
+    "T": 3,
+    "certificate": {
+      "status": "found",
+      "start": [
+        4,
+        16
+      ],
+      "endpoint": [
+        0,
+        7
+      ],
+      "seed_family": "A=0,p=1mod3",
+      "roots": [
+        71,
+        6,
+        43
+      ],
+      "steps": [
+        {
+          "source": [
+            4,
+            16
+          ],
+          "root": 71,
+          "target": [
+            70,
+            21
+          ],
+          "differential_scale": 1
+        },
+        {
+          "source": [
+            70,
+            21
+          ],
+          "root": 6,
+          "target": [
+            56,
+            64
+          ],
+          "differential_scale": 1
+        },
+        {
+          "source": [
+            56,
+            64
+          ],
+          "root": 43,
+          "target": [
+            0,
+            7
+          ],
+          "differential_scale": 1
+        }
+      ],
+      "length": 3,
+      "beta_multiplier": 15,
+      "max_depth": 3,
+      "statistics": {
+        "root_calls": 5,
+        "split_trials": 5,
+        "polynomial_mod_products": 80,
+        "visited_models": 8,
+        "expanded_models": 5
+      },
+      "root_method": "fixed_degree_randomized_factorization"
+    }
+  },
+  "timing_status": "correctness only, not benchmark",
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "tampered_certificate": "rejected"
+}

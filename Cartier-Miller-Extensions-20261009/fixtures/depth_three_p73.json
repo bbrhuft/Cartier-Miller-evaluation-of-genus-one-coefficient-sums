@@ -1,0 +1,88 @@
+{
+  "status": "retained finite example; not a uniform-family proof",
+  "p": 73,
+  "short_target": {
+    "A": 4,
+    "B": 16,
+    "trace": 10,
+    "H": 10,
+    "beta": 4,
+    "beta_multiplier": 15,
+    "j": 20,
+    "forward_seed": [
+      0,
+      7
+    ],
+    "forward_roots": [
+      42,
+      54,
+      1
+    ],
+    "forward_models": [
+      [
+        0,
+        7
+      ],
+      [
+        39,
+        8
+      ],
+      [
+        50,
+        22
+      ],
+      [
+        4,
+        16
+      ]
+    ],
+    "reverse_roots": [
+      71,
+      6,
+      43
+    ],
+    "reverse_models": [
+      [
+        4,
+        16
+      ],
+      [
+        70,
+        21
+      ],
+      [
+        56,
+        64
+      ],
+      [
+        0,
+        7
+      ]
+    ],
+    "outside_depth_at_most_two": true
+  },
+  "normalized_cubic": {
+    "coefficients_low_to_high": [
+      1,
+      4,
+      0,
+      37
+    ],
+    "short_model": [
+      2,
+      55
+    ],
+    "square_scaling_d_from_target": 16,
+    "H": 10,
+    "K": 55,
+    "mu": 9,
+    "lambda_inverse_mu": 65,
+    "T": 3,
+    "input_to_easy_roots": [
+      41,
+      23,
+      31
+    ]
+  },
+  "warning": "Kernel roots are short-model x coordinates, not w roots. Do not reuse unscaled roots for the normalized cubic."
+}

@@ -1,0 +1,68 @@
+{
+  "scope": "Packaging hash/fixture checks and CLI examples only; no exhaustive suites rerun, no benchmark",
+  "checks": [
+    {
+      "command": [
+        "python",
+        "verify_handover.py"
+      ],
+      "status": "passed",
+      "stdout": "{\n  \"status\": \"passed\",\n  \"hashed_files\": 320,\n  \"fixtures\": \"p=73 target, normalized cubic, B=0-chain rejections, ineligible primes, 63-bit member, eight exact p=97 witnesses\",\n  \"scope\": \"hash verification and small correctness smoke check only; not the validation suite\",\n  \"python\": \"3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]\",\n  \"platform\": \"Linux-6.18.44-x86_64-with-glibc2.39\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "research/depth_two_recognition_20261006/core/cli.py",
+        "--p",
+        "17",
+        "--short",
+        "8",
+        "2"
+      ],
+      "status": "passed",
+      "stdout": "{\n  \"status\": \"recognized\",\n  \"p\": 17,\n  \"short_model\": [\n    8,\n    2\n  ],\n  \"matches\": [\n    {\n      \"status\": \"verified_parameter_certificate\",\n      \"p\": 17,\n      \"short_model\": [\n        8,\n        2\n      ],\n      \"family\": \"depth2_1728\",\n      \"parameters\": {\n        \"r\": 1,\n        \"e\": 6,\n        \"e_squared\": 2\n      },\n      \"beta_multiplier\": 2,\n      \"depth\": 2,\n      \"reverse_path\": {\n        \"status\": \"verified_path\",\n        \"start\": [\n          8,\n          2\n        ],\n        \"endpoint\": [\n          16,\n          0\n        ],\n        \"seed_family\": \"B=0,p=1mod4\",\n        \"roots\": [\n          8,\n          9\n        ],\n        \"steps\": [\n          {\n            \"source\": [\n              8,\n              2\n            ],\n            \"root\": 8,\n            \"target\": [\n              11,\n              5\n            ],\n            \"differential_scale\": 1\n          },\n          {\n            \"source\": [\n              11,\n              5\n            ],\n            \"root\": 9,\n            \"target\": [\n              16,\n              0\n            ],\n            \"differential_scale\": 1\n          }\n        ],\n        \"length\": 2,\n        \"beta_multiplier\": 2\n      },\n      \"recognition_field_work\": \"O(1), excludes trace/prime validation\",\n      \"square_root_search_used\": false\n    }\n  ],\n  \"scope\": \"ordinary A=0,p=1mod3 or B=0,p=1mod4 seeded rational depth<=2 closure\",\n  \"graph_search_used\": false,\n  \"square_root_search_used\": false\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "research/depth_two_recognition_20261006/core/cli.py",
+        "--p",
+        "13",
+        "--f",
+        "1",
+        "12",
+        "0",
+        "9",
+        "--trusted-trace",
+        "-2",
+        "--mu",
+        "7"
+      ],
+      "status": "passed",
+      "stdout": "{\n  \"evaluator\": {\n    \"p\": 13,\n    \"f\": [\n      1,\n      12,\n      0,\n      9\n    ],\n    \"H\": 11,\n    \"K\": 8,\n    \"preparation_method\": \"direct_depth_two_caller_supplied_exact_trace\"\n  },\n  \"certificate\": {\n    \"status\": \"verified_parameter_certificate\",\n    \"p\": 13,\n    \"short_model\": [\n      4,\n      3\n    ],\n    \"family\": \"depth2_0\",\n    \"parameters\": {\n      \"r\": 11,\n      \"e\": 9,\n      \"e_squared\": 3\n    },\n    \"beta_multiplier\": 3,\n    \"depth\": 2,\n    \"reverse_path\": {\n      \"status\": \"verified_path\",\n      \"start\": [\n        4,\n        3\n      ],\n      \"endpoint\": [\n        0,\n        8\n      ],\n      \"seed_family\": \"A=0,p=1mod3\",\n      \"roots\": [\n        11,\n        3\n      ],\n      \"steps\": [\n        {\n          \"source\": [\n            4,\n            3\n          ],\n          \"root\": 11,\n          \"target\": [\n            2,\n            6\n          ],\n          \"differential_scale\": 1\n        },\n        {\n          \"source\": [\n            2,\n            6\n          ],\n          \"root\": 3,\n          \"target\": [\n            0,\n            8\n          ],\n          \"differential_scale\": 1\n        }\n      ],\n      \"length\": 2,\n      \"beta_multiplier\": 3\n    },\n    \"recognition_field_work\": \"O(1), excludes trace/prime validation\",\n    \"square_root_search_used\": false\n  },\n  \"trusted_exact_trace\": -2,\n  \"status\": \"prepared_from_caller_trusted_trace\",\n  \"query\": {\n    \"status\": \"computed_from_trusted_data\",\n    \"p\": 13,\n    \"f\": [\n      1,\n      12,\n      0,\n      9\n    ],\n    \"mu\": 7,\n    \"lambda\": 2,\n    \"H\": 11,\n    \"K\": 8,\n    \"T\": 2,\n    \"S\": 2,\n    \"ordinary\": true,\n    \"preparation_method\": \"direct_depth_two_caller_supplied_exact_trace\",\n    \"query_field_operations\": \"O(1)\",\n    \"root_finding_included\": false\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python",
+        "research/depth_three_recognition_20261007/core/cli.py",
+        "--p",
+        "73",
+        "--f",
+        "1",
+        "4",
+        "0",
+        "37",
+        "--cm",
+        "--unbounded-sign-test",
+        "--mu",
+        "9"
+      ],
+      "status": "passed",
+      "stdout": "{\n  \"evaluator\": {\n    \"p\": 73,\n    \"f\": [\n      1,\n      4,\n      0,\n      37\n    ],\n    \"H\": 10,\n    \"K\": 55,\n    \"preparation_method\": \"direct_depth_three_cm_cornacchia_las_vegas_sign\"\n  },\n  \"certificate\": {\n    \"status\": \"verified_parameter_certificate\",\n    \"p\": 73,\n    \"short_model\": [\n      2,\n      55\n    ],\n    \"family\": \"depth3_0_disc_-192\",\n    \"parameters\": {\n      \"e\": 21,\n      \"g\": 41,\n      \"r\": 15,\n      \"e_squared\": 3,\n      \"g_squared\": 2\n    },\n    \"beta_multiplier\": 21,\n    \"depth\": 3,\n    \"forward_seed\": [\n      0,\n      56\n    ],\n    \"forward_roots\": [\n      15,\n      61,\n      16\n    ],\n    \"forward_models\": [\n      [\n        0,\n        56\n      ],\n      [\n        56,\n        64\n      ],\n      [\n        25,\n        30\n      ],\n      [\n        2,\n        55\n      ]\n    ],\n    \"reverse_path\": {\n      \"status\": \"verified_path\",\n      \"start\": [\n        2,\n        55\n      ],\n      \"endpoint\": [\n        0,\n        56\n      ],\n      \"seed_family\": \"A=0,p=1mod3\",\n      \"roots\": [\n        41,\n        23,\n        31\n      ],\n      \"steps\": [\n        {\n          \"source\": [\n            2,\n            55\n          ],\n          \"root\": 41,\n          \"target\": [\n            35,\n            22\n          ],\n          \"differential_scale\": 1\n        },\n        {\n          \"source\": [\n            35,\n            22\n          ],\n          \"root\": 23,\n          \"target\": [\n            28,\n            1\n          ],\n          \"differential_scale\": 1\n        },\n        {\n          \"source\": [\n            28,\n            1\n          ],\n          \"root\": 31,\n          \"target\": [\n            0,\n            56\n          ],\n          \"differential_scale\": 1\n        }\n      ],\n      \"length\": 3,\n      \"beta_multiplier\": 21\n    },\n    \"reverse_square_scale\": 64,\n    \"recognition_field_work\": \"O(1), excludes prime validation and trace preparation\",\n    \"square_root_search_used\": false\n  },\n  \"exact_trace\": 10,\n  \"trace_preparation\": {\n    \"trace_candidates\": [\n      10,\n      -10\n    ],\n    \"representation_4p\": [\n      10,\n      1\n    ],\n    \"cornacchia\": {\n      \"x\": 5,\n      \"y\": 1,\n      \"cubic_nonresidue_trials\": 4,\n      \"method\": \"Cornacchia on p = x^2 + 48 y^2\"\n    },\n    \"sign_test\": {\n      \"uniform_raw_trial_success_lower_bound\": \"1/5\",\n      \"expected_raw_trials_upper_bound\": 5,\n      \"randomness_assumption\": \"independent uniform randrange(p) draws\",\n      \"max_trials\": null,\n      \"scope\": \"depth3_0_disc_-192\",\n      \"status\": \"conclusive\",\n      \"trials\": 2,\n      \"witness\": {\n        \"point\": [\n          2,\n          33\n        ],\n        \"candidate_orders\": [\n          64,\n          84\n        ],\n        \"annihilated\": [\n          true,\n          false\n        ]\n      }\n    },\n    \"cost\": \"after validated prime: recognition O(1); expected O(log^2 p) field work including square-root searches and <=5 expected raw sign trials; Cornacchia polynomial bit work; capped attempts may be inconclusive\"\n  },\n  \"status\": \"prepared_by_cm_trace\",\n  \"query\": {\n    \"status\": \"exact_mod_p\",\n    \"p\": 73,\n    \"f\": [\n      1,\n      4,\n      0,\n      37\n    ],\n    \"mu\": 9,\n    \"lambda\": 65,\n    \"H\": 10,\n    \"K\": 55,\n    \"T\": 3,\n    \"S\": 3,\n    \"ordinary\": true,\n    \"preparation_method\": \"direct_depth_three_cm_cornacchia_las_vegas_sign\",\n    \"query_field_operations\": \"O(1)\",\n    \"root_finding_included\": false\n  }\n}\n",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "parameter_cases": 5208,
+  "exact_multinomial_pairs": 1176,
+  "exhaustive_short_model_recognition_cases": 69192,
+  "exceptional_reduction_rows": 56,
+  "example_n3": [
+    13,
+    3,
+    4,
+    1,
+    2,
+    5,
+    2,
+    2,
+    4,
+    4
+  ],
+  "scope": "all allowed family parameters for 7<=p<=250; all nonsingular models for 7<=p<=73; exact coefficient pairs through 97",
+  "environment": {
+    "python": "3.13.16",
+    "platform": "Linux-6.18.44-fc-v80-x86_64-with-glibc2.39"
+  },
+  "source_sha256": "1466463cc0384c5f756477e5c1a2ce64a869f12a24bb24c6497ec258a1ca6d83",
+  "all_passed": true,
+  "timing_claim": "none"
+}

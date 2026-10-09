@@ -1,0 +1,2034 @@
+{
+  "status": "passed",
+  "basis": "(1, e, g, eg) with e^2=3, g^2=2",
+  "alpha": [
+    -1095,
+    -540,
+    -540,
+    -420
+  ],
+  "gamma": [
+    -22198,
+    -13860,
+    -16380,
+    -8820
+  ],
+  "beta_multiplier_over_r": [
+    -7,
+    -6,
+    -6,
+    -2
+  ],
+  "kernel_roots_over_r": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      2,
+      0,
+      0
+    ],
+    [
+      1,
+      2,
+      6,
+      2
+    ]
+  ],
+  "reverse_roots_over_r": [
+    [
+      -2,
+      -4,
+      -12,
+      -4
+    ],
+    [
+      -8,
+      -16,
+      0,
+      0
+    ],
+    [
+      -32,
+      0,
+      0,
+      0
+    ]
+  ],
+  "reverse_endpoint": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -262144,
+      0,
+      0,
+      0
+    ]
+  ],
+  "alpha_cubed": [
+    -13988298375,
+    -8054356500,
+    -9859360500,
+    -5708191500
+  ],
+  "gamma_squared": [
+    2072413204,
+    1193214960,
+    1460677680,
+    845626320
+  ],
+  "discriminant": [
+    1963008,
+    -622080,
+    855360,
+    -855360
+  ],
+  "class_polynomial_low_to_high": [
+    -1080060886113159937649308593750000,
+    826335556188178615474500000000,
+    15705521635909735050750000,
+    -8041801037378436000,
+    1
+  ],
+  "class_polynomial_disc_minus_256_low_to_high_source_pari_polclass": [
+    -1064410681181869521037208505239142408,
+    26925623396663008311375890966784,
+    -1826592673506207200904172752,
+    -6761166974781862161312,
+    1
+  ],
+  "quantities": {
+    "norm_alpha": "-40717029375",
+    "norm_gamma": "109010183337616",
+    "norm_discriminant": "142657607172096",
+    "H_at_0": "-1080060886113159937649308593750000",
+    "H_at_1728": "394701897369505645733660905226256",
+    "H_at_54000": "88073066079811523162712691406250000",
+    "H_at_287496": "1343516761659591909335718489564554256",
+    "resultant_H_P2": "5159054964875973801593662398150027426498141147828956591777066928585917201368463329536",
+    "resultant_H_P3": "-167158234091335379934688318977859473533993704788686628946921371459960937500000000",
+    "resultant_H_H256": "1463548478690765530241808520192905332080696833336667031366171195584393646335072654447546536282106770176154886155807022081756751837495444750976735120511447318216873971126392748119230369518391296",
+    "discriminant_H": "13279649670283296303340529824934761454078938284016360219726743433660393332314212873788282363566413314374068567407764053344726562500000000000000000000",
+    "norm_collision_e_to_minus_e": "4589681703007345475411984569966077703010648064000000000000",
+    "norm_collision_g_to_minus_g": "4352760219607664621964338260123742343873429504000000000000",
+    "norm_collision_both": "3139055498014771748744244555437320706457600000000000000",
+    "norm_q2_plus_2q1": "9",
+    "norm_root_difference_(3+e)g": "144"
+  },
+  "factorizations": {
+    "norm_alpha": {
+      "3": 4,
+      "5": 4,
+      "11": 2,
+      "17": 2,
+      "23": 1
+    },
+    "norm_gamma": {
+      "2": 4,
+      "11": 2,
+      "23": 2,
+      "47": 1,
+      "71": 1,
+      "167": 1,
+      "191": 1
+    },
+    "norm_discriminant": {
+      "2": 28,
+      "3": 12
+    },
+    "H_at_0": {
+      "2": 4,
+      "3": 12,
+      "5": 12,
+      "11": 6,
+      "17": 6,
+      "23": 3
+    },
+    "H_at_1728": {
+      "2": 4,
+      "3": 12,
+      "11": 4,
+      "23": 4,
+      "47": 2,
+      "71": 2,
+      "167": 2,
+      "191": 2
+    },
+    "H_at_54000": {
+      "2": 4,
+      "3": 20,
+      "5": 12,
+      "11": 4,
+      "17": 2,
+      "23": 1,
+      "29": 2,
+      "41": 2,
+      "47": 1
+    },
+    "H_at_287496": {
+      "2": 4,
+      "3": 12,
+      "11": 6,
+      "23": 1,
+      "47": 1,
+      "59": 2,
+      "239": 1,
+      "479": 1,
+      "599": 1,
+      "647": 1,
+      "719": 1,
+      "743": 1
+    },
+    "resultant_H_P2": {
+      "2": 8,
+      "3": 24,
+      "11": 8,
+      "23": 4,
+      "47": 1,
+      "71": 1,
+      "83": 2,
+      "107": 2,
+      "131": 2,
+      "167": 1,
+      "191": 1,
+      "227": 2,
+      "263": 1,
+      "863": 1,
+      "1223": 1,
+      "1847": 1,
+      "2111": 1,
+      "2447": 1,
+      "2543": 1,
+      "2711": 1,
+      "2903": 1,
+      "3023": 1
+    },
+    "resultant_H_P3": {
+      "2": 8,
+      "3": 24,
+      "5": 24,
+      "11": 10,
+      "17": 4,
+      "23": 5,
+      "29": 4,
+      "47": 3,
+      "53": 2,
+      "59": 2,
+      "71": 1,
+      "83": 2,
+      "89": 2
+    },
+    "resultant_H_H256": {
+      "2": 12,
+      "3": 48,
+      "11": 20,
+      "23": 10,
+      "47": 4,
+      "59": 4,
+      "71": 3,
+      "83": 2,
+      "107": 2,
+      "179": 2,
+      "239": 1,
+      "251": 2,
+      "479": 1,
+      "599": 1,
+      "647": 1,
+      "659": 2,
+      "719": 1,
+      "743": 1,
+      "839": 1,
+      "2087": 1,
+      "2879": 1,
+      "4007": 1,
+      "5399": 1,
+      "6047": 1,
+      "6359": 1,
+      "6959": 1,
+      "7247": 1,
+      "8807": 1,
+      "9479": 1,
+      "9887": 1,
+      "10079": 1,
+      "10607": 1,
+      "11447": 1,
+      "11927": 1,
+      "12119": 1,
+      "12239": 1,
+      "12263": 1
+    },
+    "discriminant_H": {
+      "2": 20,
+      "3": 62,
+      "5": 38,
+      "11": 10,
+      "17": 8,
+      "23": 4,
+      "29": 4,
+      "41": 4,
+      "53": 2,
+      "59": 4,
+      "83": 2,
+      "89": 2,
+      "101": 4,
+      "113": 2,
+      "131": 2,
+      "149": 2,
+      "173": 2,
+      "179": 2
+    },
+    "norm_collision_e_to_minus_e": {
+      "2": 30,
+      "3": 22,
+      "5": 12,
+      "17": 8,
+      "23": 4,
+      "41": 4,
+      "89": 2,
+      "113": 2
+    },
+    "norm_collision_g_to_minus_g": {
+      "2": 32,
+      "3": 20,
+      "5": 12,
+      "11": 10,
+      "59": 4,
+      "83": 2,
+      "131": 2,
+      "179": 2
+    },
+    "norm_collision_both": {
+      "2": 30,
+      "3": 20,
+      "5": 14,
+      "29": 4,
+      "53": 2,
+      "101": 4,
+      "149": 2,
+      "173": 2
+    },
+    "norm_q2_plus_2q1": {
+      "3": 2
+    },
+    "norm_root_difference_(3+e)g": {
+      "2": 4,
+      "3": 2
+    }
+  },
+  "primes_1_mod_24_dividing_any_quantity": {
+    "norm_alpha": [],
+    "norm_gamma": [],
+    "norm_discriminant": [],
+    "H_at_0": [],
+    "H_at_1728": [],
+    "H_at_54000": [],
+    "H_at_287496": [],
+    "resultant_H_P2": [],
+    "resultant_H_P3": [],
+    "resultant_H_H256": [],
+    "discriminant_H": [],
+    "norm_collision_e_to_minus_e": [],
+    "norm_collision_g_to_minus_g": [],
+    "norm_collision_both": [],
+    "norm_q2_plus_2q1": [],
+    "norm_root_difference_(3+e)g": []
+  },
+  "conjugate_collision_elements": {
+    "e_to_minus_e": {
+      "coords_1_e_g_eg": [
+        0,
+        3788468848512000,
+        0,
+        2680958654352000
+      ],
+      "norm": "4589681703007345475411984569966077703010648064000000000000",
+      "factorization": {
+        "2": 30,
+        "3": 22,
+        "5": 12,
+        "17": 8,
+        "23": 4,
+        "41": 4,
+        "89": 2,
+        "113": 2
+      }
+    },
+    "g_to_minus_g": {
+      "coords_1_e_g_eg": [
+        0,
+        0,
+        1289202997104000,
+        751671934992000
+      ],
+      "norm": "4352760219607664621964338260123742343873429504000000000000",
+      "factorization": {
+        "2": 32,
+        "3": 20,
+        "5": 12,
+        "11": 10,
+        "59": 4,
+        "83": 2,
+        "131": 2,
+        "179": 2
+      }
+    },
+    "both": {
+      "coords_1_e_g_eg": [
+        0,
+        -156971530368000,
+        -194540384016000,
+        0
+      ],
+      "norm": "3139055498014771748744244555437320706457600000000000000",
+      "factorization": {
+        "2": 30,
+        "3": 20,
+        "5": 14,
+        "29": 4,
+        "53": 2,
+        "101": 4,
+        "149": 2,
+        "173": 2
+      }
+    }
+  },
+  "degenerate_models_at_excluded_primes": [
+    {
+      "p": 11,
+      "p_mod_24": 11,
+      "sqrt3_exists": true,
+      "sqrt2_exists": false,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 17,
+      "p_mod_24": 17,
+      "sqrt3_exists": false,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 23,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 7,
+          "g": 5,
+          "alpha": 12,
+          "gamma": 0,
+          "Delta": 12
+        },
+        {
+          "e": 7,
+          "g": 18,
+          "alpha": 13,
+          "gamma": 5,
+          "Delta": 10
+        },
+        {
+          "e": 16,
+          "g": 5,
+          "alpha": 11,
+          "gamma": 0,
+          "Delta": 11
+        },
+        {
+          "e": 16,
+          "g": 18,
+          "alpha": 0,
+          "gamma": 6,
+          "Delta": 6
+        }
+      ]
+    },
+    {
+      "p": 29,
+      "p_mod_24": 5,
+      "sqrt3_exists": false,
+      "sqrt2_exists": false,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 41,
+      "p_mod_24": 17,
+      "sqrt3_exists": false,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 47,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 12,
+          "g": 7,
+          "alpha": 36,
+          "gamma": 0,
+          "Delta": 34
+        },
+        {
+          "e": 12,
+          "g": 40,
+          "alpha": 42,
+          "gamma": 45,
+          "Delta": 31
+        },
+        {
+          "e": 35,
+          "g": 7,
+          "alpha": 37,
+          "gamma": 12,
+          "Delta": 29
+        },
+        {
+          "e": 35,
+          "g": 40,
+          "alpha": 17,
+          "gamma": 28,
+          "Delta": 24
+        }
+      ]
+    },
+    {
+      "p": 53,
+      "p_mod_24": 5,
+      "sqrt3_exists": false,
+      "sqrt2_exists": false,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 59,
+      "p_mod_24": 11,
+      "sqrt3_exists": true,
+      "sqrt2_exists": false,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 71,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 28,
+          "g": 12,
+          "alpha": 53,
+          "gamma": 19,
+          "Delta": 51
+        },
+        {
+          "e": 28,
+          "g": 59,
+          "alpha": 35,
+          "gamma": 43,
+          "Delta": 45
+        },
+        {
+          "e": 43,
+          "g": 12,
+          "alpha": 62,
+          "gamma": 38,
+          "Delta": 4
+        },
+        {
+          "e": 43,
+          "g": 59,
+          "alpha": 14,
+          "gamma": 0,
+          "Delta": 42
+        }
+      ]
+    },
+    {
+      "p": 83,
+      "p_mod_24": 11,
+      "sqrt3_exists": true,
+      "sqrt2_exists": false,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 89,
+      "p_mod_24": 17,
+      "sqrt3_exists": false,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 101,
+      "p_mod_24": 5,
+      "sqrt3_exists": false,
+      "sqrt2_exists": false,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 107,
+      "p_mod_24": 11,
+      "sqrt3_exists": true,
+      "sqrt2_exists": false,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 113,
+      "p_mod_24": 17,
+      "sqrt3_exists": false,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 131,
+      "p_mod_24": 11,
+      "sqrt3_exists": true,
+      "sqrt2_exists": false,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 149,
+      "p_mod_24": 5,
+      "sqrt3_exists": false,
+      "sqrt2_exists": false,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 167,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 62,
+          "g": 13,
+          "alpha": 144,
+          "gamma": 163,
+          "Delta": 27
+        },
+        {
+          "e": 62,
+          "g": 154,
+          "alpha": 11,
+          "gamma": 154,
+          "Delta": 34
+        },
+        {
+          "e": 105,
+          "g": 13,
+          "alpha": 159,
+          "gamma": 0,
+          "Delta": 123
+        },
+        {
+          "e": 105,
+          "g": 154,
+          "alpha": 149,
+          "gamma": 69,
+          "Delta": 9
+        }
+      ]
+    },
+    {
+      "p": 173,
+      "p_mod_24": 5,
+      "sqrt3_exists": false,
+      "sqrt2_exists": false,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 179,
+      "p_mod_24": 11,
+      "sqrt3_exists": true,
+      "sqrt2_exists": false,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 191,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 24,
+          "g": 57,
+          "alpha": 18,
+          "gamma": 80,
+          "Delta": 162
+        },
+        {
+          "e": 24,
+          "g": 134,
+          "alpha": 140,
+          "gamma": 0,
+          "Delta": 185
+        },
+        {
+          "e": 167,
+          "g": 57,
+          "alpha": 26,
+          "gamma": 114,
+          "Delta": 41
+        },
+        {
+          "e": 167,
+          "g": 134,
+          "alpha": 20,
+          "gamma": 20,
+          "Delta": 16
+        }
+      ]
+    },
+    {
+      "p": 227,
+      "p_mod_24": 11,
+      "sqrt3_exists": true,
+      "sqrt2_exists": false,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 239,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 106,
+          "g": 99,
+          "alpha": 215,
+          "gamma": 208,
+          "Delta": 48
+        },
+        {
+          "e": 106,
+          "g": 140,
+          "alpha": 225,
+          "gamma": 35,
+          "Delta": 111
+        },
+        {
+          "e": 133,
+          "g": 99,
+          "alpha": 137,
+          "gamma": 79,
+          "Delta": 59
+        },
+        {
+          "e": 133,
+          "g": 140,
+          "alpha": 62,
+          "gamma": 33,
+          "Delta": 186
+        }
+      ]
+    },
+    {
+      "p": 251,
+      "p_mod_24": 11,
+      "sqrt3_exists": true,
+      "sqrt2_exists": false,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 263,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 23,
+          "g": 110,
+          "alpha": 119,
+          "gamma": 44,
+          "Delta": 144
+        },
+        {
+          "e": 23,
+          "g": 153,
+          "alpha": 203,
+          "gamma": 222,
+          "Delta": 106
+        },
+        {
+          "e": 240,
+          "g": 110,
+          "alpha": 134,
+          "gamma": 33,
+          "Delta": 141
+        },
+        {
+          "e": 240,
+          "g": 153,
+          "alpha": 161,
+          "gamma": 66,
+          "Delta": 39
+        }
+      ]
+    },
+    {
+      "p": 479,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 31,
+          "g": 187,
+          "alpha": 473,
+          "gamma": 341,
+          "Delta": 315
+        },
+        {
+          "e": 31,
+          "g": 292,
+          "alpha": 261,
+          "gamma": 295,
+          "Delta": 416
+        },
+        {
+          "e": 448,
+          "g": 187,
+          "alpha": 389,
+          "gamma": 100,
+          "Delta": 475
+        },
+        {
+          "e": 448,
+          "g": 292,
+          "alpha": 245,
+          "gamma": 45,
+          "Delta": 16
+        }
+      ]
+    },
+    {
+      "p": 599,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 188,
+          "g": 166,
+          "alpha": 581,
+          "gamma": 32,
+          "Delta": 127
+        },
+        {
+          "e": 188,
+          "g": 433,
+          "alpha": 245,
+          "gamma": 437,
+          "Delta": 275
+        },
+        {
+          "e": 411,
+          "g": 166,
+          "alpha": 45,
+          "gamma": 59,
+          "Delta": 252
+        },
+        {
+          "e": 411,
+          "g": 433,
+          "alpha": 140,
+          "gamma": 530,
+          "Delta": 285
+        }
+      ]
+    },
+    {
+      "p": 647,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 122,
+          "g": 36,
+          "alpha": 240,
+          "gamma": 266,
+          "Delta": 613
+        },
+        {
+          "e": 122,
+          "g": 611,
+          "alpha": 386,
+          "gamma": 10,
+          "Delta": 28
+        },
+        {
+          "e": 525,
+          "g": 36,
+          "alpha": 98,
+          "gamma": 102,
+          "Delta": 632
+        },
+        {
+          "e": 525,
+          "g": 611,
+          "alpha": 72,
+          "gamma": 116,
+          "Delta": 61
+        }
+      ]
+    },
+    {
+      "p": 659,
+      "p_mod_24": 11,
+      "sqrt3_exists": true,
+      "sqrt2_exists": false,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": []
+    },
+    {
+      "p": 719,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 315,
+          "g": 324,
+          "alpha": 545,
+          "gamma": 603,
+          "Delta": 573
+        },
+        {
+          "e": 315,
+          "g": 395,
+          "alpha": 28,
+          "gamma": 34,
+          "Delta": 385
+        },
+        {
+          "e": 404,
+          "g": 324,
+          "alpha": 374,
+          "gamma": 655,
+          "Delta": 197
+        },
+        {
+          "e": 404,
+          "g": 395,
+          "alpha": 425,
+          "gamma": 510,
+          "Delta": 116
+        }
+      ]
+    },
+    {
+      "p": 743,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 139,
+          "g": 102,
+          "alpha": 661,
+          "gamma": 310,
+          "Delta": 639
+        },
+        {
+          "e": 139,
+          "g": 641,
+          "alpha": 87,
+          "gamma": 735,
+          "Delta": 319
+        },
+        {
+          "e": 604,
+          "g": 102,
+          "alpha": 668,
+          "gamma": 368,
+          "Delta": 741
+        },
+        {
+          "e": 604,
+          "g": 641,
+          "alpha": 148,
+          "gamma": 441,
+          "Delta": 538
+        }
+      ]
+    },
+    {
+      "p": 839,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 41,
+          "g": 29,
+          "alpha": 363,
+          "gamma": 572,
+          "Delta": 648
+        },
+        {
+          "e": 41,
+          "g": 810,
+          "alpha": 151,
+          "gamma": 663,
+          "Delta": 327
+        },
+        {
+          "e": 798,
+          "g": 29,
+          "alpha": 526,
+          "gamma": 46,
+          "Delta": 497
+        },
+        {
+          "e": 798,
+          "g": 810,
+          "alpha": 453,
+          "gamma": 539,
+          "Delta": 37
+        }
+      ]
+    },
+    {
+      "p": 863,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 406,
+          "g": 251,
+          "alpha": 509,
+          "gamma": 783,
+          "Delta": 215
+        },
+        {
+          "e": 406,
+          "g": 612,
+          "alpha": 677,
+          "gamma": 623,
+          "Delta": 488
+        },
+        {
+          "e": 457,
+          "g": 251,
+          "alpha": 655,
+          "gamma": 464,
+          "Delta": 769
+        },
+        {
+          "e": 457,
+          "g": 612,
+          "alpha": 683,
+          "gamma": 816,
+          "Delta": 712
+        }
+      ]
+    },
+    {
+      "p": 1223,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 116,
+          "g": 35,
+          "alpha": 191,
+          "gamma": 828,
+          "Delta": 1200
+        },
+        {
+          "e": 116,
+          "g": 1188,
+          "alpha": 754,
+          "gamma": 997,
+          "Delta": 210
+        },
+        {
+          "e": 1107,
+          "g": 35,
+          "alpha": 178,
+          "gamma": 601,
+          "Delta": 998
+        },
+        {
+          "e": 1107,
+          "g": 1188,
+          "alpha": 612,
+          "gamma": 507,
+          "Delta": 410
+        }
+      ]
+    },
+    {
+      "p": 1847,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 636,
+          "g": 43,
+          "alpha": 131,
+          "gamma": 1556,
+          "Delta": 969
+        },
+        {
+          "e": 636,
+          "g": 1804,
+          "alpha": 1577,
+          "gamma": 1765,
+          "Delta": 611
+        },
+        {
+          "e": 1211,
+          "g": 43,
+          "alpha": 1108,
+          "gamma": 804,
+          "Delta": 663
+        },
+        {
+          "e": 1211,
+          "g": 1804,
+          "alpha": 192,
+          "gamma": 1280,
+          "Delta": 39
+        }
+      ]
+    },
+    {
+      "p": 2087,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 618,
+          "g": 552,
+          "alpha": 1157,
+          "gamma": 1570,
+          "Delta": 1768
+        },
+        {
+          "e": 618,
+          "g": 1535,
+          "alpha": 1227,
+          "gamma": 1171,
+          "Delta": 261
+        },
+        {
+          "e": 1469,
+          "g": 552,
+          "alpha": 1549,
+          "gamma": 283,
+          "Delta": 716
+        },
+        {
+          "e": 1469,
+          "g": 1535,
+          "alpha": 35,
+          "gamma": 12,
+          "Delta": 80
+        }
+      ]
+    },
+    {
+      "p": 2111,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 65,
+          "g": 898,
+          "alpha": 2056,
+          "gamma": 564,
+          "Delta": 509
+        },
+        {
+          "e": 65,
+          "g": 1213,
+          "alpha": 1550,
+          "gamma": 365,
+          "Delta": 1057
+        },
+        {
+          "e": 2046,
+          "g": 898,
+          "alpha": 1196,
+          "gamma": 1898,
+          "Delta": 243
+        },
+        {
+          "e": 2046,
+          "g": 1213,
+          "alpha": 1373,
+          "gamma": 1265,
+          "Delta": 1525
+        }
+      ]
+    },
+    {
+      "p": 2447,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 689,
+          "g": 579,
+          "alpha": 1756,
+          "gamma": 722,
+          "Delta": 2126
+        },
+        {
+          "e": 689,
+          "g": 1868,
+          "alpha": 716,
+          "gamma": 1130,
+          "Delta": 808
+        },
+        {
+          "e": 1758,
+          "g": 579,
+          "alpha": 2060,
+          "gamma": 32,
+          "Delta": 1781
+        },
+        {
+          "e": 1758,
+          "g": 1868,
+          "alpha": 876,
+          "gamma": 2310,
+          "Delta": 2235
+        }
+      ]
+    },
+    {
+      "p": 2543,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 557,
+          "g": 353,
+          "alpha": 1409,
+          "gamma": 946,
+          "Delta": 528
+        },
+        {
+          "e": 557,
+          "g": 2190,
+          "alpha": 75,
+          "gamma": 1488,
+          "Delta": 2535
+        },
+        {
+          "e": 1986,
+          "g": 353,
+          "alpha": 1697,
+          "gamma": 1716,
+          "Delta": 2132
+        },
+        {
+          "e": 1986,
+          "g": 2190,
+          "alpha": 68,
+          "gamma": 1149,
+          "Delta": 1682
+        }
+      ]
+    },
+    {
+      "p": 2711,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 423,
+          "g": 767,
+          "alpha": 2007,
+          "gamma": 1948,
+          "Delta": 861
+        },
+        {
+          "e": 423,
+          "g": 1944,
+          "alpha": 2544,
+          "gamma": 1969,
+          "Delta": 955
+        },
+        {
+          "e": 2288,
+          "g": 767,
+          "alpha": 2431,
+          "gamma": 1082,
+          "Delta": 578
+        },
+        {
+          "e": 2288,
+          "g": 1944,
+          "alpha": 2193,
+          "gamma": 1094,
+          "Delta": 1293
+        }
+      ]
+    },
+    {
+      "p": 2879,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 1393,
+          "g": 985,
+          "alpha": 1270,
+          "gamma": 2572,
+          "Delta": 1331
+        },
+        {
+          "e": 1393,
+          "g": 1894,
+          "alpha": 696,
+          "gamma": 1163,
+          "Delta": 543
+        },
+        {
+          "e": 1486,
+          "g": 985,
+          "alpha": 849,
+          "gamma": 1207,
+          "Delta": 1261
+        },
+        {
+          "e": 1486,
+          "g": 1894,
+          "alpha": 1442,
+          "gamma": 1273,
+          "Delta": 743
+        }
+      ]
+    },
+    {
+      "p": 2903,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 454,
+          "g": 345,
+          "alpha": 275,
+          "gamma": 565,
+          "Delta": 2103
+        },
+        {
+          "e": 454,
+          "g": 2558,
+          "alpha": 725,
+          "gamma": 1112,
+          "Delta": 1642
+        },
+        {
+          "e": 2449,
+          "g": 345,
+          "alpha": 2325,
+          "gamma": 666,
+          "Delta": 139
+        },
+        {
+          "e": 2449,
+          "g": 2558,
+          "alpha": 1004,
+          "gamma": 1761,
+          "Delta": 1339
+        }
+      ]
+    },
+    {
+      "p": 3023,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 850,
+          "g": 55,
+          "alpha": 2339,
+          "gamma": 748,
+          "Delta": 2758
+        },
+        {
+          "e": 850,
+          "g": 2968,
+          "alpha": 2509,
+          "gamma": 2486,
+          "Delta": 2517
+        },
+        {
+          "e": 2173,
+          "g": 55,
+          "alpha": 2577,
+          "gamma": 109,
+          "Delta": 1152
+        },
+        {
+          "e": 2173,
+          "g": 2968,
+          "alpha": 287,
+          "gamma": 1578,
+          "Delta": 920
+        }
+      ]
+    },
+    {
+      "p": 4007,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 1191,
+          "g": 261,
+          "alpha": 2858,
+          "gamma": 3496,
+          "Delta": 1985
+        },
+        {
+          "e": 1191,
+          "g": 3746,
+          "alpha": 2933,
+          "gamma": 3352,
+          "Delta": 3232
+        },
+        {
+          "e": 2816,
+          "g": 261,
+          "alpha": 1576,
+          "gamma": 770,
+          "Delta": 3095
+        },
+        {
+          "e": 2816,
+          "g": 3746,
+          "alpha": 274,
+          "gamma": 3765,
+          "Delta": 2021
+        }
+      ]
+    },
+    {
+      "p": 5399,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 2279,
+          "g": 1765,
+          "alpha": 1726,
+          "gamma": 2658,
+          "Delta": 3572
+        },
+        {
+          "e": 2279,
+          "g": 3634,
+          "alpha": 2107,
+          "gamma": 1356,
+          "Delta": 3551
+        },
+        {
+          "e": 3120,
+          "g": 1765,
+          "alpha": 1130,
+          "gamma": 3427,
+          "Delta": 426
+        },
+        {
+          "e": 3120,
+          "g": 3634,
+          "alpha": 1455,
+          "gamma": 949,
+          "Delta": 5135
+        }
+      ]
+    },
+    {
+      "p": 6047,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 1605,
+          "g": 1620,
+          "alpha": 2812,
+          "gamma": 4919,
+          "Delta": 3027
+        },
+        {
+          "e": 1605,
+          "g": 4427,
+          "alpha": 3134,
+          "gamma": 2287,
+          "Delta": 4355
+        },
+        {
+          "e": 4442,
+          "g": 1620,
+          "alpha": 5075,
+          "gamma": 2380,
+          "Delta": 598
+        },
+        {
+          "e": 4442,
+          "g": 4427,
+          "alpha": 2740,
+          "gamma": 4421,
+          "Delta": 1093
+        }
+      ]
+    },
+    {
+      "p": 6359,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 498,
+          "g": 3074,
+          "alpha": 3811,
+          "gamma": 6206,
+          "Delta": 279
+        },
+        {
+          "e": 498,
+          "g": 3285,
+          "alpha": 3033,
+          "gamma": 1099,
+          "Delta": 6078
+        },
+        {
+          "e": 5861,
+          "g": 3074,
+          "alpha": 6195,
+          "gamma": 3513,
+          "Delta": 2412
+        },
+        {
+          "e": 5861,
+          "g": 3285,
+          "alpha": 1658,
+          "gamma": 2134,
+          "Delta": 2616
+        }
+      ]
+    },
+    {
+      "p": 6959,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 760,
+          "g": 2582,
+          "alpha": 4412,
+          "gamma": 1557,
+          "Delta": 2900
+        },
+        {
+          "e": 760,
+          "g": 4377,
+          "alpha": 719,
+          "gamma": 453,
+          "Delta": 4683
+        },
+        {
+          "e": 6199,
+          "g": 2582,
+          "alpha": 2356,
+          "gamma": 3085,
+          "Delta": 5128
+        },
+        {
+          "e": 6199,
+          "g": 4377,
+          "alpha": 2051,
+          "gamma": 3539,
+          "Delta": 3487
+        }
+      ]
+    },
+    {
+      "p": 7247,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 1018,
+          "g": 351,
+          "alpha": 3402,
+          "gamma": 6322,
+          "Delta": 415
+        },
+        {
+          "e": 1018,
+          "g": 6896,
+          "alpha": 3759,
+          "gamma": 869,
+          "Delta": 1037
+        },
+        {
+          "e": 6229,
+          "g": 351,
+          "alpha": 6666,
+          "gamma": 2240,
+          "Delta": 3015
+        },
+        {
+          "e": 6229,
+          "g": 6896,
+          "alpha": 3534,
+          "gamma": 3235,
+          "Delta": 6311
+        }
+      ]
+    },
+    {
+      "p": 8807,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 1788,
+          "g": 1684,
+          "alpha": 6827,
+          "gamma": 457,
+          "Delta": 6135
+        },
+        {
+          "e": 1788,
+          "g": 7123,
+          "alpha": 6290,
+          "gamma": 1618,
+          "Delta": 2816
+        },
+        {
+          "e": 7019,
+          "g": 1684,
+          "alpha": 4119,
+          "gamma": 7197,
+          "Delta": 4283
+        },
+        {
+          "e": 7019,
+          "g": 7123,
+          "alpha": 4805,
+          "gamma": 7620,
+          "Delta": 568
+        }
+      ]
+    },
+    {
+      "p": 9479,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 4296,
+          "g": 1502,
+          "alpha": 910,
+          "gamma": 3688,
+          "Delta": 786
+        },
+        {
+          "e": 4296,
+          "g": 7977,
+          "alpha": 1930,
+          "gamma": 8347,
+          "Delta": 3815
+        },
+        {
+          "e": 5183,
+          "g": 1502,
+          "alpha": 5128,
+          "gamma": 8759,
+          "Delta": 1397
+        },
+        {
+          "e": 5183,
+          "g": 7977,
+          "alpha": 6610,
+          "gamma": 4162,
+          "Delta": 6901
+        }
+      ]
+    },
+    {
+      "p": 9887,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 2627,
+          "g": 3648,
+          "alpha": 5139,
+          "gamma": 8109,
+          "Delta": 4975
+        },
+        {
+          "e": 2627,
+          "g": 6239,
+          "alpha": 2967,
+          "gamma": 4132,
+          "Delta": 2381
+        },
+        {
+          "e": 7260,
+          "g": 3648,
+          "alpha": 7631,
+          "gamma": 2506,
+          "Delta": 8288
+        },
+        {
+          "e": 7260,
+          "g": 6239,
+          "alpha": 9544,
+          "gamma": 5218,
+          "Delta": 5884
+        }
+      ]
+    },
+    {
+      "p": 10079,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 2363,
+          "g": 2380,
+          "alpha": 6996,
+          "gamma": 7346,
+          "Delta": 3868
+        },
+        {
+          "e": 2363,
+          "g": 7699,
+          "alpha": 8919,
+          "gamma": 9793,
+          "Delta": 4926
+        },
+        {
+          "e": 7716,
+          "g": 2380,
+          "alpha": 638,
+          "gamma": 997,
+          "Delta": 2177
+        },
+        {
+          "e": 7716,
+          "g": 7699,
+          "alpha": 9304,
+          "gamma": 3941,
+          "Delta": 9678
+        }
+      ]
+    },
+    {
+      "p": 10607,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 4144,
+          "g": 103,
+          "alpha": 6711,
+          "gamma": 9475,
+          "Delta": 5049
+        },
+        {
+          "e": 4144,
+          "g": 10504,
+          "alpha": 2340,
+          "gamma": 1294,
+          "Delta": 5469
+        },
+        {
+          "e": 6463,
+          "g": 103,
+          "alpha": 7143,
+          "gamma": 8517,
+          "Delta": 7660
+        },
+        {
+          "e": 6463,
+          "g": 10504,
+          "alpha": 640,
+          "gamma": 8599,
+          "Delta": 5888
+        }
+      ]
+    },
+    {
+      "p": 11447,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 1967,
+          "g": 107,
+          "alpha": 8952,
+          "gamma": 4077,
+          "Delta": 5145
+        },
+        {
+          "e": 1967,
+          "g": 11340,
+          "alpha": 5087,
+          "gamma": 5583,
+          "Delta": 8854
+        },
+        {
+          "e": 9480,
+          "g": 107,
+          "alpha": 10662,
+          "gamma": 6224,
+          "Delta": 4060
+        },
+        {
+          "e": 9480,
+          "g": 11340,
+          "alpha": 5260,
+          "gamma": 9794,
+          "Delta": 4225
+        }
+      ]
+    },
+    {
+      "p": 11927,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 5032,
+          "g": 3054,
+          "alpha": 3088,
+          "gamma": 9368,
+          "Delta": 7082
+        },
+        {
+          "e": 5032,
+          "g": 8873,
+          "alpha": 10801,
+          "gamma": 5096,
+          "Delta": 7255
+        },
+        {
+          "e": 6895,
+          "g": 3054,
+          "alpha": 181,
+          "gamma": 507,
+          "Delta": 6897
+        },
+        {
+          "e": 6895,
+          "g": 8873,
+          "alpha": 5404,
+          "gamma": 3580,
+          "Delta": 6686
+        }
+      ]
+    },
+    {
+      "p": 12119,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 947,
+          "g": 1709,
+          "alpha": 11757,
+          "gamma": 9566,
+          "Delta": 8434
+        },
+        {
+          "e": 947,
+          "g": 10410,
+          "alpha": 5527,
+          "gamma": 5547,
+          "Delta": 4924
+        },
+        {
+          "e": 11172,
+          "g": 1709,
+          "alpha": 6659,
+          "gamma": 9573,
+          "Delta": 11827
+        },
+        {
+          "e": 11172,
+          "g": 10410,
+          "alpha": 8034,
+          "gamma": 7712,
+          "Delta": 10092
+        }
+      ]
+    },
+    {
+      "p": 12239,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 1721,
+          "g": 2365,
+          "alpha": 8510,
+          "gamma": 5033,
+          "Delta": 3592
+        },
+        {
+          "e": 1721,
+          "g": 9874,
+          "alpha": 3187,
+          "gamma": 1029,
+          "Delta": 7395
+        },
+        {
+          "e": 10518,
+          "g": 2365,
+          "alpha": 5290,
+          "gamma": 7236,
+          "Delta": 275
+        },
+        {
+          "e": 10518,
+          "g": 9874,
+          "alpha": 3111,
+          "gamma": 8061,
+          "Delta": 7810
+        }
+      ]
+    },
+    {
+      "p": 12263,
+      "p_mod_24": 23,
+      "sqrt3_exists": true,
+      "sqrt2_exists": true,
+      "seed_congruence_p_1_mod_3": false,
+      "rational_parameter_models": [
+        {
+          "e": 2491,
+          "g": 5985,
+          "alpha": 4220,
+          "gamma": 7492,
+          "Delta": 4594
+        },
+        {
+          "e": 2491,
+          "g": 6278,
+          "alpha": 1170,
+          "gamma": 11860,
+          "Delta": 10429
+        },
+        {
+          "e": 9772,
+          "g": 5985,
+          "alpha": 4654,
+          "gamma": 1671,
+          "Delta": 7976
+        },
+        {
+          "e": 9772,
+          "g": 6278,
+          "alpha": 10102,
+          "gamma": 552,
+          "Delta": 5239
+        }
+      ]
+    }
+  ],
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "source_sha256": "d6a08bf9f6e757cb57c0d9d510784fc3519fc67c0878bef2ba5d76baa3fd3b2e"
+}

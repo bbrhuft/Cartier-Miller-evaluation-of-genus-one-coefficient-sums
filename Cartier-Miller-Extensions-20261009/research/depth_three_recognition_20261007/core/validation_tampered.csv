@@ -1,0 +1,16 @@
+case,rejected,error
+e_negated,True,parameters do not reproduce both short coefficients
+g_negated,True,parameters do not reproduce both short coefficients
+r_scaled,True,parameters do not reproduce both short coefficients
+e_not_sqrt3,True,"invalid depth-three parameters: need e^2=3, g^2=2, r nonzero"
+r_zero,True,"invalid depth-three parameters: need e^2=3, g^2=2, r nonzero"
+slope_altered,True,stored beta_multiplier disagrees with recomputed certificate
+roots_altered,True,stored forward_roots disagrees with recomputed certificate
+reverse_endpoint_altered,True,stored reverse_path disagrees with recomputed certificate
+reverse_roots_altered,True,stored reverse_path disagrees with recomputed certificate
+forward_models_altered,True,stored forward_models disagrees with recomputed certificate
+depth_altered,True,stored depth disagrees with recomputed certificate
+forward_seed_altered,True,stored forward_seed disagrees with recomputed certificate
+unknown_field_added,True,stored certificate carries unknown field bogus
+family_label_altered,True,certificate family mismatch
+model_altered,True,parameters do not reproduce both short coefficients

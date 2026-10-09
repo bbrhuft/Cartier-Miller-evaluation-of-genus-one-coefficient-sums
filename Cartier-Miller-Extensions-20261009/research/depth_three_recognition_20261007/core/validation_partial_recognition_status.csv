@@ -1,0 +1,9 @@
+p,A,B,status,known_uncovered_family
+73,16,27,not_in_implemented_families,depth-three B=0 seed
+73,2,59,not_in_implemented_families,depth-three B=0 seed
+73,6,6,not_in_implemented_families,depth-three B=0 seed
+73,48,51,not_in_implemented_families,depth-three B=0 seed
+73,53,34,not_in_implemented_families,depth-three B=0 seed
+73,17,37,not_in_implemented_families,depth-three B=0 seed
+73,51,5,not_in_implemented_families,depth-three B=0 seed
+73,42,18,not_in_implemented_families,depth-three B=0 seed

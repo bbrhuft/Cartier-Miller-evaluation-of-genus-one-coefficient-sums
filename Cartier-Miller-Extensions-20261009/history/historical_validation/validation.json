@@ -1,0 +1,358 @@
+{
+  "status": "passed",
+  "seed": 20261007,
+  "audit_certificates": {
+    "rows": 96,
+    "recognized": 32,
+    "B0_chain_depth3_rejected_by_this_family": 32
+  },
+  "exhaustive": [
+    {
+      "p": 73,
+      "nonsingular_models": 5256,
+      "family_members": 288,
+      "recognized_positives": 288,
+      "rejected_negatives": 4968,
+      "family_j_values": 4,
+      "depth_le2_j_values": 8,
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_checked": 288
+    },
+    {
+      "p": 97,
+      "nonsingular_models": 9312,
+      "family_members": 384,
+      "recognized_positives": 384,
+      "rejected_negatives": 8928,
+      "family_j_values": 4,
+      "depth_le2_j_values": 8,
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_checked": 384
+    },
+    {
+      "p": 193,
+      "nonsingular_models": 37056,
+      "family_members": 768,
+      "recognized_positives": 768,
+      "rejected_negatives": 36288,
+      "family_j_values": 4,
+      "depth_le2_j_values": 8,
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_checked": 48
+    },
+    {
+      "p": 241,
+      "nonsingular_models": 57840,
+      "family_members": 960,
+      "recognized_positives": 960,
+      "rejected_negatives": 56880,
+      "family_j_values": 4,
+      "depth_le2_j_values": 8,
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_checked": 48
+    },
+    {
+      "p": 313,
+      "nonsingular_models": 97656,
+      "family_members": 1248,
+      "recognized_positives": 1248,
+      "rejected_negatives": 96408,
+      "family_j_values": 4,
+      "depth_le2_j_values": 8,
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_checked": 48
+    },
+    {
+      "p": 337,
+      "nonsingular_models": 113232,
+      "family_members": 1344,
+      "recognized_positives": 1344,
+      "rejected_negatives": 111888,
+      "family_j_values": 4,
+      "depth_le2_j_values": 8,
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_checked": 48
+    },
+    {
+      "p": 409,
+      "nonsingular_models": 166872,
+      "family_members": 1632,
+      "recognized_positives": 1632,
+      "rejected_negatives": 165240,
+      "family_j_values": 4,
+      "depth_le2_j_values": 8,
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_checked": 48
+    },
+    {
+      "p": 433,
+      "nonsingular_models": 187056,
+      "family_members": 1728,
+      "recognized_positives": 1728,
+      "rejected_negatives": 185328,
+      "family_j_values": 4,
+      "depth_le2_j_values": 8,
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_checked": 48
+    },
+    {
+      "p": 457,
+      "nonsingular_models": 208392,
+      "family_members": 1824,
+      "recognized_positives": 1824,
+      "rejected_negatives": 206568,
+      "family_j_values": 4,
+      "depth_le2_j_values": 8,
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_checked": 48
+    },
+    {
+      "p": 577,
+      "nonsingular_models": 332352,
+      "family_members": 2304,
+      "recognized_positives": 2304,
+      "rejected_negatives": 330048,
+      "family_j_values": 4,
+      "depth_le2_j_values": 8,
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_checked": 48
+    }
+  ],
+  "member_coefficient_checks": 2640,
+  "pari_trace_cross_checks": 2640,
+  "twist_checks": 702,
+  "tampered_certificates_rejected": 15,
+  "excluded_primes": [
+    {
+      "p": 11,
+      "p_mod_24": 11,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "singular": 0
+    },
+    {
+      "p": 17,
+      "p_mod_24": 17,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "singular": 0
+    },
+    {
+      "p": 23,
+      "p_mod_24": 23,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 4,
+      "alpha_zero": 1,
+      "gamma_zero": 2,
+      "singular": 0
+    },
+    {
+      "p": 29,
+      "p_mod_24": 5,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "singular": 0
+    },
+    {
+      "p": 41,
+      "p_mod_24": 17,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "singular": 0
+    },
+    {
+      "p": 47,
+      "p_mod_24": 23,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 4,
+      "alpha_zero": 0,
+      "gamma_zero": 1,
+      "singular": 0
+    },
+    {
+      "p": 53,
+      "p_mod_24": 5,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "singular": 0
+    },
+    {
+      "p": 59,
+      "p_mod_24": 11,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "singular": 0
+    },
+    {
+      "p": 71,
+      "p_mod_24": 23,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 4,
+      "alpha_zero": 0,
+      "gamma_zero": 1,
+      "singular": 0
+    },
+    {
+      "p": 83,
+      "p_mod_24": 11,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "singular": 0
+    },
+    {
+      "p": 89,
+      "p_mod_24": 17,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "singular": 0
+    },
+    {
+      "p": 101,
+      "p_mod_24": 5,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "singular": 0
+    },
+    {
+      "p": 113,
+      "p_mod_24": 17,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "singular": 0
+    },
+    {
+      "p": 131,
+      "p_mod_24": 11,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "singular": 0
+    },
+    {
+      "p": 149,
+      "p_mod_24": 5,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "singular": 0
+    },
+    {
+      "p": 167,
+      "p_mod_24": 23,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 4,
+      "alpha_zero": 0,
+      "gamma_zero": 1,
+      "singular": 0
+    },
+    {
+      "p": 173,
+      "p_mod_24": 5,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "singular": 0
+    },
+    {
+      "p": 179,
+      "p_mod_24": 11,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "singular": 0
+    },
+    {
+      "p": 191,
+      "p_mod_24": 23,
+      "recognizer_status": "not_eligible_prime",
+      "rational_parameter_models": 4,
+      "alpha_zero": 0,
+      "gamma_zero": 1,
+      "singular": 0
+    }
+  ],
+  "invalid_inputs_rejected": 6,
+  "original_cubic_branch_queries": 96,
+  "original_cubic_curves": 48,
+  "large_prime_recognitions": 15,
+  "large_prime_independent_K_checks": 6,
+  "cm_trace_primes_checked": 46,
+  "cm_sign_trials_max": 4,
+  "cm_complete_preparations": 27,
+  "wrong_supplied_traces_rejected": 4,
+  "exhaustive_primes": [
+    73,
+    97,
+    193,
+    241,
+    313,
+    337,
+    409,
+    433,
+    457,
+    577
+  ],
+  "excluded_primes_tested": [
+    11,
+    17,
+    23,
+    29,
+    41,
+    47,
+    53,
+    59,
+    71,
+    83,
+    89,
+    101,
+    113,
+    131,
+    149,
+    167,
+    173,
+    179,
+    191
+  ],
+  "pari_available": true,
+  "elapsed_seconds_not_benchmark": 16.6,
+  "environment": {
+    "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+    "platform": "Linux-6.18.44-fc-v77-x86_64-with-glibc2.39",
+    "machine": "x86_64"
+  },
+  "source_sha256": {
+    "depth_three_recognize.py": "9517cbc414c357b4787458df362f012f571516a50862b156a7588eed24a7288d",
+    "validate_depth_three.py": "d89ba6959a27258e5f2c269a15264b28597f83de33a2d910e21a05b0a5823033",
+    "cli.py": "ec92600fd5f5f9887696bb781923a197a7cbe51e7dbc2aa328cc7c315afd87ff"
+  },
+  "dependency_sha256": {
+    "branch_evaluator.py": "d19fe4880fde99425f1c8bd72d38500083c16ca5ac4d28c63cc078bd4d5ebc0b",
+    "isogeny_closure.py": "c2156457d06bdbb380ce8d80a6e2e5651a6292c60ab827f367efd9f05b1e2d9b",
+    "recognize.py": "0e816bb3e4630670bc3c69a8943f6478c21ed084ff6f534be4496b92c9684807"
+  },
+  "note": "finite agreement is supporting evidence, not proof; counts overlap and are not disjoint coverage"
+}

@@ -1,0 +1,13 @@
+{
+  "p": 97,
+  "A": 0,
+  "B": 19,
+  "order": 112,
+  "trace": -14,
+  "candidate_orders": [
+    84,
+    112
+  ],
+  "all_points_killed_by": 28,
+  "why_retained": "generic sign trial can be inconclusive forever; recognized depth-three premise is essential"
+}

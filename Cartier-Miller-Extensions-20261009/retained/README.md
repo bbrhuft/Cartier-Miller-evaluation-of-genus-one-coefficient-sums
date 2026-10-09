@@ -1,0 +1,3 @@
+# Retained dependency
+
+`elliptic_prefix.py` is an unchanged copy (SHA-256 3e79d82c931f41f3091e98f6f65783ce958f13851e2c6f05283efa2152c0634d) of the parent project's independent quarter- and third-point implementation. Its `third(p)` returns the prefix B_(p+1)/3 in O(log p) field operations for p ≡ 2 (mod 3), with trace zero and no boundary. The rounded-third validator and verify_release.py use it as the existing fast prefix. Its Cornacchia scans are deterministic, and their worst-case length is not claimed to be polylogarithmic. It is included here, under this release's MIT licence, as the author's own code.

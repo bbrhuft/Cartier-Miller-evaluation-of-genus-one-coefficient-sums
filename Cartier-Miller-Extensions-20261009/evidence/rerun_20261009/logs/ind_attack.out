@@ -1,0 +1,597 @@
+===== A_positive
+{
+ "73": {
+  "p": 73,
+  "members_tested": 288,
+  "recognized": 288,
+  "param_match": 288,
+  "cert_verify_ok": 288,
+  "fw_family_member_match": 288,
+  "multiplier_match": 288,
+  "H_beta_checked": 288,
+  "H_beta_ok": 288,
+  "failures": []
+ },
+ "97": {
+  "p": 97,
+  "members_tested": 384,
+  "recognized": 384,
+  "param_match": 384,
+  "cert_verify_ok": 384,
+  "fw_family_member_match": 384,
+  "multiplier_match": 384,
+  "H_beta_checked": 384,
+  "H_beta_ok": 384,
+  "failures": []
+ },
+ "193": {
+  "p": 193,
+  "members_tested": 768,
+  "recognized": 768,
+  "param_match": 768,
+  "cert_verify_ok": 768,
+  "fw_family_member_match": 768,
+  "multiplier_match": 768,
+  "H_beta_checked": 768,
+  "H_beta_ok": 768,
+  "failures": []
+ },
+ "241": {
+  "p": 241,
+  "members_tested": 960,
+  "recognized": 960,
+  "param_match": 960,
+  "cert_verify_ok": 960,
+  "fw_family_member_match": 960,
+  "multiplier_match": 960,
+  "H_beta_checked": 48,
+  "H_beta_ok": 48,
+  "failures": []
+ },
+ "1009": {
+  "p": 1009,
+  "members_tested": 240,
+  "recognized": 240,
+  "param_match": 240,
+  "cert_verify_ok": 240,
+  "fw_family_member_match": 240,
+  "multiplier_match": 240,
+  "H_beta_checked": 60,
+  "H_beta_ok": 60,
+  "failures": []
+ },
+ "1033": {
+  "p": 1033,
+  "members_tested": 240,
+  "recognized": 240,
+  "param_match": 240,
+  "cert_verify_ok": 240,
+  "fw_family_member_match": 240,
+  "multiplier_match": 240,
+  "H_beta_checked": 32,
+  "H_beta_ok": 32,
+  "failures": []
+ }
+}
+===== B_exhaustive_negative
+{
+ "73": {
+  "p": 73,
+  "inputs": 5329,
+  "family": 288,
+  "nonfamily": 4968,
+  "nonfamily_rejected": 4968,
+  "nonfamily_accepted": [],
+  "singular_valueerror": 73,
+  "A0_or_B0_rejected": 144,
+  "same_trace_as_some_member": 240,
+  "same_trace_rejected": 240,
+  "same_j_nonfamily": 0,
+  "P1_zero_nonfamily": 144,
+  "Q1_zero_nonfamily": 0,
+  "P1orQ1_zero_in_family": 0,
+  "unexpected_exceptions": [],
+  "status_counts": {
+   "EXC:ValueError": 73,
+   "not_in_depth_three_family": 4968,
+   "recognized": 288
+  },
+  "family_trace_values": [
+   10,
+   63
+  ]
+ },
+ "97": {
+  "p": 97,
+  "inputs": 9409,
+  "family": 384,
+  "nonfamily": 8928,
+  "nonfamily_rejected": 8928,
+  "nonfamily_accepted": [],
+  "singular_valueerror": 97,
+  "A0_or_B0_rejected": 192,
+  "same_trace_as_some_member": 320,
+  "same_trace_rejected": 320,
+  "same_j_nonfamily": 0,
+  "P1_zero_nonfamily": 192,
+  "Q1_zero_nonfamily": 0,
+  "P1orQ1_zero_in_family": 0,
+  "unexpected_exceptions": [],
+  "status_counts": {
+   "EXC:ValueError": 97,
+   "not_in_depth_three_family": 8928,
+   "recognized": 384
+  },
+  "family_trace_values": [
+   14,
+   83
+  ]
+ }
+}
+===== C_ineligible_primes
+{
+ "13": {
+  "p": 13,
+  "p_mod_24": 13,
+  "Hpol_roots_mod_p": [],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 56,
+   "EXC:ValueError": 4
+  },
+  "rational_nondual_depth3_paths_from_A0_seeds": 0
+ },
+ "37": {
+  "p": 37,
+  "p_mod_24": 13,
+  "Hpol_roots_mod_p": [],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 56,
+   "EXC:ValueError": 4
+  },
+  "rational_nondual_depth3_paths_from_A0_seeds": 0
+ },
+ "61": {
+  "p": 61,
+  "p_mod_24": 13,
+  "Hpol_roots_mod_p": [],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 58,
+   "EXC:ValueError": 2
+  },
+  "rational_nondual_depth3_paths_from_A0_seeds": 0
+ },
+ "109": {
+  "p": 109,
+  "p_mod_24": 13,
+  "Hpol_roots_mod_p": [],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 60
+  },
+  "rational_nondual_depth3_paths_from_A0_seeds": 0
+ },
+ "157": {
+  "p": 157,
+  "p_mod_24": 13,
+  "Hpol_roots_mod_p": [],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 59,
+   "EXC:ValueError": 1
+  },
+  "rational_nondual_depth3_paths_from_A0_seeds": 0
+ },
+ "181": {
+  "p": 181,
+  "p_mod_24": 13,
+  "Hpol_roots_mod_p": [],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 60
+  },
+  "rational_nondual_depth3_paths_from_A0_seeds": 0
+ },
+ "17": {
+  "p": 17,
+  "p_mod_24": 17,
+  "Hpol_roots_mod_p": [
+   0,
+   8
+  ],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 57,
+   "EXC:ValueError": 3
+  }
+ },
+ "41": {
+  "p": 41,
+  "p_mod_24": 17,
+  "Hpol_roots_mod_p": [
+   3,
+   28
+  ],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 56,
+   "EXC:ValueError": 4
+  }
+ },
+ "89": {
+  "p": 89,
+  "p_mod_24": 17,
+  "Hpol_roots_mod_p": [
+   13
+  ],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 57,
+   "EXC:ValueError": 3
+  }
+ },
+ "113": {
+  "p": 113,
+  "p_mod_24": 17,
+  "Hpol_roots_mod_p": [
+   54
+  ],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 60
+  }
+ },
+ "137": {
+  "p": 137,
+  "p_mod_24": 17,
+  "Hpol_roots_mod_p": [],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 60
+  }
+ },
+ "7": {
+  "p": 7,
+  "p_mod_24": 7,
+  "Hpol_roots_mod_p": [],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 49,
+   "EXC:ValueError": 11
+  }
+ },
+ "11": {
+  "p": 11,
+  "p_mod_24": 11,
+  "Hpol_roots_mod_p": [
+   0,
+   1
+  ],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 54,
+   "EXC:ValueError": 6
+  }
+ },
+ "19": {
+  "p": 19,
+  "p_mod_24": 19,
+  "Hpol_roots_mod_p": [],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 56,
+   "EXC:ValueError": 4
+  }
+ },
+ "23": {
+  "p": 23,
+  "p_mod_24": 23,
+  "Hpol_roots_mod_p": [
+   0,
+   3,
+   19
+  ],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 60
+  }
+ },
+ "31": {
+  "p": 31,
+  "p_mod_24": 7,
+  "Hpol_roots_mod_p": [],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 57,
+   "EXC:ValueError": 3
+  }
+ },
+ "43": {
+  "p": 43,
+  "p_mod_24": 19,
+  "Hpol_roots_mod_p": [],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 58,
+   "EXC:ValueError": 2
+  }
+ },
+ "47": {
+  "p": 47,
+  "p_mod_24": 23,
+  "Hpol_roots_mod_p": [
+   9,
+   10,
+   36,
+   44
+  ],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 59,
+   "EXC:ValueError": 1
+  }
+ },
+ "71": {
+  "p": 71,
+  "p_mod_24": 23,
+  "Hpol_roots_mod_p": [
+   24,
+   41,
+   48,
+   66
+  ],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 58,
+   "EXC:ValueError": 2
+  }
+ },
+ "79": {
+  "p": 79,
+  "p_mod_24": 7,
+  "Hpol_roots_mod_p": [],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 60
+  }
+ },
+ "103": {
+  "p": 103,
+  "p_mod_24": 7,
+  "Hpol_roots_mod_p": [],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 59,
+   "EXC:ValueError": 1
+  }
+ },
+ "127": {
+  "p": 127,
+  "p_mod_24": 7,
+  "Hpol_roots_mod_p": [],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 59,
+   "EXC:ValueError": 1
+  }
+ },
+ "151": {
+  "p": 151,
+  "p_mod_24": 7,
+  "Hpol_roots_mod_p": [],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 60
+  }
+ },
+ "167": {
+  "p": 167,
+  "p_mod_24": 23,
+  "Hpol_roots_mod_p": [
+   15,
+   58,
+   131,
+   132
+  ],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 60
+  }
+ },
+ "191": {
+  "p": 191,
+  "p_mod_24": 23,
+  "Hpol_roots_mod_p": [
+   9,
+   46,
+   106,
+   150
+  ],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 60
+  }
+ },
+ "199": {
+  "p": 199,
+  "p_mod_24": 7,
+  "Hpol_roots_mod_p": [],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 60
+  }
+ },
+ "223": {
+  "p": 223,
+  "p_mod_24": 7,
+  "Hpol_roots_mod_p": [],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 60
+  }
+ },
+ "239": {
+  "p": 239,
+  "p_mod_24": 23,
+  "Hpol_roots_mod_p": [
+   192,
+   214,
+   218,
+   235
+  ],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 60
+  }
+ },
+ "263": {
+  "p": 263,
+  "p_mod_24": 23,
+  "Hpol_roots_mod_p": [
+   55,
+   110,
+   141,
+   184
+  ],
+  "tested": 60,
+  "statuses": {
+   "not_eligible_prime": 60
+  }
+ }
+}
+===== D_bad_p
+{
+ "0": "EXC:ValueError: require prime 7<=p<2^64",
+ "1": "EXC:ValueError: require prime 7<=p<2^64",
+ "2": "EXC:ValueError: require prime 7<=p<2^64",
+ "3": "EXC:ValueError: require prime 7<=p<2^64",
+ "5": "EXC:ValueError: require prime 7<=p<2^64",
+ "25": "EXC:ValueError: require prime 7<=p<2^64",
+ "49": "EXC:ValueError: require prime 7<=p<2^64",
+ "121": "EXC:ValueError: require prime 7<=p<2^64",
+ "145": "EXC:ValueError: require prime 7<=p<2^64",
+ "169": "EXC:ValueError: require prime 7<=p<2^64",
+ "217": "EXC:ValueError: require prime 7<=p<2^64",
+ "289": "EXC:ValueError: require prime 7<=p<2^64",
+ "361": "EXC:ValueError: require prime 7<=p<2^64",
+ "529": "EXC:ValueError: require prime 7<=p<2^64",
+ "1105": "EXC:ValueError: require prime 7<=p<2^64",
+ "2465": "EXC:ValueError: require prime 7<=p<2^64",
+ "46657": "EXC:ValueError: require prime 7<=p<2^64",
+ "-73": "EXC:ValueError: require prime 7<=p<2^64",
+ "73.0": "EXC:ValueError: require prime 7<=p<2^64",
+ "True": "EXC:ValueError: require prime 7<=p<2^64",
+ "'73'": "EXC:ValueError: require prime 7<=p<2^64",
+ "18446744073709551617": "EXC:ValueError: require prime 7<=p<2^64",
+ "18446744073709551625": "EXC:ValueError: require prime 7<=p<2^64"
+}
+===== E_tampered
+{
+ "untampered": "ACCEPTED",
+ "flip_e": "rejected (ValueError: parameters do not reproduce both short coefficients)",
+ "flip_g": "rejected (ValueError: parameters do not reproduce both short coefficients)",
+ "swap_e_g": "rejected (ValueError: invalid depth-three parameters: need e^2=3, g^2=2, r nonzero)",
+ "scale_r_by_2": "rejected (ValueError: parameters do not reproduce both short coefficients)",
+ "negate_r": "rejected (ValueError: parameters do not reproduce both short coefficients)",
+ "r_zero": "rejected (ValueError: invalid depth-three parameters: need e^2=3, g^2=2, r nonzero)",
+ "e_not_sqrt3": "rejected (ValueError: invalid depth-three parameters: need e^2=3, g^2=2, r nonzero)",
+ "alter_forward_root": "rejected (ValueError: stored forward_roots disagrees with recomputed certificate)",
+ "alter_beta_multiplier": "rejected (ValueError: stored beta_multiplier disagrees with recomputed certificate)",
+ "alter_family": "rejected (ValueError: certificate family mismatch)",
+ "missing_parameters": "rejected (ValueError: stored parameters e, g, r must be integers)",
+ "alter_reverse_endpoint_only(stored_output_untrusted)": "rejected (ValueError: stored reverse_path disagrees with recomputed certificate)",
+ "cert_against_other_curve_(8,64)": "rejected (ValueError: parameters do not reproduce both short coefficients)",
+ "cert_against_conjugate_member": "rejected (ValueError: parameters do not reproduce both short coefficients)",
+ "other_members_certificate": "rejected (ValueError: parameters do not reproduce both short coefficients)",
+ "e_plus_p (should be accepted, reduced mod p)": "ACCEPTED"
+}
+===== F_fixture_summary
+{
+ "(True, 'A=0', 3, 'recognized')": 32,
+ "(True, 'B=0', 3, 'not_in_depth_three_family')": 8,
+ "(False, 'B=0', 3, 'not_eligible_prime')": 24,
+ "(True, 'A=0', 4, 'not_in_depth_three_family')": 32
+}
+===== G_prepare_from_trace
+{
+ "fixture": {
+  "K": 55,
+  "H": 10,
+  "T_at_9": 3,
+  "short_model": [
+   2,
+   55
+  ],
+  "cert_params": {
+   "e": 21,
+   "g": 41,
+   "r": 15,
+   "e_squared": 3,
+   "g_squared": 2
+  }
+ },
+ "my_K_from_exact_expansion": 55,
+ "my_H_from_exact_expansion": 10,
+ "my_K_formula": 8,
+ "my_T_at_9": 3,
+ "f(9)_mod_p": 0,
+ "wrong_trace_11": "EXC:ValueError: supplied trace violates the family condition 4p - t^2 = 192 f^2 with f >= 1",
+ "wrong_sign_trace": {
+  "accepted": true,
+  "K": 18,
+  "status": null
+ },
+ "trace_outside_hasse": "EXC:ValueError: trace fails necessary Hasse interval; not a certification test",
+ "trace_zero": "EXC:ValueError: supplied trace violates the family condition 4p - t^2 = 192 f^2 with f >= 1",
+ "nonfamily_cubic_[1,1,0,1]": {
+  "status": "not_in_depth_three_family",
+  "p": 73,
+  "short_model": [
+   1,
+   1
+  ],
+  "family": "depth3_0_disc_-192",
+  "scope": "nondual depth-three closure of the ordinary A=0 seed; p=1 mod 24; all quadratic twists",
+  "graph_search_used": false,
+  "square_root_search_used": false,
+  "reason": "extracted parameters are not square roots of 3 and 2",
+  "extracted": {
+   "e": 34,
+   "g": 51
+  }
+ }
+}
+===== H_large_primes
+{
+ "1000033": {
+  "family_roundtrip_ok": 30,
+  "bad": 0,
+  "random_rejected_of_30": 30
+ },
+ "1000081": {
+  "family_roundtrip_ok": 30,
+  "bad": 0,
+  "random_rejected_of_30": 30
+ },
+ "1000000000177": {
+  "family_roundtrip_ok": 30,
+  "bad": 0,
+  "random_rejected_of_30": 30
+ },
+ "9223372036854776257": {
+  "family_roundtrip_ok": 30,
+  "bad": 0,
+  "random_rejected_of_30": 30
+ }
+}
+===== I_type_confusion
+{
+ "(4.0, 16)": "EXC:ValueError: short coefficients must be integers",
+ "(4, 16.0)": "EXC:ValueError: short coefficients must be integers",
+ "(True, 16)": "EXC:ValueError: short coefficients must be integers",
+ "('4', 16)": "EXC:ValueError: short coefficients must be integers",
+ "(77, 381)": "recognized",
+ "(-69, -57)": "recognized"
+}
