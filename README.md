@@ -121,6 +121,10 @@ Table 1 is a quarter-point pilot run for seven primes $p\equiv1\pmod4$, with $n=
 
 *See paper for a detailed explanation of the pilot benchmark*. 
 
+## Extension research: branch points, isogeny closure and the rounded third point
+
+The folder [`Cartier-Miller-Extensions-20261009/`](Cartier-Miller-Extensions-20261009/) contains follow-up research carried out between 6 and 9 October 2026, with its own README, proofs, validators and evidence. It addresses the branch arguments $f(\mu)=0$ excluded from the main theorem. It gives an explicit branch formula and normalized rational 2-isogeny transport, direct recognition of curves reachable from two ordinary easy seeds through depth two, and one consolidated depth-three family of discriminant $-192$ with a CM trace preparation. It also proves that, for $p\equiv2\pmod 3$, the missing boundary at the rounded third point is $a_{(p+1)/3}\equiv3/(2(\lfloor p/3\rfloor!)^3)\pmod p$. The complete weighted sum there is therefore equivalent to a Gauss factorial, an obstruction rather than a new fast family. Like the manuscript, this work is unrefereed, AI-assisted and makes no novelty claim; its [HUMAN_REVIEW.md](Cartier-Miller-Extensions-20261009/HUMAN_REVIEW.md) lists concrete questions for reviewers.
+
 ## Review and collaboration
 
 Independent scrutiny of the exceptional proof, differential scale, residue signs and split-algebra arithmetic is especially welcome. A specialist comparison with existing Cartier, descent, anomalous-curve and Frobenius literature would help establish whether the normalization is already implicit in known results.
@@ -128,6 +132,10 @@ Independent scrutiny of the exceptional proof, differential scale, residue signs
 Possible further work includes practical exact point-counting integration, faster curve arithmetic, branch arguments and other stopping families. The current theorem does not establish a uniform algorithm for all stopping indices or congruences modulo $p^2$.
 
 Please open an issue to discuss a proof gap, counterexample, literature connection or reproducibility problem. For computational findings, include the prime, input polynomial, evaluation argument, expected and obtained values, software versions and a minimal reproducing example. Pull requests for corrections and independently checked improvements are welcome.
+
+## Licensing
+
+The repository's [MIT License](LICENSE) covers the author's own material, including the extension folder, which carries its own MIT licence file. It does not cover third-party or separately licensed code. [`Cartier_Miller_Benchmark/`](Cartier_Miller_Benchmark/) bundles David Harvey's interval-product sources from SageMath under the GNU General Public License, with their original notices in `upstream/COPYING.txt`. That folder's adapter, GUI, point counters, harness, tests and launchers carry `GPL-2.0-or-later` notices, and its `LICENSE` file reproduces the SageMath copyright statement. Those files remain under the GPL. The manuscript PDF is shared for review and remains the author's work under its own terms.
 
 ## AI assistance and attribution
 
