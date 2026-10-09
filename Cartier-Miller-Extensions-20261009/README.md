@@ -25,7 +25,7 @@ The research was carried out between 6 and 9 October 2026 with substantial gener
 | Depth two from $A=0$ | $p\equiv1\bmod12$, $e^2=3$ | $-135-60e$ | $-694-420e$ | $-(3+2e)$ |
 | Depth three from $A=0$ | $p\equiv1\bmod24$, $e^2=3$, $g^2=2$ | $-1095-540e-540g-420eg$ | $-22198-13860e-16380g-8820eg$ | $-(7+6e+6g+2eg)$ |
 
-The short model is $y^2=x^3+Ax+B$ with $\beta=[x^{p-2}](x^3+Ax+B)^{(p-1)/2}$ and $r\neq0$. The quotients $\beta/(rH)$ are multipliers: the implementations multiply by $H$ and never divide by it. Quadratic twisting by $d$ sends $r$ to $dr$. [RESULTS.md](RESULTS.md) states the normalization, costs and limitations in full.
+The short model is $y^2=x^3+Ax+B$ with $\beta=\lbrack x^{p-2}\rbrack\,(x^3+Ax+B)^{(p-1)/2}$ and $r\neq0$. The quotients $\beta/(rH)$ are multipliers: the implementations multiply by $H$ and never divide by it. Quadratic twisting by $d$ sends $r$ to $dr$. [RESULTS.md](RESULTS.md) states the normalization, costs and limitations in full.
 
 ## Quick start
 

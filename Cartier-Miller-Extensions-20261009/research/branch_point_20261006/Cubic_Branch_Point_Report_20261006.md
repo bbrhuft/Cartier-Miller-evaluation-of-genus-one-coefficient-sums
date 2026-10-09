@@ -88,7 +88,7 @@ $$A=ac-b^2/3,\qquad B=a^2-abc/3+2b^3/27,$$
 
 and ω=dw/v=dx/y=2ω∞ with ω∞=dx/(2y). If
 
-$$\beta=[x^{p-2}](x^3+Ax+B)^h,$$
+$$\beta=\lbrack x^{p-2}\rbrack\,(x^3+Ax+B)^h,$$
 
 then
 

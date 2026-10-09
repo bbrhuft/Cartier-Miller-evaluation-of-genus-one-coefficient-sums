@@ -4,7 +4,7 @@
 
 ## Assumptions and normalized data
 
-Let $p\ge7$ be prime and $E:y^2=x^3+Ax+B$ nonsingular over $\mathbb F_p$. Set $h=(p-1)/2$, $H=[x^{p-1}](x^3+Ax+B)^h$, and $\beta=[x^{p-2}](x^3+Ax+B)^h$. The differentials are $\omega=dx/y$ and $\eta=x\omega$. The retained explicitly normalized quotient at a rational root $q$ is
+Let $p\ge7$ be prime and $E:y^2=x^3+Ax+B$ nonsingular over $\mathbb F_p$. Set $h=(p-1)/2$, $H=\lbrack x^{p-1}\rbrack\,(x^3+Ax+B)^h$, and $\beta=\lbrack x^{p-2}\rbrack\,(x^3+Ax+B)^h$. The differentials are $\omega=dx/y$ and $\eta=x\omega$. The retained explicitly normalized quotient at a rational root $q$ is
 
 \[
 A'=-4A-15q^2,\qquad B'=-8Aq-22q^3,

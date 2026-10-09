@@ -29,7 +29,7 @@ Use the infinity-origin short coordinate x=aw+b/3,y=av:
 
 $$A=ac-b^2/3,\quad B=a^2-abc/3+2b^3/27,\quad dw/v=dx/y=2dx/(2y).$$
 
-On y²=x³+Ax+B, put beta=[x^(p-2)](x³+Ax+B)^h. Then beta=aK+(b/3)H and H equals the exact trace modulo p, using trace p+1-#E(F_p). The easy seed tests are A=0 with p congruent to 1 modulo 3, or B=0 with p congruent to 1 modulo 4. Exponent support supplies beta=0 in these classes. The characteristic-p branch residue and direct exceptional normalization in the existing manuscript are not revised.
+On y²=x³+Ax+B, put beta=\[x^(p-2)\](x³+Ax+B)^h. Then beta=aK+(b/3)H and H equals the exact trace modulo p, using trace p+1-#E(F_p). The easy seed tests are A=0 with p congruent to 1 modulo 3, or B=0 with p congruent to 1 modulo 4. Exponent support supplies beta=0 in these classes. The characteristic-p branch residue and direct exceptional normalization in the existing manuscript are not revised.
 
 ## Rooted degree-two map, scales and signs
 

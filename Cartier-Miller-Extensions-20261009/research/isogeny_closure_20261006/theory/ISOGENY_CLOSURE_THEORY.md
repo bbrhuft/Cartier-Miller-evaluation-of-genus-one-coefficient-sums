@@ -27,7 +27,7 @@ $$\boxed{\phi^*\omega'=\omega,\qquad
 
 Indeed d(y/z)=1/2(z-u/z)omega. The primitive has poles at infinity and (r,0); the formula accounts for both preimages of the target infinity pole. No local-principal-part substitution or unrecorded holomorphic adjustment is used. With omega=dx/(2y), the exact term is -d(y/(x-r)); the first-kind scale stays +1.
 
-Let H=[x^(p-1)](x³+Ax+B)^h and beta=[x^(p-2)](x³+Ax+B)^h, h=(p-1)/2. Cartier kills the exact term. Naturality in this separable extension follows from the unique p-basis decomposition in a separating target coordinate: sum q_i^p (x')^i dx' pulls back to the same decomposition and Cartier selects i=p-1. Hence
+Let H=\[x^(p-1)\](x³+Ax+B)^h and beta=\[x^(p-2)\](x³+Ax+B)^h, h=(p-1)/2. Cartier kills the exact term. Naturality in this separable extension follows from the unique p-basis decomposition in a separating target coordinate: sum q_i^p (x')^i dx' pulls back to the same decomposition and Cartier selects i=p-1. Hence
 
 $$\boxed{H'=H,\qquad\beta'=2\beta-rH.}$$
 
