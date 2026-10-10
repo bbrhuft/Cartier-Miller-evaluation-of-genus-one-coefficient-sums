@@ -11,7 +11,8 @@ Most validators rewrite their result files in place, in the same directory. To r
 | `python verify_release.py` | Status passed, with every hash in SHA256SUMS.json matching; well under a second |
 | `python research/depth_two_recognition_20261006/core/cli.py --p 17 --short 8 2` | Recognized depth-two certificate with a verified reverse path to the B=0 seed |
 | `python research/depth_two_recognition_20261006/core/cli.py --p 13 --f 1 12 0 9 --trusted-trace -2 --mu 7` | H=11, K=8, T=2 from a caller-trusted trace |
-| `python research/depth_three_recognition_20261007/core/cli.py --p 73 --f 1 4 0 37 --cm --unbounded-sign-test --mu 9` | H=10, K=55, T=3 by the restricted CM route; expected, not deterministic, completion cost |
+| `python research/depth_three_recognition_20261007/core/cli.py --p 73 --f 1 4 0 37 --cm --mu 9` | H=10, K=55, T=3 by the restricted CM route with the deterministic sign; only the √−3 search is randomized |
+| `python research/depth_three_recognition_20261007/core/cli.py --p 73 --f 1 4 0 37 --cm --sign-method las_vegas --unbounded-sign-test --mu 9` | The same values with the zero-error Las Vegas sign test |
 
 If you edit any tracked file, the hash check in verify_release.py will fail until SHA256SUMS.json is regenerated. That is intended.
 
@@ -36,6 +37,7 @@ Times are wall-clock seconds from the 9 October rerun, which ran 17 jobs in para
 | Independent adversarial checks | `python research/depth_three_recognition_20261007/independent/indep_attack.py` | stdlib | 7 |
 | Independent PARI checks | `python research/depth_three_recognition_20261007/independent/indep_extra.py` | cypari2 | 15 |
 | Independent symbolic checks | `python research/depth_three_recognition_20261007/independent/indep_symbolic.py` | SymPy | 10 |
+| Independent Theorem 4 check (10 October) | `python research/depth_three_recognition_20261007/independent/indep_sextic_theorem4_20261010.py` | cypari2 | about 10 |
 | Rounded third point | `python research/rounded_third_boundary_20261009/validate_rounded_third.py` | stdlib | 6 alone, 19 in parallel |
 | Fresh transport cross-check | `python research/rounded_third_boundary_20261009/independent_transport_check.py` | stdlib | 19 in parallel |
 

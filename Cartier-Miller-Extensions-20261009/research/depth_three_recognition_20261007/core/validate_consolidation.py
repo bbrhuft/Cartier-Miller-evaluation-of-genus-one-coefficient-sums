@@ -125,15 +125,20 @@ def main():
     assert decided is None and info['status']=='inconclusive_after_max_trials' and info['trials']==3
     assert info['inconclusive_probability_upper_bound']=='(4/5)^3'
     # The probability assertion concerns uniform draws; forced draws test status only.
-    capped=impl.prepare_cm(73,[1,4,0,37],rng=ForcedRoot(73,2,55),max_trials=3)
+    capped=impl.prepare_cm(73,[1,4,0,37],rng=ForcedRoot(73,2,55),max_trials=3,sign_method='las_vegas')
     assert capped['status']=='trace_sign_inconclusive'
-    prepared=impl.prepare_cm(73,[1,4,0,37],rng=random.Random(73),max_trials=None)
+    prepared=impl.prepare_cm(73,[1,4,0,37],rng=random.Random(73),max_trials=None,sign_method='las_vegas')
     assert prepared.exact_trace==10 and prepared.evaluator.K==55 and prepared.evaluator.query(9)['T']==3
     assert prepared.evaluator.query(9)['status']=='exact_mod_p'
-    verified=impl.prepare_from_trace(73,[1,4,0,37],10,verify_sign=True,rng=random.Random(73),max_trials=None)
+    verified=impl.prepare_from_trace(73,[1,4,0,37],10,verify_sign='las_vegas',rng=random.Random(73),max_trials=None)
     assert verified.evaluator.query(9)['status']=='exact_mod_p'
     assert impl.verify_trace_sign_witness(2,55,73,10,verified.trace_sign_verification['witness'])==10
     assert impl.prepare_from_trace(73,[1,4,0,37],10).evaluator.query(9)['status']=='computed_from_trusted_data'
+    # 10 October default: deterministic Ireland-Rosen sign, no retry cap involved.
+    det=impl.prepare_cm(73,[1,4,0,37],rng=ForcedRoot(73,2,55),max_trials=1)
+    assert det.exact_trace==10 and det.evaluator.K==55 and det.trace_preparation['sign_test']['status']=='deterministic'
+    sv=impl.prepare_from_trace(73,[1,4,0,37],10,verify_sign=True,rng=random.Random(73))
+    assert sv.trace_sign_verification['status']=='deterministic' and sv.evaluator.query(9)['status']=='exact_mod_p'
 
     # Stored point witness must not be accepted on its declared flags alone.
     _,info=impl.decide_trace_sign(4,16,73,10,random.Random(73),max_trials=None)

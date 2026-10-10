@@ -5,9 +5,11 @@ Python 3.10+ standard-library research prototype. The retained `branch_evaluator
 | Path | Purpose |
 |---|---|
 | `TRACE_SIGN_BOUND_20261007.md` | Consolidated success bound, finite witnesses, sampler costs and seed obstruction |
+| `DETERMINISTIC_TRACE_SIGN_20261010.md` | Deterministic sign by Ireland & Rosen, Ch. 18, Theorem 4 (default since 10 October) |
 | `Depth_Three_Recognition_Proof_Note_20261007.md` | Reviewable proof note: family, recognition theorem, exceptional primes, trace proposition, costs, status |
 | `core/depth_three_recognize.py` | Recognizer, certificate verifier, trusted-trace and complete CM preparation |
 | `core/cli.py` | JSON command line |
+| `independent/indep_sextic_theorem4_20261010.py` | Independent PARI check of Theorem 4 on 2,075 curves |
 | `core/validate_consolidation.py` | New finite proof certificates, independent group law, witness and failure/status tests |
 | `core/validate_depth_three.py` | Validation suite; regenerates `validation.json` and the CSV files |
 | `theory/check_integer_invariants_depth3.py` | Standard-library reproduction of every integer in the proof note's table (`integer_invariants_depth3.json`) |
@@ -20,14 +22,14 @@ Direct recognition from the short coefficients, no trace needed:
 python core/cli.py --p 73 --short 4 16
 ```
 
-returns $(e,g,r)=(21,41,42)$, multiplier $15$, the forward and reverse paths. Preparation of an original normalized cubic with a caller-supplied exact trace (necessary CM condition enforced; `--verify-sign` adds a Las Vegas sign check), or by the complete CM route with no supplied trace:
+returns $(e,g,r)=(21,41,42)$, multiplier $15$, the forward and reverse paths. Preparation of an original normalized cubic with a caller-supplied exact trace (necessary CM condition enforced; `--verify-sign` adds a sign check, deterministic by default), or by the complete CM route with no supplied trace:
 
 ```bash
 python core/cli.py --p 73 --f 1 4 0 37 --trusted-trace 10 --verify-sign --mu 9
-python core/cli.py --p 73 --f 1 4 0 37 --cm --unbounded-sign-test --mu 9
+python core/cli.py --p 73 --f 1 4 0 37 --cm --mu 9
 ```
 
-Both give $H=10$, $K=55$, $T_f(9)=3$. The default capped CM route can return `trace_sign_inconclusive`; its cap is 64 raw draws. The unbounded route has at most five raw draws in expectation under independent uniform randomness. `--through-depth-two` combines the retained depth-two recognizer with this one and reports `not_in_implemented_families` for uncovered cases; `--verify-certificate cert.json` reverifies a stored certificate field by field.
+Both give $H=10$, $K=55$, $T_f(9)=3$. The default sign rule is deterministic (Ireland & Rosen, Ch. 18, Theorem 4). `--sign-method las_vegas` selects the zero-error point test instead; its default cap is 64 raw draws and may return `trace_sign_inconclusive`, while `--unbounded-sign-test` has at most five raw draws in expectation under independent uniform randomness. `--through-depth-two` combines the retained depth-two recognizer with this one and reports `not_in_implemented_families` for uncovered cases; `--verify-certificate cert.json` reverifies a stored certificate field by field.
 
 Reproduction from this directory:
 

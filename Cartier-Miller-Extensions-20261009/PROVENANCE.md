@@ -44,3 +44,8 @@ The closure theory note describes `check_closure.py` together with `validation.c
 ## Evidence authority
 
 Nested SHA256SUMS files inside research directories describe their original scope and can include runtime artifacts. SHA256SUMS.json at the root is authoritative for this release. Retained validation outputs are historical records of the runs that produced them. The 9 October rerun outputs are kept separately in evidence/rerun_20261009/.
+
+## Update of 10 October 2026
+
+A depth-three update was received as Depth_Three_Recognition_Handover_20261010.zip (SHA-256 acc944b70721255dbe51ed3a1e0ba459fb94bc09ccbc73ac5c0a1306d9e59104), with its revised proof note and ledger. It was built on the original 7 October depth-three code. Only its new deterministic-sign functions and validator checks were merged into this release, on top of the consolidated code; the details are in docs/LEDGER_20261009.md. The received note, ledger, sources note and state file are kept unchanged in history/handover_records/depth_three_update_20261010/. The Ireland–Rosen chapter scan and the Tal report PDF used by the author are not redistributed, for copyright reasons.
+

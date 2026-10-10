@@ -19,12 +19,12 @@
   },
   "forced_cap_status": "trace_sign_inconclusive",
   "environment": {
-    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
-    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+    "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+    "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39"
   },
   "source_sha256": {
-    "depth_three_recognize.py": "86832fee1aacec26b21a76050f521b7995dd699c32c3ba1ba0fe3c23b3f719e2",
-    "cli.py": "c137e17c9ba64dc0f1c1ef86fa02298b5cab3c2ff7f8413ded7b27702c3b4e3c",
-    "validate_consolidation.py": "47ce2dcaddac406dc26cbeb5e0fccab8fa5f28c63e665d5e7f4bd573ecfe7769"
+    "depth_three_recognize.py": "4927037a13441599f5d3c09eaeb2dd7c4fdc17d20fa870aa010a4e61e5295267",
+    "cli.py": "35832cbcece41a16e6797263a323cd4395a2b2099a5306c8abf35b257fe5cddd",
+    "validate_consolidation.py": "23021e9458fbddce0c906690a39bf37699422a06684eec4f416b6b28c6f9e362"
   }
 }

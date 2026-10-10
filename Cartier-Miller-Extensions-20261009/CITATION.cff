@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this research or software, please cite it as below. The proofs are unrefereed."
 title: "Cartier–Miller extensions: normalized 2-isogeny closure, depth-three CM recognition and the rounded-third obstruction"
-version: "2026.10.09"
-date-released: "2026-10-09"
+version: "2026.10.10"
+date-released: "2026-10-10"
 license: MIT
 type: software
 authors:

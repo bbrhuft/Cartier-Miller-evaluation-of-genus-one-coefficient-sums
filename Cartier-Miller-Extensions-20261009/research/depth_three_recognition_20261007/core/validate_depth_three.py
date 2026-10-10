@@ -23,7 +23,7 @@ HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 from depth_three_recognize import (recognize_depth_three, recognize_short_through_depth_three,  # noqa: E402
                                    verify_supplied_certificate, prepare_from_trace, prepare_cm, family_member,
-                                   cm_trace_candidates, decide_trace_sign, RecognizedPreparation, CMPreparation,
+                                   cm_trace_candidates, decide_trace_sign, primary_prime_from_cornacchia, seed_trace_sextic, RecognizedPreparation, CMPreparation,
                                    ALPHA, GAMMA, MULTIPLIER, ev, FAMILY)
 from branch_evaluator import linear_cartier_data, is_prime64  # noqa: E402
 from isogeny_closure import short_model  # noqa: E402
@@ -484,11 +484,27 @@ def main():
         assert abs(tau) == t0, (p, tau, t0)
         decided, sinfo = decide_trace_sign(A, B, p, t0, rng)
         assert decided == tau, (p, decided, tau)
-        cm_rows.append({'p': p, 't0': t0, 'f': fc, 'x': info['x'], 'cubic_nonresidue_trials': info['cubic_nonresidue_trials'],
+        pi = primary_prime_from_cornacchia(p, info['x'], info['y'])
+        sextic, _ = seed_trace_sextic(p, -pow(r, 3, p), pi)
+        assert sextic == tau, (p, sextic, tau)
+        cm_rows.append({'sign_sextic': sextic, 'p': p, 't0': t0, 'f': fc, 'x': info['x'], 'cubic_nonresidue_trials': info['cubic_nonresidue_trials'],
                         'A': A, 'B': B, 'trace_legendre': tau, 'sign_decided': decided, 'sign_trials': sinfo['trials']})
     write_csv(HERE/'validation_cm_trace.csv', cm_rows)
     summary['cm_trace_primes_checked'] = len(cm_rows)
     summary['cm_sign_trials_max'] = max(r['sign_trials'] for r in cm_rows)
+    # Ireland-Rosen Theorem 4 for every y^2 = x^3 + D at every p = 1 mod 3 below 400 (independent of the family)
+    sextic_rows = []
+    for p in [q for q in range(7, 400) if q % 3 == 1 and is_prime64(q)]:
+        # independent primary prime by exhaustive search
+        pi = next((x, y) for x in range(-2*isqrt(p)-2, 2*isqrt(p)+3) for y in range(-2*isqrt(p)-2, 2*isqrt(p)+3)
+                  if x*x-x*y+y*y == p and x % 3 == 2 and y % 3 == 0)
+        agree = sum(seed_trace_sextic(p, D, pi)[0] == legendre_trace(0, D, p) for D in range(1, p))
+        assert agree == p-1, (p, agree)
+        sextic_rows.append({'p': p, 'primary_pi_a': pi[0], 'primary_pi_b': pi[1], 'D_values_checked': p-1, 'agree_with_legendre': agree})
+    assert seed_trace_sextic(13, 1, (-1, 3))[0] == 2  # Ireland-Rosen worked example: N_13 = 12
+    write_csv(HERE/'validation_sextic_sign.csv', sextic_rows)
+    summary['sextic_theorem4_checks'] = {'primes': len(sextic_rows), 'curves': sum(r['D_values_checked'] for r in sextic_rows),
+                                         'ireland_rosen_example_p13_D1': 'trace 2, N=12, reproduced'}
     # complete prepare_cm against trusted-trace preparation on cubics, including large primes with PARI traces
     cm_prep_rows = []
     for p in [73, 97, 193, 241, 577, 1009]:
@@ -503,12 +519,15 @@ def main():
             tau = legendre_trace(A, B, p)
             ref = prepare_from_trace(p, f, tau, verify_sign=True)
             got = prepare_cm(p, f, rng=rng)
+            lv = prepare_cm(p, f, rng=rng, sign_method='las_vegas', max_trials=None)
+            assert lv.exact_trace == got.exact_trace
             assert isinstance(got, CMPreparation) and isinstance(ref, RecognizedPreparation)
             assert got.exact_trace == tau and (got.evaluator.H, got.evaluator.K) == (ref.evaluator.H, ref.evaluator.K)
             H_ref, K_ref = linear_cartier_data(tuple(f), p)
             assert (got.evaluator.H, got.evaluator.K) == (H_ref, K_ref)
             cm_prep_rows.append({'p': p, 'f': json.dumps(f), 'trace_legendre': tau, 'trace_cm': got.exact_trace, 'H': H_ref, 'K_recurrence': K_ref,
-                                 'K_cm': got.evaluator.K, 'sign_trials': got.trace_preparation['sign_test']['trials'], 'trace_pari': pari_trace(A, B, p)})
+                                 'K_cm': got.evaluator.K, 'sign_method': got.trace_preparation['sign_method'],
+                                 'las_vegas_trials': lv.trace_preparation['sign_test']['trials'], 'trace_pari': pari_trace(A, B, p)})
     for size in (2**31, 2**40, 2**62):
         p = next_prime_1_mod_24(rng.randrange(size, size+size//4))
         e = sqrt_mod(3, p, rng); g = sqrt_mod(2, p, rng)
@@ -519,24 +538,32 @@ def main():
                 break
         f = [1, (3*x0*x0+A)*pow(y0, -1, p) % p, 3*x0 % p, y0]
         got = prepare_cm(p, f, rng=rng)
-        assert isinstance(got, CMPreparation)
+        lv = prepare_cm(p, f, rng=rng, sign_method='las_vegas', max_trials=None)
+        assert isinstance(got, CMPreparation) and lv.exact_trace == got.exact_trace
         tp = pari_trace(A, B, p)
         assert tp is None or tp == got.exact_trace
         cm_prep_rows.append({'p': p, 'f': json.dumps(f), 'trace_legendre': None, 'trace_cm': got.exact_trace, 'H': got.evaluator.H,
-                             'K_recurrence': None, 'K_cm': got.evaluator.K, 'sign_trials': got.trace_preparation['sign_test']['trials'],
-                             'trace_pari': tp})
+                             'K_recurrence': None, 'K_cm': got.evaluator.K, 'sign_method': got.trace_preparation['sign_method'],
+                             'las_vegas_trials': lv.trace_preparation['sign_test']['trials'], 'trace_pari': tp})
     write_csv(HERE/'validation_cm_preparation.csv', cm_prep_rows)
     summary['cm_complete_preparations'] = len(cm_prep_rows)
     # wrong supplied traces
     wrong = []
-    for t, label in [(11, 'odd_impossible'), (0, 'zero_impossible'), (12, 'hasse_ok_but_not_192_form'), (-10, 'wrong_sign')]:
+    for t, label in [(11, 'odd_impossible'), (0, 'zero_impossible'), (12, 'hasse_ok_but_not_192_form'), (-10, 'wrong_sign_sextic')]:
         try:
             prepare_from_trace(73, [1, 4, 0, 37], t, verify_sign=True, rng=rng); ok = False
         except ValueError as err:
             ok = True; msg = str(err)
         assert ok, label
         wrong.append({'trace': t, 'case': label, 'rejected': True, 'error': msg})
+    try:
+        prepare_from_trace(73, [1, 4, 0, 37], -10, verify_sign='las_vegas', rng=rng, max_trials=None); ok = False
+    except ValueError as err:
+        ok = True; msg = str(err)
+    assert ok
+    wrong.append({'trace': -10, 'case': 'wrong_sign_las_vegas', 'rejected': True, 'error': msg})
     assert isinstance(prepare_from_trace(73, [1, 4, 0, 37], 10, verify_sign=True, rng=rng), RecognizedPreparation)
+    assert isinstance(prepare_from_trace(73, [1, 4, 0, 37], 10, verify_sign='las_vegas', rng=rng, max_trials=None), RecognizedPreparation)
     write_csv(HERE/'validation_wrong_traces.csv', wrong)
     summary['wrong_supplied_traces_rejected'] = len(wrong)
     # ---- summary ----

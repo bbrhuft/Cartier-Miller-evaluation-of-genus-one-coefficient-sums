@@ -376,63 +376,151 @@ def prepare_from_trace(p, f, trusted_exact_trace, *, verify_sign=False, rng=None
     """K reconstruction for a normalized cubic whose short model is in the
     family, from a caller-supplied exact trace. The supplied trace must pass
     the Hasse interval and the family's necessary CM condition
-    4p - t^2 = 192 f^2; with verify_sign=True a Las Vegas point test must
-    also confirm its sign, otherwise the sign is trusted. Complete theoretical
-    cost is trace preparation plus constant field work."""
+    4p - t^2 = 192 f^2. With verify_sign=True (or 'sextic') its sign is checked
+    deterministically by Ireland-Rosen Theorem 4 on the seed; with
+    verify_sign='las_vegas' the consolidated zero-error point test is used
+    (capped by max_trials, None for unbounded). Otherwise the sign is trusted.
+    Complete theoretical cost is trace preparation plus constant field work."""
     validate_prime(p); f = check_cubic(f, p)
     t = trusted_exact_trace
     if not isinstance(t, int) or isinstance(t, bool) or t*t > 4*p:
         raise ValueError('trace fails necessary Hasse interval; not a certification test')
+    if verify_sign not in (False, True, 'sextic', 'las_vegas'):
+        raise ValueError("verify_sign must be False, True, 'sextic' or 'las_vegas'")
     A, B = short_model(f, p)
     rec = recognize_depth_three(A, B, p)
     if rec['status'] != 'recognized':
         return rec
     if not _cm_necessary_check(p, t):
         raise ValueError('supplied trace violates the family condition 4p - t^2 = 192 f^2 with f >= 1')
+    cert = rec['matches'][0]
     method = 'direct_depth_three_caller_supplied_exact_trace'
-    if verify_sign:
+    info = None
+    if verify_sign == 'las_vegas':
         decided, info = decide_trace_sign(A, B, p, abs(t), rng, max_trials)
         if decided is None:
-            raise ValueError('sign verification inconclusive after %d trials' % max_trials)
+            raise ValueError('sign verification inconclusive after %s trials' % max_trials)
         if decided != t:
             raise ValueError('supplied trace has the wrong sign: a rational point is killed only by p+1-(%d)' % decided)
-        method = 'direct_depth_three_exact_trace_sign_verified'
-    cert = rec['matches'][0]
+        method = 'direct_depth_three_exact_trace_sign_verified_las_vegas'
+    elif verify_sign:
+        _, _, cinfo = cm_trace_candidates(p, rng)
+        pi = primary_prime_from_cornacchia(p, cinfo['x'], cinfo['y'])
+        decided, info = seed_trace_sextic(p, -pow(cert['parameters']['r'], 3, p), pi)
+        if decided != t:
+            raise ValueError('supplied trace %d is wrong: the verified trace is %d' % (t, decided))
+        info.update({'status': 'deterministic', 'source': 'Ireland & Rosen (1990), Ch. 18, Sec. 3, Theorem 4, applied to the seed (0,-r^3)'})
+        method = 'direct_depth_three_exact_trace_sign_verified_sextic'
     H = t % p
     beta = cert['beta_multiplier']*H % p
     _, _, b, a = f
     K = (beta - b*pow(3, -1, p)*H)*pow(a, -1, p) % p
-    return RecognizedPreparation(BranchEvaluator(p, f, H, K, method), cert, t, info if verify_sign else None)
+    return RecognizedPreparation(BranchEvaluator(p, f, H, K, method), cert, t, info)
 
 
-def prepare_cm(p, f, *, rng=None, max_trials=64):
+# ---------------------------------------------------------------------------
+# Deterministic trace sign by Ireland & Rosen, Ch. 18, Section 3, Theorem 4:
+# for p = 1 mod 3, p not dividing D, and p = pi*conj(pi) with pi in Z[omega],
+# pi = 2 mod 3 (primary),
+#     N_p(y^2 = x^3 + D) = p + 1 + conj((4D/pi)_6) pi + (4D/pi)_6 conj(pi),
+# so the trace is a_p = -2 Re( conj((4D/pi)_6) pi ). The sextic residue
+# symbol is (a/pi)_6 = zeta with zeta = a^((p-1)/6) mod pi, a sixth root of
+# unity; mod pi one has omega = -a0/b0 for pi = a0 + b0 omega.
+# An accepted curve has the trace of its seed y^2 = x^3 - r^3 (D = -r^3).
+# ---------------------------------------------------------------------------
+
+def _eis_mul(u, v):
+    """(a + b w)(c + d w) in Z[w], w^2 = -1 - w."""
+    a, b = u; c, d = v
+    return (a*c - b*d, a*d + b*c - b*d)
+
+
+def primary_prime_from_cornacchia(p, x, y):
+    """From p = x^2 + 48 y^2 return primary pi = a + b w (a = 2, b = 0 mod 3)
+    with norm a^2 - a b + b^2 = p. Uses sqrt(-3) = 1 + 2w, so
+    x + 4y sqrt(-3) = (x + 4y) + 8y w, then fixes the unit among the six."""
+    base = (x + 4*y, 8*y)
+    unit = (1, 0)
+    for _ in range(6):
+        a, b = _eis_mul(base, unit)
+        if a % 3 == 2 and b % 3 == 0:
+            if a*a - a*b + b*b != p:
+                raise ProofViolation('primary prime has wrong norm')
+            return a, b
+        unit = _eis_mul(unit, (1, 1))          # 1 + w = -w^2, a primitive sixth root
+    raise ProofViolation('no primary associate found')
+
+
+def seed_trace_sextic(p, D, pi):
+    """Exact trace of y^2 = x^3 + D over F_p by Ireland-Rosen Theorem 4.
+    Deterministic O(log p) field operations given the primary prime pi."""
+    if p % 3 != 1 or D % p == 0:
+        raise ValueError('Theorem 4 case requires p = 1 mod 3 and p not dividing D')
+    a, b = pi
+    if b % p == 0:
+        raise ProofViolation('primary prime has b = 0 mod p')
+    w = (-a*pow(b, -1, p)) % p              # image of omega modulo pi
+    if (w*w + w + 1) % p:
+        raise ProofViolation('omega image is not a cube root of unity')
+    s = pow(4*D % p, (p-1)//6, p)
+    zeta_mod = (1 + w) % p                  # image of 1 + w, primitive sixth root
+    zeta = (1, 0); val = 1
+    for k in range(6):
+        if val == s:
+            break
+        zeta = _eis_mul(zeta, (1, 1)); val = val*zeta_mod % p
+    else:
+        raise ProofViolation('sextic residue symbol not a sixth root of unity')
+    cz = (zeta[0] - zeta[1], -zeta[1])      # complex conjugate of c + d w is (c - d) - d w
+    u0, u1 = _eis_mul(cz, (a, b))
+    return -(2*u0 - u1), {'primary_pi': [a, b], 'sextic_symbol_power_of_1_plus_w': k}
+
+
+def prepare_cm(p, f, *, rng=None, max_trials=64, sign_method='sextic'):
     """Complete preparation without any supplied trace: recognition, CM trace
-    candidates by Cornacchia, Las Vegas sign decision, then H, beta and K.
-    Expected O(log^2 p) field work for the unbounded zero-error algorithm,
-    including Tonelli-Shanks; its raw sign trial count has expectation <=5.
-    The default is capped at 64 raw trials and may return an inconclusive
-    status. Pass max_trials=None for almost-sure completion. No deterministic
-    Schoof fallback is invoked by this prototype."""
+    candidates by Cornacchia, the trace sign, then H, beta and K.
+    sign_method='sextic' (default, 10 October 2026) fixes the sign
+    deterministically by Ireland & Rosen Ch. 18 Theorem 4 applied to the seed
+    (0,-r^3); the only randomized step left is the cubic-nonresidue search
+    inside cm_trace_candidates that supplies sqrt(-3).
+    sign_method='las_vegas' uses the consolidated zero-error point test: raw
+    success probability >=1/5 per uniform draw, capped at max_trials (default
+    64, may return trace_sign_inconclusive) or unbounded with max_trials=None.
+    No deterministic Schoof fallback is invoked by this prototype."""
     validate_prime(p); f = check_cubic(f, p)
+    if sign_method not in ('sextic', 'las_vegas'):
+        raise ValueError('sign_method must be sextic or las_vegas')
     if rng is None:
         rng = random.SystemRandom()
     A, B = short_model(f, p)
     rec = recognize_depth_three(A, B, p)
     if rec['status'] != 'recognized':
         return rec
-    t0, fcount, info = cm_trace_candidates(p, rng)
-    t, sign_info = decide_trace_sign(A, B, p, t0, rng, max_trials)
-    if t is None:
-        return {'status': 'trace_sign_inconclusive', 'p': p, 'candidates': [t0, -t0], 'cornacchia': info, 'sign_test': sign_info,
-                'certificate': rec['matches'][0]}
     cert = rec['matches'][0]
+    t0, fcount, info = cm_trace_candidates(p, rng)
+    if sign_method == 'sextic':
+        pi = primary_prime_from_cornacchia(p, info['x'], info['y'])
+        t, sign_info = seed_trace_sextic(p, -pow(cert['parameters']['r'], 3, p), pi)
+        if abs(t) != t0:
+            raise ProofViolation('sextic seed trace disagrees with the CM candidates')
+        sign_info.update({'status': 'deterministic', 'source': 'Ireland & Rosen (1990), Ch. 18, Sec. 3, Theorem 4, applied to the seed (0,-r^3)'})
+        method = 'direct_depth_three_cm_cornacchia_sextic_sign'
+        sign_cost = 'deterministic: one exponentiation (4D)^((p-1)/6), O(log p) field operations'
+    else:
+        t, sign_info = decide_trace_sign(A, B, p, t0, rng, max_trials)
+        if t is None:
+            return {'status': 'trace_sign_inconclusive', 'p': p, 'candidates': [t0, -t0], 'cornacchia': info, 'sign_test': sign_info,
+                    'certificate': cert}
+        method = 'direct_depth_three_cm_cornacchia_las_vegas_sign'
+        sign_cost = 'zero-error Las Vegas: <=5 expected raw trials, O(log p) field operations each'
     H = t % p
     beta = cert['beta_multiplier']*H % p
     _, _, b, a = f
     K = (beta - b*pow(3, -1, p)*H)*pow(a, -1, p) % p
     prep = {'trace_candidates': [t0, -t0], 'representation_4p': [t0, fcount], 'cornacchia': info, 'sign_test': sign_info,
-            'cost': 'after validated prime: recognition O(1); expected O(log^2 p) field work including square-root searches and <=5 expected raw sign trials; Cornacchia polynomial bit work; capped attempts may be inconclusive'}
-    return CMPreparation(BranchEvaluator(p, f, H, K, 'direct_depth_three_cm_cornacchia_las_vegas_sign'), cert, t, prep)
+            'sign_method': sign_method,
+            'cost': 'after validated prime: recognition O(1); randomized cubic-nonresidue search for sqrt(-3); Cornacchia polynomial bit work; sign ' + sign_cost}
+    return CMPreparation(BranchEvaluator(p, f, H, K, method), cert, t, prep)
 
 
 def family_member(p, e, g, r):

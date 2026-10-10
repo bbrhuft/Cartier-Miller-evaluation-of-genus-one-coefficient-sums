@@ -8,7 +8,7 @@ For a prime p ≡ 2 (mod 3), the original weighted central-binomial sum at the r
 
 $$a_{(p+1)/3}\equiv\frac{3}{2\,(m!)^3}\pmod p,\qquad m=\frac{p-2}{3}=\left\lfloor\frac p3\right\rfloor .$$
 
-Because cubing is a bijection of F_p when p ≡ 2 (mod 3), computing the boundary, computing the complete weighted sum U_p((p+1)/3) when p ≠ 17, computing the complete weighted sum at the floor endpoint, evaluating the supersingular branch value in the bridge identity (B6), and computing the Gauss factorial ⌊p/3⌋! mod p are all equivalent up to O(log p) field operations. The same factorial is Morita's Γ_p(1/3) modulo p. No closed form for this Gauss factorial has been located. The case is described as "utterly intractable" in the Gauss-factorial literature, and no classical single-prime algorithm faster than about √p operations is known for factorials modulo p. The rounded third point is therefore not a new fast complete-U family unless an advance on Gauss factorials is made. The obstruction is precise, and it answers the roadmap's question of whether CM trace data suffices: it does not, because the trace is identically zero.
+Because cubing is a bijection of F_p when p ≡ 2 (mod 3), computing the boundary, computing the complete weighted sum U_p((p+1)/3) when p ≠ 17, computing the complete weighted sum at the floor endpoint, evaluating the supersingular branch value in the bridge identity (B6), and computing the Gauss factorial ⌊p/3⌋! mod p are all equivalent up to O(log p) field operations. The same factorial is Morita's Γ_p(1/3) modulo p. No closed form for this Gauss factorial has been located. The case is described as "utterly intractable" in the Gauss-factorial literature, and no polylogarithmic algorithm is known for factorials modulo p. The best deterministic bound for every prime is about √p up to logarithmic factors; an unrefereed 2026 report claims randomized p^{1/2−δ} for most primes (correction of 10 October 2026, see below). The rounded third point is therefore not a new fast complete-U family unless an advance on Gauss factorials is made. The obstruction is precise, and it answers the roadmap's question of whether CM trace data suffices: it does not, because the trace is identically zero.
 
 ## Setting and the integer endpoint
 
@@ -93,9 +93,11 @@ The Jacobi-sum route that works at p ≡ 1 (mod 3) does not transfer. For p ≡ 
 | Factorial ⌊p/3⌋! by polynomial-coefficient recurrences | O(M(√p) log p), where M(n) is the cost of multiplying degree-n polynomials (Bostan et al., 2007); about √p up to logarithmic factors | Known algorithm; not implemented here |
 | All primes p ≤ N together, using accumulating remainder trees | Average polynomial in log N per prime, assessed by analogy with Costa et al. (2014) and Harvey (2014) | Assessment only; not implemented or verified here |
 | Closed form from CM, trace or Jacobi-sum data | None known | Obstructed as above |
-| Quantum, conditional on a divisor of p−1 | Below exponent 1/2 according to an unrefereed preprint (Tal, 2026) | Outside the project's scope; noted only |
+| Classical, randomized, conditional on divisors of p (Tal, 2026b) | Õ(q^c + √p/q^{1/4}) for q ∣ 1+p+p², with variants for divisors of p−1 and p+1; p^{1/2−δ+o(1)} for at least a 1−ε fraction of primes; c not explicit | Unrefereed ECCC report; abstract checked only; not implemented |
+| Classical, deterministic, every prime (Tal, 2026b) | Bostan et al. (2007) improved by a factor √(log p / log log p) | Unrefereed; abstract checked only |
+| Quantum, conditional on a divisor of p−1 (Tal, 2026a) | Below exponent 1/2 according to an unrefereed preprint | Outside the project's scope; noted only |
 
-Tal (2026) states that no classical worst-case single-input algorithm for n! mod p is known to break the square-root barrier, beyond polylogarithmic improvements on Bostan et al. (2007). A complete U_p((p+1)/3) at one prime therefore currently costs about √p field operations, whereas the prefix alone costs O(log p). Any future benchmark must charge the factorial and must not report the cached O(log p) prefix as the complete cost.
+Correction, 10 October 2026: the 9 October version of this note cited Tal (2026a), a July preprint, for the statement that no classical worst-case single-input algorithm breaks the square-root barrier. A later classical report by the same author (Tal, 2026b, ECCC TR26-211, 26 September 2026) claims randomized algorithms below that barrier for primes with suitable divisors, at least a 1−ε fraction of primes, and a deterministic logarithmic-factor improvement of Bostan et al. (2007) for every prime. These claims are unrefereed and only the abstract was checked here. For p ≡ 2 (mod 3) note that 3 ∣ p+1, one of the divisor shapes the report treats; whether any of its constructions applies usefully to ⌊p/3⌋! has not been investigated. None of this changes Theorem E or gives a polylogarithmic method. A complete U_p((p+1)/3) at one prime therefore currently costs about √p field operations up to logarithmic factors deterministically, possibly p^{1/2−δ} by the claimed randomized methods, whereas the prefix alone costs O(log p). Any future benchmark must charge the factorial and must not report the cached O(log p) prefix as the complete cost.
 
 ## Evidence
 
@@ -110,7 +112,7 @@ The validator validate_rounded_third.py uses only the standard library. Run from
 | Theorem E (equivalence, with the p=17 exception) | Proof here; the weighted-sum directions rely on unrefereed manuscript Theorem 1 for B_L |
 | Proposition B (elementary proof of B6 in this family) | Proof here; agrees with the general branch formula; does not prove that formula generally |
 | a_L ≡ 3/(2Γ_p(1/3)³) and the link to Coleman and Ogus | Congruence follows from standard Γ_p properties; the link to Frobenius data is a plausible but unchecked attribution |
-| Fast complete U at the rounded third point | Not achieved; equivalent to an open problem on Gauss factorials; Õ(√p) per prime is the best known route |
+| Fast complete U at the rounded third point | Not achieved; equivalent to an open problem on Gauss factorials; Õ(√p) per prime deterministically, with unrefereed randomized p^{1/2−δ} claims for most primes (Tal, 2026b); no polylogarithmic route known |
 | Novelty | Not claimed; the reduction is short, and its ingredients are classical |
 
 The rounded third point should be parked with this obstruction recorded, unless a batch workload over many primes is wanted. In that case the remainder-tree route is the natural next bounded task.
@@ -139,4 +141,6 @@ Ogus, A. (1990). A p-adic analogue of the Chowla–Selberg formula. In F. Baldas
 
 Robert, A. M. (2000). *A course in p-adic analysis* (Graduate Texts in Mathematics, Vol. 198). Springer.
 
-Tal, Y. (2026). *Quantum algorithms for modular factorials* (arXiv:2607.29453) [Preprint]. arXiv.
+Tal, Y. (2026a). *Quantum algorithms for modular factorials* (arXiv:2607.29453) [Preprint]. arXiv.
+
+Tal, Y. (2026b). *Computing modular factorials below the square-root barrier* (ECCC Report TR26-211). Electronic Colloquium on Computational Complexity. https://eccc.weizmann.ac.il/report/2026/211/

@@ -11,6 +11,7 @@ The intended contribution is a modest computational specialization using classic
 | Recognition and twists | Do parameter extraction, prime congruences and exact norms exclude every admissible denominator failure and collision? Are base-field twists kept distinct? |
 | Depth-three family | Do the three-step constants, reverse chain, relative norms and exact integer collision certificates establish soundness and completeness for precisely the claimed family? |
 | CM trace candidates | Does the conductor-eight volcano argument justify 4p=t0²+192f² for every accepted model, including the special j=0 surface and twists? |
+| Deterministic sign | Is Ireland & Rosen's Theorem 4 applied with the right normalizations: primary π ≡ 2 mod 3, the symbol (4D/π)₆, D=−r³ for the seed, and the reading of π from the Cornacchia output? |
 | Trace-sign bound | Is the proper-subgroup argument valid, do the eight p=97 witnesses cover the finite exception, and does the actual raw-x sampler have success at least 1/5? |
 | Costs | Are prime validation, random sampling, square roots, Cornacchia, reconstruction and capped inconclusive outputs charged consistently? |
 | Prior art | Is explicit recognition plus coefficient recovery already stated or immediate from prior work? What, if anything, is a useful original algorithmic contribution? |

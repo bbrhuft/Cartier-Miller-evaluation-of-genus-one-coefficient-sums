@@ -8,12 +8,13 @@ Examples (run from this directory):
   python cli.py --p 73 --short 4 16 --through-depth-two
   python cli.py --p 73 --short 4 16 --verify-certificate cert.json
 A supplied trace is trusted apart from the Hasse interval and the family's
-necessary condition 4p-t^2=192f^2; --verify-sign adds a Las Vegas point
-test of its sign. --cm computes the trace itself (Cornacchia candidates and
-a Las Vegas sign test) and needs no supplied trace.
-The default sign retry cap is 64 raw x draws. --unbounded-sign-test runs the
-almost-surely terminating variant with <=5 expected raw trials; a capped
-attempt may report trace_sign_inconclusive rather than produce an answer.
+necessary condition 4p-t^2=192f^2; --verify-sign checks its sign. --cm
+computes the trace itself (Cornacchia candidates plus a sign rule) and needs
+no supplied trace. The default sign rule is deterministic: Ireland & Rosen
+(1990) Ch. 18 Theorem 4 applied to the j=0 seed. --sign-method las_vegas uses
+the zero-error point test instead; its retry cap is 64 raw x draws by default,
+--unbounded-sign-test runs the almost-surely terminating variant with <=5
+expected raw trials, and a capped attempt may report trace_sign_inconclusive.
 """
 import argparse
 import json
@@ -31,7 +32,9 @@ def main():
     g.add_argument('--f', type=int, nargs=4, metavar=('ONE', 'C', 'B', 'A'))
     p.add_argument('--trusted-trace', type=int)
     p.add_argument('--verify-sign', action='store_true', help='Las Vegas check of the supplied trace sign')
-    p.add_argument('--cm', action='store_true', help='compute the trace by Cornacchia plus a Las Vegas sign test')
+    p.add_argument('--cm', action='store_true', help='compute the trace by Cornacchia plus a sign rule')
+    p.add_argument('--sign-method', choices=['sextic', 'las_vegas'], default='sextic',
+                   help='sign rule for --cm and --verify-sign: deterministic Ireland-Rosen Thm 4 (default) or zero-error point test')
     p.add_argument('--mu', type=int)
     p.add_argument('--through-depth-two', action='store_true', help='also run the retained depth<=2 recognizer')
     p.add_argument('--verify-certificate', metavar='JSON', help='reverify a stored certificate for --short')
@@ -55,11 +58,11 @@ def main():
                 out = recognize_depth_three(*args.short, args.p)
         else:
             if args.cm:
-                ev = prepare_cm(args.p, args.f, max_trials=max_trials)
+                ev = prepare_cm(args.p, args.f, max_trials=max_trials, sign_method=args.sign_method)
             elif args.trusted_trace is None:
                 raise ValueError('--f preparation requires --trusted-trace or --cm')
             else:
-                ev = prepare_from_trace(args.p, args.f, args.trusted_trace, verify_sign=args.verify_sign, max_trials=max_trials)
+                ev = prepare_from_trace(args.p, args.f, args.trusted_trace, verify_sign=(args.sign_method if args.verify_sign else False), max_trials=max_trials)
             if isinstance(ev, (RecognizedPreparation, CMPreparation)):
                 out = asdict(ev)
                 out['status'] = 'prepared_by_cm_trace' if isinstance(ev, CMPreparation) else 'prepared_from_caller_trusted_trace'
