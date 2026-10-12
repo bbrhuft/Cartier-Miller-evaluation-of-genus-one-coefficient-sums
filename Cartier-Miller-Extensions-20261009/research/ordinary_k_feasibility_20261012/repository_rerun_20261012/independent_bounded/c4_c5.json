@@ -1,0 +1,40 @@
+{
+  "driver": "c4_c5",
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": {
+    "C4_primes": "5..13",
+    "C5_primes": "7..13",
+    "C5_models": "all nonsingular"
+  },
+  "checks": 520,
+  "failures": 0,
+  "groups": {
+    "auxiliary_identity": {
+      "checks": 200,
+      "failures": 0
+    },
+    "C4_exact_identity_over_Q": {
+      "checks": 4,
+      "failures": 0
+    },
+    "C4_mod_p_polynomial_identity": {
+      "checks": 4,
+      "failures": 0
+    },
+    "C4_pointwise": {
+      "checks": 4,
+      "failures": 0
+    },
+    "C5": {
+      "checks": 308,
+      "failures": 0
+    }
+  },
+  "failure_examples": [],
+  "error": null,
+  "informational": {},
+  "seconds": 0.02,
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39"
+}

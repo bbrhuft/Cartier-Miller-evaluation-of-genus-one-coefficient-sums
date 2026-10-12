@@ -1,0 +1,323 @@
+{
+  "profile": "bounded",
+  "overall": "PASS",
+  "targets": "/tmp/claude-0/-home-claude/f891ed5a-3df5-5144-8043-9dd0728418e1/scratchpad/repocopy/research/ordinary_k_feasibility_20261012/handover_inputs/validation/results/ordinary_targets.csv",
+  "targets_sha256": "dbae08872c11cc31f472089bfe58050f5eb36570dc63a57d189071dfca330573",
+  "steps": [
+    {
+      "script": "c1_cech.py",
+      "args": [
+        "--primes",
+        "7",
+        "11"
+      ],
+      "returncode": 0,
+      "seconds": 2.81,
+      "result_file": "c1_cech.json",
+      "stdout_tail": "p=7: 42/42 match; c values [2]\np=11: 110/110 match; c values [2]\nINDEPENDENT_CHECK c1_cech status=PASS checks=152 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 152,
+      "failures": 0,
+      "groups": {
+        "p=7": {
+          "checks": 42,
+          "failures": 0
+        },
+        "p=11": {
+          "checks": 110,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "exhaustive_primes": [
+          7,
+          11
+        ],
+        "sample_primes": [],
+        "sample_size": 30,
+        "seed": 1,
+        "models": "all nonsingular short models, supersingular included"
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c1_kedlaya.py",
+      "args": [
+        "--p",
+        "7",
+        "--N",
+        "2"
+      ],
+      "returncode": 0,
+      "seconds": 1.78,
+      "result_file": "c1_kedlaya_p7_N2.json",
+      "stdout_tail": "p=7 N=2: models=42 stability_rechecks=42\nINDEPENDENT_CHECK c1_kedlaya_p7_N2 status=PASS checks=210 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 210,
+      "failures": 0,
+      "groups": {
+        "integrality": {
+          "checks": 42,
+          "failures": 0
+        },
+        "trace": {
+          "checks": 42,
+          "failures": 0
+        },
+        "determinant": {
+          "checks": 42,
+          "failures": 0
+        },
+        "reduction_mod_p": {
+          "checks": 42,
+          "failures": 0
+        },
+        "stability": {
+          "checks": 42,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 7,
+        "N": 2,
+        "K": 4,
+        "MW": 6,
+        "sample": 0,
+        "seed": 7,
+        "stability_fraction": 0.1
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c1_extra.py",
+      "args": [
+        "--lift-primes",
+        "7",
+        "--rank-primes",
+        "7",
+        "11",
+        "--skip-p5-informational"
+      ],
+      "returncode": 0,
+      "seconds": 0.63,
+      "result_file": "c1_extra.json",
+      "stdout_tail": "INDEPENDENT_CHECK c1_extra status=PASS checks=194 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 194,
+      "failures": 0,
+      "groups": {
+        "random_lift_p7": {
+          "checks": 42,
+          "failures": 0
+        },
+        "rank_one": {
+          "checks": 152,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "lift_primes": [
+          7
+        ],
+        "rank_primes": [
+          7,
+          11
+        ],
+        "seed": 99,
+        "skip_p5_informational": true
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c2_formal.py",
+      "args": [
+        "--p",
+        "7",
+        "--models",
+        "6",
+        "--lifts",
+        "1"
+      ],
+      "returncode": 0,
+      "seconds": 0.52,
+      "result_file": "c2_formal_p7.json",
+      "stdout_tail": "INDEPENDENT_CHECK c2_formal_p7 status=PASS checks=24 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 24,
+      "failures": 0,
+      "groups": {
+        "p_divides_sigma": {
+          "checks": 12,
+          "failures": 0
+        },
+        "kappa_identity": {
+          "checks": 12,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 7,
+        "seed": 11,
+        "models": 6,
+        "random_lifts_per_model": 1,
+        "R": 6,
+        "targets": "/tmp/claude-0/-home-claude/f891ed5a-3df5-5144-8043-9dd0728418e1/scratchpad/repocopy/research/ordinary_k_feasibility_20261012/handover_inputs/validation/results/ordinary_targets.csv"
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c3_etale.py",
+      "args": [
+        "--primes",
+        "7",
+        "11"
+      ],
+      "returncode": 0,
+      "seconds": 2.01,
+      "result_file": "c3_etale.json",
+      "stdout_tail": "x-only ladder selftest OK\np=7: 36 models; field degrees {1: 4, 2: 4, 3: 14, 6: 14}\np=11: 90 models; field degrees {1: 5, 2: 5, 5: 40, 10: 40}\nINDEPENDENT_CHECK c3_etale status=PASS checks=127 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 127,
+      "failures": 0,
+      "groups": {
+        "selftest": {
+          "checks": 1,
+          "failures": 0
+        },
+        "p=7": {
+          "checks": 36,
+          "failures": 0
+        },
+        "p=11": {
+          "checks": 90,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "primes": [
+          7,
+          11
+        ],
+        "seed": 2026,
+        "targets": "/tmp/claude-0/-home-claude/f891ed5a-3df5-5144-8043-9dd0728418e1/scratchpad/repocopy/research/ordinary_k_feasibility_20261012/handover_inputs/validation/results/ordinary_targets.csv",
+        "models": "all ordinary target rows at each prime"
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c4_c5.py",
+      "args": [
+        "--c4-max",
+        "13",
+        "--c5-max",
+        "13"
+      ],
+      "returncode": 0,
+      "seconds": 0.08,
+      "result_file": "c4_c5.json",
+      "stdout_tail": "INDEPENDENT_CHECK c4_c5 status=PASS checks=520 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 520,
+      "failures": 0,
+      "groups": {
+        "auxiliary_identity": {
+          "checks": 200,
+          "failures": 0
+        },
+        "C4_exact_identity_over_Q": {
+          "checks": 4,
+          "failures": 0
+        },
+        "C4_mod_p_polynomial_identity": {
+          "checks": 4,
+          "failures": 0
+        },
+        "C4_pointwise": {
+          "checks": 4,
+          "failures": 0
+        },
+        "C5": {
+          "checks": 308,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "C4_primes": "5..13",
+        "C5_primes": "7..13",
+        "C5_models": "all nonsingular"
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "l3_katz_signs.py",
+      "args": [
+        "--primes",
+        "7",
+        "11"
+      ],
+      "returncode": 0,
+      "seconds": 0.05,
+      "result_file": "l3_katz_signs.json",
+      "stdout_tail": "INDEPENDENT_CHECK l3_katz_signs status=PASS checks=304 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 304,
+      "failures": 0,
+      "groups": {
+        "a_p == -S0": {
+          "checks": 152,
+          "failures": 0
+        },
+        "b_p == -S1": {
+          "checks": 152,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "primes": [
+          7,
+          11
+        ],
+        "models": "all nonsingular (g2, g3)"
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "total_checks": 1531,
+  "source_sha256": {
+    "c1_cech.py": "af74cbcb9932f7374aae45fd5e730784fb38c00b0f90848e50e681b63a8eb39e",
+    "c1_cech_sample.py": "968a5a178f8ad77dbb1bc699de749bcba7fb506bbfb44973512e974abb24855f",
+    "c1_extra.py": "2c417a8a1014b8f106464233410daad7901471b24d14f2f2a9b22c26b7592337",
+    "c1_kedlaya.py": "b4c3f4f314645b2045519260f2bdebe9ed9326cdd6c855df422b2c4c936168e2",
+    "c2_formal.py": "fd63225c058fa3770f86fae059d03cd0daa1ccca8853d23503c84ae8fd880f92",
+    "c3_etale.py": "61e80e7ef6f256009138ec5c472fad5d97037a084236ed8f5eebce637a4272db",
+    "c4_c5.py": "662fcd47bdb2912874181fac1fee448693af2db54384a416e08baef66640cc04",
+    "common.py": "1134ed47057aee9fb977cc0c2b742d4ea026c0b288b80c62768ccf24cba06cd3",
+    "harness.py": "c4ee1dd19ca722989aab21ec27e740f791c77710126ead1a409c9d515cdf821a",
+    "inject_failures.py": "9b9a69d061af820003b36c64877828ef52f80cb2b5d91897199a644c4b444255",
+    "l3_katz_signs.py": "361a7ed69ccb791687cc48e1d186831207d46149d34e2f15bc5099039234eceb",
+    "run_independent.py": "1f6ffa4440223c4485da464206fa8c068563153c2ad2830ee047488987d0298b"
+  },
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39"
+}

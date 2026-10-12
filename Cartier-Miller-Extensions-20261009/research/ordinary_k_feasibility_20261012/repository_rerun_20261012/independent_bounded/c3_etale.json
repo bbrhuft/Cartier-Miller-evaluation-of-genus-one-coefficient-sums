@@ -1,0 +1,51 @@
+{
+  "driver": "c3_etale",
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": {
+    "primes": [
+      7,
+      11
+    ],
+    "seed": 2026,
+    "targets": "/tmp/claude-0/-home-claude/f891ed5a-3df5-5144-8043-9dd0728418e1/scratchpad/repocopy/research/ordinary_k_feasibility_20261012/handover_inputs/validation/results/ordinary_targets.csv",
+    "models": "all ordinary target rows at each prime"
+  },
+  "checks": 127,
+  "failures": 0,
+  "groups": {
+    "selftest": {
+      "checks": 1,
+      "failures": 0
+    },
+    "p=7": {
+      "checks": 36,
+      "failures": 0
+    },
+    "p=11": {
+      "checks": 90,
+      "failures": 0
+    }
+  },
+  "failure_examples": [],
+  "error": null,
+  "informational": {
+    "field_degrees_k": {
+      "7": {
+        "1": 4,
+        "2": 4,
+        "3": 14,
+        "6": 14
+      },
+      "11": {
+        "1": 5,
+        "2": 5,
+        "5": 40,
+        "10": 40
+      }
+    }
+  },
+  "seconds": 1.93,
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39"
+}

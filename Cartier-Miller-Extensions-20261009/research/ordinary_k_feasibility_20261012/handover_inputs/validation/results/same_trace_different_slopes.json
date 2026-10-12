@@ -1,0 +1,210 @@
+[
+  {
+    "p": 7,
+    "trace": -2,
+    "curve_1": {
+      "p": 7,
+      "A": 1,
+      "B": 4,
+      "j": 5,
+      "trace": -2,
+      "H": 5,
+      "beta": 3,
+      "kappa": 2,
+      "outside_retained_tables": true
+    },
+    "curve_2": {
+      "p": 7,
+      "A": 3,
+      "B": 4,
+      "j": 4,
+      "trace": -2,
+      "H": 5,
+      "beta": 6,
+      "kappa": 4,
+      "outside_retained_tables": true
+    }
+  },
+  {
+    "p": 7,
+    "trace": 2,
+    "curve_1": {
+      "p": 7,
+      "A": 1,
+      "B": 3,
+      "j": 5,
+      "trace": 2,
+      "H": 2,
+      "beta": 3,
+      "kappa": 5,
+      "outside_retained_tables": true
+    },
+    "curve_2": {
+      "p": 7,
+      "A": 3,
+      "B": 3,
+      "j": 4,
+      "trace": 2,
+      "H": 2,
+      "beta": 6,
+      "kappa": 3,
+      "outside_retained_tables": true
+    }
+  },
+  {
+    "p": 11,
+    "trace": -3,
+    "curve_1": {
+      "p": 11,
+      "A": 1,
+      "B": 7,
+      "j": 10,
+      "trace": -3,
+      "H": 8,
+      "beta": 5,
+      "kappa": 2,
+      "outside_retained_tables": true
+    },
+    "curve_2": {
+      "p": 11,
+      "A": 2,
+      "B": 9,
+      "j": 4,
+      "trace": -3,
+      "H": 8,
+      "beta": 10,
+      "kappa": 4,
+      "outside_retained_tables": true
+    }
+  },
+  {
+    "p": 11,
+    "trace": -2,
+    "curve_1": {
+      "p": 11,
+      "A": 1,
+      "B": 1,
+      "j": 9,
+      "trace": -2,
+      "H": 9,
+      "beta": 9,
+      "kappa": 1,
+      "outside_retained_tables": true
+    },
+    "curve_2": {
+      "p": 11,
+      "A": 2,
+      "B": 6,
+      "j": 7,
+      "trace": -2,
+      "H": 9,
+      "beta": 0,
+      "kappa": 0,
+      "outside_retained_tables": true
+    }
+  },
+  {
+    "p": 11,
+    "trace": 2,
+    "curve_1": {
+      "p": 11,
+      "A": 1,
+      "B": 10,
+      "j": 9,
+      "trace": 2,
+      "H": 2,
+      "beta": 9,
+      "kappa": 10,
+      "outside_retained_tables": true
+    },
+    "curve_2": {
+      "p": 11,
+      "A": 2,
+      "B": 5,
+      "j": 7,
+      "trace": 2,
+      "H": 2,
+      "beta": 0,
+      "kappa": 0,
+      "outside_retained_tables": true
+    }
+  },
+  {
+    "p": 11,
+    "trace": 3,
+    "curve_1": {
+      "p": 11,
+      "A": 1,
+      "B": 4,
+      "j": 10,
+      "trace": 3,
+      "H": 3,
+      "beta": 5,
+      "kappa": 9,
+      "outside_retained_tables": true
+    },
+    "curve_2": {
+      "p": 11,
+      "A": 2,
+      "B": 2,
+      "j": 4,
+      "trace": 3,
+      "H": 3,
+      "beta": 10,
+      "kappa": 7,
+      "outside_retained_tables": true
+    }
+  },
+  {
+    "p": 13,
+    "trace": -4,
+    "curve_1": {
+      "p": 13,
+      "A": 1,
+      "B": 1,
+      "j": 7,
+      "trace": -4,
+      "H": 9,
+      "beta": 8,
+      "kappa": 11,
+      "outside_retained_tables": true
+    },
+    "curve_2": {
+      "p": 13,
+      "A": 2,
+      "B": 3,
+      "j": 10,
+      "trace": -4,
+      "H": 9,
+      "beta": 5,
+      "kappa": 2,
+      "outside_retained_tables": true
+    }
+  },
+  {
+    "p": 13,
+    "trace": -1,
+    "curve_1": {
+      "p": 13,
+      "A": 2,
+      "B": 2,
+      "j": 2,
+      "trace": -1,
+      "H": 12,
+      "beta": 12,
+      "kappa": 1,
+      "outside_retained_tables": true
+    },
+    "curve_2": {
+      "p": 13,
+      "A": 4,
+      "B": 4,
+      "j": 9,
+      "trace": -1,
+      "H": 12,
+      "beta": 5,
+      "kappa": 8,
+      "outside_retained_tables": true
+    }
+  }
+]

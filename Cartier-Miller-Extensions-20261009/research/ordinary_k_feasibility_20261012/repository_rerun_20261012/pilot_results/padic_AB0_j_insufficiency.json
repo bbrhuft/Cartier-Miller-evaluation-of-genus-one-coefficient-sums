@@ -1,0 +1,692 @@
+[
+ {
+  "p": 7,
+  "model": "A=0",
+  "lift_A": 0,
+  "lift_B": 1,
+  "deformation_a1": 0,
+  "j_lift_valuation": 30,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 9
+ },
+ {
+  "p": 7,
+  "model": "A=0",
+  "lift_A": 7,
+  "lift_B": 1,
+  "deformation_a1": 1,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 7,
+  "model": "A=0",
+  "lift_A": 14,
+  "lift_B": 1,
+  "deformation_a1": 2,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 7,
+  "model": "A=0",
+  "lift_A": 21,
+  "lift_B": 1,
+  "deformation_a1": 3,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 7,
+  "model": "A=0",
+  "lift_A": 28,
+  "lift_B": 1,
+  "deformation_a1": 4,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 7,
+  "model": "A=0",
+  "lift_A": 35,
+  "lift_B": 1,
+  "deformation_a1": 5,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 7,
+  "model": "A=0",
+  "lift_A": 42,
+  "lift_B": 1,
+  "deformation_a1": 6,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 13,
+  "model": "A=0",
+  "lift_A": 0,
+  "lift_B": 1,
+  "deformation_a1": 0,
+  "j_lift_valuation": 30,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 9
+ },
+ {
+  "p": 13,
+  "model": "A=0",
+  "lift_A": 13,
+  "lift_B": 1,
+  "deformation_a1": 1,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 13,
+  "model": "A=0",
+  "lift_A": 26,
+  "lift_B": 1,
+  "deformation_a1": 2,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 13,
+  "model": "A=0",
+  "lift_A": 39,
+  "lift_B": 1,
+  "deformation_a1": 3,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 13,
+  "model": "A=0",
+  "lift_A": 52,
+  "lift_B": 1,
+  "deformation_a1": 4,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 13,
+  "model": "A=0",
+  "lift_A": 65,
+  "lift_B": 1,
+  "deformation_a1": 5,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 13,
+  "model": "A=0",
+  "lift_A": 78,
+  "lift_B": 1,
+  "deformation_a1": 6,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 13,
+  "model": "A=0",
+  "lift_A": 91,
+  "lift_B": 1,
+  "deformation_a1": 7,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 13,
+  "model": "A=0",
+  "lift_A": 104,
+  "lift_B": 1,
+  "deformation_a1": 8,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 13,
+  "model": "A=0",
+  "lift_A": 117,
+  "lift_B": 1,
+  "deformation_a1": 9,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 13,
+  "model": "A=0",
+  "lift_A": 130,
+  "lift_B": 1,
+  "deformation_a1": 10,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 13,
+  "model": "A=0",
+  "lift_A": 143,
+  "lift_B": 1,
+  "deformation_a1": 11,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 13,
+  "model": "A=0",
+  "lift_A": 156,
+  "lift_B": 1,
+  "deformation_a1": 12,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 0,
+  "lift_B": 1,
+  "deformation_a1": 0,
+  "j_lift_valuation": 30,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 9
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 19,
+  "lift_B": 1,
+  "deformation_a1": 1,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 38,
+  "lift_B": 1,
+  "deformation_a1": 2,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 57,
+  "lift_B": 1,
+  "deformation_a1": 3,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 76,
+  "lift_B": 1,
+  "deformation_a1": 4,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 95,
+  "lift_B": 1,
+  "deformation_a1": 5,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 114,
+  "lift_B": 1,
+  "deformation_a1": 6,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 133,
+  "lift_B": 1,
+  "deformation_a1": 7,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 152,
+  "lift_B": 1,
+  "deformation_a1": 8,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 171,
+  "lift_B": 1,
+  "deformation_a1": 9,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 190,
+  "lift_B": 1,
+  "deformation_a1": 10,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 209,
+  "lift_B": 1,
+  "deformation_a1": 11,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 228,
+  "lift_B": 1,
+  "deformation_a1": 12,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 247,
+  "lift_B": 1,
+  "deformation_a1": 13,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 266,
+  "lift_B": 1,
+  "deformation_a1": 14,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 285,
+  "lift_B": 1,
+  "deformation_a1": 15,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 304,
+  "lift_B": 1,
+  "deformation_a1": 16,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 323,
+  "lift_B": 1,
+  "deformation_a1": 17,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 19,
+  "model": "A=0",
+  "lift_A": 342,
+  "lift_B": 1,
+  "deformation_a1": 18,
+  "j_lift_valuation": 3,
+  "kappa_C": 0,
+  "DT_image_A_valuation": 6
+ },
+ {
+  "p": 13,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 0,
+  "deformation_b1": 0,
+  "j_minus_1728_valuation": 10,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 9
+ },
+ {
+  "p": 13,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 13,
+  "deformation_b1": 1,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 13,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 26,
+  "deformation_b1": 2,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 13,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 39,
+  "deformation_b1": 3,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 13,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 52,
+  "deformation_b1": 4,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 13,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 65,
+  "deformation_b1": 5,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 13,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 78,
+  "deformation_b1": 6,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 13,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 91,
+  "deformation_b1": 7,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 13,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 104,
+  "deformation_b1": 8,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 13,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 117,
+  "deformation_b1": 9,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 13,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 130,
+  "deformation_b1": 10,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 13,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 143,
+  "deformation_b1": 11,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 13,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 156,
+  "deformation_b1": 12,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 17,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 0,
+  "deformation_b1": 0,
+  "j_minus_1728_valuation": 10,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 9
+ },
+ {
+  "p": 17,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 17,
+  "deformation_b1": 1,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 17,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 34,
+  "deformation_b1": 2,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 17,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 51,
+  "deformation_b1": 3,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 17,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 68,
+  "deformation_b1": 4,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 17,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 85,
+  "deformation_b1": 5,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 17,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 102,
+  "deformation_b1": 6,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 17,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 119,
+  "deformation_b1": 7,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 17,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 136,
+  "deformation_b1": 8,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 17,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 153,
+  "deformation_b1": 9,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 17,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 170,
+  "deformation_b1": 10,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 17,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 187,
+  "deformation_b1": 11,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 17,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 204,
+  "deformation_b1": 12,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 17,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 221,
+  "deformation_b1": 13,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 17,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 238,
+  "deformation_b1": 14,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 17,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 255,
+  "deformation_b1": 15,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ },
+ {
+  "p": 17,
+  "model": "B=0",
+  "lift_A": 1,
+  "lift_B": 272,
+  "deformation_b1": 16,
+  "j_minus_1728_valuation": 2,
+  "kappa_C": 0,
+  "DT_image_B_valuation": 8
+ }
+]
