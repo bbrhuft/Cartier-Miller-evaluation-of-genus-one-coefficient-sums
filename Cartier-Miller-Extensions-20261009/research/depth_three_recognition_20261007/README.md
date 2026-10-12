@@ -6,6 +6,8 @@ Python 3.10+ standard-library research prototype. The retained `branch_evaluator
 |---|---|
 | `TRACE_SIGN_BOUND_20261007.md` | Consolidated success bound, finite witnesses, sampler costs and seed obstruction |
 | `DETERMINISTIC_TRACE_SIGN_20261010.md` | Deterministic sign by Ireland & Rosen, Ch. 18, Theorem 4 (default since 10 October) |
+| `B0_SEED_FAMILY_20261012.md` | The depth-three family below the B=0 seed (discriminant −256), added 12 October, with review notes |
+| `core/depth_three_b0_recognize.py`, `core/validate_depth_three_b0.py`, `theory/b0/` | B=0-seed recognizer, trace preparation, validator and exact derivation |
 | `Depth_Three_Recognition_Proof_Note_20261007.md` | Reviewable proof note: family, recognition theorem, exceptional primes, trace proposition, costs, status |
 | `core/depth_three_recognize.py` | Recognizer, certificate verifier, trusted-trace and complete CM preparation |
 | `core/cli.py` | JSON command line |
@@ -41,4 +43,6 @@ python theory/verify_transport.py      # needs sympy
 python theory/derive_family.py         # needs sympy; cypari2 optional
 ```
 
-These are correctness audits, not benchmarks. Eligible primes are $p\equiv1\pmod{24}$; the family's smallest prime is $73$. The recognizer covers only the depth-three chain descending from the $A=0$ seed; the chain descending from the $B=0$ seed is deferred.
+The $B=0$-seed family (discriminant $-256$, eligible for $p=x^2+64y^2$) is in `core/depth_three_b0_recognize.py`. It is validated by `python core/validate_depth_three_b0.py`, and its integer data come from `python theory/b0/derive_b0_family.py`. For example, `python core/cli.py --p 73 --short 16 27 --family b0` recognizes a member, and `python core/cli.py --p 73 --f 1 60 0 10 --family b0 --cm --mu 17` gives H=67, K=32, T=5.
+
+These are correctness audits, not benchmarks. Eligible primes for the $A=0$-seed family are $p\equiv1\pmod{24}$, and its smallest prime is $73$. Both depth-three chains, below the $A=0$ and $B=0$ seeds, are covered; depth four is not.

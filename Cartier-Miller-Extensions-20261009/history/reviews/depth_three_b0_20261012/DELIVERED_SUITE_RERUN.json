@@ -1,0 +1,303 @@
+{
+  "status": "passed",
+  "seed": 20261012,
+  "eligible_primes_below_700": [
+    73,
+    89,
+    113,
+    233,
+    257,
+    281,
+    337,
+    353,
+    577,
+    593,
+    601,
+    617
+  ],
+  "audit_certificates": {
+    "rows": 96,
+    "b0_recognized": 32,
+    "a0_depth3_rows_rejected": 32,
+    "depth4_rows_rejected": 32
+  },
+  "exhaustive": [
+    {
+      "p": 73,
+      "p_mod_24": 1,
+      "nonsingular_models": 5256,
+      "recognized": 288,
+      "rejected": 4968,
+      "brute_force_chain_endpoints": 288,
+      "models_with_j_root_of_H256": 288,
+      "H256_roots_mod_p": "[7, 27, 64, 66]",
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_recognized": 1152
+    },
+    {
+      "p": 89,
+      "p_mod_24": 17,
+      "nonsingular_models": 7832,
+      "recognized": 352,
+      "rejected": 7480,
+      "brute_force_chain_endpoints": 352,
+      "models_with_j_root_of_H256": 352,
+      "H256_roots_mod_p": "[22, 60, 63, 85]",
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_recognized": ""
+    },
+    {
+      "p": 113,
+      "p_mod_24": 17,
+      "nonsingular_models": 12656,
+      "recognized": 448,
+      "rejected": 12208,
+      "brute_force_chain_endpoints": 448,
+      "models_with_j_root_of_H256": 448,
+      "H256_roots_mod_p": "[21, 30, 60, 75]",
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_recognized": ""
+    },
+    {
+      "p": 233,
+      "p_mod_24": 17,
+      "nonsingular_models": 54056,
+      "recognized": 928,
+      "rejected": 53128,
+      "brute_force_chain_endpoints": 928,
+      "models_with_j_root_of_H256": 928,
+      "H256_roots_mod_p": "[103, 164, 166, 205]",
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_recognized": ""
+    },
+    {
+      "p": 257,
+      "p_mod_24": 17,
+      "nonsingular_models": 65792,
+      "recognized": 1024,
+      "rejected": 64768,
+      "brute_force_chain_endpoints": 1024,
+      "models_with_j_root_of_H256": 1024,
+      "H256_roots_mod_p": "[2, 69, 144, 165]",
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_recognized": ""
+    },
+    {
+      "p": 281,
+      "p_mod_24": 17,
+      "nonsingular_models": 78680,
+      "recognized": 1120,
+      "rejected": 77560,
+      "brute_force_chain_endpoints": 1120,
+      "models_with_j_root_of_H256": 1120,
+      "H256_roots_mod_p": "[44, 58, 211, 233]",
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_recognized": ""
+    },
+    {
+      "p": 337,
+      "p_mod_24": 1,
+      "nonsingular_models": 113232,
+      "recognized": 1344,
+      "rejected": 111888,
+      "brute_force_chain_endpoints": 1344,
+      "models_with_j_root_of_H256": 1344,
+      "H256_roots_mod_p": "[6, 121, 137, 191]",
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_recognized": 5376
+    },
+    {
+      "p": 353,
+      "p_mod_24": 17,
+      "nonsingular_models": 124256,
+      "recognized": 1408,
+      "rejected": 122848,
+      "brute_force_chain_endpoints": 1408,
+      "models_with_j_root_of_H256": 1408,
+      "H256_roots_mod_p": "[32, 209, 250, 309]",
+      "family_j_in_lower_depth": 0,
+      "combined_depth_le3_recognized": ""
+    }
+  ],
+  "member_coefficient_checks": 1248,
+  "theorem5_checks": {
+    "primes": 37,
+    "curves": 6896,
+    "ireland_rosen_example_p13": "y^2=x^3-x, trace 6, N=8, reproduced"
+  },
+  "trace_proposition_primes": 81,
+  "twist_checks": 400,
+  "tampered_certificates_rejected": 17,
+  "ineligible_primes": [
+    {
+      "p": 11,
+      "p_mod_8": 3,
+      "fourth_roots_of_2": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "H256_has_root_mod_p": true,
+      "recognizer_status": "not_eligible_prime"
+    },
+    {
+      "p": 13,
+      "p_mod_8": 5,
+      "fourth_roots_of_2": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "H256_has_root_mod_p": false,
+      "recognizer_status": "not_eligible_prime"
+    },
+    {
+      "p": 17,
+      "p_mod_8": 1,
+      "fourth_roots_of_2": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "H256_has_root_mod_p": false,
+      "recognizer_status": "not_eligible_prime"
+    },
+    {
+      "p": 23,
+      "p_mod_8": 7,
+      "fourth_roots_of_2": 2,
+      "alpha_zero": 1,
+      "gamma_zero": 1,
+      "H256_has_root_mod_p": true,
+      "recognizer_status": "not_eligible_prime"
+    },
+    {
+      "p": 29,
+      "p_mod_8": 5,
+      "fourth_roots_of_2": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "H256_has_root_mod_p": false,
+      "recognizer_status": "not_eligible_prime"
+    },
+    {
+      "p": 37,
+      "p_mod_8": 5,
+      "fourth_roots_of_2": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "H256_has_root_mod_p": false,
+      "recognizer_status": "not_eligible_prime"
+    },
+    {
+      "p": 41,
+      "p_mod_8": 1,
+      "fourth_roots_of_2": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "H256_has_root_mod_p": false,
+      "recognizer_status": "not_eligible_prime"
+    },
+    {
+      "p": 71,
+      "p_mod_8": 7,
+      "fourth_roots_of_2": 2,
+      "alpha_zero": 1,
+      "gamma_zero": 0,
+      "H256_has_root_mod_p": true,
+      "recognizer_status": "not_eligible_prime"
+    },
+    {
+      "p": 97,
+      "p_mod_8": 1,
+      "fourth_roots_of_2": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "H256_has_root_mod_p": false,
+      "recognizer_status": "not_eligible_prime"
+    },
+    {
+      "p": 137,
+      "p_mod_8": 1,
+      "fourth_roots_of_2": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "H256_has_root_mod_p": false,
+      "recognizer_status": "not_eligible_prime"
+    },
+    {
+      "p": 167,
+      "p_mod_8": 7,
+      "fourth_roots_of_2": 2,
+      "alpha_zero": 1,
+      "gamma_zero": 0,
+      "H256_has_root_mod_p": true,
+      "recognizer_status": "not_eligible_prime"
+    },
+    {
+      "p": 191,
+      "p_mod_8": 7,
+      "fourth_roots_of_2": 2,
+      "alpha_zero": 1,
+      "gamma_zero": 0,
+      "H256_has_root_mod_p": true,
+      "recognizer_status": "not_eligible_prime"
+    },
+    {
+      "p": 193,
+      "p_mod_8": 1,
+      "fourth_roots_of_2": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "H256_has_root_mod_p": false,
+      "recognizer_status": "not_eligible_prime"
+    },
+    {
+      "p": 241,
+      "p_mod_8": 1,
+      "fourth_roots_of_2": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "H256_has_root_mod_p": false,
+      "recognizer_status": "not_eligible_prime"
+    },
+    {
+      "p": 313,
+      "p_mod_8": 1,
+      "fourth_roots_of_2": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "H256_has_root_mod_p": false,
+      "recognizer_status": "not_eligible_prime"
+    },
+    {
+      "p": 401,
+      "p_mod_8": 1,
+      "fourth_roots_of_2": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "H256_has_root_mod_p": false,
+      "recognizer_status": "not_eligible_prime"
+    },
+    {
+      "p": 409,
+      "p_mod_8": 1,
+      "fourth_roots_of_2": 0,
+      "alpha_zero": 0,
+      "gamma_zero": 0,
+      "H256_has_root_mod_p": false,
+      "recognizer_status": "not_eligible_prime"
+    }
+  ],
+  "original_cubic_branch_queries": 64,
+  "original_cubic_curves": 48,
+  "wrong_supplied_traces_rejected": 4,
+  "large_prime_recognitions": 15,
+  "pari_available": false,
+  "elapsed_seconds_not_benchmark": 19.1,
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39"
+  },
+  "source_sha256": {
+    "depth_three_b0_recognize.py": "a7142c42e1a748612a961ec9f4e185589569f4de2b398ff7fe0c8f293b95614a",
+    "validate_depth_three_b0.py": "e246f4ab39034317059946a500aace5fc7f129f52ab0a163a341898c3f744055",
+    "depth_three_recognize.py": "b3bffe46aa792aa82c63035b1928d8acf67dd12882d34bcc03967b00d064a1c2",
+    "cli.py": "a8701b281a1434293d95e39616aea09a00188a472c0fe181d3408aab7776e6b6"
+  },
+  "note": "finite agreement is supporting evidence, not proof; counts overlap"
+}

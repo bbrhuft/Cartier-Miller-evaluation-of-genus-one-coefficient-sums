@@ -132,20 +132,24 @@ def recognize_depth_three(A, B, p):
 
 
 def recognize_short_through_depth_three(A, B, p):
-    """Combine the retained depth<=2 recognizer with the depth-three family.
-    At eligible primes the classes are proved disjoint, so at most one depth
-    can match; the assertion guards that proof with a runtime check."""
+    """Combine the retained depth<=2 recognizer with both depth-three families
+    (A=0 seed, discriminant -192; B=0 seed, discriminant -256, added 12 October
+    2026). At eligible primes all these classes are proved pairwise disjoint by
+    integer resultants, so at most one can match; the assertion guards that proof."""
     sys.path.insert(0, str(Path(__file__).resolve().parents[2] / 'depth_two_recognition_20261006/core'))
     from recognize import recognize_short  # noqa: E402
+    from depth_three_b0_recognize import recognize_depth_three_b0  # noqa: E402
     low = recognize_short(A, B, p)
     high = recognize_depth_three(A, B, p)
-    matches = list(low['matches']) + list(high.get('matches', []))
-    if low['status'] == 'recognized' and high['status'] == 'recognized':
-        raise AssertionError('depth<=2 and depth-three certificates both accepted; contradicts collision exclusion')
+    high_b0 = recognize_depth_three_b0(A, B, p)
+    statuses = [low['status'], high['status'], high_b0['status']]
+    if statuses.count('recognized') > 1:
+        raise AssertionError('more than one closure accepted; contradicts the collision exclusions')
+    matches = list(low['matches']) + list(high.get('matches', [])) + list(high_b0.get('matches', []))
     return {'status': 'recognized' if matches else 'not_in_implemented_families', 'p': p, 'short_model': [A % p, B % p],
             'matches': matches, 'depth_two_status': low['status'], 'depth_three_status': high['status'],
-            'scope': 'retained depth<=2 closure plus the depth-three A=0-seed family only; the depth-three B=0-seed chain is not covered'}
-
+            'depth_three_b0_status': high_b0['status'],
+            'scope': 'retained depth<=2 closure plus both nondual depth-three families (A=0 seed and B=0 seed); depth four not covered'}
 
 def verify_supplied_certificate(p, A, B, certificate):
     """Reverify a stored certificate from its parameters; stored output is

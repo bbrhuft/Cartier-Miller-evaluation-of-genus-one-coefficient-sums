@@ -1,0 +1,5 @@
+# Validation rerun, 12 October 2026
+
+This rerun was made after the B=0-seed depth-three family and the CM-to-Cartier package were integrated. verify_release.py was run first and passed. Then every validator ran in parallel from a scratch copy of the release, so that committed records were not overwritten: the 20 research validators, including the new B=0 validator and derivation, together with the CM package's own `run_all.py` with all 13 of its steps. Each job used `python -B -E -s`. All 21 jobs passed. RUN_SUMMARY.json records each job's exit status and wall time and the dependency versions; logs/ holds each job's output. The wall times come from a parallel run on two cores and are not benchmarks.
+
+The depth-three outputs in research/depth_three_recognition_20261007/core/ were regenerated in place on 12 October for the merged code. The CM package's committed results/ are its author's own final run; this rerun reproduced their counts, with zero failures in validate_d7.py and validate_fixed_D.py and 13,130 fixed-discriminant agreements with the release's recognizers.

@@ -1,0 +1,82 @@
+[
+ {
+  "p": 11,
+  "A": 9,
+  "B": 1,
+  "H": 4,
+  "beta": 7,
+  "c": 10,
+  "Gprime_equals_(x-c)F^h": true,
+  "deg_G": 17,
+  "pole_order_of_g_at_O": 1,
+  "G_at_rational_2torsion_roots_nonzero": [
+   true,
+   false,
+   true
+  ]
+ },
+ {
+  "p": 29,
+  "A": 23,
+  "B": 18,
+  "H": 2,
+  "beta": 27,
+  "c": 28,
+  "Gprime_equals_(x-c)F^h": true,
+  "deg_G": 44,
+  "pole_order_of_g_at_O": 1,
+  "G_at_rational_2torsion_roots_nonzero": [
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "p": 43,
+  "A": 3,
+  "B": 7,
+  "H": 4,
+  "beta": 6,
+  "c": 23,
+  "Gprime_equals_(x-c)F^h": true,
+  "deg_G": 65,
+  "pole_order_of_g_at_O": 1,
+  "G_at_rational_2torsion_roots_nonzero": [
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "p": 101,
+  "A": 5,
+  "B": 17,
+  "H": 18,
+  "beta": 60,
+  "c": 37,
+  "Gprime_equals_(x-c)F^h": true,
+  "deg_G": 152,
+  "pole_order_of_g_at_O": 1,
+  "G_at_rational_2torsion_roots_nonzero": [
+   true,
+   true,
+   true
+  ]
+ },
+ {
+  "p": 113,
+  "A": 78,
+  "B": 15,
+  "H": 2,
+  "beta": 111,
+  "c": 112,
+  "Gprime_equals_(x-c)F^h": true,
+  "deg_G": 170,
+  "pole_order_of_g_at_O": 1,
+  "G_at_rational_2torsion_roots_nonzero": [
+   true,
+   true,
+   true
+  ]
+ }
+]

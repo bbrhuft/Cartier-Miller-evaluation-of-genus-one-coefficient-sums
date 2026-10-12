@@ -1,0 +1,12 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "third_party_packages_used": false,
+  "fresh_pari_available": false,
+  "primality_validation": "input prototype deterministic for p<2^64; integer factors trial-divided independently",
+  "source_hashes": {
+    "Depth_Three_Recognition_Handover_20261012.zip": "9d1706f16f5bef3ebe07b7c27ee3de32f182786af2e161b923d395ea0b43cba5",
+    "Depth_Three_Recognition_Proof_Note_20261007-1.md": "9267fdbc1d8a7b8b727f531410573054c88f0bd0d1d7088cea2b4dd69581ad42",
+    "Cartier_Miller_Extension_Ledger_20261007-1.md": "593086fc3bbd8ab60bc749d9fe147c01b879030ac7aeb9de1d7566bed96db57e"
+  }
+}

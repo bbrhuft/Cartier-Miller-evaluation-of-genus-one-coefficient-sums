@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "archive_extraction_and_manifest": "passed",
+  "fresh_run_review_exit_code": 0,
+  "matching_counts": {
+    "exact_integer_identities": 14,
+    "exhaustive_models": 1885840,
+    "accepted_models": 16448,
+    "coefficient_and_trace_checks": 1268,
+    "original_cubic_branch_checks": 60,
+    "ineligible_input_checks": 2456,
+    "large_trace_sign_witnesses": 15
+  },
+  "no_network_or_third_party_packages": true
+}

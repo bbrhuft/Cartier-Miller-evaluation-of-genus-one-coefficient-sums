@@ -1,0 +1,32 @@
+{
+ "a_literal_D-7_Phi7": {
+  "b00_is_zero": true,
+  "gamma": "181/637875",
+  "s2": "5/21"
+ },
+ "b_literal_D-8_Phi8_hypothesis_warning": {
+  "b00_is_zero": false,
+  "gamma": "-222234217267947383953549/1533597248133066526155368000",
+  "s2": "333875845126626355723655/383399312033266631538842"
+ },
+ "c_variant_D-8_Phi2": {
+  "b00_is_zero": true,
+  "gamma": "-61/392000",
+  "s2": "5/14"
+ },
+ "c_variant_D-12_Phi3": {
+  "b00_is_zero": true,
+  "gamma": "-67/3267000",
+  "s2": "5/11"
+ },
+ "c_variant_D-7_Phi2_trace_one_element": {
+  "b00_is_zero": true,
+  "b01": 0,
+  "s2": null
+ },
+ "expected_from_endomorphism_loops": {
+  "D-7": "5/21",
+  "D-8": "5/14",
+  "D-12": "5/11"
+ }
+}

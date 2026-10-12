@@ -1,0 +1,22 @@
+{
+ "V1a_curve_equation": true,
+ "V1b_omega_scale_plus_one": true,
+ "V1c_eta_pullback": true,
+ "V2_translation_exact": true,
+ "V3_iso_omega_factor": "u",
+ "V3_iso_eta_factor": "1/u",
+ "V3_ok": true,
+ "V4_j0": "omega->z*omega, eta->z^2*eta (direct substitution)",
+ "V4_j1728_omega_factor": "I",
+ "V4_j1728_eta_factor": "-I",
+ "V4_ok": true,
+ "V5_psi3_at_minus3": 0,
+ "V5_quotient": [
+  -135,
+  594
+ ],
+ "V5_u4": "9",
+ "V5_u6": "-27",
+ "V5_u2": "-3",
+ "V5_beta_over_H": "-1"
+}

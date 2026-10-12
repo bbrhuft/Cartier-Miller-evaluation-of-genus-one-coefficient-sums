@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this research or software, please cite it as below. The proofs are unrefereed."
-title: "Cartier–Miller extensions: normalized 2-isogeny closure, depth-three CM recognition and the rounded-third obstruction"
-version: "2026.10.10"
-date-released: "2026-10-10"
+title: "Cartier–Miller extensions: normalized 2-isogeny closure, depth-three CM recognition, the CM-to-Cartier comparison and the rounded-third obstruction"
+version: "2026.10.12"
+date-released: "2026-10-12"
 license: MIT
 type: software
 authors:
@@ -19,8 +19,9 @@ keywords:
 abstract: >-
   Extension research on Cartier–Miller evaluation of genus-one coefficient sums. It gives
   explicitly normalized coefficient recovery along rational degree-two isogeny paths;
-  direct recognition through depth two from two ordinary easy seeds; one consolidated
-  depth-three family (discriminant -192) with a CM trace preparation; and a proof that the
+  direct recognition through depth two from two ordinary easy seeds; both nondual
+  depth-three families (discriminants -192 and -256) with CM trace preparation; a
+  CM-to-Cartier comparison re-deriving the family slopes and a certified D = -7 seed; and a proof that the
   missing boundary at the rounded third point p = 2 mod 3 is equivalent to the Gauss
   factorial floor(p/3)! mod p. Prepared with substantial generative-AI assistance;
   proofs are unrefereed and novelty is not claimed.

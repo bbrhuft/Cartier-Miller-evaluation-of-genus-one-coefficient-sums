@@ -1,0 +1,301 @@
+{
+ "seed_A0_D-3": {
+  "D": -3,
+  "tower": [
+   [
+    "t",
+    "-3"
+   ]
+  ],
+  "A": "0",
+  "B": "-1",
+  "lambda": "-1/2 + 1/2*t",
+  "mu": "-1/2 + -1/2*t",
+  "nu": "0",
+  "c_eigenline": "0",
+  "slope_beta_over_H_r1": "0",
+  "lambda_minus_mu_squared": "-3",
+  "endomorphism": "automorphism (x,y)->(z x,y), z^2+z+1=0"
+ },
+ "seed_B0_D-4": {
+  "D": -4,
+  "tower": [
+   [
+    "i",
+    "-1"
+   ]
+  ],
+  "A": "-1",
+  "B": "0",
+  "lambda": "1*i",
+  "mu": "-1*i",
+  "nu": "0",
+  "c_eigenline": "0",
+  "slope_beta_over_H_r1": "0",
+  "lambda_minus_mu_squared": "-4",
+  "endomorphism": "automorphism (x,y)->(-x,i y)"
+ },
+ "depth1_A0_D-12": {
+  "D": -12,
+  "tower": [
+   [
+    "t",
+    "-3"
+   ]
+  ],
+  "A": "-15",
+  "B": "-22",
+  "lambda": "-1 + 1*t",
+  "mu": "-1 + -1*t",
+  "nu": "-2*t",
+  "c_eigenline": "1",
+  "slope_beta_over_H_r1": "-1",
+  "lambda_minus_mu_squared": "-12",
+  "endomorphism": "reverse path (1 steps) -> seed automorphism -> forward path -> isomorphism u",
+  "degree": 4,
+  "closing_u": "2",
+  "S_weight_zero": "5/11",
+  "j": "54000",
+  "retained_multiplier": "-1",
+  "minus_c_equals_retained_multiplier": true
+ },
+ "depth1_A0_D-12_seedfree_deg3": {
+  "D": -12,
+  "tower": [
+   [
+    "t",
+    "-3"
+   ]
+  ],
+  "A": "-15",
+  "B": "-22",
+  "lambda": "1*t",
+  "mu": "-1*t",
+  "nu": "-2*t",
+  "c_eigenline": "1",
+  "slope_beta_over_H_r1": "-1",
+  "lambda_minus_mu_squared": "-12",
+  "endomorphism": "sqrt(-3): odd Velu 3-isogeny, kernel x=-3, then isomorphism u=sqrt(-3)",
+  "degree": 3,
+  "S_weight_zero": "5/11",
+  "j": "54000",
+  "retained_multiplier": "-1",
+  "minus_c_equals_retained_multiplier": true
+ },
+ "depth1_B0_D-16": {
+  "D": -16,
+  "tower": [
+   [
+    "i",
+    "-1"
+   ]
+  ],
+  "A": "-11",
+  "B": "-14",
+  "lambda": "2*i",
+  "mu": "-2*i",
+  "nu": "-4*i",
+  "c_eigenline": "1",
+  "slope_beta_over_H_r1": "-1",
+  "lambda_minus_mu_squared": "-16",
+  "endomorphism": "reverse path (1 steps) -> seed automorphism -> forward path -> isomorphism u",
+  "degree": 4,
+  "closing_u": "2",
+  "S_weight_zero": "11/21",
+  "j": "287496",
+  "retained_multiplier": "-1",
+  "minus_c_equals_retained_multiplier": true
+ },
+ "depth2_A0_D-48": {
+  "D": -48,
+  "tower": [
+   [
+    "e",
+    "3"
+   ],
+   [
+    "i",
+    "-1"
+   ]
+  ],
+  "A": "-135 + -60*e",
+  "B": "-694 + -420*e",
+  "lambda": "-2 + 2*e*i",
+  "mu": "-2 + -2*e*i",
+  "nu": "-24*i + -12*e*i",
+  "c_eigenline": "3 + 2*e",
+  "slope_beta_over_H_r1": "-3 + -2*e",
+  "lambda_minus_mu_squared": "-48",
+  "endomorphism": "reverse path (2 steps) -> seed automorphism -> forward path -> isomorphism u",
+  "degree": 16,
+  "closing_u": "4",
+  "S_weight_zero": "6015/11891 + 1500/11891*e",
+  "j": "1417905000 + 818626500*e",
+  "retained_multiplier": "-3 + -2*e",
+  "minus_c_equals_retained_multiplier": true
+ },
+ "depth2_B0_D-64": {
+  "D": -64,
+  "tower": [
+   [
+    "e",
+    "2"
+   ],
+   [
+    "i",
+    "-1"
+   ]
+  ],
+  "A": "-91 + -60*e",
+  "B": "-462 + -308*e",
+  "lambda": "4*i",
+  "mu": "-4*i",
+  "nu": "-24*i + -16*e*i",
+  "c_eigenline": "3 + 2*e",
+  "slope_beta_over_H_r1": "-3 + -2*e",
+  "lambda_minus_mu_squared": "-64",
+  "endomorphism": "reverse path (2 steps) -> seed automorphism -> forward path -> isomorphism u",
+  "degree": 16,
+  "closing_u": "4",
+  "S_weight_zero": "13/33 + 20/77*e",
+  "j": "41113158120 + 29071392966*e",
+  "retained_multiplier": "-3 + -2*e",
+  "minus_c_equals_retained_multiplier": true
+ },
+ "depth3_A0_D-192": {
+  "D": -192,
+  "tower": [
+   [
+    "e",
+    "3"
+   ],
+   [
+    "g",
+    "2"
+   ],
+   [
+    "i",
+    "-1"
+   ]
+  ],
+  "A": "-1095 + -540*e + -540*g + -420*e*g",
+  "B": "-22198 + -13860*e + -16380*g + -8820*e*g",
+  "lambda": "-4 + 4*e*i",
+  "mu": "-4 + -4*e*i",
+  "nu": "-144*i + -56*e*i + -48*g*i + -48*e*g*i",
+  "c_eigenline": "7 + 6*e + 6*g + 2*e*g",
+  "slope_beta_over_H_r1": "-7 + -6*e + -6*g + -2*e*g",
+  "lambda_minus_mu_squared": "-192",
+  "endomorphism": "reverse path (3 steps) -> seed automorphism -> forward path -> isomorphism u",
+  "degree": 64,
+  "closing_u": "8",
+  "S_weight_zero": "569844035/1170843179 + 2578473000/26929393117*e + -23275500/1170843179*g + 2613718260/26929393117*e*g",
+  "j": "2010450259344609000 + 1160733998424384000*e + 1421603011620136125*g + 820762881440077125*e*g",
+  "retained_multiplier": "-7 + -6*e + -6*g + -2*e*g",
+  "minus_c_equals_retained_multiplier": true
+ },
+ "depth3_B0_D-256": {
+  "D": -256,
+  "tower": [
+   [
+    "w",
+    "2"
+   ],
+   [
+    "s",
+    "1*w"
+   ],
+   [
+    "i",
+    "-1"
+   ]
+  ],
+  "A": "-731 + -540*w + -600*s + -360*w*s",
+  "B": "-14798 + -10164*w + -11816*s + -8456*w*s",
+  "lambda": "8*i",
+  "mu": "-8*i",
+  "nu": "-112*i + -96*w*i + -64*s*i + -64*w*s*i",
+  "c_eigenline": "7 + 6*w + 4*s + 4*w*s",
+  "slope_beta_over_H_r1": "-7 + -6*w + -4*s + -4*w*s",
+  "lambda_minus_mu_squared": "-256",
+  "endomorphism": "reverse path (3 steps) -> seed automorphism -> forward path -> isomorphism u",
+  "degree": 64,
+  "closing_u": "8",
+  "S_weight_zero": "247571/447051 + 46520/447051*w + 251480/3129357*s + 22360/447051*w*s",
+  "j": "1690291743695465540328 + 1195216754150697417216*w + 1421360268006467529594*s + 1005053484016501794441*w*s",
+  "retained_multiplier": "-7 + -6*w + -4*s + -4*w*s",
+  "minus_c_equals_retained_multiplier": true
+ },
+ "new_seed_D-7": {
+  "D": -7,
+  "tower": [
+   [
+    "e",
+    "-7"
+   ]
+  ],
+  "A": "-35",
+  "B": "-98",
+  "lambda": "1/2 + 1/2*e",
+  "mu": "1/2 + -1/2*e",
+  "nu": "-1*e",
+  "c_eigenline": "1",
+  "slope_beta_over_H_r1": "-1",
+  "lambda_minus_mu_squared": "-7",
+  "endomorphism": "(1+sqrt(-7))/2: normalized 2-isogeny, kernel root (-7+e)/2, closing u=(1+e)/2",
+  "degree": 2,
+  "kernel_root": "-7/2 + 1/2*e",
+  "quotient": [
+   "-35/2 + 105/2*e",
+   "-441 + -245*e"
+  ],
+  "S_weight_zero": "5/21",
+  "j": "-3375"
+ },
+ "new_seed_D-7_conjugate_endomorphism": {
+  "D": -7,
+  "tower": [
+   [
+    "e",
+    "-7"
+   ]
+  ],
+  "A": "-35",
+  "B": "-98",
+  "lambda": "1/2 + -1/2*e",
+  "mu": "1/2 + 1/2*e",
+  "nu": "1*e",
+  "c_eigenline": "1",
+  "slope_beta_over_H_r1": "-1",
+  "lambda_minus_mu_squared": "-7",
+  "endomorphism": "(1-sqrt(-7))/2",
+  "degree": 2,
+  "S_weight_zero": "5/21",
+  "j": "-3375"
+ },
+ "control_D-8": {
+  "D": -8,
+  "tower": [
+   [
+    "v",
+    "-2"
+   ]
+  ],
+  "A": "-30",
+  "B": "56",
+  "lambda": "1*v",
+  "mu": "-1*v",
+  "nu": "2*v",
+  "c_eigenline": "-1",
+  "slope_beta_over_H_r1": "1",
+  "lambda_minus_mu_squared": "-8",
+  "endomorphism": "sqrt(-2): normalized 2-isogeny, kernel root 4 (rational), closing u=sqrt(-2)",
+  "degree": 2,
+  "quotient": [
+   "-120",
+   "-448"
+  ],
+  "S_weight_zero": "5/14",
+  "j": "8000"
+ }
+}

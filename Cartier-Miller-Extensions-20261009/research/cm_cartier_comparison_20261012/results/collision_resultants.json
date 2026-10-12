@@ -1,0 +1,938 @@
+{
+ "-7": [
+  {
+   "D": -3,
+   "N_D": "-3375",
+   "digits": 4,
+   "factors": {
+    "3": 3,
+    "5": 3
+   },
+   "prime_info": [
+    {
+     "prime": 3,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": 0,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 5,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    }
+   ],
+   "admissible_collision_primes": []
+  },
+  {
+   "D": -4,
+   "N_D": "-5103",
+   "digits": 4,
+   "factors": {
+    "3": 6,
+    "7": 1
+   },
+   "prime_info": [
+    {
+     "prime": 3,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 7,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": 0
+    }
+   ],
+   "admissible_collision_primes": []
+  },
+  {
+   "D": -12,
+   "N_D": "-57375",
+   "digits": 5,
+   "factors": {
+    "3": 3,
+    "5": 3,
+    "17": 1
+   },
+   "prime_info": [
+    {
+     "prime": 3,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": 0,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 5,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 17,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    }
+   ],
+   "admissible_collision_primes": []
+  },
+  {
+   "D": -16,
+   "N_D": "-290871",
+   "digits": 6,
+   "factors": {
+    "3": 7,
+    "7": 1,
+    "19": 1
+   },
+   "prime_info": [
+    {
+     "prime": 3,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 7,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": 0
+    },
+    {
+     "prime": 19,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    }
+   ],
+   "admissible_collision_primes": []
+  },
+  {
+   "D": -48,
+   "N_D": "16120388390625",
+   "digits": 14,
+   "factors": {
+    "3": 6,
+    "5": 6,
+    "17": 2,
+    "59": 1,
+    "83": 1
+   },
+   "prime_info": [
+    {
+     "prime": 3,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": 0,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 5,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 17,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 59,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 83,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    }
+   ],
+   "admissible_collision_primes": []
+  },
+  {
+   "D": -64,
+   "N_D": "270146762080713",
+   "digits": 15,
+   "factors": {
+    "3": 14,
+    "7": 2,
+    "19": 2,
+    "31": 1,
+    "103": 1
+   },
+   "prime_info": [
+    {
+     "prime": 3,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 7,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": 0
+    },
+    {
+     "prime": 19,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 31,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 103,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    }
+   ],
+   "admissible_collision_primes": []
+  },
+  {
+   "D": -192,
+   "N_D": "-3689738527016926251910527099609375",
+   "digits": 34,
+   "factors": {
+    "3": 12,
+    "5": 12,
+    "17": 2,
+    "41": 2,
+    "47": 1,
+    "59": 2,
+    "83": 2,
+    "167": 1,
+    "311": 1
+   },
+   "prime_info": [
+    {
+     "prime": 3,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": 0,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 5,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 17,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 41,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 47,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 59,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 83,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 167,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 311,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    }
+   ],
+   "admissible_collision_primes": []
+  },
+  {
+   "D": -256,
+   "N_D": "-1175830770345457894796472452229897783",
+   "digits": 37,
+   "factors": {
+    "3": 26,
+    "7": 4,
+    "19": 2,
+    "31": 3,
+    "47": 1,
+    "103": 2,
+    "223": 1,
+    "367": 1,
+    "439": 1
+   },
+   "prime_info": [
+    {
+     "prime": 3,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 7,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": 0
+    },
+    {
+     "prime": 19,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 31,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 47,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 103,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 223,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 367,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 439,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    }
+   ],
+   "admissible_collision_primes": []
+  },
+  {
+   "D": -8,
+   "N_D": "-11375",
+   "digits": 5,
+   "factors": {
+    "5": 3,
+    "7": 1,
+    "13": 1
+   },
+   "prime_info": [
+    {
+     "prime": 5,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 7,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": 0
+    },
+    {
+     "prime": 13,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    }
+   ],
+   "admissible_collision_primes": []
+  }
+ ],
+ "-8": [
+  {
+   "D": -3,
+   "N_D": "8000",
+   "digits": 4,
+   "factors": {
+    "2": 6,
+    "5": 3
+   },
+   "prime_info": [
+    {
+     "prime": 2,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": 0
+    },
+    {
+     "prime": 5,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    }
+   ],
+   "admissible_collision_primes": []
+  },
+  {
+   "D": -4,
+   "N_D": "6272",
+   "digits": 4,
+   "factors": {
+    "2": 7,
+    "7": 2
+   },
+   "prime_info": [
+    {
+     "prime": 2,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": 0,
+     "kronecker_newD_q": 0
+    },
+    {
+     "prime": 7,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    }
+   ],
+   "admissible_collision_primes": []
+  },
+  {
+   "D": -12,
+   "N_D": "-46000",
+   "digits": 5,
+   "factors": {
+    "2": 4,
+    "5": 3,
+    "23": 1
+   },
+   "prime_info": [
+    {
+     "prime": 2,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": 0,
+     "kronecker_newD_q": 0
+    },
+    {
+     "prime": 5,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 23,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    }
+   ],
+   "admissible_collision_primes": []
+  },
+  {
+   "D": -16,
+   "N_D": "-279496",
+   "digits": 6,
+   "factors": {
+    "2": 3,
+    "7": 2,
+    "23": 1,
+    "31": 1
+   },
+   "prime_info": [
+    {
+     "prime": 2,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": 0,
+     "kronecker_newD_q": 0
+    },
+    {
+     "prime": 7,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 23,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 31,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    }
+   ],
+   "admissible_collision_primes": []
+  },
+  {
+   "D": -48,
+   "N_D": "-16136897750000",
+   "digits": 14,
+   "factors": {
+    "2": 4,
+    "5": 6,
+    "23": 1,
+    "29": 2,
+    "47": 1,
+    "71": 1
+   },
+   "prime_info": [
+    {
+     "prime": 2,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": 0,
+     "kronecker_newD_q": 0
+    },
+    {
+     "prime": 5,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 23,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 29,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 47,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 71,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    }
+   ],
+   "admissible_collision_primes": []
+  },
+  {
+   "D": -64,
+   "N_D": "-665177532539912",
+   "digits": 15,
+   "factors": {
+    "2": 3,
+    "7": 4,
+    "23": 1,
+    "31": 1,
+    "47": 1,
+    "79": 1,
+    "103": 1,
+    "127": 1
+   },
+   "prime_info": [
+    {
+     "prime": 2,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": 0,
+     "kronecker_newD_q": 0
+    },
+    {
+     "prime": 7,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 23,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 31,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 47,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 79,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 103,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 127,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    }
+   ],
+   "admissible_collision_primes": []
+  },
+  {
+   "D": -192,
+   "N_D": "6531659545959354274258691406250000",
+   "digits": 34,
+   "factors": {
+    "2": 4,
+    "5": 14,
+    "23": 1,
+    "29": 2,
+    "47": 1,
+    "53": 2,
+    "71": 1,
+    "101": 2,
+    "263": 1,
+    "359": 1,
+    "383": 1
+   },
+   "prime_info": [
+    {
+     "prime": 2,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": 0,
+     "kronecker_newD_q": 0
+    },
+    {
+     "prime": 5,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 23,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 29,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 47,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 53,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 71,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 101,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 263,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 359,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 383,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    }
+   ],
+   "admissible_collision_primes": []
+  },
+  {
+   "D": -256,
+   "N_D": "-969369342604051028826564177632870408",
+   "digits": 36,
+   "factors": {
+    "2": 3,
+    "7": 9,
+    "23": 2,
+    "47": 1,
+    "71": 1,
+    "79": 1,
+    "103": 1,
+    "127": 1,
+    "151": 1,
+    "223": 1,
+    "431": 1,
+    "463": 1,
+    "487": 1,
+    "503": 1
+   },
+   "prime_info": [
+    {
+     "prime": 2,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": 0,
+     "kronecker_newD_q": 0
+    },
+    {
+     "prime": 7,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 23,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 47,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 71,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 79,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 103,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 127,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 151,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 223,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 431,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 463,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 487,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 503,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    }
+   ],
+   "admissible_collision_primes": []
+  },
+  {
+   "D": -7,
+   "N_D": "11375",
+   "digits": 5,
+   "factors": {
+    "5": 3,
+    "7": 1,
+    "13": 1
+   },
+   "prime_info": [
+    {
+     "prime": 5,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 7,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": 0,
+     "kronecker_newD_q": -1
+    },
+    {
+     "prime": 13,
+     "admissible_for_new_seed": false,
+     "eligible_for_family_D": false,
+     "kronecker_D_q": -1,
+     "kronecker_newD_q": -1
+    }
+   ],
+   "admissible_collision_primes": []
+  }
+ ]
+}

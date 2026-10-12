@@ -1,15 +1,17 @@
-# Results: normalized isogeny closure, depth-three recognition and the rounded third point
+# Results: normalized isogeny closure, depth-three recognition, the CM-to-Cartier comparison and the rounded third point
 
 This document is the technical summary of the release. The research is separate extension work on the Cartier–Miller manuscript, carried out with substantial generative-AI assistance; its proofs are unrefereed and its computational evidence is finite. The manuscript itself is not part of this release and is unchanged.
 
-The research supplies explicitly normalized coefficient recovery for curves reachable from two ordinary easy seed families by rational degree-two isogenies. Direct recognition is complete through depth two for those seeds. At depth three, only the nondual family from the ordinary A=0 seed has been consolidated. The B=0 seed chain remains deferred. “Depth three” never means every elliptic curve or every possible depth-three family.
+The research supplies explicitly normalized coefficient recovery for curves reachable from two ordinary easy seed families by rational degree-two isogenies. Direct recognition is complete through depth two for those seeds. At depth three, the nondual families below both ordinary seeds are now recognized: the A=0-seed family (discriminant −192), consolidated on 7 October, and the B=0-seed family (discriminant −256), added on 12 October. “Depth three” never means every elliptic curve; depth four is not covered. A separate 12 October package explains all six slopes through a CM-to-Cartier comparison and adds a class-number-one seed at discriminant −7.
 
 | Stage | Concrete result | Evidence and scope |
 |---|---|---|
 | Shared foundation | Branch formula, normalization and rooted Cartier transport | Separate algebraic derivations; linear general fallback; finite validation; human proof review pending |
 | Depth one | Two explicit parameter families with beta=-rH | Ordinary seed restrictions, twists and checked model equations |
 | Depth two | Two nondual parameter families; direct parameter recovery without square roots or graph search | Complete rational two-step classification from the specified easy seeds; exact exceptional-prime norms and collision checks |
-| Depth three | One discriminant -192 family; relative-norm recognition and normalized reverse certificate | p congruent to 1 modulo 24; other seed chain deferred; finite evidence is not a general proof |
+| Depth three | The discriminant −192 family below A=0 and the discriminant −256 family below B=0; relative-norm recognition and normalized reverse certificates | p ≡ 1 mod 24, respectively p = x²+64y²; finite evidence is not a general proof |
+| CM-to-Cartier comparison (12 October) | β(λ−μ) = νH for a separable F_p-endomorphism with pullback eigenvalues λ, μ; at CM points β/H ≡ −(3B/2A)·s₂(τ); fixed-discriminant table β/H = −(3B/2A)·R_D(j) | Classical in substance (Katz 1976; Katz 2019, Thm 3.1); candidate contribution is the chart form, endomorphism-level proof, certificates and evaluators; adversarial AI review applied |
+| D = −7 seed (12 October) | (−35r², −98r³), β = −rH, p ≡ 1, 2, 4 mod 7; signed trace via 4p = t²+7v² and (t/7) = (r/p); D = −8 control (−30r², 56r³), β = rH | Proved from Theorem 1 and classical inputs; exhaustive sweeps and PARI checks |
 | Restricted CM preparation | Candidate traces from Cornacchia; deterministic sign by Ireland & Rosen, Ch. 18, Theorem 4 on the seed (10 October); alternative zero-error point test with at least 1/5 success per raw uniform-x draw | Classical theorem plus the family's trace proposition; only the cubic-nonresidue search for √−3 is randomized; the Las Vegas alternative has a family-specific unrefereed probability argument |
 | Higher-depth audit | Additional classes at depths three and four in tested finite fields | Finite graph census, not a uniform depth bound |
 | Rounded third point, p ≡ 2 mod 3 | Boundary a_L=3/(2(m!)³), m=⌊p/3⌋; complete weighted sum equivalent to ⌊p/3⌋! mod p (p≠17) | Elementary proof; checked for 1,136 primes; an obstruction, not a fast family |
@@ -29,6 +31,9 @@ At a rational kernel root q, the quotient is A'=-4A−15q², B'=-8Aq−22q³. Th
 | Depth two from B=0 | p=1 mod 8, e²=2, r nonzero | -91−60e | -462−308e | -(3+2e) |
 | Depth two from A=0 | p=1 mod 12, e²=3, r nonzero | -135−60e | -694−420e | -(3+2e) |
 | Consolidated depth three from A=0 | p=1 mod 24, e²=3, g²=2, r nonzero | -1095−540e−540g−420eg | -22198−13860e−16380g−8820eg | -(7+6e+6g+2eg) |
+| Depth three from B=0 (12 October) | p=1 mod 8, s⁴=2 (p = x²+64y²), r nonzero | -731−600s−540s²−360s³ | -14798−11816s−10164s²−8456s³ | -(7+4s+6s²+4s³) |
+| CM seed D=−7 (12 October) | p=1, 2, 4 mod 7, r nonzero | -35 | -98 | -1 |
+| CM control D=−8 (12 October) | p=1, 3 mod 8, r nonzero | -30 | 56 | +1 |
 
 The displayed quotients beta/(rH) denote multipliers; the implementations multiply by H rather than divide by it. Quadratic twisting by d sends r to dr and uses the trace of the actual target model. Equal j-values alone do not identify base-field twists or the required differential normalization.
 

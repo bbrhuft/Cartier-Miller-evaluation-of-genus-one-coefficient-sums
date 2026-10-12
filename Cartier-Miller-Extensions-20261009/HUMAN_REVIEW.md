@@ -15,7 +15,10 @@ The intended contribution is a modest computational specialization using classic
 | Trace-sign bound | Is the proper-subgroup argument valid, do the eight p=97 witnesses cover the finite exception, and does the actual raw-x sampler have success at least 1/5? |
 | Costs | Are prime validation, random sampling, square roots, Cornacchia, reconstruction and capped inconclusive outputs charged consistently? |
 | Prior art | Is explicit recognition plus coefficient recovery already stated or immediate from prior work? What, if anything, is a useful original algorithmic contribution? |
-| Scope | Are the deferred chain, generic/supersingular K, all stopping indices and Witt correction visibly unresolved? |
+| B=0 depth-three family | Do the s⁴=2 family constants, the relative-norm-then-linear recognition, the eligibility equivalence via Gauss's quartic criterion and the Theorem 5 trace specialization hold? |
+| CM-to-Cartier comparison | Is Theorem 1 (β(λ−μ)=νH) correct with separated eigenvalues, does reduction of the explicit chains satisfy the hypotheses of Theorem 5, and what exactly is already in Katz (1976, §5.7, §VIII) and Katz (2019)? |
+| D=−7 seed | Are the recognition, the Hecke-character derivation of (t/7)=(r/p), the exclusions and the original-cubic evaluator correct, and is any of the application new? |
+| Scope | Are depth four, generic/supersingular K, growing discriminants, all stopping indices and the Witt correction visibly unresolved? |
 | Rounded third point | Do Theorem R, the p=17 exception and the equivalence in Rounded_Third_Boundary_Note_20261009.md hold? Are the Γ_p(1/3) step and the Gross–Koblitz assessment correct? Do Coleman (1990) or Ogus (1990) already identify the supersingular second-kind coefficient? |
 
 Retained CSVs and source hashes support reproduction; they are not a substitute for these mathematical checks. Historical checks from the external AI worker and later checks using separate arithmetic code are identified as such, not represented as independent human refereeing. No timing comparison accompanies this release. Reviewers can open a GitHub issue for each question, quoting the file and equation concerned.

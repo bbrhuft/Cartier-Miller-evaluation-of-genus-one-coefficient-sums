@@ -1,0 +1,18 @@
+case,error
+s_negated,parameters do not reproduce both short coefficients
+s_times_i,parameters do not reproduce both short coefficients
+r_scaled,parameters do not reproduce both short coefficients
+r_negated,parameters do not reproduce both short coefficients
+s_not_fourth_root,"invalid B=0 depth-three parameters: need s^4=2, r nonzero"
+r_zero,"invalid B=0 depth-three parameters: need s^4=2, r nonzero"
+e_inconsistent,stored parameters disagree with recomputed certificate
+multiplier,stored beta_multiplier disagrees with recomputed certificate
+forward_roots,stored forward_roots disagrees with recomputed certificate
+reverse_roots,stored reverse_path disagrees with recomputed certificate
+reverse_endpoint,stored reverse_path disagrees with recomputed certificate
+forward_seed,stored forward_seed disagrees with recomputed certificate
+depth,stored depth disagrees with recomputed certificate
+unknown_field,stored certificate carries unknown field bogus
+family_label,certificate family mismatch
+certificate_on_twist,parameters do not reproduce both short coefficients
+certificate_on_other_model,parameters do not reproduce both short coefficients

@@ -1,0 +1,52 @@
+{
+ "summary": {
+  "T0_flint_vs_naive_convolution": 10,
+  "T1_full_sweep_members": 19602,
+  "T1_bound": 700,
+  "T1_retained_recognizer_false_accepts": 0,
+  "T2_sampled_members": 4266,
+  "T2_range": [
+   701,
+   20000
+  ],
+  "T2_of_which_nonsquare_r": 2143,
+  "T3_exhaustive_primes": 32,
+  "T3_bound": 151,
+  "T3_models_scanned": 236590,
+  "T3_d7_accepted": 1290,
+  "T3_retained_accepted": 8124,
+  "T3_overlaps": 0,
+  "T4_inadmissible_supersingular_checks": 78,
+  "T4_p7": "model (-35r^2,-98r^3) = (0,0) mod 7 is singular; rejected",
+  "T5_theorem1_universal": {
+   "checks_lambda_ne_mu": 22248,
+   "checks_lambda_eq_mu": 47896,
+   "models": 24328,
+   "supersingular_with_loop": 0,
+   "bound": 67
+  },
+  "T6_branch_queries_checked": 444,
+  "T7_correct_traces_accepted": 26,
+  "T7_wrong_traces_rejected": 180,
+  "T8_valid_certificates_verified": 21,
+  "T8_tampered_certificates_rejected": 147,
+  "T9_large_prime_trace_checks": 36,
+  "T10_endomorphism_certificates": 852,
+  "T11_D8_control_members": 6078,
+  "T14_primality_cross_checks": 3005,
+  "failures": 0,
+  "elapsed_seconds": 72.1
+ },
+ "failures": [],
+ "environment": {
+  "python": "3.13.16",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
+  "pari": "[2, 17, 2]",
+  "flint": "0.9.0"
+ },
+ "source_sha256": {
+  "core/d7_seed.py": "aac40a8922b4188b7a1d03986c6c157f0ed93cecd9d6b1f821f4d40686085194",
+  "core/d8_control.py": "89dbf9c3219d24a1c7006a42f3d1ec4739c0d648c7dfb96a37eeb0a11f1e989c",
+  "validation/validate_d7.py": "1842b10501a95582405a734e7b30cf15b3997307fb4d3ffb9e8f91d0a7b7e16a"
+ }
+}

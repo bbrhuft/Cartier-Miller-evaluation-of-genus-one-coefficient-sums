@@ -1,0 +1,106 @@
+[
+ {
+  "script": "theory/symbolic_velu_check.py",
+  "returncode": 0,
+  "seconds": 1.2,
+  "last_line": [
+   "ALL_SYMBOLIC_IDENTITIES_HOLD"
+  ]
+ },
+ {
+  "script": "theory/family_loops.py",
+  "returncode": 0,
+  "seconds": 0.1,
+  "last_line": [
+   "MISMATCHES: []"
+  ]
+ },
+ {
+  "script": "theory/cm_tables.py",
+  "returncode": 0,
+  "seconds": 0.3,
+  "last_line": [
+   "TABLES_OK"
+  ]
+ },
+ {
+  "script": "theory/seedfree_deg5_D16.py",
+  "returncode": 0,
+  "seconds": 0.1,
+  "last_line": [
+   "SEEDFREE_DEG5_OK"
+  ]
+ },
+ {
+  "script": "theory/collision_resultants.py",
+  "returncode": 0,
+  "seconds": 0.1,
+  "last_line": [
+   "ADMISSIBLE COLLISION PRIMES: []"
+  ]
+ },
+ {
+  "script": "theory/bos_masser_check.py",
+  "returncode": 0,
+  "seconds": 0.2,
+  "last_line": [
+   "}"
+  ]
+ },
+ {
+  "script": "theory/char_p_exactness_demo.py",
+  "returncode": 0,
+  "seconds": 0.1,
+  "last_line": [
+   "]"
+  ]
+ },
+ {
+  "script": "theory/period_check.py",
+  "returncode": 0,
+  "seconds": 0.3,
+  "last_line": [
+   "PERIOD_CHECK_MAX_ABS_DIFF 7.6839e-73"
+  ]
+ },
+ {
+  "script": "theory/quasiperiod_isogeny_check.py",
+  "returncode": 0,
+  "seconds": 0.1,
+  "last_line": [
+   "QUASIPERIOD_MAX_ABS_DIFF 1.2954252832641667e-76"
+  ]
+ },
+ {
+  "script": "theory/katz_zannier_check.py",
+  "returncode": 0,
+  "seconds": 1.5,
+  "last_line": [
+   "ALL_AGREE"
+  ]
+ },
+ {
+  "script": "theory/order_argument.py",
+  "returncode": 0,
+  "seconds": 0.2,
+  "last_line": [
+   "ORDER_ARGUMENT_OK"
+  ]
+ },
+ {
+  "script": "validation/validate_d7.py",
+  "returncode": 0,
+  "seconds": 81.8,
+  "last_line": [
+   "FAILURES: 0"
+  ]
+ },
+ {
+  "script": "validation/validate_fixed_D.py",
+  "returncode": 0,
+  "seconds": 11.2,
+  "last_line": [
+   "FAILURES 0"
+  ]
+ }
+]

@@ -107,7 +107,17 @@ for q in (5, 11, 17, 23, 29, 101, 983):
         fac = fac*i % q
     assert a == 3*pow(2*fac**3, -1, q) % q and U == (4*B-17*pow(3*fac**3, -1, q)) % q, q
     assert elliptic_prefix.third(q)['B'] == B, q
+# B=0-seed depth-three family (12 October): fixture curve and cubic at p=73.
+from depth_three_b0_recognize import recognize_depth_three_b0, prepare_cm_b0  # noqa: E402
+assert recognize_depth_three_b0(16, 27, 73)['matches'][0]['family'] == 'depth3_1728_disc_-256'
+b0 = prepare_cm_b0(73, [1, 60, 0, 10], rng=random.Random(20261012))
+assert (b0.evaluator.H, b0.evaluator.K, b0.evaluator.query(17)['T']) == (67, 32, 5)
+# CM-to-Cartier D=-7 seed (12 October): the review's worked example at p=11.
+sys.path.insert(0, str(root/'research/cm_cartier_comparison_20261012/core'))
+import d7_seed  # noqa: E402
+d7 = d7_seed.prepare_cm_d7(11, [1, 9, 0, 1], rng=random.Random(1))
+assert (d7.H, d7.K) == (4, 7) and [d7.query(m)['T'] for m in (1, 3, 7)] == [8, 5, 2]
 print(json.dumps({'status': 'passed', 'hashed_files': len(manifest),
-                  'fixtures': 'p=73 target, normalized cubic, B=0-chain rejections, ineligible primes, 63-bit member, eight exact p=97 witnesses, rounded-third boundary at seven primes',
+                  'fixtures': 'p=73 target, normalized cubic, B=0-chain rejections, ineligible primes, 63-bit member, eight exact p=97 witnesses, rounded-third boundary at seven primes, B=0 depth-three fixture at p=73, D=-7 example at p=11',
                   'scope': 'hash verification and small correctness smoke check only; not the validation suite',
                   'python': sys.version, 'platform': platform.platform()}, indent=2))

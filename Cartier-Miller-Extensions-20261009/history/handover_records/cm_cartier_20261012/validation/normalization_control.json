@@ -1,0 +1,12 @@
+{
+  "status": "numerical_control_agrees_not_a_proof",
+  "precision_digits": 80,
+  "nonconstant_summands": 39,
+  "tau": "i sqrt(3)",
+  "CM_discriminant": -12,
+  "E2star": "0.44822039438838143211638545001748524956939220170812073049174169935327983989030679",
+  "s2": "0.45454545454545454545454545454545454545454545454545454545454545454545454545454542",
+  "s2_minus_5_over_11": "-3E-80",
+  "predicted_beta_over_rH": "-0.99999999999999999999999999999999999999999999999999999999999999999999999999999992",
+  "limitation": "floating Decimal calculation, not interval-certified or algebraically proved"
+}

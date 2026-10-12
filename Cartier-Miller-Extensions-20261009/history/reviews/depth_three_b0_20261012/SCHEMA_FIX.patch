@@ -1,0 +1,11 @@
+--- a/research/depth_three_recognition_20261007/core/depth_three_b0_recognize.py
++++ b/research/depth_three_recognition_20261007/core/depth_three_b0_recognize.py
+@@ -143,6 +143,8 @@
+         if key not in cert:
+             raise ValueError('stored certificate carries unknown field %s' % key)
+         if key == 'parameters':
++            if not isinstance(stored, dict) or any(k not in cert[key] for k in stored):
++                raise ValueError('stored parameters carry unknown field')
+             if any(stored.get(k) is not None and stored[k] % p != cert[key][k] for k in ('s', 'e', 'r')) or \
+                stored.get('s_fourth_power', 2) != 2:
+                 raise ValueError('stored parameters disagree with recomputed certificate')

@@ -343,16 +343,16 @@
     191
   ],
   "pari_available": true,
-  "elapsed_seconds_not_benchmark": 19.1,
+  "elapsed_seconds_not_benchmark": 20.2,
   "environment": {
     "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
     "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
     "machine": "x86_64"
   },
   "source_sha256": {
-    "depth_three_recognize.py": "4927037a13441599f5d3c09eaeb2dd7c4fdc17d20fa870aa010a4e61e5295267",
+    "depth_three_recognize.py": "8a984091162d2147bbd142ddfb6e83ed7585f42bca277f94d2436badcf7b9f32",
     "validate_depth_three.py": "61b65d6bdd1ba55ad3854b4f8e2caae19fac85ebc1e77ca62b254d5f2fd01f59",
-    "cli.py": "35832cbcece41a16e6797263a323cd4395a2b2099a5306c8abf35b257fe5cddd"
+    "cli.py": "6722417af40192cc3192f63b5cb59cd2c8c36835a4f00289c5d04550905a8c4b"
   },
   "dependency_sha256": {
     "branch_evaluator.py": "d19fe4880fde99425f1c8bd72d38500083c16ca5ac4d28c63cc078bd4d5ebc0b",

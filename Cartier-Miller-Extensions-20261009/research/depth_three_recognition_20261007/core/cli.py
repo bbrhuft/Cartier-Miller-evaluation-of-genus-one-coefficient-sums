@@ -1,4 +1,4 @@
-"""Depth-three family recognition / trusted-trace preparation, JSON CLI.
+"""Depth-three family recognition / trace preparation, JSON CLI (A=0 and B=0 seeds).
 
 Examples (run from this directory):
   python cli.py --p 73 --short 4 16
@@ -7,6 +7,11 @@ Examples (run from this directory):
   python cli.py --p 73 --f 1 4 0 37 --cm --mu 9
   python cli.py --p 73 --short 4 16 --through-depth-two
   python cli.py --p 73 --short 4 16 --verify-certificate cert.json
+  python cli.py --p 73 --short 16 27 --family b0
+  python cli.py --p 73 --f 1 60 0 10 --family b0 --cm --mu 17
+--family a0 (default) is the A=0-seed family (discriminant -192, p = 1 mod 24);
+--family b0 is the B=0-seed family (discriminant -256, p = x^2 + 64 y^2), whose
+trace is exact by Ireland & Rosen Ch. 18 Theorem 5.
 A supplied trace is trusted apart from the Hasse interval and the family's
 necessary condition 4p-t^2=192f^2; --verify-sign checks its sign. --cm
 computes the trace itself (Cornacchia candidates plus a sign rule) and needs
@@ -22,6 +27,8 @@ from dataclasses import asdict
 from depth_three_recognize import (recognize_depth_three, recognize_short_through_depth_three,
                                    prepare_from_trace, prepare_cm, verify_supplied_certificate,
                                    RecognizedPreparation, CMPreparation)
+from depth_three_b0_recognize import (recognize_depth_three_b0, prepare_from_trace_b0, prepare_cm_b0,
+                                      verify_supplied_certificate_b0)
 
 
 def main():
@@ -31,10 +38,11 @@ def main():
     g.add_argument('--short', type=int, nargs=2, metavar=('A', 'B'))
     g.add_argument('--f', type=int, nargs=4, metavar=('ONE', 'C', 'B', 'A'))
     p.add_argument('--trusted-trace', type=int)
-    p.add_argument('--verify-sign', action='store_true', help='Las Vegas check of the supplied trace sign')
+    p.add_argument('--verify-sign', action='store_true', help='check the supplied trace (deterministic by default)')
     p.add_argument('--cm', action='store_true', help='compute the trace by Cornacchia plus a sign rule')
     p.add_argument('--sign-method', choices=['sextic', 'las_vegas'], default='sextic',
-                   help='sign rule for --cm and --verify-sign: deterministic Ireland-Rosen Thm 4 (default) or zero-error point test')
+                   help='sign rule: deterministic Ireland-Rosen Thm 4 (a0) / Thm 5 (b0) by default, or the point test')
+    p.add_argument('--family', choices=['a0', 'b0'], default='a0', help='depth-three family: A=0 seed (a0) or B=0 seed (b0)')
     p.add_argument('--mu', type=int)
     p.add_argument('--through-depth-two', action='store_true', help='also run the retained depth<=2 recognizer')
     p.add_argument('--verify-certificate', metavar='JSON', help='reverify a stored certificate for --short')
@@ -51,13 +59,24 @@ def main():
         if args.short is not None:
             if args.verify_certificate:
                 with open(args.verify_certificate) as handle:
-                    out = verify_supplied_certificate(args.p, *args.short, json.load(handle))
+                    verifier = verify_supplied_certificate_b0 if args.family == 'b0' else verify_supplied_certificate
+                    out = verifier(args.p, *args.short, json.load(handle))
             elif args.through_depth_two:
                 out = recognize_short_through_depth_three(*args.short, args.p)
+            elif args.family == 'b0':
+                out = recognize_depth_three_b0(*args.short, args.p)
             else:
                 out = recognize_depth_three(*args.short, args.p)
         else:
-            if args.cm:
+            if args.family == 'b0':
+                if args.cm:
+                    ev = prepare_cm_b0(args.p, args.f, sign_method='las_vegas' if args.sign_method == 'las_vegas' else 'quartic',
+                                       max_trials=max_trials)
+                elif args.trusted_trace is None:
+                    raise ValueError('--f preparation requires --trusted-trace or --cm')
+                else:
+                    ev = prepare_from_trace_b0(args.p, args.f, args.trusted_trace, verify_trace=args.verify_sign)
+            elif args.cm:
                 ev = prepare_cm(args.p, args.f, max_trials=max_trials, sign_method=args.sign_method)
             elif args.trusted_trace is None:
                 raise ValueError('--f preparation requires --trusted-trace or --cm')

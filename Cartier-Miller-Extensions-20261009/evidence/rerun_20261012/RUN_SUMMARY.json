@@ -1,0 +1,123 @@
+{
+  "date": "2026-10-12",
+  "layout": "this release after integrating the B=0 family and the CM-to-Cartier package; run from a scratch copy",
+  "runner": "python -B -E -s, 21 jobs in parallel on 2 cores plus verify_release.py first; wall times indicative only",
+  "all_passed": true,
+  "verify_release_before_suite": "passed",
+  "jobs": [
+    {
+      "job": "branch",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 40
+    },
+    {
+      "job": "closure",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 70
+    },
+    {
+      "job": "cm_run_all",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 118
+    },
+    {
+      "job": "d2_audit",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 21
+    },
+    {
+      "job": "d2_direct",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 13
+    },
+    {
+      "job": "d2_int",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 1
+    },
+    {
+      "job": "d2_recog",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 2
+    },
+    {
+      "job": "d3_b0",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 81
+    },
+    {
+      "job": "d3_b0_derive",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 1
+    },
+    {
+      "job": "d3_consol",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 4
+    },
+    {
+      "job": "d3_derive",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 12
+    },
+    {
+      "job": "d3_int",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 1
+    },
+    {
+      "job": "d3_transport",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 8
+    },
+    {
+      "job": "d3_validate",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 65
+    },
+    {
+      "job": "ind_attack",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 13
+    },
+    {
+      "job": "ind_cartier",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 18
+    },
+    {
+      "job": "ind_extra",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 29
+    },
+    {
+      "job": "ind_sextic",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 2
+    },
+    {
+      "job": "ind_symbolic",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 18
+    },
+    {
+      "job": "rounded",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 39
+    },
+    {
+      "job": "transport",
+      "returncode": 0,
+      "wall_seconds_not_benchmark": 37
+    }
+  ],
+  "optional_dependencies": {
+    "sympy": "1.14.0",
+    "mpmath": "1.3.0",
+    "python-flint": "0.9.0",
+    "cypari2": "2.2.4",
+    "pari": "2.17.2"
+  },
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39"
+}

@@ -49,3 +49,14 @@ Nested SHA256SUMS files inside research directories describe their original scop
 
 A depth-three update was received as Depth_Three_Recognition_Handover_20261010.zip (SHA-256 acc944b70721255dbe51ed3a1e0ba459fb94bc09ccbc73ac5c0a1306d9e59104), with its revised proof note and ledger. It was built on the original 7 October depth-three code. Only its new deterministic-sign functions and validator checks were merged into this release, on top of the consolidated code; the details are in docs/LEDGER_20261009.md. The received note, ledger, sources note and state file are kept unchanged in history/handover_records/depth_three_update_20261010/. The Ireland–Rosen chapter scan and the Tal report PDF used by the author are not redistributed, for copyright reasons.
 
+## Additions of 12 October 2026
+
+Three archives were received:
+- CM_Cartier_Extension_20261012_rev1.zip (SHA-256 4699bc1ad1b664a8cc2fd7e992a73754bab8d9bf8f545118ba7f5585d759d659), the CM-to-Cartier research package, revision 1;
+- Depth_Three_B0_Adversarial_Review_20261012.zip (b367fbe0410cee3add2a242139e418ce5c9bdcb4773633746844c42fefcc8dc2), the B = 0 review, whose inputs include the B = 0 research handover;
+- CM_Cartier_Research_Handover_20261012.zip (5007e508603aa60a13f21f75fee857b53ba0782f7a42df632184447ada141cb5), the handover that prompted the CM research.
+
+The CM package is research/cm_cartier_comparison_20261012/, unchanged apart from the default retained-code path in its two validation suites and its README run instructions. From the B = 0 handover, only the B = 0 code, validator, derivation and data were merged into research/depth_three_recognition_20261007/, with the review's schema patch and the integration changes listed in docs/LEDGER_20261009.md.
+
+The review records are in history/reviews/depth_three_b0_20261012/, and the handover records in history/handover_records/depth_three_b0_20261012/ and history/handover_records/cm_cartier_20261012/. Three items are not redistributed: the Ireland–Rosen Chapter 18 scan (copyright); the nested handover archive inside the review's inputs/, which contains the manuscript and GPL-licensed benchmark code that this release excludes; and the handover's unpack_retained.py and verify_handover.py, which refer to that archive layout.
+

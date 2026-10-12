@@ -3,7 +3,7 @@
   "scope": "new sign-bound certificates and code changes; not a benchmark",
   "finite_lemma_witnesses": 8,
   "sampler_base_models": 40,
-  "uncovered_status_regressions": 8,
+  "b0_chain_rows_recognized_by_combined_recognizer": 8,
   "counterexample": {
     "p": 97,
     "A": 0,
@@ -23,8 +23,8 @@
     "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39"
   },
   "source_sha256": {
-    "depth_three_recognize.py": "4927037a13441599f5d3c09eaeb2dd7c4fdc17d20fa870aa010a4e61e5295267",
-    "cli.py": "35832cbcece41a16e6797263a323cd4395a2b2099a5306c8abf35b257fe5cddd",
-    "validate_consolidation.py": "23021e9458fbddce0c906690a39bf37699422a06684eec4f416b6b28c6f9e362"
+    "depth_three_recognize.py": "8a984091162d2147bbd142ddfb6e83ed7585f42bca277f94d2436badcf7b9f32",
+    "cli.py": "6722417af40192cc3192f63b5cb59cd2c8c36835a4f00289c5d04550905a8c4b",
+    "validate_consolidation.py": "87042cdf848476e2e23f079363e3dc01def800e2163000a892c8bd2b6b84f3ec"
   }
 }

@@ -1,0 +1,172 @@
+[
+ {
+  "family": "depth1_A0_D-12",
+  "D": -12,
+  "conductor": 2,
+  "loop_lambda_minus_mu_squared": "-12",
+  "loop_disc_equals_D": true,
+  "deg_j_minpoly": 1,
+  "h(D)": 1,
+  "irreducible": true,
+  "proper_overorders": [
+   {
+    "k": 2,
+    "disc": -3,
+    "class_number": 1
+   }
+  ],
+  "overorders_excluded": true,
+  "End_has_disc_D": true
+ },
+ {
+  "family": "depth1_B0_D-16",
+  "D": -16,
+  "conductor": 2,
+  "loop_lambda_minus_mu_squared": "-16",
+  "loop_disc_equals_D": true,
+  "deg_j_minpoly": 1,
+  "h(D)": 1,
+  "irreducible": true,
+  "proper_overorders": [
+   {
+    "k": 2,
+    "disc": -4,
+    "class_number": 1
+   }
+  ],
+  "overorders_excluded": true,
+  "End_has_disc_D": true
+ },
+ {
+  "family": "depth2_A0_D-48",
+  "D": -48,
+  "conductor": 4,
+  "loop_lambda_minus_mu_squared": "-48",
+  "loop_disc_equals_D": true,
+  "deg_j_minpoly": 2,
+  "h(D)": 2,
+  "irreducible": true,
+  "proper_overorders": [
+   {
+    "k": 2,
+    "disc": -12,
+    "class_number": 1
+   },
+   {
+    "k": 4,
+    "disc": -3,
+    "class_number": 1
+   }
+  ],
+  "overorders_excluded": true,
+  "End_has_disc_D": true
+ },
+ {
+  "family": "depth2_B0_D-64",
+  "D": -64,
+  "conductor": 4,
+  "loop_lambda_minus_mu_squared": "-64",
+  "loop_disc_equals_D": true,
+  "deg_j_minpoly": 2,
+  "h(D)": 2,
+  "irreducible": true,
+  "proper_overorders": [
+   {
+    "k": 2,
+    "disc": -16,
+    "class_number": 1
+   },
+   {
+    "k": 4,
+    "disc": -4,
+    "class_number": 1
+   }
+  ],
+  "overorders_excluded": true,
+  "End_has_disc_D": true
+ },
+ {
+  "family": "depth3_A0_D-192",
+  "D": -192,
+  "conductor": 8,
+  "loop_lambda_minus_mu_squared": "-192",
+  "loop_disc_equals_D": true,
+  "deg_j_minpoly": 4,
+  "h(D)": 4,
+  "irreducible": true,
+  "proper_overorders": [
+   {
+    "k": 2,
+    "disc": -48,
+    "class_number": 2
+   },
+   {
+    "k": 4,
+    "disc": -12,
+    "class_number": 1
+   },
+   {
+    "k": 8,
+    "disc": -3,
+    "class_number": 1
+   }
+  ],
+  "overorders_excluded": true,
+  "End_has_disc_D": true
+ },
+ {
+  "family": "depth3_B0_D-256",
+  "D": -256,
+  "conductor": 8,
+  "loop_lambda_minus_mu_squared": "-256",
+  "loop_disc_equals_D": true,
+  "deg_j_minpoly": 4,
+  "h(D)": 4,
+  "irreducible": true,
+  "proper_overorders": [
+   {
+    "k": 2,
+    "disc": -64,
+    "class_number": 2
+   },
+   {
+    "k": 4,
+    "disc": -16,
+    "class_number": 1
+   },
+   {
+    "k": 8,
+    "disc": -4,
+    "class_number": 1
+   }
+  ],
+  "overorders_excluded": true,
+  "End_has_disc_D": true
+ },
+ {
+  "family": "new_seed_D-7",
+  "D": -7,
+  "conductor": 1,
+  "loop_lambda_minus_mu_squared": "-7",
+  "loop_disc_equals_D": true,
+  "deg_j_minpoly": 1,
+  "h(D)": 1,
+  "irreducible": true,
+  "proper_overorders": [],
+  "overorders_excluded": true,
+  "End_has_disc_D": true
+ },
+ {
+  "family": "control_D-8",
+  "D": -8,
+  "conductor": 1,
+  "loop_lambda_minus_mu_squared": "-8",
+  "loop_disc_equals_D": true,
+  "deg_j_minpoly": 1,
+  "h(D)": 1,
+  "irreducible": true,
+  "proper_overorders": [],
+  "overorders_excluded": true,
+  "End_has_disc_D": true
+ }
+]

@@ -1,0 +1,726 @@
+{
+ "stats": {
+  "members_checked": 18214,
+  "members_per_D": {
+   "-256": 1616,
+   "-192": 1920,
+   "-64": 2068,
+   "-48": 2364,
+   "-16": 2570,
+   "-12": 2592,
+   "-8": 2312,
+   "-7": 2772
+  },
+  "agree_with_retained_recognizer": 13130,
+  "dense_coefficient_checks": 15179,
+  "exhaustive_models_scanned_p_le_100": 62652,
+  "exhaustive_disagreements_with_retained": 0,
+  "pairwise_resultants": 45,
+  "elapsed_seconds": 11.0,
+  "failures": 0
+ },
+ "pairwise": [
+  {
+   "D1": -256,
+   "D2": -192,
+   "resultant_digits": 193,
+   "prime_factors": [
+    2,
+    3,
+    11,
+    23,
+    47,
+    59,
+    71,
+    83,
+    107,
+    179,
+    239,
+    251,
+    479,
+    599,
+    647,
+    659,
+    719,
+    743,
+    839,
+    2087,
+    2879,
+    4007,
+    5399,
+    6047,
+    6359,
+    6959,
+    7247,
+    8807,
+    9479,
+    9887,
+    10079,
+    10607,
+    11447,
+    11927,
+    12119,
+    12239,
+    12263
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -256,
+   "D2": -64,
+   "resultant_digits": 91,
+   "prime_factors": [
+    2,
+    3,
+    7,
+    11,
+    19,
+    23,
+    31,
+    43,
+    47,
+    67,
+    79,
+    83,
+    103,
+    127
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -256,
+   "D2": -48,
+   "resultant_digits": 87,
+   "prime_factors": [
+    2,
+    3,
+    11,
+    23,
+    47,
+    71,
+    83,
+    107,
+    131,
+    167,
+    191,
+    227,
+    263,
+    863,
+    1223,
+    1847,
+    2111,
+    2447,
+    2543,
+    2711,
+    2903,
+    3023
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -256,
+   "D2": -16,
+   "resultant_digits": 39,
+   "prime_factors": [
+    2,
+    3,
+    7,
+    11,
+    19,
+    23,
+    47,
+    59
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -256,
+   "D2": -12,
+   "resultant_digits": 37,
+   "prime_factors": [
+    2,
+    3,
+    11,
+    23,
+    47,
+    59,
+    239,
+    479,
+    599,
+    647,
+    719,
+    743
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -256,
+   "D2": -8,
+   "resultant_digits": 36,
+   "prime_factors": [
+    2,
+    7,
+    23,
+    47,
+    71,
+    79,
+    103,
+    127,
+    151,
+    223,
+    431,
+    463,
+    487,
+    503
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -256,
+   "D2": -7,
+   "resultant_digits": 37,
+   "prime_factors": [
+    3,
+    7,
+    19,
+    31,
+    47,
+    103,
+    223,
+    367,
+    439
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -256,
+   "D2": -4,
+   "resultant_digits": 37,
+   "prime_factors": [
+    2,
+    3,
+    7,
+    11,
+    19,
+    23,
+    31
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -256,
+   "D2": -3,
+   "resultant_digits": 37,
+   "prime_factors": [
+    2,
+    3,
+    11,
+    23,
+    71,
+    167,
+    191
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -192,
+   "D2": -64,
+   "resultant_digits": 85,
+   "prime_factors": [
+    2,
+    3,
+    11,
+    23,
+    47,
+    71,
+    83,
+    107,
+    131,
+    167,
+    191,
+    227,
+    263,
+    863,
+    1223,
+    1847,
+    2111,
+    2447,
+    2543,
+    2711,
+    2903,
+    3023
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -192,
+   "D2": -48,
+   "resultant_digits": 81,
+   "prime_factors": [
+    2,
+    3,
+    5,
+    11,
+    17,
+    23,
+    29,
+    47,
+    53,
+    59,
+    71,
+    83,
+    89
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -192,
+   "D2": -16,
+   "resultant_digits": 37,
+   "prime_factors": [
+    2,
+    3,
+    11,
+    23,
+    47,
+    59,
+    239,
+    479,
+    599,
+    647,
+    719,
+    743
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -192,
+   "D2": -12,
+   "resultant_digits": 35,
+   "prime_factors": [
+    2,
+    3,
+    5,
+    11,
+    17,
+    23,
+    29,
+    41,
+    47
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -192,
+   "D2": -8,
+   "resultant_digits": 34,
+   "prime_factors": [
+    2,
+    5,
+    23,
+    29,
+    47,
+    53,
+    71,
+    101,
+    263,
+    359,
+    383
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -192,
+   "D2": -7,
+   "resultant_digits": 34,
+   "prime_factors": [
+    3,
+    5,
+    17,
+    41,
+    47,
+    59,
+    83,
+    167,
+    311
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -192,
+   "D2": -4,
+   "resultant_digits": 33,
+   "prime_factors": [
+    2,
+    3,
+    11,
+    23,
+    47,
+    71,
+    167,
+    191
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -192,
+   "D2": -3,
+   "resultant_digits": 34,
+   "prime_factors": [
+    2,
+    3,
+    5,
+    11,
+    17,
+    23
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -64,
+   "D2": -48,
+   "resultant_digits": 35,
+   "prime_factors": [
+    2,
+    3,
+    11,
+    23,
+    47,
+    59,
+    239,
+    479,
+    599,
+    647,
+    719,
+    743
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -64,
+   "D2": -16,
+   "resultant_digits": 17,
+   "prime_factors": [
+    2,
+    3,
+    7,
+    19,
+    23,
+    31
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -64,
+   "D2": -12,
+   "resultant_digits": 16,
+   "prime_factors": [
+    2,
+    3,
+    11,
+    23,
+    71,
+    167,
+    191
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -64,
+   "D2": -8,
+   "resultant_digits": 15,
+   "prime_factors": [
+    2,
+    7,
+    23,
+    31,
+    47,
+    79,
+    103,
+    127
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -64,
+   "D2": -7,
+   "resultant_digits": 15,
+   "prime_factors": [
+    3,
+    7,
+    19,
+    31,
+    103
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -64,
+   "D2": -4,
+   "resultant_digits": 15,
+   "prime_factors": [
+    2,
+    3,
+    7,
+    11
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -64,
+   "D2": -3,
+   "resultant_digits": 13,
+   "prime_factors": [
+    2,
+    3,
+    23,
+    47
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -48,
+   "D2": -16,
+   "resultant_digits": 15,
+   "prime_factors": [
+    2,
+    3,
+    11,
+    23,
+    71,
+    167,
+    191
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -48,
+   "D2": -12,
+   "resultant_digits": 15,
+   "prime_factors": [
+    2,
+    3,
+    5,
+    11,
+    17,
+    23
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -48,
+   "D2": -8,
+   "resultant_digits": 14,
+   "prime_factors": [
+    2,
+    5,
+    23,
+    29,
+    47,
+    71
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -48,
+   "D2": -7,
+   "resultant_digits": 14,
+   "prime_factors": [
+    3,
+    5,
+    17,
+    59,
+    83
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -48,
+   "D2": -4,
+   "resultant_digits": 13,
+   "prime_factors": [
+    2,
+    3,
+    11,
+    23,
+    47
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -48,
+   "D2": -3,
+   "resultant_digits": 13,
+   "prime_factors": [
+    2,
+    3,
+    5,
+    11
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -16,
+   "D2": -12,
+   "resultant_digits": 6,
+   "prime_factors": [
+    2,
+    3,
+    23,
+    47
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -16,
+   "D2": -8,
+   "resultant_digits": 6,
+   "prime_factors": [
+    2,
+    7,
+    23,
+    31
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -16,
+   "D2": -7,
+   "resultant_digits": 6,
+   "prime_factors": [
+    3,
+    7,
+    19
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -16,
+   "D2": -4,
+   "resultant_digits": 6,
+   "prime_factors": [
+    2,
+    3,
+    7
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -16,
+   "D2": -3,
+   "resultant_digits": 6,
+   "prime_factors": [
+    2,
+    3,
+    11
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -12,
+   "D2": -8,
+   "resultant_digits": 5,
+   "prime_factors": [
+    2,
+    5,
+    23
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -12,
+   "D2": -7,
+   "resultant_digits": 5,
+   "prime_factors": [
+    3,
+    5,
+    17
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -12,
+   "D2": -4,
+   "resultant_digits": 5,
+   "prime_factors": [
+    2,
+    3,
+    11
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -12,
+   "D2": -3,
+   "resultant_digits": 5,
+   "prime_factors": [
+    2,
+    3,
+    5
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -8,
+   "D2": -7,
+   "resultant_digits": 5,
+   "prime_factors": [
+    5,
+    7,
+    13
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -8,
+   "D2": -4,
+   "resultant_digits": 4,
+   "prime_factors": [
+    2,
+    7
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -8,
+   "D2": -3,
+   "resultant_digits": 4,
+   "prime_factors": [
+    2,
+    5
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -7,
+   "D2": -4,
+   "resultant_digits": 4,
+   "prime_factors": [
+    3,
+    7
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -7,
+   "D2": -3,
+   "resultant_digits": 4,
+   "prime_factors": [
+    3,
+    5
+   ],
+   "primes_split_in_both_fields": []
+  },
+  {
+   "D1": -4,
+   "D2": -3,
+   "resultant_digits": 4,
+   "prime_factors": [
+    2,
+    3
+   ],
+   "primes_split_in_both_fields": []
+  }
+ ],
+ "failures": []
+}

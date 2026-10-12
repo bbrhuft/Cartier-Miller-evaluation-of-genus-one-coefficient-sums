@@ -1,6 +1,6 @@
 # Reproduction
 
-Run every command from the repository root. Python 3.10 or later with the standard library is sufficient unless the table says otherwise. SymPy is needed for the symbolic derivation and transport checks. cypari2 (with PARI) is needed for one independent script and enables optional trace cross-checks in the depth-three validator; without it, that validator skips the cross-checks and still passes. The recorded rerun used Python 3.13, SymPy 1.14.0, cypari2 2.2.4 and PARI 2.17.2.
+Run every command from the repository root. Python 3.10 or later with the standard library is sufficient unless the table says otherwise. SymPy is needed for the symbolic derivation and transport checks. The CM-to-Cartier package additionally needs python-flint and mpmath (`pip install python-flint cypari2 mpmath sympy`); it was run with python-flint 0.9.0 and mpmath 1.3.0. cypari2 (with PARI) is needed for one independent script and enables optional trace cross-checks in the depth-three validator; without it, that validator skips the cross-checks and still passes. The recorded rerun used Python 3.13, SymPy 1.14.0, cypari2 2.2.4 and PARI 2.17.2.
 
 Most validators rewrite their result files in place, in the same directory. To regenerate evidence without altering the committed records, run them in a separate clone or copy. Alternatively, restore the committed files afterwards with `git checkout -- research`. A regenerated file normally differs only in environment, timing and source-hash fields. The exceptions are explained in evidence/rerun_20261009/README.md.
 
@@ -13,6 +13,7 @@ Most validators rewrite their result files in place, in the same directory. To r
 | `python research/depth_two_recognition_20261006/core/cli.py --p 13 --f 1 12 0 9 --trusted-trace -2 --mu 7` | H=11, K=8, T=2 from a caller-trusted trace |
 | `python research/depth_three_recognition_20261007/core/cli.py --p 73 --f 1 4 0 37 --cm --mu 9` | H=10, K=55, T=3 by the restricted CM route with the deterministic sign; only the √−3 search is randomized |
 | `python research/depth_three_recognition_20261007/core/cli.py --p 73 --f 1 4 0 37 --cm --sign-method las_vegas --unbounded-sign-test --mu 9` | The same values with the zero-error Las Vegas sign test |
+| `python research/depth_three_recognition_20261007/core/cli.py --p 73 --f 1 60 0 10 --family b0 --cm --mu 17` | H=67, K=32, T=5 for the B=0-seed family, trace by Ireland & Rosen Theorem 5 |
 
 If you edit any tracked file, the hash check in verify_release.py will fail until SHA256SUMS.json is regenerated. That is intended.
 
@@ -38,6 +39,9 @@ Times are wall-clock seconds from the 9 October rerun, which ran 17 jobs in para
 | Independent PARI checks | `python research/depth_three_recognition_20261007/independent/indep_extra.py` | cypari2 | 15 |
 | Independent symbolic checks | `python research/depth_three_recognition_20261007/independent/indep_symbolic.py` | SymPy | 10 |
 | Independent Theorem 4 check (10 October) | `python research/depth_three_recognition_20261007/independent/indep_sextic_theorem4_20261010.py` | cypari2 | about 10 |
+| Depth-three B=0 family (12 October) | `python research/depth_three_recognition_20261007/core/validate_depth_three_b0.py` | stdlib; cypari2 optional | 33 alone |
+| Depth-three B=0 exact derivation | `python research/depth_three_recognition_20261007/theory/b0/derive_b0_family.py` | stdlib | 1 |
+| CM-to-Cartier package, all 13 steps (12 October) | from `research/cm_cartier_comparison_20261012/`: `python run_all.py` (rewrites that directory's results; run in a copy) | python-flint, cypari2, mpmath, SymPy | 72 alone |
 | Rounded third point | `python research/rounded_third_boundary_20261009/validate_rounded_third.py` | stdlib | 6 alone, 19 in parallel |
 | Fresh transport cross-check | `python research/rounded_third_boundary_20261009/independent_transport_check.py` | stdlib | 19 in parallel |
 

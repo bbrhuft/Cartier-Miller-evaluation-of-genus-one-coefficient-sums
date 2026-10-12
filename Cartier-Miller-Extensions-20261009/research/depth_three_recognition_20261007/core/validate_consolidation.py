@@ -160,18 +160,22 @@ def main():
     negative=[]
     for A,B in fx['p73_B0_chain_depth3_rejected']:
         out=impl.recognize_short_through_depth_three(A,B,73)
-        assert out['status']=='not_in_implemented_families'
-        negative.append({'p':73,'A':A,'B':B,'status':out['status'],'known_uncovered_family':'depth-three B=0 seed'})
+        # Since 12 October 2026 the B=0-seed depth-three family is implemented: these rows must be
+        # recognized by the combined recognizer as that family and by nothing else.
+        assert out['status']=='recognized' and [m['family'] for m in out['matches']]==['depth3_1728_disc_-256']
+        assert impl.recognize_depth_three(A,B,73)['status']=='not_in_depth_three_family'
+        negative.append({'p':73,'A':A,'B':B,'status':out['status'],'family':'depth3_1728_disc_-256 (B=0 seed, added 12 October 2026)'})
     write_csv('validation_partial_recognition_status.csv',negative)
     cli=HERE/'cli.py'
-    for args,status in [(['--short','16','27','--through-depth-two'],'not_in_implemented_families'),
+    for args,status in [(['--short','16','27','--through-depth-two'],'recognized'),  # B=0-seed family since 12 October 2026
+                        (['--short','16','27','--family','b0'],'recognized'),
                         (['--f','1','4','0','37','--cm','--unbounded-sign-test','--mu','9'],'prepared_by_cm_trace'),
                         (['--f','1','4','0','37','--trusted-trace','10','--verify-sign','--mu','9'],'prepared_from_sign_verified_trace')]:
         data=json.loads(subprocess.run([sys.executable,str(cli),'--p','73',*args],check=True,capture_output=True,text=True).stdout)
         assert data['status']==status
 
     result={'status':'passed','scope':'new sign-bound certificates and code changes; not a benchmark',
-            'finite_lemma_witnesses':len(witnesses),'sampler_base_models':len(scans),'uncovered_status_regressions':len(negative),
+            'finite_lemma_witnesses':len(witnesses),'sampler_base_models':len(scans),'b0_chain_rows_recognized_by_combined_recognizer':len(negative),
             'counterexample':obstruction,'forced_cap_status':'trace_sign_inconclusive',
             'environment':{'python':sys.version,'platform':platform.platform()},
             'source_sha256':{n:hashlib.sha256((HERE/n).read_bytes()).hexdigest() for n in ['depth_three_recognize.py','cli.py','validate_consolidation.py']}}

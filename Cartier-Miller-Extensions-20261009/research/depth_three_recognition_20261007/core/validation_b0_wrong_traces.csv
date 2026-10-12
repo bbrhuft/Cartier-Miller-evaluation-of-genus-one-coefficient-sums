@@ -1,0 +1,5 @@
+trace,case,error
+7,odd,supplied trace violates the family condition 4p - t^2 = 256 y^2 with y >= 1
+0,zero,supplied trace violates the family condition 4p - t^2 = 256 y^2 with y >= 1
+10,not_256_form,supplied trace violates the family condition 4p - t^2 = 256 y^2 with y >= 1
+6,wrong_sign,supplied trace 6 is wrong: the verified trace is -6
