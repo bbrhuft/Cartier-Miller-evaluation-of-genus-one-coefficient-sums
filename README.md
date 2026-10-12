@@ -97,6 +97,32 @@ $$
 
 At $p=97$, the example gives $n=24$, $B_n=33$, $a_n=79$ and $U_p(n)=43$. Computing both the prefix and boundary is essential to evaluating the complete weighted sum.
 
+## Worked application: the original third-point sum
+
+The same machinery handles a second stopping family. For $p=3L+1\geq7$, with the same $a_i$, define
+
+$$
+B_L=\sum_{i=0}^{L-1}a_i,\qquad L=\frac{p-1}{3}.
+$$
+
+Choosing $f(w)=1-w^3/2$ gives $T_f(1)=B_L+a_L$, since $f^{(p-1)/2}$ contains only powers $w^{3i}$ with coefficient $a_i$. The corresponding elliptic curve now has $j=0$ rather than $j=1728$, and again its trace supplies the boundary coefficient: $a_L\equiv H\equiv\tau\pmod p$. The boundary is classical complex-multiplication data. Writing $4p=r^2+27s^2$ with $r\equiv1\pmod 3$, Jacobi's congruence and $8^L=2^{p-1}\equiv1$ give
+
+$$
+a_L\equiv\binom{2L}{L}\equiv-r\pmod p,
+$$
+
+so the trace is $-r$, obtained from Cornacchia's algorithm without point counting. Since $L\equiv-1/3\pmod p$, the original weighted sum is recovered through
+
+$$
+U_p(L)\equiv4B_L+\frac{26}{9}a_L\pmod p.
+$$
+
+At $p=97$, the example gives $L=32$ and $4\cdot97=19^2+27\cdot1^2$, so $r=19$, the trace is $-19$ and $a_L=78$. Cartier–Miller evaluates $T_f(1)=4$, giving $B_L=23$ and $U_p(L)=91$. All four values agree with direct summation and with a point count on $v^2=1-w^3/2$.
+
+The two examples use different curves ($j=1728$ and $j=0$), different CM fields ($\mathbb Q(i)$ and $\mathbb Q(\sqrt{-3})$) and different stopping indices. The same evaluation theorem serves both. The third-point family also exercises the exceptional case: at $p=61$, $4\cdot61=1^2+27\cdot3^2$ gives trace $-1$, which equals the character of $f(1)=1/2$, so the annihilator is $M_\chi=p$ and the direct characteristic-$p$ normalization is required.
+
+For $p\equiv2\pmod3$ the index $(p-1)/3$ is not an integer. At the rounded endpoint $L=(p+1)/3$ the prefix is still fast, but the boundary $a_L$ is equivalent to the Gauss factorial $\lfloor p/3\rfloor!\bmod p$, for which no fast method is known (see the extensions folder).
+
 ## Validation and benchmarks
 
 The manuscript reports checks against direct polynomial expansion, independent point counts, kernel identities and an elementary rational-point sum. Reported generic tests include 20,316 admissible queries, with 368 exceptional cases. An independent point-sum verifier agreed on 4,357 queries, including 155 exceptional cases. These checks arose within the AI-assisted research programme.
