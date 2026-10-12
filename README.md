@@ -119,7 +119,7 @@ $$
 
 At $p=97$, the example gives $L=32$ and $4\cdot97=19^2+27\cdot1^2$, so $r=19$, the trace is $-19$ and $a_L=78$. Cartier–Miller evaluates $T_f(1)=4$, giving $B_L=23$ and $U_p(L)=91$. All four values agree with direct summation and with a point count on $v^2=1-w^3/2$.
 
-The two examples use different curves ($j=1728$ and $j=0$), different CM fields ($\mathbb Q(i)$ and $\mathbb Q(\sqrt{-3})$) and different stopping indices. The same evaluation theorem serves both. The third-point family also exercises the exceptional case: at $p=61$, $4\cdot61=1^2+27\cdot3^2$ gives trace $-1$, which equals the character of $f(1)=1/2$, so the annihilator is $M_\chi=p$ and the direct characteristic-$p$ normalization is required.
+The two examples use different curves ($j=1728$ and $j=0$), different CM fields ($\mathbb Q(i)$ and $\mathbb{Q}(\sqrt{-3})$ and different stopping indices. The same evaluation theorem serves both. The third-point family also exercises the exceptional case: at $p=61$, $4\cdot61=1^2+27\cdot3^2$ gives trace $-1$, which equals the character of $f(1)=1/2$, so the annihilator is $M_\chi=p$ and the direct characteristic-$p$ normalization is required.
 
 For $p\equiv2\pmod3$ the index $(p-1)/3$ is not an integer. At the rounded endpoint $L=(p+1)/3$ the prefix is still fast, but the boundary $a_L$ is equivalent to the Gauss factorial $\lfloor p/3\rfloor!\bmod p$, for which no fast method is known (see the extensions folder).
 
