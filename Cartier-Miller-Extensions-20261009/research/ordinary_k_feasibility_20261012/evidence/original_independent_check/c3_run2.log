@@ -1,0 +1,4 @@
+x-only ladder selftest OK
+p=17: ordinary models=240, kappa == -sigma_V/t^2: 240/240; field degrees k used: {1: 8, 2: 8, 4: 32, 8: 64, 16: 128}; fails=[]
+p=19: ordinary models=306, kappa == -sigma_V/t^2: 306/306; field degrees k used: {1: 21, 2: 21, 3: 24, 6: 24, 9: 108, 18: 108}; fails=[]
+p=23: ordinary models=440, kappa == -sigma_V/t^2: 440/440; field degrees k used: {1: 22, 2: 22, 11: 198, 22: 198}; fails=[]

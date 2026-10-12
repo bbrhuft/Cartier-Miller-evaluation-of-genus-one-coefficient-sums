@@ -1,0 +1,1063 @@
+{
+  "profile": "full",
+  "overall": "PASS",
+  "targets": "/home/claude/handover/Ordinary_K_Research_Handover_20261012/validation/results/ordinary_targets.csv",
+  "targets_sha256": "dbae08872c11cc31f472089bfe58050f5eb36570dc63a57d189071dfca330573",
+  "steps": [
+    {
+      "script": "c1_cech.py",
+      "args": [
+        "--primes",
+        "7",
+        "11",
+        "13",
+        "17",
+        "19",
+        "23",
+        "--sample-primes",
+        "29",
+        "31",
+        "37",
+        "41",
+        "--sample-size",
+        "30",
+        "--seed",
+        "1"
+      ],
+      "returncode": 0,
+      "seconds": 165.92,
+      "result_file": "c1_cech.json",
+      "stdout_tail": "p=7: 42/42 match; c values [2]\np=11: 110/110 match; c values [2]\np=13: 156/156 match; c values [2]\np=17: 272/272 match; c values [2]\np=19: 342/342 match; c values [2]\np=23: 506/506 match; c values [2]\np=29: 30/30 match; c values [2]\np=31: 30/30 match; c values [2]\np=37: 30/30 match; c values [2]\np=41: 30/30 match; c values [2]\nINDEPENDENT_CHECK c1_cech status=PASS checks=1548 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 1548,
+      "failures": 0,
+      "groups": {
+        "p=7": {
+          "checks": 42,
+          "failures": 0
+        },
+        "p=11": {
+          "checks": 110,
+          "failures": 0
+        },
+        "p=13": {
+          "checks": 156,
+          "failures": 0
+        },
+        "p=17": {
+          "checks": 272,
+          "failures": 0
+        },
+        "p=19": {
+          "checks": 342,
+          "failures": 0
+        },
+        "p=23": {
+          "checks": 506,
+          "failures": 0
+        },
+        "p=29": {
+          "checks": 30,
+          "failures": 0
+        },
+        "p=31": {
+          "checks": 30,
+          "failures": 0
+        },
+        "p=37": {
+          "checks": 30,
+          "failures": 0
+        },
+        "p=41": {
+          "checks": 30,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "exhaustive_primes": [
+          7,
+          11,
+          13,
+          17,
+          19,
+          23
+        ],
+        "sample_primes": [
+          29,
+          31,
+          37,
+          41
+        ],
+        "sample_size": 30,
+        "seed": 1,
+        "models": "all nonsingular short models, supersingular included"
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c1_kedlaya.py",
+      "args": [
+        "--p",
+        "7",
+        "--N",
+        "2"
+      ],
+      "returncode": 0,
+      "seconds": 1.92,
+      "result_file": "c1_kedlaya_p7_N2.json",
+      "stdout_tail": "p=7 N=2: models=42 stability_rechecks=42\nINDEPENDENT_CHECK c1_kedlaya_p7_N2 status=PASS checks=210 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 210,
+      "failures": 0,
+      "groups": {
+        "integrality": {
+          "checks": 42,
+          "failures": 0
+        },
+        "trace": {
+          "checks": 42,
+          "failures": 0
+        },
+        "determinant": {
+          "checks": 42,
+          "failures": 0
+        },
+        "reduction_mod_p": {
+          "checks": 42,
+          "failures": 0
+        },
+        "stability": {
+          "checks": 42,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 7,
+        "N": 2,
+        "K": 4,
+        "MW": 6,
+        "sample": 0,
+        "seed": 7,
+        "stability_fraction": 0.1
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c1_kedlaya.py",
+      "args": [
+        "--p",
+        "11",
+        "--N",
+        "2"
+      ],
+      "returncode": 0,
+      "seconds": 4.92,
+      "result_file": "c1_kedlaya_p11_N2.json",
+      "stdout_tail": "p=11 N=2: models=110 stability_rechecks=14\nINDEPENDENT_CHECK c1_kedlaya_p11_N2 status=PASS checks=454 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 454,
+      "failures": 0,
+      "groups": {
+        "integrality": {
+          "checks": 110,
+          "failures": 0
+        },
+        "trace": {
+          "checks": 110,
+          "failures": 0
+        },
+        "determinant": {
+          "checks": 110,
+          "failures": 0
+        },
+        "reduction_mod_p": {
+          "checks": 110,
+          "failures": 0
+        },
+        "stability": {
+          "checks": 14,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 11,
+        "N": 2,
+        "K": 4,
+        "MW": 6,
+        "sample": 0,
+        "seed": 7,
+        "stability_fraction": 0.1
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c1_kedlaya.py",
+      "args": [
+        "--p",
+        "13",
+        "--N",
+        "2"
+      ],
+      "returncode": 0,
+      "seconds": 9.7,
+      "result_file": "c1_kedlaya_p13_N2.json",
+      "stdout_tail": "p=13 N=2: models=156 stability_rechecks=22\nINDEPENDENT_CHECK c1_kedlaya_p13_N2 status=PASS checks=646 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 646,
+      "failures": 0,
+      "groups": {
+        "integrality": {
+          "checks": 156,
+          "failures": 0
+        },
+        "trace": {
+          "checks": 156,
+          "failures": 0
+        },
+        "determinant": {
+          "checks": 156,
+          "failures": 0
+        },
+        "reduction_mod_p": {
+          "checks": 156,
+          "failures": 0
+        },
+        "stability": {
+          "checks": 22,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 13,
+        "N": 2,
+        "K": 4,
+        "MW": 6,
+        "sample": 0,
+        "seed": 7,
+        "stability_fraction": 0.1
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c1_kedlaya.py",
+      "args": [
+        "--p",
+        "17",
+        "--N",
+        "2"
+      ],
+      "returncode": 0,
+      "seconds": 28.2,
+      "result_file": "c1_kedlaya_p17_N2.json",
+      "stdout_tail": "p=17 N=2: models=272 stability_rechecks=29\nINDEPENDENT_CHECK c1_kedlaya_p17_N2 status=PASS checks=1117 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 1117,
+      "failures": 0,
+      "groups": {
+        "integrality": {
+          "checks": 272,
+          "failures": 0
+        },
+        "trace": {
+          "checks": 272,
+          "failures": 0
+        },
+        "determinant": {
+          "checks": 272,
+          "failures": 0
+        },
+        "reduction_mod_p": {
+          "checks": 272,
+          "failures": 0
+        },
+        "stability": {
+          "checks": 29,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 17,
+        "N": 2,
+        "K": 4,
+        "MW": 6,
+        "sample": 0,
+        "seed": 7,
+        "stability_fraction": 0.1
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c1_kedlaya.py",
+      "args": [
+        "--p",
+        "19",
+        "--N",
+        "2"
+      ],
+      "returncode": 0,
+      "seconds": 43.58,
+      "result_file": "c1_kedlaya_p19_N2.json",
+      "stdout_tail": "p=19 N=2: models=342 stability_rechecks=35\nINDEPENDENT_CHECK c1_kedlaya_p19_N2 status=PASS checks=1403 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 1403,
+      "failures": 0,
+      "groups": {
+        "integrality": {
+          "checks": 342,
+          "failures": 0
+        },
+        "trace": {
+          "checks": 342,
+          "failures": 0
+        },
+        "determinant": {
+          "checks": 342,
+          "failures": 0
+        },
+        "reduction_mod_p": {
+          "checks": 342,
+          "failures": 0
+        },
+        "stability": {
+          "checks": 35,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 19,
+        "N": 2,
+        "K": 4,
+        "MW": 6,
+        "sample": 0,
+        "seed": 7,
+        "stability_fraction": 0.1
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c1_kedlaya.py",
+      "args": [
+        "--p",
+        "23",
+        "--N",
+        "2"
+      ],
+      "returncode": 0,
+      "seconds": 102.52,
+      "result_file": "c1_kedlaya_p23_N2.json",
+      "stdout_tail": "p=23 N=2: models=506 stability_rechecks=59\nINDEPENDENT_CHECK c1_kedlaya_p23_N2 status=PASS checks=2083 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 2083,
+      "failures": 0,
+      "groups": {
+        "integrality": {
+          "checks": 506,
+          "failures": 0
+        },
+        "trace": {
+          "checks": 506,
+          "failures": 0
+        },
+        "determinant": {
+          "checks": 506,
+          "failures": 0
+        },
+        "reduction_mod_p": {
+          "checks": 506,
+          "failures": 0
+        },
+        "stability": {
+          "checks": 59,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 23,
+        "N": 2,
+        "K": 4,
+        "MW": 6,
+        "sample": 0,
+        "seed": 7,
+        "stability_fraction": 0.1
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c1_kedlaya.py",
+      "args": [
+        "--p",
+        "29",
+        "--N",
+        "2",
+        "--sample",
+        "25"
+      ],
+      "returncode": 0,
+      "seconds": 23.95,
+      "result_file": "c1_kedlaya_p29_N2_s25.json",
+      "stdout_tail": "p=29 N=2: models=25 stability_rechecks=25\nINDEPENDENT_CHECK c1_kedlaya_p29_N2_s25 status=PASS checks=125 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 125,
+      "failures": 0,
+      "groups": {
+        "integrality": {
+          "checks": 25,
+          "failures": 0
+        },
+        "trace": {
+          "checks": 25,
+          "failures": 0
+        },
+        "determinant": {
+          "checks": 25,
+          "failures": 0
+        },
+        "reduction_mod_p": {
+          "checks": 25,
+          "failures": 0
+        },
+        "stability": {
+          "checks": 25,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 29,
+        "N": 2,
+        "K": 4,
+        "MW": 6,
+        "sample": 25,
+        "seed": 7,
+        "stability_fraction": 0.1
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c1_kedlaya.py",
+      "args": [
+        "--p",
+        "31",
+        "--N",
+        "2",
+        "--sample",
+        "25"
+      ],
+      "returncode": 0,
+      "seconds": 30.33,
+      "result_file": "c1_kedlaya_p31_N2_s25.json",
+      "stdout_tail": "p=31 N=2: models=25 stability_rechecks=25\nINDEPENDENT_CHECK c1_kedlaya_p31_N2_s25 status=PASS checks=125 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 125,
+      "failures": 0,
+      "groups": {
+        "integrality": {
+          "checks": 25,
+          "failures": 0
+        },
+        "trace": {
+          "checks": 25,
+          "failures": 0
+        },
+        "determinant": {
+          "checks": 25,
+          "failures": 0
+        },
+        "reduction_mod_p": {
+          "checks": 25,
+          "failures": 0
+        },
+        "stability": {
+          "checks": 25,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 31,
+        "N": 2,
+        "K": 4,
+        "MW": 6,
+        "sample": 25,
+        "seed": 7,
+        "stability_fraction": 0.1
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c1_kedlaya.py",
+      "args": [
+        "--p",
+        "37",
+        "--N",
+        "2",
+        "--sample",
+        "25"
+      ],
+      "returncode": 0,
+      "seconds": 45.69,
+      "result_file": "c1_kedlaya_p37_N2_s25.json",
+      "stdout_tail": "p=37 N=2: models=25 stability_rechecks=25\nINDEPENDENT_CHECK c1_kedlaya_p37_N2_s25 status=PASS checks=125 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 125,
+      "failures": 0,
+      "groups": {
+        "integrality": {
+          "checks": 25,
+          "failures": 0
+        },
+        "trace": {
+          "checks": 25,
+          "failures": 0
+        },
+        "determinant": {
+          "checks": 25,
+          "failures": 0
+        },
+        "reduction_mod_p": {
+          "checks": 25,
+          "failures": 0
+        },
+        "stability": {
+          "checks": 25,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 37,
+        "N": 2,
+        "K": 4,
+        "MW": 6,
+        "sample": 25,
+        "seed": 7,
+        "stability_fraction": 0.1
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c1_kedlaya.py",
+      "args": [
+        "--p",
+        "7",
+        "--N",
+        "3"
+      ],
+      "returncode": 0,
+      "seconds": 2.9,
+      "result_file": "c1_kedlaya_p7_N3.json",
+      "stdout_tail": "p=7 N=3: models=42 stability_rechecks=42\nINDEPENDENT_CHECK c1_kedlaya_p7_N3 status=PASS checks=210 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 210,
+      "failures": 0,
+      "groups": {
+        "integrality": {
+          "checks": 42,
+          "failures": 0
+        },
+        "trace": {
+          "checks": 42,
+          "failures": 0
+        },
+        "determinant": {
+          "checks": 42,
+          "failures": 0
+        },
+        "reduction_mod_p": {
+          "checks": 42,
+          "failures": 0
+        },
+        "stability": {
+          "checks": 42,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 7,
+        "N": 3,
+        "K": 5,
+        "MW": 7,
+        "sample": 0,
+        "seed": 7,
+        "stability_fraction": 0.1
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c1_extra.py",
+      "args": [],
+      "returncode": 0,
+      "seconds": 15.23,
+      "result_file": "c1_extra.json",
+      "stdout_tail": "INDEPENDENT_CHECK c1_extra status=PASS checks=8276 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 8276,
+      "failures": 0,
+      "groups": {
+        "random_lift_p7": {
+          "checks": 42,
+          "failures": 0
+        },
+        "random_lift_p11": {
+          "checks": 110,
+          "failures": 0
+        },
+        "random_lift_p13": {
+          "checks": 156,
+          "failures": 0
+        },
+        "rank_one": {
+          "checks": 7968,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "lift_primes": [
+          7,
+          11,
+          13
+        ],
+        "rank_primes": [
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31,
+          37,
+          41,
+          43
+        ],
+        "seed": 99,
+        "skip_p5_informational": false
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c2_formal.py",
+      "args": [
+        "--p",
+        "7",
+        "--lifts",
+        "3"
+      ],
+      "returncode": 0,
+      "seconds": 5.34,
+      "result_file": "c2_formal_p7.json",
+      "stdout_tail": "INDEPENDENT_CHECK c2_formal_p7 status=PASS checks=288 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 288,
+      "failures": 0,
+      "groups": {
+        "p_divides_sigma": {
+          "checks": 144,
+          "failures": 0
+        },
+        "kappa_identity": {
+          "checks": 144,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 7,
+        "seed": 11,
+        "models": "all",
+        "random_lifts_per_model": 3,
+        "R": 6,
+        "targets": "/home/claude/handover/Ordinary_K_Research_Handover_20261012/validation/results/ordinary_targets.csv"
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c2_formal.py",
+      "args": [
+        "--p",
+        "11",
+        "--lifts",
+        "2"
+      ],
+      "returncode": 0,
+      "seconds": 47.43,
+      "result_file": "c2_formal_p11.json",
+      "stdout_tail": "INDEPENDENT_CHECK c2_formal_p11 status=PASS checks=540 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 540,
+      "failures": 0,
+      "groups": {
+        "p_divides_sigma": {
+          "checks": 270,
+          "failures": 0
+        },
+        "kappa_identity": {
+          "checks": 270,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 11,
+        "seed": 11,
+        "models": "all",
+        "random_lifts_per_model": 2,
+        "R": 6,
+        "targets": "/home/claude/handover/Ordinary_K_Research_Handover_20261012/validation/results/ordinary_targets.csv"
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c2_formal.py",
+      "args": [
+        "--p",
+        "13",
+        "--lifts",
+        "2"
+      ],
+      "returncode": 0,
+      "seconds": 120.16,
+      "result_file": "c2_formal_p13.json",
+      "stdout_tail": "INDEPENDENT_CHECK c2_formal_p13 status=PASS checks=864 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 864,
+      "failures": 0,
+      "groups": {
+        "p_divides_sigma": {
+          "checks": 432,
+          "failures": 0
+        },
+        "kappa_identity": {
+          "checks": 432,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 13,
+        "seed": 11,
+        "models": "all",
+        "random_lifts_per_model": 2,
+        "R": 6,
+        "targets": "/home/claude/handover/Ordinary_K_Research_Handover_20261012/validation/results/ordinary_targets.csv"
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c2_formal.py",
+      "args": [
+        "--p",
+        "17",
+        "--models",
+        "30",
+        "--lifts",
+        "2"
+      ],
+      "returncode": 0,
+      "seconds": 56.56,
+      "result_file": "c2_formal_p17.json",
+      "stdout_tail": "INDEPENDENT_CHECK c2_formal_p17 status=PASS checks=180 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 180,
+      "failures": 0,
+      "groups": {
+        "p_divides_sigma": {
+          "checks": 90,
+          "failures": 0
+        },
+        "kappa_identity": {
+          "checks": 90,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 17,
+        "seed": 11,
+        "models": 30,
+        "random_lifts_per_model": 2,
+        "R": 6,
+        "targets": "/home/claude/handover/Ordinary_K_Research_Handover_20261012/validation/results/ordinary_targets.csv"
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c2_formal.py",
+      "args": [
+        "--p",
+        "19",
+        "--models",
+        "15",
+        "--lifts",
+        "2"
+      ],
+      "returncode": 0,
+      "seconds": 45.37,
+      "result_file": "c2_formal_p19.json",
+      "stdout_tail": "INDEPENDENT_CHECK c2_formal_p19 status=PASS checks=90 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 90,
+      "failures": 0,
+      "groups": {
+        "p_divides_sigma": {
+          "checks": 45,
+          "failures": 0
+        },
+        "kappa_identity": {
+          "checks": 45,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 19,
+        "seed": 11,
+        "models": 15,
+        "random_lifts_per_model": 2,
+        "R": 6,
+        "targets": "/home/claude/handover/Ordinary_K_Research_Handover_20261012/validation/results/ordinary_targets.csv"
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c2_formal.py",
+      "args": [
+        "--p",
+        "23",
+        "--models",
+        "15",
+        "--lifts",
+        "2"
+      ],
+      "returncode": 0,
+      "seconds": 98.97,
+      "result_file": "c2_formal_p23.json",
+      "stdout_tail": "INDEPENDENT_CHECK c2_formal_p23 status=PASS checks=90 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 90,
+      "failures": 0,
+      "groups": {
+        "p_divides_sigma": {
+          "checks": 45,
+          "failures": 0
+        },
+        "kappa_identity": {
+          "checks": 45,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "p": 23,
+        "seed": 11,
+        "models": 15,
+        "random_lifts_per_model": 2,
+        "R": 6,
+        "targets": "/home/claude/handover/Ordinary_K_Research_Handover_20261012/validation/results/ordinary_targets.csv"
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c3_etale.py",
+      "args": [],
+      "returncode": 0,
+      "seconds": 277.05,
+      "result_file": "c3_etale.json",
+      "stdout_tail": "x-only ladder selftest OK\np=7: 36 models; field degrees {1: 4, 2: 4, 3: 14, 6: 14}\np=11: 90 models; field degrees {1: 5, 2: 5, 5: 40, 10: 40}\np=13: 144 models; field degrees {1: 12, 2: 12, 3: 21, 4: 16, 6: 21, 12: 62}\np=17: 240 models; field degrees {1: 8, 2: 8, 4: 32, 8: 64, 16: 128}\np=19: 306 models; field degrees {1: 21, 2: 21, 3: 24, 6: 24, 9: 108, 18: 108}\np=23: 440 models; field degrees {1: 22, 2: 22, 11: 198, 22: 198}\nINDEPENDENT_CHECK c3_etale status=PASS checks=1257 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 1257,
+      "failures": 0,
+      "groups": {
+        "selftest": {
+          "checks": 1,
+          "failures": 0
+        },
+        "p=7": {
+          "checks": 36,
+          "failures": 0
+        },
+        "p=11": {
+          "checks": 90,
+          "failures": 0
+        },
+        "p=13": {
+          "checks": 144,
+          "failures": 0
+        },
+        "p=17": {
+          "checks": 240,
+          "failures": 0
+        },
+        "p=19": {
+          "checks": 306,
+          "failures": 0
+        },
+        "p=23": {
+          "checks": 440,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "primes": [
+          7,
+          11,
+          13,
+          17,
+          19,
+          23
+        ],
+        "seed": 2026,
+        "targets": "/home/claude/handover/Ordinary_K_Research_Handover_20261012/validation/results/ordinary_targets.csv",
+        "models": "all ordinary target rows at each prime"
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "c4_c5.py",
+      "args": [],
+      "returncode": 0,
+      "seconds": 14.61,
+      "result_file": "c4_c5.json",
+      "stdout_tail": "INDEPENDENT_CHECK c4_c5 status=PASS checks=20202 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 20202,
+      "failures": 0,
+      "groups": {
+        "auxiliary_identity": {
+          "checks": 200,
+          "failures": 0
+        },
+        "C4_exact_identity_over_Q": {
+          "checks": 18,
+          "failures": 0
+        },
+        "C4_mod_p_polynomial_identity": {
+          "checks": 18,
+          "failures": 0
+        },
+        "C4_pointwise": {
+          "checks": 18,
+          "failures": 0
+        },
+        "C5": {
+          "checks": 19948,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "C4_primes": "5..71",
+        "C5_primes": "7..61",
+        "C5_models": "all nonsingular"
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    },
+    {
+      "script": "l3_katz_signs.py",
+      "args": [],
+      "returncode": 0,
+      "seconds": 0.32,
+      "result_file": "l3_katz_signs.json",
+      "stdout_tail": "INDEPENDENT_CHECK l3_katz_signs status=PASS checks=6380 failures=0\n",
+      "stderr_tail": "",
+      "executed": true,
+      "status": "PASS",
+      "checks": 6380,
+      "failures": 0,
+      "groups": {
+        "a_p == -S0": {
+          "checks": 3190,
+          "failures": 0
+        },
+        "b_p == -S1": {
+          "checks": 3190,
+          "failures": 0
+        }
+      },
+      "scope": {
+        "primes": [
+          5,
+          7,
+          11,
+          13,
+          17,
+          19,
+          23,
+          29,
+          31
+        ],
+        "models": "all nonsingular (g2, g3)"
+      },
+      "driver_exit_code": 0,
+      "passed": true
+    }
+  ],
+  "total_checks": 46213,
+  "source_sha256": {
+    "c1_cech.py": "af74cbcb9932f7374aae45fd5e730784fb38c00b0f90848e50e681b63a8eb39e",
+    "c1_cech_sample.py": "968a5a178f8ad77dbb1bc699de749bcba7fb506bbfb44973512e974abb24855f",
+    "c1_extra.py": "2c417a8a1014b8f106464233410daad7901471b24d14f2f2a9b22c26b7592337",
+    "c1_kedlaya.py": "b4c3f4f314645b2045519260f2bdebe9ed9326cdd6c855df422b2c4c936168e2",
+    "c2_formal.py": "fd63225c058fa3770f86fae059d03cd0daa1ccca8853d23503c84ae8fd880f92",
+    "c3_etale.py": "61e80e7ef6f256009138ec5c472fad5d97037a084236ed8f5eebce637a4272db",
+    "c4_c5.py": "662fcd47bdb2912874181fac1fee448693af2db54384a416e08baef66640cc04",
+    "common.py": "1134ed47057aee9fb977cc0c2b742d4ea026c0b288b80c62768ccf24cba06cd3",
+    "harness.py": "c4ee1dd19ca722989aab21ec27e740f791c77710126ead1a409c9d515cdf821a",
+    "inject_failures.py": "9b9a69d061af820003b36c64877828ef52f80cb2b5d91897199a644c4b444255",
+    "l3_katz_signs.py": "361a7ed69ccb791687cc48e1d186831207d46149d34e2f15bc5099039234eceb",
+    "run_independent.py": "1f6ffa4440223c4485da464206fa8c068563153c2ad2830ee047488987d0298b"
+  },
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39"
+}

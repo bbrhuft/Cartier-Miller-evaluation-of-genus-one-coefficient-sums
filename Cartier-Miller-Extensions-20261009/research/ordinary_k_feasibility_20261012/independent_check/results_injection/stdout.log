@@ -1,0 +1,16 @@
+A original defect: 0 True
+B c1_cech.py: rc=1 status=FAIL detected=True
+B c1_cech.py: rc=1 status=FAIL detected=True
+B c1_kedlaya.py: rc=1 status=FAIL detected=True
+B c1_extra.py: rc=1 status=FAIL detected=True
+B c2_formal.py: rc=1 status=FAIL detected=True
+B c3_etale.py: rc=1 status=FAIL detected=True
+B c4_c5.py: rc=1 status=FAIL detected=True
+B c4_c5.py: rc=1 status=FAIL detected=True
+B l3_katz_signs.py: rc=1 status=FAIL detected=True
+C c2_formal.py without targets: rc=2
+C c3_etale.py without targets: rc=2
+C vacuous c1_cech: rc=4
+D runner with injected c3 error: rc=1
+D runner without targets: rc=2
+INJECTION_ALL_DETECTED

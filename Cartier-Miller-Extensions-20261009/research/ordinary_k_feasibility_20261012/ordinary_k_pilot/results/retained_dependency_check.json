@@ -1,0 +1,140 @@
+{
+  "paths": {
+    "retained": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research",
+    "extension": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/source/CM_Cartier_Extension_20261012",
+    "handover": "/home/claude/handover/Ordinary_K_Research_Handover_20261012"
+  },
+  "files": {
+    "extension/core/fixed_D_evaluator.py": {
+      "path": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/source/CM_Cartier_Extension_20261012/core/fixed_D_evaluator.py",
+      "sha256": "69ec093b5d7f874c2f12021bb4796c8f0883c05f9f9f9e8e1bc9e38345850742"
+    },
+    "extension/results/cm_tables.json": {
+      "path": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/source/CM_Cartier_Extension_20261012/results/cm_tables.json",
+      "sha256": "66bbf3b00fd35bbe09f1f2cd49b4cb49ef24b4dc83e0119772aafbd4b9d3f63f"
+    },
+    "retained/depth_three_recognition_20261007/core/depth_three_recognize.py": {
+      "path": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/depth_three_recognition_20261007/core/depth_three_recognize.py",
+      "sha256": "b3bffe46aa792aa82c63035b1928d8acf67dd12882d34bcc03967b00d064a1c2"
+    },
+    "retained/depth_three_recognition_20261007/core/depth_three_b0_recognize.py": {
+      "path": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/depth_three_recognition_20261007/core/depth_three_b0_recognize.py",
+      "sha256": "a7142c42e1a748612a961ec9f4e185589569f4de2b398ff7fe0c8f293b95614a"
+    },
+    "retained/depth_two_recognition_20261006/core/recognize.py": {
+      "path": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/depth_two_recognition_20261006/core/recognize.py",
+      "sha256": "0e816bb3e4630670bc3c69a8943f6478c21ed084ff6f534be4496b92c9684807"
+    },
+    "retained/isogeny_closure_20261006/core/isogeny_closure.py": {
+      "path": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/isogeny_closure_20261006/core/isogeny_closure.py",
+      "sha256": "c2156457d06bdbb380ce8d80a6e2e5651a6292c60ab827f367efd9f05b1e2d9b"
+    },
+    "retained/branch_point_20261006/branch_evaluator.py": {
+      "path": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/branch_point_20261006/branch_evaluator.py",
+      "sha256": "d19fe4880fde99425f1c8bd72d38500083c16ca5ac4d28c63cc078bd4d5ebc0b"
+    },
+    "review_patched_depth_three_b0_recognize.py": {
+      "path": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/review/patched/depth_three_b0_recognize.py",
+      "sha256": "d3f66029e82f317a2767e6f2e0f45c8dbc0410b56e0293ae3c2adf29ba76f12f",
+      "note": "review copy, recorded only; the imported module is the research-tree file named in D256_DEPENDENCY.md"
+    }
+  },
+  "manifest_agreement": {
+    "extension/core/fixed_D_evaluator.py": true,
+    "extension/results/cm_tables.json": true,
+    "retained/depth_three_recognition_20261007/core/depth_three_recognize.py": true,
+    "retained/depth_three_recognition_20261007/core/depth_three_b0_recognize.py": true,
+    "retained/depth_two_recognition_20261006/core/recognize.py": true,
+    "retained/isogeny_closure_20261006/core/isogeny_closure.py": true,
+    "retained/branch_point_20261006/branch_evaluator.py": true,
+    "handover_tables_equal_extension_tables": [
+      -256,
+      -192,
+      -64,
+      -48,
+      -16,
+      -12,
+      -8,
+      -7
+    ],
+    "full_table_json_equal": true
+  },
+  "counts": {
+    "73": {
+      "models": 5256,
+      "ordinary": 5112,
+      "fixedD_hits": 1080,
+      "recognizer_matches": 1152,
+      "D-256_hits": 288,
+      "D-192_hits": 288
+    },
+    "89": {
+      "models": 7832,
+      "ordinary": 7304,
+      "fixedD_hits": 704,
+      "recognizer_matches": 704,
+      "D-256_hits": 352,
+      "D-192_hits": 0
+    },
+    "97": {
+      "models": 9312,
+      "ordinary": 9120,
+      "fixedD_hits": 1056,
+      "recognizer_matches": 1152,
+      "D-256_hits": 0,
+      "D-192_hits": 384
+    },
+    "113": {
+      "models": 12656,
+      "ordinary": 12208,
+      "fixedD_hits": 1008,
+      "recognizer_matches": 896,
+      "D-256_hits": 448,
+      "D-192_hits": 0
+    }
+  },
+  "imported_modules": {
+    "fixed_D_evaluator": {
+      "__file__": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/source/CM_Cartier_Extension_20261012/core/fixed_D_evaluator.py",
+      "sha256": "69ec093b5d7f874c2f12021bb4796c8f0883c05f9f9f9e8e1bc9e38345850742"
+    },
+    "depth_three_recognize": {
+      "__file__": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/depth_three_recognition_20261007/core/depth_three_recognize.py",
+      "sha256": "b3bffe46aa792aa82c63035b1928d8acf67dd12882d34bcc03967b00d064a1c2"
+    },
+    "depth_three_b0_recognize": {
+      "__file__": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/depth_three_recognition_20261007/core/depth_three_b0_recognize.py",
+      "sha256": "a7142c42e1a748612a961ec9f4e185589569f4de2b398ff7fe0c8f293b95614a"
+    },
+    "recognize": {
+      "__file__": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/depth_two_recognition_20261006/core/recognize.py",
+      "sha256": "0e816bb3e4630670bc3c69a8943f6478c21ed084ff6f534be4496b92c9684807"
+    },
+    "isogeny_closure": {
+      "__file__": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/isogeny_closure_20261006/core/isogeny_closure.py",
+      "sha256": "c2156457d06bdbb380ce8d80a6e2e5651a6292c60ab827f367efd9f05b1e2d9b"
+    },
+    "branch_evaluator": {
+      "__file__": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/branch_point_20261006/branch_evaluator.py",
+      "sha256": "d19fe4880fde99425f1c8bd72d38500083c16ca5ac4d28c63cc078bd4d5ebc0b"
+    }
+  },
+  "D256_control": {
+    "p": 73,
+    "A": 16,
+    "B": 27,
+    "H": 67,
+    "beta": 28,
+    "kappa": 44,
+    "family": "depth3_1728_disc_-256",
+    "beta_multiplier": 44
+  },
+  "status": "PASS",
+  "environment": {
+    "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+    "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
+    "dependencies": "Python standard library only"
+  },
+  "seconds": 9.1,
+  "source_sha256": "22aa86d0528019c770bcf1aa2290175123604cbbc105eeea639066320e6fa71a"
+}

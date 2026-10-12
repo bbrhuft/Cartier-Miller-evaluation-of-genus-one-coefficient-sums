@@ -1,0 +1,34 @@
+auxiliary identity 6xF + (-(4/3)A - 2x^2)F' = 6Bx - (4/3)A^2: OK (200 random rational points; it is a degree-4 polynomial identity)
+C4 p=5: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C4 p=7: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C4 p=11: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C4 p=13: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C4 p=17: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C4 p=19: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C4 p=23: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C4 p=29: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C4 p=31: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C4 p=37: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C4 p=41: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C4 p=43: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C4 p=47: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C4 p=53: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C4 p=59: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C4 p=61: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C4 p=67: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C4 p=71: exact identity D H = (p+1)beta - (4p/3)A[x^p]F^h over Q: True; D H == beta mod p as polynomials: True; pointwise on all p^2 (A,B): True
+C5 p=7: beta == -sum_{affine P} x(P): 42/42 nonsingular models (incl. supersingular); fails=[]
+C5 p=11: beta == -sum_{affine P} x(P): 110/110 nonsingular models (incl. supersingular); fails=[]
+C5 p=13: beta == -sum_{affine P} x(P): 156/156 nonsingular models (incl. supersingular); fails=[]
+C5 p=17: beta == -sum_{affine P} x(P): 272/272 nonsingular models (incl. supersingular); fails=[]
+C5 p=19: beta == -sum_{affine P} x(P): 342/342 nonsingular models (incl. supersingular); fails=[]
+C5 p=23: beta == -sum_{affine P} x(P): 506/506 nonsingular models (incl. supersingular); fails=[]
+C5 p=29: beta == -sum_{affine P} x(P): 812/812 nonsingular models (incl. supersingular); fails=[]
+C5 p=31: beta == -sum_{affine P} x(P): 930/930 nonsingular models (incl. supersingular); fails=[]
+C5 p=37: beta == -sum_{affine P} x(P): 1332/1332 nonsingular models (incl. supersingular); fails=[]
+C5 p=41: beta == -sum_{affine P} x(P): 1640/1640 nonsingular models (incl. supersingular); fails=[]
+C5 p=43: beta == -sum_{affine P} x(P): 1806/1806 nonsingular models (incl. supersingular); fails=[]
+C5 p=47: beta == -sum_{affine P} x(P): 2162/2162 nonsingular models (incl. supersingular); fails=[]
+C5 p=53: beta == -sum_{affine P} x(P): 2756/2756 nonsingular models (incl. supersingular); fails=[]
+C5 p=59: beta == -sum_{affine P} x(P): 3422/3422 nonsingular models (incl. supersingular); fails=[]
+C5 p=61: beta == -sum_{affine P} x(P): 3660/3660 nonsingular models (incl. supersingular); fails=[]

@@ -18,6 +18,8 @@ The intended contribution is a modest computational specialization using classic
 | B=0 depth-three family | Do the s⁴=2 family constants, the relative-norm-then-linear recognition, the eligibility equivalence via Gauss's quartic criterion and the Theorem 5 trace specialization hold? |
 | CM-to-Cartier comparison | Is Theorem 1 (β(λ−μ)=νH) correct with separated eigenvalues, does reduction of the explicit chains satisfy the hypotheses of Theorem 5, and what exactly is already in Katz (1976, §5.7, §VIII) and Katz (2019)? |
 | D=−7 seed | Are the recognition, the Hecke-character derivation of (t/7)=(r/p), the exclusions and the original-cubic evaluator correct, and is any of the application new? |
+| Ordinary slope, Lemma B | In research/ordinary_k_feasibility_20261012/, are Lemma B's integral-model, Vélu-rescaling and comparison steps (§§3.2–3.5) sound, including the sign cancellation, and is Theorem A's low-pole Frobenius matrix already standard (Katz 2019; Mazur–Stein–Tate 2006)? |
+| Ordinary slope, next step | Can one exact scalar equivalent to κ (for example σ_C mod p², or the subleading coefficient of the Verschiebung kernel polynomial) be computed without building the whole polynomial or torsion orbit, perhaps through Katz's Serre–Tate coordinates? |
 | Scope | Are depth four, generic/supersingular K, growing discriminants, all stopping indices and the Witt correction visibly unresolved? |
 | Rounded third point | Do Theorem R, the p=17 exception and the equivalence in Rounded_Third_Boundary_Note_20261009.md hold? Are the Γ_p(1/3) step and the Gross–Koblitz assessment correct? Do Coleman (1990) or Ogus (1990) already identify the supersingular second-kind coefficient? |
 

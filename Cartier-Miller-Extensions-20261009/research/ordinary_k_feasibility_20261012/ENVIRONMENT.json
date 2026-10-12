@@ -1,0 +1,50 @@
+{
+  "date_local": "2026-10-12 (Europe/Dublin)",
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
+  "dependencies": "Python standard library only (no PARI, Sage, FLINT or network access used by any script)",
+  "inputs": {
+    "handover_zip": {
+      "name": "Ordinary_K_Research_Handover_20261012.zip",
+      "sha256": "6ca8d4e09baff40851e9ed620ee810321b891d0eda1fb8f778266b04826cf104"
+    },
+    "retained_CM_archive": {
+      "name": "retained/CM_Cartier_Adversarial_Review_20261012.zip",
+      "sha256": "042b3c34bed5eba7525036a0c1dba518d0747edc6e202eae37080adf1d0d3f29"
+    },
+    "ordinary_targets_csv_sha256": "dbae08872c11cc31f472089bfe58050f5eb36570dc63a57d189071dfca330573"
+  },
+  "paths_used_in_this_environment": {
+    "retained": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research",
+    "extension": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/source/CM_Cartier_Extension_20261012",
+    "handover": "/home/claude/handover/Ordinary_K_Research_Handover_20261012"
+  },
+  "runs_in_this_revision": [
+    {
+      "revision": 2,
+      "command": "python -I ordinary_k_pilot/run_all.py --retained ... --extension ... --handover ...",
+      "result": "ALL_PASS, six steps (Kummer degree added), exit 0"
+    },
+    {
+      "revision": 2,
+      "command": "python -I ordinary_k_pilot/failure_injection.py (same options)",
+      "result": "FAILURE_INJECTION_DETECTED_ALL, exit 0 (six wrong-mathematics trials, four missing-dependency trials, one reduced-scope trial)"
+    },
+    {
+      "revision": 1,
+      "command": "python -I independent_check/run_independent.py --profile full --targets <csv>",
+      "result": "INDEPENDENT_RUN_PASS, exit 0, 46,213 checks, about 1,141 s; sources unchanged in revision 2"
+    },
+    {
+      "revision": 1,
+      "command": "python -I independent_check/inject_failures.py --targets <csv> --original evidence/original_independent_check",
+      "result": "INJECTION_ALL_DETECTED, exit 0; sources unchanged in revision 2"
+    }
+  ],
+  "note": "Timings are reproducibility information, not benchmarks.",
+  "review_inputs": {
+    "review_md_sha256": "7b0c366fa5ab4305046c995c1077a056254a46ab14d270b7352d680a58a7eb01",
+    "review_evidence_zip_sha256": "82d24d2fe9803bbe7e74efbbfce026514d3157093ccbdac475629fff1ab895a5",
+    "review_rerun_environment": "Python 3.12.14, Linux 6.18.44, glibc 2.39 (as recorded by the review)"
+  }
+}

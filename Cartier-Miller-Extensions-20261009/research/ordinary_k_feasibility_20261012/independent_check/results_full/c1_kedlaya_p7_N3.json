@@ -1,0 +1,47 @@
+{
+  "driver": "c1_kedlaya_p7_N3",
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": {
+    "p": 7,
+    "N": 3,
+    "K": 5,
+    "MW": 7,
+    "sample": 0,
+    "seed": 7,
+    "stability_fraction": 0.1
+  },
+  "checks": 210,
+  "failures": 0,
+  "groups": {
+    "integrality": {
+      "checks": 42,
+      "failures": 0
+    },
+    "trace": {
+      "checks": 42,
+      "failures": 0
+    },
+    "determinant": {
+      "checks": 42,
+      "failures": 0
+    },
+    "reduction_mod_p": {
+      "checks": 42,
+      "failures": 0
+    },
+    "stability": {
+      "checks": 42,
+      "failures": 0
+    }
+  },
+  "failure_examples": [],
+  "error": null,
+  "informational": {
+    "models": 42,
+    "stability_rechecks": 42
+  },
+  "seconds": 2.82,
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39"
+}

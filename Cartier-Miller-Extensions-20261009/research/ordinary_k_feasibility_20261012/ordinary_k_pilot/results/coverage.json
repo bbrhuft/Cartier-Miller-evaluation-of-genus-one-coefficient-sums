@@ -1,0 +1,19 @@
+{
+  "charp_identities.csv": {
+    "rows_with_slope": 1574,
+    "outside_retained_tables": 1297,
+    "trace_plus_one": 76,
+    "trace_minus_one": 77,
+    "A_zero": 42,
+    "B_zero": 34
+  },
+  "padic_lift_slopes.csv": {
+    "rows_with_slope": 570,
+    "outside_retained_tables": 381,
+    "trace_plus_one": 30,
+    "trace_minus_one": 34,
+    "A_zero": 19,
+    "B_zero": 28
+  },
+  "note": "outside-table is a label from the supplied tables, not a non-CM claim"
+}

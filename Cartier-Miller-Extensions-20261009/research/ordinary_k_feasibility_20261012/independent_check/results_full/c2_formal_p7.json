@@ -1,0 +1,37 @@
+{
+  "driver": "c2_formal_p7",
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": {
+    "p": 7,
+    "seed": 11,
+    "models": "all",
+    "random_lifts_per_model": 3,
+    "R": 6,
+    "targets": "/home/claude/handover/Ordinary_K_Research_Handover_20261012/validation/results/ordinary_targets.csv"
+  },
+  "checks": 288,
+  "failures": 0,
+  "groups": {
+    "p_divides_sigma": {
+      "checks": 144,
+      "failures": 0
+    },
+    "kappa_identity": {
+      "checks": 144,
+      "failures": 0
+    }
+  },
+  "failure_examples": [],
+  "error": null,
+  "informational": {
+    "models": 36,
+    "higher_digits_of_sigma_over_p_across_lifts": {
+      "differs": 36,
+      "same": 0
+    }
+  },
+  "seconds": 5.27,
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39"
+}

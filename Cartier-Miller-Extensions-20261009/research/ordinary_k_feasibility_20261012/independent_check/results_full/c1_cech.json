@@ -1,0 +1,148 @@
+{
+  "driver": "c1_cech",
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": {
+    "exhaustive_primes": [
+      7,
+      11,
+      13,
+      17,
+      19,
+      23
+    ],
+    "sample_primes": [
+      29,
+      31,
+      37,
+      41
+    ],
+    "sample_size": 30,
+    "seed": 1,
+    "models": "all nonsingular short models, supersingular included"
+  },
+  "checks": 1548,
+  "failures": 0,
+  "groups": {
+    "p=7": {
+      "checks": 42,
+      "failures": 0
+    },
+    "p=11": {
+      "checks": 110,
+      "failures": 0
+    },
+    "p=13": {
+      "checks": 156,
+      "failures": 0
+    },
+    "p=17": {
+      "checks": 272,
+      "failures": 0
+    },
+    "p=19": {
+      "checks": 342,
+      "failures": 0
+    },
+    "p=23": {
+      "checks": 506,
+      "failures": 0
+    },
+    "p=29": {
+      "checks": 30,
+      "failures": 0
+    },
+    "p=31": {
+      "checks": 30,
+      "failures": 0
+    },
+    "p=37": {
+      "checks": 30,
+      "failures": 0
+    },
+    "p=41": {
+      "checks": 30,
+      "failures": 0
+    }
+  },
+  "failure_examples": [],
+  "error": null,
+  "informational": {
+    "per_prime": {
+      "7": {
+        "models": 42,
+        "matches": 42,
+        "primitive_multipliers_c": [
+          2
+        ]
+      },
+      "11": {
+        "models": 110,
+        "matches": 110,
+        "primitive_multipliers_c": [
+          2
+        ]
+      },
+      "13": {
+        "models": 156,
+        "matches": 156,
+        "primitive_multipliers_c": [
+          2
+        ]
+      },
+      "17": {
+        "models": 272,
+        "matches": 272,
+        "primitive_multipliers_c": [
+          2
+        ]
+      },
+      "19": {
+        "models": 342,
+        "matches": 342,
+        "primitive_multipliers_c": [
+          2
+        ]
+      },
+      "23": {
+        "models": 506,
+        "matches": 506,
+        "primitive_multipliers_c": [
+          2
+        ]
+      },
+      "29": {
+        "models": 30,
+        "matches": 30,
+        "primitive_multipliers_c": [
+          2
+        ]
+      },
+      "31": {
+        "models": 30,
+        "matches": 30,
+        "primitive_multipliers_c": [
+          2
+        ]
+      },
+      "37": {
+        "models": 30,
+        "matches": 30,
+        "primitive_multipliers_c": [
+          2
+        ]
+      },
+      "41": {
+        "models": 30,
+        "matches": 30,
+        "primitive_multipliers_c": [
+          2
+        ]
+      }
+    },
+    "total_exhaustive_models": 1428
+  },
+  "seconds": 165.83,
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39"
+}

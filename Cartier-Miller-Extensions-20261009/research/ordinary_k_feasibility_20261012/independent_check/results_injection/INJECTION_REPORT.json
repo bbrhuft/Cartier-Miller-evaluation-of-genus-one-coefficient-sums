@@ -1,0 +1,121 @@
+{
+  "all_detected": true,
+  "trials": [
+    {
+      "part": "A_original_defect",
+      "anchor_found": true,
+      "returncode": 0,
+      "output": "p=7: models=42 (all nonsingular incl. supersingular), c values=[2], M==[[0,-beta],[0,H]]: 0/42; fails=[(0, 1, [[0, 0], [0, 3]], 3, 0), (0, 2, [[0, 0], [0, 6]], 6, 0), (0, 3, [[0, 0], [0, 2]], 2, 0), (0, 4, [[0, 0], [0, 5]], 5, 0), (0, 5, [[0, 0], [0, 1]], 1, 0)]",
+      "reproduced": true
+    },
+    {
+      "part": "B_injected_error",
+      "driver": "c1_cech.py",
+      "wrong": "good = M == [[1, (-beta) % p], [0, H]]",
+      "anchor_unique": true,
+      "returncode": 1,
+      "status": "FAIL",
+      "detected": true
+    },
+    {
+      "part": "B_injected_error",
+      "driver": "c1_cech.py",
+      "wrong": "require(r_f == 0,",
+      "anchor_unique": true,
+      "returncode": 1,
+      "status": "FAIL",
+      "detected": true
+    },
+    {
+      "part": "B_injected_error",
+      "driver": "c1_kedlaya.py",
+      "wrong": "Mp == [[0, beta % p], [0, H]]",
+      "anchor_unique": true,
+      "returncode": 1,
+      "status": "FAIL",
+      "detected": true
+    },
+    {
+      "part": "B_injected_error",
+      "driver": "c1_extra.py",
+      "wrong": "run.check(hasse_beta(p, A, B) == (0, 0)",
+      "anchor_unique": true,
+      "returncode": 1,
+      "status": "FAIL",
+      "detected": true
+    },
+    {
+      "part": "B_injected_error",
+      "driver": "c2_formal.py",
+      "wrong": "(sc // a.p + 1) % a.p == kap",
+      "anchor_unique": true,
+      "returncode": 1,
+      "status": "FAIL",
+      "detected": true
+    },
+    {
+      "part": "B_injected_error",
+      "driver": "c3_etale.py",
+      "wrong": "pred = (sV * pow(t * t, -1, p)) % p",
+      "anchor_unique": true,
+      "returncode": 1,
+      "status": "FAIL",
+      "detected": true
+    },
+    {
+      "part": "B_injected_error",
+      "driver": "c4_c5.py",
+      "wrong": "if s % p == beta:",
+      "anchor_unique": true,
+      "returncode": 1,
+      "status": "FAIL",
+      "detected": true
+    },
+    {
+      "part": "B_injected_error",
+      "driver": "c4_c5.py",
+      "wrong": "val = (6 * B * dHdA + 4 * inv3 * A * A * dHdB) % p",
+      "anchor_unique": true,
+      "returncode": 1,
+      "status": "FAIL",
+      "detected": true
+    },
+    {
+      "part": "B_injected_error",
+      "driver": "l3_katz_signs.py",
+      "wrong": "av == S0 % p",
+      "anchor_unique": true,
+      "returncode": 1,
+      "status": "FAIL",
+      "detected": true
+    },
+    {
+      "part": "C_missing_targets",
+      "driver": "c2_formal.py",
+      "returncode": 2,
+      "detected": true
+    },
+    {
+      "part": "C_missing_targets",
+      "driver": "c3_etale.py",
+      "returncode": 2,
+      "detected": true
+    },
+    {
+      "part": "C_vacuous",
+      "driver": "c1_cech.py --primes (empty)",
+      "returncode": 4,
+      "detected": true
+    },
+    {
+      "part": "D_runner_propagation",
+      "returncode": 1,
+      "detected": true
+    },
+    {
+      "part": "D_runner_missing_targets",
+      "returncode": 2,
+      "detected": true
+    }
+  ]
+}

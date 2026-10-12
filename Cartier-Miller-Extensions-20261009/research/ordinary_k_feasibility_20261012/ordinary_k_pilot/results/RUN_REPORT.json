@@ -1,0 +1,150 @@
+{
+  "overall": "PASS",
+  "dependencies": {
+    "paths": {
+      "retained": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research",
+      "extension": "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/source/CM_Cartier_Extension_20261012",
+      "handover": "/home/claude/handover/Ordinary_K_Research_Handover_20261012"
+    },
+    "missing": [],
+    "allow_missing": false
+  },
+  "steps": [
+    {
+      "script": "charp_identities.py",
+      "command": [
+        "/usr/bin/python3",
+        "-I",
+        "charp_identities.py"
+      ],
+      "returncode": 0,
+      "sentinel": "CHARP_IDENTITIES_PASS",
+      "sentinel_seen": true,
+      "passed": true,
+      "seconds": 18.31,
+      "stdout_tail": "{\n \"status\": \"PASS\",\n \"failures\": 0,\n \"models_checked\": 1768,\n \"ordinary\": 1574,\n \"supersingular\": 194,\n \"route_P_point_sum_and_codomain_checks\": 1574,\n \"route_V_verschiebung_kernel_checks\": 1395,\n \"route_V_twist_checks\": 1256,\n \"supersingular_constant_fp_checks\": 193,\n \"trace_plus_one_rows\": 76,\n \"trace_minus_one_rows\": 77,\n \"A0_rows\": 42,\n \"B0_rows\": 34,\n \"exhaustive_primes\": [\n  7,\n  11,\n  13,\n  17,\n  19,\n  23\n ],\n \"sampled_primes\": [\n  29,\n  31\n ],\n \"large_primes_route_P\": [\n  1061,\n  1429,\n  1759,\n  2039,\n  2207,\n  2441,\n  2903,\n  3041,\n  3203,\n  3209,\n  3257,\n  3449,\n  3469,\n  3623,\n  3733,\n  3853,\n  4211,\n  4507,\n  4547,\n  4729,\n  5413,\n  5417,\n  5741,\n  6619,\n  6763,\n  6827,\n  7841,\n  8287,\n  8521,\n  8929,\n  9511,\n  9967,\n  9973,\n  11047,\n  12263,\n  12589,\n  12953,\n  13171,\n  13877,\n  14341,\n  14621,\n  15139,\n  15199,\n  15607,\n  15797,\n  16067,\n  16069,\n  16183,\n  16417,\n  17573,\n  17791,\n  17891,\n  18097,\n  18973,\n  19001,\n  19309,\n  19319,\n  19471,\n  19577,\n  19973\n ],\n \"source_sha256\": {\n  \"charp_identities.py\": \"f1390aabaa7c56729ced90d31cc9ca9c0b2cd3a4afb808e38cf811eeef2938d5\",\n  \"okp_common.py\": \"f057b0812763e07523d70f7ceafc5c71201d19d17343a68e2400a4fcffc819b5\"\n },\n \"seconds\": 18.25,\n \"scope\": \"Finite checks of derived identities; not a fast algorithm and not a proof.\"\n}\nCHARP_IDENTITIES_PASS\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "serre_derivative_check.py",
+      "command": [
+        "/usr/bin/python3",
+        "-I",
+        "serre_derivative_check.py"
+      ],
+      "returncode": 0,
+      "sentinel": "SERRE_DERIVATIVE_PASS",
+      "sentinel_seen": true,
+      "passed": true,
+      "seconds": 0.83,
+      "stdout_tail": "{\"status\": \"PASS\", \"models\": 19948, \"ordinary\": 18408, \"supersingular\": 1540}\nSERRE_DERIVATIVE_PASS\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "kummer_degree_check.py",
+      "command": [
+        "/usr/bin/python3",
+        "-I",
+        "kummer_degree_check.py"
+      ],
+      "returncode": 0,
+      "sentinel": "KUMMER_DEGREE_PASS",
+      "sentinel_seen": true,
+      "passed": true,
+      "seconds": 7.13,
+      "stdout_tail": "{\"status\": \"PASS\", \"models\": 1363, \"k_even\": 842, \"k_odd\": 521, \"kummer_smaller_than_point\": 842}\nKUMMER_DEGREE_PASS\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "padic_canonical_subgroup.py",
+      "command": [
+        "/usr/bin/python3",
+        "-I",
+        "padic_canonical_subgroup.py",
+        "--retained",
+        "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research",
+        "--extension",
+        "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/source/CM_Cartier_Extension_20261012",
+        "--handover",
+        "/home/claude/handover/Ordinary_K_Research_Handover_20261012"
+      ],
+      "returncode": 0,
+      "sentinel": "PADIC_PILOT_PASS",
+      "sentinel_seen": true,
+      "passed": true,
+      "seconds": 10.19,
+      "stdout_tail": "{\n \"status\": \"PASS\",\n \"counters\": {\n  \"lift_checks\": 570,\n  \"trivial\": 570,\n  \"random\": 570,\n  \"canonical\": 240,\n  \"scale_checks\": 570,\n  \"dt_convergence_checks\": 720,\n  \"cubic_HKT_checks\": 507,\n  \"branch_queries\": 387,\n  \"retained_fixedD_agreements\": 74,\n  \"HD_root_checks\": 74,\n  \"twist_checks\": 270,\n  \"second_digit_differs\": 515,\n  \"second_digit_same\": 55,\n  \"precision_floor_N3_agreements\": 270,\n  \"precision_floor_N2_refusals\": 270\n },\n \"ordinary_models\": 570,\n \"cm_canonical_lift_records\": 29,\n \"ab0_records\": 69,\n \"same_trace_pairs\": 8,\n \"trace_plus_one_models\": 30,\n \"trace_minus_one_models\": 34,\n \"seconds\": 10.1\n}\nPADIC_PILOT_PASS\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "retained_dependency_check.py",
+      "command": [
+        "/usr/bin/python3",
+        "-I",
+        "retained_dependency_check.py",
+        "--retained",
+        "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research",
+        "--extension",
+        "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/source/CM_Cartier_Extension_20261012",
+        "--handover",
+        "/home/claude/handover/Ordinary_K_Research_Handover_20261012"
+      ],
+      "returncode": 0,
+      "sentinel": "RETAINED_DEPENDENCY_PASS",
+      "sentinel_seen": true,
+      "passed": true,
+      "seconds": 9.15,
+      "stdout_tail": "{\n \"counts\": {\n  \"73\": {\n   \"models\": 5256,\n   \"ordinary\": 5112,\n   \"fixedD_hits\": 1080,\n   \"recognizer_matches\": 1152,\n   \"D-256_hits\": 288,\n   \"D-192_hits\": 288\n  },\n  \"89\": {\n   \"models\": 7832,\n   \"ordinary\": 7304,\n   \"fixedD_hits\": 704,\n   \"recognizer_matches\": 704,\n   \"D-256_hits\": 352,\n   \"D-192_hits\": 0\n  },\n  \"97\": {\n   \"models\": 9312,\n   \"ordinary\": 9120,\n   \"fixedD_hits\": 1056,\n   \"recognizer_matches\": 1152,\n   \"D-256_hits\": 0,\n   \"D-192_hits\": 384\n  },\n  \"113\": {\n   \"models\": 12656,\n   \"ordinary\": 12208,\n   \"fixedD_hits\": 1008,\n   \"recognizer_matches\": 896,\n   \"D-256_hits\": 448,\n   \"D-192_hits\": 0\n  }\n },\n \"D256_control\": {\n  \"p\": 73,\n  \"A\": 16,\n  \"B\": 27,\n  \"H\": 67,\n  \"beta\": 28,\n  \"kappa\": 44,\n  \"family\": \"depth3_1728_disc_-256\",\n  \"beta_multiplier\": 44\n }\n}\nRETAINED_DEPENDENCY_PASS\n",
+      "stderr_tail": ""
+    },
+    {
+      "script": "coverage.py",
+      "command": [
+        "/usr/bin/python3",
+        "-I",
+        "coverage.py",
+        "--retained",
+        "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research",
+        "--extension",
+        "/home/claude/work/rerun/support/CM_Cartier_Adversarial_Review_20261012/source/CM_Cartier_Extension_20261012",
+        "--handover",
+        "/home/claude/handover/Ordinary_K_Research_Handover_20261012"
+      ],
+      "returncode": 0,
+      "sentinel": "COVERAGE_DONE",
+      "sentinel_seen": true,
+      "passed": true,
+      "seconds": 0.06,
+      "stdout_tail": "{\n \"charp_identities.csv\": {\n  \"rows_with_slope\": 1574,\n  \"outside_retained_tables\": 1297,\n  \"trace_plus_one\": 76,\n  \"trace_minus_one\": 77,\n  \"A_zero\": 42,\n  \"B_zero\": 34\n },\n \"padic_lift_slopes.csv\": {\n  \"rows_with_slope\": 570,\n  \"outside_retained_tables\": 381,\n  \"trace_plus_one\": 30,\n  \"trace_minus_one\": 34,\n  \"A_zero\": 19,\n  \"B_zero\": 28\n },\n \"note\": \"outside-table is a label from the supplied tables, not a non-CM claim\"\n}\nCOVERAGE_DONE\n",
+      "stderr_tail": ""
+    }
+  ],
+  "environment": {
+    "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+    "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
+    "dependencies": "Python standard library only"
+  },
+  "sha256": {
+    "charp_identities.py": "f1390aabaa7c56729ced90d31cc9ca9c0b2cd3a4afb808e38cf811eeef2938d5",
+    "coverage.py": "895acb4432fde3082bae90ff4df48f9b652c9c0d04baeeec69290898288bbfa4",
+    "failure_injection.py": "738140c2cd5ddb04b87b7d744797e93ab70fc9fb81c92ce9c86eef8a03279078",
+    "kummer_degree_check.py": "82747406580706f7f04274c084d4d8bb8056a9fe254ed695a4bd184929979b37",
+    "okp_common.py": "f057b0812763e07523d70f7ceafc5c71201d19d17343a68e2400a4fcffc819b5",
+    "okp_config.py": "8f030da63cf2f0a19b13b68c2e9018fbff4715a1af6d0f0fa000eb044a15407c",
+    "padic_canonical_subgroup.py": "b91937046d533708bab25ae3c03cd9b441003578d019434d75b2df6d7c17e605",
+    "results/charp_identities.csv": "7e4eed505b588338072aca602507f931395cd572dcefffc9ff0a471a58c8abbc",
+    "results/charp_identities_summary.json": "02f166a6b05c00e7ddce391fac6c9c9338480079a2a2af093d12a8194ab575cb",
+    "results/coverage.json": "fbdf25e672c157b6421a79359ae00ea108bb8a9ff5818e5ecc0799c4e0edfd1b",
+    "results/kummer_degree_check.json": "581ef28e0df8ad4e5fe2645ff0482e2fa422722db3a708fc5c8b0aa1eea42910",
+    "results/padic_AB0_j_insufficiency.json": "67d8e5348dd53b5f2083d6d4365f29641a55f3df8e2df4655dfc5165756d75c4",
+    "results/padic_cm_canonical_lifts.json": "3cd8d74012b74c910e93730153c2a84e2161bd026233a1e3c8ee72abe429acdd",
+    "results/padic_lift_slopes.csv": "6349b928a57b8dd25e76d147d4f59d96cb928596ff5d7f9d368f1dfea0fe74db",
+    "results/padic_same_trace_pairs.json": "fd0a6e7e14649321a48209e2994c7c05108052fde769ce0fec5ea582a0f9955d",
+    "results/padic_summary.json": "9f792a3ea03f6648c3b84bf99859d872dd8fa6939e319dadbb8e2ff17f03cf96",
+    "results/retained_dependency_check.json": "142c18b531a694035841be8f1bed161a98b008f4b11eb8f799b97730751f55e9",
+    "results/serre_derivative_summary.json": "3f55908c01485bb124e36cafd0e2fd707f87258337934eab1b44baf0735e8086",
+    "retained_dependency_check.py": "22aa86d0528019c770bcf1aa2290175123604cbbc105eeea639066320e6fa71a",
+    "run_all.py": "84236c6fb1097e6708f1922576246b114862cdcf9b335ea3d0ea3d3d5febadf0",
+    "serre_derivative_check.py": "d65f9a17db37c00fe676c781b9043ce921e48a99af32e4f91c9fa37844b90785"
+  }
+}
