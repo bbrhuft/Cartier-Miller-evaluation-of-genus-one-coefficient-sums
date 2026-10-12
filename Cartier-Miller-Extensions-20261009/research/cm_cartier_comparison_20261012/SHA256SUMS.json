@@ -5,7 +5,7 @@
  "REVIEW_RESPONSE.md": "88be78928c635b344e68cc8ef897f4af3a42173840b5edb79509ca539e4bb951",
  "core/d7_seed.py": "aac40a8922b4188b7a1d03986c6c157f0ed93cecd9d6b1f821f4d40686085194",
  "core/d8_control.py": "89dbf9c3219d24a1c7006a42f3d1ec4739c0d648c7dfb96a37eeb0a11f1e989c",
- "core/fixed_D_evaluator.py": "66a6ef5fa73193df9d1eb418b7b9fcb61684d9a96648dc49533caa757d61da12",
+ "core/fixed_D_evaluator.py": "f0ca1ba0ae56ae40e07b135b6f26f7894212f2633c0be2c0d1d4be0e7700dc99",
  "core/isogeny_matrices.py": "91c0ebf6bfc3bb6930c3492c5081f161889917c2e8fc2b003b4547f83db8dc94",
  "core/qtower.py": "6c432841b338b3a5cbfff64e360a8260b4ec3601d063b4acfc0ef0bb1c43d575",
  "history/CM_Cartier_Extension_Ledger_20261012_as_reviewed.md": "568cb0e7d259bc3e0a6473dac9cb52416cd46f7b1881cd5fc7a7f77d440dc276",

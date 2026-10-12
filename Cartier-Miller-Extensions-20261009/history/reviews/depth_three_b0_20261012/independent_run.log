@@ -1,0 +1,35 @@
+Independent exhaustive prime 73 models 5256
+Independent exhaustive prime 89 models 7832
+Independent exhaustive prime 113 models 12656
+Independent exhaustive prime 233 models 54056
+Independent exhaustive prime 257 models 65792
+Independent exhaustive prime 281 models 78680
+Independent exhaustive prime 337 models 113232
+Independent exhaustive prime 353 models 124256
+Independent exhaustive prime 577 models 332352
+Independent exhaustive prime 593 models 351056
+Independent exhaustive prime 601 models 360600
+Independent exhaustive prime 617 models 380072
+{
+  "exact_integer_identities": 14,
+  "largest_factor_independently_trial_divided": 12263,
+  "eligible_primes_below_5000": 81,
+  "exhaustive_primes": 12,
+  "exhaustive_models": 1885840,
+  "accepted_models": 16448,
+  "coefficient_and_trace_checks": 1268,
+  "original_cubic_branch_checks": 60,
+  "ineligible_input_checks": 2456,
+  "large_trace_sign_witnesses": 15,
+  "minor_schema_issue": "unknown nested parameter keys ignored; returned certificate is recomputed and sound",
+  "status": "passed_mathematical_checks_with_documentation_and_schema_findings",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "seed": 9310712,
+  "elapsed_seconds_not_benchmark": 16.111,
+  "input_source_sha256": {
+    "inherited/research/depth_three_recognition_20261007/core/depth_three_b0_recognize.py": "a7142c42e1a748612a961ec9f4e185589569f4de2b398ff7fe0c8f293b95614a",
+    "inherited/research/depth_three_recognition_20261007/theory/b0/derive_b0_family.py": "d7a9562343a8ae671b260b5e813743a4574079d394ab479dd321cf5e23bf3638",
+    "../upload/Depth_Three_Recognition_Proof_Note_20261007-1.md": "9267fdbc1d8a7b8b727f531410573054c88f0bd0d1d7088cea2b4dd69581ad42"
+  }
+}

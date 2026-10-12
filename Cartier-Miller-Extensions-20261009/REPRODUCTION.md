@@ -42,6 +42,7 @@ Times are wall-clock seconds from the 9 October rerun, which ran 17 jobs in para
 | Depth-three B=0 family (12 October) | `python research/depth_three_recognition_20261007/core/validate_depth_three_b0.py` | stdlib; cypari2 optional | 33 alone |
 | Depth-three B=0 exact derivation | `python research/depth_three_recognition_20261007/theory/b0/derive_b0_family.py` | stdlib | 1 |
 | CM-to-Cartier package, all 13 steps (12 October) | from `research/cm_cartier_comparison_20261012/`: `python run_all.py` (rewrites that directory's results; run in a copy) | python-flint, cypari2, mpmath, SymPy | 72 alone |
+| Ordinary-slope feasibility (12 October) | from `research/ordinary_k_feasibility_20261012/`, in a copy: `python -I ordinary_k_pilot/run_all.py --retained .. --extension ../cm_cartier_comparison_20261012 --handover handover_inputs`; independent checks as in its RELEASE_NOTE.md | stdlib | about 26 (pilot); 8 (independent bounded); about 19 min (independent full) |
 | Rounded third point | `python research/rounded_third_boundary_20261009/validate_rounded_third.py` | stdlib | 6 alone, 19 in parallel |
 | Fresh transport cross-check | `python research/rounded_third_boundary_20261009/independent_transport_check.py` | stdlib | 19 in parallel |
 

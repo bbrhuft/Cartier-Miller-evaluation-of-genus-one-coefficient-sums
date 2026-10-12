@@ -1,0 +1,68 @@
+[
+  {
+    "trial": "padic_canonical_subgroup.py: 'kappa_C': ((sigma / p).residue(1) + 1) % p",
+    "rc": 1,
+    "caught": true,
+    "runner_rc": 1
+  },
+  {
+    "trial": "padic_canonical_subgroup.py: require(kappa_identity_only(A, B, p, 3) == (kappa + 1) % p",
+    "rc": 1,
+    "caught": true,
+    "runner_rc": 1
+  },
+  {
+    "trial": "charp_identities.py: kV = (sV * pow(t * t, -1, p)) % p",
+    "rc": 1,
+    "caught": true,
+    "runner_rc": 1
+  },
+  {
+    "trial": "serre_derivative_check.py: (6 * B * HA + 4 * i3 * A * A * HB) % p == beta",
+    "rc": 1,
+    "caught": true,
+    "runner_rc": 1
+  },
+  {
+    "trial": "retained_dependency_check.py: ['beta_multiplier'] == 45 == kap",
+    "rc": 1,
+    "caught": true,
+    "runner_rc": 1
+  },
+  {
+    "trial": "kummer_degree_check.py: kprime = k",
+    "rc": 1,
+    "caught": true,
+    "runner_rc": 1
+  },
+  {
+    "trial": "padic_canonical_subgroup.py: no dependency configuration",
+    "rc": 2,
+    "caught": true,
+    "runner_rc": null
+  },
+  {
+    "trial": "retained_dependency_check.py: no dependency configuration",
+    "rc": 2,
+    "caught": true,
+    "runner_rc": null
+  },
+  {
+    "trial": "coverage.py: no dependency configuration",
+    "rc": 2,
+    "caught": true,
+    "runner_rc": null
+  },
+  {
+    "trial": "run_all.py: no dependency configuration",
+    "rc": 2,
+    "caught": true,
+    "runner_rc": null
+  },
+  {
+    "trial": "padic with --allow-missing-dependencies",
+    "rc": 3,
+    "caught": true,
+    "runner_rc": null
+  }
+]

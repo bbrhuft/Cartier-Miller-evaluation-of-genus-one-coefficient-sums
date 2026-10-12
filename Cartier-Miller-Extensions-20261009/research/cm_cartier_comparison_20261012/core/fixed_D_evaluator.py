@@ -15,9 +15,11 @@ Table size grows with D (degree h, coefficient digits recorded in the
 table); it is constant only because D is fixed.  The Kronecker test (D/p) is
 a residue test for these D (quadratic reciprocity).
 """
-import json, os
+import json, os, sys
 from fractions import Fraction
-from d7_seed import validate_prime
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))  # sibling d7_seed, also when loaded by path
+from d7_seed import validate_prime  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 TABLE_PATH = os.path.join(os.path.dirname(HERE), 'results', 'cm_tables.json')

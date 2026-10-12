@@ -1,0 +1,61 @@
+{
+  "driver": "c1_extra",
+  "status": "PASS",
+  "exit_code": 0,
+  "scope": {
+    "lift_primes": [
+      7,
+      11,
+      13
+    ],
+    "rank_primes": [
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      29,
+      31,
+      37,
+      41,
+      43
+    ],
+    "seed": 99,
+    "skip_p5_informational": false
+  },
+  "checks": 8276,
+  "failures": 0,
+  "groups": {
+    "random_lift_p7": {
+      "checks": 42,
+      "failures": 0
+    },
+    "random_lift_p11": {
+      "checks": 110,
+      "failures": 0
+    },
+    "random_lift_p13": {
+      "checks": 156,
+      "failures": 0
+    },
+    "rank_one": {
+      "checks": 7968,
+      "failures": 0
+    }
+  },
+  "failure_examples": [],
+  "error": null,
+  "informational": {
+    "p5_outside_claim": {
+      "models": 20,
+      "cech_matches": 20,
+      "kedlaya_matches": 20,
+      "nonintegral": []
+    }
+  },
+  "seconds": 15.15,
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39"
+}

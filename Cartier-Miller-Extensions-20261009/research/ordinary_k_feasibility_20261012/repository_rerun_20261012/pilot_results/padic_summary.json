@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "failures": 0,
+  "counters": {
+    "lift_checks": 570,
+    "trivial": 570,
+    "random": 570,
+    "canonical": 240,
+    "scale_checks": 570,
+    "dt_convergence_checks": 720,
+    "cubic_HKT_checks": 507,
+    "branch_queries": 387,
+    "retained_fixedD_agreements": 74,
+    "HD_root_checks": 74,
+    "twist_checks": 270,
+    "second_digit_differs": 515,
+    "second_digit_same": 55,
+    "precision_floor_N3_agreements": 270,
+    "precision_floor_N2_refusals": 270
+  },
+  "reduced_scope_reasons": [],
+  "ordinary_models": 570,
+  "cm_canonical_lift_records": 29,
+  "ab0_records": 69,
+  "same_trace_pairs": 8,
+  "trace_plus_one_models": 30,
+  "trace_minus_one_models": 34,
+  "data_sizes_of_this_verification_route": [
+    {
+      "p": 7,
+      "division_polynomial_degree": 24,
+      "canonical_factor_degree": 3,
+      "padic_digits_N": 14
+    },
+    {
+      "p": 11,
+      "division_polynomial_degree": 60,
+      "canonical_factor_degree": 5,
+      "padic_digits_N": 14
+    },
+    {
+      "p": 13,
+      "division_polynomial_degree": 84,
+      "canonical_factor_degree": 6,
+      "padic_digits_N": 14
+    },
+    {
+      "p": 17,
+      "division_polynomial_degree": 144,
+      "canonical_factor_degree": 8,
+      "padic_digits_N": 14
+    },
+    {
+      "p": 19,
+      "division_polynomial_degree": 180,
+      "canonical_factor_degree": 9,
+      "padic_digits_N": 14
+    },
+    {
+      "p": 23,
+      "division_polynomial_degree": 264,
+      "canonical_factor_degree": 11,
+      "padic_digits_N": 14
+    }
+  ],
+  "retained": {
+    "paths": {
+      "retained": "/tmp/claude-0/-home-claude/f891ed5a-3df5-5144-8043-9dd0728418e1/scratchpad/repocopy/research",
+      "extension": "/tmp/claude-0/-home-claude/f891ed5a-3df5-5144-8043-9dd0728418e1/scratchpad/repocopy/research/cm_cartier_comparison_20261012",
+      "handover": "/tmp/claude-0/-home-claude/f891ed5a-3df5-5144-8043-9dd0728418e1/scratchpad/repocopy/research/ordinary_k_feasibility_20261012/handover_inputs"
+    },
+    "missing": [],
+    "modules": {
+      "fixed_D_evaluator": {
+        "__file__": "/tmp/claude-0/-home-claude/f891ed5a-3df5-5144-8043-9dd0728418e1/scratchpad/repocopy/research/cm_cartier_comparison_20261012/core/fixed_D_evaluator.py",
+        "sha256": "f0ca1ba0ae56ae40e07b135b6f26f7894212f2633c0be2c0d1d4be0e7700dc99",
+        "table": "/tmp/claude-0/-home-claude/f891ed5a-3df5-5144-8043-9dd0728418e1/scratchpad/repocopy/research/cm_cartier_comparison_20261012/results/cm_tables.json",
+        "table_sha256": "66bbf3b00fd35bbe09f1f2cd49b4cb49ef24b4dc83e0119772aafbd4b9d3f63f"
+      },
+      "depth_three_recognize": {
+        "__file__": "/tmp/claude-0/-home-claude/f891ed5a-3df5-5144-8043-9dd0728418e1/scratchpad/repocopy/research/depth_three_recognition_20261007/core/depth_three_recognize.py",
+        "sha256": "8a984091162d2147bbd142ddfb6e83ed7585f42bca277f94d2436badcf7b9f32",
+        "note": "hash recorded here; executed by retained_dependency_check.py"
+      },
+      "depth_three_b0_recognize": {
+        "__file__": "/tmp/claude-0/-home-claude/f891ed5a-3df5-5144-8043-9dd0728418e1/scratchpad/repocopy/research/depth_three_recognition_20261007/core/depth_three_b0_recognize.py",
+        "sha256": "b217018b999c3c6ad1fbe84f71b95f6b52ae3f13ceb5fc2173a85166d8959f80",
+        "note": "hash recorded here; executed by retained_dependency_check.py"
+      }
+    }
+  },
+  "source_sha256": {
+    "padic_canonical_subgroup.py": "b91937046d533708bab25ae3c03cd9b441003578d019434d75b2df6d7c17e605",
+    "okp_common.py": "f057b0812763e07523d70f7ceafc5c71201d19d17343a68e2400a4fcffc819b5"
+  },
+  "environment": {
+    "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+    "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
+    "dependencies": "Python standard library only"
+  },
+  "seconds": 11.2,
+  "scope": "Verification of derived identities from degree-(p^2-1)/2 division-polynomial data; not a fast algorithm, not a benchmark, not a proof."
+}

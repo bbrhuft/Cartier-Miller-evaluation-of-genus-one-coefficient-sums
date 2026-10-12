@@ -1,0 +1,12 @@
+padic_canonical_subgroup.py: injected -> rc=1 caught=True; runner rc=1
+padic_canonical_subgroup.py: injected -> rc=1 caught=True; runner rc=1
+charp_identities.py: injected -> rc=1 caught=True; runner rc=1
+serre_derivative_check.py: injected -> rc=1 caught=True; runner rc=1
+retained_dependency_check.py: injected -> rc=1 caught=True; runner rc=1
+kummer_degree_check.py: injected -> rc=1 caught=True; runner rc=1
+padic_canonical_subgroup.py: no dependencies -> rc=2
+retained_dependency_check.py: no dependencies -> rc=2
+coverage.py: no dependencies -> rc=2
+run_all.py: no dependencies -> rc=2
+padic --allow-missing-dependencies -> rc=3
+FAILURE_INJECTION_DETECTED_ALL

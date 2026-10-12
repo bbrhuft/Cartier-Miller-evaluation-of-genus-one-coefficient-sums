@@ -1,0 +1,50 @@
+[
+ {
+  "p": 7,
+  "trace": -2,
+  "kappa_C_1": 2,
+  "kappa_C_2": 4
+ },
+ {
+  "p": 7,
+  "trace": 2,
+  "kappa_C_1": 5,
+  "kappa_C_2": 3
+ },
+ {
+  "p": 11,
+  "trace": -3,
+  "kappa_C_1": 2,
+  "kappa_C_2": 4
+ },
+ {
+  "p": 11,
+  "trace": -2,
+  "kappa_C_1": 1,
+  "kappa_C_2": 0
+ },
+ {
+  "p": 11,
+  "trace": 2,
+  "kappa_C_1": 10,
+  "kappa_C_2": 0
+ },
+ {
+  "p": 11,
+  "trace": 3,
+  "kappa_C_1": 9,
+  "kappa_C_2": 7
+ },
+ {
+  "p": 13,
+  "trace": -4,
+  "kappa_C_1": 11,
+  "kappa_C_2": 2
+ },
+ {
+  "p": 13,
+  "trace": -1,
+  "kappa_C_1": 1,
+  "kappa_C_2": 8
+ }
+]
