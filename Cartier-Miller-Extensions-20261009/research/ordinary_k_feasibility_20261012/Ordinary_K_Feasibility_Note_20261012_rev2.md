@@ -28,7 +28,18 @@ Field operations are counted in F_p or Z/p^N. Bit costs multiply by M(log p), or
 
 **Theorem A.** Let p ≥ 7 and let E: y² = x³+Ax+B be nonsingular over F_p, ordinary or supersingular. In the low-pole basis ([ω],[η]) of H¹_dR(E/F_p), with the column convention,
 
-$$F^*=\pi^*=\begin{pmatrix}0&-\beta\\0&t-p\end{pmatrix}\equiv\begin{pmatrix}0&-\beta\\0&H\end{pmatrix}.$$
+```math
+F^{*} = \pi^{*} =
+\begin{pmatrix}
+0 & -\beta \\
+0 & t-p
+\end{pmatrix}
+\equiv
+\begin{pmatrix}
+0 & -\beta \\
+0 & H
+\end{pmatrix}.
+```
 
 When H ≠ 0 the image of F\* is ⟨−βω + Hη⟩ = ⟨η − κω⟩, so κ = −b₀/d₀ with b₀ = −β, d₀ = H.
 
@@ -38,7 +49,24 @@ To pass from forms to classes, represent a class by a meromorphic differential �
 
 Vélu's x-map x∘φ_G = x + Σ_{Q≠O}(τ_Q\*x − x(Q)), multiplied by ω = φ_G\*ω′, gives φ_G\*η′ = Σ_{Q∈G}τ_Q\*η − σ_Gω, with σ_G = Σ_{Q∈G∖O}x(Q). At each point Q ∈ G both sides use primitives of pole order one there: φ_G\*g′ on the left, and τ_{−Q}\*g (the only singular summand at Q) on the right. So the identity holds for classes. Translations act trivially on H¹_dR because H¹ classes are primitive (m\* = pr₁\* + pr₂\*), which is classical. Hence φ_G\*[η′] = N[η] − σ_G[ω], and
 
-$$\alpha^*=\begin{pmatrix}u&-\sigma_G/u\\0&N/u\end{pmatrix}=\begin{pmatrix}-1&\sigma_G\\0&-N\end{pmatrix},\qquad\pi^*=\alpha^*+I=\begin{pmatrix}0&\sigma_G\\0&1-N\end{pmatrix}.$$
+```math
+\alpha^{*} =
+\begin{pmatrix}
+u & -\sigma_G/u \\
+0 & N/u
+\end{pmatrix}
+=
+\begin{pmatrix}
+-1 & \sigma_G \\
+0 & -N
+\end{pmatrix},
+\qquad
+\pi^{*} = \alpha^{*} + I =
+\begin{pmatrix}
+0 & \sigma_G \\
+0 & 1-N
+\end{pmatrix}.
+```
 
 Counting points over each x gives σ_G = Σ_{x∈F_p}x(1+χ(F(x))) = Σ_x xF(x)^h = −β. This holds because Σ_{x∈F_p}x^m is −1 for m > 0 with (p−1) | m and 0 otherwise, and deg(xF^h) < 2(p−1). Finally 1−N = t−p ≡ H. ∎
 
