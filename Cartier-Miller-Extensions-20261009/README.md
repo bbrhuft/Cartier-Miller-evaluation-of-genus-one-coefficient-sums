@@ -31,6 +31,8 @@ The research was carried out between 6 and 12 October 2026 with substantial gene
 | CM seed $D=-7$ | $p\equiv1,2,4\bmod7$ | $-35$ | $-98$ | $-1$ |
 | CM control $D=-8$ | $p\equiv1,3\bmod8$ | $-30$ | $56$ | $+1$ |
 
+![Visualisaiton of 2-Isogeny](https://github.com/bbrhuft/Cartier-Miller-evaluation-of-genus-one-coefficient-sums/blob/main/Cartier-Miller-Extensions-20261009/Walk%20the%20Volcano.png) 
+
 The short model is $y^2=x^3+Ax+B$ with $\beta=\lbrack x^{p-2}\rbrack\,(x^3+Ax+B)^{(p-1)/2}$ and $r\neq0$. The quotients $\beta/(rH)$ are multipliers: the implementations multiply by $H$ and never divide by it. Quadratic twisting by $d$ sends $r$ to $dr$. [RESULTS.md](RESULTS.md) states the normalization, costs and limitations in full.
 
 ## Quick start
