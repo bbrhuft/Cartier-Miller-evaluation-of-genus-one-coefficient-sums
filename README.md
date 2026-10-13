@@ -151,6 +151,18 @@ Table 1 is a quarter-point pilot run for seven primes $p\equiv1\pmod4$, with $n=
 
 The folder [`Cartier-Miller-Extensions-20261009/`](Cartier-Miller-Extensions-20261009/) contains follow-up research carried out between 6 and 12 October 2026, with its own README, proofs, validators and evidence. It addresses the branch arguments $f(\mu)=0$ excluded from the main theorem. It gives an explicit branch formula and normalized rational 2-isogeny transport, direct recognition of curves reachable from two ordinary easy seeds through depth two, and both depth-three families, of discriminants $-192$ and $-256$, with CM trace preparation. A 12 October addition explains all these slopes through a CM-to-Cartier comparison, $\beta/H\equiv-\tfrac{3B}{2A}s_2(\tau)$, which is classical in substance (Katz). It also adds a certified seed at discriminant $-7$. It also proves that, for $p\equiv2\pmod 3$, the missing boundary at the rounded third point is $a_{(p+1)/3}\equiv3/(2(\lfloor p/3\rfloor!)^3)\pmod p$. The complete weighted sum there is therefore equivalent to a Gauss factorial, an obstruction rather than a new fast family. A further 12 October feasibility study shows that, for a generic ordinary curve, the missing slope $\kappa=\beta/H$ is exactly one entry of Frobenius modulo $p$, and a canonical-subgroup kernel sum of any $p$-adic lift. The canonical-lift and Serre–Tate constructions it examined gave no cheaper algorithm than existing $\tilde O(\sqrt p)$ methods, though no lower bound is claimed. Like the manuscript, this work is unrefereed, AI-assisted and makes no novelty claim; its [HUMAN_REVIEW.md](Cartier-Miller-Extensions-20261009/HUMAN_REVIEW.md) lists concrete questions for reviewers.
 
+## Integration layer: one exact interface for the whole project
+
+The folder [`Cartier-Miller-Integration-20261013/`](Cartier-Miller-Integration-20261013/) contains a consolidation audit and a dependency-free Python prototype, `cm_system`, dated 13 October 2026. It puts one input/output and modulus contract over the project's existing exact methods:
+
+- the original sums modulo $p$ and $p^2$;
+- the main genus-one row theorem, including the exceptional case;
+- cubic branch queries;
+- the fixed-discriminant Cartier tables;
+- higher-genus hybrids and weighted prefixes.
+
+It keeps quantities that earlier code called $K$ or $\kappa$ distinct, labels supplied traces as trusted unless certified, and falls back to exact computation, or refuses, rather than estimating. Its validator and recorded measurements are included; the measurements compare its own Python implementations only. It claims no new generic fast algorithm, no sum-avoiding Witt extraction and no novelty. Its [RELEASE_NOTE.md](Cartier-Miller-Integration-20261013/RELEASE_NOTE.md) records what was excluded from the delivery and the refresh of its vendored code to the corrected versions in this repository.
+
 ## Review and collaboration
 
 Independent scrutiny of the exceptional proof, differential scale, residue signs and split-algebra arithmetic is especially welcome. A specialist comparison with existing Cartier, descent, anomalous-curve and Frobenius literature would help establish whether the normalization is already implicit in known results.
@@ -161,7 +173,7 @@ Please open an issue to discuss a proof gap, counterexample, literature connecti
 
 ## Licensing
 
-The repository's [MIT License](LICENSE) covers the author's own material, including the extension folder, which carries its own MIT licence file. It does not cover third-party or separately licensed code. [`Cartier_Miller_Benchmark/`](Cartier_Miller_Benchmark/) bundles David Harvey's interval-product sources from SageMath under the GNU General Public License, with their original notices in `upstream/COPYING.txt`. That folder's adapter, GUI, point counters, harness, tests and launchers carry `GPL-2.0-or-later` notices, and its `LICENSE` file reproduces the SageMath copyright statement. Those files remain under the GPL. The manuscript PDF is shared for review and remains the author's work under its own terms.
+The repository's [MIT License](LICENSE) covers the author's own material, including the extension and integration folders, which carry their own MIT licence files. It does not cover third-party or separately licensed code. [`Cartier_Miller_Benchmark/`](Cartier_Miller_Benchmark/) bundles David Harvey's interval-product sources from SageMath under the GNU General Public License, with their original notices in `upstream/COPYING.txt`. That folder's adapter, GUI, point counters, harness, tests and launchers carry `GPL-2.0-or-later` notices, and its `LICENSE` file reproduces the SageMath copyright statement. Those files remain under the GPL. The manuscript PDF is shared for review and remains the author's work under its own terms.
 
 ## AI assistance and attribution
 

@@ -1,0 +1,314 @@
+[
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/historical_precision_two/preserved/client/polyzq.py",
+    "destination": "cm_system/backends/polyzq.py",
+    "source_sha256": "35532b145c6579af09d3b106af90525010e53bec2c2be22e22575b5602a0d394",
+    "delivered_sha256": "35532b145c6579af09d3b106af90525010e53bec2c2be22e22575b5602a0d394",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/historical_precision_two/preserved/client/route3_bsgs.py",
+    "destination": "cm_system/backends/product_tree.py",
+    "source_sha256": "8c22e5da1a12464adf47f74f44a62d8b2e5d43cc09f9797b4541c4f2f1321e1c",
+    "delivered_sha256": "66dae9586478451bc41497690c2b63ccd016526fe784327870b1498fabe6e37c",
+    "changes": "package-relative imports and removal of legacy sys.path insertion; mathematics unchanged"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/previous_handover/original_handover/code/third_point/third_point.py",
+    "destination": "cm_system/backends/ordinary_third.py",
+    "source_sha256": "3301345fbaf29538fb55e852fe4da6f51cae2169800be9c46c131da8a66cd4b7",
+    "delivered_sha256": "61eaddb9e22f205682f1ea55a7da7b93546d289a181a10bc0fe4860e0d87caae",
+    "changes": "package-relative imports and removal of legacy sys.path insertion; mathematics unchanged"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/previous_handover/original_handover/historical/higher_genus_20260928/scripts/general_argument.py",
+    "destination": "cm_system/backends/general_argument.py",
+    "source_sha256": "59e65be2f57262405f301279140f3170edca8cb75a0790409f43f803d40e98b7",
+    "delivered_sha256": "420c9a40a63cdfa886da7b4c954b88e66c3f6a097c2e9bbe38fb91dc185d9cba",
+    "changes": "package-relative imports and removal of legacy sys.path insertion; mathematics unchanged"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/previous_handover/original_handover/historical/higher_genus_20260928/scripts/hyperelliptic_prefix.py",
+    "destination": "cm_system/backends/hyperelliptic_prefix.py",
+    "source_sha256": "fc3b4b01ca4b28e85b927a55dfa2d341ba508dbef5c807e70272caef30a9b2ee",
+    "delivered_sha256": "fc3b4b01ca4b28e85b927a55dfa2d341ba508dbef5c807e70272caef30a9b2ee",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/previous_handover/original_handover/historical/padic_quarter_20260928/scripts/witt_check.py",
+    "destination": "cm_system/backends/witt_check.py",
+    "source_sha256": "5964c674c26ffc59bbbfa5829bdf1e7b3cb08607dfd94f910724bbe00a2eef78",
+    "delivered_sha256": "40d6595f01a06474bfffcbc155129e731b14bb0fccada7f812ed7edc848aee43",
+    "changes": "package-relative imports and removal of legacy sys.path insertion; mathematics unchanged"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/previous_handover/original_handover/historical/padic_quarter_20260928/scripts/padic_lift.py",
+    "destination": "cm_system/backends/padic_lift.py",
+    "source_sha256": "7bcf155cdd8dec17043848fa2c7c397d6331632d6715a18a8e4a25b8b6d51e2a",
+    "delivered_sha256": "e9644141a56f14ad5503443a4a19c42d20bffd962e4900caec73702dcffb6606",
+    "changes": "package-relative imports and removal of legacy sys.path insertion; mathematics unchanged"
+  },
+  {
+    "source": "audit_extract/essentials/Cartier_Miller_Research_Essentials/work/cartier_miller_studio/cmstudio/algorithms/elliptic.py",
+    "destination": "cm_system/backends/elliptic.py",
+    "source_sha256": "3e79d82c931f41f3091e98f6f65783ce958f13851e2c6f05283efa2152c0634d",
+    "delivered_sha256": "3e79d82c931f41f3091e98f6f65783ce958f13851e2c6f05283efa2152c0634d",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/previous_handover/original_handover/proof/high_part_verification/retained/cmpkg/reference.py",
+    "destination": "cm_system/backends/genus_one/reference.py",
+    "source_sha256": "8da2ff121d42781ea8d4316000feb827a9f328b0b68f7e394dcf7c6852348f46",
+    "delivered_sha256": "8da2ff121d42781ea8d4316000feb827a9f328b0b68f7e394dcf7c6852348f46",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/previous_handover/original_handover/code/third_point/core/curve.py",
+    "destination": "cm_system/backends/genus_one/curve.py",
+    "source_sha256": "4e23322f5a24e515065ff2df65786e92b0c0d98d903883b3d8a3e495b79cadcf",
+    "delivered_sha256": "c40c5fedeb5cd0586eaf8f198be7347c5854f152bdfb286cdcad818935e0794a",
+    "changes": "package-relative imports and removal of legacy sys.path insertion; mathematics unchanged"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/previous_handover/original_handover/code/third_point/core/fields.py",
+    "destination": "cm_system/backends/genus_one/fields.py",
+    "source_sha256": "e2a6a5313567dc1fabe0d21f66263fc95f96ec4d0dc2b709463d47391969a3d2",
+    "delivered_sha256": "e2a6a5313567dc1fabe0d21f66263fc95f96ec4d0dc2b709463d47391969a3d2",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/previous_handover/original_handover/code/third_point/core/miller.py",
+    "destination": "cm_system/backends/genus_one/miller.py",
+    "source_sha256": "4191281341caebced320698e04236eebbbacc3faefc33e4aebe588e5390934b2",
+    "delivered_sha256": "7837b26f2ad2c85e34ce97ea778ee4748d5a0d4ebe6c7bbddb6a24a7fb4e2629",
+    "changes": "package-relative imports and removal of legacy sys.path insertion; mathematics unchanged"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/source/CM_Cartier_Extension_20261012/core/fixed_D_evaluator.py",
+    "destination": "cm_system/backends/cm/fixed_D_evaluator.py",
+    "source_sha256": "69ec093b5d7f874c2f12021bb4796c8f0883c05f9f9f9e8e1bc9e38345850742",
+    "delivered_sha256": "dcb1c81b93bed09d8f4c273ba653673c0a0f0c1379c2534fcee30ad0c4fa2cc4",
+    "changes": "repository-integration refresh to the current corrected code; package-relative import of d7_seed with standalone fallback",
+    "audit_delivered_sha256": "69ec093b5d7f874c2f12021bb4796c8f0883c05f9f9f9e8e1bc9e38345850742",
+    "refreshed_from": "repository main e7c3242: Cartier-Miller-Extensions-20261009/research/cm_cartier_comparison_20261012/core/fixed_D_evaluator.py (sha256 f0ca1ba0ae56ae40e07b135b6f26f7894212f2633c0be2c0d1d4be0e7700dc99)"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/source/CM_Cartier_Extension_20261012/core/d7_seed.py",
+    "destination": "cm_system/backends/cm/d7_seed.py",
+    "source_sha256": "aac40a8922b4188b7a1d03986c6c157f0ed93cecd9d6b1f821f4d40686085194",
+    "delivered_sha256": "aac40a8922b4188b7a1d03986c6c157f0ed93cecd9d6b1f821f4d40686085194",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/source/CM_Cartier_Extension_20261012/results/cm_tables.json",
+    "destination": "cm_system/backends/results/cm_tables.json",
+    "source_sha256": "66bbf3b00fd35bbe09f1f2cd49b4cb49ef24b4dc83e0119772aafbd4b9d3f63f",
+    "delivered_sha256": "66bbf3b00fd35bbe09f1f2cd49b4cb49ef24b4dc83e0119772aafbd4b9d3f63f",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/source/CM_Cartier_Extension_20261012/CM_Cartier_Extension_Note_20261012.md",
+    "destination": "evidence/CM_comparison.md",
+    "source_sha256": "ed483d67d3cb0898bf9a4f20db12bc3a95970b1ac91ad16cc44b80d9b06a3064",
+    "delivered_sha256": "ed483d67d3cb0898bf9a4f20db12bc3a95970b1ac91ad16cc44b80d9b06a3064",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/previous_handover/original_handover/historical/higher_genus_20260928/HIGHER_GENUS_REPORT.md",
+    "destination": "evidence/higher_genus.md",
+    "source_sha256": "b7c596fdd4686233e3bc16e8dc0a984c0e248420fe90e595628f55837e49cd4c",
+    "delivered_sha256": "b7c596fdd4686233e3bc16e8dc0a984c0e248420fe90e595628f55837e49cd4c",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_Scalar_Local_Audit_20261012(1)/Ordinary_Scalar_Local_Audit_20261012/Ordinary_Scalar_Local_Feasibility_Note_20261012.md",
+    "destination": "evidence/ordinary_local_audit.md",
+    "source_sha256": "c0d25d66c1fcdfd8751c7314c977aaa20babead2d63423a3ed67f457f072b6dd",
+    "delivered_sha256": "c0d25d66c1fcdfd8751c7314c977aaa20babead2d63423a3ed67f457f072b6dd",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/knowledge/CM_review.md",
+    "destination": "evidence/CM_review.md",
+    "source_sha256": "3483a54ce48e908ebcba4b268e1d668d8986f970091b2364b4c04debe66a2cba",
+    "delivered_sha256": "3483a54ce48e908ebcba4b268e1d668d8986f970091b2364b4c04debe66a2cba",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/previous_handover/original_handover/historical/padic_quarter_20260928/P_ADIC_MILLER_REPORT.md",
+    "destination": "evidence/padic_quarter.md",
+    "source_sha256": "ce01afb8e1f5e94a514ebfedfbc01326d73ee25bb7951f80aec9661190f24c89",
+    "delivered_sha256": "ce01afb8e1f5e94a514ebfedfbc01326d73ee25bb7951f80aec9661190f24c89",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/previous_handover/original_handover/manuscript/Cartier_Miller_Paper_Revised_20261005_Convenience.md",
+    "destination": "evidence/manuscript_convenience.md",
+    "source_sha256": "d0e1a2600e6d9f349d601760b49ebad69e981f4ed89e264796d2ab9f771c3eb5",
+    "delivered_sha256": "d0e1a2600e6d9f349d601760b49ebad69e981f4ed89e264796d2ab9f771c3eb5",
+    "changes": "none",
+    "redistributed": false,
+    "release_note": "Not redistributed in the repository release: manuscript material is excluded, as in the extensions release."
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/historical_precision_two/REPORT.md",
+    "destination": "evidence/native_precision_two.md",
+    "source_sha256": "facb0dd40035caf733b1a43cccb9f3cfd23ea1fa3262b2b29693b2ea2c4a9077",
+    "delivered_sha256": "facb0dd40035caf733b1a43cccb9f3cfd23ea1fa3262b2b29693b2ea2c4a9077",
+    "changes": "none"
+  },
+  {
+    "source": "audit_sources/rounded_third_tal_applicability_obsidian.md",
+    "destination": "evidence/rounded_third_Tal.md",
+    "source_sha256": "fc24fe2882bd83b4ac99d6b6044b3763722f84d5e37faf0226e17f84ad271bd9",
+    "delivered_sha256": "fc24fe2882bd83b4ac99d6b6044b3763722f84d5e37faf0226e17f84ad271bd9",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_Scalar_Local_Audit_20261012(1)/Ordinary_Scalar_Local_Audit_20261012/scalar_math.py",
+    "destination": "evidence/ordinary_scalar/scalar_math.py",
+    "source_sha256": "5abe18a821fe1aba19adc79aa6d7450ac997a8e51ad09bb578c9296019549976",
+    "delivered_sha256": "5abe18a821fe1aba19adc79aa6d7450ac997a8e51ad09bb578c9296019549976",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/validation/results/same_trace_different_slopes.json",
+    "destination": "evidence/ordinary_scalar/fixtures/same_trace_different_slopes.json",
+    "source_sha256": "24dba472a8f4dd70da2a144b0ef5cb26b5d6db2b0aec263eb29ab87442ea122a",
+    "delivered_sha256": "24dba472a8f4dd70da2a144b0ef5cb26b5d6db2b0aec263eb29ab87442ea122a",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/validation/results/ordinary_targets.csv",
+    "destination": "evidence/ordinary_scalar/fixtures/ordinary_targets.csv",
+    "source_sha256": "dbae08872c11cc31f472089bfe58050f5eb36570dc63a57d189071dfca330573",
+    "delivered_sha256": "6f797404a145f1496d73ffe14676f52eb91a47c99c62cb58a934e31b8fa2715e",
+    "changes": "package-relative imports and removal of legacy sys.path insertion; mathematics unchanged"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/branch_point_20261006/branch_evaluator.py",
+    "destination": "retained_research/branch_point_20261006/branch_evaluator.py",
+    "source_sha256": "d19fe4880fde99425f1c8bd72d38500083c16ca5ac4d28c63cc078bd4d5ebc0b",
+    "delivered_sha256": "d19fe4880fde99425f1c8bd72d38500083c16ca5ac4d28c63cc078bd4d5ebc0b",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/isogeny_closure_20261006/core/isogeny_closure.py",
+    "destination": "retained_research/isogeny_closure_20261006/core/isogeny_closure.py",
+    "source_sha256": "c2156457d06bdbb380ce8d80a6e2e5651a6292c60ab827f367efd9f05b1e2d9b",
+    "delivered_sha256": "c2156457d06bdbb380ce8d80a6e2e5651a6292c60ab827f367efd9f05b1e2d9b",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/depth_two_recognition_20261006/core/recognize.py",
+    "destination": "retained_research/depth_two_recognition_20261006/core/recognize.py",
+    "source_sha256": "0e816bb3e4630670bc3c69a8943f6478c21ed084ff6f534be4496b92c9684807",
+    "delivered_sha256": "0e816bb3e4630670bc3c69a8943f6478c21ed084ff6f534be4496b92c9684807",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/depth_three_recognition_20261007/core/validate_depth_three.py",
+    "destination": "retained_research/depth_three_recognition_20261007/core/validate_depth_three.py",
+    "source_sha256": "494f7332b5cca1859a55d5fcc89c6574ac0c856b328a4a824ff1b131c20b671d",
+    "delivered_sha256": "61b65d6bdd1ba55ad3854b4f8e2caae19fac85ebc1e77ca62b254d5f2fd01f59",
+    "changes": "repository-integration refresh to the current corrected code (schema patch, B=0 sign helper, deterministic-sign merge); unchanged from main",
+    "audit_delivered_sha256": "494f7332b5cca1859a55d5fcc89c6574ac0c856b328a4a824ff1b131c20b671d",
+    "refreshed_from": "repository main e7c3242: Cartier-Miller-Extensions-20261009/research/depth_three_recognition_20261007/core/validate_depth_three.py (sha256 61b65d6bdd1ba55ad3854b4f8e2caae19fac85ebc1e77ca62b254d5f2fd01f59)"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/depth_three_recognition_20261007/core/cli.py",
+    "destination": "retained_research/depth_three_recognition_20261007/core/cli.py",
+    "source_sha256": "a8701b281a1434293d95e39616aea09a00188a472c0fe181d3408aab7776e6b6",
+    "delivered_sha256": "6722417af40192cc3192f63b5cb59cd2c8c36835a4f00289c5d04550905a8c4b",
+    "changes": "repository-integration refresh to the current corrected code (schema patch, B=0 sign helper, deterministic-sign merge); unchanged from main",
+    "audit_delivered_sha256": "a8701b281a1434293d95e39616aea09a00188a472c0fe181d3408aab7776e6b6",
+    "refreshed_from": "repository main e7c3242: Cartier-Miller-Extensions-20261009/research/depth_three_recognition_20261007/core/cli.py (sha256 6722417af40192cc3192f63b5cb59cd2c8c36835a4f00289c5d04550905a8c4b)"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/depth_three_recognition_20261007/core/depth_three_recognize.py",
+    "destination": "retained_research/depth_three_recognition_20261007/core/depth_three_recognize.py",
+    "source_sha256": "b3bffe46aa792aa82c63035b1928d8acf67dd12882d34bcc03967b00d064a1c2",
+    "delivered_sha256": "8a984091162d2147bbd142ddfb6e83ed7585f42bca277f94d2436badcf7b9f32",
+    "changes": "repository-integration refresh to the current corrected code (schema patch, B=0 sign helper, deterministic-sign merge); unchanged from main",
+    "audit_delivered_sha256": "b3bffe46aa792aa82c63035b1928d8acf67dd12882d34bcc03967b00d064a1c2",
+    "refreshed_from": "repository main e7c3242: Cartier-Miller-Extensions-20261009/research/depth_three_recognition_20261007/core/depth_three_recognize.py (sha256 8a984091162d2147bbd142ddfb6e83ed7585f42bca277f94d2436badcf7b9f32)"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/depth_three_recognition_20261007/core/depth_three_b0_recognize.py",
+    "destination": "retained_research/depth_three_recognition_20261007/core/depth_three_b0_recognize.py",
+    "source_sha256": "a7142c42e1a748612a961ec9f4e185589569f4de2b398ff7fe0c8f293b95614a",
+    "delivered_sha256": "b217018b999c3c6ad1fbe84f71b95f6b52ae3f13ceb5fc2173a85166d8959f80",
+    "changes": "repository-integration refresh to the current corrected code (schema patch, B=0 sign helper, deterministic-sign merge); unchanged from main",
+    "audit_delivered_sha256": "a7142c42e1a748612a961ec9f4e185589569f4de2b398ff7fe0c8f293b95614a",
+    "refreshed_from": "repository main e7c3242: Cartier-Miller-Extensions-20261009/research/depth_three_recognition_20261007/core/depth_three_b0_recognize.py (sha256 b217018b999c3c6ad1fbe84f71b95f6b52ae3f13ceb5fc2173a85166d8959f80)"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/research/depth_three_recognition_20261007/core/validate_depth_three_b0.py",
+    "destination": "retained_research/depth_three_recognition_20261007/core/validate_depth_three_b0.py",
+    "source_sha256": "e246f4ab39034317059946a500aace5fc7f129f52ab0a163a341898c3f744055",
+    "delivered_sha256": "e246f4ab39034317059946a500aace5fc7f129f52ab0a163a341898c3f744055",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/context/CM_Cartier_Research_Handover_20261012/retained/inherited/previous_handover/original_handover/historical/Witt_BGS_Precision_Two_20261001.zip",
+    "destination": "retained_archives/Witt_BGS_Precision_Two_20261001.zip",
+    "source_sha256": "4469f014a3d10b16368cb93775548b1618d724dd475b33fb02ae013f73c38ce4",
+    "delivered_sha256": "4469f014a3d10b16368cb93775548b1618d724dd475b33fb02ae013f73c38ce4",
+    "changes": "none",
+    "redistributed": false,
+    "release_note": "Not redistributed in the repository release: contains September historical archives excluded by the extensions PROVENANCE, LGPL FLINT headers, a compiled binary or nested handoff archives. Identified by its SHA-256 only."
+  },
+  {
+    "source": "audit_extract/Ordinary_K_Research_Handover_20261012(1)/Ordinary_K_Research_Handover_20261012/support/CM_Cartier_Adversarial_Review_20261012/source/CM_Cartier_Extension_20261012/CM_Cartier_Extension_Note_20261012.md",
+    "destination": "evidence/CM_comparison.md",
+    "source_sha256": "ed483d67d3cb0898bf9a4f20db12bc3a95970b1ac91ad16cc44b80d9b06a3064",
+    "delivered_sha256": "ed483d67d3cb0898bf9a4f20db12bc3a95970b1ac91ad16cc44b80d9b06a3064",
+    "changes": "none"
+  },
+  {
+    "source": "audit_extract/essentials/Cartier_Miller_Research_Essentials/work/cartier_miller_studio/README.md",
+    "destination": "evidence/prior_studio_README.md",
+    "source_sha256": "9e2cd4ed5886d495e18a8174cf6afc79642f54bfd772ec835246a78f4f323bf0",
+    "delivered_sha256": "9e2cd4ed5886d495e18a8174cf6afc79642f54bfd772ec835246a78f4f323bf0",
+    "changes": "none"
+  },
+  {
+    "source": "audit_fifth_sources/Fifth_Point_Boundaries_20260930.docx",
+    "destination": "evidence/Fifth_Point_Boundaries_20260930.docx",
+    "source_sha256": "7761483cf21795925b6f4c84a48a9ab870fa2875297c949cd9781fc164d3e5ec",
+    "delivered_sha256": "7761483cf21795925b6f4c84a48a9ab870fa2875297c949cd9781fc164d3e5ec",
+    "changes": "none"
+  },
+  {
+    "source": "audit_fifth_sources/BGS_Fifth_Point_Comparison_20260930.docx",
+    "destination": "evidence/BGS_Fifth_Point_Comparison_20260930.docx",
+    "source_sha256": "673d5a08fdce9cb8043027fbe8bf3d209074fe2e19c5dd61f43aed9f948707fe",
+    "delivered_sha256": "673d5a08fdce9cb8043027fbe8bf3d209074fe2e19c5dd61f43aed9f948707fe",
+    "changes": "none"
+  },
+  {
+    "source": "audit_fifth_sources/Tenth_Point_Independent_Review_20260930.docx",
+    "destination": "evidence/Tenth_Point_Independent_Review_20260930.docx",
+    "source_sha256": "9955eca68117b76fdd3efa59ba483a5835e12913f18d9da0ef5b8765797c9fa6",
+    "delivered_sha256": "9955eca68117b76fdd3efa59ba483a5835e12913f18d9da0ef5b8765797c9fa6",
+    "changes": "none"
+  },
+  {
+    "source": "supplied upload/HIGHER_GENUS_RESEARCH_20260928.zip",
+    "destination": "retained_archives/HIGHER_GENUS_RESEARCH_20260928.zip",
+    "source_sha256": "c2294b9fe038aacdf15a8d96c86cba8d6dd55137d60865c8a56054eb7fc6f38f",
+    "delivered_sha256": "c2294b9fe038aacdf15a8d96c86cba8d6dd55137d60865c8a56054eb7fc6f38f",
+    "changes": "none",
+    "redistributed": false,
+    "release_note": "Not redistributed in the repository release: contains September historical archives excluded by the extensions PROVENANCE, LGPL FLINT headers, a compiled binary or nested handoff archives. Identified by its SHA-256 only."
+  },
+  {
+    "source": "supplied upload/p-Adic_quarter.zip",
+    "destination": "retained_archives/p-Adic_quarter.zip",
+    "source_sha256": "9cd3e84a31b74d21358e26f928b4fb14119107a7585f15e54578370805feeb3d",
+    "delivered_sha256": "9cd3e84a31b74d21358e26f928b4fb14119107a7585f15e54578370805feeb3d",
+    "changes": "none",
+    "redistributed": false,
+    "release_note": "Not redistributed in the repository release: contains September historical archives excluded by the extensions PROVENANCE, LGPL FLINT headers, a compiled binary or nested handoff archives. Identified by its SHA-256 only."
+  }
+]

@@ -1,0 +1,91 @@
+{
+  "date": "2026-10-13",
+  "outcome": "working bounded integration; no new fast missing-data algorithm",
+  "live_services": [
+    "original_U_mod_p",
+    "original_U_mod_p2",
+    "genus_one_row",
+    "fixed_D_and_generic_Cartier",
+    "cubic_branch",
+    "higher_genus_complete_hybrids",
+    "weighted_binomial_prefix",
+    "general_weight_prefix",
+    "quarter_precision_diagnostics"
+  ],
+  "new_claim_scope": "software contracts, exact adapter validation, complete-output comparisons and algebraic consolidation only",
+  "validation": {
+    "status": "passed",
+    "counts": {
+      "sum_outputs": 12798,
+      "exact_fraction_outputs": 580,
+      "higher_complete_outputs": 175,
+      "cache_contracts": 175,
+      "general_weight_prefixes": 525,
+      "weighted_outputs": 174,
+      "quarter2_complete": 20,
+      "Witt_independent_series": 20,
+      "zero_boundary_multiplier_skips": 9,
+      "ordinary_third_exceptions": 1,
+      "forced_tree_widths": 54,
+      "genus_one_row_queries": 7226,
+      "row_exception_queries": 283,
+      "row_split_queries": 1043,
+      "Cartier_coefficients": 533,
+      "CM_model_hits": 105,
+      "model_scaling": 533,
+      "depth1_recognition": 88,
+      "depth1_table_agreement": 88,
+      "depth2_recognition": 41,
+      "depth2_table_agreement": 41,
+      "depth3_A0_recognition": 9,
+      "depth3_A0_table_agreement": 9,
+      "depth3_B0_recognition": 8,
+      "depth3_B0_table_agreement": 8,
+      "branch_queries": 101,
+      "p13_counterexamples": 1,
+      "p17_original_correction": 1,
+      "p7_full_block_counterexample": 1,
+      "p29_boundary_skip": 1,
+      "finite_field_derivative_counterexample": 1,
+      "shared_direct_batch": 6,
+      "input_and_budget_rejections": 12,
+      "trust_status": 1,
+      "CLI_failure_exit": 1
+    },
+    "seed": 20261013,
+    "elapsed_seconds": 5.807922727000005,
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "scope": "bounded implementation checks, not external proof review"
+  },
+  "benchmarks": {
+    "complete_workloads": 7,
+    "method_summary_rows": 19,
+    "repeats": 5,
+    "memory_probes": 8
+  },
+  "not_completed": [
+    "native FLINT backend port/build",
+    "Windows execution",
+    "generic fast ordinary slope",
+    "logarithmic higher-genus boundary",
+    "sum-avoiding Witt or combined-correction extractor",
+    "Tal factorial backend",
+    "GUI rewrite",
+    "repository publication"
+  ],
+  "retained_negative_controls": [
+    "p13: B=70; naive=44; unit-root=83",
+    "p17: original U=179 mod289",
+    "p7: U=39 mod49",
+    "p19: true boundary15; false derivative boundary8"
+  ],
+  "review_qualifications": [
+    "CM eigenvalue separation and integrality",
+    "specified differential basis and model dependence",
+    "no generic characteristic-p meromorphic/de Rham quotient claim",
+    "trace acquisition and trust distinct",
+    "finite verification is not proof or novelty"
+  ],
+  "source_integrity": "67 handover entries and 88 nested review artifacts verified by retained runners",
+  "preservation": "published manuscript and repository not modified; source archives unchanged"
+}

@@ -1,0 +1,2313 @@
+{
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+    "cpu_count": 9,
+    "backend": "python-int",
+    "flint_available": false,
+    "timer": "perf_counter_ns",
+    "repeats": 5,
+    "timing_contract": "fresh Session each complete query; imports and serialization excluded; prime validation included",
+    "multi_output_contract": "one shared direct pass; one shared higher-genus pass; independent original-U product tree per index",
+    "affinity": "not pinned; no portable crossover inferred"
+  },
+  "cases": [
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": [
+        16384
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ]
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ]
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": [
+        33334
+      ],
+      "precision": 1,
+      "methods": [
+        "ordinary_third",
+        "direct",
+        "product_tree"
+      ]
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": [
+        200008,
+        400016
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:2",
+        "direct",
+        "product_tree"
+      ]
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": [
+        1430,
+        2860,
+        4290
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:3",
+        "direct",
+        "product_tree"
+      ]
+    },
+    {
+      "case": "generic",
+      "p": 100003,
+      "indices": [
+        12345
+      ],
+      "precision": 1,
+      "methods": [
+        "direct",
+        "product_tree"
+      ]
+    },
+    {
+      "case": "original_U_precision_two",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 2,
+      "methods": [
+        "direct",
+        "product_tree"
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": [
+        16384
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "quarter",
+      "repetition": 0,
+      "seconds": 0.000142505,
+      "outputs": [
+        44072
+      ]
+    },
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": [
+        16384
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 0,
+      "seconds": 0.004612749,
+      "outputs": [
+        44072
+      ]
+    },
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": [
+        16384
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 0,
+      "seconds": 0.01381359,
+      "outputs": [
+        44072
+      ]
+    },
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": [
+        16384
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 1,
+      "seconds": 0.004682191,
+      "outputs": [
+        44072
+      ]
+    },
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": [
+        16384
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 1,
+      "seconds": 0.012646616,
+      "outputs": [
+        44072
+      ]
+    },
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": [
+        16384
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "quarter",
+      "repetition": 1,
+      "seconds": 0.000101114,
+      "outputs": [
+        44072
+      ]
+    },
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": [
+        16384
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 2,
+      "seconds": 0.013617242,
+      "outputs": [
+        44072
+      ]
+    },
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": [
+        16384
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "quarter",
+      "repetition": 2,
+      "seconds": 0.000115936,
+      "outputs": [
+        44072
+      ]
+    },
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": [
+        16384
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 2,
+      "seconds": 0.004891963,
+      "outputs": [
+        44072
+      ]
+    },
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": [
+        16384
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "quarter",
+      "repetition": 3,
+      "seconds": 0.000458669,
+      "outputs": [
+        44072
+      ]
+    },
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": [
+        16384
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 3,
+      "seconds": 0.004482095,
+      "outputs": [
+        44072
+      ]
+    },
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": [
+        16384
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 3,
+      "seconds": 0.013486101,
+      "outputs": [
+        44072
+      ]
+    },
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": [
+        16384
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 4,
+      "seconds": 0.00552543,
+      "outputs": [
+        44072
+      ]
+    },
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": [
+        16384
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 4,
+      "seconds": 0.012738707,
+      "outputs": [
+        44072
+      ]
+    },
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": [
+        16384
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "quarter",
+      "repetition": 4,
+      "seconds": 9.0733e-05,
+      "outputs": [
+        44072
+      ]
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "quarter",
+      "repetition": 0,
+      "seconds": 0.000303434,
+      "outputs": [
+        352257
+      ]
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 0,
+      "seconds": 0.07828312,
+      "outputs": [
+        352257
+      ]
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 0,
+      "seconds": 0.089712875,
+      "outputs": [
+        352257
+      ]
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 1,
+      "seconds": 0.102683355,
+      "outputs": [
+        352257
+      ]
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 1,
+      "seconds": 0.079979071,
+      "outputs": [
+        352257
+      ]
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "quarter",
+      "repetition": 1,
+      "seconds": 0.000353545,
+      "outputs": [
+        352257
+      ]
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 2,
+      "seconds": 0.077113317,
+      "outputs": [
+        352257
+      ]
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "quarter",
+      "repetition": 2,
+      "seconds": 0.000307223,
+      "outputs": [
+        352257
+      ]
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 2,
+      "seconds": 0.081387086,
+      "outputs": [
+        352257
+      ]
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "quarter",
+      "repetition": 3,
+      "seconds": 0.000291967,
+      "outputs": [
+        352257
+      ]
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 3,
+      "seconds": 0.091742469,
+      "outputs": [
+        352257
+      ]
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 3,
+      "seconds": 0.06711626,
+      "outputs": [
+        352257
+      ]
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 4,
+      "seconds": 0.071619053,
+      "outputs": [
+        352257
+      ]
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 4,
+      "seconds": 0.077537555,
+      "outputs": [
+        352257
+      ]
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 1,
+      "methods": [
+        "quarter",
+        "direct",
+        "product_tree"
+      ],
+      "method": "quarter",
+      "repetition": 4,
+      "seconds": 0.000280106,
+      "outputs": [
+        352257
+      ]
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": [
+        33334
+      ],
+      "precision": 1,
+      "methods": [
+        "ordinary_third",
+        "direct",
+        "product_tree"
+      ],
+      "method": "ordinary_third",
+      "repetition": 0,
+      "seconds": 0.000237247,
+      "outputs": [
+        1514
+      ]
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": [
+        33334
+      ],
+      "precision": 1,
+      "methods": [
+        "ordinary_third",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 0,
+      "seconds": 0.009930255,
+      "outputs": [
+        1514
+      ]
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": [
+        33334
+      ],
+      "precision": 1,
+      "methods": [
+        "ordinary_third",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 0,
+      "seconds": 0.021290916,
+      "outputs": [
+        1514
+      ]
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": [
+        33334
+      ],
+      "precision": 1,
+      "methods": [
+        "ordinary_third",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 1,
+      "seconds": 0.010012919,
+      "outputs": [
+        1514
+      ]
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": [
+        33334
+      ],
+      "precision": 1,
+      "methods": [
+        "ordinary_third",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 1,
+      "seconds": 0.020456869,
+      "outputs": [
+        1514
+      ]
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": [
+        33334
+      ],
+      "precision": 1,
+      "methods": [
+        "ordinary_third",
+        "direct",
+        "product_tree"
+      ],
+      "method": "ordinary_third",
+      "repetition": 1,
+      "seconds": 0.000203803,
+      "outputs": [
+        1514
+      ]
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": [
+        33334
+      ],
+      "precision": 1,
+      "methods": [
+        "ordinary_third",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 2,
+      "seconds": 0.028141483,
+      "outputs": [
+        1514
+      ]
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": [
+        33334
+      ],
+      "precision": 1,
+      "methods": [
+        "ordinary_third",
+        "direct",
+        "product_tree"
+      ],
+      "method": "ordinary_third",
+      "repetition": 2,
+      "seconds": 0.000202402,
+      "outputs": [
+        1514
+      ]
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": [
+        33334
+      ],
+      "precision": 1,
+      "methods": [
+        "ordinary_third",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 2,
+      "seconds": 0.01106213,
+      "outputs": [
+        1514
+      ]
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": [
+        33334
+      ],
+      "precision": 1,
+      "methods": [
+        "ordinary_third",
+        "direct",
+        "product_tree"
+      ],
+      "method": "ordinary_third",
+      "repetition": 3,
+      "seconds": 0.00017915,
+      "outputs": [
+        1514
+      ]
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": [
+        33334
+      ],
+      "precision": 1,
+      "methods": [
+        "ordinary_third",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 3,
+      "seconds": 0.009628529,
+      "outputs": [
+        1514
+      ]
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": [
+        33334
+      ],
+      "precision": 1,
+      "methods": [
+        "ordinary_third",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 3,
+      "seconds": 0.02085636,
+      "outputs": [
+        1514
+      ]
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": [
+        33334
+      ],
+      "precision": 1,
+      "methods": [
+        "ordinary_third",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 4,
+      "seconds": 0.00933922,
+      "outputs": [
+        1514
+      ]
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": [
+        33334
+      ],
+      "precision": 1,
+      "methods": [
+        "ordinary_third",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 4,
+      "seconds": 0.02037517,
+      "outputs": [
+        1514
+      ]
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": [
+        33334
+      ],
+      "precision": 1,
+      "methods": [
+        "ordinary_third",
+        "direct",
+        "product_tree"
+      ],
+      "method": "ordinary_third",
+      "repetition": 4,
+      "seconds": 0.000188322,
+      "outputs": [
+        1514
+      ]
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": [
+        200008,
+        400016
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:2",
+        "direct",
+        "product_tree"
+      ],
+      "method": "higher:2",
+      "repetition": 0,
+      "seconds": 0.029827067,
+      "outputs": [
+        396174,
+        784458
+      ]
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": [
+        200008,
+        400016
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:2",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 0,
+      "seconds": 0.120158813,
+      "outputs": [
+        396174,
+        784458
+      ]
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": [
+        200008,
+        400016
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:2",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 0,
+      "seconds": 0.160282095,
+      "outputs": [
+        396174,
+        784458
+      ]
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": [
+        200008,
+        400016
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:2",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 1,
+      "seconds": 0.116625579,
+      "outputs": [
+        396174,
+        784458
+      ]
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": [
+        200008,
+        400016
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:2",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 1,
+      "seconds": 0.166258915,
+      "outputs": [
+        396174,
+        784458
+      ]
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": [
+        200008,
+        400016
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:2",
+        "direct",
+        "product_tree"
+      ],
+      "method": "higher:2",
+      "repetition": 1,
+      "seconds": 0.034416908,
+      "outputs": [
+        396174,
+        784458
+      ]
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": [
+        200008,
+        400016
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:2",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 2,
+      "seconds": 0.157175907,
+      "outputs": [
+        396174,
+        784458
+      ]
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": [
+        200008,
+        400016
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:2",
+        "direct",
+        "product_tree"
+      ],
+      "method": "higher:2",
+      "repetition": 2,
+      "seconds": 0.029058279,
+      "outputs": [
+        396174,
+        784458
+      ]
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": [
+        200008,
+        400016
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:2",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 2,
+      "seconds": 0.116749156,
+      "outputs": [
+        396174,
+        784458
+      ]
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": [
+        200008,
+        400016
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:2",
+        "direct",
+        "product_tree"
+      ],
+      "method": "higher:2",
+      "repetition": 3,
+      "seconds": 0.030049609,
+      "outputs": [
+        396174,
+        784458
+      ]
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": [
+        200008,
+        400016
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:2",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 3,
+      "seconds": 0.113700651,
+      "outputs": [
+        396174,
+        784458
+      ]
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": [
+        200008,
+        400016
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:2",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 3,
+      "seconds": 0.147111905,
+      "outputs": [
+        396174,
+        784458
+      ]
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": [
+        200008,
+        400016
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:2",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 4,
+      "seconds": 0.14225807,
+      "outputs": [
+        396174,
+        784458
+      ]
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": [
+        200008,
+        400016
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:2",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 4,
+      "seconds": 0.193395426,
+      "outputs": [
+        396174,
+        784458
+      ]
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": [
+        200008,
+        400016
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:2",
+        "direct",
+        "product_tree"
+      ],
+      "method": "higher:2",
+      "repetition": 4,
+      "seconds": 0.029280078,
+      "outputs": [
+        396174,
+        784458
+      ]
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": [
+        1430,
+        2860,
+        4290
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:3",
+        "direct",
+        "product_tree"
+      ],
+      "method": "higher:3",
+      "repetition": 0,
+      "seconds": 0.009158309,
+      "outputs": [
+        9698,
+        1454,
+        8800
+      ]
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": [
+        1430,
+        2860,
+        4290
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:3",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 0,
+      "seconds": 0.00112745,
+      "outputs": [
+        9698,
+        1454,
+        8800
+      ]
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": [
+        1430,
+        2860,
+        4290
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:3",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 0,
+      "seconds": 0.012218835,
+      "outputs": [
+        9698,
+        1454,
+        8800
+      ]
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": [
+        1430,
+        2860,
+        4290
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:3",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 1,
+      "seconds": 0.001147265,
+      "outputs": [
+        9698,
+        1454,
+        8800
+      ]
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": [
+        1430,
+        2860,
+        4290
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:3",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 1,
+      "seconds": 0.012305667,
+      "outputs": [
+        9698,
+        1454,
+        8800
+      ]
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": [
+        1430,
+        2860,
+        4290
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:3",
+        "direct",
+        "product_tree"
+      ],
+      "method": "higher:3",
+      "repetition": 1,
+      "seconds": 0.0089557,
+      "outputs": [
+        9698,
+        1454,
+        8800
+      ]
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": [
+        1430,
+        2860,
+        4290
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:3",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 2,
+      "seconds": 0.013218576,
+      "outputs": [
+        9698,
+        1454,
+        8800
+      ]
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": [
+        1430,
+        2860,
+        4290
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:3",
+        "direct",
+        "product_tree"
+      ],
+      "method": "higher:3",
+      "repetition": 2,
+      "seconds": 0.012932748,
+      "outputs": [
+        9698,
+        1454,
+        8800
+      ]
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": [
+        1430,
+        2860,
+        4290
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:3",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 2,
+      "seconds": 0.001631106,
+      "outputs": [
+        9698,
+        1454,
+        8800
+      ]
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": [
+        1430,
+        2860,
+        4290
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:3",
+        "direct",
+        "product_tree"
+      ],
+      "method": "higher:3",
+      "repetition": 3,
+      "seconds": 0.013098841,
+      "outputs": [
+        9698,
+        1454,
+        8800
+      ]
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": [
+        1430,
+        2860,
+        4290
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:3",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 3,
+      "seconds": 0.001184516,
+      "outputs": [
+        9698,
+        1454,
+        8800
+      ]
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": [
+        1430,
+        2860,
+        4290
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:3",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 3,
+      "seconds": 0.013066246,
+      "outputs": [
+        9698,
+        1454,
+        8800
+      ]
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": [
+        1430,
+        2860,
+        4290
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:3",
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 4,
+      "seconds": 0.001225626,
+      "outputs": [
+        9698,
+        1454,
+        8800
+      ]
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": [
+        1430,
+        2860,
+        4290
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:3",
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 4,
+      "seconds": 0.013515674,
+      "outputs": [
+        9698,
+        1454,
+        8800
+      ]
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": [
+        1430,
+        2860,
+        4290
+      ],
+      "precision": 1,
+      "methods": [
+        "higher:3",
+        "direct",
+        "product_tree"
+      ],
+      "method": "higher:3",
+      "repetition": 4,
+      "seconds": 0.009784196,
+      "outputs": [
+        9698,
+        1454,
+        8800
+      ]
+    },
+    {
+      "case": "generic",
+      "p": 100003,
+      "indices": [
+        12345
+      ],
+      "precision": 1,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 0,
+      "seconds": 0.003599251,
+      "outputs": [
+        67784
+      ]
+    },
+    {
+      "case": "generic",
+      "p": 100003,
+      "indices": [
+        12345
+      ],
+      "precision": 1,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 0,
+      "seconds": 0.011914999,
+      "outputs": [
+        67784
+      ]
+    },
+    {
+      "case": "generic",
+      "p": 100003,
+      "indices": [
+        12345
+      ],
+      "precision": 1,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 1,
+      "seconds": 0.013936203,
+      "outputs": [
+        67784
+      ]
+    },
+    {
+      "case": "generic",
+      "p": 100003,
+      "indices": [
+        12345
+      ],
+      "precision": 1,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 1,
+      "seconds": 0.00385439,
+      "outputs": [
+        67784
+      ]
+    },
+    {
+      "case": "generic",
+      "p": 100003,
+      "indices": [
+        12345
+      ],
+      "precision": 1,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 2,
+      "seconds": 0.004327904,
+      "outputs": [
+        67784
+      ]
+    },
+    {
+      "case": "generic",
+      "p": 100003,
+      "indices": [
+        12345
+      ],
+      "precision": 1,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 2,
+      "seconds": 0.010643939,
+      "outputs": [
+        67784
+      ]
+    },
+    {
+      "case": "generic",
+      "p": 100003,
+      "indices": [
+        12345
+      ],
+      "precision": 1,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 3,
+      "seconds": 0.010526076,
+      "outputs": [
+        67784
+      ]
+    },
+    {
+      "case": "generic",
+      "p": 100003,
+      "indices": [
+        12345
+      ],
+      "precision": 1,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 3,
+      "seconds": 0.003345904,
+      "outputs": [
+        67784
+      ]
+    },
+    {
+      "case": "generic",
+      "p": 100003,
+      "indices": [
+        12345
+      ],
+      "precision": 1,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 4,
+      "seconds": 0.003886275,
+      "outputs": [
+        67784
+      ]
+    },
+    {
+      "case": "generic",
+      "p": 100003,
+      "indices": [
+        12345
+      ],
+      "precision": 1,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 4,
+      "seconds": 0.010884764,
+      "outputs": [
+        67784
+      ]
+    },
+    {
+      "case": "original_U_precision_two",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 2,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 0,
+      "seconds": 0.098991963,
+      "outputs": [
+        479873476450
+      ]
+    },
+    {
+      "case": "original_U_precision_two",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 2,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 0,
+      "seconds": 0.090608739,
+      "outputs": [
+        479873476450
+      ]
+    },
+    {
+      "case": "original_U_precision_two",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 2,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 1,
+      "seconds": 0.092064131,
+      "outputs": [
+        479873476450
+      ]
+    },
+    {
+      "case": "original_U_precision_two",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 2,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 1,
+      "seconds": 0.09741432,
+      "outputs": [
+        479873476450
+      ]
+    },
+    {
+      "case": "original_U_precision_two",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 2,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 2,
+      "seconds": 0.100718037,
+      "outputs": [
+        479873476450
+      ]
+    },
+    {
+      "case": "original_U_precision_two",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 2,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 2,
+      "seconds": 0.09495085,
+      "outputs": [
+        479873476450
+      ]
+    },
+    {
+      "case": "original_U_precision_two",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 2,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 3,
+      "seconds": 0.096147305,
+      "outputs": [
+        479873476450
+      ]
+    },
+    {
+      "case": "original_U_precision_two",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 2,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 3,
+      "seconds": 0.109163593,
+      "outputs": [
+        479873476450
+      ]
+    },
+    {
+      "case": "original_U_precision_two",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 2,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "direct",
+      "repetition": 4,
+      "seconds": 0.108563066,
+      "outputs": [
+        479873476450
+      ]
+    },
+    {
+      "case": "original_U_precision_two",
+      "p": 1048589,
+      "indices": [
+        262147
+      ],
+      "precision": 2,
+      "methods": [
+        "direct",
+        "product_tree"
+      ],
+      "method": "product_tree",
+      "repetition": 4,
+      "seconds": 0.102338247,
+      "outputs": [
+        479873476450
+      ]
+    }
+  ],
+  "summaries": [
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": "16384",
+      "precision": 1,
+      "method": "quarter",
+      "median_ms": 0.115936,
+      "minimum_ms": 0.090733,
+      "maximum_ms": 0.458669,
+      "outputs": "44072",
+      "complete_setup": true
+    },
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": "16384",
+      "precision": 1,
+      "method": "direct",
+      "median_ms": 4.6821909999999995,
+      "minimum_ms": 4.482095,
+      "maximum_ms": 5.525429999999999,
+      "outputs": "44072",
+      "complete_setup": true
+    },
+    {
+      "case": "quarter_small",
+      "p": 65537,
+      "indices": "16384",
+      "precision": 1,
+      "method": "product_tree",
+      "median_ms": 13.486101,
+      "minimum_ms": 12.646616,
+      "maximum_ms": 13.813590000000001,
+      "outputs": "44072",
+      "complete_setup": true
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": "262147",
+      "precision": 1,
+      "method": "quarter",
+      "median_ms": 0.303434,
+      "minimum_ms": 0.280106,
+      "maximum_ms": 0.353545,
+      "outputs": "352257",
+      "complete_setup": true
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": "262147",
+      "precision": 1,
+      "method": "direct",
+      "median_ms": 81.387086,
+      "minimum_ms": 71.61905300000001,
+      "maximum_ms": 102.683355,
+      "outputs": "352257",
+      "complete_setup": true
+    },
+    {
+      "case": "quarter_large",
+      "p": 1048589,
+      "indices": "262147",
+      "precision": 1,
+      "method": "product_tree",
+      "median_ms": 77.537555,
+      "minimum_ms": 67.11626,
+      "maximum_ms": 89.712875,
+      "outputs": "352257",
+      "complete_setup": true
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": "33334",
+      "precision": 1,
+      "method": "ordinary_third",
+      "median_ms": 0.202402,
+      "minimum_ms": 0.17915,
+      "maximum_ms": 0.237247,
+      "outputs": "1514",
+      "complete_setup": true
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": "33334",
+      "precision": 1,
+      "method": "direct",
+      "median_ms": 9.930255,
+      "minimum_ms": 9.339220000000001,
+      "maximum_ms": 11.06213,
+      "outputs": "1514",
+      "complete_setup": true
+    },
+    {
+      "case": "ordinary_third",
+      "p": 100003,
+      "indices": "33334",
+      "precision": 1,
+      "method": "product_tree",
+      "median_ms": 20.856360000000002,
+      "minimum_ms": 20.37517,
+      "maximum_ms": 28.141482999999997,
+      "outputs": "1514",
+      "complete_setup": true
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": "200008;400016",
+      "precision": 1,
+      "method": "higher:2",
+      "median_ms": 29.827067,
+      "minimum_ms": 29.058279,
+      "maximum_ms": 34.41690800000001,
+      "outputs": "396174;784458",
+      "complete_setup": true
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": "200008;400016",
+      "precision": 1,
+      "method": "direct",
+      "median_ms": 116.74915600000001,
+      "minimum_ms": 113.700651,
+      "maximum_ms": 142.25806999999998,
+      "outputs": "396174;784458",
+      "complete_setup": true
+    },
+    {
+      "case": "fifth_both",
+      "p": 1000039,
+      "indices": "200008;400016",
+      "precision": 1,
+      "method": "product_tree",
+      "median_ms": 160.28209500000003,
+      "minimum_ms": 147.11190499999998,
+      "maximum_ms": 193.39542600000001,
+      "outputs": "396174;784458",
+      "complete_setup": true
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": "1430;2860;4290",
+      "precision": 1,
+      "method": "higher:3",
+      "median_ms": 9.784196,
+      "minimum_ms": 8.9557,
+      "maximum_ms": 13.098841,
+      "outputs": "9698;1454;8800",
+      "complete_setup": true
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": "1430;2860;4290",
+      "precision": 1,
+      "method": "direct",
+      "median_ms": 1.1845160000000001,
+      "minimum_ms": 1.1274499999999998,
+      "maximum_ms": 1.631106,
+      "outputs": "9698;1454;8800",
+      "complete_setup": true
+    },
+    {
+      "case": "seventh_all",
+      "p": 10009,
+      "indices": "1430;2860;4290",
+      "precision": 1,
+      "method": "product_tree",
+      "median_ms": 13.066246,
+      "minimum_ms": 12.218835,
+      "maximum_ms": 13.515674,
+      "outputs": "9698;1454;8800",
+      "complete_setup": true
+    },
+    {
+      "case": "generic",
+      "p": 100003,
+      "indices": "12345",
+      "precision": 1,
+      "method": "direct",
+      "median_ms": 3.85439,
+      "minimum_ms": 3.345904,
+      "maximum_ms": 4.327903999999999,
+      "outputs": "67784",
+      "complete_setup": true
+    },
+    {
+      "case": "generic",
+      "p": 100003,
+      "indices": "12345",
+      "precision": 1,
+      "method": "product_tree",
+      "median_ms": 10.884764,
+      "minimum_ms": 10.526076,
+      "maximum_ms": 13.936202999999999,
+      "outputs": "67784",
+      "complete_setup": true
+    },
+    {
+      "case": "original_U_precision_two",
+      "p": 1048589,
+      "indices": "262147",
+      "precision": 2,
+      "method": "direct",
+      "median_ms": 100.718037,
+      "minimum_ms": 97.41432,
+      "maximum_ms": 109.163593,
+      "outputs": "479873476450",
+      "complete_setup": true
+    },
+    {
+      "case": "original_U_precision_two",
+      "p": 1048589,
+      "indices": "262147",
+      "precision": 2,
+      "method": "product_tree",
+      "median_ms": 94.95085,
+      "minimum_ms": 90.608739,
+      "maximum_ms": 102.338247,
+      "outputs": "479873476450",
+      "complete_setup": true
+    }
+  ],
+  "memory": [
+    {
+      "case": "quarter_large",
+      "method": "quarter",
+      "python_traced_peak_bytes": 2748,
+      "process_peak_RSS_bytes": 15335424,
+      "outputs": [
+        352257
+      ],
+      "scope": "fresh process; imports included in RSS, not tracemalloc; memory run outside timing"
+    },
+    {
+      "case": "quarter_large",
+      "method": "direct",
+      "python_traced_peak_bytes": 1680,
+      "process_peak_RSS_bytes": 15335424,
+      "outputs": [
+        352257
+      ],
+      "scope": "fresh process; imports included in RSS, not tracemalloc; memory run outside timing"
+    },
+    {
+      "case": "quarter_large",
+      "method": "product_tree",
+      "python_traced_peak_bytes": 790644,
+      "process_peak_RSS_bytes": 17055744,
+      "outputs": [
+        352257
+      ],
+      "scope": "fresh process; imports included in RSS, not tracemalloc; memory run outside timing"
+    },
+    {
+      "case": "fifth_both",
+      "method": "higher:2",
+      "python_traced_peak_bytes": 317297,
+      "process_peak_RSS_bytes": 15335424,
+      "outputs": [
+        396174,
+        784458
+      ],
+      "scope": "fresh process; imports included in RSS, not tracemalloc; memory run outside timing"
+    },
+    {
+      "case": "fifth_both",
+      "method": "direct",
+      "python_traced_peak_bytes": 1952,
+      "process_peak_RSS_bytes": 15335424,
+      "outputs": [
+        396174,
+        784458
+      ],
+      "scope": "fresh process; imports included in RSS, not tracemalloc; memory run outside timing"
+    },
+    {
+      "case": "fifth_both",
+      "method": "product_tree",
+      "python_traced_peak_bytes": 1033734,
+      "process_peak_RSS_bytes": 17846272,
+      "outputs": [
+        396174,
+        784458
+      ],
+      "scope": "fresh process; imports included in RSS, not tracemalloc; memory run outside timing"
+    },
+    {
+      "case": "original_U_precision_two",
+      "method": "direct",
+      "python_traced_peak_bytes": 1680,
+      "process_peak_RSS_bytes": 15335424,
+      "outputs": [
+        479873476450
+      ],
+      "scope": "fresh process; imports included in RSS, not tracemalloc; memory run outside timing"
+    },
+    {
+      "case": "original_U_precision_two",
+      "method": "product_tree",
+      "python_traced_peak_bytes": 787334,
+      "process_peak_RSS_bytes": 17100800,
+      "outputs": [
+        479873476450
+      ],
+      "scope": "fresh process; imports included in RSS, not tracemalloc; memory run outside timing"
+    }
+  ],
+  "cached_quarter_lookup_seconds": [
+    1.6028e-05,
+    1.0969e-05,
+    8.674e-06,
+    7.763e-06,
+    7.779e-06
+  ],
+  "fresh_process_quarter_seconds": [
+    0.051516283,
+    0.051165766,
+    0.051558528
+  ],
+  "cached_scope": "exact repeated-answer cache; not a distinct-input arithmetic speedup"
+}
