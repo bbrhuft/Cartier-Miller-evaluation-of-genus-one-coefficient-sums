@@ -6,9 +6,13 @@ Cartier–Miller consolidation, 13 October 2026. This specification fixes interf
 
 For a prime $p$, put $h=(p-1)/2$ and retain the ORIGINAL rational definitions
 
-$$
-t_0=1,\qquad t_{i+1}=t_i\frac{h+2+i}{2i+2},\qquad U_p(L)=\sum_{0\le i<L}(h+1+i)t_i.
-$$
+```math
+\begin{aligned}
+t_0 &= 1,\\
+t_{i+1} &= t_i \frac{h+2+i}{2i+2},\\
+U_p(L) &= \sum_{0 \leq i < L}(h+1+i)t_i.
+\end{aligned}
+```
 
 The integrated sum domain is $5\le p<2^{64}$, $0\le L\le h$, and precision $r\in\{1,2\}$. Rational denominators are units modulo $p^r$. The output is an exact residue modulo $q=p^r$. Python booleans are rejected as integer inputs. Unsupported hypotheses and budget exhaustion raise errors; the CLI returns status `error` and exit code 2.
 
