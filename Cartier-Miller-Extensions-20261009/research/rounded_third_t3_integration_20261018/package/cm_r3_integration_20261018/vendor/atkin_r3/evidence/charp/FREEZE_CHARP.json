@@ -1,0 +1,32 @@
+{
+  "timestamp_utc": "2026-10-18T03:42:12.820521+00:00",
+  "note": "Round-2 freeze, written before any round-2 confirmation prime was selected. Round-1 evidence/FREEZE.json unchanged.",
+  "development_below": 200000,
+  "pilot_primes": [
+    1000003,
+    10000019,
+    100000037,
+    1000000021,
+    100000007,
+    1000000007,
+    10000000019
+  ],
+  "sha256": {
+    "CANDIDATE_CHARP.md": "84e155be065772eed4266d242398a49015e903641a9c81ec78fb03560ea68a3b",
+    "charp.py": "db70056a5f7a65ec0e18d2cd15f0828c1ea2911f50c33ffa01b9acc332b17987",
+    "flint_backend.py": "5f5e0765b94b177806af1cccd4c7e1ca5e249adf8a207b3b96c234a9934c5220",
+    "develop_charp.py": "efe5a7eb221389f2ac1484e754068360fd2bc7452635e3ede23a15798be1eb45",
+    "confirm_charp.py": "9109d5eba6a56ad70b6b88146e50d4691c99f67755bf11a1855b73d2e9eda499",
+    "benchmark_charp.py": "48c7f8f9485c3a9ab0131194104411f1b0637fb8a44e69f51832eb07095b7b02",
+    "acquire_charp.py": "da5fb59a57f3f669bd44c941d73a22b37ba68b3f8e96c626e47f38148dd99530",
+    "research/conductor12_lattice.py": "9e20e09e7bb69b42658f29b46e76e1b5731983c9136884b531034a37fe4aa0c4",
+    "atkin.py": "f913b4e61b360513abd00ca354df3b80d371e895c592c7019781c4c1923fc838",
+    "develop.py": "76d91c0f2e75e66de956b06389c280101677a3b2c1236a36010d74aabf0cae27",
+    "confirm.py": "679beb67dfdc8e4ce416342e7c727de0c41e6bb33bbaba75a24558ed7913e3d5",
+    "vendor/block_factorial.py": "36686c3072ad76ff0a00ca4b8ad25518f4a099c596e5622f2c1db4575561a96f",
+    "vendor/reciprocal.py": "266bc5a3620264ee31bf870f4044b235ec8d864c438ac71e7051aba3d6d8d037",
+    "vendor/inherited/retained/stack_safe_beta.py": "f4547c48e5782200c424a8008c791f24b4719cd3735cb721a88540f921a2e432",
+    "evidence/charp/DEVELOPMENT_CHARP.json": "4867b9c8e02a03b1e19615c58f584d172bffdec7c677c53e8de7d5122e2d5949",
+    "evidence/charp/LATTICE_C12.json": "baadac0628c7f8e7cd2efb8f9571fd55d0dd74f067fd923d106f5e587f2f507b"
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "status": "passed",
+  "control_rows": {
+    "11": {
+      "computed": [
+        8,
+        1,
+        5,
+        6,
+        4
+      ],
+      "matches_handover": true,
+      "identities": {
+        "telescoping_L": true,
+        "a_L = 3/(2G^3)": true,
+        "G = (3/(2a_L))^((2p-1)/3)": true,
+        "a_m = -4a_L": true,
+        "B_m = B_L + 4a_L": true,
+        "U(L) = 4B_L - 17/(3G^3)": true,
+        "U(m) = 4B_L - 16/(3G^3)": true,
+        "U(L) - U(m) = -1/(3G^3) != 0": true
+      }
+    },
+    "17": {
+      "computed": [
+        6,
+        10,
+        7,
+        1,
+        13
+      ],
+      "matches_handover": true,
+      "identities": {
+        "telescoping_L": true,
+        "a_L = 3/(2G^3)": true,
+        "G = (3/(2a_L))^((2p-1)/3)": true,
+        "a_m = -4a_L": true,
+        "B_m = B_L + 4a_L": true,
+        "U(L) = 4B_L - 17/(3G^3)": true,
+        "U(m) = 4B_L - 16/(3G^3)": true,
+        "U(L) - U(m) = -1/(3G^3) != 0": true
+      }
+    },
+    "23": {
+      "computed": [
+        7,
+        9,
+        17,
+        3,
+        19
+      ],
+      "matches_handover": true,
+      "identities": {
+        "telescoping_L": true,
+        "a_L = 3/(2G^3)": true,
+        "G = (3/(2a_L))^((2p-1)/3)": true,
+        "a_m = -4a_L": true,
+        "B_m = B_L + 4a_L": true,
+        "U(L) = 4B_L - 17/(3G^3)": true,
+        "U(m) = 4B_L - 16/(3G^3)": true,
+        "U(L) - U(m) = -1/(3G^3) != 0": true
+      }
+    },
+    "29": {
+      "computed": [
+        13,
+        21,
+        21,
+        3,
+        16
+      ],
+      "matches_handover": true,
+      "identities": {
+        "telescoping_L": true,
+        "a_L = 3/(2G^3)": true,
+        "G = (3/(2a_L))^((2p-1)/3)": true,
+        "a_m = -4a_L": true,
+        "B_m = B_L + 4a_L": true,
+        "U(L) = 4B_L - 17/(3G^3)": true,
+        "U(m) = 4B_L - 16/(3G^3)": true,
+        "U(L) - U(m) = -1/(3G^3) != 0": true
+      }
+    }
+  },
+  "largest_confirmation_prime": {
+    "p": 7000000009553,
+    "tuple": [
+      4770090998586,
+      303509152059,
+      6267107181755,
+      2406416797142
+    ],
+    "p_is_prime": true,
+    "p_mod_6": 5,
+    "a_L = 3/(2G^3)": true,
+    "U(L) = 4B_L - 17/(3G^3)": true,
+    "G = (3/(2a_L))^((2p-1)/3)": true,
+    "retained_prefix_B": 4770090998586,
+    "retained_prefix_matches_B_L": true,
+    "G_recomputed": false
+  },
+  "failures": [],
+  "scope": "regression check of handover values; not new held-out evidence"
+}

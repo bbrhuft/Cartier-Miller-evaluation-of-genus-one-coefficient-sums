@@ -1,0 +1,142 @@
+{
+ "role": "Round-3 development (secondary target); inputs excluded from confirmation",
+ "limit": 1000000,
+ "primes": 19610,
+ "classB": 9790,
+ "classB_beta_plus": 4857,
+ "tests": {
+  "ab_mod_24/B": {
+   "groups": 16,
+   "mixed_groups": 16,
+   "primes": 9790,
+   "first_collision": {
+    "features": [
+     13,
+     2
+    ],
+    "p1": 173,
+    "beta1": -1,
+    "p2": 653,
+    "beta2": 1
+   }
+  },
+  "ab_mod_24/C": {
+   "groups": 16,
+   "mixed_groups": 16,
+   "primes": 9820,
+   "first_collision": {
+    "features": [
+     17,
+     8
+    ],
+    "p1": 113,
+    "beta1": 1,
+    "p2": 353,
+    "beta2": -1
+   }
+  },
+  "ab_mod_48_h3p_mod_32/B": {
+   "groups": 256,
+   "mixed_groups": 256,
+   "primes": 9790,
+   "first_collision": {
+    "features": [
+     29,
+     14,
+     6
+    ],
+    "p1": 557,
+    "beta1": -1,
+    "p2": 1997,
+    "beta2": 1
+   }
+  },
+  "ab_mod_48_h3p_mod_32/C": {
+   "groups": 256,
+   "mixed_groups": 256,
+   "primes": 9820,
+   "first_collision": {
+    "features": [
+     5,
+     40,
+     18
+    ],
+    "p1": 3449,
+    "beta1": 1,
+    "p2": 4409,
+    "beta2": -1
+   }
+  },
+  "p_mod_96_ab_mod_24_h3p_mod_64/B": {
+   "groups": 256,
+   "mixed_groups": 256,
+   "primes": 9790,
+   "first_collision": {
+    "features": [
+     77,
+     13,
+     2,
+     42
+    ],
+    "p1": 653,
+    "beta1": 1,
+    "p2": 1229,
+    "beta2": -1
+   }
+  },
+  "p_mod_96_ab_mod_24_h3p_mod_64/C": {
+   "groups": 256,
+   "mixed_groups": 256,
+   "primes": 9820,
+   "first_collision": {
+    "features": [
+     17,
+     1,
+     8,
+     10
+    ],
+    "p1": 593,
+    "beta1": 1,
+    "p2": 881,
+    "beta2": -1
+   }
+  },
+  "quartic_23/B": {
+   "groups": 16,
+   "mixed_groups": 16,
+   "primes": 9790,
+   "first_collision": {
+    "features": [
+     0,
+     0,
+     5,
+     2,
+     2
+    ],
+    "p1": 173,
+    "beta1": -1,
+    "p2": 461,
+    "beta2": 1
+   }
+  },
+  "quartic_23/C": {
+   "groups": 16,
+   "mixed_groups": 16,
+   "primes": 9820,
+   "first_collision": {
+    "features": [
+     1,
+     0,
+     1,
+     0,
+     6
+    ],
+    "p1": 113,
+    "beta1": 1,
+    "p2": 353,
+    "beta2": -1
+   }
+  }
+ },
+ "polya_fourier_checked": 2250
+}

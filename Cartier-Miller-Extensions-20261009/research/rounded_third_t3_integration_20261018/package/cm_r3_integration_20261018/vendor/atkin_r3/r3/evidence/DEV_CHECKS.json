@@ -1,0 +1,397 @@
+{
+ "1_bruteforce_jacobi": 27810,
+ "2_t3_dev_cases": {
+  "dup6": 8299,
+  "dup12": 4182
+ },
+ "3_anchor_identities_primes": 2408,
+ "4a_lattice_D0": {
+  "5": {
+   "span_equals_D0": true,
+   "anchor_degrees": [
+    4,
+    1
+   ]
+  },
+  "7": {
+   "span_equals_D0": true,
+   "anchor_degrees": [
+    1,
+    6
+   ]
+  },
+  "11": {
+   "span_equals_D0": true,
+   "anchor_degrees": [
+    10,
+    1
+   ]
+  },
+  "13": {
+   "span_equals_D0": true,
+   "anchor_degrees": [
+    1,
+    12
+   ]
+  },
+  "17": {
+   "span_equals_D0": true,
+   "anchor_degrees": [
+    16,
+    1
+   ]
+  },
+  "19": {
+   "span_equals_D0": true,
+   "anchor_degrees": [
+    1,
+    18
+   ]
+  },
+  "23": {
+   "span_equals_D0": true,
+   "anchor_degrees": [
+    22,
+    1
+   ]
+  },
+  "29": {
+   "span_equals_D0": true,
+   "anchor_degrees": [
+    28,
+    1
+   ]
+  },
+  "31": {
+   "span_equals_D0": true,
+   "anchor_degrees": [
+    1,
+    30
+   ]
+  },
+  "37": {
+   "span_equals_D0": true,
+   "anchor_degrees": [
+    1,
+    36
+   ]
+  },
+  "41": {
+   "span_equals_D0": true,
+   "anchor_degrees": [
+    40,
+    1
+   ]
+  },
+  "43": {
+   "span_equals_D0": true,
+   "anchor_degrees": [
+    1,
+    42
+   ]
+  },
+  "47": {
+   "span_equals_D0": true,
+   "anchor_degrees": [
+    46,
+    1
+   ]
+  },
+  "53": {
+   "span_equals_D0": true,
+   "anchor_degrees": [
+    52,
+    1
+   ]
+  },
+  "59": {
+   "span_equals_D0": true,
+   "anchor_degrees": [
+    58,
+    1
+   ]
+  },
+  "61": {
+   "span_equals_D0": true,
+   "anchor_degrees": [
+    1,
+    60
+   ]
+  }
+ },
+ "4b_single_class_plans": {
+  "5/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "5/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "7/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "7/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "11/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 3
+  },
+  "11/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 3
+  },
+  "13/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "13/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "17/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "17/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "19/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 3
+  },
+  "19/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 3
+  },
+  "23/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "23/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "29/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "29/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "31/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "31/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "37/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "37/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "41/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "41/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "43/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 3
+  },
+  "43/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 3
+  },
+  "47/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "47/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "53/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "53/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "59/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 3
+  },
+  "59/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 3
+  },
+  "61/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "61/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "67/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 3
+  },
+  "67/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 3
+  },
+  "71/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "71/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "73/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "73/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "79/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "79/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "83/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 3
+  },
+  "83/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 3
+  },
+  "89/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "89/dup12": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  },
+  "97/dup6": {
+   "classes": [
+    1
+   ],
+   "k": 1
+  }
+ },
+ "5_r31_equals_r3": 2098,
+ "seconds": 59.76859921199866,
+ "role": "archived regeneration of development checks (inputs within the ledger range rules)"
+}

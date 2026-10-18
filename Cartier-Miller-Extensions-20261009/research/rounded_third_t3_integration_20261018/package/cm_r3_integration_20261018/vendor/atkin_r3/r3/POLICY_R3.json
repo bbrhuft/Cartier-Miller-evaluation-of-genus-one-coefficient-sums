@@ -1,0 +1,47 @@
+{
+ "note": "Frozen round-3 selection policy. Constants calibrated on development inputs only (r3/evidence/DEV_TIMING.json, DEV_SVP_TABLE.json); one machine; used only to choose a route, never for correctness.",
+ "q_range": [
+  5,
+  89
+ ],
+ "K_min": 10000,
+ "svp_table_s": {
+  "5": 0.00010935699992842274,
+  "7": 0.0001582750001034583,
+  "11": 0.0004871479995927075,
+  "13": 0.0007928189997983282,
+  "17": 0.0016313209998770617,
+  "19": 0.0024706579997655354,
+  "23": 0.004891579000286583,
+  "29": 0.012090111000361503,
+  "31": 0.014189852000527026,
+  "37": 0.03029547900041507,
+  "41": 0.04578284899980645,
+  "43": 0.062399762000495684,
+  "47": 0.08352504600043176,
+  "53": 0.12955897800020466,
+  "59": 0.21064198700059933,
+  "61": 0.23572698999942077,
+  "67": 0.369660291999935,
+  "71": 0.4878183880000506,
+  "73": 0.5305529770002977,
+  "79": 0.8046106060000966,
+  "83": 1.0267921169997862,
+  "89": 1.3606635680007457
+ },
+ "interval_model": {
+  "B": 1.93e-07,
+  "gamma": 0.673,
+  "unit": "seconds, L = number of factors, FLINT block engine, separate channels"
+ },
+ "nodal_model": {
+  "C": 9.369e-08,
+  "delta": 0.657
+ },
+ "hi_classno_overhead_s": 0.001,
+ "anchor_rule": "dup12 if p % 12 == 5 else dup6",
+ "layout": "separate channels (DEV_LAYOUT.json)",
+ "lll": "FLINT fmpz_lll delta 0.99 on the integral embedding; exact PARI qfminim enumeration fallback",
+ "selection": "argmin over admissible q of svp(q)+f(len_target)+f(len_anchor); tie -> larger q; use tal only if below the fallback prediction",
+ "fallback": "unconditional: half_interval if |D|<2e10 for its class number (D=-p or -3p) else nodal_flint; grh: half_interval with quadclassunit"
+}

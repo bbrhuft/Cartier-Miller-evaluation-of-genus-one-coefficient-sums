@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-10-18T02:23:55.232245+00:00",
+  "sha256": {
+    "CANDIDATE.md": "cceb4925555a4dc92a23f9da9d6b39636f7801a0cafbb7d875e21c334fcd675a",
+    "OPUS_HANDOVER.md": "a31de981c245694cb8f662888e2065ec9daced08bda8a7aacee7ae41051f79b9",
+    "README.md": "c6c65c831a9889a9f2c28a19c3f30769adf27a350521ec56d8001444dbdc6608",
+    "REPORT.md": "435b11fc9dbb092cbff2896fc3d228e12b1dffff3379c809ddf8b82bc56866f2",
+    "acquire_derivative.py": "060e6919cc74070cb74ca312fcc74ebcdcc6cb2fc25683377ee67fa66a510149",
+    "atkin.py": "f913b4e61b360513abd00ca354df3b80d371e895c592c7019781c4c1923fc838",
+    "audit.py": "4be918500472f651f4728b542ff7fb5f0c7d9c5b7ea0cd070281fdb8549ed291",
+    "benchmark.py": "f283ed765cf6395550b28d9351c37d50c46f0ee23d212edd9a1d5d86d4b70f5d",
+    "confirm.py": "679beb67dfdc8e4ce416342e7c727de0c41e6bb33bbaba75a24558ed7913e3d5",
+    "develop.py": "76d91c0f2e75e66de956b06389c280101677a3b2c1236a36010d74aabf0cae27",
+    "evidence/API_WRAPPER_CHECK.json": "411f99bf31df7ee20f2d6b89ee4339d4558519053b2bce3dbdb445e2e118d594",
+    "evidence/BENCHMARK.json": "0f45b1903d30bc02d0ee7f8f363e24e9cab77ee289fe6a6c8126ad0cf05f43e0",
+    "evidence/CONFIRMATION.json": "225438d739f72e090327778632d4d389fc96f7df9f771be8967e879992cfb27e",
+    "evidence/DEVELOPMENT.json": "13441787e62179fb337a00aa20ad4bc781b757de18f3b13c91fdfff3d7e2dbc4",
+    "evidence/FREEZE.json": "4aafbc5b65446511bb9fcb3ca96ef8c066c258e40454d7edca441e0074ebfa66",
+    "provenance/INPUT_HASHES.json": "6ba2fc743384832c0024a94ee8aba9aecc1b96c38f3ae9c17d97d166d51ac023",
+    "provenance/opus_local_report.md": "7360591b27e223e912e3196bdd4b4f41741cd7a24a7c9f86f5262d46ce0fbb6e",
+    "provenance/sol_local_report.md": "de1cc461a314734c4f9901168b5f7d0b178ea37da1a88a289621d535546e7408",
+    "vendor/block_factorial.py": "36686c3072ad76ff0a00ca4b8ad25518f4a099c596e5622f2c1db4575561a96f",
+    "vendor/inherited/retained/stack_safe_beta.py": "f4547c48e5782200c424a8008c791f24b4719cd3735cb721a88540f921a2e432",
+    "vendor/reciprocal.py": "266bc5a3620264ee31bf870f4044b235ec8d864c438ac71e7051aba3d6d8d037"
+  }
+}

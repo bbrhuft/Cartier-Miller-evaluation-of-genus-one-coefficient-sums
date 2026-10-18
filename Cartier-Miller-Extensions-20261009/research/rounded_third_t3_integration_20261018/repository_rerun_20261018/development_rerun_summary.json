@@ -1,0 +1,17 @@
+{
+ "command": "python develop.py (run in a copy of package/cm_r3_integration_20261018)",
+ "exit_status": 0,
+ "status": "PASS",
+ "counts": {
+  "primes": 1135,
+  "full_definition_checks": 3405,
+  "independent_prefix_checks": 1135,
+  "integer_binomial_checks": 1135,
+  "forced_t3_checks": 200
+ },
+ "identical_to_recorded_DEVELOPMENT_json_except_timings_and_environment": true,
+ "python": null,
+ "platform": null,
+ "seconds_rerun": 12.200298147000012,
+ "seconds_recorded": 8.645090636000077
+}

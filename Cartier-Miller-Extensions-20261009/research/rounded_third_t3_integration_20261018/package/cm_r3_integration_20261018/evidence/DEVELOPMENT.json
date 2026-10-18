@@ -1,0 +1,22 @@
+{
+  "primes": 1135,
+  "full_definition_checks": 3405,
+  "independent_prefix_checks": 1135,
+  "integer_binomial_checks": 1135,
+  "forced_t3_checks": 200,
+  "status": "PASS",
+  "seconds": 8.645090636000077,
+  "forest_chunk_counts": [
+    1,
+    7,
+    32
+  ],
+  "development_below": 20000,
+  "pilot_primes": [
+    20000000549,
+    1000151,
+    10000103,
+    100000223
+  ],
+  "role": "New integration development, not confirmation; earlier sources excluded separately"
+}

@@ -1,0 +1,8 @@
+{
+  "command": "python -m unittest test_integrated_thirds test_many_primes -q",
+  "cwd": "vendor/boundary",
+  "tests": 19,
+  "result": "OK",
+  "seconds": 9.355,
+  "role": "Recorded from the newly executed tool output; source modules were byte-preserved and not regenerated"
+}

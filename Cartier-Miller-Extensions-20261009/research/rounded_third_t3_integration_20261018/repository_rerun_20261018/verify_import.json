@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "entries_checked": {
+    "FREEZE": 196,
+    "VENDOR": 187,
+    "MANIFEST": 215
+  },
+  "files_present": 216,
+  "not_redistributed_skipped": [
+    "vendor/atkin_r3/r3/sources/PARI_2.17.2_installed_doc.json"
+  ],
+  "failures": [],
+  "scope": "integrity only; mathematics is checked by the package scripts"
+}

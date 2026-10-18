@@ -1,0 +1,4033 @@
+{
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+  "flint": {
+    "python_flint": "0.9.0"
+  },
+  "pari": "PARI 2.17.2",
+  "samples_per_method": 5,
+  "status": "PASS",
+  "scope": "Matched generic block engines (stdlib and FLINT multipoint); FLINT native factorial; no BGS shifting, no batch methods",
+  "rows": [
+    {
+      "p": 2000003,
+      "p_class": "A",
+      "c": 1712468,
+      "samples_s": {
+        "std_factorial_block": [
+          0.05672290199981944,
+          0.061191666000013356,
+          0.06116001600003074,
+          0.06139023800005816,
+          0.05531090700060304
+        ],
+        "std_nodal_shared": [
+          0.03708791500048392,
+          0.037457456000083766,
+          0.04161495599964837,
+          0.04204961200048274,
+          0.03185873399979755
+        ],
+        "std_hi1_forms": [
+          0.04499362000024121,
+          0.042699622999862186,
+          0.04781998099952034,
+          0.04669137800010503,
+          0.036089677000745723
+        ],
+        "std_hi2_forms": [
+          0.04003880399977788,
+          0.04774172900033591,
+          0.04378102000009676,
+          0.044032500999492186,
+          0.03436227400015923
+        ],
+        "flint_native_factorial": [
+          0.0013053590000708937,
+          0.0006250300002648146,
+          0.0006184599997141049,
+          0.0007217619995572022,
+          0.0006303290001596906
+        ],
+        "flint_block_factorial": [
+          0.0008466029994451674,
+          0.0009124400003202027,
+          0.0009476119994360488,
+          0.0014523850004479755,
+          0.0009239430000889115
+        ],
+        "flint_nodal_shared": [
+          0.0005851619998793467,
+          0.0006665910004812758,
+          0.0006392619998223381,
+          0.0009475589995417977,
+          0.0006195769992700662
+        ],
+        "flint_hi1_forms": [
+          0.003015722999407444,
+          0.0033840279993455624,
+          0.0033245129998249467,
+          0.004734508999717946,
+          0.00342283200006932
+        ],
+        "flint_hi1_pari": [
+          0.000919033999707608,
+          0.0010055409993583453,
+          0.001039444000525691,
+          0.0010374989997217199,
+          0.0009928770004989929
+        ],
+        "flint_hi2_pari": [
+          0.0007657129999643075,
+          0.0008786199996393407,
+          0.0008336850005434826,
+          0.0008552480003345408,
+          0.0009901929997795378
+        ]
+      },
+      "medians_s": {
+        "std_factorial_block": 0.06116001600003074,
+        "std_nodal_shared": 0.037457456000083766,
+        "std_hi1_forms": 0.04499362000024121,
+        "std_hi2_forms": 0.04378102000009676,
+        "flint_native_factorial": 0.0006303290001596906,
+        "flint_block_factorial": 0.0009239430000889115,
+        "flint_nodal_shared": 0.0006392619998223381,
+        "flint_hi1_forms": 0.0033840279993455624,
+        "flint_hi1_pari": 0.0010055409993583453,
+        "flint_hi2_pari": 0.0008552480003345408
+      },
+      "class_number_only": {
+        "D": -2000003,
+        "forms": {
+          "samples_s": [
+            0.0021776710000267485,
+            0.002078304999486136,
+            0.002126423999470717,
+            0.002087860999381519,
+            0.0020742659999086754
+          ],
+          "median_s": 0.002087860999381519
+        },
+        "pari": {
+          "samples_s": [
+            0.00030845899982523406,
+            0.00019920800059480825,
+            0.0001481119998061331,
+            0.00016531699930055765,
+            0.0001383439994242508
+          ],
+          "median_s": 0.00016531699930055765
+        }
+      },
+      "metadata": {
+        "std_factorial_block": {
+          "block_size": 816,
+          "blocks": 816,
+          "channels": 1,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 31028,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 8528,
+              "packed_integer_multiplications": 8528,
+              "packed_coefficient_reductions": 89480,
+              "maximum_length": 817,
+              "packed_max_operand_bits": 39169,
+              "packed_max_digit_bits": 56
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 1627
+            },
+            "series_inverse_calls": 1631
+          }
+        },
+        "std_nodal_shared": {
+          "block_size": 408,
+          "blocks": 408,
+          "channels": 2,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 21325,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 6281,
+              "packed_integer_multiplications": 6281,
+              "packed_coefficient_reductions": 57294,
+              "maximum_length": 409,
+              "packed_max_operand_bits": 19585,
+              "packed_max_digit_bits": 56
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 1220
+            },
+            "series_inverse_calls": 815
+          }
+        },
+        "std_hi1_forms": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -2000003,
+            "classno": 357,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 333334,
+          "layout": 1,
+          "product": {
+            "block_size": 577,
+            "blocks": 577,
+            "channels": 1,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 22508,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 6108,
+                "packed_integer_multiplications": 6108,
+                "packed_coefficient_reductions": 66661,
+                "maximum_length": 578,
+                "packed_max_operand_bits": 27697,
+                "packed_max_digit_bits": 56
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 982
+              },
+              "series_inverse_calls": 1153
+            }
+          }
+        },
+        "std_hi2_forms": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -2000003,
+            "classno": 357,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 333334,
+          "layout": 2,
+          "product": {
+            "block_size": 408,
+            "blocks": 408,
+            "channels": 2,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 21325,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 6281,
+                "packed_integer_multiplications": 6281,
+                "packed_coefficient_reductions": 57294,
+                "maximum_length": 409,
+                "packed_max_operand_bits": 19585,
+                "packed_max_digit_bits": 56
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 1222
+              },
+              "series_inverse_calls": 815
+            }
+          }
+        },
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 816,
+          "blocks": 816,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 408,
+          "blocks": 408,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -2000003,
+            "classno": 357,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 333334,
+          "layout": 1,
+          "product": {
+            "block_size": 577,
+            "blocks": 577,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -2000003,
+            "classno": 357,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 333334,
+          "layout": 1,
+          "product": {
+            "block_size": 577,
+            "blocks": 577,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -2000003,
+            "classno": 357,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 333334,
+          "layout": 2,
+          "product": {
+            "block_size": 408,
+            "blocks": 408,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    },
+    {
+      "p": 2000081,
+      "p_class": "C",
+      "c": 1471098,
+      "samples_s": {
+        "std_factorial_block": [
+          0.048100238000188256,
+          0.05879582499983371,
+          0.05767599299997528,
+          0.06428557700019155,
+          0.07805421600005502
+        ],
+        "std_nodal_shared": [
+          0.03307405299983657,
+          0.03833367399965937,
+          0.04041893500016158,
+          0.060916927000107535,
+          0.0553000219997557
+        ],
+        "std_hi1_forms": [
+          0.049028696000277705,
+          0.045924956999442657,
+          0.04612467300012213,
+          0.07154873499985115,
+          0.04874565199952485
+        ],
+        "std_hi2_forms": [
+          0.04466208399935567,
+          0.04355863999990106,
+          0.04466737100028695,
+          0.0441951489992789,
+          0.046516137000253366
+        ],
+        "flint_native_factorial": [
+          0.0006187569997564424,
+          0.0005850150000696885,
+          0.0005872570000065025,
+          0.0005683170002157567,
+          0.0008158819991876953
+        ],
+        "flint_block_factorial": [
+          0.0008742539994273102,
+          0.0008254390004367451,
+          0.0009348660005343845,
+          0.0008316570001625223,
+          0.001254157000403211
+        ],
+        "flint_nodal_shared": [
+          0.0006222769998203148,
+          0.0005824270001539844,
+          0.0006222769998203148,
+          0.0006513369999083807,
+          0.000937394000175118
+        ],
+        "flint_hi1_forms": [
+          0.00483745200017438,
+          0.004868076000093424,
+          0.004714915000477049,
+          0.005096517000310996,
+          0.006978841000091052
+        ],
+        "flint_hi1_pari": [
+          0.0010860330003197305,
+          0.0009151320000455598,
+          0.0009777960003702901,
+          0.0009818119997362373,
+          0.001389082000059716
+        ],
+        "flint_hi2_pari": [
+          0.0008700979997229297,
+          0.0007759090003673919,
+          0.0008402040002692956,
+          0.0008754919999773847,
+          0.001476911999816366
+        ]
+      },
+      "medians_s": {
+        "std_factorial_block": 0.05879582499983371,
+        "std_nodal_shared": 0.04041893500016158,
+        "std_hi1_forms": 0.04874565199952485,
+        "std_hi2_forms": 0.04466208399935567,
+        "flint_native_factorial": 0.0005872570000065025,
+        "flint_block_factorial": 0.0008742539994273102,
+        "flint_nodal_shared": 0.0006222769998203148,
+        "flint_hi1_forms": 0.004868076000093424,
+        "flint_hi1_pari": 0.0009818119997362373,
+        "flint_hi2_pari": 0.0008700979997229297
+      },
+      "class_number_only": {
+        "D": -6000243,
+        "forms": {
+          "samples_s": [
+            0.004415688000335649,
+            0.004397893999339431,
+            0.004410498999277479,
+            0.004322384000261081,
+            0.004361368999525439
+          ],
+          "median_s": 0.004397893999339431
+        },
+        "pari": {
+          "samples_s": [
+            0.00035450299947115127,
+            0.00021119299981364748,
+            0.0002604970004540519,
+            0.00018664200069906656,
+            0.0002304519994140719
+          ],
+          "median_s": 0.0002304519994140719
+        }
+      },
+      "metadata": {
+        "std_factorial_block": {
+          "block_size": 816,
+          "blocks": 817,
+          "channels": 1,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 30243,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 8533,
+              "packed_integer_multiplications": 8533,
+              "packed_coefficient_reductions": 88736,
+              "maximum_length": 818,
+              "packed_max_operand_bits": 22905,
+              "packed_max_digit_bits": 56
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 838
+            },
+            "series_inverse_calls": 1632
+          }
+        },
+        "std_nodal_shared": {
+          "block_size": 408,
+          "blocks": 408,
+          "channels": 2,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 21325,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 6281,
+              "packed_integer_multiplications": 6281,
+              "packed_coefficient_reductions": 57294,
+              "maximum_length": 409,
+              "packed_max_operand_bits": 19585,
+              "packed_max_digit_bits": 56
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 1234
+            },
+            "series_inverse_calls": 815
+          }
+        },
+        "std_hi1_forms": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -6000243,
+            "classno": 390,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 333347,
+          "layout": 1,
+          "product": {
+            "block_size": 577,
+            "blocks": 577,
+            "channels": 1,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 22508,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 6108,
+                "packed_integer_multiplications": 6108,
+                "packed_coefficient_reductions": 66661,
+                "maximum_length": 578,
+                "packed_max_operand_bits": 27697,
+                "packed_max_digit_bits": 56
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 995
+              },
+              "series_inverse_calls": 1153
+            }
+          }
+        },
+        "std_hi2_forms": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -6000243,
+            "classno": 390,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 333347,
+          "layout": 2,
+          "product": {
+            "block_size": 408,
+            "blocks": 408,
+            "channels": 2,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 21325,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 6281,
+                "packed_integer_multiplications": 6281,
+                "packed_coefficient_reductions": 57294,
+                "maximum_length": 409,
+                "packed_max_operand_bits": 19585,
+                "packed_max_digit_bits": 56
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 1234
+              },
+              "series_inverse_calls": 815
+            }
+          }
+        },
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 816,
+          "blocks": 817,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 408,
+          "blocks": 408,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -6000243,
+            "classno": 390,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 333347,
+          "layout": 1,
+          "product": {
+            "block_size": 577,
+            "blocks": 577,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -6000243,
+            "classno": 390,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 333347,
+          "layout": 1,
+          "product": {
+            "block_size": 577,
+            "blocks": 577,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -6000243,
+            "classno": 390,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 333347,
+          "layout": 2,
+          "product": {
+            "block_size": 408,
+            "blocks": 408,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    },
+    {
+      "p": 2000093,
+      "p_class": "B",
+      "c": 1437379,
+      "samples_s": {
+        "std_factorial_block": [
+          0.06267832699995779,
+          0.058903916999952344,
+          0.07175447099962184,
+          0.06104991399934079,
+          0.06107171500025288
+        ],
+        "std_nodal_shared": [
+          0.05681871500019042,
+          0.04045290700014448,
+          0.042366882999886,
+          0.04192072699970595,
+          0.04007671500039578
+        ],
+        "std_hi1_forms": [
+          0.05964775699976599,
+          0.04999759600013931,
+          0.05758145199979481,
+          0.051999817000250914,
+          0.04857702900062577
+        ],
+        "std_hi2_forms": [
+          0.04535581599975558,
+          0.048386529999334016,
+          0.05020059900016349,
+          0.049024244000065664,
+          0.045862669000598544
+        ],
+        "flint_native_factorial": [
+          0.0005870329996469081,
+          0.0005989660003251629,
+          0.0006192569999257103,
+          0.0006516879993796465,
+          0.0006089729995437665
+        ],
+        "flint_block_factorial": [
+          0.0008754469999985304,
+          0.000861591000102635,
+          0.0008468180003546877,
+          0.0008751209998081322,
+          0.0009164830007648561
+        ],
+        "flint_nodal_shared": [
+          0.0005977889995847363,
+          0.0006239660006031045,
+          0.0006187709996083868,
+          0.000603825999860419,
+          0.0006287770002018078
+        ],
+        "flint_hi1_forms": [
+          0.007271049999872048,
+          0.007566737000161083,
+          0.010017380999670422,
+          0.007732744000350067,
+          0.008022387999517377
+        ],
+        "flint_hi1_pari": [
+          0.0009320280005340464,
+          0.0009134060001088073,
+          0.001396226999531791,
+          0.001028466999741795,
+          0.0010686249997888808
+        ],
+        "flint_hi2_pari": [
+          0.0008982379995359224,
+          0.0009033699998326483,
+          0.0014765320001970395,
+          0.0009478389993091696,
+          0.0008744300002945238
+        ]
+      },
+      "medians_s": {
+        "std_factorial_block": 0.06107171500025288,
+        "std_nodal_shared": 0.04192072699970595,
+        "std_hi1_forms": 0.051999817000250914,
+        "std_hi2_forms": 0.048386529999334016,
+        "flint_native_factorial": 0.0006089729995437665,
+        "flint_block_factorial": 0.0008751209998081322,
+        "flint_nodal_shared": 0.0006187709996083868,
+        "flint_hi1_forms": 0.007732744000350067,
+        "flint_hi1_pari": 0.001028466999741795,
+        "flint_hi2_pari": 0.0009033699998326483
+      },
+      "class_number_only": {
+        "D": -8000372,
+        "forms": {
+          "samples_s": [
+            0.00673757000004116,
+            0.00653428899931896,
+            0.006591960000150721,
+            0.0065582659999563475,
+            0.006659499000306823
+          ],
+          "median_s": 0.006591960000150721
+        },
+        "pari": {
+          "samples_s": [
+            0.0003464559995336458,
+            0.0002062499997919076,
+            0.0002936490000138292,
+            0.000218388000575942,
+            0.0003049509996344568
+          ],
+          "median_s": 0.0002936490000138292
+        }
+      },
+      "metadata": {
+        "std_factorial_block": {
+          "block_size": 816,
+          "blocks": 817,
+          "channels": 1,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 30243,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 8533,
+              "packed_integer_multiplications": 8533,
+              "packed_coefficient_reductions": 88736,
+              "maximum_length": 818,
+              "packed_max_operand_bits": 22905,
+              "packed_max_digit_bits": 56
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 842
+            },
+            "series_inverse_calls": 1632
+          }
+        },
+        "std_nodal_shared": {
+          "block_size": 408,
+          "blocks": 408,
+          "channels": 2,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 21325,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 6281,
+              "packed_integer_multiplications": 6281,
+              "packed_coefficient_reductions": 57294,
+              "maximum_length": 409,
+              "packed_max_operand_bits": 19585,
+              "packed_max_digit_bits": 56
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 1236
+            },
+            "series_inverse_calls": 815
+          }
+        },
+        "std_hi1_forms": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -8000372,
+            "classno": 1134,
+            "a": -1403,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 333349,
+          "layout": 1,
+          "product": {
+            "block_size": 577,
+            "blocks": 577,
+            "channels": 1,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 22508,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 6108,
+                "packed_integer_multiplications": 6108,
+                "packed_coefficient_reductions": 66661,
+                "maximum_length": 578,
+                "packed_max_operand_bits": 27697,
+                "packed_max_digit_bits": 56
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 997
+              },
+              "series_inverse_calls": 1153
+            }
+          }
+        },
+        "std_hi2_forms": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -8000372,
+            "classno": 1134,
+            "a": -1403,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 333349,
+          "layout": 2,
+          "product": {
+            "block_size": 408,
+            "blocks": 408,
+            "channels": 2,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 21325,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 6281,
+                "packed_integer_multiplications": 6281,
+                "packed_coefficient_reductions": 57294,
+                "maximum_length": 409,
+                "packed_max_operand_bits": 19585,
+                "packed_max_digit_bits": 56
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 1236
+              },
+              "series_inverse_calls": 815
+            }
+          }
+        },
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 816,
+          "blocks": 817,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 408,
+          "blocks": 408,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -8000372,
+            "classno": 1134,
+            "a": -1403,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 333349,
+          "layout": 1,
+          "product": {
+            "block_size": 577,
+            "blocks": 577,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -8000372,
+            "classno": 1134,
+            "a": -1403,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 333349,
+          "layout": 1,
+          "product": {
+            "block_size": 577,
+            "blocks": 577,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -8000372,
+            "classno": 1134,
+            "a": -1403,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 333349,
+          "layout": 2,
+          "product": {
+            "block_size": 408,
+            "blocks": 408,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    },
+    {
+      "p": 20000003,
+      "p_class": "A",
+      "c": 3333887,
+      "samples_s": {
+        "std_factorial_block": [
+          0.2432179269999324,
+          0.34059896700000536,
+          0.23577198700058943,
+          0.27543971900013275,
+          0.26318710800023837
+        ],
+        "std_nodal_shared": [
+          0.15328913800021837,
+          0.15422295099961048,
+          0.15239170600034413,
+          0.1732431889995496,
+          0.1730553939996753
+        ],
+        "std_hi1_forms": [
+          0.1652805809999336,
+          0.1566479020002589,
+          0.19219150399931095,
+          0.1719965680003952,
+          0.1670072730003085
+        ],
+        "std_hi2_forms": [
+          0.16363114300020243,
+          0.17998021699986566,
+          0.14533419200051867,
+          0.19472352799948567,
+          0.18906034299925523
+        ],
+        "flint_native_factorial": [
+          0.003444130000389123,
+          0.004976684999746794,
+          0.003073105999646941,
+          0.003505425000184914,
+          0.003908765999767638
+        ],
+        "flint_block_factorial": [
+          0.004472204999729001,
+          0.0070180279999476625,
+          0.003978268000537355,
+          0.004715134000434773,
+          0.0051843510000253445
+        ],
+        "flint_nodal_shared": [
+          0.0030143739995764918,
+          0.004692227999839815,
+          0.002792479000163439,
+          0.0030180639996615355,
+          0.003761551000025065
+        ],
+        "flint_hi1_forms": [
+          0.011151568000059342,
+          0.01739956799974607,
+          0.01320011100051488,
+          0.013471706000018457,
+          0.0165990529994815
+        ],
+        "flint_hi1_pari": [
+          0.0029097280003043124,
+          0.004784164000739111,
+          0.002986800000144285,
+          0.0031152430001384346,
+          0.0032092969995574094
+        ],
+        "flint_hi2_pari": [
+          0.0033488049994048197,
+          0.005357772000024852,
+          0.0031810230002520257,
+          0.003346939999573806,
+          0.0035382039995965897
+        ]
+      },
+      "medians_s": {
+        "std_factorial_block": 0.26318710800023837,
+        "std_nodal_shared": 0.15422295099961048,
+        "std_hi1_forms": 0.1670072730003085,
+        "std_hi2_forms": 0.17998021699986566,
+        "flint_native_factorial": 0.003505425000184914,
+        "flint_block_factorial": 0.004715134000434773,
+        "flint_nodal_shared": 0.0030180639996615355,
+        "flint_hi1_forms": 0.013471706000018457,
+        "flint_hi1_pari": 0.0031152430001384346,
+        "flint_hi2_pari": 0.0033488049994048197
+      },
+      "class_number_only": {
+        "D": -20000003,
+        "forms": {
+          "samples_s": [
+            0.010693604000152845,
+            0.009549858999889693,
+            0.009145277999778045,
+            0.010505813999770908,
+            0.010851172999537084
+          ],
+          "median_s": 0.010505813999770908
+        },
+        "pari": {
+          "samples_s": [
+            0.00046897499942133436,
+            0.0004455299995242967,
+            0.00026944399996864377,
+            0.0002313169998160447,
+            0.0002417879995846306
+          ],
+          "median_s": 0.00026944399996864377
+        }
+      },
+      "metadata": {
+        "std_factorial_block": {
+          "block_size": 2581,
+          "blocks": 2582,
+          "channels": 1,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 121716,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 27809,
+              "packed_integer_multiplications": 27809,
+              "packed_coefficient_reductions": 366970,
+              "maximum_length": 2583,
+              "packed_max_operand_bits": 82625,
+              "packed_max_digit_bits": 64
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 5107
+            },
+            "series_inverse_calls": 5162
+          }
+        },
+        "std_nodal_shared": {
+          "block_size": 1290,
+          "blocks": 1291,
+          "channels": 2,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 81827,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 20328,
+              "packed_integer_multiplications": 20328,
+              "packed_coefficient_reductions": 230904,
+              "maximum_length": 1292,
+              "packed_max_operand_bits": 41345,
+              "packed_max_digit_bits": 64
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 5134
+            },
+            "series_inverse_calls": 2580
+          }
+        },
+        "std_hi1_forms": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -20000003,
+            "classno": 1215,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 3333334,
+          "layout": 1,
+          "product": {
+            "block_size": 1825,
+            "blocks": 1826,
+            "channels": 1,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 74153,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 18649,
+                "packed_integer_multiplications": 18649,
+                "packed_coefficient_reductions": 216745,
+                "maximum_length": 1827,
+                "packed_max_operand_bits": 58433,
+                "packed_max_digit_bits": 64
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 2710
+              },
+              "series_inverse_calls": 3650
+            }
+          }
+        },
+        "std_hi2_forms": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -20000003,
+            "classno": 1215,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 3333334,
+          "layout": 2,
+          "product": {
+            "block_size": 1290,
+            "blocks": 1291,
+            "channels": 2,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 81827,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 20328,
+                "packed_integer_multiplications": 20328,
+                "packed_coefficient_reductions": 230904,
+                "maximum_length": 1292,
+                "packed_max_operand_bits": 41345,
+                "packed_max_digit_bits": 64
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 5136
+              },
+              "series_inverse_calls": 2580
+            }
+          }
+        },
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 2581,
+          "blocks": 2582,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 1290,
+          "blocks": 1291,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -20000003,
+            "classno": 1215,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 3333334,
+          "layout": 1,
+          "product": {
+            "block_size": 1825,
+            "blocks": 1826,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -20000003,
+            "classno": 1215,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 3333334,
+          "layout": 1,
+          "product": {
+            "block_size": 1825,
+            "blocks": 1826,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -20000003,
+            "classno": 1215,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 3333334,
+          "layout": 2,
+          "product": {
+            "block_size": 1290,
+            "blocks": 1291,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    },
+    {
+      "p": 20000033,
+      "p_class": "C",
+      "c": 12405938,
+      "samples_s": {
+        "std_factorial_block": [
+          0.27772305000053166,
+          0.32942993200049386,
+          0.25704100699931587,
+          0.2627913610003816,
+          0.25443985699985205
+        ],
+        "std_nodal_shared": [
+          0.17912804799925652,
+          0.18323518699980923,
+          0.16911207799967087,
+          0.16814925800008496,
+          0.18473223599994526
+        ],
+        "std_hi1_forms": [
+          0.20309771599931992,
+          0.19103202800033614,
+          0.1924508029997014,
+          0.19024474199977703,
+          0.17885785900034534
+        ],
+        "std_hi2_forms": [
+          0.1827649389997532,
+          0.20009661299991421,
+          0.18997376900006202,
+          0.19353491599940753,
+          0.19102213099995424
+        ],
+        "flint_native_factorial": [
+          0.0033468829997218563,
+          0.00450174799971137,
+          0.0035055520002060803,
+          0.0033402870003556018,
+          0.00351821500044025
+        ],
+        "flint_block_factorial": [
+          0.004524184999354475,
+          0.004876625999713724,
+          0.004654913999729615,
+          0.004719322999335418,
+          0.0046493710005961475
+        ],
+        "flint_nodal_shared": [
+          0.0032298600008289213,
+          0.0033476149992566206,
+          0.0033863219996419502,
+          0.003119159000561922,
+          0.0031625930005247938
+        ],
+        "flint_hi1_forms": [
+          0.01995857500060083,
+          0.020995993999349594,
+          0.021838790999936464,
+          0.019431288000305358,
+          0.019825876000140852
+        ],
+        "flint_hi1_pari": [
+          0.0031523779998678947,
+          0.003416866000407026,
+          0.0032266329999401933,
+          0.0030099810001047445,
+          0.0036112719999437104
+        ],
+        "flint_hi2_pari": [
+          0.0034093380008926033,
+          0.003690152000672242,
+          0.003634497999883024,
+          0.0035726269998122007,
+          0.0034019320000879816
+        ]
+      },
+      "medians_s": {
+        "std_factorial_block": 0.2627913610003816,
+        "std_nodal_shared": 0.17912804799925652,
+        "std_hi1_forms": 0.19103202800033614,
+        "std_hi2_forms": 0.19102213099995424,
+        "flint_native_factorial": 0.0035055520002060803,
+        "flint_block_factorial": 0.004654913999729615,
+        "flint_nodal_shared": 0.0032298600008289213,
+        "flint_hi1_forms": 0.01995857500060083,
+        "flint_hi1_pari": 0.0032266329999401933,
+        "flint_hi2_pari": 0.0035726269998122007
+      },
+      "class_number_only": {
+        "D": -60000099,
+        "forms": {
+          "samples_s": [
+            0.01680851299988717,
+            0.016151588000866468,
+            0.01717265099978249,
+            0.014559235000888293,
+            0.014028454000253987
+          ],
+          "median_s": 0.016151588000866468
+        },
+        "pari": {
+          "samples_s": [
+            0.00036885400004393887,
+            0.00018807299966283608,
+            0.00022343700038618408,
+            0.0001736069998514722,
+            0.0001936939997904119
+          ],
+          "median_s": 0.0001936939997904119
+        }
+      },
+      "metadata": {
+        "std_factorial_block": {
+          "block_size": 2581,
+          "blocks": 2582,
+          "channels": 1,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 121716,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 27809,
+              "packed_integer_multiplications": 27809,
+              "packed_coefficient_reductions": 366970,
+              "maximum_length": 2583,
+              "packed_max_operand_bits": 82625,
+              "packed_max_digit_bits": 64
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 5117
+            },
+            "series_inverse_calls": 5162
+          }
+        },
+        "std_nodal_shared": {
+          "block_size": 1290,
+          "blocks": 1291,
+          "channels": 2,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 81827,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 20328,
+              "packed_integer_multiplications": 20328,
+              "packed_coefficient_reductions": 230904,
+              "maximum_length": 1292,
+              "packed_max_operand_bits": 41345,
+              "packed_max_digit_bits": 64
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 5140
+            },
+            "series_inverse_calls": 2580
+          }
+        },
+        "std_hi1_forms": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -60000099,
+            "classno": 2274,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 3333339,
+          "layout": 1,
+          "product": {
+            "block_size": 1825,
+            "blocks": 1826,
+            "channels": 1,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 74153,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 18649,
+                "packed_integer_multiplications": 18649,
+                "packed_coefficient_reductions": 216745,
+                "maximum_length": 1827,
+                "packed_max_operand_bits": 58433,
+                "packed_max_digit_bits": 64
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 2715
+              },
+              "series_inverse_calls": 3650
+            }
+          }
+        },
+        "std_hi2_forms": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -60000099,
+            "classno": 2274,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 3333339,
+          "layout": 2,
+          "product": {
+            "block_size": 1290,
+            "blocks": 1291,
+            "channels": 2,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 81827,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 20328,
+                "packed_integer_multiplications": 20328,
+                "packed_coefficient_reductions": 230904,
+                "maximum_length": 1292,
+                "packed_max_operand_bits": 41345,
+                "packed_max_digit_bits": 64
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 5140
+              },
+              "series_inverse_calls": 2580
+            }
+          }
+        },
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 2581,
+          "blocks": 2582,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 1290,
+          "blocks": 1291,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -60000099,
+            "classno": 2274,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 3333339,
+          "layout": 1,
+          "product": {
+            "block_size": 1825,
+            "blocks": 1826,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -60000099,
+            "classno": 2274,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 3333339,
+          "layout": 1,
+          "product": {
+            "block_size": 1825,
+            "blocks": 1826,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -60000099,
+            "classno": 2274,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 3333339,
+          "layout": 2,
+          "product": {
+            "block_size": 1290,
+            "blocks": 1291,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    },
+    {
+      "p": 20000069,
+      "p_class": "B",
+      "c": 12270505,
+      "samples_s": {
+        "std_factorial_block": [
+          0.2360109179999199,
+          0.23515016799956356,
+          0.2519471899995551,
+          0.3383256179995442,
+          0.2817397360004179
+        ],
+        "std_nodal_shared": [
+          0.17741032899994025,
+          0.15632737599935354,
+          0.1471440650002478,
+          0.1888476020003509,
+          0.18497008999929676
+        ],
+        "std_hi1_forms": [
+          0.19522684200001095,
+          0.16616374300065218,
+          0.14738764400044602,
+          0.2765085819992237,
+          0.2029888650004068
+        ],
+        "std_hi2_forms": [
+          0.21222099299939146,
+          0.18279858400001103,
+          0.15408184399984748,
+          0.21459176400003344,
+          0.20467629400081933
+        ],
+        "flint_native_factorial": [
+          0.0035371200001463876,
+          0.004150677999859909,
+          0.0027677510006469674,
+          0.0035650620002343203,
+          0.003783016999477695
+        ],
+        "flint_block_factorial": [
+          0.004623976000402763,
+          0.0056561920000604005,
+          0.0035896110002795467,
+          0.0048194490000241785,
+          0.0047176620000755065
+        ],
+        "flint_nodal_shared": [
+          0.003214691000721359,
+          0.0038521149999724003,
+          0.0024801760000627837,
+          0.003348561000166228,
+          0.0031634450006094994
+        ],
+        "flint_hi1_forms": [
+          0.030093295999904512,
+          0.0327593390002221,
+          0.02283782499944209,
+          0.036795707999772276,
+          0.03139966700018704
+        ],
+        "flint_hi1_pari": [
+          0.003306039999188215,
+          0.0034896729994216003,
+          0.0025220739998985664,
+          0.0045949899995321175,
+          0.0033819629998106393
+        ],
+        "flint_hi2_pari": [
+          0.003753797999706876,
+          0.004116551999686635,
+          0.0027769589996751165,
+          0.005143827000210877,
+          0.0038131990004330873
+        ]
+      },
+      "medians_s": {
+        "std_factorial_block": 0.2519471899995551,
+        "std_nodal_shared": 0.17741032899994025,
+        "std_hi1_forms": 0.19522684200001095,
+        "std_hi2_forms": 0.20467629400081933,
+        "flint_native_factorial": 0.0035650620002343203,
+        "flint_block_factorial": 0.0047176620000755065,
+        "flint_nodal_shared": 0.003214691000721359,
+        "flint_hi1_forms": 0.03139966700018704,
+        "flint_hi1_pari": 0.0033819629998106393,
+        "flint_hi2_pari": 0.0038131990004330873
+      },
+      "class_number_only": {
+        "D": -80000276,
+        "forms": {
+          "samples_s": [
+            0.02661353700023028,
+            0.026817372000550677,
+            0.02664494900000136,
+            0.024136564999935217,
+            0.02100698999947781
+          ],
+          "median_s": 0.02661353700023028
+        },
+        "pari": {
+          "samples_s": [
+            0.0004688870003519696,
+            0.0002281480001329328,
+            0.0002341879999221419,
+            0.00022594300025957637,
+            0.0002674249999472522
+          ],
+          "median_s": 0.0002341879999221419
+        }
+      },
+      "metadata": {
+        "std_factorial_block": {
+          "block_size": 2581,
+          "blocks": 2582,
+          "channels": 1,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 121716,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 27809,
+              "packed_integer_multiplications": 27809,
+              "packed_coefficient_reductions": 366970,
+              "maximum_length": 2583,
+              "packed_max_operand_bits": 82625,
+              "packed_max_digit_bits": 64
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 5129
+            },
+            "series_inverse_calls": 5162
+          }
+        },
+        "std_nodal_shared": {
+          "block_size": 1290,
+          "blocks": 1291,
+          "channels": 2,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 81827,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 20328,
+              "packed_integer_multiplications": 20328,
+              "packed_coefficient_reductions": 230904,
+              "maximum_length": 1292,
+              "packed_max_operand_bits": 41345,
+              "packed_max_digit_bits": 64
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 5146
+            },
+            "series_inverse_calls": 2580
+          }
+        },
+        "std_hi1_forms": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -80000276,
+            "classno": 5030,
+            "a": -2255,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 3333345,
+          "layout": 1,
+          "product": {
+            "block_size": 1825,
+            "blocks": 1826,
+            "channels": 1,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 74153,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 18649,
+                "packed_integer_multiplications": 18649,
+                "packed_coefficient_reductions": 216745,
+                "maximum_length": 1827,
+                "packed_max_operand_bits": 58433,
+                "packed_max_digit_bits": 64
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 2721
+              },
+              "series_inverse_calls": 3650
+            }
+          }
+        },
+        "std_hi2_forms": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -80000276,
+            "classno": 5030,
+            "a": -2255,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 3333345,
+          "layout": 2,
+          "product": {
+            "block_size": 1290,
+            "blocks": 1291,
+            "channels": 2,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 81827,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 20328,
+                "packed_integer_multiplications": 20328,
+                "packed_coefficient_reductions": 230904,
+                "maximum_length": 1292,
+                "packed_max_operand_bits": 41345,
+                "packed_max_digit_bits": 64
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 5146
+              },
+              "series_inverse_calls": 2580
+            }
+          }
+        },
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 2581,
+          "blocks": 2582,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 1290,
+          "blocks": 1291,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -80000276,
+            "classno": 5030,
+            "a": -2255,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 3333345,
+          "layout": 1,
+          "product": {
+            "block_size": 1825,
+            "blocks": 1826,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -80000276,
+            "classno": 5030,
+            "a": -2255,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 3333345,
+          "layout": 1,
+          "product": {
+            "block_size": 1825,
+            "blocks": 1826,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -80000276,
+            "classno": 5030,
+            "a": -2255,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 3333345,
+          "layout": 2,
+          "product": {
+            "block_size": 1290,
+            "blocks": 1291,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    },
+    {
+      "p": 200000033,
+      "p_class": "C",
+      "c": 160005577,
+      "samples_s": {
+        "std_factorial_block": [
+          1.0200322439995944,
+          0.9263576960001956,
+          1.0387505059998148,
+          0.9026339960000769,
+          0.9721516240006167
+        ],
+        "std_nodal_shared": [
+          0.627864400999897,
+          0.7329222399994251,
+          0.547755522999978,
+          0.6132204519999505,
+          0.6236178289991585
+        ],
+        "std_hi1_forms": [
+          0.7117675599993163,
+          0.7905355370003235,
+          0.6349142740000389,
+          0.7528613189997486,
+          0.6807852609999827
+        ],
+        "std_hi2_forms": [
+          0.5901446569996551,
+          0.6920643659996131,
+          0.7766016079995097,
+          0.7890837839995584,
+          0.6433099380001295
+        ],
+        "flint_native_factorial": [
+          0.031632799000362866,
+          0.019477262000691553,
+          0.022994099999777973,
+          0.020259271999748307,
+          0.019875192999279534
+        ],
+        "flint_block_factorial": [
+          0.038180245000148716,
+          0.022604165999837278,
+          0.02427877499940223,
+          0.02426742900024692,
+          0.028088128000490542
+        ],
+        "flint_nodal_shared": [
+          0.02585941899997124,
+          0.01993531400057691,
+          0.016278261000479688,
+          0.01800102099969081,
+          0.016391760000260547
+        ],
+        "flint_hi1_forms": [
+          0.07923529900017456,
+          0.08200193499942543,
+          0.07711360299981607,
+          0.08228083400081232,
+          0.07715817799999058
+        ],
+        "flint_hi1_pari": [
+          0.013154714999473072,
+          0.013615668999591435,
+          0.014576489999853948,
+          0.014685408000332245,
+          0.014711091999743076
+        ],
+        "flint_hi2_pari": [
+          0.015211110000564076,
+          0.015114945999812335,
+          0.016795628999716428,
+          0.016827282000122068,
+          0.017422638999960327
+        ]
+      },
+      "medians_s": {
+        "std_factorial_block": 0.9721516240006167,
+        "std_nodal_shared": 0.6236178289991585,
+        "std_hi1_forms": 0.7117675599993163,
+        "std_hi2_forms": 0.6920643659996131,
+        "flint_native_factorial": 0.020259271999748307,
+        "flint_block_factorial": 0.02427877499940223,
+        "flint_nodal_shared": 0.01800102099969081,
+        "flint_hi1_forms": 0.07923529900017456,
+        "flint_hi1_pari": 0.014576489999853948,
+        "flint_hi2_pari": 0.016795628999716428
+      },
+      "class_number_only": {
+        "D": -600000099,
+        "forms": {
+          "samples_s": [
+            0.06300594399999682,
+            0.06496367099953204,
+            0.07271079800011648,
+            0.06832816499991168,
+            0.06791041700034839
+          ],
+          "median_s": 0.06791041700034839
+        },
+        "pari": {
+          "samples_s": [
+            0.0006059710003682994,
+            0.00037135999991733115,
+            0.0002873539997381158,
+            0.000470893000056094,
+            0.0003807319999395986
+          ],
+          "median_s": 0.0003807319999395986
+        }
+      },
+      "metadata": {
+        "std_factorial_block": {
+          "block_size": 8164,
+          "blocks": 8165,
+          "channels": 1,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 392112,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 81641,
+              "packed_integer_multiplications": 81641,
+              "packed_coefficient_reductions": 1143961,
+              "maximum_length": 8166,
+              "packed_max_operand_bits": 293977,
+              "packed_max_digit_bits": 72
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 15782
+            },
+            "series_inverse_calls": 16328
+          }
+        },
+        "std_nodal_shared": {
+          "block_size": 4082,
+          "blocks": 4082,
+          "channels": 2,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 285801,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 61199,
+              "packed_integer_multiplications": 61199,
+              "packed_coefficient_reductions": 771858,
+              "maximum_length": 4083,
+              "packed_max_operand_bits": 228593,
+              "packed_max_digit_bits": 72
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 16054
+            },
+            "series_inverse_calls": 8163
+          }
+        },
+        "std_hi1_forms": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -600000099,
+            "classno": 10910,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 33333339,
+          "layout": 1,
+          "product": {
+            "block_size": 5773,
+            "blocks": 5774,
+            "channels": 1,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 293342,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 61773,
+                "packed_integer_multiplications": 61773,
+                "packed_coefficient_reductions": 878733,
+                "maximum_length": 5775,
+                "packed_max_operand_bits": 207865,
+                "packed_max_digit_bits": 72
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 5811
+              },
+              "series_inverse_calls": 11546
+            }
+          }
+        },
+        "std_hi2_forms": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -600000099,
+            "classno": 10910,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 33333339,
+          "layout": 2,
+          "product": {
+            "block_size": 4082,
+            "blocks": 4082,
+            "channels": 2,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 285801,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 61199,
+                "packed_integer_multiplications": 61199,
+                "packed_coefficient_reductions": 771858,
+                "maximum_length": 4083,
+                "packed_max_operand_bits": 228593,
+                "packed_max_digit_bits": 72
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 16054
+              },
+              "series_inverse_calls": 8163
+            }
+          }
+        },
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 8164,
+          "blocks": 8165,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 4082,
+          "blocks": 4082,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -600000099,
+            "classno": 10910,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 33333339,
+          "layout": 1,
+          "product": {
+            "block_size": 5773,
+            "blocks": 5774,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -600000099,
+            "classno": 10910,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 33333339,
+          "layout": 1,
+          "product": {
+            "block_size": 5773,
+            "blocks": 5774,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -600000099,
+            "classno": 10910,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 33333339,
+          "layout": 2,
+          "product": {
+            "block_size": 4082,
+            "blocks": 4082,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    },
+    {
+      "p": 200000039,
+      "p_class": "A",
+      "c": 194836981,
+      "samples_s": {
+        "std_factorial_block": [
+          0.8833507529998315,
+          1.0452059130002453,
+          0.9807243189998189,
+          0.7820062499995402,
+          1.0262534860003143
+        ],
+        "std_nodal_shared": [
+          0.5083377040000414,
+          0.6160704840003746,
+          0.5375970029999735,
+          0.6516453089998322,
+          0.6598094120008682
+        ],
+        "std_hi1_forms": [
+          0.6908261409998886,
+          0.7400937640004486,
+          0.7835152340003333,
+          0.676778361000288,
+          0.7295904570000857
+        ],
+        "std_hi2_forms": [
+          0.637861606000115,
+          0.676978567000333,
+          0.681609483000102,
+          0.5524945380002464,
+          0.6697268649995749
+        ],
+        "flint_native_factorial": [
+          0.016311587000018335,
+          0.022867075999783992,
+          0.018759210000098392,
+          0.015257693999956246,
+          0.016267174000859086
+        ],
+        "flint_block_factorial": [
+          0.01964384699931543,
+          0.02494520299933356,
+          0.022674284999993688,
+          0.018409917999633763,
+          0.01841166600024735
+        ],
+        "flint_nodal_shared": [
+          0.013514971999939007,
+          0.017121216999839817,
+          0.017649764999987383,
+          0.012821010999687132,
+          0.013920506000431487
+        ],
+        "flint_hi1_forms": [
+          0.057814652000161004,
+          0.07805182300035085,
+          0.06628353599990078,
+          0.05286630499995226,
+          0.07226586700016924
+        ],
+        "flint_hi1_pari": [
+          0.012355644999843207,
+          0.014206418999492598,
+          0.015019649999885587,
+          0.011242845000197121,
+          0.014563592999365937
+        ],
+        "flint_hi2_pari": [
+          0.015872637999564176,
+          0.01703146599993488,
+          0.017490720000751026,
+          0.013012988999435038,
+          0.01727444700009073
+        ]
+      },
+      "medians_s": {
+        "std_factorial_block": 0.9807243189998189,
+        "std_nodal_shared": 0.6160704840003746,
+        "std_hi1_forms": 0.7295904570000857,
+        "std_hi2_forms": 0.6697268649995749,
+        "flint_native_factorial": 0.016311587000018335,
+        "flint_block_factorial": 0.01964384699931543,
+        "flint_nodal_shared": 0.013920506000431487,
+        "flint_hi1_forms": 0.06628353599990078,
+        "flint_hi1_pari": 0.014206418999492598,
+        "flint_hi2_pari": 0.01703146599993488
+      },
+      "class_number_only": {
+        "D": -200000039,
+        "forms": {
+          "samples_s": [
+            0.0592845839992151,
+            0.06000775899974542,
+            0.05694392100031109,
+            0.05582581500038941,
+            0.05724172400005045
+          ],
+          "median_s": 0.05724172400005045
+        },
+        "pari": {
+          "samples_s": [
+            0.0006799630000386969,
+            0.0003908179996869876,
+            0.0003139079999527894,
+            0.0003245409998271498,
+            0.0003142929999739863
+          ],
+          "median_s": 0.0003245409998271498
+        }
+      },
+      "metadata": {
+        "std_factorial_block": {
+          "block_size": 8164,
+          "blocks": 8165,
+          "channels": 1,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 392112,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 81641,
+              "packed_integer_multiplications": 81641,
+              "packed_coefficient_reductions": 1143961,
+              "maximum_length": 8166,
+              "packed_max_operand_bits": 293977,
+              "packed_max_digit_bits": 72
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 15784
+            },
+            "series_inverse_calls": 16328
+          }
+        },
+        "std_nodal_shared": {
+          "block_size": 4082,
+          "blocks": 4082,
+          "channels": 2,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 285801,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 61199,
+              "packed_integer_multiplications": 61199,
+              "packed_coefficient_reductions": 771858,
+              "maximum_length": 4083,
+              "packed_max_operand_bits": 228593,
+              "packed_max_digit_bits": 72
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 16054
+            },
+            "series_inverse_calls": 8163
+          }
+        },
+        "std_hi1_forms": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -200000039,
+            "classno": 12573,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 33333340,
+          "layout": 1,
+          "product": {
+            "block_size": 5773,
+            "blocks": 5774,
+            "channels": 1,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 293342,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 61773,
+                "packed_integer_multiplications": 61773,
+                "packed_coefficient_reductions": 878733,
+                "maximum_length": 5775,
+                "packed_max_operand_bits": 207865,
+                "packed_max_digit_bits": 72
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 5812
+              },
+              "series_inverse_calls": 11546
+            }
+          }
+        },
+        "std_hi2_forms": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -200000039,
+            "classno": 12573,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 33333340,
+          "layout": 2,
+          "product": {
+            "block_size": 4082,
+            "blocks": 4082,
+            "channels": 2,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 285801,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 61199,
+                "packed_integer_multiplications": 61199,
+                "packed_coefficient_reductions": 771858,
+                "maximum_length": 4083,
+                "packed_max_operand_bits": 228593,
+                "packed_max_digit_bits": 72
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 16056
+              },
+              "series_inverse_calls": 8163
+            }
+          }
+        },
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 8164,
+          "blocks": 8165,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 4082,
+          "blocks": 4082,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -200000039,
+            "classno": 12573,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 33333340,
+          "layout": 1,
+          "product": {
+            "block_size": 5773,
+            "blocks": 5774,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -200000039,
+            "classno": 12573,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 33333340,
+          "layout": 1,
+          "product": {
+            "block_size": 5773,
+            "blocks": 5774,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -200000039,
+            "classno": 12573,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 33333340,
+          "layout": 2,
+          "product": {
+            "block_size": 4082,
+            "blocks": 4082,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    },
+    {
+      "p": 200000069,
+      "p_class": "B",
+      "c": 70845398,
+      "samples_s": {
+        "std_factorial_block": [
+          0.9169447379999838,
+          0.8856379219996597,
+          0.9287418880003315,
+          0.9432900020001398,
+          0.8208046439995087
+        ],
+        "std_nodal_shared": [
+          0.5037696000008509,
+          0.6189065819999087,
+          0.5960443009998926,
+          0.6635925150003459,
+          0.4905400869993173
+        ],
+        "std_hi1_forms": [
+          0.8106558919998861,
+          0.8574506219993054,
+          0.7693383509995328,
+          0.7259830700004386,
+          0.7556037369995465
+        ],
+        "std_hi2_forms": [
+          0.6106314399994517,
+          0.7309506450001209,
+          0.7204600750001191,
+          0.6545426729999235,
+          0.6650821929997619
+        ],
+        "flint_native_factorial": [
+          0.017875748000733438,
+          0.016415199000221037,
+          0.01982233000035194,
+          0.017660794999756035,
+          0.018384837000667176
+        ],
+        "flint_block_factorial": [
+          0.020950714000719017,
+          0.01924213799975405,
+          0.023154065000198898,
+          0.0206274759993903,
+          0.022550924999450217
+        ],
+        "flint_nodal_shared": [
+          0.014695419999952719,
+          0.0133814649998385,
+          0.016224617999796465,
+          0.014922972999556805,
+          0.01629815900014364
+        ],
+        "flint_hi1_forms": [
+          0.09814482199999475,
+          0.10493126700021094,
+          0.10970600200016634,
+          0.0920755460001601,
+          0.10522747799950594
+        ],
+        "flint_hi1_pari": [
+          0.012610266000592674,
+          0.014392628000678087,
+          0.01457567800025572,
+          0.012468871999772091,
+          0.014128110000456218
+        ],
+        "flint_hi2_pari": [
+          0.014750550000826479,
+          0.016837381000186724,
+          0.01649296699997649,
+          0.013699488000384008,
+          0.016078938000646303
+        ]
+      },
+      "medians_s": {
+        "std_factorial_block": 0.9169447379999838,
+        "std_nodal_shared": 0.5960443009998926,
+        "std_hi1_forms": 0.7693383509995328,
+        "std_hi2_forms": 0.6650821929997619,
+        "flint_native_factorial": 0.017875748000733438,
+        "flint_block_factorial": 0.020950714000719017,
+        "flint_nodal_shared": 0.014922972999556805,
+        "flint_hi1_forms": 0.10493126700021094,
+        "flint_hi1_pari": 0.014128110000456218,
+        "flint_hi2_pari": 0.016078938000646303
+      },
+      "class_number_only": {
+        "D": -800000276,
+        "forms": {
+          "samples_s": [
+            0.10201877400049852,
+            0.09141563800039876,
+            0.0967272440002489,
+            0.09715143700032058,
+            0.10369191199970373
+          ],
+          "median_s": 0.09715143700032058
+        },
+        "pari": {
+          "samples_s": [
+            0.00048339099976146827,
+            0.0003250359995945473,
+            0.0004370320002635708,
+            0.00027720399975805776,
+            0.0002766920006251894
+          ],
+          "median_s": 0.0003250359995945473
+        }
+      },
+      "metadata": {
+        "std_factorial_block": {
+          "block_size": 8164,
+          "blocks": 8165,
+          "channels": 1,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 392112,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 81641,
+              "packed_integer_multiplications": 81641,
+              "packed_coefficient_reductions": 1143961,
+              "maximum_length": 8166,
+              "packed_max_operand_bits": 293977,
+              "packed_max_digit_bits": 72
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 15794
+            },
+            "series_inverse_calls": 16328
+          }
+        },
+        "std_nodal_shared": {
+          "block_size": 4082,
+          "blocks": 4082,
+          "channels": 2,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 285801,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 61199,
+              "packed_integer_multiplications": 61199,
+              "packed_coefficient_reductions": 771858,
+              "maximum_length": 4083,
+              "packed_max_operand_bits": 228593,
+              "packed_max_digit_bits": 72
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 16060
+            },
+            "series_inverse_calls": 8163
+          }
+        },
+        "std_hi1_forms": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -800000276,
+            "classno": 19962,
+            "a": -13663,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 33333345,
+          "layout": 1,
+          "product": {
+            "block_size": 5773,
+            "blocks": 5774,
+            "channels": 1,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 293342,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 61773,
+                "packed_integer_multiplications": 61773,
+                "packed_coefficient_reductions": 878733,
+                "maximum_length": 5775,
+                "packed_max_operand_bits": 207865,
+                "packed_max_digit_bits": 72
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 5817
+              },
+              "series_inverse_calls": 11546
+            }
+          }
+        },
+        "std_hi2_forms": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -800000276,
+            "classno": 19962,
+            "a": -13663,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 33333345,
+          "layout": 2,
+          "product": {
+            "block_size": 4082,
+            "blocks": 4082,
+            "channels": 2,
+            "shared_inverses": true,
+            "counts": {
+              "polynomial": {
+                "coefficient_additions": 285801,
+                "coefficient_multiplications": 0,
+                "polynomial_multiplications": 61199,
+                "packed_integer_multiplications": 61199,
+                "packed_coefficient_reductions": 771858,
+                "maximum_length": 4083,
+                "packed_max_operand_bits": 228593,
+                "packed_max_digit_bits": 72
+              },
+              "scalar": {
+                "additions": 0,
+                "multiplications": 16060
+              },
+              "series_inverse_calls": 8163
+            }
+          }
+        },
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 8164,
+          "blocks": 8165,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 4082,
+          "blocks": 4082,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -800000276,
+            "classno": 19962,
+            "a": -13663,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 33333345,
+          "layout": 1,
+          "product": {
+            "block_size": 5773,
+            "blocks": 5774,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -800000276,
+            "classno": 19962,
+            "a": -13663,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 33333345,
+          "layout": 1,
+          "product": {
+            "block_size": 5773,
+            "blocks": 5774,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -800000276,
+            "classno": 19962,
+            "a": -13663,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 33333345,
+          "layout": 2,
+          "product": {
+            "block_size": 4082,
+            "blocks": 4082,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    },
+    {
+      "p": 2000000033,
+      "p_class": "C",
+      "c": 1723932546,
+      "samples_s": {
+        "flint_native_factorial": [
+          0.12110575099995913,
+          0.12919639499978075,
+          0.12329871000019921,
+          0.09892316599962214,
+          0.11470260299938673
+        ],
+        "flint_block_factorial": [
+          0.1337344049998137,
+          0.11063625899987528,
+          0.10496696900008828,
+          0.11870560399984242,
+          0.12373267600014515
+        ],
+        "flint_nodal_shared": [
+          0.0983640779995767,
+          0.07958273699932761,
+          0.10388425499968434,
+          0.09020198799953505,
+          0.1221689680005511
+        ],
+        "flint_hi1_forms": [
+          0.2281675840004027,
+          0.24461752900060674,
+          0.2737056380001377,
+          0.1994006310005716,
+          0.24633489799998642
+        ],
+        "flint_hi1_pari": [
+          0.07374683899979573,
+          0.08440006300043024,
+          0.0871479730003557,
+          0.07271261499954562,
+          0.07998594999935449
+        ],
+        "flint_hi2_pari": [
+          0.081661436000104,
+          0.09824836199913989,
+          0.09700022500055638,
+          0.08074530900012178,
+          0.08906835600009799
+        ]
+      },
+      "medians_s": {
+        "flint_native_factorial": 0.12110575099995913,
+        "flint_block_factorial": 0.11870560399984242,
+        "flint_nodal_shared": 0.0983640779995767,
+        "flint_hi1_forms": 0.24461752900060674,
+        "flint_hi1_pari": 0.07998594999935449,
+        "flint_hi2_pari": 0.08906835600009799
+      },
+      "class_number_only": {
+        "D": -6000000099,
+        "forms": {
+          "samples_s": [
+            0.16103008899972338,
+            0.16141307500038238,
+            0.16472120100024767,
+            0.15954581299956772,
+            0.16493406599965965
+          ],
+          "median_s": 0.16141307500038238
+        },
+        "pari": {
+          "samples_s": [
+            0.001108851000026334,
+            0.0007931540003482951,
+            0.0008388539999941713,
+            0.0007051789998513414,
+            0.000707546000739967
+          ],
+          "median_s": 0.0007931540003482951
+        }
+      },
+      "metadata": {
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 25819,
+          "blocks": 25820,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 12909,
+          "blocks": 12910,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -6000000099,
+            "classno": 11574,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 333333339,
+          "layout": 1,
+          "product": {
+            "block_size": 18257,
+            "blocks": 18257,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -6000000099,
+            "classno": 11574,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 333333339,
+          "layout": 1,
+          "product": {
+            "block_size": 18257,
+            "blocks": 18257,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -6000000099,
+            "classno": 11574,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 333333339,
+          "layout": 2,
+          "product": {
+            "block_size": 12909,
+            "blocks": 12910,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    },
+    {
+      "p": 2000000063,
+      "p_class": "A",
+      "c": 646829403,
+      "samples_s": {
+        "flint_native_factorial": [
+          0.11672754000028362,
+          0.1335886289998598,
+          0.12258154400024068,
+          0.09675278499980777,
+          0.11139227700004994
+        ],
+        "flint_block_factorial": [
+          0.15625535599974683,
+          0.1194945330007613,
+          0.1335239520003597,
+          0.12782587200035778,
+          0.15930389700042724
+        ],
+        "flint_nodal_shared": [
+          0.09651658799975849,
+          0.07929049999984272,
+          0.09824861600009172,
+          0.09770622500036552,
+          0.09537170599924139
+        ],
+        "flint_hi1_forms": [
+          0.2938474349994067,
+          0.28606432800006587,
+          0.29442148199996154,
+          0.25320078899949294,
+          0.2943402999999307
+        ],
+        "flint_hi1_pari": [
+          0.08884966699952201,
+          0.09113676300057705,
+          0.09450268700038578,
+          0.07684851000067283,
+          0.08211676400060242
+        ],
+        "flint_hi2_pari": [
+          0.10116151199963497,
+          0.11670852599945647,
+          0.16411836899987975,
+          0.07718986899999436,
+          0.09269254399987403
+        ]
+      },
+      "medians_s": {
+        "flint_native_factorial": 0.11672754000028362,
+        "flint_block_factorial": 0.1335239520003597,
+        "flint_nodal_shared": 0.09651658799975849,
+        "flint_hi1_forms": 0.2938474349994067,
+        "flint_hi1_pari": 0.08884966699952201,
+        "flint_hi2_pari": 0.10116151199963497
+      },
+      "class_number_only": {
+        "D": -2000000063,
+        "forms": {
+          "samples_s": [
+            0.2248033320001923,
+            0.1780813790001048,
+            0.1820286259999193,
+            0.1810350699997798,
+            0.1729060739999113
+          ],
+          "median_s": 0.1810350699997798
+        },
+        "pari": {
+          "samples_s": [
+            0.0005240609998509171,
+            0.0004042820000904612,
+            0.00044617900039156666,
+            0.0003651790002550115,
+            0.0004457200002434547
+          ],
+          "median_s": 0.0004457200002434547
+        }
+      },
+      "metadata": {
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 25819,
+          "blocks": 25820,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 12909,
+          "blocks": 12910,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -2000000063,
+            "classno": 44525,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 333333344,
+          "layout": 1,
+          "product": {
+            "block_size": 18257,
+            "blocks": 18257,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -2000000063,
+            "classno": 44525,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 333333344,
+          "layout": 1,
+          "product": {
+            "block_size": 18257,
+            "blocks": 18257,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -2000000063,
+            "classno": 44525,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 333333344,
+          "layout": 2,
+          "product": {
+            "block_size": 12909,
+            "blocks": 12910,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    },
+    {
+      "p": 2000000141,
+      "p_class": "B",
+      "c": 168094363,
+      "samples_s": {
+        "flint_native_factorial": [
+          0.09976444400035689,
+          0.1117334539994772,
+          0.09930412399990018,
+          0.11969272900023498,
+          0.12039780899976904
+        ],
+        "flint_block_factorial": [
+          0.10938619199987443,
+          0.14358180499948503,
+          0.13493910299985146,
+          0.12568239300071582,
+          0.13882921300046291
+        ],
+        "flint_nodal_shared": [
+          0.07724132700059272,
+          0.10425658500025747,
+          0.09922243199980585,
+          0.08145589199921233,
+          0.09741638099967531
+        ],
+        "flint_hi1_forms": [
+          0.48596470699976635,
+          0.5114932500000577,
+          0.38292136899963225,
+          0.44016466999983095,
+          0.43672039699958987
+        ],
+        "flint_hi1_pari": [
+          0.09483614600048895,
+          0.09694784800012712,
+          0.09680719999960274,
+          0.08398779399976775,
+          0.07165660299961019
+        ],
+        "flint_hi2_pari": [
+          0.10238956400007737,
+          0.10770551200039336,
+          0.08140759500020067,
+          0.09506983400024183,
+          0.09778093000022636
+        ]
+      },
+      "medians_s": {
+        "flint_native_factorial": 0.1117334539994772,
+        "flint_block_factorial": 0.13493910299985146,
+        "flint_nodal_shared": 0.09741638099967531,
+        "flint_hi1_forms": 0.44016466999983095,
+        "flint_hi1_pari": 0.09483614600048895,
+        "flint_hi2_pari": 0.09778093000022636
+      },
+      "class_number_only": {
+        "D": -8000000564,
+        "forms": {
+          "samples_s": [
+            0.31259105000026466,
+            0.31049783500020567,
+            0.3251067579994924,
+            0.31208597699969687,
+            0.3190263300002698
+          ],
+          "median_s": 0.31259105000026466
+        },
+        "pari": {
+          "samples_s": [
+            0.0005271209993225057,
+            0.0003733240000656224,
+            0.0004273410004316247,
+            0.00037704300029872684,
+            0.0003544290002537309
+          ],
+          "median_s": 0.00037704300029872684
+        }
+      },
+      "metadata": {
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 25819,
+          "blocks": 25820,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 12909,
+          "blocks": 12910,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -8000000564,
+            "classno": 74770,
+            "a": -20179,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 333333357,
+          "layout": 1,
+          "product": {
+            "block_size": 18257,
+            "blocks": 18257,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -8000000564,
+            "classno": 74770,
+            "a": -20179,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 333333357,
+          "layout": 1,
+          "product": {
+            "block_size": 18257,
+            "blocks": 18257,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -8000000564,
+            "classno": 74770,
+            "a": -20179,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 333333357,
+          "layout": 2,
+          "product": {
+            "block_size": 12909,
+            "blocks": 12910,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    },
+    {
+      "p": 20000000117,
+      "p_class": "B",
+      "c": 10911391185,
+      "samples_s": {
+        "flint_native_factorial": [
+          0.6597273759998643,
+          0.6463424969997504,
+          0.49475680900013685,
+          0.6565132530004121,
+          0.5645985510000173
+        ],
+        "flint_block_factorial": [
+          0.6830078580005647,
+          0.8106649739993372,
+          0.67860314400059,
+          0.6978068810003606,
+          0.6811903190000521
+        ],
+        "flint_nodal_shared": [
+          0.505638168000587,
+          0.4773820729997169,
+          0.572289026999897,
+          0.4011953050003285,
+          0.5123166879993732
+        ],
+        "flint_hi1_forms": [
+          1.5089450369996484,
+          1.184970116999466,
+          1.3078608410005472,
+          1.2999918860004982,
+          1.1159919140000056
+        ],
+        "flint_hi1_pari": [
+          0.4208740020003461,
+          0.4133452590003799,
+          0.398016567999548,
+          0.41348115900018456,
+          0.3463135020001573
+        ],
+        "flint_hi2_pari": [
+          0.518006253000749,
+          0.5217573480003921,
+          0.42176996899979713,
+          0.4359103030001279,
+          0.40002228900084447
+        ]
+      },
+      "medians_s": {
+        "flint_native_factorial": 0.6463424969997504,
+        "flint_block_factorial": 0.6830078580005647,
+        "flint_nodal_shared": 0.505638168000587,
+        "flint_hi1_forms": 1.2999918860004982,
+        "flint_hi1_pari": 0.4133452590003799,
+        "flint_hi2_pari": 0.4359103030001279
+      },
+      "class_number_only": {
+        "D": -80000000468,
+        "forms": {
+          "samples_s": [
+            0.8837266540003839,
+            0.8742752329999348,
+            0.8928614249998645,
+            0.7228722019999623,
+            0.7688433910007006
+          ],
+          "median_s": 0.8742752329999348
+        },
+        "pari": {
+          "samples_s": [
+            0.0007675280003240914,
+            0.0006787510001231567,
+            0.0006588559999727295,
+            0.00045637999937753193,
+            0.00048820299980434356
+          ],
+          "median_s": 0.0006588559999727295
+        }
+      },
+      "metadata": {
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 81649,
+          "blocks": 81650,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 40824,
+          "blocks": 40825,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -80000000468,
+            "classno": 135838,
+            "a": 24889,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 3333333353,
+          "layout": 1,
+          "product": {
+            "block_size": 57735,
+            "blocks": 57735,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -80000000468,
+            "classno": 135838,
+            "a": 24889,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 3333333353,
+          "layout": 1,
+          "product": {
+            "block_size": 57735,
+            "blocks": 57735,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -80000000468,
+            "classno": 135838,
+            "a": 24889,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 3333333353,
+          "layout": 2,
+          "product": {
+            "block_size": 40824,
+            "blocks": 40825,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    },
+    {
+      "p": 20000000201,
+      "p_class": "C",
+      "c": 9700794629,
+      "samples_s": {
+        "flint_native_factorial": [
+          0.5595400759993936,
+          0.6147692180002196,
+          0.6828967960000227,
+          0.6018875610006944,
+          0.6391863879998709
+        ],
+        "flint_block_factorial": [
+          0.6304364440002246,
+          0.5139877949995935,
+          0.6221461940003792,
+          0.6157566500005487,
+          0.6868126519993893
+        ],
+        "flint_nodal_shared": [
+          0.5391891960007342,
+          0.5655188680002539,
+          0.4755160380000234,
+          0.43130073199972685,
+          0.4770547819998683
+        ],
+        "flint_hi1_forms": [
+          0.9377254490000269,
+          0.8684278609998728,
+          0.8966866560003837,
+          0.8956720910000513,
+          0.8389439259999563
+        ],
+        "flint_hi1_pari": [
+          0.321883378000166,
+          0.39567022299979726,
+          0.4721517110001514,
+          0.4116759259995888,
+          0.39876361000006
+        ],
+        "flint_hi2_pari": [
+          0.394287254000119,
+          0.48411902299994836,
+          0.5725553769998442,
+          0.5966765889997987,
+          0.4733845549999387
+        ]
+      },
+      "medians_s": {
+        "flint_native_factorial": 0.6147692180002196,
+        "flint_block_factorial": 0.6221461940003792,
+        "flint_nodal_shared": 0.4770547819998683,
+        "flint_hi1_forms": 0.8956720910000513,
+        "flint_hi1_pari": 0.39876361000006,
+        "flint_hi2_pari": 0.48411902299994836
+      },
+      "class_number_only": {
+        "D": -60000000603,
+        "forms": {
+          "samples_s": [
+            0.46474374199988233,
+            0.41056221799954074,
+            0.5334713489992282,
+            0.5093160360002003,
+            0.42014109100000496
+          ],
+          "median_s": 0.46474374199988233
+        },
+        "pari": {
+          "samples_s": [
+            0.0011730409996744129,
+            0.0009790479998628143,
+            0.0009575329995641368,
+            0.0010107640000569518,
+            0.0009727249998832121
+          ],
+          "median_s": 0.0009790479998628143
+        }
+      },
+      "metadata": {
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 81649,
+          "blocks": 81650,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 40824,
+          "blocks": 40825,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -60000000603,
+            "classno": 34254,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 3333333367,
+          "layout": 1,
+          "product": {
+            "block_size": 57735,
+            "blocks": 57735,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -60000000603,
+            "classno": 34254,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 3333333367,
+          "layout": 1,
+          "product": {
+            "block_size": 57735,
+            "blocks": 57735,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -60000000603,
+            "classno": 34254,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 3333333367,
+          "layout": 2,
+          "product": {
+            "block_size": 40824,
+            "blocks": 40825,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    },
+    {
+      "p": 20000000219,
+      "p_class": "A",
+      "c": 4283700113,
+      "samples_s": {
+        "flint_native_factorial": [
+          0.6618286849998185,
+          0.5330461040002774,
+          0.7081894989996727,
+          0.5368034800003443,
+          0.528469417999986
+        ],
+        "flint_block_factorial": [
+          0.6692092390003381,
+          0.69119647000025,
+          0.6746641149993593,
+          0.5568433660000665,
+          0.7178882400003204
+        ],
+        "flint_nodal_shared": [
+          0.5272690159999911,
+          0.4928003940003691,
+          0.5462103840000054,
+          0.5217387080001572,
+          0.4613576540004942
+        ],
+        "flint_hi1_forms": [
+          0.7789995570001338,
+          0.724732380000205,
+          0.8614739670001654,
+          0.8237739950000105,
+          0.8688498000001346
+        ],
+        "flint_hi1_pari": [
+          0.425264399000298,
+          0.4133907169998565,
+          0.3658712389997163,
+          0.3830043050002132,
+          0.43265280600007827
+        ],
+        "flint_hi2_pari": [
+          0.5174017889994502,
+          0.5092992749996483,
+          0.5649044179999692,
+          0.575204517000202,
+          0.4127321670002857
+        ]
+      },
+      "medians_s": {
+        "flint_native_factorial": 0.5368034800003443,
+        "flint_block_factorial": 0.6746641149993593,
+        "flint_nodal_shared": 0.5217387080001572,
+        "flint_hi1_forms": 0.8237739950000105,
+        "flint_hi1_pari": 0.4133907169998565,
+        "flint_hi2_pari": 0.5174017889994502
+      },
+      "class_number_only": {
+        "D": -20000000219,
+        "forms": {
+          "samples_s": [
+            0.4330377790001876,
+            0.4911538719998134,
+            0.4625075179992564,
+            0.4070207360000495,
+            0.4592123990005348
+          ],
+          "median_s": 0.4592123990005348
+        },
+        "pari": {
+          "samples_s": [
+            0.0007282130000021425,
+            0.0005615549998765346,
+            0.0004804479995073052,
+            0.0006270849999054917,
+            0.0004870530001426232
+          ],
+          "median_s": 0.0005615549998765346
+        }
+      },
+      "metadata": {
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 81649,
+          "blocks": 81650,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 40824,
+          "blocks": 40825,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -20000000219,
+            "classno": 83031,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 3333333370,
+          "layout": 1,
+          "product": {
+            "block_size": 57735,
+            "blocks": 57735,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -20000000219,
+            "classno": 83031,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 3333333370,
+          "layout": 1,
+          "product": {
+            "block_size": 57735,
+            "blocks": 57735,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -20000000219,
+            "classno": 83031,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 3333333370,
+          "layout": 2,
+          "product": {
+            "block_size": 40824,
+            "blocks": 40825,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    },
+    {
+      "p": 200000000093,
+      "p_class": "B",
+      "c": 144705067226,
+      "samples_s": {
+        "flint_native_factorial": [
+          2.9891538049996598,
+          2.7469878760002757,
+          2.7279140680002456,
+          2.789418276000106,
+          2.3951709089997166
+        ],
+        "flint_block_factorial": [
+          2.5030982239995865,
+          2.8699182059999657,
+          2.8264647559999503,
+          2.874878549000641,
+          2.7518926609991468
+        ],
+        "flint_nodal_shared": [
+          2.333139358000153,
+          2.6044078869999794,
+          2.036712121000164,
+          2.311237107999659,
+          2.104558117000124
+        ],
+        "flint_hi1_forms": [
+          5.161063115999241,
+          4.814962159999595,
+          4.4945857550001165,
+          4.754637136000383,
+          4.65423528699921
+        ],
+        "flint_hi1_pari": [
+          1.9485715540004094,
+          1.8549743189996661,
+          2.0340546860006725,
+          1.6727015529995697,
+          1.9268260999997437
+        ],
+        "flint_hi2_pari": [
+          2.2544209600000613,
+          2.1229570390005392,
+          2.2805905319992235,
+          1.9198203109999668,
+          2.1420056859997203
+        ]
+      },
+      "medians_s": {
+        "flint_native_factorial": 2.7469878760002757,
+        "flint_block_factorial": 2.8264647559999503,
+        "flint_nodal_shared": 2.311237107999659,
+        "flint_hi1_forms": 4.754637136000383,
+        "flint_hi1_pari": 1.9268260999997437,
+        "flint_hi2_pari": 2.1420056859997203
+      },
+      "class_number_only": {
+        "D": -800000000372,
+        "forms": {
+          "samples_s": [
+            2.9119567590005317,
+            2.615951054999641,
+            2.96675037300065,
+            2.5414536170001156,
+            2.871336858000177
+          ],
+          "median_s": 2.871336858000177
+        },
+        "pari": {
+          "samples_s": [
+            0.0014642819996879552,
+            0.0014338590008264873,
+            0.0012787129999196623,
+            0.001490673000262177,
+            0.0011491000004753005
+          ],
+          "median_s": 0.0014338590008264873
+        }
+      },
+      "metadata": {
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 258198,
+          "blocks": 258199,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 129099,
+          "blocks": 129099,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -800000000372,
+            "classno": 378050,
+            "a": -203243,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 33333333349,
+          "layout": 1,
+          "product": {
+            "block_size": 182574,
+            "blocks": 182574,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -800000000372,
+            "classno": 378050,
+            "a": -203243,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 33333333349,
+          "layout": 1,
+          "product": {
+            "block_size": 182574,
+            "blocks": 182574,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "gauss4p",
+            "D": -800000000372,
+            "classno": 378050,
+            "a": -203243,
+            "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+          },
+          "product_length": 33333333349,
+          "layout": 2,
+          "product": {
+            "block_size": 129099,
+            "blocks": 129099,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    },
+    {
+      "p": 200000000129,
+      "p_class": "C",
+      "c": 160254253963,
+      "samples_s": {
+        "flint_native_factorial": [
+          2.306543290999798,
+          2.4336102409997693,
+          2.4724276749993805,
+          2.557318440999552,
+          2.7749570489995676
+        ],
+        "flint_block_factorial": [
+          2.5490109780002967,
+          2.8393223739994937,
+          2.776167815000008,
+          2.8904983890006406,
+          2.6565718120000383
+        ],
+        "flint_nodal_shared": [
+          1.9871284359996935,
+          2.1866622130000906,
+          2.296175989000403,
+          2.2866822280002452,
+          2.1996168160003435
+        ],
+        "flint_hi1_forms": [
+          2.9317991099997016,
+          3.200755613000183,
+          3.462245067999902,
+          3.646895298000345,
+          3.5444935819996317
+        ],
+        "flint_hi1_pari": [
+          1.460429922000003,
+          1.9780463460001556,
+          1.9497493419994498,
+          1.7908336740001687,
+          1.6833970990001035
+        ],
+        "flint_hi2_pari": [
+          2.172988151000027,
+          2.471503439999651,
+          2.3815038989996538,
+          2.2329288239998277,
+          2.057774352000706
+        ]
+      },
+      "medians_s": {
+        "flint_native_factorial": 2.4724276749993805,
+        "flint_block_factorial": 2.776167815000008,
+        "flint_nodal_shared": 2.1996168160003435,
+        "flint_hi1_forms": 3.462245067999902,
+        "flint_hi1_pari": 1.7908336740001687,
+        "flint_hi2_pari": 2.2329288239998277
+      },
+      "class_number_only": {
+        "D": -600000000387,
+        "forms": {
+          "samples_s": [
+            1.6914061600000423,
+            1.4709547720003684,
+            1.707338893999804,
+            1.529784104999635,
+            1.55317711600037
+          ],
+          "median_s": 1.55317711600037
+        },
+        "pari": {
+          "samples_s": [
+            0.0015356759995484026,
+            0.0014587999994546408,
+            0.001440039000044635,
+            0.0011668939996525296,
+            0.001223070999913034
+          ],
+          "median_s": 0.001440039000044635
+        }
+      },
+      "metadata": {
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 258198,
+          "blocks": 258199,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 129099,
+          "blocks": 129099,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -600000000387,
+            "classno": 110650,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 33333333355,
+          "layout": 1,
+          "product": {
+            "block_size": 182574,
+            "blocks": 182574,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -600000000387,
+            "classno": 110650,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 33333333355,
+          "layout": 1,
+          "product": {
+            "block_size": 182574,
+            "blocks": 182574,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "h3p",
+            "D": -600000000387,
+            "classno": 110650,
+            "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+          },
+          "product_length": 33333333355,
+          "layout": 2,
+          "product": {
+            "block_size": 129099,
+            "blocks": 129099,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    },
+    {
+      "p": 200000000171,
+      "p_class": "A",
+      "c": 62662826055,
+      "samples_s": {
+        "flint_native_factorial": [
+          2.6068197459999283,
+          2.807971496999926,
+          2.4935460739998234,
+          2.5259969250000722,
+          2.812873703999685
+        ],
+        "flint_block_factorial": [
+          2.777204725000047,
+          2.837434607999967,
+          2.6385105790004673,
+          2.976831195000159,
+          2.8334033970004384
+        ],
+        "flint_nodal_shared": [
+          2.3315272629997708,
+          1.987790982999286,
+          2.148052452000229,
+          2.225233555000159,
+          2.024172171999453
+        ],
+        "flint_hi1_forms": [
+          3.2027780400003394,
+          3.0721087519996217,
+          3.0303071079997608,
+          3.0425007139992886,
+          2.823634903999846
+        ],
+        "flint_hi1_pari": [
+          1.7459339970000656,
+          1.8893342940000366,
+          1.8020980450000934,
+          1.863673120000385,
+          1.766486497999722
+        ],
+        "flint_hi2_pari": [
+          2.0284537650004495,
+          2.339336232000278,
+          2.0173209710001174,
+          2.294512615999338,
+          1.9736383629997363
+        ]
+      },
+      "medians_s": {
+        "flint_native_factorial": 2.6068197459999283,
+        "flint_block_factorial": 2.8334033970004384,
+        "flint_nodal_shared": 2.148052452000229,
+        "flint_hi1_forms": 3.0425007139992886,
+        "flint_hi1_pari": 1.8020980450000934,
+        "flint_hi2_pari": 2.0284537650004495
+      },
+      "class_number_only": {
+        "D": -200000000171,
+        "forms": {
+          "samples_s": [
+            1.1177441689997067,
+            1.0739554090005186,
+            1.218068172999665,
+            1.0249836699995285,
+            1.1908746550006981
+          ],
+          "median_s": 1.1177441689997067
+        },
+        "pari": {
+          "samples_s": [
+            0.0007985270003700862,
+            0.0008126540005832794,
+            0.0006698589995721704,
+            0.0006167569999888656,
+            0.0008410049995291047
+          ],
+          "median_s": 0.0007985270003700862
+        }
+      },
+      "metadata": {
+        "flint_native_factorial": {
+          "backend": "flint n_factorial_fast_mod2_preinv"
+        },
+        "flint_block_factorial": {
+          "block_size": 258198,
+          "blocks": 258199,
+          "channels": 1,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_nodal_shared": {
+          "block_size": 129099,
+          "blocks": 129099,
+          "channels": 2,
+          "backend": "flint",
+          "shared_tree": true
+        },
+        "flint_hi1_forms": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -200000000171,
+            "classno": 189111,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 33333333362,
+          "layout": 1,
+          "product": {
+            "block_size": 182574,
+            "blocks": 182574,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi1_pari": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -200000000171,
+            "classno": 189111,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 33333333362,
+          "layout": 1,
+          "product": {
+            "block_size": 182574,
+            "blocks": 182574,
+            "channels": 1,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        },
+        "flint_hi2_pari": {
+          "half_factorial": {
+            "route": "mordell",
+            "D": -200000000171,
+            "classno": 189111,
+            "status": "theorem (Mordell 1961)"
+          },
+          "product_length": 33333333362,
+          "layout": 2,
+          "product": {
+            "block_size": 129099,
+            "blocks": 129099,
+            "channels": 2,
+            "backend": "flint",
+            "shared_tree": true
+          }
+        }
+      }
+    }
+  ]
+}

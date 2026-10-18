@@ -1,0 +1,18 @@
+{
+  "role": "Post-core-confirmation thin API composition check; no changes to frozen acquisition core",
+  "source_sha256": "060e6919cc74070cb74ca312fcc74ebcdcc6cb2fc25683377ee67fa66a510149",
+  "primes": [
+    2003,
+    2027,
+    2039,
+    2063,
+    2069,
+    2081,
+    10037,
+    100043,
+    1000121,
+    10000079,
+    100000007
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,11 @@
+def fifth_boundaries(p):
+    """Tenth-point formulas: three half-length products, still sqrt scale."""
+    if p%5 != 4:raise Unsupported('fifth reduction requires p = 4 mod 5')
+    L=(p+1)//5; ell=L//2
+    den=interval_product(1,ell,p); inv=pow(den,-1,p)
+    x=interval_product(2*L-ell,ell,p)*inv%p
+    y=interval_product(L-ell+1,ell,p)*inv%p
+    sign=-1 if ell%2 else 1
+    return {L:sign*pow(2,-2*L,p)*x%p,
+            2*L:sign*pow(2,2*L,p)*pow(16,-1,p)*y%p}
+

@@ -1,0 +1,12 @@
+{
+  "vendor_sha256": {
+    "vendor/block_factorial.py": "36686c3072ad76ff0a00ca4b8ad25518f4a099c596e5622f2c1db4575561a96f",
+    "vendor/inherited/retained/stack_safe_beta.py": "f4547c48e5782200c424a8008c791f24b4719cd3735cb721a88540f921a2e432",
+    "vendor/reciprocal.py": "266bc5a3620264ee31bf870f4044b235ec8d864c438ac71e7051aba3d6d8d037"
+  },
+  "inputs": {
+    "sol_report": "Cancellation_Aware_Local_Algebra_Report_20261018(3).md",
+    "opus_report": "Cancellation_Aware_Local_REPORT_20261018(1).md"
+  },
+  "note": "Reports are source evidence. New evidence is under evidence/. Vendor source files copied unchanged; SharedArithmetic is new subclass code in atkin.py."
+}

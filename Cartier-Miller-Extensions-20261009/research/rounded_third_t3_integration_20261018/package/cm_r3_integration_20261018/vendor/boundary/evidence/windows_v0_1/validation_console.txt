@@ -1,0 +1,18 @@
+test_both_third_families_through_10000 (test_boundary_framework.ArithmeticTests.test_both_third_families_through_10000) ... ok
+test_complete_sum_against_original_recurrence (test_boundary_framework.ArithmeticTests.test_complete_sum_against_original_recurrence) ... ok
+test_every_boundary_small_primes_all_routes (test_boundary_framework.ArithmeticTests.test_every_boundary_small_primes_all_routes) ... ok
+test_every_factorial_small_primes_both_backends (test_boundary_framework.ArithmeticTests.test_every_factorial_small_primes_both_backends) ... ok
+test_held_out_larger_indices (test_boundary_framework.ArithmeticTests.test_held_out_larger_indices) ... ok
+test_p17_vanishing_boundary_multiplier (test_boundary_framework.ArithmeticTests.test_p17_vanishing_boundary_multiplier) ... ok
+test_polynomial_primitives_against_schoolbook_and_horner (test_boundary_framework.ArithmeticTests.test_polynomial_primitives_against_schoolbook_and_horner) ... ok
+test_primality_against_sieve_and_large_controls (test_boundary_framework.ArithmeticTests.test_primality_against_sieve_and_large_controls) ... ok
+test_cli_success_and_error (test_boundary_framework.InterfaceTests.test_cli_success_and_error) ... ok
+test_prefix_support_and_assurance (test_boundary_framework.InterfaceTests.test_prefix_support_and_assurance) ... ok
+test_registration_and_selected_backend (test_boundary_framework.InterfaceTests.test_registration_and_selected_backend) ... ok
+test_reject_invalid_inputs (test_boundary_framework.InterfaceTests.test_reject_invalid_inputs) ... ok
+test_resource_limits (test_boundary_framework.InterfaceTests.test_resource_limits) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 75.479s
+
+OK

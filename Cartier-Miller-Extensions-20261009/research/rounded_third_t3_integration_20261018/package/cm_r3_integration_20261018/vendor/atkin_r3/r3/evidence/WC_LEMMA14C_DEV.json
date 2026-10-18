@@ -1,0 +1,29 @@
+{
+  "role": "Round-3 development (background-theorem verification); inputs excluded from round-3 confirmation",
+  "range": "all primes p = 5 (mod 12), 17 <= p < 1000000",
+  "forms_crosscheck_below": 200000,
+  "counts": {
+    "primes": 19610,
+    "forms_crosscheck": 4504
+  },
+  "first": [
+    17,
+    29,
+    41
+  ],
+  "last": 999953,
+  "checks": [
+    "R: h(-3p)=2 mod 4",
+    "WC: (-3)^q0 = (-1)^((h-2)/4) H",
+    "H rearranged",
+    "S: sum_{j<=m}(j/p)=h/2 (p<30000)",
+    "(m!/p) from h",
+    "(2/p)=(-1)^q0",
+    "(*) round-2 form",
+    "Q2: (m!/N!)^2 = (-1)^((h-2)/4) a",
+    "(m!/N!)^4=a^2"
+  ],
+  "reference": "H, m!, N! from FLINT n_factorial_fast_mod2_preinv; h(-3p) from PARI qfbclassno(D,0) with |D|<2e10, reduced-form count below forms limit",
+  "seconds": 20.627795221000042,
+  "pass_": true
+}
