@@ -1,5 +1,52 @@
 # Changelog
 
+## 2026.10.18 — rounded third point: certified Jacobi boundary backend
+
+### What was added
+
+The rounded-third integration experiment of 18 October was added as research/rounded_third_t3_integration_20261018/. It contains:
+
+- a research page (README.md);
+- the repository handover, verbatim;
+- the integration package with its frozen evidence;
+- a release note;
+- two new standard-library checks;
+- the outputs of a rerun in this repository.
+
+### The result
+
+A certified Jacobi-sum boundary route ("T3") was connected to the retained Miller prefix through the existing boundary registry, with exact nodal and native fallbacks. At the nine tested primes where automatic dispatch chose T3, complete evaluation of (B_L, a_L, U_p(L), G) was 1.67–6.52× faster than native FLINT factorial plus the same Miller prefix. The best case was 6.52×, at p = 700,000,001,633.
+
+For dense tables of primes the existing remainder forest is much faster: 115.5× over native below 100,000. On a sparse sixteen-prime schedule, independent native calls beat both the forest and forced T3.
+
+No uniform polylogarithmic boundary algorithm, new complexity exponent or global-fastest claim is made. The 9 October obstruction note is unchanged and its theorem stands.
+
+### Changes to the package
+
+The package is unchanged except in two places:
+
+- The received zip had omitted vendor/atkin_r3/MANIFEST.json, which the package's freeze lists. It was restored from Atkin_Endpoint_Round3_20261018.zip, and its hash matches.
+- A verbatim PARI/GP documentation excerpt (GPL) was not redistributed. It is identified by hash.
+
+`verify_import.py` checks the package against its own three hash lists, allowing only that one file to be absent.
+
+### Checks run here
+
+- the development checks rerun on a copy: 1,135 primes, with the record identical to the frozen one apart from timings;
+- the three handover CLI commands;
+- a recomputation of the handover's control values;
+- the 43-bit confirmation prime's B_L, recomputed with this release's retained/elliptic_prefix.py.
+
+Benchmarks, the survey and the confirmation were not rerun.
+
+### Documentation and manifests
+
+- README, STATUS, RESULTS, HUMAN_REVIEW, REPRODUCTION, PROVENANCE and the ledger were updated.
+- STATUS no longer describes the rounded-third branch as parked, and no longer lists a batch factorial evaluator as unstarted.
+- The handover's equation map refers to the 18 October reviewed draft of the paper. That draft is not yet in this repository, so the map is marked pending reconciliation.
+
+A separate first commit updated the manifest entries for the 12 October ordinary-K note. Commit e7c3242 had fixed two equations in that note, which changed its hash and made verify_release.py fail.
+
 ## 2026.10.12 (later) — ordinary Cartier-slope feasibility study
 
 The ordinary Cartier-slope feasibility package, revision 2, was added unchanged as research/ordinary_k_feasibility_20261012/, with a RELEASE_NOTE.md. It derives Theorem A (Frobenius mod p in the low-pole basis is [[0, −β],[0, H]]) and Lemma B (κ ≡ σ_C/p for the canonical-subgroup kernel sum of any ordinary lift, pending specialist review), with further recovery formulas. It records that the canonical-lift, étale and Serre–Tate constructions examined give no cheaper complete algorithm for κ; no lower bound, speed-up or novelty is claimed. Its pilot and independently written checks, with failure injection, pass as recorded. The package's 13 `.log` evidence files were force-added despite the repository's `*.log` ignore rule, so that its own manifest verifies. README, STATUS, RESULTS, HUMAN_REVIEW, REPRODUCTION and PROVENANCE were updated. No theorem, recognizer or evaluator of the earlier releases changed.

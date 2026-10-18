@@ -1,0 +1,30 @@
+{
+  "role": "post-freeze proof support; finite checks of classical formula forms and of the derived T^2 identity",
+  "classical_forms": {
+    "R": 21811,
+    "M": 21811,
+    "G": 179
+  },
+  "T2_development_primes_below_60000": 1516,
+  "T2_round2_confirmation_primes": {
+    "300017": true,
+    "300089": true,
+    "300137": true,
+    "300149": true,
+    "300221": true,
+    "300317": true,
+    "2000081": true,
+    "2000093": true,
+    "20000033": true,
+    "20000069": true,
+    "200000033": true,
+    "200000069": true,
+    "2000000033": true,
+    "2000000141": true,
+    "20000000117": true,
+    "20000000201": true,
+    "200000000093": true,
+    "200000000129": true
+  },
+  "pass_": true
+}

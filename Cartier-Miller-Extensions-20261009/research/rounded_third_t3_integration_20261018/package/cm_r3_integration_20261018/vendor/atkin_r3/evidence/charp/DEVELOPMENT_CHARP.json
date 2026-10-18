@@ -1,0 +1,50 @@
+{
+  "role": "Round-2 development; these inputs are excluded from confirmation",
+  "phi": {
+    "instances": {
+      "reflection": 400,
+      "distribution": 400,
+      "gross_koblitz": 2232
+    },
+    "special": {
+      "Phi_1_3": "-1/6",
+      "Phi_RN_after_coincidence_p5mod12": "1/2",
+      "Phi_cp": "1/2"
+    },
+    "pass_": true
+  },
+  "arithmetic": {
+    "primes": 1632,
+    "limit": 30000,
+    "counts": {
+      "c1": 1632,
+      "mordell": 814,
+      "gauss4p": 407,
+      "conj_star": 818,
+      "quarter": 818,
+      "dirichlet_4p": 818,
+      "dirichlet_3p": 818,
+      "layouts": 3264
+    },
+    "pass_": true
+  },
+  "flint": {
+    "primes": 8993,
+    "limit": 200000,
+    "counts": {
+      "mordell": 4489,
+      "gauss4p": 2250,
+      "conj_star": 4504
+    },
+    "pass_": true
+  },
+  "pilot_primes": [
+    1000003,
+    10000019,
+    100000037,
+    1000000021,
+    100000007,
+    1000000007,
+    10000000019
+  ]
+}

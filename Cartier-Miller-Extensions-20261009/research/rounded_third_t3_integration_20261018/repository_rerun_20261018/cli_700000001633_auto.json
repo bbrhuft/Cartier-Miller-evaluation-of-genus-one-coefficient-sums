@@ -1,0 +1,115 @@
+{
+ "command": "python integrated.py 700000001633 ",
+ "exit_status": 0,
+ "wall_seconds_including_imports": 1.433,
+ "B_L": 659039860207,
+ "a_L": 430020116853,
+ "U_p_L": 544972331628,
+ "G": 79517016381,
+ "route": "t3",
+ "q": 47,
+ "full_output": {
+  "p": 700000001633,
+  "L": 233333333878,
+  "B_L": 659039860207,
+  "a_L": 430020116853,
+  "U_p_L": 544972331628,
+  "output_mode": "full",
+  "boundary_multiplier": 77777777963,
+  "boundary_status": "computed",
+  "prefix_provider": "retained_genus_one_cantor_miller",
+  "prefix_assurance": "retained_project_theorem_and_exact_code; unrefereed; independently_tested",
+  "prefix_seconds": 0.007245486000101664,
+  "boundary": {
+   "request": {
+    "p": 700000001633,
+    "L": 233333333878,
+    "family": "rounded_third_r3",
+    "backend": "auto",
+    "modulus_power": 1
+   },
+   "value": 430020116853,
+   "reduction": "rounded_third_r3",
+   "formula": "a_L acquired by certified T3 or exact fallback",
+   "proof_reference": "REPORT.md; vendor/atkin_r3/REPORT_R3.md, Section 6",
+   "factorial_calls": [],
+   "validation_seconds": 5.2457000037975376e-05,
+   "reduction_seconds": 6.446000043069944e-06,
+   "normalization_seconds": 1.3131019830000241,
+   "total_seconds": 1.3131675900001483,
+   "assurance": "exact_mod_p_algorithm; finite_validation_is_not_formal_verification"
+  },
+  "identity": "U_p(L) = 4*B_L - 2*L*(2*L+5)*a_L mod p",
+  "total_seconds": 1.3204724429999715,
+  "m": 233333333877,
+  "B_m": 279120322720,
+  "a_m": 379919537487,
+  "U_p_m": 173865689840,
+  "G": 79517016381,
+  "boundary_acquisition": {
+   "route": "t3",
+   "q": 47,
+   "status": "unconditional",
+   "seconds": 1.3130946449998646,
+   "degraded": [],
+   "predictions": {
+    "47": 0.985000241654358
+   },
+   "kernel": {
+    "route": "tal_split_rounded_third",
+    "q": 47,
+    "K": 14893617056,
+    "anchor": "dup12",
+    "anchor_kind": "N",
+    "eta": 424656191617,
+    "eta_seed": 2,
+    "classes": [
+     1
+    ],
+    "k": 1,
+    "lambda_terms": 35,
+    "svp": 1,
+    "enumeration_fallbacks": 0,
+    "residual_lengths": {
+     "target": 4964539019,
+     "anchor": 1241134755
+    },
+    "engine": "flint",
+    "lll": "flint",
+    "status": "unconditional; exact",
+    "qnr_used": 3,
+    "timings": {
+     "plan": 0.0009017249999487831,
+     "svp": 0.14947025400010716,
+     "intervals": 1.1618453900000532,
+     "assembly": 0.0006188759998622118,
+     "total": 1.3128362449999713
+    }
+   }
+  },
+  "retained_prefix_diagnostics": {
+   "p": 700000001633,
+   "d": 3,
+   "g": 1,
+   "L": 233333333878,
+   "indices": [
+    233333333878
+   ],
+   "B": [
+    659039860207
+   ],
+   "M": 700000001634,
+   "M_bits": 40,
+   "calls": 59,
+   "reductions": 55,
+   "field_inversions": 796,
+   "nonunit_local_factors": 0,
+   "split_restarts": 0
+  },
+  "setup_seconds": 0.00011470100002952677,
+  "answer_cache_used": false,
+  "status": "unconditional arithmetic; retained project prefix theorem unrefereed",
+  "cold_total_seconds": 1.320587144000001,
+  "elapsed_seconds": 1.3206205199999204
+ }
+}

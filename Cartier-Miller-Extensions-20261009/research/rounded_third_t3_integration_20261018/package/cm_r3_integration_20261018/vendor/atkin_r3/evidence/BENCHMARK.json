@@ -1,0 +1,659 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "status": "PASS",
+  "samples_per_method": 5,
+  "scope": "Matched standard-library generic backends, not optimized BGS/FLINT/PARI",
+  "rows": [
+    {
+      "p": 10037,
+      "c": 8648,
+      "samples_s": {
+        "factorial_linear": [
+          0.0001437069986423012,
+          0.000141443999382318,
+          0.0001410730001225602,
+          0.00014024200027051847,
+          0.00015288099893950857
+        ],
+        "factorial_block": [
+          0.0027622130000963807,
+          0.0026043739999295212,
+          0.002566006000051857,
+          0.002544943999964744,
+          0.0026540799990470987
+        ],
+        "nodal_linear": [
+          0.00012396700003591832,
+          0.0001177079993794905,
+          0.0001160850006272085,
+          0.0003431490004004445,
+          0.00011971100138907786
+        ],
+        "nodal_separate": [
+          0.002279874001033022,
+          0.002675501000339864,
+          0.0021934340002189856,
+          0.0021616250014631078,
+          0.002164809999158024
+        ],
+        "nodal_shared": [
+          0.0019546229996194597,
+          0.0017688119987724349,
+          0.0017208799999934854,
+          0.0017675199997029267,
+          0.0018015510013356106
+        ]
+      },
+      "medians_s": {
+        "factorial_linear": 0.000141443999382318,
+        "factorial_block": 0.0026043739999295212,
+        "nodal_linear": 0.00011971100138907786,
+        "nodal_separate": 0.0021934340002189856,
+        "nodal_shared": 0.0017688119987724349
+      },
+      "speedup_vs_factorial_block": 1.4723859866039868,
+      "speedup_vs_best_included_factorial": 0.07996553589668144,
+      "speedup_vs_separate_channels": 1.2400605614057574,
+      "metadata": {
+        "factorial_linear": {
+          "m": 3345,
+          "linear_factor_multiplications": 3345
+        },
+        "factorial_block": {
+          "block_size": 57,
+          "blocks": 58,
+          "channels": 1,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 1163,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 557,
+              "packed_integer_multiplications": 557,
+              "packed_coefficient_reductions": 3290,
+              "maximum_length": 59,
+              "packed_max_operand_bits": 929,
+              "packed_max_digit_bits": 32
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 97
+            },
+            "series_inverse_calls": 114
+          }
+        },
+        "nodal_linear": {
+          "N": 836,
+          "linear_factor_multiplications": 1672
+        },
+        "nodal_separate": {
+          "block_size": 28,
+          "blocks": 29,
+          "channels": 2,
+          "shared_inverses": false,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 928,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 502,
+              "packed_integer_multiplications": 502,
+              "packed_coefficient_reductions": 2424,
+              "maximum_length": 30,
+              "packed_max_operand_bits": 481,
+              "packed_max_digit_bits": 32
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 106
+            },
+            "series_inverse_calls": 112
+          }
+        },
+        "nodal_shared": {
+          "block_size": 28,
+          "blocks": 29,
+          "channels": 2,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 748,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 404,
+              "packed_integer_multiplications": 404,
+              "packed_coefficient_reductions": 1971,
+              "maximum_length": 30,
+              "packed_max_operand_bits": 481,
+              "packed_max_digit_bits": 32
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 106
+            },
+            "series_inverse_calls": 56
+          }
+        }
+      }
+    },
+    {
+      "p": 100043,
+      "c": 77868,
+      "samples_s": {
+        "factorial_linear": [
+          0.0016469780002807966,
+          0.0015680389988119714,
+          0.001535620000140625,
+          0.0015690309992351104,
+          0.0019396200004848652
+        ],
+        "factorial_block": [
+          0.010775158001706586,
+          0.01028313400092884,
+          0.010550427999987733,
+          0.011265507999269175,
+          0.010117443998751696
+        ],
+        "nodal_linear": [
+          0.0013690180003322894,
+          0.0014563999993697507,
+          0.0012372789988148725,
+          0.0013360779994400218,
+          0.001240514000528492
+        ],
+        "nodal_separate": [
+          0.00952762300039467,
+          0.009711139999126317,
+          0.009085665000384324,
+          0.009328291998826899,
+          0.009799954001209699
+        ],
+        "nodal_shared": [
+          0.007014406000962481,
+          0.007050940999761224,
+          0.0072350800001004245,
+          0.007409824000205845,
+          0.007257854000272346
+        ]
+      },
+      "medians_s": {
+        "factorial_linear": 0.0015690309992351104,
+        "factorial_block": 0.010550427999987733,
+        "nodal_linear": 0.0013360779994400218,
+        "nodal_separate": 0.00952762300039467,
+        "nodal_shared": 0.0072350800001004245
+      },
+      "speedup_vs_factorial_block": 1.4582323899447263,
+      "speedup_vs_best_included_factorial": 0.21686436075528284,
+      "speedup_vs_separate_channels": 1.316864913762173,
+      "metadata": {
+        "factorial_linear": {
+          "m": 33347,
+          "linear_factor_multiplications": 33347
+        },
+        "factorial_block": {
+          "block_size": 182,
+          "blocks": 183,
+          "channels": 1,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 5256,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 1915,
+              "packed_integer_multiplications": 1915,
+              "packed_coefficient_reductions": 15354,
+              "maximum_length": 184,
+              "packed_max_operand_bits": 3681,
+              "packed_max_digit_bits": 40
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 224
+            },
+            "series_inverse_calls": 364
+          }
+        },
+        "nodal_linear": {
+          "N": 8336,
+          "linear_factor_multiplications": 16672
+        },
+        "nodal_separate": {
+          "block_size": 91,
+          "blocks": 91,
+          "channels": 2,
+          "shared_inverses": false,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 4614,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 1786,
+              "packed_integer_multiplications": 1786,
+              "packed_coefficient_reductions": 12344,
+              "maximum_length": 92,
+              "packed_max_operand_bits": 3641,
+              "packed_max_digit_bits": 40
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 292
+            },
+            "series_inverse_calls": 362
+          }
+        },
+        "nodal_shared": {
+          "block_size": 91,
+          "blocks": 91,
+          "channels": 2,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 3599,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 1390,
+              "packed_integer_multiplications": 1390,
+              "packed_coefficient_reductions": 9520,
+              "maximum_length": 92,
+              "packed_max_operand_bits": 3641,
+              "packed_max_digit_bits": 40
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 292
+            },
+            "series_inverse_calls": 181
+          }
+        }
+      }
+    },
+    {
+      "p": 1000121,
+      "c": 205606,
+      "samples_s": {
+        "factorial_linear": [
+          0.016044828000303824,
+          0.01613419299974339,
+          0.01602122199983569,
+          0.015685955999288126,
+          0.015887049999946612
+        ],
+        "factorial_block": [
+          0.0418057940005383,
+          0.04771908600014285,
+          0.03990232900105184,
+          0.03933772600066732,
+          0.0397176890000992
+        ],
+        "nodal_linear": [
+          0.01345095899887383,
+          0.013212669999120408,
+          0.01280797899926256,
+          0.012915670999063877,
+          0.012495365999711794
+        ],
+        "nodal_separate": [
+          0.035319354999955976,
+          0.03622699599873158,
+          0.03530997100097011,
+          0.03339993500048877,
+          0.03359209600057511
+        ],
+        "nodal_shared": [
+          0.026546091999989585,
+          0.026993868001227384,
+          0.02558657299960032,
+          0.025277184999140445,
+          0.0257517120007833
+        ]
+      },
+      "medians_s": {
+        "factorial_linear": 0.01602122199983569,
+        "factorial_block": 0.03990232900105184,
+        "nodal_linear": 0.012915670999063877,
+        "nodal_separate": 0.03530997100097011,
+        "nodal_shared": 0.0257517120007833
+      },
+      "speedup_vs_factorial_block": 1.5495019903856533,
+      "speedup_vs_best_included_factorial": 0.6221420152317781,
+      "speedup_vs_separate_channels": 1.3711698468783773,
+      "metadata": {
+        "factorial_linear": {
+          "m": 333373,
+          "linear_factor_multiplications": 333373
+        },
+        "factorial_block": {
+          "block_size": 577,
+          "blocks": 577,
+          "channels": 1,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 22508,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 6108,
+              "packed_integer_multiplications": 6108,
+              "packed_coefficient_reductions": 66661,
+              "maximum_length": 578,
+              "packed_max_operand_bits": 23081,
+              "packed_max_digit_bits": 56
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 1021
+            },
+            "series_inverse_calls": 1153
+          }
+        },
+        "nodal_linear": {
+          "N": 83343,
+          "linear_factor_multiplications": 166686
+        },
+        "nodal_separate": {
+          "block_size": 288,
+          "blocks": 289,
+          "channels": 2,
+          "shared_inverses": false,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 19214,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 5786,
+              "packed_integer_multiplications": 5786,
+              "packed_coefficient_reductions": 54828,
+              "maximum_length": 290,
+              "packed_max_operand_bits": 6961,
+              "packed_max_digit_bits": 48
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 800
+            },
+            "series_inverse_calls": 1152
+          }
+        },
+        "nodal_shared": {
+          "block_size": 288,
+          "blocks": 289,
+          "channels": 2,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 14363,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 4476,
+              "packed_integer_multiplications": 4476,
+              "packed_coefficient_reductions": 40338,
+              "maximum_length": 290,
+              "packed_max_operand_bits": 6961,
+              "packed_max_digit_bits": 48
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 800
+            },
+            "series_inverse_calls": 576
+          }
+        }
+      }
+    },
+    {
+      "p": 10000079,
+      "c": 2461202,
+      "samples_s": {
+        "factorial_linear": [
+          0.16206368100029067,
+          0.16767921300015587,
+          0.16532014599943068,
+          0.1892175250013679,
+          0.16066956099894014
+        ],
+        "factorial_block": [
+          0.13995243899989873,
+          0.13861897400056478,
+          0.14079684100033774,
+          0.15311197400114906,
+          0.14936827800011088
+        ],
+        "nodal_linear": [
+          0.12118596000073012,
+          0.1270367270008137,
+          0.12602843099921301,
+          0.12388776799889456,
+          0.13193368099928193
+        ],
+        "nodal_separate": [
+          0.11747605500022473,
+          0.12068071599969699,
+          0.12145982900074159,
+          0.12062162399888621,
+          0.12640529000054812
+        ],
+        "nodal_shared": [
+          0.09211761799997475,
+          0.09511761799876695,
+          0.09497326800010342,
+          0.1189896680007223,
+          0.09859588099971006
+        ]
+      },
+      "medians_s": {
+        "factorial_linear": 0.16532014599943068,
+        "factorial_block": 0.14079684100033774,
+        "nodal_linear": 0.12602843099921301,
+        "nodal_separate": 0.12068071599969699,
+        "nodal_shared": 0.09511761799876695
+      },
+      "speedup_vs_factorial_block": 1.4802393495825659,
+      "speedup_vs_best_included_factorial": 1.4802393495825659,
+      "speedup_vs_separate_channels": 1.2687525038869396,
+      "metadata": {
+        "factorial_linear": {
+          "m": 3333359,
+          "linear_factor_multiplications": 3333359
+        },
+        "factorial_block": {
+          "block_size": 1825,
+          "blocks": 1826,
+          "channels": 1,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 74153,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 18649,
+              "packed_integer_multiplications": 18649,
+              "packed_coefficient_reductions": 216745,
+              "maximum_length": 1827,
+              "packed_max_operand_bits": 58433,
+              "packed_max_digit_bits": 64
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 2735
+            },
+            "series_inverse_calls": 3650
+          }
+        },
+        "nodal_linear": {
+          "N": 833339,
+          "linear_factor_multiplications": 1666678
+        },
+        "nodal_separate": {
+          "block_size": 912,
+          "blocks": 913,
+          "channels": 2,
+          "shared_inverses": false,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 66630,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 17690,
+              "packed_integer_multiplications": 17690,
+              "packed_coefficient_reductions": 184053,
+              "maximum_length": 914,
+              "packed_max_operand_bits": 25593,
+              "packed_max_digit_bits": 56
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 3192
+            },
+            "series_inverse_calls": 3648
+          }
+        },
+        "nodal_shared": {
+          "block_size": 912,
+          "blocks": 913,
+          "channels": 2,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 51353,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 13860,
+              "packed_integer_multiplications": 13860,
+              "packed_coefficient_reductions": 141162,
+              "maximum_length": 914,
+              "packed_max_operand_bits": 25593,
+              "packed_max_digit_bits": 56
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 3192
+            },
+            "series_inverse_calls": 1824
+          }
+        }
+      }
+    },
+    {
+      "p": 100000007,
+      "c": 68178598,
+      "samples_s": {
+        "factorial_linear": [
+          1.6045634049987711,
+          1.5954784409987042,
+          1.5780330580000737,
+          1.5554962910009635,
+          1.656100353000511
+        ],
+        "factorial_block": [
+          0.6141979389994958,
+          0.6373122059994785,
+          0.6045569969992357,
+          0.6135266949986544,
+          0.6779204760005086
+        ],
+        "nodal_linear": [
+          1.2425244109999767,
+          1.2870717750010954,
+          1.2276015010011179,
+          1.2189389079994726,
+          1.2364543969997612
+        ],
+        "nodal_separate": [
+          0.51719425400006,
+          0.5213459090009565,
+          0.5000364999996236,
+          0.5156758339999215,
+          0.5665898600000219
+        ],
+        "nodal_shared": [
+          0.40972357700047723,
+          0.38622065100025793,
+          0.3819489480010816,
+          0.37935215000106837,
+          0.39350178700078686
+        ]
+      },
+      "medians_s": {
+        "factorial_linear": 1.5954784409987042,
+        "factorial_block": 0.6141979389994958,
+        "nodal_linear": 1.2364543969997612,
+        "nodal_separate": 0.51719425400006,
+        "nodal_shared": 0.38622065100025793
+      },
+      "speedup_vs_factorial_block": 1.590277312745469,
+      "speedup_vs_best_included_factorial": 1.590277312745469,
+      "speedup_vs_separate_channels": 1.3391160018517876,
+      "metadata": {
+        "factorial_linear": {
+          "m": 33333335,
+          "linear_factor_multiplications": 33333335
+        },
+        "factorial_block": {
+          "block_size": 5773,
+          "blocks": 5774,
+          "channels": 1,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 293342,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 61773,
+              "packed_integer_multiplications": 61773,
+              "packed_coefficient_reductions": 878733,
+              "maximum_length": 5775,
+              "packed_max_operand_bits": 207865,
+              "packed_max_digit_bits": 72
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 5807
+            },
+            "series_inverse_calls": 11546
+          }
+        },
+        "nodal_linear": {
+          "N": 8333333,
+          "linear_factor_multiplications": 16666666
+        },
+        "nodal_separate": {
+          "block_size": 2886,
+          "blocks": 2887,
+          "channels": 2,
+          "shared_inverses": false,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 267832,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 58832,
+              "packed_integer_multiplications": 58832,
+              "packed_coefficient_reductions": 763499,
+              "maximum_length": 2888,
+              "packed_max_operand_bits": 92417,
+              "packed_max_digit_bits": 64
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 8676
+            },
+            "series_inverse_calls": 11544
+          }
+        },
+        "nodal_shared": {
+          "block_size": 2886,
+          "blocks": 2887,
+          "channels": 2,
+          "shared_inverses": true,
+          "counts": {
+            "polynomial": {
+              "coefficient_additions": 200786,
+              "coefficient_multiplications": 0,
+              "polynomial_multiplications": 45288,
+              "packed_integer_multiplications": 45288,
+              "packed_coefficient_reductions": 564185,
+              "maximum_length": 2888,
+              "packed_max_operand_bits": 92417,
+              "packed_max_digit_bits": 64
+            },
+            "scalar": {
+              "additions": 0,
+              "multiplications": 8676
+            },
+            "series_inverse_calls": 5772
+          }
+        }
+      }
+    }
+  ]
+}

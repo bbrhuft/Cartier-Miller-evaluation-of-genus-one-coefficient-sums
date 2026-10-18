@@ -1,0 +1,391 @@
+{
+  "version": "0.6.0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "repeats": 3,
+  "evaluations": 126,
+  "all_correct": true,
+  "medians": [
+    {
+      "case": "nearby16",
+      "p": 100019,
+      "backend": "auto",
+      "mode": "separate",
+      "median_seconds": 0.023944282000229578,
+      "product_acquisitions": 32,
+      "denominator_inversions": 16
+    },
+    {
+      "case": "nearby16",
+      "p": 100019,
+      "backend": "auto",
+      "mode": "exact",
+      "median_seconds": 0.023473093000575318,
+      "product_acquisitions": 32,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "nearby16",
+      "p": 100019,
+      "backend": "auto",
+      "mode": "adjacent",
+      "median_seconds": 0.0012937049996253336,
+      "product_acquisitions": 32,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "nearby16",
+      "p": 100019,
+      "backend": "bgs",
+      "mode": "separate",
+      "median_seconds": 0.02627090999885695,
+      "product_acquisitions": 32,
+      "denominator_inversions": 16
+    },
+    {
+      "case": "nearby16",
+      "p": 100019,
+      "backend": "bgs",
+      "mode": "exact",
+      "median_seconds": 0.024613678000605432,
+      "product_acquisitions": 32,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "nearby16",
+      "p": 100019,
+      "backend": "bgs",
+      "mode": "adjacent",
+      "median_seconds": 0.0016378620002797106,
+      "product_acquisitions": 32,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 100019,
+      "backend": "auto",
+      "mode": "separate",
+      "median_seconds": 0.005141308000020217,
+      "product_acquisitions": 7,
+      "denominator_inversions": 4
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 100019,
+      "backend": "auto",
+      "mode": "exact",
+      "median_seconds": 0.004436758999872836,
+      "product_acquisitions": 5,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 100019,
+      "backend": "auto",
+      "mode": "adjacent",
+      "median_seconds": 0.002375722000579117,
+      "product_acquisitions": 4,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 100019,
+      "backend": "bgs",
+      "mode": "separate",
+      "median_seconds": 0.005080095999801415,
+      "product_acquisitions": 7,
+      "denominator_inversions": 4
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 100019,
+      "backend": "bgs",
+      "mode": "exact",
+      "median_seconds": 0.004913836000923766,
+      "product_acquisitions": 5,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 100019,
+      "backend": "bgs",
+      "mode": "adjacent",
+      "median_seconds": 0.0027258280006208224,
+      "product_acquisitions": 4,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "nearby16",
+      "p": 1000039,
+      "backend": "auto",
+      "mode": "separate",
+      "median_seconds": 0.2429243869992206,
+      "product_acquisitions": 32,
+      "denominator_inversions": 16
+    },
+    {
+      "case": "nearby16",
+      "p": 1000039,
+      "backend": "auto",
+      "mode": "exact",
+      "median_seconds": 0.24833038299948385,
+      "product_acquisitions": 32,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "nearby16",
+      "p": 1000039,
+      "backend": "auto",
+      "mode": "adjacent",
+      "median_seconds": 0.010104810000484576,
+      "product_acquisitions": 32,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "nearby16",
+      "p": 1000039,
+      "backend": "bgs",
+      "mode": "separate",
+      "median_seconds": 0.07707449900044594,
+      "product_acquisitions": 32,
+      "denominator_inversions": 16
+    },
+    {
+      "case": "nearby16",
+      "p": 1000039,
+      "backend": "bgs",
+      "mode": "exact",
+      "median_seconds": 0.07727871599854552,
+      "product_acquisitions": 32,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "nearby16",
+      "p": 1000039,
+      "backend": "bgs",
+      "mode": "adjacent",
+      "median_seconds": 0.004064459999426617,
+      "product_acquisitions": 32,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 1000039,
+      "backend": "auto",
+      "mode": "separate",
+      "median_seconds": 0.03974893099984911,
+      "product_acquisitions": 7,
+      "denominator_inversions": 4
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 1000039,
+      "backend": "auto",
+      "mode": "exact",
+      "median_seconds": 0.028419129999747383,
+      "product_acquisitions": 5,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 1000039,
+      "backend": "auto",
+      "mode": "adjacent",
+      "median_seconds": 0.021935474000201793,
+      "product_acquisitions": 4,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 1000039,
+      "backend": "bgs",
+      "mode": "separate",
+      "median_seconds": 0.017100565000873758,
+      "product_acquisitions": 7,
+      "denominator_inversions": 4
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 1000039,
+      "backend": "bgs",
+      "mode": "exact",
+      "median_seconds": 0.012423525000485824,
+      "product_acquisitions": 5,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 1000039,
+      "backend": "bgs",
+      "mode": "adjacent",
+      "median_seconds": 0.007655207000425435,
+      "product_acquisitions": 4,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "nearby16",
+      "p": 10000019,
+      "backend": "auto",
+      "mode": "separate",
+      "median_seconds": 0.2981399769996642,
+      "product_acquisitions": 32,
+      "denominator_inversions": 16
+    },
+    {
+      "case": "nearby16",
+      "p": 10000019,
+      "backend": "auto",
+      "mode": "exact",
+      "median_seconds": 0.2962965549995715,
+      "product_acquisitions": 32,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "nearby16",
+      "p": 10000019,
+      "backend": "auto",
+      "mode": "adjacent",
+      "median_seconds": 0.015157484998781001,
+      "product_acquisitions": 32,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "nearby16",
+      "p": 10000019,
+      "backend": "bgs",
+      "mode": "separate",
+      "median_seconds": 0.29628616999980295,
+      "product_acquisitions": 32,
+      "denominator_inversions": 16
+    },
+    {
+      "case": "nearby16",
+      "p": 10000019,
+      "backend": "bgs",
+      "mode": "exact",
+      "median_seconds": 0.31361441900116915,
+      "product_acquisitions": 32,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "nearby16",
+      "p": 10000019,
+      "backend": "bgs",
+      "mode": "adjacent",
+      "median_seconds": 0.016262323999399086,
+      "product_acquisitions": 32,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 10000019,
+      "backend": "auto",
+      "mode": "separate",
+      "median_seconds": 0.06708269500086317,
+      "product_acquisitions": 7,
+      "denominator_inversions": 4
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 10000019,
+      "backend": "auto",
+      "mode": "exact",
+      "median_seconds": 0.05103461199905723,
+      "product_acquisitions": 5,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 10000019,
+      "backend": "auto",
+      "mode": "adjacent",
+      "median_seconds": 0.033542298999236664,
+      "product_acquisitions": 4,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 10000019,
+      "backend": "bgs",
+      "mode": "separate",
+      "median_seconds": 0.06674693999957526,
+      "product_acquisitions": 7,
+      "denominator_inversions": 4
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 10000019,
+      "backend": "bgs",
+      "mode": "exact",
+      "median_seconds": 0.05093785700046283,
+      "product_acquisitions": 5,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "mixed_third_fifths_generic",
+      "p": 10000019,
+      "backend": "bgs",
+      "mode": "adjacent",
+      "median_seconds": 0.032116745998791885,
+      "product_acquisitions": 4,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "small_mixed",
+      "p": 59,
+      "backend": "auto",
+      "mode": "separate",
+      "median_seconds": 0.00014627999917138368,
+      "product_acquisitions": 7,
+      "denominator_inversions": 4
+    },
+    {
+      "case": "small_mixed",
+      "p": 59,
+      "backend": "auto",
+      "mode": "exact",
+      "median_seconds": 4.5618999138241634e-05,
+      "product_acquisitions": 5,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "small_mixed",
+      "p": 59,
+      "backend": "auto",
+      "mode": "adjacent",
+      "median_seconds": 4.452699977264274e-05,
+      "product_acquisitions": 4,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "small_mixed",
+      "p": 59,
+      "backend": "bgs",
+      "mode": "separate",
+      "median_seconds": 0.00019393199909245595,
+      "product_acquisitions": 7,
+      "denominator_inversions": 4
+    },
+    {
+      "case": "small_mixed",
+      "p": 59,
+      "backend": "bgs",
+      "mode": "exact",
+      "median_seconds": 0.00012034000064886641,
+      "product_acquisitions": 5,
+      "denominator_inversions": 1
+    },
+    {
+      "case": "small_mixed",
+      "p": 59,
+      "backend": "bgs",
+      "mode": "adjacent",
+      "median_seconds": 7.951999941724353e-05,
+      "product_acquisitions": 4,
+      "denominator_inversions": 1
+    }
+  ],
+  "oracle": "One independent denominator-cleared a recurrence through the largest requested index.",
+  "scope": "Boundary values only. All modes construct one validated session per timed sample. Separate reuses that validated session but recomputes arithmetic independently for each index. All modes receive the same unique indices and matching reductions. No prefix work, persistent answer cache, imports, prime selection, reference generation or JSON serialization.",
+  "interpretation": "Adjacent sharing reduces prefix-product lengths and can reuse exact gap intervals. It is a deterministic heuristic; no universal speedup or optimal partition is claimed."
+}

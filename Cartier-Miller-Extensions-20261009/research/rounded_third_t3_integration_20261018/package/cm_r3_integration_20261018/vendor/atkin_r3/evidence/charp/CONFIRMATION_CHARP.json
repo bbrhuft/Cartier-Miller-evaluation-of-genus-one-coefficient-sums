@@ -1,0 +1,921 @@
+{
+  "status": "PASS",
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+  "flint": {
+    "python_flint": "0.9.0"
+  },
+  "class_number_crosscheck": "PARI 2.17.2",
+  "role": "Round-2 post-freeze exact confirmation; constant-factor method, not an exponent claim",
+  "selection": {
+    "small": {
+      "A_11mod12": [
+        300023,
+        300119,
+        300191
+      ],
+      "B_5mod24": [
+        300149,
+        300221,
+        300317
+      ],
+      "C_17mod24": [
+        300017,
+        300089,
+        300137
+      ]
+    },
+    "large": {
+      "A_11mod12": [
+        2000003,
+        20000003,
+        200000039,
+        2000000063,
+        20000000219,
+        200000000171
+      ],
+      "B_5mod24": [
+        2000093,
+        20000069,
+        200000069,
+        2000000141,
+        20000000117,
+        200000000093
+      ],
+      "C_17mod24": [
+        2000081,
+        20000033,
+        200000033,
+        2000000033,
+        20000000201,
+        200000000129
+      ]
+    }
+  },
+  "cases": [
+    {
+      "p": 300017,
+      "c_ref": 248422,
+      "H_ref": 213667,
+      "routes": {
+        "h3p": {
+          "H": 213667,
+          "ok": true,
+          "D": -900051,
+          "h": 314,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-900051": {
+          "forms": 314,
+          "pari": 314
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "stdlib_linear_reference": true,
+      "seconds": 0.06248109999978624,
+      "pass_": true
+    },
+    {
+      "p": 300023,
+      "c_ref": 227823,
+      "H_ref": 300022,
+      "routes": {
+        "mordell": {
+          "H": 300022,
+          "ok": true,
+          "D": -300023,
+          "h": 541,
+          "status": "theorem (Mordell 1961)"
+        }
+      },
+      "classno": {
+        "-300023": {
+          "forms": 541,
+          "pari": 541
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "stdlib_linear_reference": true,
+      "seconds": 0.060412331000406994,
+      "pass_": true
+    },
+    {
+      "p": 300089,
+      "c_ref": 213741,
+      "H_ref": 33671,
+      "routes": {
+        "h3p": {
+          "H": 33671,
+          "ok": true,
+          "D": -900267,
+          "h": 142,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-900267": {
+          "forms": 142,
+          "pari": 142
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "stdlib_linear_reference": true,
+      "seconds": 0.06563260500024626,
+      "pass_": true
+    },
+    {
+      "p": 300119,
+      "c_ref": 2753,
+      "H_ref": 300118,
+      "routes": {
+        "mordell": {
+          "H": 300118,
+          "ok": true,
+          "D": -300119,
+          "h": 781,
+          "status": "theorem (Mordell 1961)"
+        }
+      },
+      "classno": {
+        "-300119": {
+          "forms": 781,
+          "pari": 781
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "stdlib_linear_reference": true,
+      "seconds": 0.063485466000202,
+      "pass_": true
+    },
+    {
+      "p": 300137,
+      "c_ref": 131398,
+      "H_ref": 238286,
+      "routes": {
+        "h3p": {
+          "H": 238286,
+          "ok": true,
+          "D": -900411,
+          "h": 218,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-900411": {
+          "forms": 218,
+          "pari": 218
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "stdlib_linear_reference": true,
+      "seconds": 0.06436370200026431,
+      "pass_": true
+    },
+    {
+      "p": 300149,
+      "c_ref": 77381,
+      "H_ref": 261999,
+      "routes": {
+        "gauss4p": {
+          "H": 261999,
+          "ok": true,
+          "D": -1200596,
+          "h": 510,
+          "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+        },
+        "h3p": {
+          "H": 261999,
+          "ok": true,
+          "D": -900447,
+          "h": 370,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-1200596": {
+          "forms": 510,
+          "pari": 510
+        },
+        "-900447": {
+          "forms": 370,
+          "pari": 370
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "stdlib_linear_reference": true,
+      "seconds": 0.06722976299988659,
+      "pass_": true
+    },
+    {
+      "p": 300191,
+      "c_ref": 284930,
+      "H_ref": 300190,
+      "routes": {
+        "mordell": {
+          "H": 300190,
+          "ok": true,
+          "D": -300191,
+          "h": 609,
+          "status": "theorem (Mordell 1961)"
+        }
+      },
+      "classno": {
+        "-300191": {
+          "forms": 609,
+          "pari": 609
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "stdlib_linear_reference": true,
+      "seconds": 0.0655329890005305,
+      "pass_": true
+    },
+    {
+      "p": 300221,
+      "c_ref": 49750,
+      "H_ref": 34554,
+      "routes": {
+        "gauss4p": {
+          "H": 34554,
+          "ok": true,
+          "D": -1200884,
+          "h": 806,
+          "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+        },
+        "h3p": {
+          "H": 34554,
+          "ok": true,
+          "D": -900663,
+          "h": 358,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-1200884": {
+          "forms": 806,
+          "pari": 806
+        },
+        "-900663": {
+          "forms": 358,
+          "pari": 358
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "stdlib_linear_reference": true,
+      "seconds": 0.08324448300027143,
+      "pass_": true
+    },
+    {
+      "p": 300317,
+      "c_ref": 14527,
+      "H_ref": 199953,
+      "routes": {
+        "gauss4p": {
+          "H": 199953,
+          "ok": true,
+          "D": -1201268,
+          "h": 530,
+          "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+        },
+        "h3p": {
+          "H": 199953,
+          "ok": true,
+          "D": -900951,
+          "h": 778,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-1201268": {
+          "forms": 530,
+          "pari": 530
+        },
+        "-900951": {
+          "forms": 778,
+          "pari": 778
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "stdlib_linear_reference": true,
+      "seconds": 0.0736649540003782,
+      "pass_": true
+    },
+    {
+      "p": 2000003,
+      "c_ref": 1712468,
+      "H_ref": 2000002,
+      "routes": {
+        "mordell": {
+          "H": 2000002,
+          "ok": true,
+          "D": -2000003,
+          "h": 357,
+          "status": "theorem (Mordell 1961)"
+        }
+      },
+      "classno": {
+        "-2000003": {
+          "forms": 357,
+          "pari": 357
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "seconds": 0.14091735199963296,
+      "pass_": true
+    },
+    {
+      "p": 2000081,
+      "c_ref": 1471098,
+      "H_ref": 1532820,
+      "routes": {
+        "h3p": {
+          "H": 1532820,
+          "ok": true,
+          "D": -6000243,
+          "h": 390,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-6000243": {
+          "forms": 390,
+          "pari": 390
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "seconds": 0.14880392299983214,
+      "pass_": true
+    },
+    {
+      "p": 2000093,
+      "c_ref": 1437379,
+      "H_ref": 191028,
+      "routes": {
+        "gauss4p": {
+          "H": 191028,
+          "ok": true,
+          "D": -8000372,
+          "h": 1134,
+          "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+        },
+        "h3p": {
+          "H": 191028,
+          "ok": true,
+          "D": -6000279,
+          "h": 2870,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-8000372": {
+          "forms": 1134,
+          "pari": 1134
+        },
+        "-6000279": {
+          "forms": 2870,
+          "pari": 2870
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "seconds": 0.18942064299972117,
+      "pass_": true
+    },
+    {
+      "p": 20000003,
+      "c_ref": 3333887,
+      "H_ref": 1,
+      "routes": {
+        "mordell": {
+          "H": 1,
+          "ok": true,
+          "D": -20000003,
+          "h": 1215,
+          "status": "theorem (Mordell 1961)"
+        }
+      },
+      "classno": {
+        "-20000003": {
+          "forms": 1215,
+          "pari": 1215
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "seconds": 0.5603549699999348,
+      "pass_": true
+    },
+    {
+      "p": 20000033,
+      "c_ref": 12405938,
+      "H_ref": 14225446,
+      "routes": {
+        "h3p": {
+          "H": 14225446,
+          "ok": true,
+          "D": -60000099,
+          "h": 2274,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-60000099": {
+          "forms": 2274,
+          "pari": 2274
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "seconds": 0.6183328389997769,
+      "pass_": true
+    },
+    {
+      "p": 20000069,
+      "c_ref": 12270505,
+      "H_ref": 19228446,
+      "routes": {
+        "gauss4p": {
+          "H": 19228446,
+          "ok": true,
+          "D": -80000276,
+          "h": 5030,
+          "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+        },
+        "h3p": {
+          "H": 19228446,
+          "ok": true,
+          "D": -60000207,
+          "h": 3278,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-80000276": {
+          "forms": 5030,
+          "pari": 5030
+        },
+        "-60000207": {
+          "forms": 3278,
+          "pari": 3278
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "seconds": 0.8034770550002577,
+      "pass_": true
+    },
+    {
+      "p": 200000033,
+      "c_ref": 160005577,
+      "H_ref": 86475569,
+      "routes": {
+        "h3p": {
+          "H": 86475569,
+          "ok": true,
+          "D": -600000099,
+          "h": 10910,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-600000099": {
+          "forms": 10910,
+          "pari": 10910
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "seconds": 2.266765931000009,
+      "pass_": true
+    },
+    {
+      "p": 200000039,
+      "c_ref": 194836981,
+      "H_ref": 200000038,
+      "routes": {
+        "mordell": {
+          "H": 200000038,
+          "ok": true,
+          "D": -200000039,
+          "h": 12573,
+          "status": "theorem (Mordell 1961)"
+        }
+      },
+      "classno": {
+        "-200000039": {
+          "forms": 12573,
+          "pari": 12573
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "seconds": 2.315381847000026,
+      "pass_": true
+    },
+    {
+      "p": 200000069,
+      "c_ref": 70845398,
+      "H_ref": 116328811,
+      "routes": {
+        "gauss4p": {
+          "H": 116328811,
+          "ok": true,
+          "D": -800000276,
+          "h": 19962,
+          "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+        },
+        "h3p": {
+          "H": 116328811,
+          "ok": true,
+          "D": -600000207,
+          "h": 11430,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-800000276": {
+          "forms": 19962,
+          "pari": 19962
+        },
+        "-600000207": {
+          "forms": 11430,
+          "pari": 11430
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "std_hi1": true,
+        "flint_hi2": true,
+        "std_hi2": true,
+        "std_nodal_shared": true
+      },
+      "seconds": 2.6687677620002432,
+      "pass_": true
+    },
+    {
+      "p": 2000000033,
+      "c_ref": 1723932546,
+      "H_ref": 51253293,
+      "routes": {
+        "h3p": {
+          "H": 51253293,
+          "ok": true,
+          "D": -6000000099,
+          "h": 11574,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-6000000099": {
+          "forms": 11574,
+          "pari": 11574
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "flint_hi2": true
+      },
+      "seconds": 0.8988657659992896,
+      "pass_": true
+    },
+    {
+      "p": 2000000063,
+      "c_ref": 646829403,
+      "H_ref": 2000000062,
+      "routes": {
+        "mordell": {
+          "H": 2000000062,
+          "ok": true,
+          "D": -2000000063,
+          "h": 44525,
+          "status": "theorem (Mordell 1961)"
+        }
+      },
+      "classno": {
+        "-2000000063": {
+          "forms": 44525,
+          "pari": 44525
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "flint_hi2": true
+      },
+      "seconds": 0.9375629420001133,
+      "pass_": true
+    },
+    {
+      "p": 2000000141,
+      "c_ref": 168094363,
+      "H_ref": 1263392723,
+      "routes": {
+        "gauss4p": {
+          "H": 1263392723,
+          "ok": true,
+          "D": -8000000564,
+          "h": 74770,
+          "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+        },
+        "h3p": {
+          "H": 1263392723,
+          "ok": true,
+          "D": -6000000423,
+          "h": 43330,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-8000000564": {
+          "forms": 74770,
+          "pari": 74770
+        },
+        "-6000000423": {
+          "forms": 43330,
+          "pari": 43330
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "flint_hi2": true
+      },
+      "seconds": 1.8628007799998159,
+      "pass_": true
+    },
+    {
+      "p": 20000000117,
+      "c_ref": 10911391185,
+      "H_ref": 1484189817,
+      "routes": {
+        "gauss4p": {
+          "H": 1484189817,
+          "ok": true,
+          "D": -80000000468,
+          "h": 135838,
+          "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+        },
+        "h3p": {
+          "H": 1484189817,
+          "ok": true,
+          "D": -60000000351,
+          "h": 118562,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-80000000468": {
+          "forms": 135838,
+          "pari": 135838
+        },
+        "-60000000351": {
+          "forms": 118562,
+          "pari": 118562
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "flint_hi2": true
+      },
+      "seconds": 6.244819389999975,
+      "pass_": true
+    },
+    {
+      "p": 20000000201,
+      "c_ref": 9700794629,
+      "H_ref": 7952391938,
+      "routes": {
+        "h3p": {
+          "H": 7952391938,
+          "ok": true,
+          "D": -60000000603,
+          "h": 34254,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-60000000603": {
+          "forms": 34254,
+          "pari": 34254
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "flint_hi2": true
+      },
+      "seconds": 3.8891243460002443,
+      "pass_": true
+    },
+    {
+      "p": 20000000219,
+      "c_ref": 4283700113,
+      "H_ref": 1,
+      "routes": {
+        "mordell": {
+          "H": 1,
+          "ok": true,
+          "D": -20000000219,
+          "h": 83031,
+          "status": "theorem (Mordell 1961)"
+        }
+      },
+      "classno": {
+        "-20000000219": {
+          "forms": 83031,
+          "pari": 83031
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "flint_hi2": true
+      },
+      "seconds": 3.5236744170006205,
+      "pass_": true
+    },
+    {
+      "p": 200000000093,
+      "c_ref": 144705067226,
+      "H_ref": 125873953899,
+      "routes": {
+        "gauss4p": {
+          "H": 125873953899,
+          "ok": true,
+          "D": -800000000372,
+          "h": 378050,
+          "status": "theorem (Gauss binomial congruence + Dirichlet class number formula)"
+        },
+        "h3p": {
+          "H": 125873953899,
+          "ok": true,
+          "D": -600000000279,
+          "h": 605954,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-800000000372": {
+          "forms": 378050,
+          "pari": 378050
+        },
+        "-600000000279": {
+          "forms": 605954,
+          "pari": 605954
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "flint_hi2": true
+      },
+      "seconds": 23.56060522700045,
+      "pass_": true
+    },
+    {
+      "p": 200000000129,
+      "c_ref": 160254253963,
+      "H_ref": 119399039373,
+      "routes": {
+        "h3p": {
+          "H": 119399039373,
+          "ok": true,
+          "D": -600000000387,
+          "h": 110650,
+          "status": "CONJECTURE (*) with finite evidence; Dirichlet-type sum identity"
+        }
+      },
+      "classno": {
+        "-600000000387": {
+          "forms": 110650,
+          "pari": 110650
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "flint_hi2": true
+      },
+      "seconds": 15.031693272999291,
+      "pass_": true
+    },
+    {
+      "p": 200000000171,
+      "c_ref": 62662826055,
+      "H_ref": 1,
+      "routes": {
+        "mordell": {
+          "H": 1,
+          "ok": true,
+          "D": -200000000171,
+          "h": 189111,
+          "status": "theorem (Mordell 1961)"
+        }
+      },
+      "classno": {
+        "-200000000171": {
+          "forms": 189111,
+          "pari": 189111
+        }
+      },
+      "methods": {
+        "flint_hi1": true,
+        "flint_hi2": true
+      },
+      "seconds": 14.203384106999692,
+      "pass_": true
+    }
+  ]
+}

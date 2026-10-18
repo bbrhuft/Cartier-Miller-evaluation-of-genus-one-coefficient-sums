@@ -1,0 +1,81 @@
+{"set": "B1", "p": 400000002359, "q": 11, "ms": {"native": 5000.7, "block_factorial": 5207.1, "nodal_flint": 4153.0, "hi_grh": 3459.8, "tal_dup6": 2018.7, "api_unconditional": 2050.0, "hi_uncond_forms_1sample": 13073.0}}
+{"set": "B1", "p": 400000002719, "q": 23, "ms": {"native": 4934.7, "block_factorial": 5275.5, "nodal_flint": 4383.2, "hi_grh": 3574.8, "tal_dup6": 1317.9, "api_unconditional": 1157.3, "hi_uncond_forms_1sample": 11757.9}}
+{"set": "B1", "p": 400000015799, "q": 47, "ms": {"native": 5141.0, "block_factorial": 5261.9, "nodal_flint": 4221.3, "hi_grh": 3270.6, "tal_dup6": 816.7, "api_unconditional": 883.9, "hi_uncond_forms_1sample": 12576.2}}
+{"set": "B1", "p": 400000008503, "q": 89, "ms": {"native": 4941.6, "block_factorial": 5265.2, "nodal_flint": 3963.2, "hi_grh": 3296.8, "tal_dup6": 2004.1, "api_unconditional": 1952.9, "hi_uncond_forms_1sample": 11637.4}}
+{"set": "B1", "p": 400000000709, "q": 11, "ms": {"native": 4851.8, "block_factorial": 4938.6, "nodal_flint": 3980.3, "hi_grh": 3315.0, "tal_dup6": 1943.3, "tal_dup12": 1606.7, "api_unconditional": 1595.6, "hi_uncond_forms_1sample": 14035.4}}
+{"set": "B1", "p": 400000004237, "q": 23, "ms": {"native": 5165.2, "block_factorial": 5108.4, "nodal_flint": 4032.8, "hi_grh": 3267.6, "tal_dup6": 1234.2, "tal_dup12": 1005.2, "api_unconditional": 722.8, "hi_uncond_forms_1sample": 14646.3}}
+{"set": "B1", "p": 400000004237, "q": 47, "ms": {"native": 4883.4, "block_factorial": 5026.7, "nodal_flint": 4088.8, "hi_grh": 3363.1, "tal_dup6": 864.2, "tal_dup12": 715.5, "api_unconditional": 686.7, "hi_uncond_forms_1sample": 14808.0}}
+{"set": "B1", "p": 400000017581, "q": 89, "ms": {"native": 4923.2, "block_factorial": 5123.8, "nodal_flint": 4135.8, "hi_grh": 3469.1, "tal_dup6": 2031.9, "tal_dup12": 1901.4, "api_unconditional": 1909.0, "hi_uncond_forms_1sample": 13656.0}}
+{"set": "B1", "p": 400000000577, "q": 11, "ms": {"native": 4957.5, "block_factorial": 5157.3, "nodal_flint": 4098.9, "hi_grh": 3521.2, "tal_dup6": 1944.5, "tal_dup12": 1746.5, "api_unconditional": 1608.3, "hi_uncond_forms_1sample": 13220.8}}
+{"set": "B1", "p": 400000000097, "q": 23, "ms": {"native": 4904.6, "block_factorial": 5282.6, "nodal_flint": 4183.1, "hi_grh": 3348.8, "tal_dup6": 1246.7, "tal_dup12": 1068.2, "api_unconditional": 1057.4, "hi_uncond_forms_1sample": 13071.1}}
+{"set": "B1", "p": 400000000289, "q": 47, "ms": {"native": 5178.9, "block_factorial": 5244.9, "nodal_flint": 4167.4, "hi_grh": 3217.1, "tal_dup6": 837.7, "tal_dup12": 760.7, "api_unconditional": 684.7, "hi_uncond_forms_1sample": 11327.6}}
+{"set": "B1", "p": 400000069913, "q": 89, "ms": {"native": 4953.0, "block_factorial": 5296.5, "nodal_flint": 4032.9, "hi_grh": 3280.8, "tal_dup6": 1970.0, "tal_dup12": 1991.1, "api_unconditional": 1959.3, "hi_uncond_forms_1sample": 12566.2}}
+{"set": "B1", "p": 4000000451, "q": 5, "ms": {"native": 204.3, "block_factorial": 247.2, "nodal_flint": 182.3, "hi_grh": 150.0, "tal_dup6": 127.5, "api_unconditional": 47.7, "hi_uncond_qfb": 140.0}}
+{"set": "B1", "p": 4000001039, "q": 11, "ms": {"native": 239.6, "block_factorial": 271.3, "nodal_flint": 210.7, "hi_grh": 156.7, "tal_dup6": 79.8, "api_unconditional": 82.5, "hi_uncond_qfb": 154.8}}
+{"set": "B1", "p": 4000000427, "q": 23, "ms": {"native": 225.2, "block_factorial": 243.7, "nodal_flint": 193.6, "hi_grh": 171.8, "tal_dup6": 52.7, "api_unconditional": 62.1, "hi_uncond_qfb": 160.4}}
+{"set": "B1", "p": 4000000619, "q": 31, "ms": {"native": 216.2, "block_factorial": 237.7, "nodal_flint": 192.7, "hi_grh": 148.2, "tal_dup6": 50.4, "api_unconditional": 50.0, "hi_uncond_qfb": 142.3}}
+{"set": "B1", "p": 4000018943, "q": 47, "ms": {"native": 226.4, "block_factorial": 245.2, "nodal_flint": 193.4, "hi_grh": 153.2, "tal_dup6": 105.6, "api_unconditional": 96.6, "hi_uncond_qfb": 150.4}}
+{"set": "B1", "p": 4000004363, "q": 61, "ms": {"native": 220.4, "block_factorial": 260.1, "nodal_flint": 195.6, "hi_grh": 153.3, "tal_dup6": 241.6, "api_unconditional": 63.3, "hi_uncond_qfb": 147.6}}
+{"set": "B1", "p": 4000008347, "q": 89, "ms": {"native": 244.2, "block_factorial": 294.9, "nodal_flint": 195.6, "hi_grh": 156.8, "tal_dup6": 1285.1, "api_unconditional": 157.0, "hi_uncond_qfb": 158.6}}
+{"set": "B1", "p": 4000000661, "q": 5, "ms": {"native": 240.9, "block_factorial": 247.7, "nodal_flint": 184.9, "hi_grh": 155.4, "tal_dup6": 128.4, "tal_dup12": 111.6, "api_unconditional": 112.9, "hi_uncond_qfb": 149.0}}
+{"set": "B1", "p": 4000001501, "q": 11, "ms": {"native": 221.1, "block_factorial": 226.9, "nodal_flint": 178.2, "hi_grh": 137.6, "tal_dup6": 71.4, "tal_dup12": 62.1, "api_unconditional": 60.5, "hi_uncond_qfb": 148.1}}
+{"set": "B1", "p": 4000002221, "q": 23, "ms": {"native": 281.9, "block_factorial": 260.8, "nodal_flint": 219.7, "hi_grh": 163.2, "tal_dup6": 59.7, "tal_dup12": 45.5, "api_unconditional": 46.6, "hi_uncond_qfb": 157.8}}
+{"set": "B1", "p": 4000006013, "q": 31, "ms": {"native": 229.5, "block_factorial": 256.6, "nodal_flint": 200.4, "hi_grh": 144.0, "tal_dup6": 51.5, "tal_dup12": 44.4, "api_unconditional": 42.8, "hi_uncond_qfb": 153.6}}
+{"set": "B1", "p": 4000014149, "q": 47, "ms": {"native": 226.5, "block_factorial": 249.5, "nodal_flint": 184.2, "hi_grh": 147.9, "tal_dup6": 96.4, "tal_dup12": 94.0, "api_unconditional": 61.2, "hi_uncond_qfb": 146.3}}
+{"set": "B1", "p": 4000005461, "q": 61, "ms": {"native": 217.3, "block_factorial": 234.3, "nodal_flint": 190.2, "hi_grh": 159.0, "tal_dup6": 237.2, "tal_dup12": 259.7, "api_unconditional": 75.5, "hi_uncond_qfb": 148.1}}
+{"set": "B1", "p": 4000003541, "q": 89, "ms": {"native": 225.8, "block_factorial": 246.0, "nodal_flint": 189.0, "hi_grh": 153.9, "tal_dup6": 1294.6, "tal_dup12": 1288.8, "api_unconditional": 60.8, "hi_uncond_qfb": 151.8}}
+{"set": "B1", "p": 4000000241, "q": 5, "ms": {"native": 228.3, "block_factorial": 244.6, "nodal_flint": 176.9, "hi_grh": 148.2, "tal_dup6": 131.4, "tal_dup12": 115.3, "api_unconditional": 115.8, "hi_uncond_qfb": 144.6}}
+{"set": "B1", "p": 4000001897, "q": 11, "ms": {"native": 239.5, "block_factorial": 261.6, "nodal_flint": 214.6, "hi_grh": 163.5, "tal_dup6": 81.2, "tal_dup12": 66.4, "api_unconditional": 66.5, "hi_uncond_qfb": 154.7}}
+{"set": "B1", "p": 4000004153, "q": 23, "ms": {"native": 240.2, "block_factorial": 269.7, "nodal_flint": 180.0, "hi_grh": 145.4, "tal_dup6": 49.0, "tal_dup12": 45.0, "api_unconditional": 44.4, "hi_uncond_qfb": 142.8}}
+{"set": "B1", "p": 4000003409, "q": 31, "ms": {"native": 222.8, "block_factorial": 242.1, "nodal_flint": 192.7, "hi_grh": 151.0, "tal_dup6": 53.3, "tal_dup12": 48.6, "api_unconditional": 44.6, "hi_uncond_qfb": 152.9}}
+{"set": "B1", "p": 4000006817, "q": 47, "ms": {"native": 222.5, "block_factorial": 250.7, "nodal_flint": 207.5, "hi_grh": 151.7, "tal_dup6": 102.0, "tal_dup12": 93.2, "api_unconditional": 60.5, "hi_uncond_qfb": 144.0}}
+{"set": "B1", "p": 4000006193, "q": 61, "ms": {"native": 226.2, "block_factorial": 262.3, "nodal_flint": 197.6, "hi_grh": 162.5, "tal_dup6": 261.9, "tal_dup12": 261.8, "api_unconditional": 46.2, "hi_uncond_qfb": 164.6}}
+{"set": "B1", "p": 4000011017, "q": 89, "ms": {"native": 226.3, "block_factorial": 244.9, "nodal_flint": 189.9, "hi_grh": 160.6, "tal_dup6": 1277.2, "tal_dup12": 1237.8, "api_unconditional": 75.8, "hi_uncond_qfb": 148.9}}
+{"set": "B2", "p": 20000000231, "q": 7, "ms": {"native": 796.9, "nodal_flint": 556.2, "hi_grh": 492.2, "api_unconditional": 366.5}}
+{"set": "B2", "p": 20000000687, "q": null, "ms": {"native": 710.9, "nodal_flint": 633.0, "hi_grh": 454.0, "api_unconditional": 585.7}}
+{"set": "B2", "p": 20000000747, "q": 11, "ms": {"native": 752.7, "nodal_flint": 621.1, "hi_grh": 464.7, "api_unconditional": 259.6}}
+{"set": "B2", "p": 20000000903, "q": 7, "ms": {"native": 686.9, "nodal_flint": 616.0, "hi_grh": 439.0, "api_unconditional": 328.3}}
+{"set": "B2", "p": 20000000927, "q": null, "ms": {"native": 706.2, "nodal_flint": 569.8, "hi_grh": 492.4, "api_unconditional": 565.7}}
+{"set": "B2", "p": 20000001143, "q": 11, "ms": {"native": 687.9, "nodal_flint": 629.7, "hi_grh": 429.8, "api_unconditional": 244.1}}
+{"set": "B2", "p": 20000001167, "q": null, "ms": {"native": 721.0, "nodal_flint": 579.0, "hi_grh": 460.1, "api_unconditional": 557.2}}
+{"set": "B2", "p": 20000001311, "q": 41, "ms": {"native": 681.6, "nodal_flint": 585.7, "hi_grh": 463.2, "api_unconditional": 139.3}}
+{"set": "B2", "p": 20000001383, "q": null, "ms": {"native": 678.7, "nodal_flint": 566.4, "hi_grh": 452.7, "api_unconditional": 571.6}}
+{"set": "B2", "p": 20000001443, "q": null, "ms": {"native": 773.6, "nodal_flint": 568.9, "hi_grh": 462.4, "api_unconditional": 588.4}}
+{"set": "B2", "p": 50000000423, "q": null, "ms": {"native": 1227.3, "nodal_flint": 1002.3, "hi_grh": 837.5, "api_unconditional": 1041.1}}
+{"set": "B2", "p": 50000000747, "q": null, "ms": {"native": 1246.0, "nodal_flint": 1055.6, "hi_grh": 917.4, "api_unconditional": 1030.8}}
+{"set": "B2", "p": 20000000333, "q": 13, "ms": {"native": 730.8, "nodal_flint": 643.2, "hi_grh": 455.5, "api_unconditional": 187.1}}
+{"set": "B2", "p": 20000000357, "q": 7, "ms": {"native": 723.8, "nodal_flint": 568.5, "hi_grh": 467.6, "api_unconditional": 289.7}}
+{"set": "B2", "p": 20000000549, "q": 31, "ms": {"native": 704.3, "nodal_flint": 557.5, "hi_grh": 478.2, "api_unconditional": 113.9}}
+{"set": "B2", "p": 20000000789, "q": null, "ms": {"native": 731.0, "nodal_flint": 635.9, "hi_grh": 497.9, "api_unconditional": 588.9}}
+{"set": "B2", "p": 20000001149, "q": 29, "ms": {"native": 741.1, "nodal_flint": 563.5, "hi_grh": 453.7, "api_unconditional": 124.4}}
+{"set": "B2", "p": 20000001173, "q": null, "ms": {"native": 691.1, "nodal_flint": 599.5, "hi_grh": 474.4, "api_unconditional": 694.0}}
+{"set": "B2", "p": 20000001221, "q": 17, "ms": {"native": 664.1, "nodal_flint": 580.6, "hi_grh": 461.8, "api_unconditional": 170.1}}
+{"set": "B2", "p": 20000001533, "q": 23, "ms": {"native": 779.3, "nodal_flint": 641.6, "hi_grh": 481.9, "api_unconditional": 153.3}}
+{"set": "B2", "p": 20000001677, "q": null, "ms": {"native": 739.1, "nodal_flint": 602.7, "hi_grh": 530.5, "api_unconditional": 572.2}}
+{"set": "B2", "p": 20000001701, "q": 7, "ms": {"native": 708.4, "nodal_flint": 678.7, "hi_grh": 555.3, "api_unconditional": 308.9}}
+{"set": "B2", "p": 50000000189, "q": null, "ms": {"native": 1401.8, "nodal_flint": 1135.4, "hi_grh": 876.9, "api_unconditional": 1161.1}}
+{"set": "B2", "p": 50000000333, "q": null, "ms": {"native": 1275.5, "nodal_flint": 1117.1, "hi_grh": 863.0, "api_unconditional": 1040.4}}
+{"set": "B2", "p": 20000000369, "q": null, "ms": {"native": 731.0, "nodal_flint": 598.4, "hi_grh": 552.2, "api_unconditional": 575.3}}
+{"set": "B2", "p": 20000000561, "q": 5, "ms": {"native": 697.6, "nodal_flint": 581.5, "hi_grh": 503.3, "api_unconditional": 407.6}}
+{"set": "B2", "p": 20000000873, "q": null, "ms": {"native": 715.5, "nodal_flint": 651.2, "hi_grh": 486.5, "api_unconditional": 588.6}}
+{"set": "B2", "p": 20000001017, "q": 37, "ms": {"native": 709.3, "nodal_flint": 563.3, "hi_grh": 485.6, "api_unconditional": 119.1}}
+{"set": "B2", "p": 20000001377, "q": null, "ms": {"native": 698.4, "nodal_flint": 652.1, "hi_grh": 482.2, "api_unconditional": 643.0}}
+{"set": "B2", "p": 20000001473, "q": 11, "ms": {"native": 740.7, "nodal_flint": 569.7, "hi_grh": 500.4, "api_unconditional": 201.4}}
+{"set": "B2", "p": 20000001569, "q": null, "ms": {"native": 681.6, "nodal_flint": 593.4, "hi_grh": 445.4, "api_unconditional": 601.4}}
+{"set": "B2", "p": 20000001689, "q": null, "ms": {"native": 695.9, "nodal_flint": 553.6, "hi_grh": 440.3, "api_unconditional": 589.3}}
+{"set": "B2", "p": 20000001809, "q": 23, "ms": {"native": 689.4, "nodal_flint": 615.0, "hi_grh": 441.1, "api_unconditional": 136.1}}
+{"set": "B2", "p": 20000002313, "q": null, "ms": {"native": 671.8, "nodal_flint": 562.6, "hi_grh": 485.4, "api_unconditional": 578.0}}
+{"set": "B2", "p": 50000000417, "q": null, "ms": {"native": 1173.7, "nodal_flint": 1027.1, "hi_grh": 898.7, "api_unconditional": 1017.3}}
+{"set": "B2", "p": 50000001137, "q": null, "ms": {"native": 1223.1, "nodal_flint": 1061.7, "hi_grh": 871.2, "api_unconditional": 1030.6}}
+{"set": "B3", "p": 2000000063, "q": null, "ms": {"native": 126.0, "nodal_flint": 109.7, "hi_uncond_qfb": 93.6, "hi_grh": 91.9, "hi_forms_cold": 323.2, "api_unconditional": 96.1}}
+{"set": "B3", "p": 2000000141, "q": 5, "ms": {"native": 125.8, "nodal_flint": 106.6, "hi_uncond_qfb": 93.4, "hi_grh": 94.5, "hi_forms_cold": 432.3, "api_unconditional": 68.6}}
+{"set": "B3", "p": 2000000033, "q": null, "ms": {"native": 129.7, "nodal_flint": 110.3, "hi_uncond_qfb": 95.5, "hi_grh": 96.5, "hi_forms_cold": 316.5, "api_unconditional": 96.1}}
+{"set": "B4", "p": 1000151, "q": 5, "ms": {"native": 0.3, "api_unconditional": 0.6, "nodal_flint": 0.4}}
+{"set": "B4", "p": 10000103, "q": 7, "ms": {"native": 2.1, "api_unconditional": 1.8, "nodal_flint": 2.6}}
+{"set": "B4", "p": 100000223, "q": 17, "ms": {"native": 12.9, "api_unconditional": 5.0, "nodal_flint": 11.0}}
+{"set": "B4", "p": 1000133, "q": 7, "ms": {"native": 0.4, "api_unconditional": 0.6, "nodal_flint": 0.5}}
+{"set": "B4", "p": 10000229, "q": 7, "ms": {"native": 2.1, "api_unconditional": 1.5, "nodal_flint": 2.1}}
+{"set": "B4", "p": 100000421, "q": 13, "ms": {"native": 12.0, "api_unconditional": 4.6, "nodal_flint": 11.2}}
+{"set": "B4", "p": 1000313, "q": null, "ms": {"native": 0.3, "api_unconditional": 0.7, "nodal_flint": 0.4}}
+{"set": "B4", "p": 10000121, "q": 13, "ms": {"native": 2.1, "api_unconditional": 1.7, "nodal_flint": 2.1}}
+{"set": "B4", "p": 100000049, "q": null, "ms": {"native": 17.6, "api_unconditional": 9.1, "nodal_flint": 17.1}}

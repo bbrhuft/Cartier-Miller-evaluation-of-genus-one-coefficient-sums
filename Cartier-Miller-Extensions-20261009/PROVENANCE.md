@@ -63,3 +63,17 @@ The review records are in history/reviews/depth_three_b0_20261012/, and the hand
 ## Addition of 12 October 2026 (ordinary slope)
 
 The ordinary Cartier-slope feasibility package, revision 2, was received as Ordinary_K_Feasibility_20261012_rev2.zip (SHA-256 bfe5872d4a2aa8a573bcc5ab94d65c6137fddc79c618c784765f0043fcc5e1b4) and placed unchanged at research/ordinary_k_feasibility_20261012/; only RELEASE_NOTE.md was added. Its own SHA256SUMS.json verifies all 99 files. Its nested evidence ZIPs (revisions 0 and 1 and the external review's evidence bundle) were inspected and contain no manuscript, GPL-licensed code or copyrighted scans. From the Ordinary_K research handover (Ordinary_K_Research_Handover_20261012.zip, SHA-256 6ca8d4e09baff40851e9ed620ee810321b891d0eda1fb8f778266b04826cf104), only three data files are redistributed, in `handover_inputs/`. The rest is excluded, because it contains a nested review archive holding the CM research handover (manuscript and GPL code) and LGPL FLINT headers. The CM package's `fixed_D_evaluator.py` received a one-line import fix so that it loads by path; its manifest entry was updated. Some outputs record absolute paths from the producing environment and are left unchanged as hashed evidence.
+
+## Addition of 18 October 2026 (rounded third, T3 backend)
+
+Four files were received:
+- the repository handover Cartier_Miller_Rounded_Third_GitHub_Handover_20261018.md (kept verbatim);
+- the integration package Cartier_Miller_T3_Integration_20261018.zip (SHA-256 0af630b767ab93a9eebeaa6d09d5eaf2d74ba69475764676b6844d108bfa986a);
+- its report, Cartier_Miller_T3_Integration_REPORT_20261018.md (00a73b60ed6a1f673330876d7b882760b9ef3390084dbd9cdb2f14dd52fce2d1), byte-identical to the package's REPORT.md;
+- Atkin_Endpoint_Round3_20261018.zip (433b88da7c49d4ac7b65c4a1c31ca40bd42de22737634cd2e0b4f3ca999192d6), supplied to replace one file the package zip omitted.
+
+The package was placed at research/rounded_third_t3_integration_20261018/package/cm_r3_integration_20261018/. Two changes were made:
+- vendor/atkin_r3/MANIFEST.json, listed in the package's freeze but missing from its zip, was restored from the Atkin archive; its hash matches.
+- vendor/atkin_r3/r3/sources/PARI_2.17.2_installed_doc.json, a verbatim GPL PARI/GP documentation excerpt, was not redistributed; it is identified by hash.
+
+The folder's RELEASE_NOTE.md gives the details, and verify_import.py checks the package against its own hash lists. The package's vendored workbench and Atkin code were screened: they contain no other GPL or LGPL text and no binaries. Ten .log evidence files are committed despite the `*.log` ignore rule. Two vendored logs record absolute paths from the producing environment and are left unchanged as hashed evidence.

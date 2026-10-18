@@ -1,0 +1,331 @@
+{
+  "role": "Post-confirmation check of the thin round-2 API (acquire_charp.py) against frozen confirmation references",
+  "sha256_acquire_charp": "da5fb59a57f3f669bd44c941d73a22b37ba68b3f8e96c626e47f38148dd99530",
+  "status": "PASS",
+  "rows": [
+    {
+      "p": 300017,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 248422,
+      "derivative": 151521,
+      "conditional": true,
+      "seconds": 0.06721339500018075
+    },
+    {
+      "p": 300017,
+      "backend": "std",
+      "classno": "forms",
+      "c": 248422,
+      "derivative": 151521,
+      "conditional": true,
+      "seconds": 0.027368663999368437
+    },
+    {
+      "p": 300023,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 227823,
+      "derivative": 10143,
+      "conditional": false,
+      "seconds": 0.013826364999658836
+    },
+    {
+      "p": 300023,
+      "backend": "std",
+      "classno": "forms",
+      "c": 227823,
+      "derivative": 10143,
+      "conditional": false,
+      "seconds": 0.01771537399963563
+    },
+    {
+      "p": 300089,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 213741,
+      "derivative": 214987,
+      "conditional": true,
+      "seconds": 0.012982340999769804
+    },
+    {
+      "p": 300089,
+      "backend": "std",
+      "classno": "forms",
+      "c": 213741,
+      "derivative": 214987,
+      "conditional": true,
+      "seconds": 0.015966201000082947
+    },
+    {
+      "p": 300119,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 2753,
+      "derivative": 30017,
+      "conditional": false,
+      "seconds": 0.011304077000204416
+    },
+    {
+      "p": 300119,
+      "backend": "std",
+      "classno": "forms",
+      "c": 2753,
+      "derivative": 30017,
+      "conditional": false,
+      "seconds": 0.018911635000222304
+    },
+    {
+      "p": 300137,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 131398,
+      "derivative": 74285,
+      "conditional": true,
+      "seconds": 0.01005802899999253
+    },
+    {
+      "p": 300137,
+      "backend": "std",
+      "classno": "forms",
+      "c": 131398,
+      "derivative": 74285,
+      "conditional": true,
+      "seconds": 0.014455476999501116
+    },
+    {
+      "p": 300149,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 77381,
+      "derivative": 101280,
+      "conditional": false,
+      "seconds": 0.011540919999788457
+    },
+    {
+      "p": 300149,
+      "backend": "std",
+      "classno": "forms",
+      "c": 77381,
+      "derivative": 101280,
+      "conditional": false,
+      "seconds": 0.016059481999946
+    },
+    {
+      "p": 300191,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 284930,
+      "derivative": 280220,
+      "conditional": false,
+      "seconds": 0.01026130800073588
+    },
+    {
+      "p": 300191,
+      "backend": "std",
+      "classno": "forms",
+      "c": 284930,
+      "derivative": 280220,
+      "conditional": false,
+      "seconds": 0.014384262000021408
+    },
+    {
+      "p": 300221,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 49750,
+      "derivative": 37281,
+      "conditional": false,
+      "seconds": 0.010068851000141876
+    },
+    {
+      "p": 300221,
+      "backend": "std",
+      "classno": "forms",
+      "c": 49750,
+      "derivative": 37281,
+      "conditional": false,
+      "seconds": 0.015643154999452236
+    },
+    {
+      "p": 300317,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 14527,
+      "derivative": 53109,
+      "conditional": false,
+      "seconds": 0.009549076999974204
+    },
+    {
+      "p": 300317,
+      "backend": "std",
+      "classno": "forms",
+      "c": 14527,
+      "derivative": 53109,
+      "conditional": false,
+      "seconds": 0.014223551000213774
+    },
+    {
+      "p": 2000003,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 1712468,
+      "derivative": 20055,
+      "conditional": false,
+      "seconds": 0.00985193500036985
+    },
+    {
+      "p": 2000003,
+      "backend": "std",
+      "classno": "forms",
+      "c": 1712468,
+      "derivative": 20055,
+      "conditional": false,
+      "seconds": 0.04072459000053641
+    },
+    {
+      "p": 2000081,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 1471098,
+      "derivative": 319729,
+      "conditional": true,
+      "seconds": 0.009891654000057315
+    },
+    {
+      "p": 2000081,
+      "backend": "std",
+      "classno": "forms",
+      "c": 1471098,
+      "derivative": 319729,
+      "conditional": true,
+      "seconds": 0.04295197800001915
+    },
+    {
+      "p": 2000093,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 1437379,
+      "derivative": 929309,
+      "conditional": false,
+      "seconds": 0.010536526999203488
+    },
+    {
+      "p": 2000093,
+      "backend": "std",
+      "classno": "forms",
+      "c": 1437379,
+      "derivative": 929309,
+      "conditional": false,
+      "seconds": 0.04466608500024449
+    },
+    {
+      "p": 20000003,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 3333887,
+      "derivative": 17197907,
+      "conditional": false,
+      "seconds": 0.014631142999860458
+    },
+    {
+      "p": 20000003,
+      "backend": "std",
+      "classno": "forms",
+      "c": 3333887,
+      "derivative": 17197907,
+      "conditional": false,
+      "seconds": 0.1460114789997533
+    },
+    {
+      "p": 20000033,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 12405938,
+      "derivative": 13130845,
+      "conditional": true,
+      "seconds": 0.012736480000057782
+    },
+    {
+      "p": 20000033,
+      "backend": "std",
+      "classno": "forms",
+      "c": 12405938,
+      "derivative": 13130845,
+      "conditional": true,
+      "seconds": 0.14950922600019112
+    },
+    {
+      "p": 20000069,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 12270505,
+      "derivative": 3049109,
+      "conditional": false,
+      "seconds": 0.011935839999750897
+    },
+    {
+      "p": 20000069,
+      "backend": "std",
+      "classno": "forms",
+      "c": 12270505,
+      "derivative": 3049109,
+      "conditional": false,
+      "seconds": 0.17203171999972255
+    },
+    {
+      "p": 200000033,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 160005577,
+      "derivative": 176950910,
+      "conditional": true,
+      "seconds": 0.027785634999418107
+    },
+    {
+      "p": 200000039,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 194836981,
+      "derivative": 13348636,
+      "conditional": false,
+      "seconds": 0.0254171269998551
+    },
+    {
+      "p": 200000069,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 70845398,
+      "derivative": 154430881,
+      "conditional": false,
+      "seconds": 0.028073172999938834
+    },
+    {
+      "p": 2000000033,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 1723932546,
+      "derivative": 902155007,
+      "conditional": true,
+      "seconds": 0.11698991299999761
+    },
+    {
+      "p": 2000000063,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 646829403,
+      "derivative": 642314495,
+      "conditional": false,
+      "seconds": 0.09877579099975264
+    },
+    {
+      "p": 2000000141,
+      "backend": "flint",
+      "classno": "pari",
+      "c": 168094363,
+      "derivative": 873781733,
+      "conditional": false,
+      "seconds": 0.07777195700055017
+    }
+  ]
+}

@@ -1,0 +1,916 @@
+{
+ "role": "post-confirmation analysis of R3.1 lattice stages",
+ "pairs": 151,
+ "tally": {
+  "q<83/delta0.999": 141,
+  "q>=83/delta0.999": 10
+ },
+ "rows": [
+  {
+   "p": 2500097,
+   "q": 19,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500109,
+   "q": 13,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500151,
+   "q": 5,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500151,
+   "q": 31,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500163,
+   "q": 7,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500187,
+   "q": 13,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500301,
+   "q": 5,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500301,
+   "q": 11,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500331,
+   "q": 23,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500439,
+   "q": 19,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500439,
+   "q": 29,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500601,
+   "q": 5,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500709,
+   "q": 7,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500709,
+   "q": 31,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500709,
+   "q": 43,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500769,
+   "q": 17,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500781,
+   "q": 19,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500889,
+   "q": 13,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500919,
+   "q": 41,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500961,
+   "q": 7,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500961,
+   "q": 11,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500961,
+   "q": 29,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2500973,
+   "q": 17,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2501201,
+   "q": 37,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2501573,
+   "q": 23,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2501657,
+   "q": 41,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2501819,
+   "q": 11,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2501999,
+   "q": 43,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2501999,
+   "q": 47,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2502701,
+   "q": 29,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2502953,
+   "q": 23,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2503313,
+   "q": 31,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2503409,
+   "q": 47,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2503931,
+   "q": 17,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2504531,
+   "q": 37,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2505101,
+   "q": 41,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2505101,
+   "q": 47,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2505353,
+   "q": 43,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 2507861,
+   "q": 37,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000000007,
+   "q": 17,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000000019,
+   "q": 7,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000000157,
+   "q": 19,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000000187,
+   "q": 13,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000000229,
+   "q": 7,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000000241,
+   "q": 5,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000000427,
+   "q": 23,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000000427,
+   "q": 41,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000000451,
+   "q": 5,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000000451,
+   "q": 29,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000000619,
+   "q": 31,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000000661,
+   "q": 5,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000000727,
+   "q": 19,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000000733,
+   "q": 7,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000000733,
+   "q": 13,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000001039,
+   "q": 11,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000001297,
+   "q": 19,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000001333,
+   "q": 17,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000001477,
+   "q": 37,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000001501,
+   "q": 5,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000001501,
+   "q": 11,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000001567,
+   "q": 73,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000001699,
+   "q": 37,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000001729,
+   "q": 43,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000001897,
+   "q": 11,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000002221,
+   "q": 23,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000002221,
+   "q": 53,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000002329,
+   "q": 7,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000002791,
+   "q": 7,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000003181,
+   "q": 67,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000003277,
+   "q": 43,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000003409,
+   "q": 29,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000003409,
+   "q": 31,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000003541,
+   "q": 89,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000004153,
+   "q": 23,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000004201,
+   "q": 5,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000004363,
+   "q": 61,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000004387,
+   "q": 67,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000004633,
+   "q": 13,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000004633,
+   "q": 73,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000005263,
+   "q": 79,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000005461,
+   "q": 61,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000005473,
+   "q": 37,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000005593,
+   "q": 41,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000005593,
+   "q": 67,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000005719,
+   "q": 53,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000006013,
+   "q": 31,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000006193,
+   "q": 61,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000006379,
+   "q": 71,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000006817,
+   "q": 47,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000007069,
+   "q": 41,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000008347,
+   "q": 89,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000008563,
+   "q": 11,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000008629,
+   "q": 29,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000009667,
+   "q": 59,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000011017,
+   "q": 89,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000011737,
+   "q": 17,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000011791,
+   "q": 43,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000011863,
+   "q": 83,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000012769,
+   "q": 71,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000014149,
+   "q": 47,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000015577,
+   "q": 53,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000017773,
+   "q": 73,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000018733,
+   "q": 71,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000018943,
+   "q": 47,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000019957,
+   "q": 79,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000020641,
+   "q": 59,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000021313,
+   "q": 7,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000023809,
+   "q": 11,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000027013,
+   "q": 59,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000037969,
+   "q": 79,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000039781,
+   "q": 11,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000049213,
+   "q": 83,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 4000050209,
+   "q": 83,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000000231,
+   "q": 5,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000000231,
+   "q": 7,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000000333,
+   "q": 13,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000000357,
+   "q": 7,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000000357,
+   "q": 67,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000000549,
+   "q": 11,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000000549,
+   "q": 31,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000000561,
+   "q": 5,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000000747,
+   "q": 11,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000000873,
+   "q": 79,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000000903,
+   "q": 7,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000001017,
+   "q": 17,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000001017,
+   "q": 37,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000001143,
+   "q": 11,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000001149,
+   "q": 29,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000001221,
+   "q": 5,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000001221,
+   "q": 17,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000001311,
+   "q": 5,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000001311,
+   "q": 41,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000001377,
+   "q": 83,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000001473,
+   "q": 11,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000001533,
+   "q": 7,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000001533,
+   "q": 23,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000001701,
+   "q": 5,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000001701,
+   "q": 7,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 20000001809,
+   "q": 23,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 400000000097,
+   "q": 23,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 400000000289,
+   "q": 47,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 400000000577,
+   "q": 11,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 400000000709,
+   "q": 11,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 400000002359,
+   "q": 11,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 400000002719,
+   "q": 23,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 400000004237,
+   "q": 23,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 400000004237,
+   "q": 47,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 400000008503,
+   "q": 89,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 400000015799,
+   "q": 47,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 400000017581,
+   "q": 89,
+   "stage": "delta0.999",
+   "attempts": 1
+  },
+  {
+   "p": 400000069913,
+   "q": 89,
+   "stage": "delta0.999",
+   "attempts": 1
+  }
+ ]
+}

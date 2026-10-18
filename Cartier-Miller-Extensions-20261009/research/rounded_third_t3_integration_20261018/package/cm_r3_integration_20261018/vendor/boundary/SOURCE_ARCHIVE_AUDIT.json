@@ -1,0 +1,13 @@
+{
+  "checks": [
+    {
+      "archive": "Cartier_Miller_Integration_Audit_20261013.zip",
+      "matches_provenance": true
+    },
+    {
+      "archive": "Rounded_Third_Batch_Extension_20261014.zip",
+      "matches_provenance": true
+    }
+  ],
+  "scope": "Source archives inspected locally against retained-source provenance; archive bytes are not duplicated in this delivery."
+}

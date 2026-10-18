@@ -1,0 +1,107 @@
+{"set": "S", "p": 2000291, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 5, "status": "unconditional"}, "s": 0.42}
+{"set": "S", "p": 2000447, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 7, "status": "unconditional"}, "s": 0.36}
+{"set": "S", "p": 2000351, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 5, "status": "unconditional"}, "s": 0.36}
+{"set": "S", "p": 2000519, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 13, "status": "unconditional"}, "s": 0.4}
+{"set": "S", "p": 2002907, "cls": "A", "tal": 1, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 0.37}
+{"set": "S", "p": 2001347, "cls": "A", "tal": 1, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 0.35}
+{"set": "S", "p": 2002151, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 5, "status": "unconditional"}, "s": 0.35}
+{"set": "S", "p": 2001407, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 11, "status": "unconditional"}, "s": 0.4}
+{"set": "S", "p": 2000927, "cls": "A", "tal": 1, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 0.34}
+{"set": "S", "p": 2000147, "cls": "A", "tal": 1, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 0.33}
+{"set": "S", "p": 2001539, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 7, "status": "unconditional"}, "s": 0.34}
+{"set": "S", "p": 2000447, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 7, "status": "unconditional"}, "s": 0.35}
+{"set": "S", "p": 2000039, "cls": "A", "tal": 1, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 0.45}
+{"set": "M", "p": 3000000371, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 17, "status": "unconditional"}, "s": 1.03}
+{"set": "M", "p": 3000000347, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 7, "status": "unconditional"}, "s": 1.14}
+{"set": "M", "p": 3000003491, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 11, "status": "unconditional"}, "s": 0.98}
+{"set": "M", "p": 3000000407, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 13, "status": "unconditional"}, "s": 1.12}
+{"set": "M", "p": 3000000371, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 17, "status": "unconditional"}, "s": 0.95}
+{"set": "M", "p": 3000004811, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 19, "status": "unconditional"}, "s": 0.96}
+{"set": "M", "p": 3000000539, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 23, "status": "unconditional"}, "s": 1.03}
+{"set": "M", "p": 3000005747, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 29, "status": "unconditional"}, "s": 0.91}
+{"set": "M", "p": 3000002867, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 31, "status": "unconditional"}, "s": 0.97}
+{"set": "M", "p": 3000001811, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 37, "status": "unconditional"}, "s": 0.94}
+{"set": "M", "p": 3000003047, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 41, "status": "unconditional"}, "s": 1.01}
+{"set": "M", "p": 3000009983, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 43, "status": "unconditional"}, "s": 1.15}
+{"set": "M", "p": 3000001259, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 47, "status": "unconditional"}, "s": 1.09}
+{"set": "M", "p": 3000001931, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 5, "status": "unconditional"}, "s": 1.29}
+{"set": "M", "p": 3000002147, "cls": "A", "tal": 1, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 1.19}
+{"set": "M", "p": 3000004523, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 41, "status": "unconditional"}, "s": 1.18}
+{"set": "M", "p": 3000002051, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 5, "status": "unconditional"}, "s": 1.38}
+{"set": "M", "p": 3000000347, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 7, "status": "unconditional"}, "s": 1.39}
+{"set": "M", "p": 3000001139, "cls": "A", "tal": 1, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 1.56}
+{"set": "M", "p": 3000000827, "cls": "A", "tal": 1, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 1.66}
+{"set": "M", "p": 3000003959, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 7, "status": "unconditional"}, "s": 1.83}
+{"set": "M", "p": 3000022859, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 7, "status": "unconditional"}, "s": 2.05}
+{"set": "L", "p": 300000001907, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 11, "status": "unconditional"}, "s": 24.06}
+{"set": "L", "p": 300000000119, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 23, "status": "unconditional"}, "s": 25.05}
+{"set": "L", "p": 300000004259, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 47, "status": "unconditional"}, "s": 21.15}
+{"set": "L", "p": 300000012563, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 89, "status": "unconditional"}, "s": 25.92}
+{"set": "E1", "p": 40000000343, "cls": "A", "tal": 0, "api": {"route": "nodal_flint", "q": null, "status": "unconditional"}, "s": 7.16}
+{"set": "E1", "p": 40000000583, "cls": "A", "tal": 0, "api": {"route": "nodal_flint", "q": null, "status": "unconditional"}, "s": 7.33}
+{"set": "E2", "p": 3000000551, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 5, "status": "unconditional"}, "s": 1.14}
+{"set": "E2", "p": 3000000599, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 7, "status": "unconditional"}, "s": 1.01}
+{"set": "E2", "p": 3000004547, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 11, "status": "unconditional"}, "s": 0.95}
+{"set": "E4", "p": 10000000103, "cls": "A", "tal": 0, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 2.46}
+{"set": "E4", "p": 10000000259, "cls": "A", "tal": 0, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 2.5}
+{"set": "E4", "p": 10000000319, "cls": "A", "tal": 2, "api": {"route": "tal_split", "q": 11, "status": "unconditional"}, "s": 2.59}
+{"set": "E4", "p": 10000000343, "cls": "A", "tal": 1, "api": {"route": "tal_split", "q": 29, "status": "unconditional"}, "s": 2.07}
+{"set": "E4", "p": 10000000391, "cls": "A", "tal": 2, "api": {"route": "tal_split", "q": 19, "status": "unconditional"}, "s": 2.5}
+{"set": "E4", "p": 10000000403, "cls": "A", "tal": 2, "api": {"route": "tal_split", "q": 47, "status": "unconditional"}, "s": 2.53}
+{"set": "E4", "p": 10000000583, "cls": "A", "tal": 4, "api": {"route": "tal_split", "q": 37, "status": "unconditional"}, "s": 2.57}
+{"set": "E4", "p": 10000000631, "cls": "A", "tal": 2, "api": {"route": "tal_split", "q": 5, "status": "unconditional"}, "s": 3.31}
+{"set": "E4", "p": 10000000643, "cls": "A", "tal": 0, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 2.71}
+{"set": "E4", "p": 10000000667, "cls": "A", "tal": 0, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 2.48}
+{"set": "S", "p": 2000261, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 5, "status": "unconditional"}, "s": 0.35}
+{"set": "S", "p": 2000573, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 7, "status": "unconditional"}, "s": 0.36}
+{"set": "S", "p": 2000813, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 11, "status": "unconditional"}, "s": 0.41}
+{"set": "S", "p": 2000597, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 13, "status": "unconditional"}, "s": 0.34}
+{"set": "S", "p": 2001581, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 7, "status": "unconditional"}, "s": 0.35}
+{"set": "S", "p": 2002373, "cls": "B", "tal": 2, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 0.33}
+{"set": "S", "p": 2003669, "cls": "B", "tal": 2, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 0.34}
+{"set": "S", "p": 2001581, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 7, "status": "unconditional"}, "s": 0.34}
+{"set": "S", "p": 2002229, "cls": "B", "tal": 2, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 0.37}
+{"set": "S", "p": 2000813, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 11, "status": "unconditional"}, "s": 0.39}
+{"set": "S", "p": 2000309, "cls": "B", "tal": 2, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 0.4}
+{"set": "S", "p": 2015669, "cls": "B", "tal": 2, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 0.41}
+{"set": "S", "p": 2004269, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 7, "status": "unconditional"}, "s": 0.49}
+{"set": "M", "p": 3000000461, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 5, "status": "unconditional"}, "s": 1.13}
+{"set": "M", "p": 3000001229, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 23, "status": "unconditional"}, "s": 0.99}
+{"set": "M", "p": 3000001709, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 11, "status": "unconditional"}, "s": 1.09}
+{"set": "M", "p": 3000002669, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 13, "status": "unconditional"}, "s": 1.05}
+{"set": "M", "p": 3000003533, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 17, "status": "unconditional"}, "s": 0.93}
+{"set": "M", "p": 3000000821, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 31, "status": "unconditional"}, "s": 0.95}
+{"set": "M", "p": 3000001229, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 23, "status": "unconditional"}, "s": 0.98}
+{"set": "M", "p": 3000005573, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 29, "status": "unconditional"}, "s": 0.92}
+{"set": "M", "p": 3000000077, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 31, "status": "unconditional"}, "s": 0.97}
+{"set": "M", "p": 3000006917, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 37, "status": "unconditional"}, "s": 0.99}
+{"set": "M", "p": 3000008213, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 41, "status": "unconditional"}, "s": 0.99}
+{"set": "M", "p": 3000002501, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 11, "status": "unconditional"}, "s": 1.03}
+{"set": "M", "p": 3000002669, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 13, "status": "unconditional"}, "s": 1.13}
+{"set": "M", "p": 3000005429, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 7, "status": "unconditional"}, "s": 1.18}
+{"set": "M", "p": 3000002501, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 11, "status": "unconditional"}, "s": 1.29}
+{"set": "M", "p": 3000001229, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 23, "status": "unconditional"}, "s": 1.3}
+{"set": "M", "p": 3000005669, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 11, "status": "unconditional"}, "s": 1.58}
+{"set": "M", "p": 3000021221, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 7, "status": "unconditional"}, "s": 1.78}
+{"set": "M", "p": 3000007709, "cls": "B", "tal": 2, "api": {"route": "half_interval", "q": null, "status": "unconditional"}, "s": 1.89}
+{"set": "M", "p": 3000005093, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 23, "status": "unconditional"}, "s": 2.15}
+{"set": "M", "p": 3000015413, "cls": "B", "tal": 2, "api": {"route": "tal_split", "q": 19, "status": "unconditional"}, "s": 2.5}
+Traceback (most recent call last):
+  File "/home/claude/round3/work/atkin_round3/r3/confirm_r3.py", line 193, in <module>
+    main()
+    ~~~~^^
+  File "/home/claude/round3/work/atkin_round3/r3/confirm_r3.py", line 175, in main
+    rec = check_prime(p, ql, small)
+  File "/home/claude/round3/work/atkin_round3/r3/confirm_r3.py", line 122, in check_prime
+    c, md = tal3.acquire(p, q, an)
+            ~~~~~~~~~~~~^^^^^^^^^^
+  File "/home/claude/round3/work/atkin_round3/r3/tal3.py", line 222, in acquire
+    Jw = {w: ctx.J(1, w) for w in classes}
+             ~~~~~^^^^^^
+  File "/home/claude/round3/work/atkin_round3/r3/jacobi.py", line 255, in J
+    x = self._svp(S, self.method)
+  File "/home/claude/round3/work/atkin_round3/r3/jacobi.py", line 227, in _svp
+    res = P.qfminim(Bm.mattranspose() * T * Bm, target, 4 * q)   # exact enumeration
+  File "cypari2/auto_instance.pxi", line 33935, in cypari2.pari_instance.Pari_auto.qfminim
+  File "cypari2/handle_error.pyx", line 211, in cypari2.handle_error._pari_err_handle
+cypari2.handle_error.PariError: precision too low in qfminim

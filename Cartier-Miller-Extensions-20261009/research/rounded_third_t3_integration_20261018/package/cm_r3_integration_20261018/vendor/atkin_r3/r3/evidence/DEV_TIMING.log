@@ -1,0 +1,39 @@
+{"p": 5000000141, "q": 5, "ms": {"native": 261.3, "flint_nodal": 214.0, "hi_grh": 185.8, "tal_dup6": 186.5, "tal_dup12": 177.9, "hi_uncond": 210.0}}
+{"p": 5000000321, "q": 7, "ms": {"native": 261.0, "flint_nodal": 208.3, "hi_grh": 176.9, "tal_dup6": 120.4, "tal_dup12": 112.6, "hi_uncond": 191.4}}
+{"p": 5000000039, "q": 11, "ms": {"native": 257.2, "flint_nodal": 230.4, "hi_grh": 214.4, "tal_dup6": 90.0, "hi_uncond": 170.0}}
+{"p": 5000000591, "q": 13, "ms": {"native": 261.3, "flint_nodal": 203.1, "hi_grh": 163.0, "tal_dup6": 82.4, "hi_uncond": 191.0}}
+{"p": 5000001683, "q": 17, "ms": {"native": 256.9, "flint_nodal": 205.5, "hi_grh": 188.1, "tal_dup6": 82.0, "hi_uncond": 177.3}}
+{"p": 5000000039, "q": 23, "ms": {"native": 254.4, "flint_nodal": 220.6, "hi_grh": 174.7, "tal_dup6": 59.5, "hi_uncond": 174.4}}
+{"p": 5000000417, "q": 31, "ms": {"native": 258.3, "flint_nodal": 213.6, "hi_grh": 173.4, "tal_dup6": 57.5, "tal_dup12": 50.5, "hi_uncond": 166.0}}
+{"p": 5000000477, "q": 37, "ms": {"native": 276.7, "flint_nodal": 222.1, "hi_grh": 186.8, "tal_dup6": 65.9, "tal_dup12": 60.0, "hi_uncond": 181.2}}
+{"p": 5000001497, "q": 41, "ms": {"native": 266.2, "flint_nodal": 237.0, "hi_grh": 171.3, "tal_dup6": 74.9, "tal_dup12": 70.3, "hi_uncond": 172.3}}
+{"p": 5000000531, "q": 47, "ms": {"native": 305.1, "flint_nodal": 222.5, "hi_grh": 188.7, "tal_dup6": 115.3, "hi_uncond": 196.5}}
+{"p": 5000002829, "q": 53, "ms": {"native": 287.7, "flint_nodal": 227.2, "hi_grh": 182.8, "tal_dup6": 143.1, "tal_dup12": 142.7, "hi_uncond": 171.8}}
+{"p": 5000004203, "q": 61, "ms": {"native": 281.5, "flint_nodal": 217.6, "hi_grh": 196.1, "tal_dup6": 263.2, "hi_uncond": 197.7}}
+{"p": 5000006873, "q": 71, "ms": {"native": 297.4, "flint_nodal": 240.1, "hi_grh": 197.6, "tal_dup6": 455.0, "tal_dup12": 479.1, "hi_uncond": 201.2}}
+{"p": 50000000021, "q": 5, "ms": {"native": 1306.6, "flint_nodal": 1237.2, "hi_grh": 828.1, "tal_dup6": 813.6, "tal_dup12": 681.7, "hi_uncond_forms_1sample": 2858.3}}
+{"p": 50000000429, "q": 7, "ms": {"native": 1227.9, "flint_nodal": 1028.0, "hi_grh": 846.4, "tal_dup6": 645.7, "tal_dup12": 526.0, "hi_uncond_forms_1sample": 2553.1}}
+{"p": 50000000249, "q": 11, "ms": {"native": 1186.1, "flint_nodal": 1070.9, "hi_grh": 922.7, "tal_dup6": 473.4, "tal_dup12": 397.5, "hi_uncond_forms_1sample": 2009.8}}
+{"p": 50000001533, "q": 13, "ms": {"native": 1225.9, "flint_nodal": 986.1, "hi_grh": 926.0, "tal_dup6": 416.7, "tal_dup12": 380.0, "hi_uncond_forms_1sample": 2936.4}}
+{"p": 50000000807, "q": 17, "ms": {"native": 1298.9, "flint_nodal": 1082.6, "hi_grh": 864.4, "tal_dup6": 364.7, "hi_uncond_forms_1sample": 2001.0}}
+{"p": 50000000933, "q": 23, "ms": {"native": 1248.4, "flint_nodal": 1052.6, "hi_grh": 860.8, "tal_dup6": 310.9, "tal_dup12": 277.3, "hi_uncond_forms_1sample": 2863.9}}
+{"p": 50000004161, "q": 31, "ms": {"native": 1262.3, "flint_nodal": 995.0, "hi_grh": 808.6, "tal_dup6": 243.2, "tal_dup12": 203.9, "hi_uncond_forms_1sample": 2259.5}}
+{"p": 50000002097, "q": 37, "ms": {"native": 1222.3, "flint_nodal": 1025.3, "hi_grh": 883.1, "tal_dup6": 247.3, "tal_dup12": 206.9, "hi_uncond_forms_1sample": 1888.1}}
+{"p": 50000000693, "q": 41, "ms": {"native": 1221.8, "flint_nodal": 982.0, "hi_grh": 834.5, "tal_dup6": 253.1, "tal_dup12": 211.0, "hi_uncond_forms_1sample": 2661.3}}
+{"p": 50000001917, "q": 47, "ms": {"native": 1182.2, "flint_nodal": 1029.5, "hi_grh": 818.7, "tal_dup6": 246.0, "tal_dup12": 220.9, "hi_uncond_forms_1sample": 2837.9}}
+{"p": 50000000933, "q": 53, "ms": {"native": 1247.8, "flint_nodal": 992.1, "hi_grh": 823.8, "tal_dup6": 304.1, "tal_dup12": 291.5, "hi_uncond_forms_1sample": 2970.1}}
+{"p": 50000003957, "q": 61, "ms": {"native": 1185.5, "flint_nodal": 1001.2, "hi_grh": 784.9, "tal_dup6": 358.1, "tal_dup12": 356.8, "hi_uncond_forms_1sample": 3085.7}}
+{"p": 50000001413, "q": 71, "ms": {"native": 1239.8, "flint_nodal": 1011.9, "hi_grh": 827.9, "tal_dup6": 592.5, "tal_dup12": 580.6, "hi_uncond_forms_1sample": 2615.6}}
+{"p": 500000000231, "q": 5, "ms": {"native": 5555.4, "flint_nodal": 4643.8, "hi_grh": 3776.9, "tal_dup6": 3550.6, "hi_uncond_forms_1sample": 8395.7}}
+{"p": 500000000333, "q": 7, "ms": {"native": 5409.1, "flint_nodal": 4486.2, "hi_grh": 3785.9, "tal_dup6": 2868.8, "tal_dup12": 2484.2, "hi_uncond_forms_1sample": 10955.4}}
+{"p": 500000001029, "q": 11, "ms": {"native": 5523.0, "flint_nodal": 4422.9, "hi_grh": 3636.5, "tal_dup6": 2061.3, "tal_dup12": 1920.1, "hi_uncond_forms_1sample": 10726.8}}
+{"p": 500000000033, "q": 13, "ms": {"native": 5375.1, "flint_nodal": 4558.1, "hi_grh": 3804.0, "tal_dup6": 2021.3, "tal_dup12": 1558.8, "hi_uncond_forms_1sample": 7987.7}}
+{"p": 500000001227, "q": 17, "ms": {"native": 5405.0, "flint_nodal": 4534.0, "hi_grh": 3969.2, "tal_dup6": 1615.4, "hi_uncond_forms_1sample": 6191.7}}
+{"p": 500000000627, "q": 23, "ms": {"native": 5791.7, "flint_nodal": 4526.9, "hi_grh": 3799.1, "tal_dup6": 1346.6, "hi_uncond_forms_1sample": 6506.9}}
+{"p": 500000002727, "q": 31, "ms": {"native": 5641.4, "flint_nodal": 4592.3, "hi_grh": 3831.7, "tal_dup6": 1066.1, "hi_uncond_forms_1sample": 7422.6}}
+{"p": 500000000537, "q": 37, "ms": {"native": 5502.9, "flint_nodal": 4549.3, "hi_grh": 3843.3, "tal_dup6": 963.1, "tal_dup12": 912.0, "hi_uncond_forms_1sample": 7507.1}}
+{"p": 500000000033, "q": 41, "ms": {"native": 5215.2, "flint_nodal": 4540.7, "hi_grh": 3762.3, "tal_dup6": 875.6, "tal_dup12": 743.3, "hi_uncond_forms_1sample": 8288.0}}
+{"p": 500000002241, "q": 47, "ms": {"native": 5231.1, "flint_nodal": 4598.3, "hi_grh": 3783.1, "tal_dup6": 932.2, "tal_dup12": 761.3, "hi_uncond_forms_1sample": 7767.2}}
+{"p": 500000001689, "q": 53, "ms": {"native": 5547.1, "flint_nodal": 4392.6, "hi_grh": 3837.0, "tal_dup6": 907.9, "tal_dup12": 757.9, "hi_uncond_forms_1sample": 7353.7}}
+{"p": 500000000033, "q": 61, "ms": {"native": 5645.9, "flint_nodal": 4651.6, "hi_grh": 3797.2, "tal_dup6": 949.4, "tal_dup12": 881.8, "hi_uncond_forms_1sample": 8727.5}}
+{"p": 500000001341, "q": 71, "ms": {"native": 5702.2, "flint_nodal": 4514.7, "hi_grh": 3823.2, "tal_dup6": 1214.1, "tal_dup12": 1030.3, "hi_uncond_forms_1sample": 10055.5}}

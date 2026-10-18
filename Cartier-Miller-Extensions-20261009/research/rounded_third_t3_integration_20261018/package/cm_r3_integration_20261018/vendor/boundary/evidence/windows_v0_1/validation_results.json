@@ -1,0 +1,37 @@
+{
+  "generated_utc": "2026-10-15T18:40:14.166688+00:00",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "elapsed_seconds": 75.57820530000026,
+  "passed": true,
+  "test_methods": 13,
+  "failures": 0,
+  "errors": 0,
+  "coverage": {
+    "primality_inputs_checked_against_independent_sieve": 50001,
+    "exhaustive_small_prime_boundary_inputs": 6336,
+    "routes_per_small_prime_boundary_input": 3,
+    "exhaustive_small_prime_factorial_inputs": 1718,
+    "backends_per_factorial_input": 2,
+    "third_family_prime_inputs": 1226,
+    "ordinary_third_primes": 611,
+    "rounded_third_primes": 615,
+    "backends_per_third_input": 2,
+    "original_t_recurrence_complete_sum_inputs": 1718,
+    "held_out_primes": [
+      10007,
+      20021,
+      50021,
+      100003,
+      1000003
+    ]
+  },
+  "source_sha256": {
+    "benchmark.py": "3f8a9c4bca401549ae05e6db950eff307f4e037ca92c3f02450e2ddaa1f75a0e",
+    "boundary_framework.py": "574b669594ccd80f7eeb3a120f4926e1358b3a7c7936d453027a7396fbf1661e",
+    "example_adapter.py": "d4dc5cf6fedd7dcbe7923ccdb25b56b81762370f7ffd4d3e0f3b615b9333fc01",
+    "run_validation.py": "3089d6ee343421aa4e3af7cc54c9cc0f5a2b676d074857b344fe24d73b04b9db",
+    "test_boundary_framework.py": "1d2836e5385bceb3ae83ba0338b7d91172e5d7546ef3d1bcaa50cc3a4c891f2c"
+  },
+  "limits": "Finite independent checks, not a formal proof or an audit of the published Cartier--Miller implementation."
+}

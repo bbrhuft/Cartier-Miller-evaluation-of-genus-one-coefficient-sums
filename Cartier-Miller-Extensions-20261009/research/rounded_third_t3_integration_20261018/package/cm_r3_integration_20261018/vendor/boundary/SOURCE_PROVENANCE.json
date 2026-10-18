@@ -1,0 +1,78 @@
+{
+  "source_archive": "Cartier_Miller_Integration_Audit_20261013.zip",
+  "library_file_id": "libfile_1d8bbb6e7ff4819188ede6a53c1d533b",
+  "source_archive_sha256": "4074f1d32595dde20909a84701ef46ba612faf7e7d3ce1d98b96bc47cf594ee4",
+  "copied_files": [
+    {
+      "source_path": "cm_system/backends/ordinary_third.py",
+      "delivered_path": "retained_cm/ordinary_third.py",
+      "sha256": "61eaddb9e22f205682f1ea55a7da7b93546d289a181a10bc0fe4860e0d87caae",
+      "unchanged": true
+    },
+    {
+      "source_path": "cm_system/backends/hyperelliptic_prefix.py",
+      "delivered_path": "retained_cm/hyperelliptic_prefix.py",
+      "sha256": "fc3b4b01ca4b28e85b927a55dfa2d341ba508dbef5c807e70272caef30a9b2ee",
+      "unchanged": true
+    },
+    {
+      "source_path": "cm_system/backends/genus_one/fields.py",
+      "delivered_path": "retained_cm/genus_one/fields.py",
+      "sha256": "e2a6a5313567dc1fabe0d21f66263fc95f96ec4d0dc2b709463d47391969a3d2",
+      "unchanged": true
+    },
+    {
+      "source_path": "cm_system/backends/genus_one/curve.py",
+      "delivered_path": "retained_cm/genus_one/curve.py",
+      "sha256": "c40c5fedeb5cd0586eaf8f198be7347c5854f152bdfb286cdcad818935e0794a",
+      "unchanged": true
+    },
+    {
+      "source_path": "cm_system/backends/genus_one/miller.py",
+      "delivered_path": "retained_cm/genus_one/miller.py",
+      "sha256": "7837b26f2ad2c85e34ce97ea778ee4748d5a0d4ebe6c7bbddb6a24a7fb4e2629",
+      "unchanged": true
+    }
+  ],
+  "adaptation": "The five retained implementation files are copied byte-for-byte. Public execution now uses genus-one third-point routines and the genus-two d=5 specialization; higher genera remain outside the public interface.",
+  "scope": "Retained project mathematics is unrefereed; this is reuse plus independent finite validation, not a new theorem or external certification.",
+  "fifth_formula_source": {
+    "source_path": "cm_system/api.py::fifth_boundaries",
+    "file_sha256": "74eaa4098775cc5a6abaaa4442cbe0c0be67a0cdce978ba34728532b35d6f062",
+    "retained_excerpt": "RETAINED_FIFTH_REDUCTION_SOURCE.txt",
+    "implementation": "New interval wrapper with shared products; formulas preserved; independent derivation in FIFTHS.md."
+  },
+  "output_contract_extension": "Version 0.4 adds full/u_only modes in the wrapper services. Retained mathematical kernels are unchanged. OUTPUT_MODES.md classifies the zero-multiplier cases and distinguishes skipped boundaries from zero values.",
+  "bgs_backend_extension": {
+    "version": "0.5.0",
+    "primary_source": "https://cs.uwaterloo.ca/~eschost/publications/pollard.pdf",
+    "source_sections": "3\u20134, Theorems 5 and 8",
+    "implementation": "New scalar AP interpolation shifts and recursive block construction; explicit field-only known-node collision handling; existing exact polynomial multiplier reused. See BGS_BACKEND.md."
+  },
+  "shared_boundary_extension": {
+    "version": "0.6.0",
+    "implementation": "New built-in ratio planner, Wilson canonicalization, per-call exact product reuse, sorted factorial gap reuse and shared ratio-denominator batch inversion. Existing third/fifth reduction formulas preserved.",
+    "proof_reference": "SHARED_BOUNDARIES.md",
+    "retained_kernels_unchanged": true
+  },
+  "many_prime_forest": {
+    "source_archive": "Rounded_Third_Batch_Extension_20261014.zip",
+    "library_file_id": "libfile_efc447e7f60881919dd6713a2356c5be",
+    "archive_sha256": "5d5f04d19d20c6e0660928e21faec5d5d99cc79812f8e2cf4741ccd03ed3a28d",
+    "copied_path": "retained_cm/rounded_third_batch.py",
+    "sha256": "0439402b0b105e1f98c42fbf02170cf631fa5d6dd66e3cf3071aeaba67480413",
+    "unchanged": true,
+    "use": "Existing integer triangular-matrix product and accumulating remainder-tree kernels; new scheduler and output wrapper. Original rounded-third forest remains available unchanged."
+  },
+  "measured_dispatch_extension": {
+    "version": "0.8.0",
+    "implementation": "New exact local workload calibration profiles and measured forest/independent kernel selection. many_primes.py schedule preflight extracted for reuse; retained arithmetic kernels unchanged.",
+    "scope": "Opt-in dispatch; explicit engines/default forest retained; no extrapolation or universal hardware model.",
+    "proof_reference": "MEASURED_DISPATCH.md"
+  },
+  "consolidation_release": {
+    "version": "1.0.0rc1",
+    "scope": "Public facade, runtime manifest, portable evidence capture and two dispatch profile error-handling fixes. Mathematical kernels unchanged.",
+    "review_status": "AI-assisted bounded release audit; no independent specialist certification or current-version Windows execution claimed."
+  }
+}
