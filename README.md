@@ -75,8 +75,6 @@ $$
 
 Practical exact trace preparation may instead use SEA or an automatic routine such as PARI/GP's `ellap`, replacing Schoof in the stated deterministic worst-case proof. 
 
-![Illustrative cost complexity of Cartier-Miller with Shoof and SEA prep compared to Harvey BGS](https://github.com/bbrhuft/Cartier-Miller-evaluation-of-genus-one-coefficient-sums/blob/main/Cartier-Miller-With-SEA.jpg) 
-
 Illustrative cost complexity of Cartier-Miller with Shoof (dotted) or SEA (solid) point counting compared SageMath's Harvey interval-product kernel, using a Bostan–Gaudry–Schost (BGS) based recurrence technique. Complexity illustrations are not measured timings.
 
 ## Worked application: the original quarter-point sum
