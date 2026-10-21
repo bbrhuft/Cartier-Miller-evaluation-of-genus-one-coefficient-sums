@@ -1,0 +1,13 @@
+{
+ "small_checks": 11866,
+ "small_fail": 0,
+ "routes": {
+  "general": 11679,
+  "exceptional": 187
+ },
+ "fallbacks": 1059,
+ "note_fallbacks": "count of general-route queries whose chain passes through O",
+ "large_checks": 160,
+ "large_fail": 0,
+ "status": "PASS"
+}

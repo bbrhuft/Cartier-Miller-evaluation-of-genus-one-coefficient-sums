@@ -1,0 +1,239 @@
+{
+ "mode": "confirmation",
+ "seed": "09202ac1edab4f3eadfa68a8c50e0d77c695328891e889c8a744fc8b28c28ac0",
+ "selection": {
+  "small": [
+   269,
+   293,
+   317,
+   383,
+   397,
+   431,
+   443,
+   461,
+   467,
+   571,
+   577,
+   587,
+   599
+  ],
+  "medium": [
+   1163,
+   1709,
+   1871,
+   3307,
+   5503,
+   6991,
+   10567
+  ],
+  "trace": [
+   269,
+   293,
+   317,
+   383,
+   397,
+   431,
+   443,
+   461,
+   467,
+   571,
+   577,
+   587,
+   599,
+   1163,
+   1709,
+   1871
+  ],
+  "mspecs": [
+   [
+    125777,
+    3
+   ],
+   [
+    152837,
+    4
+   ],
+   [
+    1463983,
+    3
+   ],
+   [
+    1354877,
+    4
+   ],
+   [
+    12261101,
+    3
+   ],
+   [
+    15506809,
+    4
+   ],
+   [
+    1093594813,
+    3
+   ],
+   [
+    1142808013,
+    4
+   ],
+   [
+    1796655935237,
+    3
+   ],
+   [
+    1278723385517,
+    4
+   ],
+   [
+    119669353739810327,
+    3
+   ],
+   [
+    175409754970978049,
+    4
+   ]
+  ],
+  "cm_specs": [
+   [
+    26,
+    -3,
+    0,
+    -1
+   ],
+   [
+    27,
+    -19,
+    -884736,
+    1
+   ],
+   [
+    28,
+    -11,
+    -32768,
+    1
+   ],
+   [
+    32,
+    -19,
+    -884736,
+    -1
+   ],
+   [
+    34,
+    -43,
+    -884736000,
+    1
+   ],
+   [
+    44,
+    -67,
+    -147197952000,
+    -1
+   ],
+   [
+    63,
+    -163,
+    -262537412640768000,
+    1
+   ]
+  ],
+  "xsmall": [
+   223,
+   283,
+   313,
+   349
+  ],
+  "wprimes": [
+   229,
+   241,
+   283,
+   293
+  ]
+ },
+ "counts": {
+  "T.trace_vs_count.d3": 32,
+  "T.trace_vs_count.d4": 64,
+  "S.cmcs_frozen.zero_pole": 100,
+  "S.cmcs_frozen.nonbranch": 3352,
+  "S.enum_c.zero_pole": 100,
+  "S.enum_c.nonbranch": 3352,
+  "S.enum_conv.zero_pole": 100,
+  "S.enum_conv.nonbranch": 3352,
+  "S.enum_conv.tables_built": 140,
+  "S.linrec_py.zero_pole": 100,
+  "S.linrec_py.nonbranch": 3352,
+  "S.linrec_c.zero_pole": 100,
+  "S.linrec_c.nonbranch": 3352,
+  "S.flint_power.zero_pole": 100,
+  "S.flint_power.nonbranch": 3352,
+  "S.flint_power.multipoint": 3496,
+  "S.polyrec_c.zero_pole": 100,
+  "S.polyrec_c.nonbranch": 3352,
+  "S.polyrec_c.multipoint": 3496,
+  "S.bgs07.zero_pole": 100,
+  "S.bgs07.nonbranch": 3352,
+  "S.cmcs_frozen.sum_eps": 140,
+  "S.enum_c.sum_eps": 140,
+  "S.enum_conv.sum_eps": 140,
+  "S.flint_power.sum_eps": 140,
+  "S.polyrec_c.sum_eps": 140,
+  "S.linrec_c.query_with_H.value": 140,
+  "S.linrec_c.query_with_H.sum_eps": 140,
+  "S.bgs07.query_with_H.value": 140,
+  "S.bgs07.query_with_H.sum_eps": 140,
+  "S.H_from_reversed_index_N+1": 140,
+  "S.sum_eps_from_H": 140,
+  "S.enum_c.branch": 44,
+  "S.enum_conv.branch": 44,
+  "S.linrec_py.branch": 44,
+  "S.linrec_c.branch": 44,
+  "S.flint_power.branch": 44,
+  "S.polyrec_c.branch": 44,
+  "S.bgs07.branch": 44,
+  "B.cmcs_frozen.branch_with_second_kind": 27,
+  "M.consensus.4methods": 24,
+  "M.cmcs_translation_consistency": 48,
+  "M.consensus.2methods": 8,
+  "M.no_independent_reference (cmcs only; translation consistency below)": 16,
+  "X.small.cmcs": 6996,
+  "X.small.voloch_semaev.d3.tau-1": 111,
+  "X.small.regular_point_on_exceptional_curve": 3509,
+  "X.small.voloch_semaev.d3.tau+1": 1665,
+  "X.small.voloch_semaev.d4.tau+1": 661,
+  "X.small.voloch_semaev.d4.tau-1": 1050,
+  "X.cm.trace_preserved": 14,
+  "X.cm.agree.d3.D-3.tau-1.3methods": 3,
+  "X.cm.agree.d4.D-3.tau-1.3methods": 3,
+  "X.cm.agree.d3.D-19.tau+1.3methods": 3,
+  "X.cm.agree.d4.D-19.tau+1.3methods": 3,
+  "X.cm.agree.d3.D-11.tau+1.3methods": 3,
+  "X.cm.agree.d4.D-11.tau+1.3methods": 3,
+  "X.cm.agree.d3.D-19.tau-1.3methods": 3,
+  "X.cm.agree.d4.D-19.tau-1.3methods": 3,
+  "X.cm.agree.d3.D-43.tau+1.3methods": 3,
+  "X.cm.agree.d4.D-43.tau+1.3methods": 3,
+  "X.cm.agree.d3.D-67.tau-1.2methods": 3,
+  "X.cm.agree.d4.D-67.tau-1.2methods": 3,
+  "X.cm.agree.d3.D-163.tau+1.2methods": 3,
+  "X.cm.agree.d4.D-163.tau+1.2methods": 3,
+  "W.adapter_vs_direct.character": 40,
+  "W.adapter_vs_direct.affine": 40,
+  "W.cmcs_frozen_vs_adapter.character": 40,
+  "W.cmcs_frozen_vs_adapter.affine": 40
+ },
+ "total_checks": 51023,
+ "failures": [],
+ "n_failures": 0,
+ "status": "PASS",
+ "elapsed_s": 166.2,
+ "family_seconds": {
+  "T": 0.1,
+  "S": 38.2,
+  "B": 0.0,
+  "M": 42.2,
+  "X": 85.6,
+  "W": 0.1
+ },
+ "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]"
+}

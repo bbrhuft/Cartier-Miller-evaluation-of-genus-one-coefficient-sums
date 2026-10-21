@@ -1,0 +1,13 @@
+{
+  "mode": "development",
+  "status": "PASS",
+  "models": 2762,
+  "direct_values": 14037,
+  "two_torsion": 1869,
+  "twisted_trace_one": 994,
+  "p_divides_order": 1894,
+  "zero_final_endpoints": 14037,
+  "intermediate_identity": 5602,
+  "supersingular_values": 2550,
+  "cubic_uniform_identity": 47712
+}

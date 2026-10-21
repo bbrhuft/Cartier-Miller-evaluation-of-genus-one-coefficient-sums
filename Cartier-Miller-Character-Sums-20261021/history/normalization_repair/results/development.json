@@ -1,0 +1,17 @@
+{
+  "mode": "development",
+  "status": "PASS",
+  "models": 2712,
+  "values": 13264,
+  "route_small_field": 10000,
+  "chain_through_identity": 698,
+  "supersingular_values": 2514,
+  "explicit_p5_regression": 1,
+  "route_general": 2890,
+  "general_cubic_formula_checks": 45720,
+  "explicit_function_local_expansions": 19200,
+  "miller_addition_law_checks": 46352,
+  "route_exceptional": 124,
+  "exceptional_symbolic_formula_checks": 1992,
+  "route_two_torsion": 250
+}

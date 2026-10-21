@@ -1,0 +1,21 @@
+{
+  "manuscript_source": {
+    "file": "Cartier_Miller_Paper_Reviewed_20261018.tex (as attached)",
+    "sha256": "7419bfc01704ec4342e1e878921b9544bce869e15a599e78d882a6fd9aa24cb9",
+    "internal_revision_line": "Revision 19 October 2026",
+    "matches_repository_pdf": "Cartier_Miller_Paper_Revised_20261019.pdf (sha256 dbed70d6224d03ac0d9c9e6e9dec994c56264ca2e960c21982b85a34a24464d5); the repository's Cartier_Miller_Paper_Reviewed_20261018.pdf is the earlier 18 October text",
+    "note": "File name says 20261018 but the content is the 19 October revision."
+  },
+  "brief": {"file": "MATHEMATICAL_BRIEF.md", "sha256": "9aebd8ab5212b157607315adf4fc361568145087a65d0e1694f16dc1a93ec6c0"},
+  "supplied_verifier": {"file": "verify_character_identities.py", "sha256": "4326a945ba465bcf72013564bc03c4e05ee7dd279e03200a3c8e6de73f95f0e9"},
+  "task_statement": {"file": "attachment.txt", "sha256": "c5ae0ec81381f1a83a09f7b992ce1362019a9c5bd57962068b4e601704cc3f58"},
+  "inherited_implementation": {
+    "repository": "https://github.com/bbrhuft/cartier-miller-evaluation-of-genus-one-coefficient-sums",
+    "commit": "ef2307929b54f69611073b666cb212eb641660d9",
+    "commit_date": "2026-10-20 10:44:54 +0100",
+    "directory": "Cartier-Miller-Integration-20261013/cm_system",
+    "vendored_as": "vendor/cm_system (unmodified copy; MIT licence in vendor/cm_system_LICENSE)",
+    "entry_point_used": "cm_system.rows.RowSession.query",
+    "related_prior_project_work": "Cartier-Miller-Extensions-20261009/research/branch_point_20261006 (cubic branch formula B1, 6 October 2026)"
+  }
+}

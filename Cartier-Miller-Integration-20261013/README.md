@@ -17,6 +17,9 @@ python -m cm_system row 13 1 2 3 1 --lambda 1
 python -m cm_system cartier 11 -35 -98
 python -m cm_system plan 1000039 200008
 python -m cm_system weighted 13 3 1 2 3
+python -m cm_system charsum 7 1 1 0 1 --pole 1
+python -m cm_system charsum 7 1 1 0 1 --exclude 1 2 --residues 1 0 --trace 3
+python validate_character_sums.py
 ```
 
 The `quarter2` output recovers the Witt residue from an already computed sum. It expressly is not sum-avoiding Witt extraction. The `row`, `branch` and `cartier` commands have distinct targets from the original `sum` command. Primes must be below 2^64; the original-sum service permits p>=5, while row and coefficient services require p>=7. Stopping points satisfy 0<=L<=(p-1)/2. Precision is one or two. User-supplied traces retain an explicit trust status except for the implemented D=-7 shape-and-sign certificate.
@@ -35,6 +38,8 @@ row = RowSession(13, [1, 2, 3, 1])
 print(row.query(1))
 print(row.query(2))
 ```
+
+The `charsum` service, added on 21 October 2026, evaluates $\sum_{x\ne a}\chi(f(x))/(x-a)$ and constant-plus-simple-pole weighted character and elliptic-point sums for a squarefree cubic or quartic (coefficients low to high). It uses one Miller chain per pole after the exact signed trace has been supplied or, up to the point-count budget, counted directly. The cost of that count is reported, and a supplied trace is labelled trusted. Its source, proofs and historical evidence are in [`../Cartier-Miller-Character-Sums-20261021/`](../Cartier-Miller-Character-Sums-20261021/), and the specification section gives the contract. No timings are claimed for it.
 
 `Budget` controls direct terms, polynomial block width, genus and naive point-count setup. Budget exhaustion is reported; it never produces an approximate result. The automatic policy prefers applicable complete structural methods, then a direct recurrence through 128 terms, then the product tree. This is a conservative policy, not a measured universal crossover. Explicit higher-genus hybrids include boundary work. A zero boundary multiplier skips unnecessary boundary evaluation.
 

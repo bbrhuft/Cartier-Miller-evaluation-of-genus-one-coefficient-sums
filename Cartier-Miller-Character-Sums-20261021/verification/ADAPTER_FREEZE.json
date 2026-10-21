@@ -1,0 +1,12 @@
+{
+  "files": {
+    "src/cm_character_route.py": "d85cb3f6f0977216e8f23e6fd8c020d0cdd55c8a147dba92881c58b9b5258b89",
+    "src/uniform_order.py": "7d1036ad5a2b8b27cf351ece92b073609d242ed497571bd988d29bb00c0a2fb4",
+    "src/weighted_sums.py": "8ca4a398b7086caf22c3b3f9052d4e20cd96f3f9fd2779926869989f5bcd771d",
+    "tests/verify_weighted_adapter.py": "4738d82d0af491887e208477e89bfa05af4f9b3c74508abbe9084a307981bf54",
+    "examples/weighted_sum_example.py": "b98e37dc1ecb8ceb25582a5b5681f6a5ca93a65004e8cf65738c1a08661c716b"
+  },
+  "digest": "8550b7780d9f4b44dcdac3e8b21774c6f8e3f7133f7c1e6ed28500a0caea9f73",
+  "scope": "packaged weighted adapter and its enumerator, distinct from the older uniform-order freeze",
+  "timestamp_note": "local commitment, no external timestamp"
+}

@@ -310,5 +310,32 @@
     "changes": "none",
     "redistributed": false,
     "release_note": "Not redistributed in the repository release: contains September historical archives excluded by the extensions PROVENANCE, LGPL FLINT headers, a compiled binary or nested handoff archives. Identified by its SHA-256 only."
+  },
+  {
+    "source": "Cartier_Miller_Character_Sums_Supplement_20261021.zip:src/cm_character_route.py",
+    "frozen_copy": "Cartier-Miller-Character-Sums-20261021/src/cm_character_route.py",
+    "destination": "cm_system/backends/character_sums/cm_character_route.py",
+    "source_sha256": "d85cb3f6f0977216e8f23e6fd8c020d0cdd55c8a147dba92881c58b9b5258b89",
+    "delivered_sha256": "d85cb3f6f0977216e8f23e6fd8c020d0cdd55c8a147dba92881c58b9b5258b89",
+    "changes": "none",
+    "added": "2026-10-21"
+  },
+  {
+    "source": "Cartier_Miller_Character_Sums_Supplement_20261021.zip:src/uniform_order.py",
+    "frozen_copy": "Cartier-Miller-Character-Sums-20261021/src/uniform_order.py",
+    "destination": "cm_system/backends/character_sums/uniform_order.py",
+    "source_sha256": "7d1036ad5a2b8b27cf351ece92b073609d242ed497571bd988d29bb00c0a2fb4",
+    "delivered_sha256": "0c4a248d84ff05bd802375120a117fafcbc02db689169af6ecbc843cd716e5aa",
+    "changes": "package-relative import of cm_character_route; mathematics and code otherwise unchanged",
+    "added": "2026-10-21"
+  },
+  {
+    "source": "Cartier_Miller_Character_Sums_Supplement_20261021.zip:src/weighted_sums.py",
+    "frozen_copy": "Cartier-Miller-Character-Sums-20261021/src/weighted_sums.py",
+    "destination": "cm_system/backends/character_sums/weighted_sums.py",
+    "source_sha256": "8ca4a398b7086caf22c3b3f9052d4e20cd96f3f9fd2779926869989f5bcd771d",
+    "delivered_sha256": "c97991c8170800f0c768f677bfa7d180566dd2e71ea30352b08a45867bd9cf41",
+    "changes": "package-relative imports of cm_character_route and uniform_order; mathematics and code otherwise unchanged",
+    "added": "2026-10-21"
   }
 ]

@@ -1,0 +1,22 @@
+{
+  "prepared_date": "2026-10-20",
+  "scope": "Research handover, not completed benchmarks",
+  "inputs": [
+    {
+      "path": "inherited/Opus_Character_Sums_20261020.zip",
+      "sha256": "51fb45ac883dbf1e10ba5a647585424504ed9eaf95344f42a8c7f9675eeb49c6"
+    },
+    {
+      "path": "inherited/Cartier_Miller_Source_Revision_20261019.tex",
+      "sha256": "7419bfc01704ec4342e1e878921b9544bce869e15a599e78d882a6fd9aa24cb9"
+    },
+    {
+      "path": "inherited/Independent_Review_20261020.md",
+      "sha256": "4268488045cf292663fc1087d7ca91f6bcbb1d0dd952a9aa9829d5d7751e241f"
+    }
+  ],
+  "manuscript_internal_revision": "19 October 2026",
+  "manuscript_sha_matches_opus_provenance": true,
+  "new_comparator": "Independent reversed-coefficient scalar recurrence; linear time; no trace; not BGS",
+  "original_archive_modified": false
+}

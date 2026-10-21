@@ -1,0 +1,24 @@
+{
+  "mode": "confirmation",
+  "status": "PASS",
+  "digest": "e5bc223964ef30239410a64cd1b7cc4c1b828aa993a30a8fcdfcae9c8fb7b373",
+  "primes": [
+    263,
+    131,
+    79,
+    101,
+    313,
+    89,
+    239,
+    127,
+    1009
+  ],
+  "models": 360,
+  "direct_values": 5400,
+  "two_torsion": 38,
+  "twisted_trace_one": 88,
+  "p_divides_order": 88,
+  "zero_final_endpoints": 5400,
+  "intermediate_identity": 2943,
+  "supersingular_values": 165
+}

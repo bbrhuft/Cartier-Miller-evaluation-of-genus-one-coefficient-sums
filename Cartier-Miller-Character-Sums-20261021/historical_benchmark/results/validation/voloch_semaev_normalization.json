@@ -1,0 +1,41 @@
+{
+ "primes": [
+  7,
+  11,
+  13,
+  17,
+  19,
+  23,
+  29,
+  31,
+  37,
+  41,
+  43,
+  47,
+  53,
+  59
+ ],
+ "anomalous_curves": 479,
+ "points": 19150,
+ "H1_pass": 19150,
+ "H1_fail": 0,
+ "H1_semaev_pass": 13338,
+ "H1_semaev_fail": 0,
+ "H1_semaev_skipped": 5812,
+ "H2_pairs": 68324,
+ "H2_fail": 0,
+ "H3_pass": 19150,
+ "H3_fail": 0,
+ "trace_minus1_curves": 479,
+ "H4_points": 9575,
+ "H4_fail": 0,
+ "alternative_scalings_matching_H1": {
+  "+1": 19150,
+  "-1": 0,
+  "+2": 0,
+  "-2": 0,
+  "+1/2": 0,
+  "-1/2": 0
+ },
+ "status": "PASS"
+}

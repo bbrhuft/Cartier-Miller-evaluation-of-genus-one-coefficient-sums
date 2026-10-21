@@ -40,6 +40,8 @@ with the odd-harmonic correction from the retained p-adic report. The complete p
 | `quarter_precision_diagnostics` | Quarter-family prime, direct/tree method | $B_n,a_n,U_p(n),K_p,\Gamma,d,\mathcal H_n,J_p$ | Computes sums before recovering corrections; no sum-avoiding claim |
 | `weighted_sum` | Falling-factorial polynomial weights | $\sum_{i<L}P(i)a_i\bmod p$ | Shares $B_L,a_L$ acquisition; degree cap 31 |
 | `general_weight_prefixes` | Genus and allowed prime/weight | All allowed general-weight prefixes | Does not return a formal derivative or original $U$ |
+| `CharacterSumSession.single_pole` (added 21 Oct) | Squarefree cubic/quartic $f$, any constant term, nonbranch pole $a$ | $C_f(a)=\sum_{x\ne a}\chi(f(x))/(x-a)\bmod p$ | Exact signed projective trace supplied (trusted) or counted directly up to the point-count budget; $O(\log p)$ field operations per query after the trace |
+| `CharacterSumSession.prepare(U).evaluate` (added 21 Oct) | Complete excluded set $U$, residues, constant | Character, affine-point and projective-point sums of $c+\sum_i r_i/(x-a_i)$ over $x\notin U$ | Preparation $O(s\log p+s^2)$, then $O(s)$ per coefficient vector; active branch residues refused |
 
 Input prime testing uses the retained deterministic unsigned-64-bit Miller–Rabin witness set. This is an implementation domain, not a restriction of all project theorems. Native precision-two sources have the narrower $p<2^{32}$ word-modulus domain and a pinned FLINT ABI. They are not selected by this prototype.
 
@@ -57,6 +59,22 @@ $$
 Only $\ell!$, the interval $[3\ell,4\ell-1]$, and $[\ell+1,2\ell]$ are needed. The prototype acquires two intervals for a single boundary and three for the pair, reusing the denominator. At higher genus the boundary uses $(L+1)\cdots(2L)/(L!)8^L$. These are exact product methods, not logarithmic boundary methods. If $2L(2L+5)=0\bmod p$, the boundary is unnecessary for the original sum and is skipped; its diagnostic `a` is then null. The $p=29$, second fifth-point example is retained.
 
 Automatic selection does not select a higher-genus hybrid merely because its prefix is logarithmic. It prefers complete structural methods, then direct work for $L\le128$, otherwise the product tree. The 128-term rule is a reproducible conservative policy, not a platform-calibrated optimum. Explicit methods remain available. Requests exceeding the selected method's budget are refused; no hidden slow computation or estimate substitutes for an answer.
+
+## Weighted character and elliptic-point sums (added 21 October 2026)
+
+`cm_system/character_sums.py` exposes the supplement adapter of `Cartier-Miller-Character-Sums-20261021/`. Its arithmetic is in `cm_system/backends/character_sums/`, copies of the frozen supplement sources whose only change is package-relative imports; `PROVENANCE.json` records both hashes. The mathematics and proofs are in that folder's `proofs/UNIFORM_ORDER_PROOF.md` and `docs/MATHEMATICS.md`.
+
+For a nonbranch pole $a$, put $e=\chi(f(a))$, $g(z)=f(a+z)/f(a)$, $g_1=f'(a)/f(a)$ and $N=p+1-e\tau_f$. With $R$ the image of $(0,-1)$ on the short model of $v^2=g(z)$,
+
+$$
+C_f(a)=e\left(-\frac{g_1}{4}(N-2)-\frac{\alpha_N(R)}{2}\right),
+$$
+
+where $\alpha_N$ is the Laurent constant of $d\log f_{N,R}$ at the origin. One differentiated Miller chain of length $O(\log p)$ is used, for every trace and for $p\ge5$. The prepared state adds the common-domain corrections $D_i(v)=\sum_{j\ne i}v_j/(a_i-a_j)$ and the constants $K_f-\sum_iw_i$ and $K_f-s-\sum_iw_i$, with $K_f=1-N_\infty-\tau_f$. A cubic has one rational point at infinity and a quartic has $1+\chi(\text{leading coefficient})$; no character value is assigned at infinity. Every excluded coordinate stays excluded, even with zero residue.
+
+The service keeps the adapter's contract and adds only this layer's conventions: deterministic primality for $5\le p<2^{64}$, rejection of booleans, the `conditional_on_trusted_trace` label for supplied traces, and an optional direct trace count. The count evaluates $\chi(f(x))$ at all $p$ points, $O(p\log p)$ field operations, and is refused above `Budget.point_count_prime` (default 5000). For larger $p$ the caller supplies an exact signed trace from a point-counting method; neither the Hasse interval nor the Miller endpoint certifies it. The standalone supplement package has no 64-bit limit but leaves primality to the caller. Active branch poles, higher-order poles, polynomial parts, nonrational or unfactored denominators, integer or interval character sums and nonlinear $\chi(Rf)$ sums are outside this service. The proved polynomial-tree correction is not implemented; preparation uses pairwise differences with one batch inversion and $O(s^2)$ temporary storage.
+
+`validate_character_sums.py` compares the service with an independent enumeration and the adapted backend with the frozen sources, and checks the refusals; `recorded_results/validation_character_sums_20261021.json` is its recorded run. No timing of this code has been measured. The benchmark medians in the manuscript and in `Cartier-Miller-Character-Sums-20261021/historical_benchmark/` belong to the older frozen implementation.
 
 ## Recurrence backend and cost
 

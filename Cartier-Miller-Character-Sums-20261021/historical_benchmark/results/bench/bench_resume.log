@@ -1,0 +1,28 @@
+02:18:44 === resume W5 after host restart
+02:18:51 group b18_d3_Qp/1: running ['bgs_harvey']
+02:22:22 W5 b18_d3_Qp/1 bgs_harvey                     pilot timeout (-1 s)
+02:22:22 group b18_d4_Qp/16: running ['cmcs_frozen', 'cmcs_frozen[trace supplied]', 'flint_power+multipoint', 'polyrec_c+multipoint', 'enum_conv', 'enum_c', 'bgs_harvey']
+02:22:32 W5 b18_d4_Qp/16 cmcs_frozen                    blocks=3 status=ok
+02:24:32 W5 b18_d4_Qp/16 enum_c                         pilot budget (120 s)
+02:24:34 W5 b18_d4_Qp/16 enum_conv                      blocks=3 status=ok
+02:24:37 W5 b18_d4_Qp/16 polyrec_c+multipoint           blocks=3 status=ok
+02:25:42 W5 b18_d4_Qp/16 bgs_harvey                     pilot budget (63.7 s)
+02:25:52 W5 b18_d4_Qp/16 cmcs_frozen[trace supplied]    blocks=3 status=ok
+02:25:54 W5 b18_d4_Qp/16 flint_power+multipoint         blocks=3 status=ok
+02:25:54 group b18_d4_Qp/4: running ['cmcs_frozen', 'cmcs_frozen[trace supplied]', 'flint_power+multipoint', 'polyrec_c+multipoint', 'enum_conv', 'enum_c', 'bgs_harvey']
+02:26:37 W5 b18_d4_Qp/4 cmcs_frozen[trace supplied]    blocks=3 status=ok
+02:27:20 W5 b18_d4_Qp/4 cmcs_frozen                    blocks=3 status=ok
+02:30:50 W5 b18_d4_Qp/4 bgs_harvey                     pilot timeout (-1 s)
+02:30:55 W5 b18_d4_Qp/4 polyrec_c+multipoint           blocks=3 status=ok
+02:30:59 W5 b18_d4_Qp/4 flint_power+multipoint         blocks=3 status=ok
+02:31:01 W5 b18_d4_Qp/4 enum_conv                      blocks=3 status=ok
+02:34:32 W5 b18_d4_Qp/4 enum_c                         pilot timeout (-1 s)
+02:34:32 group b18_d4_Qp/1: running ['cmcs_frozen', 'cmcs_frozen[trace supplied]', 'flint_power+multipoint', 'polyrec_c+multipoint', 'enum_conv', 'enum_c', 'bgs_harvey']
+02:34:45 W5 b18_d4_Qp/1 polyrec_c+multipoint           blocks=3 status=ok
+02:38:15 W5 b18_d4_Qp/1 bgs_harvey                     pilot timeout (-1 s)
+02:39:04 W5 b18_d4_Qp/1 cmcs_frozen                    pilot budget (48.2 s)
+02:39:54 W5 b18_d4_Qp/1 cmcs_frozen[trace supplied]    pilot budget (49.1 s)
+02:43:24 W5 b18_d4_Qp/1 enum_c                         pilot timeout (-1 s)
+02:43:38 W5 b18_d4_Qp/1 flint_power+multipoint         blocks=3 status=ok
+02:43:42 W5 b18_d4_Qp/1 enum_conv                      blocks=3 status=ok
+02:45:29 cases regenerated: 114 groups

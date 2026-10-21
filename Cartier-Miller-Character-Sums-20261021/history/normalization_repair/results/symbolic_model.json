@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "sympy_version": "1.14.0",
+  "coefficient_domain": "Q[g1,g2,g3,g4]",
+  "decomposition_identity": "0",
+  "curve_identity_mod_v2_minus_g": "0",
+  "adapted_point_on_curve": "0"
+}

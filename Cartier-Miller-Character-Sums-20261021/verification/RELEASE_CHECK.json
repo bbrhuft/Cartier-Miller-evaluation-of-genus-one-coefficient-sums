@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "full": true,
+  "uniform_development": {
+    "mode": "development",
+    "status": "PASS",
+    "models": 2762,
+    "direct_values": 14037,
+    "two_torsion": 1869,
+    "twisted_trace_one": 994,
+    "p_divides_order": 1894,
+    "zero_final_endpoints": 14037,
+    "intermediate_identity": 5602,
+    "supersingular_values": 2550,
+    "cubic_uniform_identity": 47712
+  },
+  "uniform_confirmation": {
+    "mode": "confirmation",
+    "status": "PASS",
+    "digest": "e5bc223964ef30239410a64cd1b7cc4c1b828aa993a30a8fcdfcae9c8fb7b373",
+    "primes": [
+      263,
+      131,
+      79,
+      101,
+      313,
+      89,
+      239,
+      127,
+      1009
+    ],
+    "models": 360,
+    "direct_values": 5400,
+    "two_torsion": 38,
+    "twisted_trace_one": 88,
+    "p_divides_order": 88,
+    "zero_final_endpoints": 5400,
+    "intermediate_identity": 2943,
+    "supersingular_values": 165
+  },
+  "adapter_development": {
+    "status": "PASS",
+    "mode": "development",
+    "primes": [
+      5,
+      7,
+      11,
+      13,
+      17,
+      19
+    ],
+    "source_freeze_digest": "8550b7780d9f4b44dcdac3e8b21774c6f8e3f7133f7c1e6ed28500a0caea9f73",
+    "models": 120,
+    "zero_constant_models": 8,
+    "quartics_without_rational_infinity": 29,
+    "weighted_queries": 960,
+    "output_residue_comparisons": 5760,
+    "empty_affine_domains": 170,
+    "zero_poles": 492,
+    "extra_exclusions": 581,
+    "branch_exclusions": 239,
+    "constant_only_queries": 178,
+    "cached_queries": 960,
+    "explicit_domain_counterexamples_checked": 1,
+    "small_field_order_2p_checks": 1,
+    "invalid_inputs_rejected": 12
+  },
+  "adapter_confirmation": {
+    "status": "PASS",
+    "mode": "confirmation",
+    "primes": [
+      23,
+      29,
+      31,
+      37,
+      41,
+      43
+    ],
+    "source_freeze_digest": "8550b7780d9f4b44dcdac3e8b21774c6f8e3f7133f7c1e6ed28500a0caea9f73",
+    "models": 120,
+    "zero_constant_models": 4,
+    "quartics_without_rational_infinity": 34,
+    "weighted_queries": 960,
+    "output_residue_comparisons": 5760,
+    "empty_affine_domains": 126,
+    "zero_poles": 376,
+    "extra_exclusions": 511,
+    "branch_exclusions": 175,
+    "constant_only_queries": 139,
+    "cached_queries": 960,
+    "explicit_domain_counterexamples_checked": 1,
+    "small_field_order_2p_checks": 1,
+    "invalid_inputs_rejected": 12
+  },
+  "benchmark_table": {
+    "status": "PASS",
+    "classes": 10,
+    "median_comparisons": 30,
+    "csv_sha256": "897c306b80bf095b12dcc2af169b02ea89a6474e7ccd2327655cad139f850fa9",
+    "interpretation": "recomputed historical medians; no new timing run"
+  },
+  "benchmark_freeze": "FREEZE OK 09202ac1edab4f3eadfa68a8c50e0d77c695328891e889c8a744fc8b28c28ac0 []",
+  "inherited_freeze": {
+    "frozen_files": 32,
+    "mismatches": [],
+    "digest": "4302b56426a6160fbc5027659632bac7ad6cc0ab755c5fcb00d8c9502aa99bd3",
+    "status": "MATCH"
+  },
+  "example": "Single pole, excludes only x=1: 0\nThe same reciprocal weight, also excluding x=2: WeightedSums(character=6, affine_points=5, projective_points=5)\nChange coefficients using cached preparation: WeightedSums(character=1, affine_points=1, projective_points=5)\np=5, twisted curve order 2p: 1",
+  "manifest_note": "The containing archive manifest is checked independently on every verification run."
+}

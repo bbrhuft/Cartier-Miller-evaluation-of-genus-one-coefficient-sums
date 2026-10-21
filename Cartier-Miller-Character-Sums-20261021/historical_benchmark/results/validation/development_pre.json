@@ -1,0 +1,281 @@
+{
+ "mode": "development",
+ "seed": "20261020-dev",
+ "selection": {
+  "small": [
+   7,
+   11,
+   13,
+   17,
+   19,
+   23,
+   29,
+   31,
+   37,
+   41,
+   43,
+   47,
+   53,
+   59,
+   61,
+   67,
+   71,
+   73,
+   79,
+   83,
+   89,
+   97,
+   101,
+   103,
+   107,
+   109,
+   113,
+   127,
+   131,
+   137,
+   139
+  ],
+  "medium": [
+   211,
+   331,
+   499,
+   1009,
+   2003,
+   4001,
+   8009
+  ],
+  "trace": [
+   7,
+   11,
+   13,
+   17,
+   19,
+   23,
+   29,
+   31,
+   37,
+   41,
+   43,
+   47,
+   53,
+   59,
+   61,
+   67,
+   71,
+   73,
+   79,
+   83,
+   89,
+   97,
+   101,
+   103,
+   107,
+   109,
+   113,
+   127,
+   131,
+   137,
+   139,
+   1009,
+   2003
+  ],
+  "mspecs": [
+   [
+    100003,
+    3
+   ],
+   [
+    100003,
+    4
+   ],
+   [
+    1000003,
+    3
+   ],
+   [
+    1000003,
+    4
+   ],
+   [
+    10000019,
+    3
+   ],
+   [
+    10000019,
+    4
+   ],
+   [
+    1000000007,
+    3
+   ],
+   [
+    1000000007,
+    4
+   ],
+   [
+    2305843009213693951,
+    3
+   ],
+   [
+    1000000000000000009,
+    4
+   ]
+  ],
+  "cm_specs": [
+   [
+    24,
+    -3,
+    0,
+    1
+   ],
+   [
+    24,
+    -11,
+    -32768,
+    -1
+   ],
+   [
+    30,
+    -19,
+    -884736,
+    1
+   ],
+   [
+    30,
+    -43,
+    -884736000,
+    -1
+   ],
+   [
+    40,
+    -67,
+    -147197952000,
+    1
+   ],
+   [
+    61,
+    -163,
+    -262537412640768000,
+    -1
+   ],
+   [
+    62,
+    -11,
+    -32768,
+    1
+   ]
+  ],
+  "xsmall": [
+   101,
+   131,
+   151,
+   181
+  ],
+  "wprimes": [
+   11,
+   13,
+   23,
+   31,
+   53,
+   101
+  ]
+ },
+ "counts": {
+  "T.trace_vs_count.d3": 66,
+  "T.trace_vs_count.d4": 132,
+  "S.cmcs_frozen.zero_pole": 186,
+  "S.cmcs_frozen.nonbranch": 12549,
+  "S.enum_c.zero_pole": 186,
+  "S.enum_c.nonbranch": 12549,
+  "S.enum_conv.zero_pole": 186,
+  "S.enum_conv.nonbranch": 12549,
+  "S.enum_conv.tables_built": 266,
+  "S.linrec_py.zero_pole": 186,
+  "S.linrec_py.nonbranch": 12549,
+  "S.linrec_c.zero_pole": 186,
+  "S.linrec_c.nonbranch": 12549,
+  "S.flint_power.zero_pole": 186,
+  "S.flint_power.nonbranch": 12549,
+  "S.flint_power.multipoint": 13000,
+  "S.polyrec_c.zero_pole": 186,
+  "S.polyrec_c.nonbranch": 12549,
+  "S.polyrec_c.multipoint": 13000,
+  "S.bgs07.zero_pole": 186,
+  "S.bgs07.nonbranch": 12549,
+  "S.H_from_reversed_index_N+1": 266,
+  "S.sum_eps_from_H": 266,
+  "S.enum_c.branch": 265,
+  "S.enum_conv.branch": 265,
+  "S.linrec_py.branch": 265,
+  "S.linrec_c.branch": 265,
+  "S.flint_power.branch": 265,
+  "S.polyrec_c.branch": 265,
+  "S.bgs07.branch": 265,
+  "B.cmcs_frozen.branch_with_second_kind": 25,
+  "M.consensus.4methods": 24,
+  "M.cmcs_translation_consistency": 40,
+  "M.consensus.2methods": 8,
+  "M.consensus.1methods": 8,
+  "X.small.cmcs": 3376,
+  "X.small.voloch_semaev.d4.tau-1": 319,
+  "X.small.regular_point_on_exceptional_curve": 1697,
+  "X.small.voloch_semaev.d3.tau-1": 470,
+  "X.small.voloch_semaev.d4.tau+1": 230,
+  "X.small.voloch_semaev.d3.tau+1": 660,
+  "X.cm.trace_preserved": 14,
+  "X.cm.agree.d3.D-3.tau+1.3methods": 3,
+  "X.cm.agree.d4.D-3.tau+1.3methods": 3,
+  "X.cm.agree.d3.D-11.tau-1.3methods": 3,
+  "X.cm.agree.d4.D-11.tau-1.3methods": 3,
+  "X.cm.agree.d3.D-19.tau+1.3methods": 3,
+  "X.cm.agree.d4.D-19.tau+1.3methods": 3,
+  "X.cm.agree.d3.D-43.tau-1.3methods": 3,
+  "X.cm.agree.d4.D-43.tau-1.3methods": 3,
+  "X.cm.agree.d3.D-67.tau+1.2methods": 3,
+  "X.cm.agree.d4.D-67.tau+1.2methods": 3,
+  "X.cm.agree.d3.D-163.tau-1.2methods": 3,
+  "X.cm.agree.d4.D-163.tau-1.2methods": 3,
+  "X.cm.agree.d3.D-11.tau+1.2methods": 3,
+  "X.cm.agree.d4.D-11.tau+1.2methods": 3,
+  "W.adapter_vs_direct.character": 56,
+  "W.adapter_vs_direct.affine": 56,
+  "W.cmcs_frozen_vs_adapter.character": 56,
+  "W.cmcs_frozen_vs_adapter.affine": 56,
+  "K1.single_pole_value_is_0": 1,
+  "K1.common_domain_U12_is_6": 1,
+  "K1.frozen_weighted_sum_with_excluded_2": 1,
+  "K1.v2_weighted_sum_U": 1,
+  "K2.squarefree": 1,
+  "K2.N_inf_is_0": 1,
+  "K2.sum_x_over_E_is_0": 1,
+  "K2.frozen_rejects (documented strict API)": 1,
+  "K2.v2_projective_equals_affine_0": 1,
+  "K2.v2_projective_poly_deg1": 10,
+  "K2.v2_projective_poly_deg2": 10,
+  "K2.v2_projective_poly_deg3": 10,
+  "K3.oracle_checked_equals_oracle": 100,
+  "K3.chain_endpoint_detection_equals_rerun_detection": 10,
+  "K3.wrong_trace_queries": 100,
+  "K3.wrong_trace_detected": 100,
+  "K4.branch_resonance_at_(p+1)/2": 5,
+  "K4.nonbranch_first_resonance_p+1": 5,
+  "K4.cubic_poly_resonance": 5,
+  "K4.quartic_poly_resonance": 5,
+  "K4.branch_resonance_weight_is_character_weight": 5
+ },
+ "total_checks": 138242,
+ "failures": [],
+ "n_failures": 0,
+ "status": "PASS",
+ "elapsed_s": 78.8,
+ "family_seconds": {
+  "T": 0.1,
+  "S": 23.1,
+  "B": 0.0,
+  "M": 30.8,
+  "X": 24.8,
+  "W": 0.0,
+  "K": 0.0
+ },
+ "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]"
+}

@@ -1,0 +1,39 @@
+{
+ "bench_seed": "57b13d80729c465e909c6d3cc959b7e5794fec3e8de08245b2d0802180265b23",
+ "freeze_digest": "09202ac1edab4f3eadfa68a8c50e0d77c695328891e889c8a744fc8b28c28ac0",
+ "bench_py_sha256": "eb46a6e0ea0686758f4be0abc03c3a477815503bdc273c1cee345262d70b40d2",
+ "worker_sha256": "87276be971c18e6f1f534141bc6113af05eab79e1b6831e40f3b64a515102888",
+ "started_local": "2026-10-20 23:55:46 (from bench.log)",
+ "interrupted_local": "2026-10-21 ~02:13 (host restart; uptime reset)",
+ "resumed": "W5 missing jobs only, same harness and seeds (bench_resume.log)",
+ "pools_note": "pools regenerated deterministically by this script (cases_regenerated.json); validity is checked by validate_outputs.py against direct enumeration and consensus",
+ "soft_budget_s": 2.0,
+ "extended_budget_s": 60.0,
+ "extended_methods": [
+  "bgs07",
+  "bgs_harvey",
+  "cmcs_frozen"
+ ],
+ "mem_ceiling_kib": 524288,
+ "as_limit_bytes": 6442450944,
+ "block_target_s": 0.04,
+ "max_reps": 200,
+ "job_cap_s": 40.0,
+ "max_bits": {
+  "cmcs_frozen": 64,
+  "cmcs_frozen[trace supplied]": 64,
+  "enum_c": 26,
+  "enum_conv": 20,
+  "linrec_py": 20,
+  "linrec_c": 30,
+  "flint_power": 23,
+  "polyrec_c": 23,
+  "bgs07": 40,
+  "bgs_harvey": 41,
+  "voloch_semaev": 64,
+  "flint_power+multipoint": 23,
+  "polyrec_c+multipoint": 23,
+  "cmcs_frozen[second-kind prepared]": 23
+ },
+ "concurrent_activity": "low-priority (nice 19) validation scripts ran on the second core between about 00:14 and 00:20 local (W1 40-62 bit classes, early W7) and analysis scripts briefly around 01:33"
+}

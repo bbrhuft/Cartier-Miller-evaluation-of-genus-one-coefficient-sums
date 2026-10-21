@@ -1,0 +1,674 @@
+23:55:43 === workload TRACE
+23:55:44 TRACE b10_d3 cmcs_frozen                  R=200 nb=9 status=ok med=9.936e-06 s/call
+23:55:44 TRACE b10_d4 cmcs_frozen                  R=200 nb=9 status=ok med=9.782e-06 s/call
+23:55:44 TRACE b13_d3 cmcs_frozen                  R=200 nb=9 status=ok med=1.348e-05 s/call
+23:55:45 TRACE b13_d4 cmcs_frozen                  R=200 nb=9 status=ok med=1.478e-05 s/call
+23:55:45 TRACE b16_d3 cmcs_frozen                  R=200 nb=9 status=ok med=1.636e-05 s/call
+23:55:45 TRACE b16_d4 cmcs_frozen                  R=200 nb=9 status=ok med=2.031e-05 s/call
+23:55:46 TRACE b20_d3 cmcs_frozen                  R=200 nb=9 status=ok med=2.73e-05 s/call
+23:55:46 TRACE b20_d4 cmcs_frozen                  R=200 nb=9 status=ok med=2.681e-05 s/call
+23:55:46 TRACE b23_d3 cmcs_frozen                  R=200 nb=9 status=ok med=2.831e-05 s/call
+23:55:47 TRACE b23_d4 cmcs_frozen                  R=200 nb=9 status=ok med=3.843e-05 s/call
+23:55:47 TRACE b26_d3 cmcs_frozen                  R=196 nb=9 status=ok med=4.22e-05 s/call
+23:55:48 TRACE b26_d4 cmcs_frozen                  R=200 nb=9 status=ok med=4.545e-05 s/call
+23:55:48 TRACE b30_d3 cmcs_frozen                  R=200 nb=9 status=ok med=8.131e-05 s/call
+23:55:49 TRACE b30_d4 cmcs_frozen                  R=200 nb=9 status=ok med=7.699e-05 s/call
+23:55:49 TRACE b33_d3 cmcs_frozen                  R=200 nb=9 status=ok med=0.0001141 s/call
+23:55:50 TRACE b33_d4 cmcs_frozen                  R=180 nb=9 status=ok med=0.0001252 s/call
+23:55:51 TRACE b36_d3 cmcs_frozen                  R=168 nb=9 status=ok med=0.00016 s/call
+23:55:51 TRACE b36_d4 cmcs_frozen                  R=159 nb=9 status=ok med=0.0001696 s/call
+23:55:52 TRACE b40_d3 cmcs_frozen                  R=96 nb=9 status=ok med=0.000375 s/call
+23:55:53 TRACE b40_d4 cmcs_frozen                  R=109 nb=9 status=ok med=0.0002925 s/call
+23:55:53 TRACE b48_d3 cmcs_frozen                  R=16 nb=9 status=ok med=0.001356 s/call
+23:55:54 TRACE b48_d4 cmcs_frozen                  R=27 nb=9 status=ok med=0.00133 s/call
+23:55:55 TRACE b56_d3 cmcs_frozen                  R=4 nb=9 status=ok med=0.005565 s/call
+23:55:56 TRACE b56_d4 cmcs_frozen                  R=9 nb=9 status=ok med=0.006266 s/call
+23:55:58 TRACE b62_d3 cmcs_frozen                  R=1 nb=9 status=ok med=0.1218 s/call
+23:56:00 TRACE b62_d4 cmcs_frozen                  R=1 nb=9 status=ok med=0.1166 s/call
+23:56:00 === workload W1
+23:56:01 W1 b10_d3 linrec_py                    R=104 nb=9 status=ok med=0.0003262 s/call
+23:56:01 W1 b10_d3 polyrec_c                    R=200 nb=9 status=ok med=5.756e-05 s/call
+23:56:02 W1 b10_d3 bgs07                        R=9 nb=9 status=ok med=0.005515 s/call
+23:56:02 W1 b10_d3 linrec_c                     R=200 nb=9 status=ok med=3.322e-05 s/call
+23:56:03 W1 b10_d3 cmcs_frozen                  R=133 nb=9 status=ok med=0.0001383 s/call
+23:56:03 W1 b10_d3 enum_conv                    R=72 nb=9 status=ok med=0.0004298 s/call
+23:56:05 W1 b10_d3 bgs_harvey                   R=27 nb=9 status=ok med=0.000561 s/call
+23:56:05 W1 b10_d3 enum_c                       R=200 nb=9 status=ok med=3.865e-05 s/call
+23:56:06 W1 b10_d3 flint_power                  R=200 nb=9 status=ok med=3.513e-05 s/call
+23:56:06 W1 b10_d4 cmcs_frozen                  R=98 nb=9 status=ok med=0.0001687 s/call
+23:56:07 W1 b10_d4 enum_c                       R=200 nb=9 status=ok med=4.296e-05 s/call
+23:56:07 W1 b10_d4 enum_conv                    R=66 nb=9 status=ok med=0.0003637 s/call
+23:56:07 W1 b10_d4 polyrec_c                    R=162 nb=9 status=ok med=0.0001103 s/call
+23:56:08 W1 b10_d4 linrec_c                     R=200 nb=9 status=ok med=6.178e-05 s/call
+23:56:08 W1 b10_d4 flint_power                  R=200 nb=9 status=ok med=4.015e-05 s/call
+23:56:08 W1 b10_d4 linrec_py                    R=36 nb=9 status=ok med=0.0008226 s/call
+23:56:09 W1 b10_d4 bgs07                        R=4 nb=9 status=ok med=0.008485 s/call
+23:56:11 W1 b10_d4 bgs_harvey                   R=40 nb=9 status=ok med=0.0006104 s/call
+23:56:13 W1 b13_d3 bgs_harvey                   R=20 nb=9 status=ok med=0.001305 s/call
+23:56:13 W1 b13_d3 enum_c                       R=134 nb=9 status=ok med=0.0002087 s/call
+23:56:14 W1 b13_d3 polyrec_c                    R=99 nb=9 status=ok med=0.0002587 s/call
+23:56:14 W1 b13_d3 linrec_c                     R=111 nb=9 status=ok med=0.0002148 s/call
+23:56:15 W1 b13_d3 enum_conv                    R=11 nb=9 status=ok med=0.004153 s/call
+23:56:15 W1 b13_d3 flint_power                  R=53 nb=9 status=ok med=0.000536 s/call
+23:56:16 W1 b13_d3 bgs07                        R=5 nb=9 status=ok med=0.007185 s/call
+23:56:17 W1 b13_d3 linrec_py                    R=10 nb=9 status=ok med=0.002597 s/call
+23:56:17 W1 b13_d3 cmcs_frozen                  R=123 nb=9 status=ok med=0.00015 s/call
+23:56:19 W1 b13_d4 bgs_harvey                   R=17 nb=9 status=ok med=0.001898 s/call
+23:56:20 W1 b13_d4 polyrec_c                    R=31 nb=9 status=ok med=0.0007307 s/call
+23:56:20 W1 b13_d4 linrec_py                    R=6 nb=9 status=ok med=0.006165 s/call
+23:56:21 W1 b13_d4 cmcs_frozen                  R=115 nb=9 status=ok med=0.0001338 s/call
+23:56:21 W1 b13_d4 flint_power                  R=39 nb=9 status=ok med=0.0006903 s/call
+23:56:21 W1 b13_d4 enum_c                       R=122 nb=9 status=ok med=0.0002316 s/call
+23:56:22 W1 b13_d4 linrec_c                     R=74 nb=9 status=ok med=0.000453 s/call
+23:56:22 W1 b13_d4 enum_conv                    R=11 nb=9 status=ok med=0.003476 s/call
+23:56:23 W1 b13_d4 bgs07                        R=2 nb=9 status=ok med=0.01732 s/call
+23:56:25 W1 b16_d3 bgs_harvey                   R=12 nb=9 status=ok med=0.002454 s/call
+23:56:26 W1 b16_d3 flint_power                  R=4 nb=9 status=ok med=0.008681 s/call
+23:56:26 W1 b16_d3 cmcs_frozen                  R=96 nb=9 status=ok med=0.0001729 s/call
+23:56:27 W1 b16_d3 polyrec_c                    R=9 nb=9 status=ok med=0.003254 s/call
+23:56:27 W1 b16_d3 linrec_py                    R=1 nb=9 status=ok med=0.01949 s/call
+23:56:28 W1 b16_d3 linrec_c                     R=22 nb=9 status=ok med=0.001381 s/call
+23:56:28 W1 b16_d3 enum_conv                    R=1 nb=9 status=ok med=0.02372 s/call
+23:56:29 W1 b16_d3 bgs07                        R=3 nb=9 status=ok med=0.01063 s/call
+23:56:29 W1 b16_d3 enum_c                       R=19 nb=9 status=ok med=0.001507 s/call
+23:56:30 W1 b16_d4 flint_power                  R=4 nb=9 status=ok med=0.01117 s/call
+23:56:30 W1 b16_d4 linrec_c                     R=10 nb=9 status=ok med=0.00331 s/call
+23:56:31 W1 b16_d4 cmcs_frozen                  R=96 nb=9 status=ok med=0.0001947 s/call
+23:56:33 W1 b16_d4 bgs_harvey                   R=8 nb=9 status=ok med=0.004432 s/call
+23:56:33 W1 b16_d4 enum_c                       R=20 nb=9 status=ok med=0.001973 s/call
+23:56:34 W1 b16_d4 polyrec_c                    R=7 nb=9 status=ok med=0.005309 s/call
+23:56:35 W1 b16_d4 linrec_py                    R=1 nb=9 status=ok med=0.0539 s/call
+23:56:35 W1 b16_d4 bgs07                        R=1 nb=9 status=ok med=0.02889 s/call
+23:56:36 W1 b16_d4 enum_conv                    R=1 nb=9 status=ok med=0.03351 s/call
+23:56:37 W1 b20_d3 polyrec_c                    R=1 nb=9 status=ok med=0.04767 s/call
+23:56:46 W1 b20_d3 enum_conv                    R=1 nb=9 status=ok med=0.7245 s/call
+23:56:47 W1 b20_d3 linrec_c                     R=1 nb=9 status=ok med=0.02504 s/call
+23:56:47 W1 b20_d3 bgs07                        R=1 nb=9 status=ok med=0.03353 s/call
+23:56:48 W1 b20_d3 enum_c                       R=1 nb=9 status=ok med=0.03657 s/call
+23:56:51 W1 b20_d3 flint_power                  R=1 nb=9 status=ok med=0.2596 s/call
+23:56:56 W1 b20_d3 linrec_py                    R=1 nb=9 status=ok med=0.4308 s/call
+23:56:56 W1 b20_d3 cmcs_frozen                  R=57 nb=9 status=ok med=0.0002458 s/call
+23:56:59 W1 b20_d3 bgs_harvey                   R=5 nb=9 status=ok med=0.006345 s/call
+23:57:03 W1 b20_d4 flint_power                  R=1 nb=9 status=ok med=0.3366 s/call
+23:57:04 W1 b20_d4 linrec_c                     R=1 nb=9 status=ok med=0.06159 s/call
+23:57:05 W1 b20_d4 bgs07                        R=1 nb=9 status=ok med=0.07863 s/call
+23:57:07 W1 b20_d4 bgs_harvey                   R=3 nb=9 status=ok med=0.01478 s/call
+23:57:08 W1 b20_d4 cmcs_frozen                  R=99 nb=9 status=ok med=0.0002388 s/call
+23:57:09 W1 b20_d4 polyrec_c                    R=1 nb=9 status=ok med=0.1131 s/call
+23:57:18 W1 b20_d4 enum_conv                    R=1 nb=9 status=ok med=0.7185 s/call
+23:57:29 W1 b20_d4 linrec_py                    R=1 nb=9 status=ok med=1.084 s/call
+23:57:30 W1 b20_d4 enum_c                       R=1 nb=9 status=ok med=0.03893 s/call
+23:57:31 W1 b23_d3 cmcs_frozen                  R=88 nb=9 status=ok med=0.0003405 s/call
+23:57:35 W1 b23_d3 flint_power                  pilot status budget (2.34 s)
+23:57:37 W1 b23_d3 bgs_harvey                   R=3 nb=9 status=ok med=0.01461 s/call
+23:57:39 W1 b23_d3 linrec_c                     R=1 nb=9 status=ok med=0.1775 s/call
+23:57:40 W1 b23_d3 bgs07                        R=1 nb=9 status=ok med=0.07702 s/call
+23:57:45 W1 b23_d3 polyrec_c                    R=1 nb=9 status=ok med=0.3854 s/call
+23:57:49 W1 b23_d3 enum_c                       R=1 nb=9 status=ok med=0.2511 s/call
+23:57:51 W1 b23_d4 bgs07                        R=1 nb=9 status=ok med=0.1756 s/call
+23:57:57 W1 b23_d4 linrec_c                     R=1 nb=9 status=ok med=0.4291 s/call
+23:57:59 W1 b23_d4 bgs_harvey                   R=1 nb=9 status=ok med=0.02992 s/call
+23:58:10 W1 b23_d4 polyrec_c                    R=1 nb=9 status=ok med=0.7575 s/call
+23:58:11 W1 b23_d4 cmcs_frozen                  R=105 nb=9 status=ok med=0.0003473 s/call
+23:58:18 W1 b23_d4 flint_power                  pilot status budget (4.07 s)
+23:58:22 W1 b23_d4 enum_c                       R=1 nb=9 status=ok med=0.2549 s/call
+23:58:28 W1 b26_d3 enum_c                       pilot status budget (3.17 s)
+23:58:30 W1 b26_d3 bgs_harvey                   R=1 nb=9 status=ok med=0.03218 s/call
+23:58:33 W1 b26_d3 bgs07                        R=1 nb=9 status=ok med=0.2256 s/call
+23:58:34 W1 b26_d3 cmcs_frozen                  R=76 nb=9 status=ok med=0.0003124 s/call
+23:58:50 W1 b26_d3 linrec_c                     R=1 nb=9 status=ok med=1.374 s/call
+23:58:58 W1 b26_d4 enum_c                       pilot status budget (4.41 s)
+23:58:58 W1 b26_d4 cmcs_frozen                  R=79 nb=9 status=ok med=0.0003053 s/call
+23:59:05 W1 b26_d4 bgs07                        R=1 nb=9 status=ok med=0.4781 s/call
+23:59:12 W1 b26_d4 linrec_c                     pilot status budget (4.27 s)
+23:59:16 W1 b26_d4 bgs_harvey                   R=1 nb=9 status=ok med=0.1178 s/call
+23:59:28 W1 b30_d3 bgs07                        R=1 nb=9 status=ok med=0.9394 s/call
+23:59:28 W1 b30_d3 cmcs_frozen                  R=65 nb=9 status=ok med=0.0003665 s/call
+23:59:28 W1 b30_d3 linrec_c                     skipped: predicted 22.5 s > 3x budget
+23:59:32 W1 b30_d3 bgs_harvey                   R=1 nb=9 status=ok med=0.1702 s/call
+23:59:33 W1 b30_d4 cmcs_frozen                  R=69 nb=9 status=ok med=0.0003559 s/call
+00:00:01 W1 b30_d4 bgs07                        R=1 nb=9 status=ok med=2.296 s/call
+00:00:09 W1 b30_d4 bgs_harvey                   R=1 nb=9 status=ok med=0.4742 s/call
+00:00:09 W1 b30_d4 linrec_c                     skipped: predicted 63.7 s > 3x budget
+00:00:17 W1 b33_d3 bgs_harvey                   R=1 nb=9 status=ok med=0.5199 s/call
+00:00:54 W1 b33_d3 bgs07                        R=1 nb=9 status=ok med=3.046 s/call
+00:00:55 W1 b33_d3 cmcs_frozen                  R=58 nb=9 status=ok med=0.0004765 s/call
+00:00:55 W1 b33_d4 cmcs_frozen                  R=44 nb=9 status=ok med=0.000608 s/call
+00:01:12 W1 b33_d4 bgs_harvey                   R=1 nb=9 status=ok med=1.212 s/call
+00:02:14 W1 b33_d4 bgs07                        R=1 nb=5 status=ok med=7.82 s/call
+00:03:16 W1 b36_d3 bgs07                        R=1 nb=3 status=ok med=9.98 s/call
+00:03:38 W1 b36_d3 bgs_harvey                   R=1 nb=9 status=ok med=1.839 s/call
+00:03:39 W1 b36_d3 cmcs_frozen                  R=43 nb=9 status=ok med=0.0005885 s/call
+00:04:30 W1 b36_d4 bgs_harvey                   R=1 nb=9 status=ok med=3.726 s/call
+00:06:55 W1 b36_d4 bgs07                        R=1 nb=3 status=ok med=22.94 s/call
+00:06:56 W1 b36_d4 cmcs_frozen                  R=39 nb=9 status=ok med=0.0006801 s/call
+00:06:57 W1 b40_d3 cmcs_frozen                  R=41 nb=9 status=ok med=0.001181 s/call
+00:08:00 W1 b40_d3 bgs_harvey                   R=1 nb=6 status=ok med=7.802 s/call
+00:11:51 W1 b40_d3 bgs07                        R=1 nb=2 status=ok med=45.69 s/call
+00:13:32 W1 b40_d4 bgs_harvey                   R=1 nb=3 status=ok med=16 s/call
+00:13:33 W1 b40_d4 cmcs_frozen                  R=36 nb=9 status=ok med=0.0009825 s/call
+00:17:18 W1 b40_d4 bgs07                        pilot status budget (102 s)
+00:17:18 W1 b48_d3 cmcs_frozen                  R=15 nb=9 status=ok med=0.001938 s/call
+00:17:19 W1 b48_d4 cmcs_frozen                  R=13 nb=9 status=ok med=0.002171 s/call
+00:17:20 W1 b56_d3 cmcs_frozen                  R=7 nb=9 status=ok med=0.007 s/call
+00:17:21 W1 b56_d4 cmcs_frozen                  R=4 nb=9 status=ok med=0.006684 s/call
+00:17:23 W1 b62_d3 cmcs_frozen                  R=1 nb=9 status=ok med=0.1317 s/call
+00:17:26 W1 b62_d4 cmcs_frozen                  R=1 nb=9 status=ok med=0.1337 s/call
+00:17:26 === workload W7
+00:17:26 W7 b24_d3_exc cmcs_frozen                  R=20 nb=9 status=ok med=0.0002355 s/call
+00:17:26 W7 b24_d3_exc voloch_semaev                R=20 nb=9 status=ok med=5.547e-05 s/call
+00:17:27 W7 b24_d3_exc cmcs_frozen[trace supplied]  R=20 nb=9 status=ok med=0.0002344 s/call
+00:17:29 W7 b24_d3_exc bgs_harvey                   R=2 nb=9 status=ok med=0.02006 s/call
+00:17:29 W7 b24_d4_exc cmcs_frozen                  R=20 nb=9 status=ok med=0.0002364 s/call
+00:17:30 W7 b24_d4_exc voloch_semaev                R=20 nb=9 status=ok med=5.024e-05 s/call
+00:17:32 W7 b24_d4_exc bgs_harvey                   R=1 nb=9 status=ok med=0.04349 s/call
+00:17:33 W7 b24_d4_exc cmcs_frozen[trace supplied]  R=20 nb=9 status=ok med=0.000242 s/call
+00:17:33 W7 b32_d3_exc cmcs_frozen[trace supplied]  R=20 nb=9 status=ok med=0.0006429 s/call
+00:17:39 W7 b32_d3_exc bgs_harvey                   R=1 nb=9 status=ok med=0.3575 s/call
+00:17:39 W7 b32_d3_exc voloch_semaev                R=20 nb=9 status=ok med=0.0001125 s/call
+00:17:40 W7 b32_d3_exc cmcs_frozen                  R=20 nb=9 status=ok med=0.0005081 s/call
+00:17:40 W7 b32_d4_exc voloch_semaev                R=20 nb=9 status=ok med=0.0001183 s/call
+00:17:40 W7 b32_d4_exc cmcs_frozen                  R=20 nb=9 status=ok med=0.0005602 s/call
+00:17:54 W7 b32_d4_exc bgs_harvey                   R=1 nb=9 status=ok med=0.8664 s/call
+00:17:54 W7 b32_d4_exc cmcs_frozen[trace supplied]  R=20 nb=9 status=ok med=0.0004035 s/call
+00:18:56 W7 b40_d3_exc bgs_harvey                   R=1 nb=5 status=ok med=10.17 s/call
+00:18:56 W7 b40_d3_exc cmcs_frozen                  R=20 nb=9 status=ok med=0.000543 s/call
+00:18:56 W7 b40_d3_exc voloch_semaev                R=20 nb=9 status=ok med=0.0001306 s/call
+00:18:57 W7 b40_d3_exc cmcs_frozen[trace supplied]  R=20 nb=9 status=ok med=0.0004246 s/call
+00:18:57 W7 b40_d4_exc cmcs_frozen[trace supplied]  R=20 nb=9 status=ok med=0.0004885 s/call
+00:20:40 W7 b40_d4_exc bgs_harvey                   R=1 nb=3 status=ok med=19.32 s/call
+00:20:40 W7 b40_d4_exc voloch_semaev                R=20 nb=9 status=ok med=0.0001439 s/call
+00:20:40 W7 b40_d4_exc cmcs_frozen                  R=20 nb=9 status=ok med=0.0005357 s/call
+00:20:41 W7 b48_d3_exc cmcs_frozen[trace supplied]  R=20 nb=9 status=ok med=0.0006334 s/call
+00:20:41 W7 b48_d3_exc cmcs_frozen                  R=20 nb=9 status=ok med=0.0007317 s/call
+00:20:41 W7 b48_d3_exc voloch_semaev                R=20 nb=9 status=ok med=0.0003178 s/call
+00:20:42 W7 b48_d4_exc cmcs_frozen[trace supplied]  R=20 nb=9 status=ok med=0.0006354 s/call
+00:20:42 W7 b48_d4_exc cmcs_frozen                  R=20 nb=9 status=ok med=0.0006711 s/call
+00:20:42 W7 b48_d4_exc voloch_semaev                R=20 nb=9 status=ok med=0.000188 s/call
+00:20:43 W7 b56_d3_exc cmcs_frozen                  R=20 nb=9 status=ok med=0.0006503 s/call
+00:20:43 W7 b56_d3_exc cmcs_frozen[trace supplied]  R=20 nb=9 status=ok med=0.000658 s/call
+00:20:43 W7 b56_d3_exc voloch_semaev                R=20 nb=9 status=ok med=0.0002224 s/call
+00:20:44 W7 b56_d4_exc cmcs_frozen[trace supplied]  R=20 nb=9 status=ok med=0.0007946 s/call
+00:20:44 W7 b56_d4_exc voloch_semaev                R=20 nb=9 status=ok med=0.0002661 s/call
+00:20:44 W7 b56_d4_exc cmcs_frozen                  R=20 nb=9 status=ok med=0.0008053 s/call
+00:20:45 W7 b62_d3_exc cmcs_frozen[trace supplied]  R=20 nb=9 status=ok med=0.001069 s/call
+00:20:45 W7 b62_d3_exc voloch_semaev                R=20 nb=9 status=ok med=0.0003766 s/call
+00:20:45 W7 b62_d3_exc cmcs_frozen                  R=20 nb=9 status=ok med=0.001045 s/call
+00:20:46 W7 b62_d4_exc cmcs_frozen[trace supplied]  R=20 nb=9 status=ok med=0.001041 s/call
+00:20:46 W7 b62_d4_exc voloch_semaev                R=20 nb=9 status=ok med=0.0003097 s/call
+00:20:47 W7 b62_d4_exc cmcs_frozen                  R=19 nb=9 status=ok med=0.001058 s/call
+00:20:47 === workload W2
+00:20:47 W2 b16_d3_Q1 flint_power                    blocks=5 status=ok
+00:20:47 W2 b16_d3_Q1 enum_conv                      blocks=5 status=ok
+00:20:49 W2 b16_d3_Q1 bgs_harvey                     blocks=5 status=ok
+00:20:49 W2 b16_d3_Q1 cmcs_frozen                    blocks=5 status=ok
+00:20:49 W2 b16_d3_Q1 flint_power+multipoint         blocks=5 status=ok
+00:20:50 W2 b16_d3_Q1 bgs07                          blocks=5 status=ok
+00:20:50 W2 b16_d3_Q1 linrec_c                       blocks=5 status=ok
+00:20:50 W2 b16_d3_Q1 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:20:50 W2 b16_d3_Q1 enum_c                         blocks=5 status=ok
+00:20:51 W2 b16_d3_Q1 polyrec_c                      blocks=5 status=ok
+00:20:51 W2 b16_d3_Q1 polyrec_c+multipoint           blocks=5 status=ok
+00:20:51 W2 b16_d3_Q8 polyrec_c+multipoint           blocks=5 status=ok
+00:20:51 W2 b16_d3_Q8 enum_c                         blocks=5 status=ok
+00:20:52 W2 b16_d3_Q8 bgs07                          blocks=5 status=ok
+00:20:53 W2 b16_d3_Q8 flint_power                    blocks=5 status=ok
+00:20:53 W2 b16_d3_Q8 flint_power+multipoint         blocks=5 status=ok
+00:20:53 W2 b16_d3_Q8 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:20:53 W2 b16_d3_Q8 cmcs_frozen                    blocks=5 status=ok
+00:20:54 W2 b16_d3_Q8 polyrec_c                      blocks=5 status=ok
+00:20:54 W2 b16_d3_Q8 linrec_c                       blocks=5 status=ok
+00:20:56 W2 b16_d3_Q8 bgs_harvey                     blocks=5 status=ok
+00:20:56 W2 b16_d3_Q8 enum_conv                      blocks=5 status=ok
+00:20:57 W2 b16_d3_Q64 flint_power+multipoint         blocks=5 status=ok
+00:20:59 W2 b16_d3_Q64 bgs_harvey                     blocks=5 status=ok
+00:20:59 W2 b16_d3_Q64 polyrec_c                      blocks=5 status=ok
+00:20:59 W2 b16_d3_Q64 cmcs_frozen                    blocks=5 status=ok
+00:21:00 W2 b16_d3_Q64 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:21:00 W2 b16_d3_Q64 polyrec_c+multipoint           blocks=5 status=ok
+00:21:01 W2 b16_d3_Q64 enum_c                         blocks=5 status=ok
+00:21:01 W2 b16_d3_Q64 enum_conv                      blocks=5 status=ok
+00:21:01 W2 b16_d3_Q64 flint_power                    blocks=5 status=ok
+00:21:02 W2 b16_d3_Q64 linrec_c                       blocks=5 status=ok
+00:21:07 W2 b16_d3_Q64 bgs07                          blocks=5 status=ok
+00:21:13 W2 b16_d3_Q512 enum_c                         blocks=5 status=ok
+00:21:13 W2 b16_d3_Q512 flint_power                    blocks=5 status=ok
+00:21:17 W2 b16_d3_Q512 linrec_c                       blocks=5 status=ok
+00:21:18 W2 b16_d3_Q512 cmcs_frozen                    blocks=5 status=ok
+00:21:18 W2 b16_d3_Q512 polyrec_c                      blocks=5 status=ok
+00:21:58 W2 b16_d3_Q512 bgs07                          blocks=5 status=ok
+00:21:59 W2 b16_d3_Q512 flint_power+multipoint         blocks=5 status=ok
+00:21:59 W2 b16_d3_Q512 enum_conv                      blocks=5 status=ok
+00:22:05 W2 b16_d3_Q512 bgs_harvey                     blocks=5 status=ok
+00:22:05 W2 b16_d3_Q512 polyrec_c+multipoint           blocks=5 status=ok
+00:22:06 W2 b16_d3_Q512 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:22:06 W2 b16_d4_Q1 flint_power+multipoint         blocks=5 status=ok
+00:22:07 W2 b16_d4_Q1 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:22:07 W2 b16_d4_Q1 enum_c                         blocks=5 status=ok
+00:22:07 W2 b16_d4_Q1 bgs07                          blocks=5 status=ok
+00:22:08 W2 b16_d4_Q1 cmcs_frozen                    blocks=5 status=ok
+00:22:08 W2 b16_d4_Q1 enum_conv                      blocks=5 status=ok
+00:22:10 W2 b16_d4_Q1 bgs_harvey                     blocks=5 status=ok
+00:22:10 W2 b16_d4_Q1 polyrec_c+multipoint           blocks=5 status=ok
+00:22:11 W2 b16_d4_Q1 polyrec_c                      blocks=5 status=ok
+00:22:11 W2 b16_d4_Q1 linrec_c                       blocks=5 status=ok
+00:22:11 W2 b16_d4_Q1 flint_power                    blocks=5 status=ok
+00:22:11 W2 b16_d4_Q8 cmcs_frozen                    blocks=5 status=ok
+00:22:13 W2 b16_d4_Q8 bgs_harvey                     blocks=5 status=ok
+00:22:14 W2 b16_d4_Q8 enum_conv                      blocks=5 status=ok
+00:22:14 W2 b16_d4_Q8 polyrec_c                      blocks=5 status=ok
+00:22:14 W2 b16_d4_Q8 flint_power+multipoint         blocks=5 status=ok
+00:22:15 W2 b16_d4_Q8 linrec_c                       blocks=5 status=ok
+00:22:15 W2 b16_d4_Q8 flint_power                    blocks=5 status=ok
+00:22:15 W2 b16_d4_Q8 enum_c                         blocks=5 status=ok
+00:22:16 W2 b16_d4_Q8 polyrec_c+multipoint           blocks=5 status=ok
+00:22:16 W2 b16_d4_Q8 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:22:18 W2 b16_d4_Q8 bgs07                          blocks=5 status=ok
+00:22:18 W2 b16_d4_Q64 flint_power+multipoint         blocks=5 status=ok
+00:22:18 W2 b16_d4_Q64 enum_conv                      blocks=5 status=ok
+00:22:19 W2 b16_d4_Q64 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:22:19 W2 b16_d4_Q64 polyrec_c+multipoint           blocks=5 status=ok
+00:22:30 W2 b16_d4_Q64 bgs07                          blocks=5 status=ok
+00:22:32 W2 b16_d4_Q64 linrec_c                       blocks=5 status=ok
+00:22:32 W2 b16_d4_Q64 polyrec_c                      blocks=5 status=ok
+00:22:33 W2 b16_d4_Q64 cmcs_frozen                    blocks=5 status=ok
+00:22:33 W2 b16_d4_Q64 enum_c                         blocks=5 status=ok
+00:22:34 W2 b16_d4_Q64 flint_power                    blocks=5 status=ok
+00:22:37 W2 b16_d4_Q64 bgs_harvey                     blocks=5 status=ok
+00:22:37 W2 b16_d4_Q512 polyrec_c                      blocks=5 status=ok
+00:22:43 W2 b16_d4_Q512 enum_c                         blocks=5 status=ok
+00:22:44 W2 b16_d4_Q512 cmcs_frozen                    blocks=5 status=ok
+00:22:45 W2 b16_d4_Q512 polyrec_c+multipoint           blocks=5 status=ok
+00:22:45 W2 b16_d4_Q512 flint_power+multipoint         blocks=5 status=ok
+00:22:56 W2 b16_d4_Q512 linrec_c                       blocks=5 status=ok
+00:23:09 W2 b16_d4_Q512 bgs_harvey                     blocks=5 status=ok
+00:23:10 W2 b16_d4_Q512 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:23:10 W2 b16_d4_Q512 flint_power                    blocks=5 status=ok
+00:24:29 W2 b16_d4_Q512 bgs07                          blocks=5 status=ok
+00:24:29 W2 b16_d4_Q512 enum_conv                      blocks=5 status=ok
+00:24:30 W2 b20_d3_Q1 enum_c                         blocks=5 status=ok
+00:24:30 W2 b20_d3_Q1 cmcs_frozen                    blocks=5 status=ok
+00:24:30 W2 b20_d3_Q1 linrec_c                       blocks=5 status=ok
+00:24:33 W2 b20_d3_Q1 flint_power+multipoint         blocks=5 status=ok
+00:24:34 W2 b20_d3_Q1 polyrec_c+multipoint           blocks=5 status=ok
+00:24:34 W2 b20_d3_Q1 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:24:36 W2 b20_d3_Q1 flint_power                    blocks=5 status=ok
+00:24:36 W2 b20_d3_Q1 bgs07                          blocks=5 status=ok
+00:24:42 W2 b20_d3_Q1 enum_conv                      blocks=5 status=ok
+00:24:44 W2 b20_d3_Q1 bgs_harvey                     blocks=5 status=ok
+00:24:45 W2 b20_d3_Q1 polyrec_c                      blocks=5 status=ok
+00:24:51 W2 b20_d3_Q8 enum_conv                      blocks=5 status=ok
+00:24:51 W2 b20_d3_Q8 cmcs_frozen                    blocks=5 status=ok
+00:24:54 W2 b20_d3_Q8 flint_power+multipoint         blocks=5 status=ok
+00:24:55 W2 b20_d3_Q8 polyrec_c                      blocks=5 status=ok
+00:24:56 W2 b20_d3_Q8 linrec_c                       blocks=5 status=ok
+00:24:58 W2 b20_d3_Q8 bgs07                          blocks=5 status=ok
+00:24:59 W2 b20_d3_Q8 enum_c                         blocks=5 status=ok
+00:25:01 W2 b20_d3_Q8 bgs_harvey                     blocks=5 status=ok
+00:25:02 W2 b20_d3_Q8 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:25:04 W2 b20_d3_Q8 flint_power                    blocks=5 status=ok
+00:25:05 W2 b20_d3_Q8 polyrec_c+multipoint           blocks=5 status=ok
+00:25:06 W2 b20_d3_Q64 polyrec_c                      blocks=5 status=ok
+00:25:10 W2 b20_d3_Q64 bgs_harvey                     blocks=5 status=ok
+00:25:19 W2 b20_d3_Q64 linrec_c                       blocks=5 status=ok
+00:25:31 W2 b20_d3_Q64 enum_c                         blocks=5 status=ok
+00:25:31 W2 b20_d3_Q64 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:25:35 W2 b20_d3_Q64 flint_power+multipoint         blocks=5 status=ok
+00:25:41 W2 b20_d3_Q64 enum_conv                      blocks=5 status=ok
+00:25:44 W2 b20_d3_Q64 polyrec_c+multipoint           blocks=5 status=ok
+00:25:44 W2 b20_d3_Q64 cmcs_frozen                    blocks=5 status=ok
+00:25:46 W2 b20_d3_Q64 flint_power                    blocks=5 status=ok
+00:25:59 W2 b20_d3_Q64 bgs07                          blocks=5 status=ok
+00:26:03 W2 b20_d3_Q512 polyrec_c+multipoint           blocks=5 status=ok
+00:26:03 W2 b20_d3_Q512 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:27:48 W2 b20_d3_Q512 bgs07                          blocks=5 status=ok
+00:27:51 W2 b20_d3_Q512 flint_power                    blocks=5 status=ok
+00:28:08 W2 b20_d3_Q512 bgs_harvey                     blocks=5 status=ok
+00:28:14 W2 b20_d3_Q512 enum_conv                      blocks=5 status=ok
+00:28:15 W2 b20_d3_Q512 cmcs_frozen                    blocks=5 status=ok
+00:29:49 W2 b20_d3_Q512 enum_c                         blocks=5 status=ok
+00:30:59 W2 b20_d3_Q512 linrec_c                       blocks=5 status=ok
+00:31:03 W2 b20_d3_Q512 flint_power+multipoint         blocks=5 status=ok
+00:31:05 W2 b20_d3_Q512 polyrec_c                      blocks=5 status=ok
+00:31:05 W2 b20_d4_Q1 bgs07                          blocks=5 status=ok
+00:31:06 W2 b20_d4_Q1 cmcs_frozen                    blocks=5 status=ok
+00:31:09 W2 b20_d4_Q1 flint_power+multipoint         blocks=5 status=ok
+00:31:10 W2 b20_d4_Q1 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:31:12 W2 b20_d4_Q1 flint_power                    blocks=5 status=ok
+00:31:15 W2 b20_d4_Q1 polyrec_c+multipoint           blocks=5 status=ok
+00:31:16 W2 b20_d4_Q1 polyrec_c                      blocks=5 status=ok
+00:31:18 W2 b20_d4_Q1 bgs_harvey                     blocks=5 status=ok
+00:31:19 W2 b20_d4_Q1 linrec_c                       blocks=5 status=ok
+00:31:19 W2 b20_d4_Q1 enum_c                         blocks=5 status=ok
+00:31:25 W2 b20_d4_Q1 enum_conv                      blocks=5 status=ok
+00:31:25 W2 b20_d4_Q8 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:31:30 W2 b20_d4_Q8 enum_conv                      blocks=5 status=ok
+00:31:33 W2 b20_d4_Q8 bgs_harvey                     blocks=5 status=ok
+00:31:35 W2 b20_d4_Q8 flint_power                    blocks=5 status=ok
+00:31:38 W2 b20_d4_Q8 polyrec_c+multipoint           blocks=5 status=ok
+00:31:42 W2 b20_d4_Q8 flint_power+multipoint         blocks=5 status=ok
+00:31:43 W2 b20_d4_Q8 cmcs_frozen                    blocks=5 status=ok
+00:31:46 W2 b20_d4_Q8 linrec_c                       blocks=5 status=ok
+00:31:47 W2 b20_d4_Q8 polyrec_c                      blocks=5 status=ok
+00:31:51 W2 b20_d4_Q8 bgs07                          blocks=5 status=ok
+00:31:53 W2 b20_d4_Q8 enum_c                         blocks=5 status=ok
+00:32:16 W2 b20_d4_Q64 linrec_c                       blocks=5 status=ok
+00:32:17 W2 b20_d4_Q64 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:32:31 W2 b20_d4_Q64 enum_c                         blocks=5 status=ok
+00:32:32 W2 b20_d4_Q64 polyrec_c                      blocks=5 status=ok
+00:33:03 W2 b20_d4_Q64 bgs07                          blocks=5 status=ok
+00:33:09 W2 b20_d4_Q64 enum_conv                      blocks=5 status=ok
+00:33:09 W2 b20_d4_Q64 cmcs_frozen                    blocks=5 status=ok
+00:33:12 W2 b20_d4_Q64 flint_power                    blocks=5 status=ok
+00:33:19 W2 b20_d4_Q64 polyrec_c+multipoint           blocks=5 status=ok
+00:33:26 W2 b20_d4_Q64 bgs_harvey                     blocks=5 status=ok
+00:33:34 W2 b20_d4_Q64 flint_power+multipoint         blocks=5 status=ok
+00:33:56 W2 b20_d4_Q512 linrec_c                       pilot budget (21.2 s)
+00:33:57 W2 b20_d4_Q512 cmcs_frozen                    blocks=5 status=ok
+00:34:04 W2 b20_d4_Q512 flint_power+multipoint         blocks=5 status=ok
+00:34:08 W2 b20_d4_Q512 flint_power                    blocks=5 status=ok
+00:34:53 W2 b20_d4_Q512 bgs_harvey                     blocks=5 status=ok
+00:34:55 W2 b20_d4_Q512 polyrec_c                      blocks=5 status=ok
+00:34:56 W2 b20_d4_Q512 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:35:29 W2 b20_d4_Q512 bgs07                          pilot budget (32.4 s)
+00:35:34 W2 b20_d4_Q512 enum_conv                      blocks=5 status=ok
+00:37:18 W2 b20_d4_Q512 enum_c                         blocks=5 status=ok
+00:37:24 W2 b20_d4_Q512 polyrec_c+multipoint           blocks=5 status=ok
+00:37:28 W2 b23_d3_Q1 polyrec_c                      blocks=5 status=ok
+00:37:28 W2 b23_d3_Q1 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:37:30 W2 b23_d3_Q1 linrec_c                       blocks=5 status=ok
+00:37:54 W2 b23_d3_Q1 flint_power                    blocks=5 status=ok
+00:38:24 W2 b23_d3_Q1 flint_power+multipoint         blocks=5 status=ok
+00:38:24 W2 b23_d3_Q1 cmcs_frozen                    blocks=5 status=ok
+00:38:25 W2 b23_d3_Q1 bgs07                          blocks=5 status=ok
+00:38:36 W2 b23_d3_Q1 polyrec_c+multipoint           blocks=5 status=ok
+00:38:38 W2 b23_d3_Q1 bgs_harvey                     blocks=5 status=ok
+00:38:40 W2 b23_d3_Q1 enum_c                         blocks=5 status=ok
+00:38:47 W2 b23_d3_Q8 linrec_c                       blocks=5 status=ok
+00:38:48 W2 b23_d3_Q8 cmcs_frozen                    blocks=5 status=ok
+00:39:07 W2 b23_d3_Q8 flint_power                    blocks=5 status=ok
+00:39:10 W2 b23_d3_Q8 polyrec_c                      blocks=5 status=ok
+00:39:14 W2 b23_d3_Q8 bgs_harvey                     blocks=5 status=ok
+00:39:25 W2 b23_d3_Q8 enum_c                         blocks=5 status=ok
+00:39:29 W2 b23_d3_Q8 bgs07                          blocks=5 status=ok
+00:39:29 W2 b23_d3_Q8 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:39:53 W2 b23_d3_Q8 flint_power+multipoint         blocks=5 status=ok
+00:40:01 W2 b23_d3_Q8 polyrec_c+multipoint           blocks=5 status=ok
+00:40:34 W2 b23_d3_Q64 bgs07                          blocks=5 status=ok
+00:40:41 W2 b23_d3_Q64 bgs_harvey                     blocks=5 status=ok
+00:42:16 W2 b23_d3_Q64 enum_c                         blocks=5 status=ok
+00:43:22 W2 b23_d3_Q64 linrec_c                       blocks=5 status=ok
+00:43:26 W2 b23_d3_Q64 polyrec_c                      blocks=5 status=ok
+00:43:49 W2 b23_d3_Q64 flint_power                    blocks=5 status=ok
+00:43:49 W2 b23_d3_Q64 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:43:49 W2 b23_d3_Q64 cmcs_frozen                    blocks=5 status=ok
+00:44:36 W2 b23_d3_Q64 flint_power+multipoint         blocks=5 status=ok
+00:45:04 W2 b23_d3_Q64 polyrec_c+multipoint           blocks=5 status=ok
+00:45:05 W2 b23_d3_Q512 cmcs_frozen                    blocks=5 status=ok
+00:45:14 W2 b23_d3_Q512 polyrec_c                      blocks=5 status=ok
+00:45:45 W2 b23_d3_Q512 polyrec_c+multipoint           blocks=5 status=ok
+00:46:37 W2 b23_d3_Q512 bgs07                          pilot budget (51.4 s)
+00:47:11 W2 b23_d3_Q512 flint_power                    blocks=5 status=ok
+00:47:12 W2 b23_d3_Q512 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:48:06 W2 b23_d3_Q512 flint_power+multipoint         blocks=5 status=ok
+00:50:07 W2 b23_d3_Q512 linrec_c                       pilot budget (121 s)
+00:53:05 W2 b23_d3_Q512 enum_c                         pilot budget (178 s)
+00:53:52 W2 b23_d3_Q512 bgs_harvey                     blocks=5 status=ok
+00:53:53 W2 b23_d4_Q1 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:54:22 W2 b23_d4_Q1 flint_power                    blocks=5 status=ok
+00:54:28 W2 b23_d4_Q1 polyrec_c                      blocks=5 status=ok
+00:54:32 W2 b23_d4_Q1 linrec_c                       blocks=5 status=ok
+00:54:34 W2 b23_d4_Q1 enum_c                         blocks=5 status=ok
+00:54:50 W2 b23_d4_Q1 polyrec_c+multipoint           blocks=5 status=ok
+00:54:52 W2 b23_d4_Q1 bgs_harvey                     blocks=5 status=ok
+00:55:31 W2 b23_d4_Q1 flint_power+multipoint         blocks=5 status=ok
+00:55:32 W2 b23_d4_Q1 cmcs_frozen                    blocks=5 status=ok
+00:55:33 W2 b23_d4_Q1 bgs07                          blocks=5 status=ok
+00:55:56 W2 b23_d4_Q8 linrec_c                       blocks=5 status=ok
+00:56:04 W2 b23_d4_Q8 bgs07                          blocks=5 status=ok
+00:57:00 W2 b23_d4_Q8 flint_power+multipoint         blocks=5 status=ok
+00:57:04 W2 b23_d4_Q8 bgs_harvey                     blocks=5 status=ok
+00:57:28 W2 b23_d4_Q8 polyrec_c+multipoint           blocks=5 status=ok
+00:57:43 W2 b23_d4_Q8 enum_c                         blocks=5 status=ok
+00:57:53 W2 b23_d4_Q8 polyrec_c                      blocks=5 status=ok
+00:57:53 W2 b23_d4_Q8 cmcs_frozen[trace supplied]    blocks=5 status=ok
+00:57:53 W2 b23_d4_Q8 cmcs_frozen                    blocks=5 status=ok
+00:58:35 W2 b23_d4_Q8 flint_power                    blocks=5 status=ok
+01:00:23 W2 b23_d4_Q64 enum_c                         blocks=5 status=ok
+01:00:58 W2 b23_d4_Q64 flint_power                    blocks=5 status=ok
+01:02:03 W2 b23_d4_Q64 bgs07                          blocks=5 status=ok
+01:02:11 W2 b23_d4_Q64 polyrec_c                      blocks=5 status=ok
+01:02:12 W2 b23_d4_Q64 cmcs_frozen                    blocks=5 status=ok
+01:02:26 W2 b23_d4_Q64 bgs_harvey                     blocks=5 status=ok
+01:03:57 W2 b23_d4_Q64 flint_power+multipoint         blocks=5 status=ok
+01:04:23 W2 b23_d4_Q64 linrec_c                       pilot budget (25.2 s)
+01:05:23 W2 b23_d4_Q64 polyrec_c+multipoint           blocks=5 status=ok
+01:05:23 W2 b23_d4_Q64 cmcs_frozen[trace supplied]    blocks=5 status=ok
+01:06:35 W2 b23_d4_Q512 polyrec_c+multipoint           blocks=5 status=ok
+01:07:26 W2 b23_d4_Q512 flint_power                    blocks=5 status=ok
+01:09:00 W2 b23_d4_Q512 bgs07                          pilot budget (94.2 s)
+01:09:01 W2 b23_d4_Q512 cmcs_frozen[trace supplied]    blocks=5 status=ok
+01:09:02 W2 b23_d4_Q512 cmcs_frozen                    blocks=5 status=ok
+01:11:58 W2 b23_d4_Q512 enum_c                         pilot budget (176 s)
+01:12:20 W2 b23_d4_Q512 bgs_harvey                     pilot budget (20.9 s)
+01:14:10 W2 b23_d4_Q512 flint_power+multipoint         blocks=5 status=ok
+01:14:32 W2 b23_d4_Q512 polyrec_c                      blocks=5 status=ok
+01:17:32 W2 b23_d4_Q512 linrec_c                       pilot timeout (-1 s)
+01:17:32 === workload W3
+01:17:34 W3 b20_d3_s8_V1000 linrec_c                       blocks=5 status=ok
+01:17:34 W3 b20_d3_s8_V1000 cmcs_frozen                    blocks=5 status=ok
+01:17:34 W3 b20_d3_s8_V1000 cmcs_frozen[trace supplied]    blocks=5 status=ok
+01:17:35 W3 b20_d3_s8_V1000 polyrec_c                      blocks=5 status=ok
+01:17:37 W3 b20_d3_s8_V1000 enum_c                         blocks=5 status=ok
+01:17:40 W3 b20_d3_s8_V1000 bgs_harvey                     blocks=5 status=ok
+01:17:42 W3 b20_d4_s8_V1000 enum_c                         blocks=5 status=ok
+01:17:46 W3 b20_d4_s8_V1000 linrec_c                       blocks=5 status=ok
+01:17:46 W3 b20_d4_s8_V1000 cmcs_frozen[trace supplied]    blocks=5 status=ok
+01:17:47 W3 b20_d4_s8_V1000 cmcs_frozen                    blocks=5 status=ok
+01:17:48 W3 b20_d4_s8_V1000 polyrec_c                      blocks=5 status=ok
+01:17:51 W3 b20_d4_s8_V1000 bgs_harvey                     blocks=5 status=ok
+01:18:03 W3 b30_d3_s8_V1000 bgs_harvey                     blocks=5 status=ok
+01:18:04 W3 b30_d3_s8_V1000 cmcs_frozen                    blocks=5 status=ok
+01:18:04 W3 b30_d3_s8_V1000 cmcs_frozen[trace supplied]    blocks=5 status=ok
+01:21:04 W3 b30_d3_s8_V1000 linrec_c                       pilot timeout (-1 s)
+01:21:35 W3 b30_d4_s8_V1000 bgs_harvey                     blocks=5 status=ok
+01:24:35 W3 b30_d4_s8_V1000 linrec_c                       pilot timeout (-1 s)
+01:24:35 W3 b30_d4_s8_V1000 cmcs_frozen[trace supplied]    blocks=5 status=ok
+01:24:35 W3 b30_d4_s8_V1000 cmcs_frozen                    blocks=5 status=ok
+01:24:35 === workload W4
+01:24:50 W4 b20_d3_s1-256 bgs_harvey                     blocks=3 status=ok
+01:24:51 W4 b20_d3_s1-256 polyrec_c+multipoint           blocks=3 status=ok
+01:24:52 W4 b20_d3_s1-256 cmcs_frozen                    blocks=3 status=ok
+01:25:45 W4 b20_d3_s1-256 linrec_c                       blocks=3 status=ok
+01:26:56 W4 b20_d3_s1-256 enum_c                         blocks=3 status=ok
+01:26:56 W4 b20_d3_s1-256 cmcs_frozen+weighted_sum       blocks=3 status=ok
+01:26:58 W4 b20_d3_s1-256 polyrec_c                      blocks=3 status=ok
+01:26:58 W4 b20_d4_s1-256 cmcs_frozen                    blocks=3 status=ok
+01:26:59 W4 b20_d4_s1-256 cmcs_frozen+weighted_sum       blocks=3 status=ok
+01:27:30 W4 b20_d4_s1-256 bgs_harvey                     blocks=3 status=ok
+01:27:32 W4 b20_d4_s1-256 polyrec_c+multipoint           blocks=3 status=ok
+01:29:41 W4 b20_d4_s1-256 linrec_c                       blocks=3 status=ok
+01:30:59 W4 b20_d4_s1-256 enum_c                         blocks=3 status=ok
+01:31:01 W4 b20_d4_s1-256 polyrec_c                      blocks=3 status=ok
+01:31:04 W4 b62_d3_s1-256 cmcs_frozen                    blocks=3 status=ok
+01:31:07 W4 b62_d3_s1-256 cmcs_frozen+weighted_sum       blocks=3 status=ok
+01:31:10 W4 b62_d4_s1-256 cmcs_frozen+weighted_sum       blocks=3 status=ok
+01:31:13 W4 b62_d4_s1-256 cmcs_frozen                    blocks=3 status=ok
+01:31:13 === workload W6
+01:31:18 W6 b13_d3_branch bgs_harvey                     blocks=4 status=ok
+01:31:19 W6 b13_d3_branch polyrec_c                      blocks=4 status=ok
+01:31:19 W6 b13_d3_branch linrec_c                       blocks=4 status=ok
+01:31:19 W6 b13_d3_branch enum_c                         blocks=4 status=ok
+01:31:19 W6 b13_d3_branch cmcs_frozen[second-kind prepared] blocks=4 status=ok
+01:31:21 W6 b13_d4_branch bgs_harvey                     blocks=4 status=ok
+01:31:21 W6 b13_d4_branch polyrec_c                      blocks=4 status=ok
+01:31:22 W6 b13_d4_branch enum_c                         blocks=4 status=ok
+01:31:22 W6 b13_d4_branch cmcs_frozen[second-kind prepared] blocks=4 status=ok
+01:31:22 W6 b13_d4_branch linrec_c                       blocks=4 status=ok
+01:31:23 W6 b16_d3_branch cmcs_frozen[second-kind prepared] blocks=4 status=ok
+01:31:23 W6 b16_d3_branch polyrec_c                      blocks=4 status=ok
+01:31:23 W6 b16_d3_branch enum_c                         blocks=4 status=ok
+01:31:24 W6 b16_d3_branch linrec_c                       blocks=4 status=ok
+01:31:25 W6 b16_d3_branch bgs_harvey                     blocks=4 status=ok
+01:31:26 W6 b16_d4_branch cmcs_frozen[second-kind prepared] blocks=4 status=ok
+01:31:26 W6 b16_d4_branch enum_c                         blocks=4 status=ok
+01:31:27 W6 b16_d4_branch polyrec_c                      blocks=4 status=ok
+01:31:28 W6 b16_d4_branch bgs_harvey                     blocks=4 status=ok
+01:31:29 W6 b16_d4_branch linrec_c                       blocks=4 status=ok
+01:31:29 W6 b20_d3_branch enum_c                         blocks=4 status=ok
+01:31:37 W6 b20_d3_branch cmcs_frozen[second-kind prepared] blocks=4 status=ok
+01:31:38 W6 b20_d3_branch bgs_harvey                     blocks=4 status=ok
+01:31:39 W6 b20_d3_branch linrec_c                       blocks=4 status=ok
+01:31:40 W6 b20_d3_branch polyrec_c                      blocks=4 status=ok
+01:31:40 W6 b20_d4_branch enum_c                         blocks=4 status=ok
+01:31:49 W6 b20_d4_branch cmcs_frozen[second-kind prepared] blocks=4 status=ok
+01:31:50 W6 b20_d4_branch polyrec_c                      blocks=4 status=ok
+01:31:51 W6 b20_d4_branch linrec_c                       blocks=4 status=ok
+01:31:53 W6 b20_d4_branch bgs_harvey                     blocks=4 status=ok
+01:31:53 === workload W5
+01:31:59 W5 b12_d3_Qp/16 bgs_harvey                     blocks=3 status=ok
+01:31:59 W5 b12_d3_Qp/16 enum_c                         blocks=3 status=ok
+01:31:59 W5 b12_d3_Qp/16 enum_conv                      blocks=3 status=ok
+01:32:00 W5 b12_d3_Qp/16 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:32:00 W5 b12_d3_Qp/16 polyrec_c+multipoint           blocks=3 status=ok
+01:32:00 W5 b12_d3_Qp/16 flint_power+multipoint         blocks=3 status=ok
+01:32:01 W5 b12_d3_Qp/16 cmcs_frozen                    blocks=3 status=ok
+01:32:01 W5 b12_d3_Qp/4 polyrec_c+multipoint           blocks=3 status=ok
+01:32:01 W5 b12_d3_Qp/4 enum_conv                      blocks=3 status=ok
+01:32:02 W5 b12_d3_Qp/4 cmcs_frozen                    blocks=3 status=ok
+01:32:02 W5 b12_d3_Qp/4 flint_power+multipoint         blocks=3 status=ok
+01:32:02 W5 b12_d3_Qp/4 enum_c                         blocks=3 status=ok
+01:32:03 W5 b12_d3_Qp/4 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:32:06 W5 b12_d3_Qp/4 bgs_harvey                     blocks=3 status=ok
+01:32:06 W5 b12_d3_Qp/1 polyrec_c+multipoint           blocks=3 status=ok
+01:32:07 W5 b12_d3_Qp/1 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:32:09 W5 b12_d3_Qp/1 cmcs_frozen                    blocks=3 status=ok
+01:32:09 W5 b12_d3_Qp/1 enum_conv                      blocks=3 status=ok
+01:32:11 W5 b12_d3_Qp/1 enum_c                         blocks=3 status=ok
+01:32:11 W5 b12_d3_Qp/1 flint_power+multipoint         blocks=3 status=ok
+01:32:18 W5 b12_d3_Qp/1 bgs_harvey                     blocks=3 status=ok
+01:32:20 W5 b12_d4_Qp/16 bgs_harvey                     blocks=3 status=ok
+01:32:21 W5 b12_d4_Qp/16 polyrec_c+multipoint           blocks=3 status=ok
+01:32:21 W5 b12_d4_Qp/16 enum_conv                      blocks=3 status=ok
+01:32:21 W5 b12_d4_Qp/16 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:32:22 W5 b12_d4_Qp/16 enum_c                         blocks=3 status=ok
+01:32:22 W5 b12_d4_Qp/16 cmcs_frozen                    blocks=3 status=ok
+01:32:22 W5 b12_d4_Qp/16 flint_power+multipoint         blocks=3 status=ok
+01:32:22 W5 b12_d4_Qp/4 enum_conv                      blocks=3 status=ok
+01:32:23 W5 b12_d4_Qp/4 enum_c                         blocks=3 status=ok
+01:32:24 W5 b12_d4_Qp/4 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:32:24 W5 b12_d4_Qp/4 flint_power+multipoint         blocks=3 status=ok
+01:32:24 W5 b12_d4_Qp/4 polyrec_c+multipoint           blocks=3 status=ok
+01:32:25 W5 b12_d4_Qp/4 cmcs_frozen                    blocks=3 status=ok
+01:32:29 W5 b12_d4_Qp/4 bgs_harvey                     blocks=3 status=ok
+01:32:29 W5 b12_d4_Qp/1 flint_power+multipoint         blocks=3 status=ok
+01:32:31 W5 b12_d4_Qp/1 cmcs_frozen                    blocks=3 status=ok
+01:32:32 W5 b12_d4_Qp/1 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:32:35 W5 b12_d4_Qp/1 enum_c                         blocks=3 status=ok
+01:32:35 W5 b12_d4_Qp/1 enum_conv                      blocks=3 status=ok
+01:32:50 W5 b12_d4_Qp/1 bgs_harvey                     blocks=3 status=ok
+01:32:51 W5 b12_d4_Qp/1 polyrec_c+multipoint           blocks=3 status=ok
+01:32:51 W5 b14_d3_Qp/16 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:32:55 W5 b14_d3_Qp/16 bgs_harvey                     blocks=3 status=ok
+01:32:56 W5 b14_d3_Qp/16 polyrec_c+multipoint           blocks=3 status=ok
+01:32:56 W5 b14_d3_Qp/16 cmcs_frozen                    blocks=3 status=ok
+01:32:57 W5 b14_d3_Qp/16 flint_power+multipoint         blocks=3 status=ok
+01:32:57 W5 b14_d3_Qp/16 enum_conv                      blocks=3 status=ok
+01:32:59 W5 b14_d3_Qp/16 enum_c                         blocks=3 status=ok
+01:32:59 W5 b14_d3_Qp/4 enum_conv                      blocks=3 status=ok
+01:33:10 W5 b14_d3_Qp/4 bgs_harvey                     blocks=3 status=ok
+01:33:11 W5 b14_d3_Qp/4 cmcs_frozen                    blocks=3 status=ok
+01:33:11 W5 b14_d3_Qp/4 flint_power+multipoint         blocks=3 status=ok
+01:33:12 W5 b14_d3_Qp/4 polyrec_c+multipoint           blocks=3 status=ok
+01:33:13 W5 b14_d3_Qp/4 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:33:20 W5 b14_d3_Qp/4 enum_c                         blocks=3 status=ok
+01:33:26 W5 b14_d3_Qp/1 cmcs_frozen                    blocks=3 status=ok
+01:33:26 W5 b14_d3_Qp/1 enum_conv                      blocks=3 status=ok
+01:34:14 W5 b14_d3_Qp/1 bgs_harvey                     blocks=3 status=ok
+01:34:14 W5 b14_d3_Qp/1 polyrec_c+multipoint           blocks=3 status=ok
+01:34:21 W5 b14_d3_Qp/1 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:34:21 W5 b14_d3_Qp/1 flint_power+multipoint         blocks=3 status=ok
+01:34:54 W5 b14_d3_Qp/1 enum_c                         blocks=3 status=ok
+01:34:59 W5 b14_d4_Qp/16 bgs_harvey                     blocks=3 status=ok
+01:35:01 W5 b14_d4_Qp/16 enum_c                         blocks=3 status=ok
+01:35:01 W5 b14_d4_Qp/16 cmcs_frozen                    blocks=3 status=ok
+01:35:02 W5 b14_d4_Qp/16 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:35:02 W5 b14_d4_Qp/16 polyrec_c+multipoint           blocks=3 status=ok
+01:35:03 W5 b14_d4_Qp/16 flint_power+multipoint         blocks=3 status=ok
+01:35:03 W5 b14_d4_Qp/16 enum_conv                      blocks=3 status=ok
+01:35:24 W5 b14_d4_Qp/4 bgs_harvey                     blocks=3 status=ok
+01:35:24 W5 b14_d4_Qp/4 enum_conv                      blocks=3 status=ok
+01:35:25 W5 b14_d4_Qp/4 polyrec_c+multipoint           blocks=3 status=ok
+01:35:26 W5 b14_d4_Qp/4 cmcs_frozen                    blocks=3 status=ok
+01:35:26 W5 b14_d4_Qp/4 flint_power+multipoint         blocks=3 status=ok
+01:35:33 W5 b14_d4_Qp/4 enum_c                         blocks=3 status=ok
+01:35:35 W5 b14_d4_Qp/4 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:35:39 W5 b14_d4_Qp/1 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:35:43 W5 b14_d4_Qp/1 cmcs_frozen                    blocks=3 status=ok
+01:35:44 W5 b14_d4_Qp/1 flint_power+multipoint         blocks=3 status=ok
+01:36:04 W5 b14_d4_Qp/1 enum_c                         blocks=3 status=ok
+01:37:01 W5 b14_d4_Qp/1 bgs_harvey                     blocks=3 status=ok
+01:37:01 W5 b14_d4_Qp/1 enum_conv                      blocks=3 status=ok
+01:37:02 W5 b14_d4_Qp/1 polyrec_c+multipoint           blocks=3 status=ok
+01:37:02 W5 b16_d3_Qp/16 enum_conv                      blocks=3 status=ok
+01:37:03 W5 b16_d3_Qp/16 flint_power+multipoint         blocks=3 status=ok
+01:37:03 W5 b16_d3_Qp/16 polyrec_c+multipoint           blocks=3 status=ok
+01:37:05 W5 b16_d3_Qp/16 cmcs_frozen                    blocks=3 status=ok
+01:37:22 W5 b16_d3_Qp/16 bgs_harvey                     blocks=3 status=ok
+01:37:42 W5 b16_d3_Qp/16 enum_c                         blocks=3 status=ok
+01:37:44 W5 b16_d3_Qp/16 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:39:12 W5 b16_d3_Qp/4 bgs_harvey                     blocks=3 status=ok
+01:39:13 W5 b16_d3_Qp/4 polyrec_c+multipoint           blocks=3 status=ok
+01:40:51 W5 b16_d3_Qp/4 enum_c                         blocks=3 status=ok
+01:40:51 W5 b16_d3_Qp/4 enum_conv                      blocks=3 status=ok
+01:40:52 W5 b16_d3_Qp/4 flint_power+multipoint         blocks=3 status=ok
+01:40:58 W5 b16_d3_Qp/4 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:41:04 W5 b16_d3_Qp/4 cmcs_frozen                    blocks=3 status=ok
+01:41:05 W5 b16_d3_Qp/1 flint_power+multipoint         blocks=3 status=ok
+01:43:43 W5 b16_d3_Qp/1 enum_c                         pilot budget (157 s)
+01:43:43 W5 b16_d3_Qp/1 enum_conv                      blocks=3 status=ok
+01:45:59 W5 b16_d3_Qp/1 bgs_harvey                     pilot budget (134 s)
+01:46:17 W5 b16_d3_Qp/1 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:46:19 W5 b16_d3_Qp/1 polyrec_c+multipoint           blocks=3 status=ok
+01:46:37 W5 b16_d3_Qp/1 cmcs_frozen                    blocks=3 status=ok
+01:47:41 W5 b16_d4_Qp/16 bgs_harvey                     blocks=3 status=ok
+01:47:43 W5 b16_d4_Qp/16 cmcs_frozen                    blocks=3 status=ok
+01:47:43 W5 b16_d4_Qp/16 enum_conv                      blocks=3 status=ok
+01:48:20 W5 b16_d4_Qp/16 enum_c                         blocks=3 status=ok
+01:48:21 W5 b16_d4_Qp/16 polyrec_c+multipoint           blocks=3 status=ok
+01:48:21 W5 b16_d4_Qp/16 flint_power+multipoint         blocks=3 status=ok
+01:48:23 W5 b16_d4_Qp/16 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:49:10 W5 b16_d4_Qp/4 bgs_harvey                     pilot budget (45.5 s)
+01:49:10 W5 b16_d4_Qp/4 enum_conv                      blocks=3 status=ok
+01:49:11 W5 b16_d4_Qp/4 polyrec_c+multipoint           blocks=3 status=ok
+01:49:18 W5 b16_d4_Qp/4 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:49:18 W5 b16_d4_Qp/4 flint_power+multipoint         blocks=3 status=ok
+01:49:25 W5 b16_d4_Qp/4 cmcs_frozen                    blocks=3 status=ok
+01:51:29 W5 b16_d4_Qp/4 enum_c                         blocks=3 status=ok
+01:51:56 W5 b16_d4_Qp/1 cmcs_frozen[trace supplied]    blocks=3 status=ok
+01:51:58 W5 b16_d4_Qp/1 polyrec_c+multipoint           blocks=3 status=ok
+01:55:28 W5 b16_d4_Qp/1 bgs_harvey                     pilot timeout (-1 s)
+01:55:30 W5 b16_d4_Qp/1 flint_power+multipoint         blocks=3 status=ok
+01:55:31 W5 b16_d4_Qp/1 enum_conv                      blocks=3 status=ok
+01:57:49 W5 b16_d4_Qp/1 enum_c                         pilot budget (138 s)
+01:58:16 W5 b16_d4_Qp/1 cmcs_frozen                    blocks=3 status=ok
+01:58:17 W5 b18_d3_Qp/16 flint_power+multipoint         blocks=3 status=ok
+01:59:18 W5 b18_d3_Qp/16 enum_c                         pilot budget (60.4 s)
+02:01:34 W5 b18_d3_Qp/16 bgs_harvey                     blocks=3 status=ok
+02:01:35 W5 b18_d3_Qp/16 polyrec_c+multipoint           blocks=3 status=ok
+02:01:41 W5 b18_d3_Qp/16 cmcs_frozen[trace supplied]    blocks=3 status=ok
+02:01:42 W5 b18_d3_Qp/16 enum_conv                      blocks=3 status=ok
+02:01:49 W5 b18_d3_Qp/16 cmcs_frozen                    blocks=3 status=ok
+02:01:50 W5 b18_d3_Qp/4 enum_conv                      blocks=3 status=ok
+02:02:14 W5 b18_d3_Qp/4 cmcs_frozen[trace supplied]    blocks=3 status=ok
+02:02:16 W5 b18_d3_Qp/4 flint_power+multipoint         blocks=3 status=ok
+02:02:18 W5 b18_d3_Qp/4 polyrec_c+multipoint           blocks=3 status=ok
+02:02:41 W5 b18_d3_Qp/4 cmcs_frozen                    blocks=3 status=ok
+02:03:30 W5 b18_d3_Qp/4 bgs_harvey                     pilot budget (47.9 s)
+02:06:03 W5 b18_d3_Qp/4 enum_c                         pilot budget (153 s)
+02:07:36 W5 b18_d3_Qp/1 cmcs_frozen[trace supplied]    blocks=3 status=ok
+02:07:44 W5 b18_d3_Qp/1 flint_power+multipoint         blocks=3 status=ok
+02:11:14 W5 b18_d3_Qp/1 enum_c                         pilot timeout (-1 s)
+02:11:16 W5 b18_d3_Qp/1 enum_conv                      blocks=3 status=ok
+02:12:53 W5 b18_d3_Qp/1 cmcs_frozen                    blocks=3 status=ok
+02:13:00 W5 b18_d3_Qp/1 polyrec_c+multipoint           blocks=3 status=ok

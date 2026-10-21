@@ -1,0 +1,43 @@
+{
+ "mode": "confirmation",
+ "seed": "09202ac1edab4f3eadfa68a8c50e0d77c695328891e889c8a744fc8b28c28ac0",
+ "primes": [
+  1453,
+  5879,
+  7433,
+  7489,
+  7793,
+  8741,
+  15259,
+  17747,
+  21139,
+  21221,
+  23929,
+  24593,
+  35533,
+  36037,
+  36343,
+  38611,
+  42187,
+  45481,
+  48761,
+  51133,
+  57527,
+  62533,
+  67447,
+  69143
+ ],
+ "counts": {
+  "H.harvey_vs_direct.nonbranch": 1584,
+  "H.harvey_query_with_H.value": 96,
+  "H.harvey_query_with_H.sum_eps": 96,
+  "H.harvey_vs_direct.branch": 48,
+  "H.harvey_vs_refs.cmcs+bgs07": 20
+ },
+ "total_checks": 1844,
+ "n_failures": 0,
+ "failures": [],
+ "status": "PASS",
+ "elapsed_s": 17.5,
+ "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]"
+}

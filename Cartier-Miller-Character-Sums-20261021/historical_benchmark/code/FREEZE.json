@@ -1,0 +1,28 @@
+{
+ "frozen_utc": "2026-10-20T22:40:17Z",
+ "files": {
+  "cmbench/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "cmbench/core.py": "f5ce0d05531e39b32c5645ac5bc95584b2be0fd977661ba5a5ae7eda14216a78",
+  "cmbench/methods.py": "fb4d5096df8d796e6ac96164012fe4466c9fb3c1e7e9b13e1feee38116ec0de8",
+  "cmbench/bgs07.py": "5b52fb0de654ec906ecaa4d70059fb943b76d0fc54da54ca1ac290695e222e20",
+  "cmbench/harvey.py": "fb192b907b0e1a2e5b61b7324c8a44c56c059334f5f8fe30ad00e026a0ab0d3f",
+  "cmbench/cases.py": "c8854457cf8d46d3389f6927ccb0a533a90455c225a3932662288b10885a8746",
+  "cmbench/cmcs_v2.py": "478b89e9cb66e76e6d244f54e9f43159763983b1bd2ff4f70268b950262e4cc8",
+  "cmbench/validate.py": "65d3872320cbf68803097e57bb4adc68a3dc7673d212b7b9652acd7cb3e342cf",
+  "cmbench/native/cmnative.c": "f763dc1345e4b5cafe23ba950e904ab0a3a34ccc70c6c298271737c4e57cd81f",
+  "cmbench/native/libcmnative.so": "0b215ad3bc5b8a5d9853ffee703c1414c0b59f7f7330e9777e784097d2564dfe",
+  "run_validate.py": "1e9a7688e390dbf7885bbe720100f448dc709492788dfa600294f0d29ceeba61",
+  "run_validate_harvey.py": "43a72f5d2046d545db614127cfad0dd1249e900a37db4ac932b1160dc9f31636",
+  "make_harvey_refs.py": "b870d982097190acea1be64a8e827fd91702f40babbc32b478a9618029d0d43b",
+  "source_audit/voloch_semaev_normalization.py": "f9366421f2c64d1a822379206007bdc10b60b42a6cfd71ec02779d569ee38b44",
+  "freeze.py": "abeb90e719c679fbc937fc46b42d960a33e3d0bde284fdbae1cf71a49567987e"
+ },
+ "digest": "09202ac1edab4f3eadfa68a8c50e0d77c695328891e889c8a744fc8b28c28ac0",
+ "digest_rule": "sha256 over sorted lines \"<sha256>  <path>\\n\"",
+ "inherited_freeze_digest": "4302b56426a6160fbc5027659632bac7ad6cc0ab755c5fcb00d8c9502aa99bd3",
+ "inherited_candidate_sha256": "763c86811e5b43bb0c00791f83083420c27232a04d131633c6a6c3552bb3e59c",
+ "handover_reference_comparators_sha256": "212f37cf8b37456c1f2933dd3c2fcfc497f13cf2417c874eda4645ac419576d8",
+ "build": "gcc 13.3.0: gcc -O2 -fPIC -shared -o libcmnative.so cmnative.c",
+ "timestamp_note": "local clock only; no external timestamp",
+ "confirmation_seed_rule": "seed = digest; benchmark seed = sha256(digest + \"|benchmark\")"
+}

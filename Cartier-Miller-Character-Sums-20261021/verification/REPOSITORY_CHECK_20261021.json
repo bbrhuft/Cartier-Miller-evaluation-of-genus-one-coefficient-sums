@@ -1,0 +1,61 @@
+{
+  "record": "repository integration check, 21 October 2026",
+  "command": "python verify.py --full, run with the data asset extracted at the repository root",
+  "python": "3.13.16",
+  "platform": "Linux-6.18.44-fc-v140-x86_64-with-glibc2.39",
+  "scope": "correctness and integrity only; no timing",
+  "status": "PASS",
+  "full": true,
+  "integrity": {
+    "sha256sums_files": 177,
+    "supplement_manifest_files": 834,
+    "in_tree": 172,
+    "asset_present": 657,
+    "asset_not_extracted": 0,
+    "not_redistributed": 5
+  },
+  "frozen_uniform_order": {
+    "development": {
+      "models": 2762,
+      "direct_values": 14037
+    },
+    "confirmation": {
+      "models": 360,
+      "direct_values": 5400
+    }
+  },
+  "frozen_weighted_adapter": {
+    "development": {
+      "weighted_queries": 960,
+      "output_residue_comparisons": 5760,
+      "invalid_inputs_rejected": 12
+    },
+    "confirmation": {
+      "weighted_queries": 960,
+      "output_residue_comparisons": 5760,
+      "invalid_inputs_rejected": 12
+    }
+  },
+  "benchmark_table": {
+    "status": "PASS",
+    "classes": 10,
+    "median_comparisons": 30,
+    "csv_sha256": "897c306b80bf095b12dcc2af169b02ea89a6474e7ccd2327655cad139f850fa9",
+    "interpretation": "recomputed historical medians; no new timing run"
+  },
+  "benchmark_code_freeze": "FREEZE OK 09202ac1edab4f3eadfa68a8c50e0d77c695328891e889c8a744fc8b28c28ac0 []",
+  "inherited_application_freeze": {
+    "frozen_files": 32,
+    "mismatches": [],
+    "digest": "4302b56426a6160fbc5027659632bac7ad6cc0ab755c5fcb00d8c9502aa99bd3",
+    "status": "MATCH"
+  },
+  "example": "Single pole, excludes only x=1: 0\nThe same reciprocal weight, also excluding x=2: WeightedSums(character=6, affine_points=5, projective_points=5)\nChange coefficients using cached preparation: WeightedSums(character=1, affine_points=1, projective_points=5)\np=5, twisted curve order 2p: 1",
+  "adapted_cm_system_service": {
+    "status": "PASS",
+    "adapted_files_import_only": 3,
+    "weighted_comparisons": 1056,
+    "single_pole_comparisons": 1044,
+    "frozen_adapted_single_pole_matches": 600
+  }
+}

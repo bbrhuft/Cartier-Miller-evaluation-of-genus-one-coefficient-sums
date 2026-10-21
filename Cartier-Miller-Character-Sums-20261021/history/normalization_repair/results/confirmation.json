@@ -1,0 +1,22 @@
+{
+  "mode": "confirmation",
+  "status": "PASS",
+  "freeze_digest": "1bf336f3c5b1ef6672f77cc30aed53178e691a8468d92b2173871d659e9911f0",
+  "confirmation_primes": [
+    41,
+    103,
+    163,
+    251,
+    239,
+    113,
+    167,
+    1009
+  ],
+  "models": 320,
+  "values": 3840,
+  "route_general": 3709,
+  "chain_through_identity": 455,
+  "supersingular_values": 180,
+  "route_two_torsion": 36,
+  "route_exceptional": 95
+}

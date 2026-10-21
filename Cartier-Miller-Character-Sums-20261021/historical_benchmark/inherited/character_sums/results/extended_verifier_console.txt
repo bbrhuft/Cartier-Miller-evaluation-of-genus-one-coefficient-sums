@@ -1,0 +1,12 @@
+{
+ "models": 133,
+ "inherited_queries": 3288,
+ "inherited_exceptional": 159,
+ "inherited_split": 457,
+ "inherited_cubic_branch": 51,
+ "inherited_quartic_branch_unsupported": 65,
+ "candidate_single": 3353,
+ "normalization_checks": 2394,
+ "multi_checks": 2394,
+ "status": "PASS"
+} failures: 0
