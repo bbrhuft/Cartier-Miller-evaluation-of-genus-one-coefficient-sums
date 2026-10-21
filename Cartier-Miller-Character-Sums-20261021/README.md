@@ -18,7 +18,7 @@ $$
 C_f(a)=e\left(-\frac{g_1}{4}(N-2)-\frac{\alpha_N(R)}{2}\right),
 $$
 
-where $\alpha_N(R)$ is the Laurent constant at the origin of $d\log f_{N,R}$, and $f_{N,R}$ is the Miller function with divisor $N(R)-([N]R)-(N-1)(O)$. The formula rests on the identity $\alpha_{\#E(\mathbb F_p)}(P)=Y(P)V_W(X(P))$, proved in [`proofs/UNIFORM_ORDER_PROOF.md`](proofs/UNIFORM_ORDER_PROOF.md). It holds for every trace, including the anomalous and supersingular cases, rational two-torsion and $p=5$. It needs no square root and no inversion of $p$ modulo $N$, and one differentiated Miller chain computes it.
+where $\alpha_N(R)$ is the Laurent constant at the origin of $d\log f_{N,R}$, and $f_{N,R}$ is the Miller function with divisor $N(R)-([N]R)-(N-1)(O)$. The formula rests on the identity $\alpha_{\\#E(\mathbb{F}_p)}(P)=Y(P)V_W(X(P))$, proved in [`proofs/UNIFORM_ORDER_PROOF.md`](proofs/UNIFORM_ORDER_PROOF.md). It holds for every trace, including the anomalous and supersingular cases, rational two-torsion and $p=5$. It needs no square root and no inversion of $p$ modulo $N$, and one differentiated Miller chain computes it.
 
 For a complete excluded set $U=\{a_1,\dots,a_s\}$, residues $r_i$ and a constant $c$, the prepared adapter returns three sums of the weight $R(x)=c+\sum_i r_i/(x-a_i)$:
 
