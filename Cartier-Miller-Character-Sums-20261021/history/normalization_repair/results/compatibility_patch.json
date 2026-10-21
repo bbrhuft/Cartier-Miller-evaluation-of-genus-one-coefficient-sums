@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "comparisons": 225,
+  "routes": {
+    "small_field": 15,
+    "two_torsion": 30,
+    "general": 180
+  }
+}

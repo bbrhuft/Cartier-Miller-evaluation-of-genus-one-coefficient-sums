@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "Bounded correctness/integrity checks, not timing benchmarks",
+  "seed": 2026102023,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "integrity": {
+    "inherited_manifest_entries": 48,
+    "inherited_frozen_files": 32,
+    "freeze_digest": "4302b56426a6160fbc5027659632bac7ad6cc0ab755c5fcb00d8c9502aa99bd3"
+  },
+  "checks": {
+    "models": 96,
+    "single_pole_cases": 2976,
+    "branch_cases": 111,
+    "zero_pole_cases": 96,
+    "weighted_character_checks": 288,
+    "weighted_affine_checks": 288,
+    "miller_nonbranch_checks": 2865,
+    "prepared_branch_checks": 111,
+    "integration_weighted_checks": 576
+  },
+  "integration": "actual inherited candidate; direct small-prime traces; branch data explicitly prepared",
+  "note": "Generated before the final handover manifest; final manifest verified separately after packaging."
+}

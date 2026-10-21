@@ -38,3 +38,7 @@ The delivery had copied older versions of five files that the repository has sin
 `SHA256SUMS.json` was regenerated over the released files. `recorded_results/*.log` are committed although the repository ignores `*.log`, because the manifest covers them.
 
 The scope statements of the delivery are unchanged. This is an exact integration layer and prototype. It claims no new generic fast algorithm, no sum-avoiding Witt extraction and no novelty, and it has not been tested on Windows.
+
+## Added 21 October 2026: character-sum service
+
+The supplement `Cartier_Miller_Character_Sums_Supplement_20261021.zip` added `cm_system/character_sums.py`, the `charsum` command, `validate_character_sums.py` and its record `recorded_results/validation_character_sums_20261021.json`. `cm_system/backends/character_sums/` holds copies of the supplement's `cm_character_route.py`, `uniform_order.py` and `weighted_sums.py` whose only changes are package-relative imports; `__init__.py` is new. `PROVENANCE.json` gives the frozen and adapted hashes, and the byte-identical frozen copies are in `../Cartier-Miller-Character-Sums-20261021/src/`. No existing service changed. `SHA256SUMS.json` was regenerated; it now also covers the LaTeX formatting fix made to `TECHNICAL_SPECIFICATION.md` on 13 October, which the earlier manifest predated.

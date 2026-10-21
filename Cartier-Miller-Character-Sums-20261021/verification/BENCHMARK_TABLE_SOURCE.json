@@ -1,0 +1,75 @@
+{
+  "csv_sha256": "897c306b80bf095b12dcc2af169b02ea89a6474e7ccd2327655cad139f850fa9",
+  "rows_ms": [
+    {
+      "bits": 10,
+      "degree": 3,
+      "cmcs_frozen": 0.13833928571428572,
+      "bgs_harvey": 0.5610325185185185,
+      "linrec_c": 0.033216055,
+      "enum_c": 0.038651714999999996,
+      "flint_power": 0.035130644999999995
+    },
+    {
+      "bits": 10,
+      "degree": 4,
+      "cmcs_frozen": 0.16870983673469386,
+      "bgs_harvey": 0.610385225,
+      "linrec_c": 0.061784559999999995,
+      "enum_c": 0.042963065,
+      "flint_power": 0.040147714999999994
+    },
+    {
+      "bits": 20,
+      "degree": 3,
+      "cmcs_frozen": 0.2457572105263158,
+      "bgs_harvey": 6.3449968,
+      "linrec_c": 25.038026,
+      "enum_c": 36.57166,
+      "flint_power": 259.614714
+    },
+    {
+      "bits": 20,
+      "degree": 4,
+      "cmcs_frozen": 0.23882769696969697,
+      "bgs_harvey": 14.779850666666666,
+      "linrec_c": 61.593078,
+      "enum_c": 38.934131,
+      "flint_power": 336.631702
+    },
+    {
+      "bits": 30,
+      "degree": 3,
+      "cmcs_frozen": 0.3665448923076923,
+      "bgs_harvey": 170.207305
+    },
+    {
+      "bits": 30,
+      "degree": 4,
+      "cmcs_frozen": 0.35588514492753626,
+      "bgs_harvey": 474.158751
+    },
+    {
+      "bits": 40,
+      "degree": 3,
+      "cmcs_frozen": 1.1808337073170732,
+      "bgs_harvey": 6901.649138
+    },
+    {
+      "bits": 40,
+      "degree": 4,
+      "cmcs_frozen": 0.982462,
+      "bgs_harvey": 16004.827224
+    },
+    {
+      "bits": 62,
+      "degree": 3,
+      "cmcs_frozen": 131.72554
+    },
+    {
+      "bits": 62,
+      "degree": 4,
+      "cmcs_frozen": 133.687047
+    }
+  ]
+}

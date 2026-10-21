@@ -36,6 +36,8 @@ The cutoff is fixed at degree below $p$; the evaluation point varies. This is no
 
 Cartier, P. (1957). Une nouvelle opération sur les formes différentielles. *Comptes Rendus de l’Académie des Sciences*, 244, 426–428. https://zbmath.org/?q=an:0077.04502
 
+Miller, V. S. (1986, May 6). *Short programs for functions on curves* [Unpublished manuscript]. https://crypto.stanford.edu/miller/miller.pdf
+
 Miller, V. S. (2004). The Weil pairing, and its efficient calculation. *Journal of Cryptology*, 17(4), 235–261. https://doi.org/10.1007/s00145-004-0315-8  
 
 ## The identity and exceptional case
@@ -159,6 +161,22 @@ The folder [`Cartier-Miller-Integration-20261013/`](Cartier-Miller-Integration-2
 
 It keeps quantities that earlier code called $K$ or $\kappa$ distinct, labels supplied traces as trusted unless certified, and falls back to exact computation, or refuses, rather than estimating. Its validator and recorded measurements are included; the measurements compare its own Python implementations only. It claims no new generic fast algorithm, no sum-avoiding Witt extraction and no novelty. Its [RELEASE_NOTE.md](Cartier-Miller-Integration-20261013/RELEASE_NOTE.md) records what was excluded from the delivery and the refresh of its vendored code to the corrected versions in this repository.
 
+## Character and elliptic-point sums
+
+The folder [`Cartier-Miller-Character-Sums-20261021/`](Cartier-Miller-Character-Sums-20261021/) holds the rationally weighted quadratic-character-sum application, dated 21 October 2026. For a squarefree cubic or quartic $f$ with any constant term and a nonbranch pole $a$, it evaluates
+
+$$
+C_f(a)=\sum_{x\ne a}\frac{\chi(f(x))}{x-a}\in\mathbb F_p,\qquad p\ge5,
+$$
+
+with one differentiated Miller chain at the curve order $N=p+1-\chi(f(a))\tau_f$ of the normalized twist. This works for every trace, with no exceptional branch. Constant-plus-simple-pole weights over a complete excluded set give the equivalent affine and projective elliptic-point sums. The rational points at infinity are counted exactly, and no character value is assigned there.
+
+After a separately charged exact trace, a query costs $O(\log p)$ field operations, or $O((\log p)^3)$ bit operations with classical arithmetic. Preparing $s$ exclusions costs $O(s\log p+s^2)$, and each later coefficient vector costs $O(s)$. The faster polynomial-tree correction is proved but not implemented.
+
+The live interface is the integration layer's `charsum` service. It certifies primality below $2^{64}$. The trace can be supplied, in which case it is labelled trusted, or counted directly up to a budget at a stated $O(p\log p)$ cost.
+
+The constructions are attributed to Miller (1986; 2004), Semaev (1998), Rück (1999) and the earlier Cartier and high-block sources. Priority for the combined general-trace identity and the weighted-sum adapter is unresolved, and no new attack is claimed. The folder's historical benchmark measured the older frozen implementation, not the new code, and its qualifications are listed with it. Raw per-job data are kept in a separate archive identified by hash.
+
 ## Review and collaboration
 
 Independent scrutiny of the exceptional proof, differential scale, residue signs and split-algebra arithmetic is especially welcome. A specialist comparison with existing Cartier, descent, anomalous-curve and Frobenius literature would help establish whether the normalization is already implicit in known results.
@@ -169,7 +187,7 @@ Please open an issue to discuss a proof gap, counterexample, literature connecti
 
 ## Licensing
 
-The repository's [MIT License](LICENSE) covers the author's own material, including the extension and integration folders, which carry their own MIT licence files. It does not cover third-party or separately licensed code. [`Cartier_Miller_Benchmark/`](Cartier_Miller_Benchmark/) bundles David Harvey's interval-product sources from SageMath under the GNU General Public License, with their original notices in `upstream/COPYING.txt`. That folder's adapter, GUI, point counters, harness, tests and launchers carry `GPL-2.0-or-later` notices, and its `LICENSE` file reproduces the SageMath copyright statement. Those files remain under the GPL. The manuscript PDF is shared for review and remains the author's work under its own terms.
+The repository's [MIT License](LICENSE) covers the author's own material, including the extension, integration and character-sum folders, which carry their own MIT licence files. It does not cover third-party or separately licensed code. [`Cartier_Miller_Benchmark/`](Cartier_Miller_Benchmark/) bundles David Harvey's interval-product sources from SageMath under the GNU General Public License, with their original notices in `upstream/COPYING.txt`. That folder's adapter, GUI, point counters, harness, tests and launchers carry `GPL-2.0-or-later` notices, and its `LICENSE` file reproduces the SageMath copyright statement. Those files remain under the GPL. The manuscript PDF is shared for review and remains the author's work under its own terms.
 
 ## AI assistance and attribution
 

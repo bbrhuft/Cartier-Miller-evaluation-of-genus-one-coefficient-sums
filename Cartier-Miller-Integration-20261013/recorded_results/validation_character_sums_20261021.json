@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "scope": "adapted character-sum service; correctness only, no timing",
+  "python": "3.13.16",
+  "active_branch_residues_refused": 93,
+  "adapted_files_import_only": 3,
+  "branch_exclusions": 186,
+  "branch_poles_refused": 6,
+  "cli_checks": 2,
+  "documented_examples": 3,
+  "empty_affine_domains": 176,
+  "frozen_adapted_prepared_state_matches": 75,
+  "frozen_adapted_single_pole_matches": 600,
+  "invalid_or_unsupported_inputs_rejected": 14,
+  "large_supersingular_models": 3,
+  "models": 88,
+  "output_residue_comparisons": 3168,
+  "single_pole_comparisons": 1044,
+  "weighted_comparisons": 1056,
+  "zero_residue_exclusions": 418
+}

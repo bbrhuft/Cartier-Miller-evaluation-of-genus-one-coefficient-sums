@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "scope": "Bounded correctness/integrity checks, not timing benchmarks",
+  "seed": 2026102023,
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "integrity": {
+    "handover_manifest_entries": 13,
+    "inherited_manifest_entries": 48,
+    "inherited_frozen_files": 32,
+    "freeze_digest": "4302b56426a6160fbc5027659632bac7ad6cc0ab755c5fcb00d8c9502aa99bd3"
+  },
+  "checks": {
+    "models": 96,
+    "single_pole_cases": 2976,
+    "branch_cases": 111,
+    "zero_pole_cases": 96,
+    "weighted_character_checks": 288,
+    "weighted_affine_checks": 288,
+    "miller_nonbranch_checks": 0,
+    "prepared_branch_checks": 0,
+    "integration_weighted_checks": 0
+  },
+  "integration": "not requested"
+}

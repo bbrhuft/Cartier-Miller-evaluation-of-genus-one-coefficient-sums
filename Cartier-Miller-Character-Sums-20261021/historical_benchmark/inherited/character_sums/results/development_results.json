@@ -1,0 +1,325 @@
+{
+ "run": "development",
+ "seed": 20261020,
+ "command": "python3 src/develop.py",
+ "started_utc": "2026-10-20T18:53:40Z",
+ "seconds": 211.82,
+ "total_checks": 208272,
+ "total_failures": 0,
+ "families": [
+  {
+   "family": "reference_identities",
+   "checks": 100665,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {
+    "branch_nonzero": 181,
+    "nonbranch_nonzero": 16515,
+    "pole_zero": 172
+   },
+   "seconds": 1.838
+  },
+  {
+   "family": "reference_identities",
+   "checks": 570,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {
+    "branch_nonzero": 2,
+    "nonbranch_nonzero": 90,
+    "pole_zero": 4
+   },
+   "seconds": 2.109
+  },
+  {
+   "family": "constants_and_infinity",
+   "checks": 1458,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {
+    "multi_with_nonzero_P_minus_C": 128,
+    "rational_points_at_infinity": 160
+   },
+   "seconds": 2.259
+  },
+  {
+   "family": "translation_and_twist",
+   "checks": 5326,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {
+    "nonsquare_translations": 247,
+    "point_sum_not_alpha_scaled": 0
+   },
+   "seconds": 1.064
+  },
+  {
+   "family": "extension_poles_and_multiplicative_contrast",
+   "checks": 140,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {
+    "field_value_differs_from_residue_of_multiplicative": 18
+   },
+   "seconds": 0.041
+  },
+  {
+   "family": "multipoint_finite_part_identity",
+   "checks": 324,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {},
+   "seconds": 0.028
+  },
+  {
+   "family": "rounded_third_branch_reduction",
+   "checks": 660,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {
+    "direct_character_checks": 220,
+    "primes": 220
+   },
+   "seconds": 0.105
+  },
+  {
+   "family": "inherited_miller_rowsession",
+   "checks": 33597,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {
+    "admissible_queries": 32998,
+    "chains_replayed": 32998,
+    "chains_with_identity_steps": 6425,
+    "chains_with_vertical_or_identity_outputs": 17561,
+    "cubic_branch_inherited_service": 105,
+    "exceptional_queries": 4696,
+    "exceptional_trace_+1": 2340,
+    "exceptional_trace_-1": 2356,
+    "nonsquare_fibre": 16623,
+    "quartic_branch_routed_unsupported": 151,
+    "replayed_splits": 3947,
+    "split_fallbacks": 3947,
+    "square_fibre": 16375,
+    "trace_minus_one_curves": 51,
+    "trace_plus_one_curves": 53
+   },
+   "seconds": 10.642
+  },
+  {
+   "family": "inherited_miller_rowsession",
+   "checks": 8755,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {
+    "admissible_queries": 8673,
+    "chains_replayed": 3372,
+    "chains_with_identity_steps": 483,
+    "chains_with_vertical_or_identity_outputs": 1687,
+    "cubic_branch_inherited_service": 9,
+    "exceptional_queries": 1259,
+    "exceptional_trace_+1": 329,
+    "exceptional_trace_-1": 930,
+    "nonsquare_fibre": 4320,
+    "quartic_branch_routed_unsupported": 10,
+    "replayed_splits": 230,
+    "split_fallbacks": 1099,
+    "square_fibre": 4353,
+    "trace_minus_one_curves": 11,
+    "trace_plus_one_curves": 9
+   },
+   "seconds": 174.036
+  },
+  {
+   "family": "candidate_single_pole_and_truncation",
+   "checks": 50563,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {
+    "branch_poles": 213,
+    "exceptional_queries": 882,
+    "oracle_calls": 49836,
+    "pole_zero": 129,
+    "split_fallbacks": 5589,
+    "truncation_with_f0_zero": 4174
+   },
+   "seconds": 4.116
+  },
+  {
+   "family": "candidate_weighted_sums",
+   "checks": 4595,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {
+    "configs_miller_only": 518,
+    "configs_with_branch_pole": 560,
+    "configs_with_constant": 809,
+    "configs_with_pole_zero": 669,
+    "configs_with_second_kind": 1102,
+    "configs_with_several_poles": 1410,
+    "exceptional_queries": 356,
+    "kind_affine_points": 1620,
+    "kind_character": 1620,
+    "kind_projective_points": 1193,
+    "oracle_calls": 20439,
+    "projective_with_polynomial_routed_unsupported": 427,
+    "split_fallbacks": 1911
+   },
+   "seconds": 4.167
+  },
+  {
+   "family": "quartic_pole_at_infinity",
+   "checks": 324,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {
+    "exceptional_queries": 1
+   },
+   "seconds": 1.931
+  },
+  {
+   "family": "degenerate_and_large_s_domains",
+   "checks": 96,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {
+    "degenerate_route": 48
+   },
+   "seconds": 0.064
+  },
+  {
+   "family": "trace_endpoint_check",
+   "checks": 648,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {
+    "wrong_trace_detected_by_cp1_check": 162,
+    "wrong_trace_detected_by_some_query": 162,
+    "wrong_trace_queries": 648,
+    "wrong_trace_queries_detected": 629,
+    "wrong_trace_trials": 162
+   },
+   "seconds": 2.111
+  },
+  {
+   "family": "partial_fraction_route",
+   "checks": 122,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {
+    "extension_poles_routed_unsupported": 43
+   },
+   "seconds": 0.069
+  },
+  {
+   "family": "invalid_and_unsupported_inputs",
+   "checks": 30,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {
+    "case_names": [
+     "p composite",
+     "p too small",
+     "p too large",
+     "p bool",
+     "degree 2",
+     "degree 5",
+     "leading zero mod p",
+     "not squarefree",
+     "float coefficient",
+     "trace outside Hasse",
+     "trace not integer",
+     "no trace, budget",
+     "pole negative",
+     "pole >= p",
+     "pole bool",
+     "repeated pole",
+     "non-integer weight",
+     "unknown kind",
+     "branch pole without second-kind data",
+     "cubic linear polynomial part without data",
+     "double pole without data",
+     "polynomial part degree 4",
+     "double pole at branch",
+     "projective with polynomial part",
+     "extension-field denominator",
+     "supplied cubic data inconsistent",
+     "supplied data contradict trace",
+     "truncation at zero",
+     "quartic branch in inherited RowSession",
+     "second-kind budget"
+    ],
+    "rejected_or_routed": 30
+   },
+   "seconds": 0.005
+  },
+  {
+   "family": "medium_prime_ground_truth",
+   "checks": 147,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {
+    "exceptional_queries": 0,
+    "oracle_calls": 241,
+    "split_fallbacks": 0
+   },
+   "seconds": 4.993
+  },
+  {
+   "family": "large_prime_internal_consistency",
+   "checks": 252,
+   "failures": 0,
+   "failure_examples": [],
+   "counters": {
+    "exceptional": 0,
+    "queries": 80,
+    "split_fallbacks": 31,
+    "wrong_trace_detected": 12
+   },
+   "seconds": 2.224
+  }
+ ],
+ "environment": {
+  "python": "3.13.16",
+  "implementation": "CPython",
+  "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "numpy": "2.5.3",
+  "python_flint": "0.9.0",
+  "cypari2": "present",
+  "pari": "2.17.2",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+  "cpu_count": 2
+ },
+ "file_hashes": {
+  "src/cmcs.py": "763c86811e5b43bb0c00791f83083420c27232a04d131633c6a6c3552bb3e59c",
+  "src/reference.py": "b877b6261a04fa0706b5118ee691c5f76ab5018dca50f09c895265acc8793def",
+  "src/harness.py": "35b45da5977696d6272362b0c2937ab1389ee392982a0ecc4acc3199e0783355",
+  "src/environment.py": "c54fe5be2a1ffe0ba82f12d8052e892b9922dde6e73581013710e14ed54751ca",
+  "src/develop.py": "0b8369b49914387774ce1cd6861fb48a9aedf4f3031aca37fd704a685158a5d9",
+  "src/confirm.py": "d97ee893ca344d91aacb05c48b7f50c701e56b20fcb02407f6e988aeba390e4e",
+  "src/verify_character_identities_extended.py": "8686300cac8b275e93fc885577fad8b0eab5bca8e78fc1416d0ac73a0c4553c0",
+  "supplied/verify_character_identities.py": "4326a945ba465bcf72013564bc03c4e05ee7dd279e03200a3c8e6de73f95f0e9",
+  "vendor/cm_system/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "vendor/cm_system/__main__.py": "1e47640237a3fbf026a20c2cf09518c63c59959451e334069db31bb5d02fbbf0",
+  "vendor/cm_system/api.py": "74eaa4098775cc5a6abaaa4442cbe0c0be67a0cdce978ba34728532b35d6f062",
+  "vendor/cm_system/rows.py": "e50974fa4b7d43b65401d001ca1c013bb74dc7f450e52e3d25dab34d1d6f2e01",
+  "vendor/cm_system/backends/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "vendor/cm_system/backends/elliptic.py": "3e79d82c931f41f3091e98f6f65783ce958f13851e2c6f05283efa2152c0634d",
+  "vendor/cm_system/backends/general_argument.py": "420c9a40a63cdfa886da7b4c954b88e66c3f6a097c2e9bbe38fb91dc185d9cba",
+  "vendor/cm_system/backends/hyperelliptic_prefix.py": "fc3b4b01ca4b28e85b927a55dfa2d341ba508dbef5c807e70272caef30a9b2ee",
+  "vendor/cm_system/backends/ordinary_third.py": "61eaddb9e22f205682f1ea55a7da7b93546d289a181a10bc0fe4860e0d87caae",
+  "vendor/cm_system/backends/padic_lift.py": "e9644141a56f14ad5503443a4a19c42d20bffd962e4900caec73702dcffb6606",
+  "vendor/cm_system/backends/polyzq.py": "35532b145c6579af09d3b106af90525010e53bec2c2be22e22575b5602a0d394",
+  "vendor/cm_system/backends/product_tree.py": "66dae9586478451bc41497690c2b63ccd016526fe784327870b1498fabe6e37c",
+  "vendor/cm_system/backends/witt_check.py": "40d6595f01a06474bfffcbc155129e731b14bb0fccada7f812ed7edc848aee43",
+  "vendor/cm_system/backends/cm/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "vendor/cm_system/backends/cm/d7_seed.py": "aac40a8922b4188b7a1d03986c6c157f0ed93cecd9d6b1f821f4d40686085194",
+  "vendor/cm_system/backends/cm/fixed_D_evaluator.py": "dcb1c81b93bed09d8f4c273ba653673c0a0f0c1379c2534fcee30ad0c4fa2cc4",
+  "vendor/cm_system/backends/genus_one/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "vendor/cm_system/backends/genus_one/curve.py": "c40c5fedeb5cd0586eaf8f198be7347c5854f152bdfb286cdcad818935e0794a",
+  "vendor/cm_system/backends/genus_one/fields.py": "e2a6a5313567dc1fabe0d21f66263fc95f96ec4d0dc2b709463d47391969a3d2",
+  "vendor/cm_system/backends/genus_one/miller.py": "7837b26f2ad2c85e34ce97ea778ee4748d5a0d4ebe6c7bbddb6a24a7fb4e2629",
+  "vendor/cm_system/backends/genus_one/reference.py": "8da2ff121d42781ea8d4316000feb827a9f328b0b68f7e394dcf7c6852348f46"
+ }
+}

@@ -1,0 +1,215 @@
+{
+ "note": "post-freeze exploratory timing; trace supplied to both methods",
+ "rows": [
+  {
+   "bits": 20,
+   "d": 3,
+   "mismatches": 0,
+   "cmcs_frozen_median_s_per_query": 0.00026974525,
+   "voloch_zeta_route_median_s_per_query": 0.000126300265625,
+   "cmcs_frozen_blocks_s_per_query": [
+    0.000280633609375,
+    0.000407558453125,
+    0.00026974525,
+    0.000235810515625,
+    0.00022059715625
+   ],
+   "voloch_zeta_route_blocks_s_per_query": [
+    0.000273878484375,
+    0.00012437175,
+    0.000126300265625,
+    0.00014221896875,
+    0.00011856971875
+   ]
+  },
+  {
+   "bits": 20,
+   "d": 4,
+   "mismatches": 0,
+   "cmcs_frozen_median_s_per_query": 0.000228349140625,
+   "voloch_zeta_route_median_s_per_query": 0.000118124140625,
+   "cmcs_frozen_blocks_s_per_query": [
+    0.0002218334375,
+    0.000225217359375,
+    0.000228349140625,
+    0.000236799734375,
+    0.00024211309375
+   ],
+   "voloch_zeta_route_blocks_s_per_query": [
+    0.000119399375,
+    0.00012446525,
+    0.00011587525,
+    0.000111558359375,
+    0.000118124140625
+   ]
+  },
+  {
+   "bits": 30,
+   "d": 3,
+   "mismatches": 0,
+   "cmcs_frozen_median_s_per_query": 0.000397964640625,
+   "voloch_zeta_route_median_s_per_query": 0.000253588703125,
+   "cmcs_frozen_blocks_s_per_query": [
+    0.00048509225,
+    0.0005629194375,
+    0.000362731625,
+    0.000397964640625,
+    0.000357778796875
+   ],
+   "voloch_zeta_route_blocks_s_per_query": [
+    0.0002570803125,
+    0.000253588703125,
+    0.000211083515625,
+    0.000221926640625,
+    0.000292370140625
+   ]
+  },
+  {
+   "bits": 30,
+   "d": 4,
+   "mismatches": 0,
+   "cmcs_frozen_median_s_per_query": 0.0003540781875,
+   "voloch_zeta_route_median_s_per_query": 0.0002193154375,
+   "cmcs_frozen_blocks_s_per_query": [
+    0.000420865859375,
+    0.000360794203125,
+    0.000344088796875,
+    0.0003540781875,
+    0.000338400171875
+   ],
+   "voloch_zeta_route_blocks_s_per_query": [
+    0.00022220015625,
+    0.0002054733125,
+    0.000197968921875,
+    0.0002193154375,
+    0.000227684578125
+   ]
+  },
+  {
+   "bits": 40,
+   "d": 3,
+   "mismatches": 0,
+   "cmcs_frozen_median_s_per_query": 0.000658586984375,
+   "voloch_zeta_route_median_s_per_query": 0.000482023390625,
+   "cmcs_frozen_blocks_s_per_query": [
+    0.0005986699375,
+    0.000625300953125,
+    0.000736623109375,
+    0.00067799853125,
+    0.000658586984375
+   ],
+   "voloch_zeta_route_blocks_s_per_query": [
+    0.000407181734375,
+    0.0004951551875,
+    0.000482888484375,
+    0.000482023390625,
+    0.00046961915625
+   ]
+  },
+  {
+   "bits": 40,
+   "d": 4,
+   "mismatches": 0,
+   "cmcs_frozen_median_s_per_query": 0.000680150609375,
+   "voloch_zeta_route_median_s_per_query": 0.00044161265625,
+   "cmcs_frozen_blocks_s_per_query": [
+    0.00069167434375,
+    0.000680150609375,
+    0.000698585453125,
+    0.000647891953125,
+    0.000619197296875
+   ],
+   "voloch_zeta_route_blocks_s_per_query": [
+    0.000429068015625,
+    0.00048437315625,
+    0.000485837546875,
+    0.000434894703125,
+    0.00044161265625
+   ]
+  },
+  {
+   "bits": 50,
+   "d": 3,
+   "mismatches": 0,
+   "cmcs_frozen_median_s_per_query": 0.00089084690625,
+   "voloch_zeta_route_median_s_per_query": 0.00072480009375,
+   "cmcs_frozen_blocks_s_per_query": [
+    0.000900759609375,
+    0.00099517890625,
+    0.000804614171875,
+    0.00089084690625,
+    0.000882807359375
+   ],
+   "voloch_zeta_route_blocks_s_per_query": [
+    0.00075566796875,
+    0.00078344034375,
+    0.00068562459375,
+    0.00068769115625,
+    0.00072480009375
+   ]
+  },
+  {
+   "bits": 50,
+   "d": 4,
+   "mismatches": 0,
+   "cmcs_frozen_median_s_per_query": 0.000884563703125,
+   "voloch_zeta_route_median_s_per_query": 0.00082200178125,
+   "cmcs_frozen_blocks_s_per_query": [
+    0.0008998199375,
+    0.000959329390625,
+    0.000841222671875,
+    0.000823879296875,
+    0.000884563703125
+   ],
+   "voloch_zeta_route_blocks_s_per_query": [
+    0.00087439634375,
+    0.000827084140625,
+    0.000673094390625,
+    0.000690367953125,
+    0.00082200178125
+   ]
+  },
+  {
+   "bits": 62,
+   "d": 3,
+   "mismatches": 0,
+   "cmcs_frozen_median_s_per_query": 0.001379272328125,
+   "voloch_zeta_route_median_s_per_query": 0.001081731203125,
+   "cmcs_frozen_blocks_s_per_query": [
+    0.001363757265625,
+    0.00222540646875,
+    0.001396473578125,
+    0.001379272328125,
+    0.00132369790625
+   ],
+   "voloch_zeta_route_blocks_s_per_query": [
+    0.001081731203125,
+    0.001250360203125,
+    0.00111653965625,
+    0.0010558484375,
+    0.001060884890625
+   ]
+  },
+  {
+   "bits": 62,
+   "d": 4,
+   "mismatches": 0,
+   "cmcs_frozen_median_s_per_query": 0.001296068109375,
+   "voloch_zeta_route_median_s_per_query": 0.0011206150625,
+   "cmcs_frozen_blocks_s_per_query": [
+    0.001433029515625,
+    0.00122106075,
+    0.001390327859375,
+    0.001296068109375,
+    0.001256012515625
+   ],
+   "voloch_zeta_route_blocks_s_per_query": [
+    0.0011102689375,
+    0.00106829734375,
+    0.001174038015625,
+    0.0011206150625,
+    0.0011218519375
+   ]
+  }
+ ]
+}

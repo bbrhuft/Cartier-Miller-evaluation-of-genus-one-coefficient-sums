@@ -1,0 +1,26 @@
+{
+ "closed_form_branch": {
+  "checks": 97,
+  "failures": 0
+ },
+ "jets": {
+  "queries": 242,
+  "value_matches": 242,
+  "derivative_matches": 3,
+  "degenerate_skipped": 260
+ },
+ "pointwise_exclusion_remark": {
+  "checks": 1550,
+  "failures": 0
+ },
+ "double_poles_and_polynomial_parts": {
+  "double_checks": 6281,
+  "poly_checks": 126,
+  "failures": 0,
+  "quartic_linear_via_miller": 21
+ },
+ "supplied_second_kind_path": {
+  "checks": 1416,
+  "failures": 0
+ }
+}

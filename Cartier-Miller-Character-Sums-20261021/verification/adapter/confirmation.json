@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "mode": "confirmation",
+  "primes": [
+    23,
+    29,
+    31,
+    37,
+    41,
+    43
+  ],
+  "source_freeze_digest": "8550b7780d9f4b44dcdac3e8b21774c6f8e3f7133f7c1e6ed28500a0caea9f73",
+  "models": 120,
+  "zero_constant_models": 4,
+  "quartics_without_rational_infinity": 34,
+  "weighted_queries": 960,
+  "output_residue_comparisons": 5760,
+  "empty_affine_domains": 126,
+  "zero_poles": 376,
+  "extra_exclusions": 511,
+  "branch_exclusions": 175,
+  "constant_only_queries": 139,
+  "cached_queries": 960,
+  "explicit_domain_counterexamples_checked": 1,
+  "small_field_order_2p_checks": 1,
+  "invalid_inputs_rejected": 12
+}

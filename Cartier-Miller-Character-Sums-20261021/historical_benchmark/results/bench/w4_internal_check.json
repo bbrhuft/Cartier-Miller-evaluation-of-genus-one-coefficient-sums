@@ -1,0 +1,18 @@
+{
+ "policy": "internal consistency only (one family): two translation parameters, endpoint test, exact correction; compared with both recorded W4 outputs",
+ "groups": [
+  {
+   "group": "b62_d3_s1-256",
+   "items": 27,
+   "poles_checked": 1533,
+   "items_agreeing": 27
+  },
+  {
+   "group": "b62_d4_s1-256",
+   "items": 27,
+   "poles_checked": 1533,
+   "items_agreeing": 27
+  }
+ ],
+ "mismatches": 0
+}

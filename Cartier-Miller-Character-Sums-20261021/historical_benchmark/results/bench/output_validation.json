@@ -1,0 +1,3922 @@
+{
+ "rows": [
+  {
+   "workload": "TRACE",
+   "group": "b10_d3",
+   "method": "cmcs_frozen",
+   "direct count": 1800
+  },
+  {
+   "workload": "TRACE",
+   "group": "b10_d4",
+   "method": "cmcs_frozen",
+   "direct count": 1800
+  },
+  {
+   "workload": "TRACE",
+   "group": "b13_d3",
+   "method": "cmcs_frozen",
+   "direct count": 1800
+  },
+  {
+   "workload": "TRACE",
+   "group": "b13_d4",
+   "method": "cmcs_frozen",
+   "direct count": 1800
+  },
+  {
+   "workload": "TRACE",
+   "group": "b16_d3",
+   "method": "cmcs_frozen",
+   "direct count": 1800
+  },
+  {
+   "workload": "TRACE",
+   "group": "b16_d4",
+   "method": "cmcs_frozen",
+   "direct count": 1800
+  },
+  {
+   "workload": "TRACE",
+   "group": "b20_d3",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 1800
+  },
+  {
+   "workload": "TRACE",
+   "group": "b20_d4",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 1800
+  },
+  {
+   "workload": "TRACE",
+   "group": "b23_d3",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 1800
+  },
+  {
+   "workload": "TRACE",
+   "group": "b23_d4",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 1800
+  },
+  {
+   "workload": "TRACE",
+   "group": "b26_d3",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 1764
+  },
+  {
+   "workload": "TRACE",
+   "group": "b26_d4",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 1800
+  },
+  {
+   "workload": "TRACE",
+   "group": "b30_d3",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 1800
+  },
+  {
+   "workload": "TRACE",
+   "group": "b30_d4",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 1800
+  },
+  {
+   "workload": "TRACE",
+   "group": "b33_d3",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 1800
+  },
+  {
+   "workload": "TRACE",
+   "group": "b33_d4",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 1620
+  },
+  {
+   "workload": "TRACE",
+   "group": "b36_d3",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 1512
+  },
+  {
+   "workload": "TRACE",
+   "group": "b36_d4",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 1431
+  },
+  {
+   "workload": "TRACE",
+   "group": "b40_d3",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 864
+  },
+  {
+   "workload": "TRACE",
+   "group": "b40_d4",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 981
+  },
+  {
+   "workload": "TRACE",
+   "group": "b48_d3",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 144
+  },
+  {
+   "workload": "TRACE",
+   "group": "b48_d4",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 243
+  },
+  {
+   "workload": "TRACE",
+   "group": "b56_d3",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 36
+  },
+  {
+   "workload": "TRACE",
+   "group": "b56_d4",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 81
+  },
+  {
+   "workload": "TRACE",
+   "group": "b62_d3",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 9
+  },
+  {
+   "workload": "TRACE",
+   "group": "b62_d4",
+   "method": "cmcs_frozen",
+   "Hasse bound; downstream cmcs outputs validated": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d3",
+   "method": "bgs07",
+   "direct": 81
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d3",
+   "method": "bgs_harvey",
+   "direct": 243
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d3",
+   "method": "cmcs_frozen",
+   "direct": 1197
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d3",
+   "method": "enum_c",
+   "direct": 1800
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d3",
+   "method": "enum_conv",
+   "direct": 648
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d3",
+   "method": "flint_power",
+   "direct": 1800
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d3",
+   "method": "linrec_c",
+   "direct": 1800
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d3",
+   "method": "linrec_py",
+   "direct": 936
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d3",
+   "method": "polyrec_c",
+   "direct": 1800
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d4",
+   "method": "bgs07",
+   "direct": 36
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d4",
+   "method": "bgs_harvey",
+   "direct": 360
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d4",
+   "method": "cmcs_frozen",
+   "direct": 882
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d4",
+   "method": "enum_c",
+   "direct": 1800
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d4",
+   "method": "enum_conv",
+   "direct": 594
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d4",
+   "method": "flint_power",
+   "direct": 1800
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d4",
+   "method": "linrec_c",
+   "direct": 1800
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d4",
+   "method": "linrec_py",
+   "direct": 324
+  },
+  {
+   "workload": "W1",
+   "group": "b10_d4",
+   "method": "polyrec_c",
+   "direct": 1458
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d3",
+   "method": "bgs07",
+   "direct": 45
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d3",
+   "method": "bgs_harvey",
+   "direct": 180
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d3",
+   "method": "cmcs_frozen",
+   "direct": 1107
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d3",
+   "method": "enum_c",
+   "direct": 1206
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d3",
+   "method": "enum_conv",
+   "direct": 99
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d3",
+   "method": "flint_power",
+   "direct": 477
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d3",
+   "method": "linrec_c",
+   "direct": 999
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d3",
+   "method": "linrec_py",
+   "direct": 90
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d3",
+   "method": "polyrec_c",
+   "direct": 891
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d4",
+   "method": "bgs07",
+   "direct": 18
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d4",
+   "method": "bgs_harvey",
+   "direct": 153
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d4",
+   "method": "cmcs_frozen",
+   "direct": 1035
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d4",
+   "method": "enum_c",
+   "direct": 1098
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d4",
+   "method": "enum_conv",
+   "direct": 99
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d4",
+   "method": "flint_power",
+   "direct": 351
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d4",
+   "method": "linrec_c",
+   "direct": 666
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d4",
+   "method": "linrec_py",
+   "direct": 54
+  },
+  {
+   "workload": "W1",
+   "group": "b13_d4",
+   "method": "polyrec_c",
+   "direct": 279
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d3",
+   "method": "bgs07",
+   "consensus": 27
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d3",
+   "method": "bgs_harvey",
+   "consensus": 108
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d3",
+   "method": "cmcs_frozen",
+   "consensus": 198,
+   "internal": 666
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d3",
+   "method": "enum_c",
+   "consensus": 171
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d3",
+   "method": "enum_conv",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d3",
+   "method": "flint_power",
+   "consensus": 36
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d3",
+   "method": "linrec_c",
+   "consensus": 198
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d3",
+   "method": "linrec_py",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d3",
+   "method": "polyrec_c",
+   "consensus": 81
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d4",
+   "method": "bgs07",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d4",
+   "method": "bgs_harvey",
+   "consensus": 72
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d4",
+   "method": "cmcs_frozen",
+   "consensus": 180,
+   "internal": 684
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d4",
+   "method": "enum_c",
+   "consensus": 180
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d4",
+   "method": "enum_conv",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d4",
+   "method": "flint_power",
+   "consensus": 36
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d4",
+   "method": "linrec_c",
+   "consensus": 90
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d4",
+   "method": "linrec_py",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b16_d4",
+   "method": "polyrec_c",
+   "consensus": 63
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d3",
+   "method": "bgs07",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d3",
+   "method": "bgs_harvey",
+   "consensus": 45
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d3",
+   "method": "cmcs_frozen",
+   "consensus": 45,
+   "internal": 468
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d3",
+   "method": "enum_c",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d3",
+   "method": "enum_conv",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d3",
+   "method": "flint_power",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d3",
+   "method": "linrec_c",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d3",
+   "method": "linrec_py",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d3",
+   "method": "polyrec_c",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d4",
+   "method": "bgs07",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d4",
+   "method": "bgs_harvey",
+   "consensus": 27
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d4",
+   "method": "cmcs_frozen",
+   "consensus": 27,
+   "internal": 864
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d4",
+   "method": "enum_c",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d4",
+   "method": "enum_conv",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d4",
+   "method": "flint_power",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d4",
+   "method": "linrec_c",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d4",
+   "method": "linrec_py",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b20_d4",
+   "method": "polyrec_c",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b23_d3",
+   "method": "bgs07",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b23_d3",
+   "method": "bgs_harvey",
+   "consensus": 27
+  },
+  {
+   "workload": "W1",
+   "group": "b23_d3",
+   "method": "cmcs_frozen",
+   "consensus": 27,
+   "internal": 765
+  },
+  {
+   "workload": "W1",
+   "group": "b23_d3",
+   "method": "enum_c",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b23_d3",
+   "method": "linrec_c",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b23_d3",
+   "method": "polyrec_c",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b23_d4",
+   "method": "bgs07",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b23_d4",
+   "method": "bgs_harvey",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b23_d4",
+   "method": "cmcs_frozen",
+   "consensus": 9,
+   "internal": 936
+  },
+  {
+   "workload": "W1",
+   "group": "b23_d4",
+   "method": "enum_c",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b23_d4",
+   "method": "linrec_c",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b23_d4",
+   "method": "polyrec_c",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b26_d3",
+   "method": "bgs07",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b26_d3",
+   "method": "bgs_harvey",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b26_d3",
+   "method": "cmcs_frozen",
+   "consensus": 9,
+   "internal": 675
+  },
+  {
+   "workload": "W1",
+   "group": "b26_d3",
+   "method": "linrec_c",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b26_d4",
+   "method": "bgs07",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b26_d4",
+   "method": "bgs_harvey",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b26_d4",
+   "method": "cmcs_frozen",
+   "consensus": 9,
+   "internal": 702
+  },
+  {
+   "workload": "W1",
+   "group": "b30_d3",
+   "method": "bgs07",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b30_d3",
+   "method": "bgs_harvey",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b30_d3",
+   "method": "cmcs_frozen",
+   "consensus": 9,
+   "internal": 576
+  },
+  {
+   "workload": "W1",
+   "group": "b30_d4",
+   "method": "bgs07",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b30_d4",
+   "method": "bgs_harvey",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b30_d4",
+   "method": "cmcs_frozen",
+   "consensus": 9,
+   "internal": 612
+  },
+  {
+   "workload": "W1",
+   "group": "b33_d3",
+   "method": "bgs07",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b33_d3",
+   "method": "bgs_harvey",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b33_d3",
+   "method": "cmcs_frozen",
+   "consensus": 9,
+   "internal": 513
+  },
+  {
+   "workload": "W1",
+   "group": "b33_d4",
+   "method": "bgs07",
+   "consensus": 5
+  },
+  {
+   "workload": "W1",
+   "group": "b33_d4",
+   "method": "bgs_harvey",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b33_d4",
+   "method": "cmcs_frozen",
+   "consensus": 9,
+   "internal": 387
+  },
+  {
+   "workload": "W1",
+   "group": "b36_d3",
+   "method": "bgs07",
+   "consensus": 3
+  },
+  {
+   "workload": "W1",
+   "group": "b36_d3",
+   "method": "bgs_harvey",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b36_d3",
+   "method": "cmcs_frozen",
+   "consensus": 9,
+   "internal": 378
+  },
+  {
+   "workload": "W1",
+   "group": "b36_d4",
+   "method": "bgs07",
+   "consensus": 3
+  },
+  {
+   "workload": "W1",
+   "group": "b36_d4",
+   "method": "bgs_harvey",
+   "consensus": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b36_d4",
+   "method": "cmcs_frozen",
+   "consensus": 9,
+   "internal": 342
+  },
+  {
+   "workload": "W1",
+   "group": "b40_d3",
+   "method": "bgs07",
+   "consensus": 2
+  },
+  {
+   "workload": "W1",
+   "group": "b40_d3",
+   "method": "bgs_harvey",
+   "consensus": 6
+  },
+  {
+   "workload": "W1",
+   "group": "b40_d3",
+   "method": "cmcs_frozen",
+   "consensus": 6,
+   "internal": 363
+  },
+  {
+   "workload": "W1",
+   "group": "b40_d4",
+   "method": "bgs_harvey",
+   "consensus": 3
+  },
+  {
+   "workload": "W1",
+   "group": "b40_d4",
+   "method": "cmcs_frozen",
+   "consensus": 3,
+   "internal": 321
+  },
+  {
+   "workload": "W1",
+   "group": "b48_d3",
+   "method": "cmcs_frozen",
+   "internal": 135
+  },
+  {
+   "workload": "W1",
+   "group": "b48_d4",
+   "method": "cmcs_frozen",
+   "internal": 117
+  },
+  {
+   "workload": "W1",
+   "group": "b56_d3",
+   "method": "cmcs_frozen",
+   "internal": 63
+  },
+  {
+   "workload": "W1",
+   "group": "b56_d4",
+   "method": "cmcs_frozen",
+   "internal": 36
+  },
+  {
+   "workload": "W1",
+   "group": "b62_d3",
+   "method": "cmcs_frozen",
+   "internal": 9
+  },
+  {
+   "workload": "W1",
+   "group": "b62_d4",
+   "method": "cmcs_frozen",
+   "internal": 9
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q1",
+   "method": "bgs07",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q1",
+   "method": "bgs_harvey",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q1",
+   "method": "cmcs_frozen",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q1",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q1",
+   "method": "enum_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q1",
+   "method": "enum_conv",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q1",
+   "method": "flint_power",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q1",
+   "method": "flint_power+multipoint",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q1",
+   "method": "linrec_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q1",
+   "method": "polyrec_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q1",
+   "method": "polyrec_c+multipoint",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q512",
+   "method": "bgs07",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q512",
+   "method": "bgs_harvey",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q512",
+   "method": "cmcs_frozen",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q512",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q512",
+   "method": "enum_c",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q512",
+   "method": "enum_conv",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q512",
+   "method": "flint_power",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q512",
+   "method": "flint_power+multipoint",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q512",
+   "method": "linrec_c",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q512",
+   "method": "polyrec_c",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q512",
+   "method": "polyrec_c+multipoint",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q64",
+   "method": "bgs07",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q64",
+   "method": "bgs_harvey",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q64",
+   "method": "cmcs_frozen",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q64",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q64",
+   "method": "enum_c",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q64",
+   "method": "enum_conv",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q64",
+   "method": "flint_power",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q64",
+   "method": "flint_power+multipoint",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q64",
+   "method": "linrec_c",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q64",
+   "method": "polyrec_c",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q64",
+   "method": "polyrec_c+multipoint",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q8",
+   "method": "bgs07",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q8",
+   "method": "bgs_harvey",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q8",
+   "method": "cmcs_frozen",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q8",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q8",
+   "method": "enum_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q8",
+   "method": "enum_conv",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q8",
+   "method": "flint_power",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q8",
+   "method": "flint_power+multipoint",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q8",
+   "method": "linrec_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q8",
+   "method": "polyrec_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d3_Q8",
+   "method": "polyrec_c+multipoint",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q1",
+   "method": "bgs07",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q1",
+   "method": "bgs_harvey",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q1",
+   "method": "cmcs_frozen",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q1",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q1",
+   "method": "enum_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q1",
+   "method": "enum_conv",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q1",
+   "method": "flint_power",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q1",
+   "method": "flint_power+multipoint",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q1",
+   "method": "linrec_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q1",
+   "method": "polyrec_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q1",
+   "method": "polyrec_c+multipoint",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q512",
+   "method": "bgs07",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q512",
+   "method": "bgs_harvey",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q512",
+   "method": "cmcs_frozen",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q512",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q512",
+   "method": "enum_c",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q512",
+   "method": "enum_conv",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q512",
+   "method": "flint_power",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q512",
+   "method": "flint_power+multipoint",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q512",
+   "method": "linrec_c",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q512",
+   "method": "polyrec_c",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q512",
+   "method": "polyrec_c+multipoint",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q64",
+   "method": "bgs07",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q64",
+   "method": "bgs_harvey",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q64",
+   "method": "cmcs_frozen",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q64",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q64",
+   "method": "enum_c",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q64",
+   "method": "enum_conv",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q64",
+   "method": "flint_power",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q64",
+   "method": "flint_power+multipoint",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q64",
+   "method": "linrec_c",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q64",
+   "method": "polyrec_c",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q64",
+   "method": "polyrec_c+multipoint",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q8",
+   "method": "bgs07",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q8",
+   "method": "bgs_harvey",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q8",
+   "method": "cmcs_frozen",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q8",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q8",
+   "method": "enum_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q8",
+   "method": "enum_conv",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q8",
+   "method": "flint_power",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q8",
+   "method": "flint_power+multipoint",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q8",
+   "method": "linrec_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q8",
+   "method": "polyrec_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b16_d4_Q8",
+   "method": "polyrec_c+multipoint",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q1",
+   "method": "bgs07",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q1",
+   "method": "bgs_harvey",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q1",
+   "method": "cmcs_frozen",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q1",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q1",
+   "method": "enum_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q1",
+   "method": "enum_conv",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q1",
+   "method": "flint_power",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q1",
+   "method": "flint_power+multipoint",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q1",
+   "method": "linrec_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q1",
+   "method": "polyrec_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q1",
+   "method": "polyrec_c+multipoint",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q512",
+   "method": "bgs07",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q512",
+   "method": "bgs_harvey",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q512",
+   "method": "cmcs_frozen",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q512",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q512",
+   "method": "enum_c",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q512",
+   "method": "enum_conv",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q512",
+   "method": "flint_power",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q512",
+   "method": "flint_power+multipoint",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q512",
+   "method": "linrec_c",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q512",
+   "method": "polyrec_c",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q512",
+   "method": "polyrec_c+multipoint",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q64",
+   "method": "bgs07",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q64",
+   "method": "bgs_harvey",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q64",
+   "method": "cmcs_frozen",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q64",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q64",
+   "method": "enum_c",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q64",
+   "method": "enum_conv",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q64",
+   "method": "flint_power",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q64",
+   "method": "flint_power+multipoint",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q64",
+   "method": "linrec_c",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q64",
+   "method": "polyrec_c",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q64",
+   "method": "polyrec_c+multipoint",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q8",
+   "method": "bgs07",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q8",
+   "method": "bgs_harvey",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q8",
+   "method": "cmcs_frozen",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q8",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q8",
+   "method": "enum_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q8",
+   "method": "enum_conv",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q8",
+   "method": "flint_power",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q8",
+   "method": "flint_power+multipoint",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q8",
+   "method": "linrec_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q8",
+   "method": "polyrec_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d3_Q8",
+   "method": "polyrec_c+multipoint",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q1",
+   "method": "bgs07",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q1",
+   "method": "bgs_harvey",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q1",
+   "method": "cmcs_frozen",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q1",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q1",
+   "method": "enum_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q1",
+   "method": "enum_conv",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q1",
+   "method": "flint_power",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q1",
+   "method": "flint_power+multipoint",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q1",
+   "method": "linrec_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q1",
+   "method": "polyrec_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q1",
+   "method": "polyrec_c+multipoint",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q512",
+   "method": "bgs_harvey",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q512",
+   "method": "cmcs_frozen",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q512",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q512",
+   "method": "enum_c",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q512",
+   "method": "enum_conv",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q512",
+   "method": "flint_power",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q512",
+   "method": "flint_power+multipoint",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q512",
+   "method": "polyrec_c",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q512",
+   "method": "polyrec_c+multipoint",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q64",
+   "method": "bgs07",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q64",
+   "method": "bgs_harvey",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q64",
+   "method": "cmcs_frozen",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q64",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q64",
+   "method": "enum_c",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q64",
+   "method": "enum_conv",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q64",
+   "method": "flint_power",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q64",
+   "method": "flint_power+multipoint",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q64",
+   "method": "linrec_c",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q64",
+   "method": "polyrec_c",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q64",
+   "method": "polyrec_c+multipoint",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q8",
+   "method": "bgs07",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q8",
+   "method": "bgs_harvey",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q8",
+   "method": "cmcs_frozen",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q8",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q8",
+   "method": "enum_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q8",
+   "method": "enum_conv",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q8",
+   "method": "flint_power",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q8",
+   "method": "flint_power+multipoint",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q8",
+   "method": "linrec_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q8",
+   "method": "polyrec_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b20_d4_Q8",
+   "method": "polyrec_c+multipoint",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q1",
+   "method": "bgs07",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q1",
+   "method": "bgs_harvey",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q1",
+   "method": "cmcs_frozen",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q1",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q1",
+   "method": "enum_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q1",
+   "method": "flint_power",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q1",
+   "method": "flint_power+multipoint",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q1",
+   "method": "linrec_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q1",
+   "method": "polyrec_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q1",
+   "method": "polyrec_c+multipoint",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q512",
+   "method": "bgs_harvey",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q512",
+   "method": "cmcs_frozen",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q512",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q512",
+   "method": "flint_power",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q512",
+   "method": "flint_power+multipoint",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q512",
+   "method": "polyrec_c",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q512",
+   "method": "polyrec_c+multipoint",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q64",
+   "method": "bgs07",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q64",
+   "method": "bgs_harvey",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q64",
+   "method": "cmcs_frozen",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q64",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q64",
+   "method": "enum_c",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q64",
+   "method": "flint_power",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q64",
+   "method": "flint_power+multipoint",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q64",
+   "method": "linrec_c",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q64",
+   "method": "polyrec_c",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q64",
+   "method": "polyrec_c+multipoint",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q8",
+   "method": "bgs07",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q8",
+   "method": "bgs_harvey",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q8",
+   "method": "cmcs_frozen",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q8",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q8",
+   "method": "enum_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q8",
+   "method": "flint_power",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q8",
+   "method": "flint_power+multipoint",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q8",
+   "method": "linrec_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q8",
+   "method": "polyrec_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d3_Q8",
+   "method": "polyrec_c+multipoint",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q1",
+   "method": "bgs07",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q1",
+   "method": "bgs_harvey",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q1",
+   "method": "cmcs_frozen",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q1",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q1",
+   "method": "enum_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q1",
+   "method": "flint_power",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q1",
+   "method": "flint_power+multipoint",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q1",
+   "method": "linrec_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q1",
+   "method": "polyrec_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q1",
+   "method": "polyrec_c+multipoint",
+   "consensus": 5
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q512",
+   "method": "cmcs_frozen",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q512",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q512",
+   "method": "flint_power",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q512",
+   "method": "flint_power+multipoint",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q512",
+   "method": "polyrec_c",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q512",
+   "method": "polyrec_c+multipoint",
+   "consensus": 2560
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q64",
+   "method": "bgs07",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q64",
+   "method": "bgs_harvey",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q64",
+   "method": "cmcs_frozen",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q64",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q64",
+   "method": "enum_c",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q64",
+   "method": "flint_power",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q64",
+   "method": "flint_power+multipoint",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q64",
+   "method": "polyrec_c",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q64",
+   "method": "polyrec_c+multipoint",
+   "consensus": 320
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q8",
+   "method": "bgs07",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q8",
+   "method": "bgs_harvey",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q8",
+   "method": "cmcs_frozen",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q8",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q8",
+   "method": "enum_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q8",
+   "method": "flint_power",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q8",
+   "method": "flint_power+multipoint",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q8",
+   "method": "linrec_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q8",
+   "method": "polyrec_c",
+   "consensus": 40
+  },
+  {
+   "workload": "W2",
+   "group": "b23_d4_Q8",
+   "method": "polyrec_c+multipoint",
+   "consensus": 40
+  },
+  {
+   "workload": "W3",
+   "group": "b20_d3_s8_V1000",
+   "method": "bgs_harvey",
+   "consensus": 5000
+  },
+  {
+   "workload": "W3",
+   "group": "b20_d3_s8_V1000",
+   "method": "cmcs_frozen",
+   "consensus": 5000
+  },
+  {
+   "workload": "W3",
+   "group": "b20_d3_s8_V1000",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 5000
+  },
+  {
+   "workload": "W3",
+   "group": "b20_d3_s8_V1000",
+   "method": "enum_c",
+   "consensus": 5000
+  },
+  {
+   "workload": "W3",
+   "group": "b20_d3_s8_V1000",
+   "method": "linrec_c",
+   "consensus": 5000
+  },
+  {
+   "workload": "W3",
+   "group": "b20_d3_s8_V1000",
+   "method": "polyrec_c",
+   "consensus": 5000
+  },
+  {
+   "workload": "W3",
+   "group": "b20_d4_s8_V1000",
+   "method": "bgs_harvey",
+   "consensus": 5000
+  },
+  {
+   "workload": "W3",
+   "group": "b20_d4_s8_V1000",
+   "method": "cmcs_frozen",
+   "consensus": 5000
+  },
+  {
+   "workload": "W3",
+   "group": "b20_d4_s8_V1000",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 5000
+  },
+  {
+   "workload": "W3",
+   "group": "b20_d4_s8_V1000",
+   "method": "enum_c",
+   "consensus": 5000
+  },
+  {
+   "workload": "W3",
+   "group": "b20_d4_s8_V1000",
+   "method": "linrec_c",
+   "consensus": 5000
+  },
+  {
+   "workload": "W3",
+   "group": "b20_d4_s8_V1000",
+   "method": "polyrec_c",
+   "consensus": 5000
+  },
+  {
+   "workload": "W3",
+   "group": "b30_d3_s8_V1000",
+   "method": "bgs_harvey",
+   "consensus": 5000
+  },
+  {
+   "workload": "W3",
+   "group": "b30_d3_s8_V1000",
+   "method": "cmcs_frozen",
+   "consensus": 5000
+  },
+  {
+   "workload": "W3",
+   "group": "b30_d3_s8_V1000",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 5000
+  },
+  {
+   "workload": "W3",
+   "group": "b30_d4_s8_V1000",
+   "method": "bgs_harvey",
+   "consensus": 5000
+  },
+  {
+   "workload": "W3",
+   "group": "b30_d4_s8_V1000",
+   "method": "cmcs_frozen",
+   "consensus": 5000
+  },
+  {
+   "workload": "W3",
+   "group": "b30_d4_s8_V1000",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 5000
+  },
+  {
+   "workload": "W4",
+   "group": "b20_d3_s1-256",
+   "method": "bgs_harvey",
+   "consensus": 27
+  },
+  {
+   "workload": "W4",
+   "group": "b20_d3_s1-256",
+   "method": "cmcs_frozen",
+   "consensus": 27
+  },
+  {
+   "workload": "W4",
+   "group": "b20_d3_s1-256",
+   "method": "cmcs_frozen+weighted_sum",
+   "consensus": 27
+  },
+  {
+   "workload": "W4",
+   "group": "b20_d3_s1-256",
+   "method": "enum_c",
+   "consensus": 27
+  },
+  {
+   "workload": "W4",
+   "group": "b20_d3_s1-256",
+   "method": "linrec_c",
+   "consensus": 27
+  },
+  {
+   "workload": "W4",
+   "group": "b20_d3_s1-256",
+   "method": "polyrec_c",
+   "consensus": 27
+  },
+  {
+   "workload": "W4",
+   "group": "b20_d3_s1-256",
+   "method": "polyrec_c+multipoint",
+   "consensus": 27
+  },
+  {
+   "workload": "W4",
+   "group": "b20_d4_s1-256",
+   "method": "bgs_harvey",
+   "consensus": 27
+  },
+  {
+   "workload": "W4",
+   "group": "b20_d4_s1-256",
+   "method": "cmcs_frozen",
+   "consensus": 27
+  },
+  {
+   "workload": "W4",
+   "group": "b20_d4_s1-256",
+   "method": "cmcs_frozen+weighted_sum",
+   "consensus": 27
+  },
+  {
+   "workload": "W4",
+   "group": "b20_d4_s1-256",
+   "method": "enum_c",
+   "consensus": 27
+  },
+  {
+   "workload": "W4",
+   "group": "b20_d4_s1-256",
+   "method": "linrec_c",
+   "consensus": 27
+  },
+  {
+   "workload": "W4",
+   "group": "b20_d4_s1-256",
+   "method": "polyrec_c",
+   "consensus": 27
+  },
+  {
+   "workload": "W4",
+   "group": "b20_d4_s1-256",
+   "method": "polyrec_c+multipoint",
+   "consensus": 27
+  },
+  {
+   "workload": "W4",
+   "group": "b62_d3_s1-256",
+   "method": "cmcs_frozen",
+   "single_family_unchecked": 27
+  },
+  {
+   "workload": "W4",
+   "group": "b62_d3_s1-256",
+   "method": "cmcs_frozen+weighted_sum",
+   "single_family_unchecked": 27
+  },
+  {
+   "workload": "W4",
+   "group": "b62_d4_s1-256",
+   "method": "cmcs_frozen",
+   "single_family_unchecked": 27
+  },
+  {
+   "workload": "W4",
+   "group": "b62_d4_s1-256",
+   "method": "cmcs_frozen+weighted_sum",
+   "single_family_unchecked": 27
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/1",
+   "method": "bgs_harvey",
+   "direct": 8697
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/1",
+   "method": "cmcs_frozen",
+   "direct": 8697
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/1",
+   "method": "cmcs_frozen[trace supplied]",
+   "direct": 8697
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/1",
+   "method": "enum_c",
+   "direct": 8697
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/1",
+   "method": "enum_conv",
+   "direct": 8697
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/1",
+   "method": "flint_power+multipoint",
+   "direct": 8697
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/1",
+   "method": "polyrec_c+multipoint",
+   "direct": 8697
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/16",
+   "method": "bgs_harvey",
+   "direct": 542
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/16",
+   "method": "cmcs_frozen",
+   "direct": 542
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/16",
+   "method": "cmcs_frozen[trace supplied]",
+   "direct": 542
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/16",
+   "method": "enum_c",
+   "direct": 542
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/16",
+   "method": "enum_conv",
+   "direct": 542
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/16",
+   "method": "flint_power+multipoint",
+   "direct": 542
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/16",
+   "method": "polyrec_c+multipoint",
+   "direct": 542
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/4",
+   "method": "bgs_harvey",
+   "direct": 1917
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/4",
+   "method": "cmcs_frozen",
+   "direct": 1917
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/4",
+   "method": "cmcs_frozen[trace supplied]",
+   "direct": 1917
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/4",
+   "method": "enum_c",
+   "direct": 1917
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/4",
+   "method": "enum_conv",
+   "direct": 1917
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/4",
+   "method": "flint_power+multipoint",
+   "direct": 1917
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d3_Qp/4",
+   "method": "polyrec_c+multipoint",
+   "direct": 1917
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/1",
+   "method": "bgs_harvey",
+   "direct": 10475
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/1",
+   "method": "cmcs_frozen",
+   "direct": 10475
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/1",
+   "method": "cmcs_frozen[trace supplied]",
+   "direct": 10475
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/1",
+   "method": "enum_c",
+   "direct": 10475
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/1",
+   "method": "enum_conv",
+   "direct": 10475
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/1",
+   "method": "flint_power+multipoint",
+   "direct": 10475
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/1",
+   "method": "polyrec_c+multipoint",
+   "direct": 10475
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/16",
+   "method": "bgs_harvey",
+   "direct": 584
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/16",
+   "method": "cmcs_frozen",
+   "direct": 584
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/16",
+   "method": "cmcs_frozen[trace supplied]",
+   "direct": 584
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/16",
+   "method": "enum_c",
+   "direct": 584
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/16",
+   "method": "enum_conv",
+   "direct": 584
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/16",
+   "method": "flint_power+multipoint",
+   "direct": 584
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/16",
+   "method": "polyrec_c+multipoint",
+   "direct": 584
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/4",
+   "method": "bgs_harvey",
+   "direct": 2263
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/4",
+   "method": "cmcs_frozen",
+   "direct": 2263
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/4",
+   "method": "cmcs_frozen[trace supplied]",
+   "direct": 2263
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/4",
+   "method": "enum_c",
+   "direct": 2263
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/4",
+   "method": "enum_conv",
+   "direct": 2263
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/4",
+   "method": "flint_power+multipoint",
+   "direct": 2263
+  },
+  {
+   "workload": "W5",
+   "group": "b12_d4_Qp/4",
+   "method": "polyrec_c+multipoint",
+   "direct": 2263
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/1",
+   "method": "bgs_harvey",
+   "direct": 46469
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/1",
+   "method": "cmcs_frozen",
+   "direct": 46469
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/1",
+   "method": "cmcs_frozen[trace supplied]",
+   "direct": 46469
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/1",
+   "method": "enum_c",
+   "direct": 46469
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/1",
+   "method": "enum_conv",
+   "direct": 46469
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/1",
+   "method": "flint_power+multipoint",
+   "direct": 46469
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/1",
+   "method": "polyrec_c+multipoint",
+   "direct": 46469
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/16",
+   "method": "bgs_harvey",
+   "direct": 2389
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/16",
+   "method": "cmcs_frozen",
+   "direct": 2389
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/16",
+   "method": "cmcs_frozen[trace supplied]",
+   "direct": 2389
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/16",
+   "method": "enum_c",
+   "direct": 2389
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/16",
+   "method": "enum_conv",
+   "direct": 2389
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/16",
+   "method": "flint_power+multipoint",
+   "direct": 2389
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/16",
+   "method": "polyrec_c+multipoint",
+   "direct": 2389
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/4",
+   "method": "bgs_harvey",
+   "direct": 10336
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/4",
+   "method": "cmcs_frozen",
+   "direct": 10336
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/4",
+   "method": "cmcs_frozen[trace supplied]",
+   "direct": 10336
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/4",
+   "method": "enum_c",
+   "direct": 10336
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/4",
+   "method": "enum_conv",
+   "direct": 10336
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/4",
+   "method": "flint_power+multipoint",
+   "direct": 10336
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d3_Qp/4",
+   "method": "polyrec_c+multipoint",
+   "direct": 10336
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/1",
+   "method": "bgs_harvey",
+   "direct": 31459
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/1",
+   "method": "cmcs_frozen",
+   "direct": 31459
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/1",
+   "method": "cmcs_frozen[trace supplied]",
+   "direct": 31459
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/1",
+   "method": "enum_c",
+   "direct": 31459
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/1",
+   "method": "enum_conv",
+   "direct": 31459
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/1",
+   "method": "flint_power+multipoint",
+   "direct": 31459
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/1",
+   "method": "polyrec_c+multipoint",
+   "direct": 31459
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/16",
+   "method": "bgs_harvey",
+   "direct": 2021
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/16",
+   "method": "cmcs_frozen",
+   "direct": 2021
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/16",
+   "method": "cmcs_frozen[trace supplied]",
+   "direct": 2021
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/16",
+   "method": "enum_c",
+   "direct": 2021
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/16",
+   "method": "enum_conv",
+   "direct": 2021
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/16",
+   "method": "flint_power+multipoint",
+   "direct": 2021
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/16",
+   "method": "polyrec_c+multipoint",
+   "direct": 2021
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/4",
+   "method": "bgs_harvey",
+   "direct": 8574
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/4",
+   "method": "cmcs_frozen",
+   "direct": 8574
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/4",
+   "method": "cmcs_frozen[trace supplied]",
+   "direct": 8574
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/4",
+   "method": "enum_c",
+   "direct": 8574
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/4",
+   "method": "enum_conv",
+   "direct": 8574
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/4",
+   "method": "flint_power+multipoint",
+   "direct": 8574
+  },
+  {
+   "workload": "W5",
+   "group": "b14_d4_Qp/4",
+   "method": "polyrec_c+multipoint",
+   "direct": 8574
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/1",
+   "method": "cmcs_frozen",
+   "consensus": 111845
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/1",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 111845
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/1",
+   "method": "enum_conv",
+   "consensus": 111845
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/1",
+   "method": "flint_power+multipoint",
+   "consensus": 111845
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/1",
+   "method": "polyrec_c+multipoint",
+   "consensus": 111845
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/16",
+   "method": "bgs_harvey",
+   "consensus": 9077
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/16",
+   "method": "cmcs_frozen",
+   "consensus": 9077
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/16",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 9077
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/16",
+   "method": "enum_c",
+   "consensus": 9077
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/16",
+   "method": "enum_conv",
+   "consensus": 9077
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/16",
+   "method": "flint_power+multipoint",
+   "consensus": 9077
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/16",
+   "method": "polyrec_c+multipoint",
+   "consensus": 9077
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/4",
+   "method": "bgs_harvey",
+   "consensus": 39631
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/4",
+   "method": "cmcs_frozen",
+   "consensus": 39631
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/4",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 39631
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/4",
+   "method": "enum_c",
+   "consensus": 39631
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/4",
+   "method": "enum_conv",
+   "consensus": 39631
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/4",
+   "method": "flint_power+multipoint",
+   "consensus": 39631
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d3_Qp/4",
+   "method": "polyrec_c+multipoint",
+   "consensus": 39631
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/1",
+   "method": "cmcs_frozen",
+   "consensus": 162049
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/1",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 162049
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/1",
+   "method": "enum_conv",
+   "consensus": 162049
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/1",
+   "method": "flint_power+multipoint",
+   "consensus": 162049
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/1",
+   "method": "polyrec_c+multipoint",
+   "consensus": 162049
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/16",
+   "method": "bgs_harvey",
+   "consensus": 10866
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/16",
+   "method": "cmcs_frozen",
+   "consensus": 10866
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/16",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 10866
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/16",
+   "method": "enum_c",
+   "consensus": 10866
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/16",
+   "method": "enum_conv",
+   "consensus": 10866
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/16",
+   "method": "flint_power+multipoint",
+   "consensus": 10866
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/16",
+   "method": "polyrec_c+multipoint",
+   "consensus": 10866
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/4",
+   "method": "cmcs_frozen",
+   "consensus": 40703
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/4",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 40703
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/4",
+   "method": "enum_c",
+   "consensus": 40703
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/4",
+   "method": "enum_conv",
+   "consensus": 40703
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/4",
+   "method": "flint_power+multipoint",
+   "consensus": 40703
+  },
+  {
+   "workload": "W5",
+   "group": "b16_d4_Qp/4",
+   "method": "polyrec_c+multipoint",
+   "consensus": 40703
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d3_Qp/1",
+   "method": "cmcs_frozen",
+   "consensus": 615249
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d3_Qp/1",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 615249
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d3_Qp/1",
+   "method": "enum_conv",
+   "consensus": 615249
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d3_Qp/1",
+   "method": "flint_power+multipoint",
+   "consensus": 615249
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d3_Qp/1",
+   "method": "polyrec_c+multipoint",
+   "consensus": 615249
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d3_Qp/16",
+   "method": "bgs_harvey",
+   "consensus": 38982
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d3_Qp/16",
+   "method": "cmcs_frozen",
+   "consensus": 38982
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d3_Qp/16",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 38982
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d3_Qp/16",
+   "method": "enum_conv",
+   "consensus": 38982
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d3_Qp/16",
+   "method": "flint_power+multipoint",
+   "consensus": 38982
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d3_Qp/16",
+   "method": "polyrec_c+multipoint",
+   "consensus": 38982
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d3_Qp/4",
+   "method": "cmcs_frozen",
+   "consensus": 157619
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d3_Qp/4",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 157619
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d3_Qp/4",
+   "method": "enum_conv",
+   "consensus": 157619
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d3_Qp/4",
+   "method": "flint_power+multipoint",
+   "consensus": 157619
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d3_Qp/4",
+   "method": "polyrec_c+multipoint",
+   "consensus": 157619
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d4_Qp/1",
+   "method": "enum_conv",
+   "consensus": 548623
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d4_Qp/1",
+   "method": "flint_power+multipoint",
+   "consensus": 548623
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d4_Qp/1",
+   "method": "polyrec_c+multipoint",
+   "consensus": 548623
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d4_Qp/16",
+   "method": "cmcs_frozen",
+   "consensus": 37209
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d4_Qp/16",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 37209
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d4_Qp/16",
+   "method": "enum_conv",
+   "consensus": 37209
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d4_Qp/16",
+   "method": "flint_power+multipoint",
+   "consensus": 37209
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d4_Qp/16",
+   "method": "polyrec_c+multipoint",
+   "consensus": 37209
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d4_Qp/4",
+   "method": "cmcs_frozen",
+   "consensus": 163978
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d4_Qp/4",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 163978
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d4_Qp/4",
+   "method": "enum_conv",
+   "consensus": 163978
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d4_Qp/4",
+   "method": "flint_power+multipoint",
+   "consensus": 163978
+  },
+  {
+   "workload": "W5",
+   "group": "b18_d4_Qp/4",
+   "method": "polyrec_c+multipoint",
+   "consensus": 163978
+  },
+  {
+   "workload": "W6",
+   "group": "b13_d3_branch",
+   "method": "bgs_harvey",
+   "direct": 8
+  },
+  {
+   "workload": "W6",
+   "group": "b13_d3_branch",
+   "method": "cmcs_frozen[second-kind prepared]",
+   "direct": 8
+  },
+  {
+   "workload": "W6",
+   "group": "b13_d3_branch",
+   "method": "enum_c",
+   "direct": 8
+  },
+  {
+   "workload": "W6",
+   "group": "b13_d3_branch",
+   "method": "linrec_c",
+   "direct": 8
+  },
+  {
+   "workload": "W6",
+   "group": "b13_d3_branch",
+   "method": "polyrec_c",
+   "direct": 8
+  },
+  {
+   "workload": "W6",
+   "group": "b13_d4_branch",
+   "method": "bgs_harvey",
+   "direct": 8
+  },
+  {
+   "workload": "W6",
+   "group": "b13_d4_branch",
+   "method": "cmcs_frozen[second-kind prepared]",
+   "direct": 8
+  },
+  {
+   "workload": "W6",
+   "group": "b13_d4_branch",
+   "method": "enum_c",
+   "direct": 8
+  },
+  {
+   "workload": "W6",
+   "group": "b13_d4_branch",
+   "method": "linrec_c",
+   "direct": 8
+  },
+  {
+   "workload": "W6",
+   "group": "b13_d4_branch",
+   "method": "polyrec_c",
+   "direct": 8
+  },
+  {
+   "workload": "W6",
+   "group": "b16_d3_branch",
+   "method": "bgs_harvey",
+   "consensus": 6
+  },
+  {
+   "workload": "W6",
+   "group": "b16_d3_branch",
+   "method": "cmcs_frozen[second-kind prepared]",
+   "consensus": 6
+  },
+  {
+   "workload": "W6",
+   "group": "b16_d3_branch",
+   "method": "enum_c",
+   "consensus": 6
+  },
+  {
+   "workload": "W6",
+   "group": "b16_d3_branch",
+   "method": "linrec_c",
+   "consensus": 6
+  },
+  {
+   "workload": "W6",
+   "group": "b16_d3_branch",
+   "method": "polyrec_c",
+   "consensus": 6
+  },
+  {
+   "workload": "W6",
+   "group": "b16_d4_branch",
+   "method": "bgs_harvey",
+   "consensus": 7
+  },
+  {
+   "workload": "W6",
+   "group": "b16_d4_branch",
+   "method": "cmcs_frozen[second-kind prepared]",
+   "consensus": 7
+  },
+  {
+   "workload": "W6",
+   "group": "b16_d4_branch",
+   "method": "enum_c",
+   "consensus": 7
+  },
+  {
+   "workload": "W6",
+   "group": "b16_d4_branch",
+   "method": "linrec_c",
+   "consensus": 7
+  },
+  {
+   "workload": "W6",
+   "group": "b16_d4_branch",
+   "method": "polyrec_c",
+   "consensus": 7
+  },
+  {
+   "workload": "W6",
+   "group": "b20_d3_branch",
+   "method": "bgs_harvey",
+   "consensus": 6
+  },
+  {
+   "workload": "W6",
+   "group": "b20_d3_branch",
+   "method": "cmcs_frozen[second-kind prepared]",
+   "consensus": 6
+  },
+  {
+   "workload": "W6",
+   "group": "b20_d3_branch",
+   "method": "enum_c",
+   "consensus": 6
+  },
+  {
+   "workload": "W6",
+   "group": "b20_d3_branch",
+   "method": "linrec_c",
+   "consensus": 6
+  },
+  {
+   "workload": "W6",
+   "group": "b20_d3_branch",
+   "method": "polyrec_c",
+   "consensus": 6
+  },
+  {
+   "workload": "W6",
+   "group": "b20_d4_branch",
+   "method": "bgs_harvey",
+   "consensus": 5
+  },
+  {
+   "workload": "W6",
+   "group": "b20_d4_branch",
+   "method": "cmcs_frozen[second-kind prepared]",
+   "consensus": 5
+  },
+  {
+   "workload": "W6",
+   "group": "b20_d4_branch",
+   "method": "enum_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W6",
+   "group": "b20_d4_branch",
+   "method": "linrec_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W6",
+   "group": "b20_d4_branch",
+   "method": "polyrec_c",
+   "consensus": 5
+  },
+  {
+   "workload": "W7",
+   "group": "b24_d3_exc",
+   "method": "bgs_harvey",
+   "consensus": 18
+  },
+  {
+   "workload": "W7",
+   "group": "b24_d3_exc",
+   "method": "cmcs_frozen",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b24_d3_exc",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b24_d3_exc",
+   "method": "voloch_semaev",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b24_d4_exc",
+   "method": "bgs_harvey",
+   "consensus": 9
+  },
+  {
+   "workload": "W7",
+   "group": "b24_d4_exc",
+   "method": "cmcs_frozen",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b24_d4_exc",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b24_d4_exc",
+   "method": "voloch_semaev",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b32_d3_exc",
+   "method": "bgs_harvey",
+   "consensus": 9
+  },
+  {
+   "workload": "W7",
+   "group": "b32_d3_exc",
+   "method": "cmcs_frozen",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b32_d3_exc",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b32_d3_exc",
+   "method": "voloch_semaev",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b32_d4_exc",
+   "method": "bgs_harvey",
+   "consensus": 9
+  },
+  {
+   "workload": "W7",
+   "group": "b32_d4_exc",
+   "method": "cmcs_frozen",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b32_d4_exc",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b32_d4_exc",
+   "method": "voloch_semaev",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b40_d3_exc",
+   "method": "bgs_harvey",
+   "consensus": 5
+  },
+  {
+   "workload": "W7",
+   "group": "b40_d3_exc",
+   "method": "cmcs_frozen",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b40_d3_exc",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b40_d3_exc",
+   "method": "voloch_semaev",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b40_d4_exc",
+   "method": "bgs_harvey",
+   "consensus": 3
+  },
+  {
+   "workload": "W7",
+   "group": "b40_d4_exc",
+   "method": "cmcs_frozen",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b40_d4_exc",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b40_d4_exc",
+   "method": "voloch_semaev",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b48_d3_exc",
+   "method": "cmcs_frozen",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b48_d3_exc",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b48_d3_exc",
+   "method": "voloch_semaev",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b48_d4_exc",
+   "method": "cmcs_frozen",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b48_d4_exc",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b48_d4_exc",
+   "method": "voloch_semaev",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b56_d3_exc",
+   "method": "cmcs_frozen",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b56_d3_exc",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b56_d3_exc",
+   "method": "voloch_semaev",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b56_d4_exc",
+   "method": "cmcs_frozen",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b56_d4_exc",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b56_d4_exc",
+   "method": "voloch_semaev",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b62_d3_exc",
+   "method": "cmcs_frozen",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b62_d3_exc",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b62_d3_exc",
+   "method": "voloch_semaev",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b62_d4_exc",
+   "method": "cmcs_frozen",
+   "consensus": 171
+  },
+  {
+   "workload": "W7",
+   "group": "b62_d4_exc",
+   "method": "cmcs_frozen[trace supplied]",
+   "consensus": 180
+  },
+  {
+   "workload": "W7",
+   "group": "b62_d4_exc",
+   "method": "voloch_semaev",
+   "consensus": 180
+  }
+ ],
+ "mismatches": [],
+ "n_mismatches": 0
+}

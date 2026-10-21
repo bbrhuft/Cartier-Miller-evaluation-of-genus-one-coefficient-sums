@@ -1,0 +1,27 @@
+[
+  {
+    "filename": "0610973v2.pdf",
+    "sha256": "947c3a795d8b4d59be8f8b62c092c16353676f75e1e53f234af68d8594471c3e",
+    "bytes": 277617
+  },
+  {
+    "filename": "cassels1971.pdf",
+    "sha256": "60a3e65e0a4963a38586202603b2522d7a52921b404f79b842dd839565f50982",
+    "bytes": 876394
+  },
+  {
+    "filename": "galbraith_ch26.pdf",
+    "sha256": "c06cf2df9b8003e19694a4ebfe298a1557d61169f87ec01542258438ceac015e",
+    "bytes": 222784
+  },
+  {
+    "filename": "miller2004.pdf",
+    "sha256": "295c492435ea16ee08ce5bf80934fd643fd4b783e7bf6a4e7a2e150cf04ab65a",
+    "bytes": 379694
+  },
+  {
+    "filename": "schoof1995.pdf",
+    "sha256": "25bb61877af10d60b2195e572844ad09be4f1cd6982afb0959aa8f10696efcad",
+    "bytes": 3199964
+  }
+]
