@@ -37,7 +37,7 @@
 \hypersetup{pdfauthor={David Jordan},pdftitle={Cartier-Miller evaluation of genus-one coefficient sums}}
 
 \title{Cartier--Miller evaluation of genus-one coefficient sums}
-\author{David Jordan\\[2pt]\small\href{mailto:David.jordan@mu.ie}{David.jordan@mu.ie}}
+\author{David Jordan\\[2pt]\small\href{mailto:David.Jordan@mu.ie}{David.jordan@mu.ie}}
 \date{Draft, 22 October 2026}
 
 \begin{document}
@@ -162,7 +162,7 @@ with $\rho$ the slope used at that step, and $\rho=0$ for vertical and identity 
 \begin{algorithm}[Differentiated Miller chain]\label{alg:miller}
 Given $P\in E(\F_p)$ and $m\ge1$, set $T\leftarrow P$, $\alpha\leftarrow0$. For each binary digit of $m$ after the leading $1$: replace $(T,\alpha)$ by $([2]T,\,2\alpha+\rho)$, where $\rho$ is the tangent slope at $T$; if the digit is $1$, replace $(T,\alpha)$ by $(T+P,\,\alpha+\rho)$, where $\rho$ is the chord slope. Return $\alpha=\alpha_m(P)$ and $T=[m]P$.
 
-Conventions: if either operand is $O$, the step returns the other operand and $\rho=0$; if the operands have equal abscissae and opposite ordinates (including doubling a point of order two), it returns $O$ and $\rho=0$. Otherwise the tangent slope is $(3x_1^2+A)/(2y_1)$ and the chord slope $(y_2-y_1)/(x_2-x_1)$. The doubling update $\alpha\leftarrow2\alpha+\rho$ is applied even when $T=O$.
+Conventions: the slope is determined by the operands $(x_1,y_1)$ and $(x_2,y_2)$, not by the type of step. If either operand is $O$, the step returns the other operand and $\rho=0$. If $x_1=x_2$ and $y_1=-y_2$ (including doubling a point of order two), it returns $O$ and $\rho=0$. Otherwise, if the operands coincide ($x_1=x_2$, $y_1=y_2\neq0$), $\rho$ is the tangent slope $(3x_1^2+A)/(2y_1)$, and if $x_1\neq x_2$, $\rho$ is the chord slope $(y_2-y_1)/(x_2-x_1)$. In particular an addition step can meet $T=P$, which happens when the order of $P$ is smaller than $m$, and then uses the tangent. The doubling update $\alpha\leftarrow2\alpha+\rho$ is applied even when $T=O$.
 \end{algorithm}
 
 The chain uses $O(\log m)$ field operations, each step including one inversion, and a constant number of registers.
@@ -221,7 +221,7 @@ The point $Q$ is a device of the proof and is never computed.
 
 \begin{remark}\label{rem:order}
 (a) At trace one, $N=p$ and the theorem identifies $\alpha_p(P)$ with the value at $P$ of $yJ_W(x)$, in the normalization fixed by $t=-x/y$ and $\omega_0=dx/(2y)$. For the representative $(P)-(-P)$ the corresponding scalar is $2bJ_W(a)$. Comparison with Voloch (1990) needs care: Voloch (1997, Section~3), crediting A.~Broumas, records that the 1990 paper used $dx/y$ where $dx/(2y)$ is correct, so that a factor $-2$ is missing throughout it, and that its $z$ is $-z$ in the 1997 normalization. Scalars from the 1990 paper must be adjusted accordingly. Our normalization does not rely on that comparison; Section~\ref{sec:checks} checks it by constructing $f_{N,P}$ without Algorithm~\ref{alg:miller}, including on trace-one curves.
-(b) If $p\nmid N$, the rational point $Q=[p^{-1}\bmod N]P$ is a valid choice in the proof and gives $bJ_W(a)=(H_E-1)\alpha_p(Q)$. Theorem~\ref{thm:order} avoids this modular inverse and the preliminary scalar multiplication.
+(b) If $p\nmid N$, the rational point $Q=[p^{-1}\bmod N]P$ is a valid choice in the proof and gives $bJ_W(a)=(H_E-1)\alpha_p(Q)$. Theorem~\ref{thm:A} avoids this modular inverse and the preliminary scalar multiplication.
 (c) When $p\nmid N$, $d\log f_{N,P}$ has residue $-N\neq0$ at $O$, so $\alpha_N(P)$ is a Laurent constant and not the value of a holomorphic differential. The map $P\mapsto\alpha_N(P)$ is not claimed to be a homomorphism on $E(\F_p)$.
 \end{remark}
 
@@ -278,7 +278,7 @@ T_f(a)=\eps\Bigl(1-\frac{aN f'(a)}{4f(a)}-\frac a2\,\alpha_N(R)\Bigr).
 By Lemma~\ref{lem:three}, $T_f(a)=\eps-aJ_f(a)=\eps+aC_f(a)+aF'(a)$ with $F'(a)=-\eps f'(a)/(2f(a))$. Substituting \eqref{eq:single} combines the two derivative terms into $-\eps aNf'(a)/(4f(a))$.
 \end{proof}
 
-Theorem~\ref{thm:single} includes $p=5$, where $N$ may equal $2p$; for example it returns $C_{x^3+3x}(1)=1$ over $\F_5$, where $\tau_f=-4$. Zero constant terms and the pole $a=0$ need no special treatment. Every pole is used as its own normalization origin, and the trace $\tau_f$, computed once, supplies $N$ at every pole through the sign $\eps$.
+Theorem~\ref{thm:B} includes $p=5$, where $N$ may equal $2p$; for example it returns $C_{x^3+3x}(1)=1$ over $\F_5$, where $\tau_f=-4$. Zero constant terms and the pole $a=0$ need no special treatment. Every pole is used as its own normalization origin, and the trace $\tau_f$, computed once, supplies $N$ at every pole through the sign $\eps$.
 
 \begin{corollary}\label{cor:cost}
 Suppose the exact trace $\tau_f$ is supplied. At a nonbranch point $a$, each of $C_f(a)$, $J_f(a)$ and, for $a\neq0$, $T_f(a)$ costs $O(\log p)$ field operations, including $O(\log p)$ inversions, with a constant number of field registers; with schoolbook arithmetic this is $O((\log p)^3)$ bit operations. Since Schoof's algorithm computes $\tau_f$ deterministically in time polynomial in $\log p$ (Schoof, 1985, 1995), the values are computable deterministically in polynomial time.
@@ -303,7 +303,7 @@ Let $\mathcal A=\{a_1,\dots,a_s\}\subset\F_p$ be distinct, $\Omega=\F_p\setminus
 $C_f(a_i)$ excludes only $a_i$; removing each other $a_j$ subtracts $w_j/(a_j-a_i)$, which is the correction $D_i(w)$. For the point sum, the fibre over $x$ has $1+\eps_f(x)$ points, $\sum_{x\in\Omega}(x-a_i)^{-1}=D_i(1)$, and $|\Omega|=p-s\equiv-s$.
 \end{proof}
 
-The identities \eqref{eq:weights-char}--\eqref{eq:weights-pt} are algebraic and hold for every excluded set, including branch points with nonzero residue, when the exact values $C_f(a_i)$ are used. The fast evaluation obtains $C_f(a_i)$ from Theorem~\ref{thm:single} and therefore needs the hypothesis
+The identities \eqref{eq:weights-char}--\eqref{eq:weights-pt} are algebraic and hold for every excluded set, including branch points with nonzero residue, when the exact values $C_f(a_i)$ are used. The fast evaluation obtains $C_f(a_i)$ from Theorem~\ref{thm:B} and therefore needs the hypothesis
 \[
 r_i\neq0\ \Longrightarrow\ f(a_i)\neq0 .
 \]
@@ -446,7 +446,7 @@ U_p(L)=4B_L-\frac{17}{3}\,G^{-3},\qquad U_p(m)=4B_L-\frac{16}{3}\,G^{-3},
 so $U_p(L)-U_p(m)=-G^{-3}/3\neq0$ and the two adjacent sums never vanish together. Fast computation of $B_L$ thus leaves exactly one modular factorial to acquire. The companion report (Jordan, 2026) describes exact methods for that boundary, including Jacobi-sum reconstruction for suitable primes (cf.\ Tal, 2026) and remainder forests for tables over many primes. It also interprets $a_L$ as a matrix entry, in a specified basis, of the Cartier and Frobenius operators on $H^1_{\mathrm{dR}}$ of $y^2=x^3+1/4$; that interpretation is basis-dependent and gives no faster algorithm.
 
 \subsection{The quarter point}
-Let $p=4n+1\ge17$ and $f=1-x^4/2$. The exponents $4i\le p-1$ are exactly $0\le i\le n$, and $n\le h$, so \eqref{eq:coeffs} gives $T_f(1)=B_n+a_n$ and $H=a_n$. The curve has $j=1728$, and its trace is classical complex-multiplication data. If $p=u^2+s^2$ with $u\equiv1\pmod4$, Gauss's congruence $\binom{2n}{n}\equiv2u\pmod p$ (see Cosgrave \& Dilcher, 2010, Theorem~1) gives $a_n\equiv2u\,8^{-n}$. Since $\tau_f\equiv H=a_n$ and $2\sqrt p<p/2$, the trace is the representative of $a_n$ in $(-p/2,p/2)$. Cornacchia's algorithm supplies $u$. Corollary~\ref{cor:truncation} then gives
+Let $p=4n+1\ge17$ and $f=1-x^4/2$. The exponents $4i\le p-1$ are exactly $0\le i\le n$, and $n\le h$, so \eqref{eq:coeffs} gives $T_f(1)=B_n+a_n$ and $H=a_n$. The curve has $j=1728$, and its trace is classical complex-multiplication data. If $p=u^2+s^2$ with $u\equiv1\pmod4$, Gauss's congruence $\binom{2n}{n}\equiv2u\pmod p$ (see Cosgrave \& Dilcher, 2010, Theorem~1) gives $a_n\equiv2u\,8^{-n}$. Since $\tau_f\equiv H=a_n$ and $2\sqrt p<p/2$, the trace is the representative of $a_n$ in $(-p/2,p/2)$. Formula \eqref{eq:quarter} below also holds at $p=13$, where Hasse's bound still leaves the single candidate $\tau_f=4$ and $B_3=5$. Cornacchia's algorithm supplies $u$. Corollary~\ref{cor:truncation} then gives
 \begin{equation}\label{eq:quarter}
 B_n=T_f(1)-a_n,\qquad U_p(n)\equiv4B_n+\tfrac94\,a_n\pmod p .
 \end{equation}
@@ -464,10 +464,10 @@ The accompanying script \texttt{cm\_verify.py} (pure Python~3, no dependencies) 
 \toprule
 Statement and sample & Comparisons\\
 \midrule
-Theorem~\ref{thm:order}: every affine rational point of random short curves, $p<80$ & 4{,}601\\
-$\dagger$ Normalization of Theorem~\ref{thm:order}: $f_{N,P}$ from a basis of $L(N(O))$, expanded in $t=-x/y$, against the chain and $bJ_W(a)$; all points with $b\neq0$ on sampled curves, $5\le p\le23$, with a trace-one curve where one exists (108 points with $N=p$) & 354\\
+Theorem~\ref{thm:A} (\ref{thm:order}): every affine rational point of random short curves, $p<80$; 54 chains meet $T=P$ at an addition step & 4{,}601\\
+$\dagger$ Normalization of Theorem~\ref{thm:A}: $f_{N,P}$ from a basis of $L(N(O))$, expanded in $t=-x/y$, against the chain and $bJ_W(a)$; all points with $b\neq0$ on sampled curves, $5\le p\le23$, with a trace-one curve where one exists (108 points with $N=p$) & 354\\
 Lemma~\ref{lem:three}: every pole, including branch points & 21{,}114\\
-Theorem~\ref{thm:single}: every nonbranch pole, including 303 at $a=0$ & 20{,}837\\
+Theorem~\ref{thm:B} (\ref{thm:single}): every nonbranch pole, including 303 at $a=0$ & 20{,}837\\
 Corollary~\ref{cor:truncation}: every nonzero nonbranch argument & 20{,}534\\
 Theorem~\ref{thm:D}: random arguments, $f(0)=1$, $p\ge7$ (69 exceptional) & 2{,}739\\
 Theorem~\ref{thm:weights}, both outputs, under $r_i\neq0\Rightarrow f(a_i)\neq0$: 765 queries, $s\le4$, $p<80$, 60 excluded branch points of zero residue & 1{,}530\\
@@ -476,14 +476,14 @@ Identity \eqref{eq:tracefree}: every pole, $p<60$ & 2{,}149\\
 $\dagger$ \eqref{eq:coeffs} by polynomial powering, the ratio of consecutive $a_i$, and $t_i\equiv(2i+1)a_i$, for $0\le i\le h$; all primes $5\le p<1000$ & 166 primes\\
 $\dagger$ Congruence \eqref{eq:Ucong} against definition \eqref{eq:U} for every $0\le L\le h$, same primes & 38{,}144\\
 Corollary~\ref{cor:E} and \eqref{eq:rt-U}: all 221 eligible primes $5\le p<3000$; part (i) also at the additional prime $1{,}000{,}211$ & 221${}+1$ primes\\
-Equation \eqref{eq:quarter}: all 209 eligible primes $17\le p<3000$ and the additional prime $1{,}000{,}033$ & 209${}+1$ primes\\
+Equation \eqref{eq:quarter}: all 210 eligible primes $13\le p<3000$ and the additional prime $1{,}000{,}033$ & 210${}+1$ primes\\
 \bottomrule
 \end{tabular}
 \end{table}
 
 \subsection*{Open questions}
 \begin{enumerate}[nosep,leftmargin=*]
-\item \emph{Branch poles.} At $f(a)=0$ the two simple poles merge into a pole of the second kind. Lemma~\ref{lem:three} still holds, but Theorem~\ref{thm:single} does not apply; an $O(\log p)$ evaluation of $J_f(a)$ there would need a further local coefficient. Of the methods in this paper, only the trace-free $\widetilde O(\sqrt p)$ route of Remark~\ref{rem:tracefree} covers branch poles.
+\item \emph{Branch poles.} At $f(a)=0$ the two simple poles merge into a pole of the second kind. Lemma~\ref{lem:three} still holds, but Theorem~\ref{thm:B} does not apply; an $O(\log p)$ evaluation of $J_f(a)$ there would need a further local coefficient. Of the methods in this paper, only the trace-free $\widetilde O(\sqrt p)$ route of Remark~\ref{rem:tracefree} covers branch poles.
 \item \emph{Higher genus.} The residue cancellation of Proposition~\ref{prop:regular} extends formally, with the Hasse invariant replaced by the Cartier--Manin matrix, but evaluation at one point gives only one linear functional of the holomorphic correction. We have not examined whether Miller-type chains on the Jacobian evaluate truncations of $f^{(p-1)/2}$ for $\deg f\ge5$.
 \item \emph{Extension fields and higher powers of $p$.} Proposition~\ref{prop:regular} holds over $\F_{p^k}$; the base-field simplification and the twist evaluator would need separate arguments there, which we have not given. All results here are modulo $p$; we have not examined lifts modulo $p^2$.
 \item \emph{Boundary terms.} For $p\equiv2\pmod 3$, is there a polynomial-time algorithm for $((p-2)/3)!\bmod p$, or equivalently, by Corollary~\ref{cor:E}, for $B_{(p+4)/3}$? The methods discussed here do not provide one.

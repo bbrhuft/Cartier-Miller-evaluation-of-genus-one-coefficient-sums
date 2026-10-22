@@ -19,11 +19,11 @@ The saved run used CPython 3.13.16 on Linux x86_64. Seeds are fixed: 20261022 fo
 
 ## What is checked
 
-- Theorem A (curve-order identity) at every affine rational point of random short curves, plus an independent check of its normalization: the Miller function f_{N,P} is constructed from a basis of L(N(O)) without the Miller recurrence and expanded in t = −x/y, including on trace-one curves.
+- Theorem A (curve-order identity) at every affine rational point of random short curves, including chains in which an addition step meets T = P (Algorithm 2.2 then uses the tangent slope), plus an independent check of its normalization: the Miller function f_{N,P} is constructed from a basis of L(N(O)) without the Miller recurrence and expanded in t = −x/y, including on trace-one curves.
 - Lemma 2.1, Theorem B (Theorem 4.1, including the pole a = 0), Corollary 4.2 and Theorem D (including 69 exceptional cases).
 - Theorem 4.4 under the fast-algorithm hypothesis, and separately as an unrestricted identity with active branch poles.
-- The trace-free identity (4.9), the coefficient ranges (6.1)–(6.3), Corollary E and (6.4) at all 221 eligible primes below 3000 plus p = 1,000,211, and the quarter-point formula (6.5) at all 209 eligible primes below 3000 plus p = 1,000,033.
-- Table 1, Example 6.1 (p = 23), the p = 97 quarter-point example and the p = 5 example.
+- The trace-free identity (4.9), the coefficient ranges (6.1)–(6.3), Corollary E and (6.4) at all 221 eligible primes below 3000 plus p = 1,000,211, and the quarter-point formula (6.5) at all 210 eligible primes 13 ≤ p < 3000 plus p = 1,000,033.
+- Table 1, Example 6.1 (p = 23), the p = 13 and p = 97 quarter-point examples and the p = 5 example.
 
 These are finite checks, not proofs. Earlier and larger campaigns, with disjoint confirmation samples, are documented in the computational companion and the older dated folders, and are not counted here.
 

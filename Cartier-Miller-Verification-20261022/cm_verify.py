@@ -155,6 +155,8 @@ class Q:
 # Algorithm 1: differentiated Miller chain
 # ----------------------------------------------------------------------------
 
+COINCIDE = [0]   # counts addition steps of Algorithm 2.2 that meet T = P
+
 def miller_alpha_F(m, R, A, p):
     """Base-field chain. R=(X,Y) affine on Y^2=X^3+AX+B, or None for O.
     Returns (alpha_m(R), [m]R)."""
@@ -178,6 +180,8 @@ def miller_alpha_F(m, R, A, p):
         T, rho = add(T, T)
         al = (2 * al + rho) % p
         if bit == "1":
+            if R is not None and T == R:
+                COINCIDE[0] += 1      # addition step with T = P: tangent slope used
             T, rho = add(T, R)
             al = (al + rho) % p
     return al, T
@@ -342,12 +346,16 @@ def cornacchia_u(p):
     return u if u % 4 == 1 else -u
 
 def quarter_point(p):
-    """B_n, a_n, n=(p-1)/4, p = 1 mod 4, p >= 17: Gauss/CM trace + one chain."""
-    assert p % 4 == 1 and p >= 17
+    """B_n, a_n, n=(p-1)/4, p = 1 mod 4, p >= 13: Gauss/CM trace + one chain."""
+    assert p % 4 == 1 and p >= 13
     n = (p - 1) // 4
     u = cornacchia_u(p)
     a_n = 2 * u * inv(pow(8, n, p), p) % p
-    tau = a_n if a_n <= p // 2 else a_n - p      # Hasse: |tau| < p/2
+    # the trace is the unique integer = a_n (mod p) with tau^2 <= 4p (Hasse);
+    # for p >= 17 this is the representative in (-p/2, p/2)
+    cands = [t for t in (a_n, a_n - p) if t * t <= 4 * p]
+    assert len(cands) == 1
+    tau = cands[0]
     f = [1, 0, 0, 0, (-inv(2, p)) % p]
     S = T_fast(f, p, 1, tau)                       # S_f(1) = B_n + a_n
     return (S - a_n) % p, a_n, tau
@@ -479,7 +487,7 @@ def main():
     report = {}
 
     # Theorem A (Theorem 3.2): alpha_N(P) = b J_W(a) at every affine rational point.
-    pts = agree = 0
+    pts = agree = coin_chains = 0
     for p in [q for q in primes if q < 80]:
         for _ in range(6 if not QUICK else 2):
             u, v = random.randrange(p), random.randrange(p)
@@ -493,11 +501,14 @@ def main():
                 for b in range(p):
                     if b * b % p != y2:
                         continue
+                    before = COINCIDE[0]
                     al, T = miller_alpha_F(N, (a, b), u, p)
                     assert T is None
+                    coin_chains += (COINCIDE[0] > before)
                     pts += 1
                     agree += (al == b * ev(J, a, p) % p)
     report["Theorem A points"] = (pts, agree)
+    report["  chains with an addition step T = P"] = coin_chains
 
     # Lemma 2.1 (polynomial identity), Theorem B (Theorem 4.1) and Corollary 4.2.
     nC = badC = nT = badT = nP = badP = zero_const = nC0 = 0
@@ -640,7 +651,7 @@ def main():
 
     # Quarter point (6.5): B_n via CM trace + chain vs direct.
     qp_n = qp_ok = 0
-    for p in [q for q in range(17, 3000 if not QUICK else 400) if is_prime(q) and q % 4 == 1]:
+    for p in [q for q in range(13, 3000 if not QUICK else 400) if is_prime(q) and q % 4 == 1]:
         n4 = (p - 1) // 4
         a = a_seq(p, n4)
         Bn, a_n, tau = quarter_point(p)
@@ -793,6 +804,8 @@ def main():
     print(f"  m!={G}, 3/(2 m!^3)={3 * inv(2 * pow(G, 3, p), p) % p}")
 
     # Quarter-point example at p = 97.
+    Bn13, a13, t13 = quarter_point(13)
+    print(f"Quarter point p=13: B_n={Bn13}, a_n={a13}, tau={t13}")
     Bn, a_n, tau = quarter_point(97)
     print(f"Quarter point p=97: B_n={Bn}, a_n={a_n}, tau={tau}, "
           f"U=4B+9a/4={(4 * Bn + 9 * inv(4, 97) * a_n) % 97}")

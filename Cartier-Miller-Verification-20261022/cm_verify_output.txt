@@ -1,7 +1,8 @@
-Run started 2026-10-22T20:54:08Z
+Run started 2026-10-22T23:07:15Z
 cm_verify.py  Python 3.13.16 (CPython), Linux 6.18.44-fc-v140 x86_64
 ========================================================================
 Theorem A points                                 (4601, 4601)
+  chains with an addition step T = P             54
 Lemma 2.1 (all poles incl. branch)               (21114, 21114)
 Theorem 4.1 (B) queries                          (20837, 20837)
   of which at the pole a = 0                     303
@@ -13,7 +14,7 @@ Theorem 4.4 weighted queries (2 outputs each)    (765, 1530)
   excluded branch points (zero residue)          60
 Trace-free identity (4.9) queries                (2149, 2149)
 Rounded third primes (B_L and relations)         (221, 221)
-Quarter-point primes (B_n, a_n)                  (209, 209)
+Quarter-point primes (B_n, a_n)                  (210, 210)
 Rounded third p=1000211                          True
 Quarter point p=1000033                          True
 [new] alpha_N via Riemann-Roch = chain = bJ_W(a) (354, 354)
@@ -28,8 +29,9 @@ Table 1 rows (H, S, rPsi, eps, tau):
   1+w+2w^2+3w^3 : (10, 0, 1, -1, -1)
 Worked example p=23: g=[1, 20, 20, 22], A_g=0, B_g=2, R=(10, 6), eps=1, N=24, alpha_N(R)=1, T_f(1)=7, B_L(direct)=7, a_L=9, a_i=[1, 6, 8, 11, 12, 10, 18, 10, 9]
   m!=3, 3/(2 m!^3)=9
+Quarter point p=13: B_n=5, a_n=4, tau=4
 Quarter point p=97: B_n=33, a_n=79, tau=-18, U=4B+9a/4=43
 p=5 example C_{x^3+3x}(1): 1 direct 1 tau -4
-Illustration only (no direct check): rounded third at p=2305843009213693907 (61 bits): B_L=616145584502818199  [1.83 ms, pure Python]
-Total run time 15.5 s
-Run finished 2026-10-22T20:54:23Z
+Illustration only (no direct check): rounded third at p=2305843009213693907 (61 bits): B_L=616145584502818199  [1.73 ms, pure Python]
+Total run time 15.2 s
+Run finished 2026-10-22T23:07:30Z
