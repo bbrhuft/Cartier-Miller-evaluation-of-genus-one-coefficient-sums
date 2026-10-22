@@ -39,7 +39,7 @@ The cutoff is fixed at degree below $p$; the evaluation point varies. This is no
 
 On a short model $E:y^2=W(x)=x^3+Ax+B$ over $\mathbb F_p$, let $f_{m,P}$ be a Miller function with divisor $m(P)-([m]P)-(m-1)(O)$, and let $\alpha_m(P)=[t^0]\,d\log f_{m,P}/dt$ be the constant Laurent coefficient of its logarithmic derivative at $O$, with $t=-x/y$. The differentiated Miller chain computes $\alpha_m(P)$ in $O(\log m)$ field operations.
 
-**Theorem A (curve-order identity).** Let $N=\#E(\mathbb F_p)$ and write $W^h=U+H_Ex^{p-1}+x^pJ_W$ with $\deg U\le p-2$. For every affine point $P=(a,b)\in E(\mathbb F_p)$,
+**Theorem A (curve-order identity).** Let $N=\\#E(\mathbb F_p)$ and write $W^h=U+H_Ex^{p-1}+x^pJ_W$ with $\deg U\le p-2$. For every affine point $P=(a,b)\in E(\mathbb F_p)$,
 
 $$
 \alpha_N(P)=b\,J_W(a).
@@ -47,7 +47,7 @@ $$
 
 No hypothesis on $N$ is needed: $N$ may be divisible by $p$, and $E$ may be supersingular.
 
-**Theorem B (evaluation at a nonbranch point).** Let $f(a)\ne0$, $\varepsilon=\chi(f(a))$, $\tau_f$ the trace of the projective curve $v^2=f(x)$, and $N=p+1-\varepsilon\tau_f$. Normalizing at $a$ gives an explicit short model $E_a$ of $v^2=f(a+z)/f(a)$, with $\#E_a(\mathbb F_p)=N$, and an explicit rational point $R$. With $g_1=f'(a)/f(a)$,
+**Theorem B (evaluation at a nonbranch point).** Let $f(a)\ne0$, $\varepsilon=\chi(f(a))$, $\tau_f$ the trace of the projective curve $v^2=f(x)$, and $N=p+1-\varepsilon\tau_f$. Normalizing at $a$ gives an explicit short model $E_a$ of $v^2=f(a+z)/f(a)$, with $\\#E_a(\mathbb F_p)=N$, and an explicit rational point $R$. With $g_1=f'(a)/f(a)$,
 
 $$
 C_f(a)=\varepsilon\Big(-\frac{g_1}{4}(N-2)-\frac{\alpha_N(R)}{2}\Big),
