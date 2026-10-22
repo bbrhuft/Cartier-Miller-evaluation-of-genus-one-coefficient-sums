@@ -1,0 +1,601 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm,mathrsfs}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype,booktabs,enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[hyphens]{url}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage{xurl}
+
+\numberwithin{equation}{section}
+
+\theoremstyle{plain}
+\newcommand{\letteredname}{}
+\newtheorem{innerlettered}{\letteredname}
+\newenvironment{lettered}[2]{\renewcommand{\letteredname}{#1}\renewcommand{\theinnerlettered}{#2}\innerlettered}{\endinnerlettered}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+
+\DeclareMathOperator{\Ver}{Ver}
+\DeclareMathOperator{\Pic}{Pic}
+\DeclareMathOperator{\dlog}{dlog}
+\DeclareMathOperator{\divisor}{div}
+\DeclareMathOperator{\ord}{ord}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\C}{\mathcal{C}}
+\newcommand{\D}{\mathfrak{D}}
+\newcommand{\eps}{\varepsilon}
+
+\hypersetup{pdfauthor={David Jordan},pdftitle={Cartier-Miller evaluation of genus-one coefficient sums}}
+
+\title{Cartier--Miller evaluation of genus-one coefficient sums}
+\author{David Jordan\\[2pt]\small\href{mailto:David.jordan@mu.ie}{David.jordan@mu.ie}}
+\date{Draft, 22 October 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Let $p\ge5$ be prime and $f\in\F_p[x]$ a squarefree cubic or quartic. Building on the differentiated Miller chains of Semaev and R\"uck, we show that, once the trace of Frobenius of $v^2=f(x)$ is known, one chain of $O(\log p)$ field operations on a quadratic twist evaluates the truncation $T_f=f^{(p-1)/2}\bmod x^p$ at any $\mu\in\F_p^\times$ with $f(\mu)\neq0$, and the reciprocal character sum $\sum_{x\neq a}\chi(f(x))/(x-a)\in\F_p$ at any $a$ with $f(a)\neq0$. The key input is an identity valid for every elliptic curve $y^2=W(x)$ over $\F_p$ and every affine rational point $(a,b)$: $b$ times the high block of $W^{(p-1)/2}$ at $a$ equals the constant Laurent coefficient of the logarithmic derivative of the Miller function of order $\#E(\F_p)$. As an application, for $p\equiv2\pmod3$ the residue $\sum_{k=0}^{(p-2)/3}\binom{2k}{k}8^{-k}\bmod p$ is computed deterministically in $O(\log p)$ field operations, whereas computing the next partial sum is equivalent to computing $((p-2)/3)!\bmod p$. We also interpret the truncation as a logarithmic invariant of a two-pole divisor, normalized directly at the exceptional traces $\pm1$.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+\subsection{The problem}
+Let $p\ge5$ be prime, put $h=(p-1)/2$, and let $f\in\F_p[x]$ be squarefree of degree $d\in\{3,4\}$. Write
+\begin{equation}\label{eq:FTJ}
+F=f^{h}=T_f+x^pJ_f,\qquad \deg T_f<p .
+\end{equation}
+We call $T_f$ the \emph{truncation} and $J_f$ the \emph{high block}. Coefficients of $F$ are classical objects: $[x^{p-1}]F$ is the Hasse invariant of the curve $v^2=f(x)$ and is congruent to its trace of Frobenius modulo $p$. This paper is about \emph{values} of $T_f$ and $J_f$ at points of $\F_p$. They are linked to a character sum by two identities (Lemma~\ref{lem:three}): for $a\in\F_p$, with $\chi$ the quadratic character,
+\begin{equation}\label{eq:three-intro}
+T_f(a)=\chi(f(a))-aJ_f(a),\qquad
+C_f(a):=\sum_{x\in\F_p,\,x\neq a}\frac{\chi(f(x))}{x-a}=-F'(a)-J_f(a)\quad\text{in }\F_p .
+\end{equation}
+For $a\neq0$ the three values $T_f(a)$, $J_f(a)$ and $C_f(a)$ therefore determine one another with $O(\log p)$ field operations, so evaluating the truncation, the high block or the reciprocal character sum modulo $p$ is one problem. At $a=0$ both identities still hold, but $T_f(0)=\chi(f(0))$ carries no information about $J_f(0)$; there only $J_f(0)$ and $C_f(0)$ are equivalent. Expanding $F$ costs $O(p)$ field operations, and block-product methods for polynomial recurrences reduce this to $\widetilde O(\sqrt p)$ (Remark~\ref{rem:tracefree}). We show that $O(\log p)$ operations suffice once the trace of Frobenius is known.
+
+Truncations of this kind arise naturally. For $f=1-x^k/2$ with $k\in\{3,4\}$, the value $T_f(1)$ is the partial sum $\sum_{i=0}^{\lfloor(p-1)/k\rfloor}\binom{2i}{i}8^{-i}$ (Section~\ref{sec:binomial}); truncated sums of central binomial coefficients modulo $p$ are a classical topic (Cosgrave \& Dilcher, 2010; Sun, 2011). On a short Weierstrass curve of trace one, the function $yJ_W(x)$ is, up to the normalization discussed in Remark~\ref{rem:order}, the function in Voloch's explicit $p$-descent (Voloch, 1990).
+
+\subsection{Main results}
+Fix a short model $E:y^2=W(x)=x^3+Ax+B$ over $\F_p$ with origin $O$ at infinity and uniformizer $t=-x/y$ at $O$. For a point $P$ and an integer $m\ge1$, let $f_{m,P}$ be a Miller function, $\divisor(f_{m,P})=m(P)-([m]P)-(m-1)(O)$, and let
+\begin{equation}\label{eq:alpha-intro}
+\alpha_m(P)=[t^0]\,\frac{d\log f_{m,P}}{dt}
+\end{equation}
+be the constant Laurent coefficient of its logarithmic derivative at $O$. It does not depend on the scalar normalization of $f_{m,P}$, and Miller's addition chain computes it in $O(\log m)$ field operations (Algorithm~\ref{alg:miller}).
+
+\begin{lettered}{Theorem}{A}[Curve-order identity]\label{thm:A}
+Let $N=\#E(\F_p)$ and write $W^{h}=U+H_Ex^{p-1}+x^pJ_W$ with $\deg U\le p-2$. For every affine point $P=(a,b)\in E(\F_p)$,
+\[
+\alpha_N(P)=b\,J_W(a).
+\]
+No hypothesis on $N$ is needed: $N$ may be divisible by $p$, and $E$ may be supersingular.
+\end{lettered}
+
+When $f(a)$ is a square there is a rational point above $a$ and Theorem~\ref{thm:A} applies to a model of $v^2=f(x)$ directly. In general one normalizes at $a$, which moves to the quadratic twist by $f(a)$, where the point above $a$ becomes rational.
+
+\begin{lettered}{Theorem}{B}[Evaluation at a nonbranch point]\label{thm:B}
+Let $a\in\F_p$ with $f(a)\neq0$, put $\eps=\chi(f(a))$, let $\tau_f$ be the trace of Frobenius of the smooth projective curve $v^2=f(x)$, and put $N=p+1-\eps\tau_f$. There is an explicit short Weierstrass curve $E_a$, a model of $v^2=f(a+z)/f(a)$ with $\#E_a(\F_p)=N$, and an explicit point $R\in E_a(\F_p)$, both given by polynomials in the Taylor coefficients of $f$ at $a$ (equation~\eqref{eq:R}), such that, with $g_1=f'(a)/f(a)$,
+\[
+C_f(a)=\eps\Bigl(-\frac{g_1}{4}(N-2)-\frac{\alpha_N(R)}{2}\Bigr),
+\qquad
+T_f(a)=\eps\Bigl(1-\frac{aNg_1}{4}-\frac{a}{2}\,\alpha_N(R)\Bigr)\ (a\neq0).
+\]
+\end{lettered}
+
+\begin{lettered}{Corollary}{C}[Complexity]\label{cor:C}
+Given $\tau_f$, at each nonbranch point $a$ the values $C_f(a)$, $J_f(a)$ and, for $a\neq0$, $T_f(a)$ cost $O(\log p)$ field operations and a constant number of field registers. Since $\tau_f$ can be computed deterministically in time polynomial in $\log p$ (Schoof, 1985), these values are computable deterministically in time polynomial in $\log p$; further points on the same curve reuse $\tau_f$.
+\end{lettered}
+
+Section~\ref{sec:residue} explains where the formula comes from. For $f(0)=1$ and $\lambda=1/\mu$, the value $T_f(\mu)$ is the coefficient $[w^{p-1}]f(w)^h/(1-\lambda w)$, and Theorem~\ref{thm:D} identifies it with a logarithmic invariant of the two-pole divisor $(\mu,v_0)-(\mu,-v_0)$, $v_0^2=f(\mu)$. When the trace equals $\eps=\pm1$ the natural annihilator of that divisor is $p$ itself, and the identity requires a separate normalization (Lemma~\ref{lem:exception}).
+
+\subsection{A binomial example}
+Put $a_k=\binom{2k}{k}8^{-k}$ and $B_K=\sum_{k=0}^{K-1}a_k$ in $\F_p$. For $f=1-x^3/2$ the coefficient of $x^{3k}$ in $f^h$ is $a_k$ for $0\le k\le h$, and all other coefficients vanish, so for $p\equiv2\pmod 3$ and $L=(p+1)/3$ the truncation gives $T_f(1)=B_L$. The curve $v^2=1-x^3/2$ is supersingular for these primes, so its trace is $0$ and no point counting is needed.
+
+\begin{lettered}{Corollary}{E}[A partial sum and its next term]\label{cor:E}
+Let $p\ge5$ with $p\equiv2\pmod3$, and put $L=(p+1)/3$ and $m=L-1=(p-2)/3$.
+\begin{enumerate}[label=\textup{(\roman*)},nosep]
+\item The residue $B_L=\sum_{k=0}^{m}\binom{2k}{k}8^{-k}\bmod p$ is computable deterministically in $O(\log p)$ field operations.
+\item The next term satisfies $a_L=3/(2\,m!^3)$ and $m!=(3/(2a_L))^{(2p-1)/3}$ in $\F_p$. Hence computing $B_{L+1}=B_L+a_L$ is equivalent, up to $O(\log p)$ field operations, to computing $((p-2)/3)!\bmod p$.
+\end{enumerate}
+\end{lettered}
+
+The equivalence in (ii) is a reduction in both directions; it proves no lower bound for either task and no complexity separation between $B_L$ and $B_{L+1}$. We know of no polynomial-time algorithm for $((p-2)/3)!\bmod p$. Classical deterministic methods use $\widetilde O(\sqrt p)$ field operations (Bostan, Gaudry \& Schost, 2007). Tal (2026) goes below the square-root exponent by Jacobi-sum reconstruction when $p-1$, or another cyclotomic value $\Phi_r(p)$, has a divisor $q$ in a suitable range: deterministically in $\widetilde O(q^c+\sqrt{p/q})$ bit operations for a supplied $q\mid p-1$, and with expected bounds (Las Vegas setup) in the cyclotomic variants, which together cover all but an arbitrarily small proportion of primes. For arbitrary $p$ its deterministic bound improves the classical one by a logarithmic factor. This is the relevant route to boundary terms such as $a_L$. In this example, therefore, the partial sum up to the cutoff is a value of a truncated power on a curve, while one more term is a modular factorial. At the quarter point ($p\equiv1\pmod4$, $f=1-x^4/2$) both the prefix and the boundary term are accessible, the latter through Gauss's binomial congruence (Section~\ref{sec:binomial}).
+
+\subsection{Relation to previous work}
+The ingredients are classical. Miller (1986, 2004) introduced functions $f_{m,P}$ with prescribed divisors and their evaluation along an addition chain. Semaev (1998) differentiated Miller's recurrence to compute the logarithmic-derivative map on the $p$-torsion of an anomalous curve in $O(\log p)$ operations, and R\"uck (1999) extended this to divisor class groups, making the local-coefficient cocycle explicit; see also Galbraith (2012, Section~26.4.1). Differentiated Miller evaluation, and the cocycle in Lemma~\ref{lem:cocycle}, belong to this Semaev--R\"uck framework. The Cartier operator and its action on logarithmic differentials go back to Cartier (1957) and Serre (1958). Voloch (1990, 1997) identified the Artin--Schreier construction behind the high block with Verschiebung and obtained explicit $p$-descent; on a trace-one curve the relevant function is $yJ_W(x)$ up to normalization, and Theorem~\ref{thm:A} for $N=p$ identifies it with the Miller coefficient $\alpha_p$ in an explicit normalization (Remark~\ref{rem:order}). Cassels (1971) and Gunji (1976) studied the related logarithmic differentials and quasi-periods. The anomalous case is the setting of the discrete-logarithm attacks of Satoh and Araki (1998) and Smart (1999). For trace-free computation, the block-product methods of Bostan, Gaudry and Schost (2007) and Harvey (2007) apply, and Harvey and Sutherland (2014, 2016) treat many primes simultaneously.
+
+The proposed contribution is specific: (i) the curve-order identity of Theorem~\ref{thm:A} for every $N$, including $p\nmid N$, where $d\log f_{N,P}$ has a pole at $O$ and its Laurent constant is used; (ii) the twist normalization that turns it into a base-field evaluator at every nonbranch point, with the weighted-sum bookkeeping of Section~\ref{sec:weighted}; (iii) the normalization of the residue-divisor identity at both exceptional traces; and (iv) the binomial consequences of Section~\ref{sec:binomial}. We have not found these statements in the literature we examined; priority remains subject to specialist assessment, and we would welcome references to earlier appearances.
+
+\subsection{Organization and code}
+Section~\ref{sec:prelim} collects notation and the Miller recurrence. Theorem~\ref{thm:A} is proved in Section~\ref{sec:order}, and Theorem~\ref{thm:B} with its corollaries in Section~\ref{sec:weighted}. Section~\ref{sec:residue} gives the residue-divisor interpretation, Section~\ref{sec:binomial} the binomial applications and Section~\ref{sec:checks} numerical checks and open questions. A short script that checks the identities and reproduces the numbers in this paper, its saved output, and a computational companion on boundary acquisition and benchmarks (Jordan, 2026), is available at \url{https://github.com/bbrhuft/Cartier-Miller-evaluation-of-genus-one-coefficient-sums}.
+
+\section{Preliminaries}\label{sec:prelim}
+
+\subsection{Notation}
+Throughout, $p\ge5$ and $h=(p-1)/2$. The quadratic character is $\chi:\F_p\to\{0,\pm1\}$ with $\chi(0)=0$, and $\eps_f(x)=\chi(f(x))$; a single character value is written $\eps$. For a squarefree $f$ of degree $d\in\{3,4\}$ with leading coefficient $\ell_f$, let $N_\infty(f)$ be the number of rational points at infinity of the smooth projective model of $v^2=f(x)$: $N_\infty(f)=1$ if $d=3$ and $1+\chi(\ell_f)$ if $d=4$. Let $\tau_f=p+1-\#\{\text{rational points}\}$ be its trace. Counting fibres gives
+\begin{equation}\label{eq:fibre}
+\sum_{x\in\F_p}\eps_f(x)=1-N_\infty(f)-\tau_f .
+\end{equation}
+Frobenius on points is $\pi$; Verschiebung is $\Ver$. Power sums over $\F_p$ satisfy $\sum_{x}x^k=-1$ if $k>0$ and $(p-1)\mid k$, and $0$ otherwise.
+
+\subsection{The Cartier operator}
+On a smooth curve over a perfect field of characteristic $p$, with a separating coordinate $x$, every differential has a unique expression $\sum_{i=0}^{p-1}u_i^p\,x^i\,dx$, and the Cartier operator is $\C(\eta)=u_{p-1}\,dx$. It is $p^{-1}$-linear, $\C(a^p\eta)=a\,\C(\eta)$, it kills exact differentials, and it fixes logarithmic differentials $dg/g$ (Cartier, 1957; Serre, 1958). On Laurent or polynomial expressions in $x$,
+\begin{equation}\label{eq:cartier}
+\C\Bigl(\sum_n b_nx^n\,dx\Bigr)=\sum_j b_{pj+p-1}^{1/p}\,x^j\,dx .
+\end{equation}
+
+\subsection{Truncation, high block and character sum}
+\begin{lemma}\label{lem:three}
+Let $f$ be a squarefree cubic or quartic, $F=f^h=T_f+x^pJ_f$ as in \eqref{eq:FTJ}, and $a\in\F_p$. Then
+\begin{equation}\label{eq:three}
+T_f(a)=\eps_f(a)-aJ_f(a),\qquad C_f(a)=-F'(a)-J_f(a),
+\end{equation}
+where $F'(a)=-\eps_f(a)f'(a)/(2f(a))$ if $f(a)\neq0$ and $F'(a)=0$ if $f(a)=0$. Moreover $[x^{p-1}]F\equiv\tau_f\pmod p$.
+\end{lemma}
+
+\begin{proof}
+Since $a^p=a$, Euler's criterion gives $\eps_f(a)=F(a)=T_f(a)+aJ_f(a)$. For the second identity put $q(x)=(F(x)-F(a))/(x-a)$, a polynomial of degree at most $2p-3$. As $\sum_{x\neq a}(x-a)^{-1}=0$ and $F(x)=\eps_f(x)$ on $\F_p$, we get $C_f(a)=\sum_{x\in\F_p}q(x)-q(a)$. The power sums give $\sum_xq(x)=-[x^{p-1}]q$, and expanding $(x^k-a^k)/(x-a)$ shows $[x^{p-1}]q=\sum_{k\ge p}[x^k]F\cdot a^{k-p}=J_f(a)$. Finally $q(a)=F'(a)=hf'(a)f(a)^{h-1}$; at a nonbranch point this is $-\eps_f(a)f'(a)/(2f(a))$ because $h=-1/2$ in $\F_p$, and at a branch point it vanishes because $h\ge2$.
+
+For the Hasse invariant, $\sum_x\eps_f(x)=\sum_xF(x)=-[x^{p-1}]F-[x^{2p-2}]F$, and $[x^{2p-2}]F=\ell_f^h=\chi(\ell_f)$ when $d=4$ and is $0$ when $d=3$. Comparing with \eqref{eq:fibre} gives $[x^{p-1}]F\equiv\tau_f$.
+\end{proof}
+
+Given $\eps_f(a)$ and $F'(a)$, which cost $O(\log p)$ operations, \eqref{eq:three} converts any one of $T_f(a)$, $J_f(a)$, $C_f(a)$ into the others when $a\neq0$. At $a=0$ it relates only $J_f(0)$ and $C_f(0)$, since $T_f(0)=\eps_f(0)$.
+
+\subsection{Miller coefficients}\label{sec:miller}
+On $E:y^2=x^3+Ax+B$ use $t=-x/y$. The invariant differential $\omega_0=dx/(2y)$ satisfies $\omega_0=(1+O(t^4))\,dt$. A nonvertical line of slope $\rho$ and a vertical line have expansions
+\begin{equation}\label{eq:lines}
+y-\rho x-\nu=-t^{-3}\bigl(1+\rho t+O(t^3)\bigr),\qquad x-c=t^{-2}\bigl(1-ct^2+O(t^4)\bigr),
+\end{equation}
+so the constant term of the logarithmic derivative is $\rho$ for the line and $0$ for the vertical. Since $f_{i+j,P}=f_{i,P}\,f_{j,P}\,\ell/v$ up to a constant, where $\ell$ is the line through $[i]P,[j]P$ and $v$ the vertical through $[i+j]P$ (Miller, 2004; Galbraith, 2012, Section~26.3.1), the coefficients \eqref{eq:alpha-intro} obey
+\begin{equation}\label{eq:recurrence}
+\alpha_{2i}(P)=2\alpha_i(P)+\rho,\qquad \alpha_{i+1}(P)=\alpha_i(P)+\rho ,
+\end{equation}
+with $\rho$ the slope used at that step, and $\rho=0$ for vertical and identity steps.
+
+\begin{algorithm}[Differentiated Miller chain]\label{alg:miller}
+Given $P\in E(\F_p)$ and $m\ge1$, set $T\leftarrow P$, $\alpha\leftarrow0$. For each binary digit of $m$ after the leading $1$: replace $(T,\alpha)$ by $([2]T,\,2\alpha+\rho)$, where $\rho$ is the tangent slope at $T$; if the digit is $1$, replace $(T,\alpha)$ by $(T+P,\,\alpha+\rho)$, where $\rho$ is the chord slope. Return $\alpha=\alpha_m(P)$ and $T=[m]P$.
+
+Conventions: if either operand is $O$, the step returns the other operand and $\rho=0$; if the operands have equal abscissae and opposite ordinates (including doubling a point of order two), it returns $O$ and $\rho=0$. Otherwise the tangent slope is $(3x_1^2+A)/(2y_1)$ and the chord slope $(y_2-y_1)/(x_2-x_1)$. The doubling update $\alpha\leftarrow2\alpha+\rho$ is applied even when $T=O$.
+\end{algorithm}
+
+The chain uses $O(\log m)$ field operations, each step including one inversion, and a constant number of registers.
+
+\section{The curve-order identity}\label{sec:order}
+
+Let $E:y^2=W(x)=x^3+Ax+B$ over $\F_p$ be nonsingular, $N=\#E(\F_p)=p+1-\tau_E$, and write
+\begin{equation}\label{eq:U1}
+W^{h}=U+H_Ex^{p-1}+x^pJ_W,\qquad \deg U\le p-2 .
+\end{equation}
+By Lemma~\ref{lem:three}, $H_E\equiv\tau_E\pmod p$. For geometric points $S,T$ let $g_{S,T}$ be the function with divisor $(S)+(T)-(S+T)-(O)$ (a line over a vertical, a vertical, or $1$) and $c(S,T)=[t^0]\,d\log g_{S,T}/dt$.
+
+\begin{lemma}\label{lem:cocycle}
+For geometric points $S,T,Q$ and integers $m,n\ge1$,
+\begin{align}
+\alpha_m(S+T)&=\alpha_m(S)+\alpha_m(T)+c([m]S,[m]T)-m\,c(S,T),\label{eq:cocycle}\\
+\alpha_{mn}(Q)&=n\,\alpha_m(Q)+\alpha_n([m]Q),\label{eq:compose}
+\end{align}
+and $\alpha_m(-S)=-\alpha_m(S)$. In particular $\alpha_p$ is additive when one summand is $p$-torsion.
+\end{lemma}
+
+\begin{proof}
+Both sides of each identity are constant terms of logarithmic derivatives of functions with the same divisor: for \eqref{eq:cocycle}, $f_{m,S+T}\,g_{S,T}^m$ and $f_{m,S}f_{m,T}\,g_{[m]S,[m]T}$; for \eqref{eq:compose}, $f_{mn,Q}$ and $f_{m,Q}^{\,n}f_{n,[m]Q}$. Negation $(x,y)\mapsto(x,-y)$ sends $t$ to $-t$ and $f_{m,S}$ to a function with the divisor of $f_{m,-S}$, which gives the sign rule. If $[p]T=O$, then $c([p]S,[p]T)=c([p]S,O)=0$ and $p\,c(S,T)=0$ in characteristic $p$.
+\end{proof}
+
+\begin{theorem}[Theorem~\ref{thm:A}]\label{thm:order}
+For every affine $P=(a,b)\in E(\F_p)$, $\alpha_N(P)=b\,J_W(a)$.
+\end{theorem}
+
+\begin{proof}
+\emph{The case $b=0$.} Then $P$ has order two, $N$ is even, and $f_{N,P}$ is a constant multiple of $(x-a)^{N/2}$, whose logarithmic derivative has constant term $0$ by \eqref{eq:lines}.
+
+\emph{A Cartier computation.} Let $b\neq0$ and consider the third-kind differential
+\[
+\vartheta_P=\frac{y+b}{x-a}\,\omega_0=\frac12\,\frac{dx}{x-a}+\frac b2\,\frac{dx}{(x-a)y}.
+\]
+It has simple poles at $P$ and $O$ with residues $+1$ and $-1$ and is regular elsewhere, including at $-P$. The first summand is logarithmic, hence fixed by $\C$. For the second, write $1/y=W^h/y^p$ and $W^h/(x-a)=q(x)+1/(x-a)$ with $q=(W^h-1)/(x-a)$; here $W(a)^h=b^{p-1}=1$, so $q$ is a polynomial of degree less than $2p-1$. By \eqref{eq:cartier}, $\C(q\,dx)=q_{p-1}\,dx$ with $q_{p-1}=[x^{p-1}]q=J_W(a)$, as in the proof of Lemma~\ref{lem:three}. Hence
+\begin{equation}\label{eq:cartierdefect}
+(\C-1)\,\vartheta_P=b\,J_W(a)\,\omega_0 .
+\end{equation}
+
+\emph{Comparison with a Miller function.} Choose a geometric point $Q$ with $[p]Q=P$, put $\beta=\alpha_p(Q)$ and $\theta=-d\log f_{p,Q}$. Since $\divisor f_{p,Q}=p(Q)-(P)-(p-1)(O)$, the differential $\theta$ has the same residues as $\vartheta_P$ and is fixed by $\C$. At $O$, $\vartheta_P/\omega_0=-t^{-1}+O(t)$ and $\theta/\omega_0=-t^{-1}-\beta+O(t)$, so the holomorphic difference is $\vartheta_P-\theta=\beta\,\omega_0$. Since $\C\omega_0=H_E^{1/p}\omega_0$ by \eqref{eq:cartier}, applying $\C-1$ to this difference and using \eqref{eq:cartierdefect} gives $bJ_W(a)=(H_E\beta)^{1/p}-\beta$; as $bJ_W(a)\in\F_p$, raising to the $p$th power gives
+\begin{equation}\label{eq:U4}
+b\,J_W(a)=H_E\,\beta-\beta^p .
+\end{equation}
+
+\emph{Galois descent.} From $\pi\Ver=[p]$ and $\pi(P)=P$ we get $\pi(\Ver Q)=\pi(P)$, so $\Ver Q=P$ because $\pi$ is injective on geometric points. The relation $\pi+\Ver=[\tau_E]$ then gives $\pi(Q)=[\tau_E-p]Q=Q-[N]Q$. Put $T=[N]Q$, so that $[p]T=[N]P=O$. Since $E$ and the uniformizer are defined over $\F_p$, $\alpha_p(Q)^p=\alpha_p(\pi Q)$, and Lemma~\ref{lem:cocycle} gives
+\[
+\beta^p=\alpha_p(Q-T)=\beta-\alpha_p(T),\qquad
+N\beta+\alpha_N(P)=\alpha_{pN}(Q)=p\,\alpha_N(Q)+\alpha_p(T)=\alpha_p(T),
+\]
+using \eqref{eq:compose} in both orders. Substituting into \eqref{eq:U4} yields $bJ_W(a)=(H_E-1+N)\beta+\alpha_N(P)$, and $H_E-1+N\equiv\tau_E-1+1-\tau_E=0\pmod p$.
+\end{proof}
+
+The point $Q$ is a device of the proof and is never computed.
+
+\begin{remark}\label{rem:order}
+(a) At trace one, $N=p$ and the theorem identifies $\alpha_p(P)$ with the value at $P$ of $yJ_W(x)$, in the normalization fixed by $t=-x/y$ and $\omega_0=dx/(2y)$. For the representative $(P)-(-P)$ the corresponding scalar is $2bJ_W(a)$. Comparison with Voloch (1990) needs care: Voloch (1997, Section~3), crediting A.~Broumas, records that the 1990 paper used $dx/y$ where $dx/(2y)$ is correct, so that a factor $-2$ is missing throughout it, and that its $z$ is $-z$ in the 1997 normalization. Scalars from the 1990 paper must be adjusted accordingly. Our normalization does not rely on that comparison; Section~\ref{sec:checks} checks it by constructing $f_{N,P}$ without Algorithm~\ref{alg:miller}, including on trace-one curves.
+(b) If $p\nmid N$, the rational point $Q=[p^{-1}\bmod N]P$ is a valid choice in the proof and gives $bJ_W(a)=(H_E-1)\alpha_p(Q)$. Theorem~\ref{thm:order} avoids this modular inverse and the preliminary scalar multiplication.
+(c) When $p\nmid N$, $d\log f_{N,P}$ has residue $-N\neq0$ at $O$, so $\alpha_N(P)$ is a Laurent constant and not the value of a holomorphic differential. The map $P\mapsto\alpha_N(P)$ is not claimed to be a homomorphism on $E(\F_p)$.
+\end{remark}
+
+\section{Evaluation at nonbranch points and weighted sums}\label{sec:weighted}
+
+In this section $f$ is any squarefree cubic or quartic over $\F_p$, $p\ge5$, with no condition on its constant term.
+
+\subsection{The normalized twist}
+Let $f(a)\neq0$, $\eps=\eps_f(a)$, and write
+\begin{equation}\label{eq:g}
+g(z)=\frac{f(a+z)}{f(a)}=1+g_1z+g_2z^2+g_3z^3+g_4z^4,\qquad g_1=\frac{f'(a)}{f(a)},
+\end{equation}
+with $g_4=0$ for a cubic. The curve $v^2=g(z)$ has the rational points $(0,\pm1)$. Taking $(0,1)$ as origin, the model change of Appendix~\ref{app:models} gives the short model $E_a:Y^2=X^3+A_gX+B_g$, and the image $R$ of $(0,-1)$, where
+\begin{equation}\label{eq:R}
+\begin{aligned}
+A_g&=-4g_4+g_1g_3-\tfrac13g_2^2,\\
+B_g&=g_3^2-\tfrac83g_2g_4+g_1^2g_4-\tfrac13g_1g_2g_3+\tfrac2{27}g_2^3,\\
+R&=(x_R,y_R)=\Bigl(\tfrac14g_1^2-\tfrac23g_2,\ -g_3+\tfrac12g_1g_2-\tfrac18g_1^3\Bigr).
+\end{aligned}
+\end{equation}
+Since $\eps_f(a+z)=\eps\,\eps_g(z)$, and since for a quartic the normalization multiplies the leading coefficient by $1/f(a)$, \eqref{eq:fibre} gives $\tau_g=\eps\tau_f$; hence $\#E_a(\F_p)=N:=p+1-\eps\tau_f$.
+
+\begin{theorem}[Theorem~\ref{thm:B}]\label{thm:single}
+With this notation,
+\begin{equation}\label{eq:single}
+C_f(a)=\eps\Bigl(-\frac{g_1}{4}(N-2)-\frac{\alpha_N(R)}{2}\Bigr).
+\end{equation}
+\end{theorem}
+
+\begin{proof}
+Since $C_f(a)=\sum_{z\neq0}\eps_f(a+z)/z=\eps\,C_g(0)$, it suffices to compute $C_g(0)$. From the formulas \eqref{eq:model-xy} one checks the identity of rational functions
+\begin{equation}\label{eq:1overz}
+\frac1z=\frac12\,\varphi_R-\frac{g_1}{4},\qquad \varphi_R=\frac{Y+y_R}{X-x_R},
+\end{equation}
+where removable singularities take their limiting values. The function $1/z$ vanishes at the points at infinity of $v^2=g(z)$, and its sum over the affine points with $z\neq0$ is $\sum_{z\neq0}(1+\eps_g(z))/z=C_g(0)$. The isomorphism sends $(0,1)\mapsto O$ and $(0,-1)\mapsto R$, so summing \eqref{eq:1overz} over $S\in E_a(\F_p)\setminus\{O,R\}$, a set of $N-2$ points, gives
+\[
+C_g(0)=\frac12\sum_{S\neq O,R}\varphi_R(S)-\frac{g_1}{4}(N-2).
+\]
+It remains to show $\sum_{S\neq O,R}\varphi_R(S)=-\alpha_N(R)$. Suppose $y_R\neq0$ and let $W_g(X)=X^3+A_gX+B_g$. At $-R$ the function $\varphi_R=(W_g(X)-W_g(x_R))/((X-x_R)(Y-y_R))$ has value $-W_g'(x_R)/(2y_R)$. Over the abscissae $X\neq x_R$, the terms $Y/(X-x_R)$ cancel in pairs $\pm Y$, so these points contribute $y_R\sum_{X\neq x_R}(1+\eps_{W_g}(X))/(X-x_R)=y_R\,C_{W_g}(x_R)$. Lemma~\ref{lem:three} on the short model, where $\eps_{W_g}(x_R)=\chi(y_R^2)=1$, gives
+\[
+\sum_{S\neq O,R}\varphi_R(S)=y_RC_{W_g}(x_R)-\frac{W_g'(x_R)}{2y_R}=-y_R\,J_{W_g}(x_R)=-\alpha_N(R),
+\]
+the last step by Theorem~\ref{thm:order}. If $y_R=0$, negation pairs the terms $Y/(X-x_R)$, the fixed points contribute zero, and $\alpha_N(R)=0$ by Theorem~\ref{thm:order}.
+\end{proof}
+
+\begin{corollary}\label{cor:truncation}
+If moreover $a\neq0$, then
+\begin{equation}\label{eq:truncation}
+T_f(a)=\eps\Bigl(1-\frac{aN f'(a)}{4f(a)}-\frac a2\,\alpha_N(R)\Bigr).
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+By Lemma~\ref{lem:three}, $T_f(a)=\eps-aJ_f(a)=\eps+aC_f(a)+aF'(a)$ with $F'(a)=-\eps f'(a)/(2f(a))$. Substituting \eqref{eq:single} combines the two derivative terms into $-\eps aNf'(a)/(4f(a))$.
+\end{proof}
+
+Theorem~\ref{thm:single} includes $p=5$, where $N$ may equal $2p$; for example it returns $C_{x^3+3x}(1)=1$ over $\F_5$, where $\tau_f=-4$. Zero constant terms and the pole $a=0$ need no special treatment. Every pole is used as its own normalization origin, and the trace $\tau_f$, computed once, supplies $N$ at every pole through the sign $\eps$.
+
+\begin{corollary}\label{cor:cost}
+Suppose the exact trace $\tau_f$ is supplied. At a nonbranch point $a$, each of $C_f(a)$, $J_f(a)$ and, for $a\neq0$, $T_f(a)$ costs $O(\log p)$ field operations, including $O(\log p)$ inversions, with a constant number of field registers; with schoolbook arithmetic this is $O((\log p)^3)$ bit operations. Since Schoof's algorithm computes $\tau_f$ deterministically in time polynomial in $\log p$ (Schoof, 1985, 1995), the values are computable deterministically in polynomial time.
+\end{corollary}
+
+\begin{proof}
+Forming $g$, $A_g$, $B_g$ and $R$ costs $O(1)$ operations apart from one exponentiation for $\eps$; all denominators in \eqref{eq:R} are units for $p\ge5$. By Hasse's bound $N=O(p)$, so the chain has $O(\log p)$ steps. To apply Schoof's algorithm, normalize at any nonroot of $f$ among $\deg f+1$ fixed elements to obtain a short model, and recover $\tau_f$ from its trace by the sign rule.
+\end{proof}
+
+A consistency check comes free: the chain returns $[N]R$, which must be $O$. This detects most wrong traces but does not certify the trace.
+
+\subsection{Several poles and complete excluded domains}
+\begin{theorem}\label{thm:weights}
+Let $\mathcal A=\{a_1,\dots,a_s\}\subset\F_p$ be distinct, $\Omega=\F_p\setminus\mathcal A$, and $\mathcal R(x)=r_0+\sum_ir_i/(x-a_i)$, with zero residues allowed. Put $w_i=\eps_f(a_i)$, $K_f=\sum_x\eps_f(x)=1-N_\infty(f)-\tau_f$ and $D_i(v)=\sum_{j\neq i}v_j/(a_i-a_j)$. Then
+\begin{align}
+\sum_{x\in\Omega}\mathcal R(x)\eps_f(x)&=r_0\Bigl(K_f-\sum_iw_i\Bigr)+\sum_ir_i\bigl(C_f(a_i)+D_i(w)\bigr),\label{eq:weights-char}\\
+\sum_{\substack{P\ \text{affine}\\ x(P)\in\Omega}}\mathcal R(x(P))&=r_0\Bigl(K_f-s-\sum_iw_i\Bigr)+\sum_ir_i\bigl(C_f(a_i)+D_i(1+w)\bigr).\label{eq:weights-pt}
+\end{align}
+\end{theorem}
+
+\begin{proof}
+$C_f(a_i)$ excludes only $a_i$; removing each other $a_j$ subtracts $w_j/(a_j-a_i)$, which is the correction $D_i(w)$. For the point sum, the fibre over $x$ has $1+\eps_f(x)$ points, $\sum_{x\in\Omega}(x-a_i)^{-1}=D_i(1)$, and $|\Omega|=p-s\equiv-s$.
+\end{proof}
+
+The identities \eqref{eq:weights-char}--\eqref{eq:weights-pt} are algebraic and hold for every excluded set, including branch points with nonzero residue, when the exact values $C_f(a_i)$ are used. The fast evaluation obtains $C_f(a_i)$ from Theorem~\ref{thm:single} and therefore needs the hypothesis
+\[
+r_i\neq0\ \Longrightarrow\ f(a_i)\neq0 .
+\]
+Under this hypothesis, with the trace supplied, \eqref{eq:weights-char} costs $O(s\log p+s^2)$ field operations: one chain per active pole, one character evaluation per excluded point, and the pairwise corrections. An excluded branch point with zero residue remains allowed, because its oracle value is not needed; it enters only through $w_i=0$. The quadratic term can be reduced with product and remainder trees: with $B(X)=\prod_j(X-a_j)$ and $W_v(X)=\sum_jv_jB(X)/(X-a_j)$,
+\begin{equation}\label{eq:fastD}
+D_i(v)=\frac{W_v'(a_i)}{B'(a_i)}-\frac{v_iB''(a_i)}{2B'(a_i)} .
+\end{equation}
+The projective point sum adds $r_0N_\infty(f)$ to \eqref{eq:weights-pt}.
+
+\begin{remark}[A trace-free alternative]\label{rem:tracefree}
+Let $d=\deg f$, $Q_a(z)=z^df(a+1/z)$ and $k=dh-p$. Since $(a+z)^p=a+z^p$ and $\deg J_f<p$, the coefficient of $z^p$ in $F(a+z)$ is $J_f(a)$; reversing gives
+\begin{equation}\label{eq:tracefree}
+J_f(a)=[z^k]\,Q_a(z)^h,
+\end{equation}
+valid at every $a$, including branch points. The coefficients $t_k$ of $Q_a^h=\sum t_kz^k$ satisfy the recurrence $k\,g_0t_k=\sum_{j=1}^{\min(d,k)}((h+1)j-k)\,g_jt_{k-j}$, where $Q_a=\sum g_jz^j$ and $g_0=\ell_f\neq0$. This is a linear recurrence with polynomial coefficients, so the block-product methods of Bostan, Gaudry and Schost (2007) and Harvey (2007, Theorem~10) evaluate \eqref{eq:tracefree} in $\widetilde O(\sqrt p)$ field operations without a trace. The trace-supplied and trace-free models are not directly comparable; the companion report compares implementations of both.
+\end{remark}
+
+\section{The residue-divisor interpretation}\label{sec:residue}
+
+This section explains Theorem~\ref{thm:B} in terms of the Cartier operator on the original curve, and records the exceptional normalization. Assume $p\ge7$ and $f(0)=1$, let $E$ be the smooth projective curve $v^2=f(w)$ with origin $O=(0,1)$ and $\omega=dw/v$, and write $\tau:=\tau_f$ for its trace. The restriction $p\ge7$ is used only to locate the exceptional case via Hasse's bound; the evaluator of Section~\ref{sec:weighted} is valid for $p\ge5$. For $\lambda\in\F_p^\times$ with $\mu=1/\lambda$ and $f(\mu)\neq0$, let $H=[w^{p-1}]f^h$ and put
+\begin{equation}\label{eq:twopole}
+\begin{gathered}
+S_f(\lambda)=[w^{p-1}]\frac{f(w)^h}{1-\lambda w}=T_f(\mu),\qquad
+v_0^2=f(\mu),\qquad \eps=\chi(f(\mu)),\\
+Q_\pm=(\mu,\pm v_0),\qquad \D=(Q_+)-(Q_-),\qquad r=\frac1{\lambda v_0}.
+\end{gathered}
+\end{equation}
+The second equality in the first formula uses $\lambda^{p-1}=1$. For an integer $M$ annihilating the class of $\D$, choose $F_\D$ with $\divisor F_\D=M\D$ and set $\Psi_M(\D)=((dF_\D/F_\D)/\omega)(O)$; this does not depend on the scalar normalization of $F_\D$.
+
+\begin{lettered}{Theorem}{D}[Residue-divisor identity]\label{thm:D}
+Under these hypotheses, with $M_\eps=p+1-\eps\tau$ and $\tau=\tau_f$,
+\[
+S_f(\lambda)=H-\eps\,r\,\Psi_{M_\eps}(\D).
+\]
+The product $r\Psi_{M_\eps}(\D)$ lies in $\F_p$ and is unchanged by $v_0\mapsto-v_0$. The formula includes the exceptional case $\tau=\eps$, where $M_\eps=p$.
+\end{lettered}
+
+\subsection{The regular case}
+Put $\theta_\lambda=dw/((1-\lambda w)v)$. It has simple poles only at $Q_\pm$, with residues $\mp r$. Since $v^{p-1}=f^h$ and $w$ is a uniformizer at $O$, \eqref{eq:cartier} gives
+\begin{equation}\label{eq:select}
+\C(\omega)=H\omega,\qquad \Bigl(\frac{\C(\theta_\lambda)}{\omega}\Bigr)(O)=S_f(\lambda)^{1/p}.
+\end{equation}
+
+\begin{proposition}\label{prop:regular}
+Let $M\ge1$ annihilate the class of $\D$, with $p\nmid M$. Then $M\bigl(S_f(\lambda)-H\bigr)=r\bigl(H\Psi_M(\D)-\Psi_M(\D)^p\bigr)$.
+\end{proposition}
+
+\begin{proof}
+The residues cancel in $M\theta_\lambda+r\,dF_\D/F_\D$, so this differential equals $c\,\omega$ with $c=M+r\Psi_M(\D)$, by evaluation at $O$. Apply $\C$, which fixes $dF_\D/F_\D$, evaluate at $O$ using \eqref{eq:select}, and raise to the $p$th power: $MS_f(\lambda)+r\Psi_M(\D)^p=(M+r\Psi_M(\D))H$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:D} when $p\nmid M_\eps$]
+Frobenius maps $Q_+$ to $Q_\eps$, so $\pi(\D)=\eps\D$ as divisors, and the characteristic equation of Frobenius shows that $M_\eps$ annihilates the class of $\D$. Coefficient conjugation sends $F_\D$ to a constant multiple of $F_\D^{\eps}$, so $\Psi_{M_\eps}(\D)^p=\eps\Psi_{M_\eps}(\D)$. Substituting into Proposition~\ref{prop:regular} and using $M_\eps\equiv1-\eps H\pmod p$ gives the theorem. Changing the sign of $v_0$ negates both $r$ and $\Psi$.
+\end{proof}
+
+By Hasse's bound, $|\tau|\le2\sqrt p<p-1$ for $p\ge7$, so $p\mid M_\eps$ exactly when $\tau=\eps$, and then $M_\eps=p$. The class of $\D$ is nonzero, since distinct points on a genus-one curve have nonprincipal difference, so it has order exactly $p$, and Proposition~\ref{prop:regular} carries no information.
+
+\subsection{The exceptional case}
+Assume $\tau=\eps\in\{\pm1\}$ and work over $k=\overline{\F}_p$. For a degree-zero divisor $\D_0$ with $p$-torsion class choose $\divisor F_{\D_0}=p\D_0$; its logarithmic differential is holomorphic, and
+\begin{equation}\label{eq:transfer}
+\frac{dF_{\D_0}}{F_{\D_0}}=\Psi_p([\D_0])\,\omega,\qquad \Psi_p:\Pic^0(E)[p](k)\to k
+\end{equation}
+is an additive, injective map (Serre, 1958, Proposition~10). Since $\C\omega=\eps\omega$, its image lies in the one-dimensional $\F_p$-space $\mathscr L_\eps=\{b\in k:b^p=\eps b\}$. Coefficient conjugation $\sigma$ raises constants to the $p$th power and fixes the coordinate functions.
+
+\begin{lemma}[Exceptional Cartier defect]\label{lem:exception}
+Suppose $\tau=\eps\in\{\pm1\}$. Let $\D_0$ be a degree-zero divisor whose class is killed by $p$ and with $\sigma(\D_0)=\eps\D_0$. If $\theta_{\D_0}$ is a differential over $\F_{p^2}$ with only simple poles, residue divisor $\D_0$, and $\sigma(\theta_{\D_0})=\eps\theta_{\D_0}$, then
+\begin{equation}\label{eq:defect}
+(\C-1)\,\theta_{\D_0}=\Psi_p([\D_0])\,\omega .
+\end{equation}
+In other words, the Cartier defect and the logarithmic transfer are the same map on geometric $p$-torsion, with comparison factor exactly $1$.
+\end{lemma}
+
+The lemma fixes the scalar in the exceptional case, where Proposition~\ref{prop:regular} is empty; for $\eps=-1$ the natural divisor $(P)-(-P)$ has class $2[(P)-(O)]$, and the lemma accounts for this factor through $\Psi_p([\D_0])$. Its proof, by descent through Verschiebung, is given in Appendix~\ref{app:exception}.
+
+\begin{proof}[Proof of Theorem~\ref{thm:D} when $\tau=\eps$]
+Put $\widehat\theta=-\theta_\lambda/r$. It has residue divisor $\D$, and $\sigma(\widehat\theta)=\eps\widehat\theta$ because $r^p=\eps r$. Lemma~\ref{lem:exception} gives $(\C-1)\widehat\theta=\Psi_p(\D)\,\omega$. Evaluating at $O$ with \eqref{eq:select} and using $r^{1/p}=\eps r$ gives $S_f(\lambda)^{1/p}=\eps-\eps r\Psi_p(\D)$, where $(\eps r\Psi_p(\D))^p=\eps r\Psi_p(\D)$. Raising to the $p$th power gives the theorem, with $H=\eps$.
+\end{proof}
+
+Table~\ref{tab:exception} lists two exceptional examples. There $S_f(1)$ is computed by direct expansion and $r\Psi_p(\D)$ by Miller chains on the original model (Remark~\ref{rem:compare}(b)), independently of Lemma~\ref{lem:exception}. The sign in Lemma~\ref{lem:exception} comes from the divisor calculation \eqref{eq:translate}; Remark~\ref{rem:voloch} compares it with the quasi-period formula in Voloch (1997, Section~3) and uses these examples to confirm it.
+
+\begin{table}[ht]
+\centering
+\caption{Exceptional examples over $\F_{11}$ with $\lambda=1$ and origin $(0,1)$.}\label{tab:exception}
+\begin{tabular}{@{}lcccccc@{}}
+\toprule
+$f(w)$ & $\tau$ & $d=f(1)$ & $\eps$ & $H$ & $S_f(1)$ & $r\Psi_p(\D)$\\
+\midrule
+$1+w+3w^3$ & $1$ & $5$ & $1$ & $1$ & $9$ & $3$\\
+$1+w+2w^2+3w^3$ & $-1$ & $7$ & $-1$ & $10$ & $0$ & $1$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{remark}\label{rem:compare}
+(a) Comparing Theorem~\ref{thm:D} with Corollary~\ref{cor:truncation} gives
+\[
+r\Psi_{M_\eps}(\D)=\eps H-1+\frac{\mu M_\eps f'(\mu)}{4f(\mu)}+\frac\mu2\,\alpha_{M_\eps}(R),
+\]
+an identity between a two-pole invariant on $E$ and a one-point Miller coefficient on the twist $E_\mu$.
+(b) $\Psi_{M_\eps}(\D)$ can also be computed directly: after the model change of Appendix~\ref{app:models}, $\Psi_{M_\eps}(\D)=(\alpha_{M_\eps}(R_+)-\alpha_{M_\eps}(R_-))/\kappa_\omega$, where $R_\pm$ are the images of $Q_\pm$ and $\kappa_\omega=-2$ is the scale in \eqref{eq:kappa}. When $\eps=-1$ the points $R_\pm$ are defined over $\F_{p^2}$. One can run the chain in $\F_p[\xi]/(\xi^2-f(\mu))$ and split by dynamic evaluation if a zero divisor appears (Della Dora et al., 1985). The twist evaluator of Section~\ref{sec:weighted} avoids this.
+\end{remark}
+
+\section{Binomial applications}\label{sec:binomial}
+
+Put $a_i=\binom{2i}{i}8^{-i}\in\F_p$ for $i\ge0$ and $B_K=\sum_{i=0}^{K-1}a_i$ for $K\ge0$, so $B_0=0$. For $0\le i\le h$, $\binom{h}{i}\equiv\binom{-1/2}{i}=(-1/4)^i\binom{2i}{i}\pmod p$, since $i!$ is a unit. Hence, for $k\ge1$,
+\begin{equation}\label{eq:coeffs}
+[x^{ki}]\,(1-x^k/2)^h=a_i\qquad(0\le i\le h),
+\end{equation}
+and all coefficients of $(1-x^k/2)^h$ at exponents not divisible by $k$ vanish. The weighted sums
+\begin{equation}\label{eq:U}
+U_p(L)=\sum_{i=0}^{L-1}(h+1+i)\,t_i\quad(0\le L\le h),\qquad t_0=1,\quad t_{i+1}=t_i\,\frac{h+2+i}{2i+2}\quad(0\le i<h),
+\end{equation}
+which motivated this work, reduce to the same data; the denominators $2i+2\le p-1$ are units. Upper negation gives $t_i\equiv(2i+1)a_i$ for $0\le i\le h$, and the ratio $a_{i+1}/a_i=(2i+1)/(4(i+1))$, valid for $0\le i\le p-2$, yields the telescoping certificate $((2i+1)^2-8)a_i=4i(2i+5)a_i-4(i+1)(2i+7)a_{i+1}$, so that
+\begin{equation}\label{eq:Ucong}
+U_p(L)\equiv4B_L-2L(2L+5)\,a_L\pmod p\qquad(0\le L\le h).
+\end{equation}
+Each weighted sum therefore needs a prefix $B_L$ and a boundary term $a_L$.
+
+\subsection{The rounded third}
+Let $p\equiv2\pmod 3$, $L=(p+1)/3$, $m=L-1$, and $f=1-x^3/2$. The exponents $3i\le p-1$ are exactly $0\le i\le m$, and $m<h$, so \eqref{eq:coeffs} gives $T_f(1)=B_L$. The curve $v^2=1-x^3/2$ has $j$-invariant $0$ and is supersingular for $p\equiv2\pmod3$, so $\tau_f=0$ and $N=p+1$ on every twist.
+
+\begin{proof}[Proof of Corollary~\ref{cor:E}]
+(i) $f(1)=1/2\neq0$, $\eps=\chi(2)$ is read off from $p\bmod8$, and $N=p+1$. Corollary~\ref{cor:truncation} at $a=1$ evaluates $T_f(1)=B_L$ with one chain of length $O(\log p)$. No point counting is involved.
+
+(ii) Put $G=m!$. Wilson's theorem in the form $k!\,(p-1-k)!\equiv(-1)^{k+1}\pmod p$, with $k=2m$ and $p-1-2m=L$, gives $(2m)!\,L!=-1$. Since $L!=LG$ and $L\equiv1/3$, this is $(2m)!=-3G^{-1}$. As $3m=p-2$, we have $8^m=2^{p-2}=1/2$, so $a_m=(2m)!/(G^2\,8^m)=-6G^{-3}$. The ratio $a_L/a_m=(2m+1)/(4L)$ equals $-1/4$, because $2m+1\equiv-1/3$ and $4L\equiv4/3$. Hence $a_L=3/(2G^3)$. Cubing is a bijection of $\F_p^\times$ when $p\equiv2\pmod3$, with inverse $y\mapsto y^{(2p-1)/3}$, which gives $G=(3/(2a_L))^{(2p-1)/3}$. Finally $B_{L+1}=B_L+a_L$, so either of $B_{L+1}$ and $G$ yields the other in $O(\log p)$ operations once $B_L$ is known.
+\end{proof}
+
+\begin{example}[$p=23$]\label{ex:23}
+Here $L=8$, $m=7$, $f(1)=1/2\equiv12$, and $\eps=\chi(2)=1$ since $23\equiv7\pmod8$. The normalized polynomial is $g(z)=2-(1+z)^3=1-3z-3z^2-z^3$, so \eqref{eq:R} gives $E_1:Y^2=X^3+2$ and $R=(10,6)$. With $N=24$ the chain returns $\alpha_{24}(R)=1$, and \eqref{eq:truncation} gives
+\[
+T_f(1)=1-\frac{24\cdot(-3)}{4}-\frac12\equiv1+18-12=7 .
+\]
+Directly, $B_8=1+6+8+11+12+10+18+10\equiv7\pmod{23}$. The next term is $a_8=9$, and indeed $7!\equiv3$ and $3/(2\cdot3^3)\equiv9$.
+\end{example}
+
+The boundary also gives the neighbouring cutoff. From $a_m=-4a_L$ and \eqref{eq:Ucong},
+\begin{equation}\label{eq:rt-U}
+U_p(L)=4B_L-\frac{17}{3}\,G^{-3},\qquad U_p(m)=4B_L-\frac{16}{3}\,G^{-3},
+\end{equation}
+so $U_p(L)-U_p(m)=-G^{-3}/3\neq0$ and the two adjacent sums never vanish together. Fast computation of $B_L$ thus leaves exactly one modular factorial to acquire. The companion report (Jordan, 2026) describes exact methods for that boundary, including Jacobi-sum reconstruction for suitable primes (cf.\ Tal, 2026) and remainder forests for tables over many primes. It also interprets $a_L$ as a matrix entry, in a specified basis, of the Cartier and Frobenius operators on $H^1_{\mathrm{dR}}$ of $y^2=x^3+1/4$; that interpretation is basis-dependent and gives no faster algorithm.
+
+\subsection{The quarter point}
+Let $p=4n+1\ge17$ and $f=1-x^4/2$. The exponents $4i\le p-1$ are exactly $0\le i\le n$, and $n\le h$, so \eqref{eq:coeffs} gives $T_f(1)=B_n+a_n$ and $H=a_n$. The curve has $j=1728$, and its trace is classical complex-multiplication data. If $p=u^2+s^2$ with $u\equiv1\pmod4$, Gauss's congruence $\binom{2n}{n}\equiv2u\pmod p$ (see Cosgrave \& Dilcher, 2010, Theorem~1) gives $a_n\equiv2u\,8^{-n}$. Since $\tau_f\equiv H=a_n$ and $2\sqrt p<p/2$, the trace is the representative of $a_n$ in $(-p/2,p/2)$. Cornacchia's algorithm supplies $u$. Corollary~\ref{cor:truncation} then gives
+\begin{equation}\label{eq:quarter}
+B_n=T_f(1)-a_n,\qquad U_p(n)\equiv4B_n+\tfrac94\,a_n\pmod p .
+\end{equation}
+For example, at $p=97$ one finds $n=24$, $\tau_f=-18$, $a_n=79$, $B_n=33$ and $U_p(n)=43$. Here both the prefix and the boundary are available in polynomial time: Cornacchia needs a square root of $-1$, and Schoof's algorithm gives a deterministic alternative. This is the contrast with the rounded third mentioned in the introduction.
+
+\section{Numerical checks and open questions}\label{sec:checks}
+
+The accompanying script \texttt{cm\_verify.py} (pure Python~3, no dependencies) checks each identity against direct computation. Table~\ref{tab:checks} reports one full run, under CPython~3.13 on Linux x86\_64; its output is saved with the script as \texttt{cm\_verify\_output.txt}. All comparisons agreed. Rows marked $\dagger$ were added in this revision and use the seed 2026102202; the other rows use the seed 20261022. These are finite checks, not proofs. Earlier and larger campaigns, including disjoint confirmation samples, are documented separately in the companion report and are not counted here.
+
+\begin{table}[ht]
+\centering
+\caption{Checks executed by \texttt{cm\_verify.py} in one full run. Random squarefree cubics and quartics over primes $5\le p<140$ unless stated.}\label{tab:checks}
+\small
+\begin{tabular}{@{}p{0.78\linewidth}r@{}}
+\toprule
+Statement and sample & Comparisons\\
+\midrule
+Theorem~\ref{thm:order}: every affine rational point of random short curves, $p<80$ & 4{,}601\\
+$\dagger$ Normalization of Theorem~\ref{thm:order}: $f_{N,P}$ from a basis of $L(N(O))$, expanded in $t=-x/y$, against the chain and $bJ_W(a)$; all points with $b\neq0$ on sampled curves, $5\le p\le23$, with a trace-one curve where one exists (108 points with $N=p$) & 354\\
+Lemma~\ref{lem:three}: every pole, including branch points & 21{,}114\\
+Theorem~\ref{thm:single}: every nonbranch pole, including 303 at $a=0$ & 20{,}837\\
+Corollary~\ref{cor:truncation}: every nonzero nonbranch argument & 20{,}534\\
+Theorem~\ref{thm:D}: random arguments, $f(0)=1$, $p\ge7$ (69 exceptional) & 2{,}739\\
+Theorem~\ref{thm:weights}, both outputs, under $r_i\neq0\Rightarrow f(a_i)\neq0$: 765 queries, $s\le4$, $p<80$, 60 excluded branch points of zero residue & 1{,}530\\
+$\dagger$ Theorem~\ref{thm:weights}, both outputs, exact $C_f(a_i)$: 448 queries, $1\le s\le4$, $p<80$, 203 active branch poles & 896\\
+Identity \eqref{eq:tracefree}: every pole, $p<60$ & 2{,}149\\
+$\dagger$ \eqref{eq:coeffs} by polynomial powering, the ratio of consecutive $a_i$, and $t_i\equiv(2i+1)a_i$, for $0\le i\le h$; all primes $5\le p<1000$ & 166 primes\\
+$\dagger$ Congruence \eqref{eq:Ucong} against definition \eqref{eq:U} for every $0\le L\le h$, same primes & 38{,}144\\
+Corollary~\ref{cor:E} and \eqref{eq:rt-U}: all 221 eligible primes $5\le p<3000$; part (i) also at the additional prime $1{,}000{,}211$ & 221${}+1$ primes\\
+Equation \eqref{eq:quarter}: all 209 eligible primes $17\le p<3000$ and the additional prime $1{,}000{,}033$ & 209${}+1$ primes\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection*{Open questions}
+\begin{enumerate}[nosep,leftmargin=*]
+\item \emph{Branch poles.} At $f(a)=0$ the two simple poles merge into a pole of the second kind. Lemma~\ref{lem:three} still holds, but Theorem~\ref{thm:single} does not apply; an $O(\log p)$ evaluation of $J_f(a)$ there would need a further local coefficient. Of the methods in this paper, only the trace-free $\widetilde O(\sqrt p)$ route of Remark~\ref{rem:tracefree} covers branch poles.
+\item \emph{Higher genus.} The residue cancellation of Proposition~\ref{prop:regular} extends formally, with the Hasse invariant replaced by the Cartier--Manin matrix, but evaluation at one point gives only one linear functional of the holomorphic correction. We have not examined whether Miller-type chains on the Jacobian evaluate truncations of $f^{(p-1)/2}$ for $\deg f\ge5$.
+\item \emph{Extension fields and higher powers of $p$.} Proposition~\ref{prop:regular} holds over $\F_{p^k}$; the base-field simplification and the twist evaluator would need separate arguments there, which we have not given. All results here are modulo $p$; we have not examined lifts modulo $p^2$.
+\item \emph{Boundary terms.} For $p\equiv2\pmod 3$, is there a polynomial-time algorithm for $((p-2)/3)!\bmod p$, or equivalently, by Corollary~\ref{cor:E}, for $B_{(p+4)/3}$? The methods discussed here do not provide one.
+\end{enumerate}
+
+\section*{Acknowledgements and use of AI}
+The author used generative AI systems extensively for exploration, programming, computational checking and drafting. All results were checked as described in Section~\ref{sec:checks}, and responsibility for the content rests with the author.
+
+\appendix
+\section{Cubic and quartic model changes}\label{app:models}
+Let $f=1+f_1w+f_2w^2+f_3w^3+f_4w^4$, with $f_4=0$ for a cubic, and take $(0,1)$ as origin (cf.\ Connell, 1999, Section~1.2). Set
+\begin{equation}\label{eq:model-xy}
+x=\frac{2(v+1)+f_1w}{w^2},\qquad y=\frac{4(v+1)+2(f_1w+f_2w^2)-f_1^2w^2/2}{w^3}.
+\end{equation}
+Then $y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6$ with
+\begin{equation}\label{eq:model-a}
+a_1=f_1,\quad a_2=f_2-f_1^2/4,\quad a_3=2f_3,\quad a_4=-4f_4,\quad a_6=a_2a_4 .
+\end{equation}
+Near $(0,1)$ one has $x=4w^{-2}+2f_1w^{-1}+O(1)$ and $y=8w^{-3}+O(w^{-2})$, so $(0,1)$ maps to $O$. With $b_2=a_1^2+4a_2$, $b_4=2a_4+a_1a_3$, $b_6=a_3^2+4a_6$, the substitution $X=x+b_2/12$, $Y=y+(a_1x+a_3)/2$ gives $Y^2=X^3+AX+B$ with
+\begin{equation}\label{eq:model-AB}
+A=\frac{b_4}{2}-\frac{b_2^2}{48},\qquad B=\frac{b_6}{4}-\frac{b_2b_4}{24}+\frac{b_2^3}{864}.
+\end{equation}
+All denominators are units for $p\ge5$. Comparing leading terms at $O$ fixes the differential scale
+\begin{equation}\label{eq:kappa}
+\frac{dw}{v}=\kappa_\omega\,\frac{dX}{2Y},\qquad \kappa_\omega=-2 .
+\end{equation}
+For $f=g$ as in \eqref{eq:g}, these formulas give \eqref{eq:R}, and the identity \eqref{eq:1overz} follows from \eqref{eq:model-xy} by direct substitution.
+
+\section{Proof of the exceptional normalization}\label{app:exception}
+We keep the notation of Section~\ref{sec:residue}: $\tau=\tau_f=\eps\in\{\pm1\}$, $k=\overline{\F}_p$, $\omega=dw/v$, $\Psi_p$ as in \eqref{eq:transfer}, and $\sigma$ coefficient conjugation.
+
+\begin{proof}[Proof of Lemma~\ref{lem:exception}]
+\emph{Step 1: kernel of Verschiebung.} We have $\pi+\Ver=[\eps]$, $\pi\Ver=[p]$, $\Ver^*\omega=\eps\omega$ and $\C\omega=\eps\omega$. The curve is ordinary, so $\Ver$ is separable of degree $p$, and $K=\ker\Ver(k)$ is the cyclic group of geometric $p$-torsion; every $T\in K$ satisfies $\pi(T)=\eps T$. The divisor $\Delta=\sum_{T\in K}(T)-p(O)$ is principal and Galois-stable, so $\Delta=\divisor(s)$ for some $s$ defined over $\F_p$. Put $\xi=d\log s$ and $\psi(T)=\Psi_p([(T)-(O)])$. Writing $t_T$ for translation by $T$, permutation of $K$ gives
+\begin{equation}\label{eq:translate}
+\divisor\frac{t_T^*s}{s}=p(O)-p(-T),\qquad t_T^*\xi-\xi=\psi(T)\,\omega,
+\end{equation}
+with positive sign because $[(O)-(-T)]=[(T)-(O)]$. Moreover $\C\xi=\xi$ and $\psi(T)^p=\eps\psi(T)$.
+
+\emph{Step 2: descent through $\Ver$.} For $R\in E(k)$, \eqref{eq:translate} makes $t_{-R}^*\xi-\xi$ invariant under $K$, so it descends through the separable quotient $\Ver$: there is a unique differential $\Theta_R$ with $\Ver^*\Theta_R=t_{-R}^*\xi-\xi=d\log(t_{-R}^*s/s)$. As $\Ver$ is \'etale, $\Theta_R$ has only simple poles, with residue divisor $(\Ver R)-(O)$. Cartier commutes with separable pullback, since a separating coordinate stays separating, and separable pullback is injective, so $\C\Theta_R=\Theta_R$. Translation and conjugation give
+\begin{equation}\label{eq:Theta}
+\Theta_{R+T}=\Theta_R-\eps\psi(T)\,\omega\quad(T\in K),\qquad \sigma(\Theta_R)=\Theta_{\pi(R)} .
+\end{equation}
+
+\emph{Step 3: generators.} Let $P\neq O$ be geometric $p$-torsion and choose $R$ with $\Ver R=P$, so that $\pi(R)=\eps R-P$. For $\eps=1$ put $\zeta=\Theta_R$, $\D_P=(P)-(O)$ and $\beta=\psi(P)$. For $\eps=-1$ put $\zeta=\Theta_R-\Theta_{-R}$, $\D_P=(P)-(-P)$ and $\beta=2\psi(P)$; the factor $2$ appears because $[(P)-(-P)]=2[(P)-(O)]$. In both cases $\zeta$ has residue divisor $\D_P$, $\beta=\Psi_p([\D_P])$, and by \eqref{eq:Theta}
+\[
+\C\zeta=\zeta,\qquad \sigma(\zeta)=\eps\zeta+\eps\beta\,\omega,\qquad \beta^p=\eps\beta .
+\]
+A differential $\theta_P$ with the same residues and $\sigma(\theta_P)=\eps\theta_P$ differs from $\zeta$ by $c\,\omega$, where the eigencondition forces $c^p-\eps c=-\eps\beta$, that is $\eps c^{1/p}-c=\beta$. Hence $(\C-1)\theta_P=(\C-1)(c\,\omega)=\eps c^{1/p}\omega-c\,\omega=\beta\,\omega$.
+
+\emph{Step 4: general divisors.} Represent the class of $\D_0$ by some $\D_P$, taking half the class when $\eps=-1$, which is possible because $2$ is invertible on a group of order $p$; the zero class is handled by $d\log u$ directly. Write $\D_0-\D_P=\divisor(u)$. The eigenconditions imply $u^\sigma=c\,u^\eps$ for a constant $c$, so $d\log u$ is an eigen-differential fixed by $\C$. The difference $\theta_{\D_0}-\theta_P-d\log u=b\,\omega$ is holomorphic with $b^p=\eps b$, hence also fixed by $\C$. Therefore $(\C-1)\theta_{\D_0}=(\C-1)\theta_P=\Psi_p([\D_P])\,\omega=\Psi_p([\D_0])\,\omega$.
+\end{proof}
+
+\begin{remark}[Comparison with Voloch's quasi-periods]\label{rem:voloch}
+Voloch (1997) defines quasi-periods on an ordinary curve by $z(P+P_0)=z(P)+\eta(P_0)$ for $P_0\in\ker V$, with $z$ normalized so that $z+y/x$ vanishes at $O$ and $\omega=dx/(2y)$, and in Section~3 writes $\eta(P)=-df/(f\omega)$ for $f$ with divisor $p((P)-(O))$. Write $\omega'$ for Voloch's differential; ours is $\omega=dw/v$, and the two differ by a constant factor, cf.\ \eqref{eq:kappa}. Both $z\omega'$ and $\xi$ have simple poles with residue $1$ at every point of $K$ and no other poles, so $z=\xi/\omega'+\text{const}$. Then \eqref{eq:translate} gives $\eta(T)=+\,dF/(F\omega')$ for $\divisor F=p((T)-(O))$, the opposite sign to the printed formula; the constant factor between $\omega$ and $\omega'$ does not affect this sign. We have not determined whether this reflects a convention we have not matched or a misprint, and our argument does not use Voloch's formula. The sign matters: replacing $\psi$ by $-\psi$ in \eqref{eq:translate} reverses $\beta$ in Step~3 and would give $S_f(\lambda)=H+\eps r\Psi_p(\D)$ in the exceptional case. For the two rows of Table~\ref{tab:exception} that alternative gives $4$ and $9$, whereas the directly computed values are $9$ and $0$, as Theorem~\ref{thm:D} states. The 69 exceptional cases in Table~\ref{tab:checks} agree with Theorem~\ref{thm:D} as well.
+\end{remark}
+
+\section*{References}
+\begingroup\small
+\makeatletter\@afterindenttrue\makeatother
+\setlength{\parindent}{-1.5em}
+\setlength{\leftskip}{1.5em}
+\setlength{\parskip}{1.5pt}
+
+Bostan, A., Gaudry, P., \& Schost, \'E. (2007). Linear recurrences with polynomial coefficients and application to integer factorization and Cartier--Manin operator. \emph{SIAM Journal on Computing, 36}(6), 1777--1806. \url{https://doi.org/10.1137/S0097539704443793}
+
+Cartier, P. (1957). Une nouvelle op\'eration sur les formes diff\'erentielles. \emph{Comptes Rendus de l'Acad\'emie des Sciences, 244}, 426--428.
+
+Cassels, J. W. S. (1971). Some elliptic function identities. \emph{Acta Arithmetica, 18}, 37--52. \url{https://doi.org/10.4064/aa-18-1-37-52}
+
+Connell, I. (1999). \emph{Elliptic curve handbook} [Lecture notes]. McGill University. \url{https://www.math.rug.nl/~top/ian.pdf}
+
+Cosgrave, J. B., \& Dilcher, K. (2010). Mod $p^3$ analogues of theorems of Gauss and Jacobi on binomial coefficients. \emph{Acta Arithmetica, 142}(2), 103--118. \url{https://doi.org/10.4064/aa142-2-1}
+
+Della Dora, J., Dicrescenzo, C., \& Duval, D. (1985). About a new method for computing in algebraic number fields. In B. F. Caviness (Ed.), \emph{EUROCAL '85} (Lecture Notes in Computer Science, Vol. 204, pp.~289--290). Springer. \url{https://doi.org/10.1007/3-540-15984-3_279}
+
+Galbraith, S. D. (2012). \emph{Mathematics of public key cryptography}. Cambridge University Press. Section numbers cited refer to the extended online version 2.0, \url{https://www.math.auckland.ac.nz/~sgal018/crypto-book/crypto-book.html}
+
+Gunji, H. (1976). The Hasse invariant and $p$-division points of an elliptic curve. \emph{Archiv der Mathematik, 27}, 148--158. \url{https://doi.org/10.1007/BF01224654}
+
+Harvey, D. (2007). Kedlaya's algorithm in larger characteristic. \emph{International Mathematics Research Notices, 2007}, Article rnm095. \url{https://doi.org/10.1093/imrn/rnm095}
+
+Harvey, D., \& Sutherland, A. V. (2014). Computing Hasse--Witt matrices of hyperelliptic curves in average polynomial time. \emph{LMS Journal of Computation and Mathematics, 17}(A), 257--273. \url{https://doi.org/10.1112/S1461157014000187}
+
+Harvey, D., \& Sutherland, A. V. (2016). Computing Hasse--Witt matrices of hyperelliptic curves in average polynomial time, II. In \emph{Frobenius distributions: Lang--Trotter and Sato--Tate conjectures} (Contemporary Mathematics, Vol. 663). American Mathematical Society. \url{https://doi.org/10.1090/conm/663/13352}
+
+Jordan, D. (2026). \emph{Computational companion to Cartier--Miller evaluation} [Technical report and reproducibility package]. \url{https://github.com/bbrhuft/Cartier-Miller-evaluation-of-genus-one-coefficient-sums}
+
+Miller, V. S. (1986). \emph{Short programs for functions on curves} [Unpublished manuscript]. \url{https://crypto.stanford.edu/miller/miller.pdf}
+
+Miller, V. S. (2004). The Weil pairing, and its efficient calculation. \emph{Journal of Cryptology, 17}(4), 235--261. \url{https://doi.org/10.1007/s00145-004-0315-8}
+
+R\"uck, H.-G. (1999). On the discrete logarithm in the divisor class group of curves. \emph{Mathematics of Computation, 68}(226), 805--806. \url{https://doi.org/10.1090/S0025-5718-99-01043-1}
+
+Satoh, T., \& Araki, K. (1998). Fermat quotients and the polynomial time discrete log algorithm for anomalous elliptic curves. \emph{Commentarii Mathematici Universitatis Sancti Pauli, 47}(1), 81--92. (Errata: 1999, \emph{48}(2), 211--213.)
+
+Schoof, R. (1985). Elliptic curves over finite fields and the computation of square roots mod $p$. \emph{Mathematics of Computation, 44}(170), 483--494. \url{https://doi.org/10.1090/S0025-5718-1985-0777280-6}
+
+Schoof, R. (1995). Counting points on elliptic curves over finite fields. \emph{Journal de Th\'eorie des Nombres de Bordeaux, 7}(1), 219--254. \url{https://doi.org/10.5802/jtnb.142}
+
+Semaev, I. A. (1998). Evaluation of discrete logarithms in a group of $p$-torsion points of an elliptic curve in characteristic $p$. \emph{Mathematics of Computation, 67}(221), 353--356. \url{https://doi.org/10.1090/S0025-5718-98-00887-4}
+
+Serre, J.-P. (1958). Sur la topologie des vari\'et\'es alg\'ebriques en caract\'eristique $p$. In \emph{Symposium internacional de topolog\'ia algebraica} (pp.~24--53). Universidad Nacional Aut\'onoma de M\'exico.
+
+Smart, N. P. (1999). The discrete logarithm problem on elliptic curves of trace one. \emph{Journal of Cryptology, 12}(3), 193--196. \url{https://doi.org/10.1007/s001459900052}
+
+Sun, Z.-W. (2011). On congruences related to central binomial coefficients. \emph{Journal of Number Theory, 131}(11), 2219--2238. \url{https://doi.org/10.1016/j.jnt.2011.04.004}
+
+Tal, Y. (2026, September). \emph{Computing modular factorials below the square-root barrier} (ECCC Report No.~TR26-211) [Preprint]. Electronic Colloquium on Computational Complexity. \url{https://eccc.weizmann.ac.il/report/2026/211/}
+
+Voloch, J. F. (1990). Explicit $p$-descent for elliptic curves in characteristic $p$. \emph{Compositio Mathematica, 74}(3), 247--258. \url{https://www.numdam.org/item/CM_1990__74_3_247_0/}
+
+Voloch, J. F. (1997). An analogue of the Weierstrass $\zeta$-function in characteristic $p$. \emph{Acta Arithmetica, 79}(1), 1--6. \url{https://doi.org/10.4064/aa-79-1-1-6}
+
+\endgroup
+\end{document}

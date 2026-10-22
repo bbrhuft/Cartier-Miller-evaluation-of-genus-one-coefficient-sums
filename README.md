@@ -2,84 +2,86 @@
 
 A research manuscript and computational project is shared for independent mathematical review and possible collaboration.
 
-The work presents a method for evaluating certain large truncated polynomial-power sums modulo a prime $\(p\)$. For the admissible genus-one inputs covered by the theorem, it evaluates $\(T_f(\mu)\)$ in $\(O(\log p)\)$ field operations after preparing the curve and its exact Frobenius trace. 
+**Current version (22 October 2026):** [`Cartier_Miller_Paper_Rewrite_Corrected_20261022.pdf`](Cartier_Miller_Paper_Rewrite_Corrected_20261022.pdf), a shortened 15-page rewrite. Its LaTeX source, verification script and saved output are in [`Cartier-Miller-Verification-20261022/`](Cartier-Miller-Verification-20261022/). It supersedes `Cartier_Miller_Paper_Revised_20261022.pdf` and the earlier dated PDFs, which are kept for the record. Boundary methods and benchmark protocols are in [`Cartier_Miller_Computational_Companion_20261022.pdf`](Cartier_Miller_Computational_Companion_20261022.pdf).
 
-The construction combines three established pillars: Cartier and characteristic $p$ descent theory, differentiated Miller recurrences, and elliptic-curve point counting. 
+Let $p\ge5$ be prime and $f\in\mathbb F_p[x]$ a squarefree cubic or quartic. Building on the differentiated Miller chains of Semaev and Rück, the paper shows that, once the trace of Frobenius of $v^2=f(x)$ is known, one chain of $O(\log p)$ field operations on a quadratic twist evaluates the truncation $T_f=f^{(p-1)/2}\bmod x^p$ at any $\mu\in\mathbb F_p^\times$ with $f(\mu)\ne0$, and the reciprocal character sum $\sum_{x\ne a}\chi(f(x))/(x-a)\in\mathbb F_p$ at any $a$ with $f(a)\ne0$. Combined with Schoof's algorithm this gives deterministic polynomial time in $\log p$.
 
-Its potential contribution lies in the explicit coefficient-sum identity, the exact normalization of the exceptional case, and their computational application. Whether these results are new or already implicit in the existing literature remains a question for independent review.
+The construction combines established ingredients: the Cartier operator and characteristic-$p$ descent, differentiated Miller recurrences (Semaev; Rück), and elliptic-curve point counting. The proposed contribution is specific: the curve-order identity (Theorem A), the twist evaluator (Theorem B), the normalization of the residue-divisor identity at the exceptional traces (Theorem D), and their binomial consequences. Whether these are new or already implicit in the literature remains for specialist assessment.
 
-**Status:** This is an unrefereed research draft created with substantial generative-AI assistance. Numerical checks support the formulas, but do not replace independent review of the proofs. The precise novelty of this work remains open to specialist assessment.
+**Status:** This is an unrefereed research draft created with substantial generative-AI assistance. Numerical checks support the formulas, but do not replace independent review of the proofs.
 
 ## What the evaluation does
 
-Cartier–Miller evaluates certain large truncated polynomial-power sums modulo a prime through elliptic-curve arithmetic in $O(\log p)$ complexity after trace preparation; combined with Schoof’s algorithm this yields deterministic polynomial time in $log p$. 
-
-Let $p\geq7$ be prime, put $h=(p-1)/2$, and let $f\in\mathbb F_p[w]$ be squarefree of degree three or four, initially normalized by $f(0)=1$. Write
+Put $h=(p-1)/2$ and write
 
 $$
-f(w)^h=\sum_m c_mw^m,
+F=f^{h}=T_f+x^pJ_f,\qquad \deg T_f<p .
+$$
+
+$T_f$ is the *truncation* and $J_f$ the *high block*. For $a\in\mathbb F_p$, with $\chi$ the quadratic character,
+
+$$
+T_f(a)=\chi(f(a))-aJ_f(a),\qquad
+C_f(a):=\sum_{x\ne a}\frac{\chi(f(x))}{x-a}=-F'(a)-J_f(a)\quad\text{in }\mathbb F_p .
+$$
+
+For $a\ne0$ the three values $T_f(a)$, $J_f(a)$ and $C_f(a)$ determine one another with $O(\log p)$ field operations. At $a=0$ the identities still hold, but $T_f(0)=\chi(f(0))$ carries no information about $J_f(0)$; there only $J_f(0)$ and $C_f(0)$ are equivalent. The character-sum evaluator covers $a=0$ whenever $f(0)\ne0$.
+
+For $f(0)=1$ and $\lambda=1/\mu$, the value $T_f(\mu)$ is also the coefficient
+
+$$
+S_f(\lambda)=[w^{p-1}]\frac{f(w)^h}{1-\lambda w}=T_f(1/\lambda).
+$$
+
+The cutoff is fixed at degree below $p$; the evaluation point varies. This is not a general algorithm for arbitrary stopping indices in central-binomial sums.
+
+## The curve-order identity and the evaluator
+
+On a short model $E:y^2=W(x)=x^3+Ax+B$ over $\mathbb F_p$, let $f_{m,P}$ be a Miller function with divisor $m(P)-([m]P)-(m-1)(O)$, and let $\alpha_m(P)=[t^0]\,d\log f_{m,P}/dt$ be the constant Laurent coefficient of its logarithmic derivative at $O$, with $t=-x/y$. The differentiated Miller chain computes $\alpha_m(P)$ in $O(\log m)$ field operations.
+
+**Theorem A (curve-order identity).** Let $N=\#E(\mathbb F_p)$ and write $W^h=U+H_Ex^{p-1}+x^pJ_W$ with $\deg U\le p-2$. For every affine point $P=(a,b)\in E(\mathbb F_p)$,
+
+$$
+\alpha_N(P)=b\,J_W(a).
+$$
+
+No hypothesis on $N$ is needed: $N$ may be divisible by $p$, and $E$ may be supersingular.
+
+**Theorem B (evaluation at a nonbranch point).** Let $f(a)\ne0$, $\varepsilon=\chi(f(a))$, $\tau_f$ the trace of the projective curve $v^2=f(x)$, and $N=p+1-\varepsilon\tau_f$. Normalizing at $a$ gives an explicit short model $E_a$ of $v^2=f(a+z)/f(a)$, with $\#E_a(\mathbb F_p)=N$, and an explicit rational point $R$. With $g_1=f'(a)/f(a)$,
+
+$$
+C_f(a)=\varepsilon\Big(-\frac{g_1}{4}(N-2)-\frac{\alpha_N(R)}{2}\Big),
 \qquad
-T_f(w)=\sum_{m=0}^{p-1}c_mw^m.
+T_f(a)=\varepsilon\Big(1-\frac{aNg_1}{4}-\frac{a}{2}\alpha_N(R)\Big)\quad(a\ne0).
 $$
 
-The main result evaluates $T_f(\mu)$ for nonzero $\mu\in\mathbb F_p$ with $f(\mu)\ne0$. Equivalently, for $\lambda=1/\mu$,
+This is one base-field chain. It needs no square root, no quadratic algebra and no exceptional-trace case distinction, and it holds for $p\ge5$ and any constant term.
+
+## The residue-divisor identity and the exceptional case
+
+Theorem D explains where the evaluator comes from. Assume $p\ge7$ and $f(0)=1$, take $E:v^2=f(w)$ with origin $(0,1)$ and $\omega=dw/v$, and write $\tau:=\tau_f$ and $H=[w^{p-1}]f^h\equiv\tau\pmod p$. For $\lambda\ne0$ with $f(1/\lambda)\ne0$, choose $v_0^2=f(1/\lambda)$, let $\varepsilon=\chi(f(1/\lambda))$, and set $\mathfrak D=(1/\lambda,v_0)-(1/\lambda,-v_0)$. Then
 
 $$
-S_f(\lambda)
-=[w^{p-1}]\frac{f(w)^h}{1-\lambda w}
-=T_f(1/\lambda).
-$$
-
-The cutoff is fixed at degree below $p$; the evaluation point varies. This is not a general algorithm for arbitrary stopping indices in central-binomial sums. Inputs with $f(0)\ne0$ can be normalized, with the factor $f(0)^h$ restored afterward.
-
-**References**:
-
-Cartier, P. (1957). Une nouvelle opération sur les formes différentielles. *Comptes Rendus de l’Académie des Sciences*, 244, 426–428. https://zbmath.org/?q=an:0077.04502
-
-Miller, V. S. (1986, May 6). *Short programs for functions on curves* [Unpublished manuscript]. https://crypto.stanford.edu/miller/miller.pdf
-
-Miller, V. S. (2004). The Weil pairing, and its efficient calculation. *Journal of Cryptology*, 17(4), 235–261. https://doi.org/10.1007/s00145-004-0315-8  
-
-## The identity and exceptional case
-
-On the smooth projective curve $E:v^2=f(w)$, with origin $(0,1)$, let
-
-$$
-\tau=p+1-\left|E(\mathbb F_p)\right|,
-\qquad H=c_{p-1}\equiv\tau\pmod p.
-$$
-
-Put $d=f(1/\lambda)$, choose $v_0^2=d$, let $\chi$ be the quadratic character of $d$, and set $D=(1/\lambda,v_0)-(1/\lambda,-v_0)$ as a divisor difference. The formula is
-
-$$
-S_f(\lambda)=H-\chi r\Psi_{M_\chi}(D),
+S_f(\lambda)=H-\varepsilon\,r\,\Psi_{M_\varepsilon}(\mathfrak D),
 \qquad
 r=\frac{1}{\lambda v_0},
 \qquad
-M_\chi=p+1-\chi\tau.
+M_\varepsilon=p+1-\varepsilon\tau .
 $$
 
-Here $\Psi_M$ is a logarithmic derivative of a function with divisor $MD$, normalized by the differential $dw/v$ and evaluated at the origin. It is computed through a differentiated Miller recurrence. The notation $d\log F$ means $dF/F$, not an analytic logarithm.
+Here $\Psi_M$ is the logarithmic derivative, relative to $dw/v$ at the origin, of a function with divisor $M\mathfrak D$. When $\tau=\varepsilon$ the annihilator is $M_\varepsilon=p$, and the identity needs a separate normalization. The paper proves it directly in characteristic $p$ (Lemma 5.2, proof in Appendix B), with exact examples in Table 1. The characteristic-$p$ additive transfer itself is established mathematics, associated with Serre, Semaev, Rück and Voloch.
 
-The draft proves the exceptional normalization directly in characteristic $p$. When $\tau=\chi$, the annihilator is $M_\chi=p$; the displayed formula does not divide by it. The characteristic-$p$ additive transfer itself is established mathematics, associated with Serre, Semaev, Rück and Voloch. The proposed contribution is the explicit coefficient-sum identity, its normalization and its computational application.
+Remark B.1 compares the sign with the quasi-period formula printed in Voloch (1997, Section 3). The paper's sign is fixed by its own divisor calculation and confirmed on the exact examples. Whether the printed sign reflects a convention not matched here or a misprint is left open.
 
 ## Complexity
 
-After preparing a fixed curve and its exact trace, each admissible query uses $O(\log p)$ field operations. The trace is reusable across queries on the same curve and prime. Computation in a quadratic algebra, with a resumable split when necessary, avoids searching for a quadratic nonresidue during the query.
+With the exact trace supplied, each nonbranch query uses $O(\log p)$ field operations, including $O(\log p)$ inversions, and a constant number of registers: $O((\log p)^3)$ bit operations with schoolbook arithmetic. The trace is computed once per curve and prime, and every pole reuses it through the sign $\varepsilon$. Schoof's deterministic point count makes the whole computation deterministic polynomial time in $\log p$. In practice the trace can come from SEA or PARI/GP's `ellap`. A trace-free $\tilde O(\sqrt p)$ route, which also covers branch poles, follows from Bostan–Gaudry–Schost and Harvey interval products (Remark 4.5).
 
-Combining the query with Schoof's deterministic point count gives the paper's deterministic polynomial-time consequence. Under classical modular arithmetic, the total bit-operation cost for $N_q$ queries is bounded by
-
-$$
-T_{\mathrm{total}}
-=T_{\mathrm{Schoof}}(p)
-+O\!\left(N_q(\log p)^3\right).
-$$
-
-Practical exact trace preparation may instead use SEA or an automatic routine such as PARI/GP's `ellap`, replacing Schoof in the stated deterministic worst-case proof. 
+For constant-plus-simple-pole weights over a complete excluded set (Theorem 4.4), the identities hold for any excluded set. The $O(s\log p+s^2)$ bound requires $r_i\ne0\Rightarrow f(a_i)\ne0$; excluded branch points with zero residue remain allowed.
 
 ## Worked application: the original quarter-point sum
 
-For $p=4n+1\geq13$, define
+For $p=4n+1\geq17$, define
 
 $$
 a_i=\binom{2i}{i}8^{-i},
@@ -93,11 +95,11 @@ $$
 U_p(n)\equiv4B_n+\frac94a_n\pmod p.
 $$
 
-At $p=97$, the example gives $n=24$, $B_n=33$, $a_n=79$ and $U_p(n)=43$. Computing both the prefix and boundary is essential to evaluating the complete weighted sum.
+The trace is the representative of $a_n\equiv2u\,8^{-n}$ in $(-p/2,p/2)$, where $p=u^2+s^2$ with $u\equiv1\pmod4$ (Gauss's congruence), so both the prefix and the boundary are available in polynomial time. At $p=97$, the example gives $n=24$, $\tau_f=-18$, $B_n=33$, $a_n=79$ and $U_p(n)=43$ (Section 6.2 of the paper).
 
 ## Worked application: the original third-point sum
 
-The same machinery handles a second stopping family. For $p=3L+1\geq7$, with the same $a_i$, define
+The same machinery handles a second stopping family, which is not written up in the current paper; the numbers below were rechecked against direct summation on 22 October 2026. For $p=3L+1\geq7$, with the same $a_i$, define
 
 $$
 B_L=\sum_{i=0}^{L-1}a_i,\qquad L=\frac{p-1}{3}.
@@ -117,13 +119,31 @@ $$
 
 At $p=97$, the example gives $L=32$ and $4\cdot97=19^2+27\cdot1^2$, so $r=19$, the trace is $-19$ and $a_L=78$. Cartier–Miller evaluates $T_f(1)=4$, giving $B_L=23$ and $U_p(L)=91$. All four values agree with direct summation and with a point count on $v^2=1-w^3/2$.
 
-The two examples use different curves ($j=1728$ and $j=0$), different CM fields ($\mathbb Q(i)$ and $\mathbb{Q}(\sqrt{-3})$ and different stopping indices. The same evaluation theorem serves both. The third-point family also exercises the exceptional case: at $p=61$, $4\cdot61=1^2+27\cdot3^2$ gives trace $-1$, which equals the character of $f(1)=1/2$, so the annihilator is $M_\chi=p$ and the direct characteristic-$`p`$ normalization is required.
+The two examples use different curves ($j=1728$ and $j=0$), different CM fields ($\mathbb Q(i)$ and $\mathbb{Q}(\sqrt{-3})$ and different stopping indices. The same evaluation theorem serves both. The third-point family also exercises the exceptional case: at $p=61$, $4\cdot61=1^2+27\cdot3^2$ gives trace $-1$, which equals the character of $f(1)=1/2$, so the annihilator is $M_\varepsilon=p$ and the exceptional normalization (Lemma 5.2) is required. The twist evaluator of Theorem B needs no special treatment there.
 
-For $p\equiv2\pmod3$ the index $(p-1)/3$ is not an integer. At the rounded endpoint $L=(p+1)/3$ the prefix is still fast, but the boundary $a_L$ is equivalent to the Gauss factorial $\lfloor p/3\rfloor!\bmod p$, for which no fast method is known (see the extensions folder). Since 18 October a certified Jacobi-sum boundary backend, combined with the fast prefix, makes complete evaluation measurably faster at suitable large primes (1.67–6.52× over a native factorial at the nine primes tested), but its cost is still of square-root type for a fixed conductor.
+## The rounded third point (Corollary E)
+
+For $p\equiv2\pmod3$ the index $(p-1)/3$ is not an integer. Put $L=(p+1)/3$ and $m=L-1=(p-2)/3$. The curve $v^2=1-w^3/2$ is then supersingular, with trace $0$, so no point counting is needed, and Corollary E of the paper shows:
+
+- $B_L=\sum_{k=0}^{m}\binom{2k}{k}8^{-k}\bmod p$ is computable deterministically in $O(\log p)$ field operations;
+- the next term is $a_L=3/(2\,m!^3)$, with $m!=(3/(2a_L))^{(2p-1)/3}$, so computing the next partial sum $B_{L+1}=B_L+a_L$ is equivalent, up to $O(\log p)$ operations, to computing $((p-2)/3)!\bmod p$.
+
+The reduction runs in both directions; it proves no lower bound and no complexity separation. No polynomial-time algorithm for $((p-2)/3)!\bmod p$ is known to us. Classical methods take $\tilde O(\sqrt p)$ operations. Tal (2026, ECCC TR26-211) goes below the square-root exponent by Jacobi-sum reconstruction when $p-1$, or another cyclotomic value, has a divisor in a suitable range. The companion and the extensions folder describe exact boundary methods. These include a certified Jacobi-sum backend that, at the nine primes where it was selected, made complete evaluation 1.67–6.52× faster than a native factorial, with cost still of square-root type for a fixed conductor.
 
 ## Validation and benchmarks
 
-The manuscript reports checks against direct polynomial expansion, independent point counts, kernel identities and an elementary rational-point sum. Reported generic tests include 20,316 admissible queries, with 368 exceptional cases. An independent point-sum verifier agreed on 4,357 queries, including 155 exceptional cases. These checks arose within the AI-assisted research programme.
+The current paper's Table 2 reports one full run of [`Cartier-Miller-Verification-20261022/cm_verify.py`](Cartier-Miller-Verification-20261022/cm_verify.py), a pure-Python script with fixed seeds whose saved output is in the same folder. All comparisons agreed, including:
+
+- Theorem A at 4,601 rational points;
+- an independent normalization check at 354 points, 108 of them on trace-one curves, built without the Miller recurrence;
+- Theorem B at 20,837 nonbranch poles, 303 of them at $a=0$;
+- Theorem D at 2,739 arguments, 69 of them exceptional;
+- Corollary E at all 221 eligible primes below 3000 plus $p=1{,}000{,}211$;
+- the quarter-point formula at all 209 eligible primes below 3000 plus $p=1{,}000{,}033$.
+
+These are finite checks, not proofs. Earlier and larger campaigns, with disjoint confirmation samples, are documented in the companion and the dated folders.
+
+The benchmarks below are historical. They are reported in full in the computational companion.
 
 The retained pilot benchmark compares complete quarter-point evaluations with a C++ adapter to SageMath's Harvey interval-product kernel, using BGS-based recurrence techniques. Both methods compute the prefix, boundary and weighted sum, including their per-prime preparation. This compares a recurrence task, not Harvey's full Kedlaya algorithm.
 
@@ -143,7 +163,7 @@ Table 1 is a quarter-point pilot run for seven primes $p\equiv1\pmod4$, with $n=
 | 10,000,121 | 2,500,030 | 0.11 | 4.44 |
 | 100,000,037 | 25,000,009 | 0.29 | 16.19 |
 
-*See paper for a detailed explanation of the pilot benchmark*. 
+*See the computational companion for the timing protocol and limitations of this historical pilot.* 
 
 ## Extension research: branch points, isogeny closure, CM seeds and the rounded third point
 
@@ -169,7 +189,7 @@ $$
 C_f(a)=\sum_{x\ne a}\frac{\chi(f(x))}{x-a}\in\mathbb F_p,\qquad p\ge5,
 $$
 
-with one differentiated Miller chain at the curve order $N=p+1-\chi(f(a))\tau_f$ of the normalized twist. This works for every trace, with no exceptional branch. Constant-plus-simple-pole weights over a complete excluded set give the equivalent affine and projective elliptic-point sums. The rational points at infinity are counted exactly, and no character value is assigned there.
+with one differentiated Miller chain at the curve order $N=p+1-\chi(f(a))\tau_f$ of the normalized twist. This works for every trace, with no exceptional branch. It is now Theorem B and Theorem 4.4 of the current paper. Constant-plus-simple-pole weights over a complete excluded set give the equivalent affine and projective elliptic-point sums. The rational points at infinity are counted exactly, and no character value is assigned there.
 
 After a separately charged exact trace, a query costs $O(\log p)$ field operations, or $O((\log p)^3)$ bit operations with classical arithmetic. Preparing $s$ exclusions costs $O(s\log p+s^2)$, and each later coefficient vector costs $O(s)$. The faster polynomial-tree correction is proved but not implemented.
 
@@ -179,15 +199,15 @@ The constructions are attributed to Miller (1986; 2004), Semaev (1998), Rück (1
 
 ## Review and collaboration
 
-Independent scrutiny of the exceptional proof, differential scale, residue signs and split-algebra arithmetic is especially welcome. A specialist comparison with existing Cartier, descent, anomalous-curve and Frobenius literature would help establish whether the normalization is already implicit in known results.
+Independent scrutiny is especially welcome on: Theorem A and its proof; the exceptional proof in Appendix B; the differential scale and residue signs; and the sign comparison with Voloch (1997) in Remark B.1. A specialist comparison with existing Cartier, descent, anomalous-curve and Frobenius literature would help establish whether the normalization is already implicit in known results.
 
-Possible further work includes practical exact point-counting integration, faster curve arithmetic, branch arguments and other stopping families. The current theorem does not establish a uniform algorithm for all stopping indices or congruences modulo $p^2$.
+Possible further work includes practical exact point-counting integration, faster curve arithmetic, branch arguments, higher genus and other stopping families; the paper's open questions list these. The current results do not give a uniform algorithm for all stopping indices, or congruences modulo $p^2$.
 
 Please open an issue to discuss a proof gap, counterexample, literature connection or reproducibility problem. For computational findings, include the prime, input polynomial, evaluation argument, expected and obtained values, software versions and a minimal reproducing example. Pull requests for corrections and independently checked improvements are welcome.
 
 ## Licensing
 
-The repository's [MIT License](LICENSE) covers the author's own material, including the extension, integration and character-sum folders, which carry their own MIT licence files. It does not cover third-party or separately licensed code. [`Cartier_Miller_Benchmark/`](Cartier_Miller_Benchmark/) bundles David Harvey's interval-product sources from SageMath under the GNU General Public License, with their original notices in `upstream/COPYING.txt`. That folder's adapter, GUI, point counters, harness, tests and launchers carry `GPL-2.0-or-later` notices, and its `LICENSE` file reproduces the SageMath copyright statement. Those files remain under the GPL. The manuscript PDF is shared for review and remains the author's work under its own terms.
+The repository's [MIT License](LICENSE) covers the author's own material, including the extension, integration, character-sum and verification folders, which carry their own MIT licence files. It does not cover third-party or separately licensed code. [`Cartier_Miller_Benchmark/`](Cartier_Miller_Benchmark/) bundles David Harvey's interval-product sources from SageMath under the GNU General Public License, with their original notices in `upstream/COPYING.txt`. That folder's adapter, GUI, point counters, harness, tests and launchers carry `GPL-2.0-or-later` notices, and its `LICENSE` file reproduces the SageMath copyright statement. Those files remain under the GPL. The manuscript PDFs and LaTeX source are shared for review and remain the author's work under their own terms.
 
 ## AI assistance and attribution
 
