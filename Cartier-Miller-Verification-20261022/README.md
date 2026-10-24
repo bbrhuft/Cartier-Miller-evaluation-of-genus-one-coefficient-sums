@@ -1,6 +1,6 @@
 # Verification for the 22 October 2026 paper
 
-This folder accompanies [`Cartier_Miller_Paper_Rewrite_Corrected_20261022.pdf`](../Cartier_Miller_Paper_Rewrite_Corrected_20261022.pdf).
+This folder accompanies [`Cartier_Miller_Paper_Rewrite_Corrected_20261022.pdf`](../Cartier_Miller_Paper_Rewrite_Corrected_20261022.pdf) (current draft dated 24 October 2026). The search that led to Section 6.3 is in [`../Cartier-Miller-Congruence-Search-20261024/`](../Cartier-Miller-Congruence-Search-20261024/).
 
 | File | Contents |
 |---|---|
@@ -24,6 +24,7 @@ The saved run used CPython 3.13.16 on Linux x86_64. Seeds are fixed: 20261022 fo
 - Theorem 4.4 under the fast-algorithm hypothesis, and separately as an unrestricted identity with active branch poles.
 - The trace-free identity (4.9), the coefficient ranges (6.1)–(6.3), Corollary E and (6.4) at all 221 eligible primes below 3000 plus p = 1,000,211, and the quarter-point formula (6.5) at all 210 eligible primes 13 ≤ p < 3000 plus p = 1,000,033.
 - Table 1, Example 6.1 (p = 23), the p = 13 and p = 97 quarter-point examples and the p = 5 example.
+- Section 6.3 (rows marked ‡, deterministic): the order of R over ℚ for 22 pairs (k, z), α₃(R) for z = 1 and −2, and Theorem 6.3 and Example 6.4 by direct summation at all primes 5 ≤ p < 3000.
 
 These are finite checks, not proofs. Earlier and larger campaigns, with disjoint confirmation samples, are documented in the computational companion and the older dated folders, and are not counted here.
 

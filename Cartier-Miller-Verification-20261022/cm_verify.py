@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Verification script for "Cartier--Miller evaluation of genus-one coefficient sums"
-(Cartier_Miller_Paper_Rewrite_Corrected.tex, 22 October 2026). Checks the displayed
+(Cartier_Miller_Paper_Rewrite_Corrected.tex, revised 24 October 2026). Checks the displayed
 identities of the paper against direct computation and reproduces every number
 quoted in the text; the full run is the paper's Table 2.
 
@@ -775,6 +775,90 @@ def main():
     report["[new] Theorem 4.4 with exact C_f, active branch poles allowed"] = (n3, ok3)
     report["  active branch poles in that sample"] = n3br
 
+
+    # ======== Section 6.3 checks (torsion collapse; deterministic, no seed) ========
+    from fractions import Fraction as Fq
+
+    def twist_Q(k, c):
+        """Exact twist data over Q for f = 1 - 4c x^k at a = 1 (equation (4.2))."""
+        f = [Fq(1)] + [Fq(0)] * (k - 1) + [-4 * Fq(c)]
+        fa = sum(f)
+        g = [sum(f[i] * comb(i, j) for i in range(j, len(f))) / fa for j in range(len(f))] + [Fq(0)] * 5
+        g1, g2, g3, g4 = g[1], g[2], g[3], g[4]
+        A = -4 * g4 + g1 * g3 - g2 * g2 / 3
+        B = g3 * g3 - Fq(8, 3) * g2 * g4 + g1 * g1 * g4 - g1 * g2 * g3 / 3 + Fq(2, 27) * g2 ** 3
+        return A, B, (g1 * g1 / 4 - Fq(2, 3) * g2, -g3 + g1 * g2 / 2 - g1 ** 3 / 8)
+
+    def addQ(P, Q, A):
+        if P is None:
+            return Q, Fq(0)
+        if Q is None:
+            return P, Fq(0)
+        (x1, y1), (x2, y2) = P, Q
+        if x1 == x2:
+            if y1 + y2 == 0:
+                return None, Fq(0)
+            l = (3 * x1 * x1 + A) / (2 * y1)
+        else:
+            l = (y2 - y1) / (x2 - x1)
+        x3 = l * l - x1 - x2
+        return (x3, l * (x1 - x3) - y1), l
+
+    def order_Q(R, A, bound=12):
+        """Order of R over Q if <= bound (Mazur: rational torsion has order <= 12), else None."""
+        T = R
+        for m in range(2, bound + 2):
+            T, _ = addQ(T, R, A)
+            if T is None:
+                return m
+        return None
+
+    zs63 = ["1/8", "-1/8", "1/16", "-1/16", "1/32", "1/2", "-1/2", "1", "-1", "2", "-2"]
+    torsion = {}
+    for k in (3, 4):
+        for zq in zs63:
+            A, B, R = twist_Q(k, Fq(zq))
+            torsion[(k, zq)] = order_Q(R, A)
+    finite = {key: m for key, m in torsion.items() if m}
+    # alpha_3(R) from Algorithm 2.2 (bits of 3 = "11": one doubling, one addition)
+    alpha3 = {}
+    for zq in ("1", "-2"):
+        A, B, R = twist_Q(3, Fq(zq))
+        T, l1 = addQ(R, R, A)
+        T, l2 = addQ(T, R, A)
+        alpha3[zq] = (2 * 0 + l1 + l2, T is None)
+
+    def r_small(p):
+        """4p = r^2 + 27 s^2 with r = 1 (mod 3), for small p."""
+        for x in range(1, 2 * isqrt(p) + 2):
+            rem = 4 * p - x * x
+            if rem > 0 and rem % 27 == 0 and isqrt(rem // 27) ** 2 == rem // 27:
+                return x if x % 3 == 1 else -x
+
+    def S3_direct(c, p):
+        L = (p - 1) // 3
+        s, b, cp = 0, 1, 1
+        for i in range(L + 1):
+            s = (s + b * cp) % p
+            b = b * 2 * (2 * i + 1) % p * inv(i + 1, p) % p
+            cp = cp * c % p
+        return s
+
+    n63 = ok63 = 0
+    for c in (1, -2):
+        for p in [q for q in range(5, 3000) if is_prime(q)]:
+            i3 = inv(3, p)
+            if p % 3 == 2:
+                pred = (-i3) % p if c == 1 else i3
+            else:
+                w = 1 if c == 1 else pow(2, (p - 1) // 3, p)
+                pred = (1 - 2 * w * r_small(p)) * i3 % p
+            n63 += 1
+            ok63 += S3_direct(c % p, p) == pred
+    report["[6.3] R torsion over Q (k, z): order"] = finite
+    report["[6.3] other 20 (k, z) of infinite order"] = sum(1 for m in torsion.values() if m is None)
+    report["[6.3] alpha_3(R), [3]R = O  (z = 1, -2)"] = alpha3
+    report["[6.3] Thm 6.3 and Ex 6.4, all primes 5<=p<3000"] = (n63, ok63)
     # -------- Numbers quoted in the paper --------
     print("=" * 72)
     for k, v in report.items():

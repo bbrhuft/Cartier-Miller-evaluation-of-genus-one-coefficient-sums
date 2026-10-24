@@ -1,5 +1,5 @@
-Run started 2026-10-22T23:07:15Z
-cm_verify.py  Python 3.13.16 (CPython), Linux 6.18.44-fc-v140 x86_64
+Run started 2026-10-24T01:13:27Z
+cm_verify.py  Python 3.13.16 (CPython), Linux 6.18.44-fc-v153 x86_64
 ========================================================================
 Theorem A points                                 (4601, 4601)
   chains with an addition step T = P             54
@@ -23,6 +23,10 @@ Quarter point p=1000033                          True
 [new] (6.3) vs (6.2), every 0 <= L <= h, same primes (38144, 38144)
 [new] Theorem 4.4 with exact C_f, active branch poles allowed (448, 448)
   active branch poles in that sample             203
+[6.3] R torsion over Q (k, z): order             {(3, '1'): 3, (3, '-2'): 3}
+[6.3] other 20 (k, z) of infinite order          20
+[6.3] alpha_3(R), [3]R = O  (z = 1, -2)          {'1': (Fraction(-2, 1), True), '-2': (Fraction(0, 1), True)}
+[6.3] Thm 6.3 and Ex 6.4, all primes 5<=p<3000   (856, 856)
 ========================================================================
 Table 1 rows (H, S, rPsi, eps, tau):
   1+w+3w^3      : (1, 9, 3, 1, 1)
@@ -32,6 +36,6 @@ Worked example p=23: g=[1, 20, 20, 22], A_g=0, B_g=2, R=(10, 6), eps=1, N=24, al
 Quarter point p=13: B_n=5, a_n=4, tau=4
 Quarter point p=97: B_n=33, a_n=79, tau=-18, U=4B+9a/4=43
 p=5 example C_{x^3+3x}(1): 1 direct 1 tau -4
-Illustration only (no direct check): rounded third at p=2305843009213693907 (61 bits): B_L=616145584502818199  [1.73 ms, pure Python]
-Total run time 15.2 s
-Run finished 2026-10-22T23:07:30Z
+Illustration only (no direct check): rounded third at p=2305843009213693907 (61 bits): B_L=616145584502818199  [1.75 ms, pure Python]
+Total run time 15.5 s
+Run finished 2026-10-24T01:13:43Z

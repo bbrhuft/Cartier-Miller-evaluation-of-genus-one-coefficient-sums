@@ -37,14 +37,14 @@
 \hypersetup{pdfauthor={David Jordan},pdftitle={Cartier-Miller evaluation of genus-one coefficient sums}}
 
 \title{Cartier--Miller evaluation of genus-one coefficient sums}
-\author{David Jordan\\[2pt]\small\href{mailto:David.Jordan@mu.ie}{David.jordan@mu.ie}}
-\date{Draft, 22 October 2026}
+\author{David Jordan\\[2pt]\small\href{mailto:David.Jordan@mu.ie}{David.Jordan@mu.ie}}
+\date{Draft, 24 October 2026}
 
 \begin{document}
 \maketitle
 
 \begin{abstract}
-Let $p\ge5$ be prime and $f\in\F_p[x]$ a squarefree cubic or quartic. Building on the differentiated Miller chains of Semaev and R\"uck, we show that, once the trace of Frobenius of $v^2=f(x)$ is known, one chain of $O(\log p)$ field operations on a quadratic twist evaluates the truncation $T_f=f^{(p-1)/2}\bmod x^p$ at any $\mu\in\F_p^\times$ with $f(\mu)\neq0$, and the reciprocal character sum $\sum_{x\neq a}\chi(f(x))/(x-a)\in\F_p$ at any $a$ with $f(a)\neq0$. The key input is an identity valid for every elliptic curve $y^2=W(x)$ over $\F_p$ and every affine rational point $(a,b)$: $b$ times the high block of $W^{(p-1)/2}$ at $a$ equals the constant Laurent coefficient of the logarithmic derivative of the Miller function of order $\#E(\F_p)$. As an application, for $p\equiv2\pmod3$ the residue $\sum_{k=0}^{(p-2)/3}\binom{2k}{k}8^{-k}\bmod p$ is computed deterministically in $O(\log p)$ field operations, whereas computing the next partial sum is equivalent to computing $((p-2)/3)!\bmod p$. We also interpret the truncation as a logarithmic invariant of a two-pole divisor, normalized directly at the exceptional traces $\pm1$.
+Let $p\ge5$ be prime and $f\in\F_p[x]$ a squarefree cubic or quartic. Building on the differentiated Miller chains of Semaev and R\"uck, we show that, once the trace of Frobenius of $v^2=f(x)$ is known, one chain of $O(\log p)$ field operations on a quadratic twist evaluates the truncation $T_f=f^{(p-1)/2}\bmod x^p$ at any $\mu\in\F_p^\times$ with $f(\mu)\neq0$, and the reciprocal character sum $\sum_{x\neq a}\chi(f(x))/(x-a)\in\F_p$ at any $a$ with $f(a)\neq0$. The key input is an identity valid for every elliptic curve $y^2=W(x)$ over $\F_p$ and every affine rational point $(a,b)$: $b$ times the high block of $W^{(p-1)/2}$ at $a$ equals the constant Laurent coefficient of the logarithmic derivative of the Miller function of order $\#E(\F_p)$. As an application, for $p\equiv2\pmod3$ the residue $\sum_{k=0}^{(p-2)/3}\binom{2k}{k}8^{-k}\bmod p$ is computed deterministically in $O(\log p)$ field operations, whereas computing the next partial sum is equivalent to computing $((p-2)/3)!\bmod p$. The method also yields explicit congruences at small-order torsion points, including an evaluation of $\sum_{k=0}^{\lfloor p/3\rfloor}\binom{2k}{k}\bmod p$. We also interpret the truncation as a logarithmic invariant of a two-pole divisor, normalized directly at the exceptional traces $\pm1$.
 \end{abstract}
 
 \section{Introduction}\label{sec:intro}
@@ -106,7 +106,7 @@ Let $p\ge5$ with $p\equiv2\pmod3$, and put $L=(p+1)/3$ and $m=L-1=(p-2)/3$.
 \end{enumerate}
 \end{lettered}
 
-The equivalence in (ii) is a reduction in both directions; it proves no lower bound for either task and no complexity separation between $B_L$ and $B_{L+1}$. We know of no polynomial-time algorithm for $((p-2)/3)!\bmod p$. Classical deterministic methods use $\widetilde O(\sqrt p)$ field operations (Bostan, Gaudry \& Schost, 2007). Tal (2026) goes below the square-root exponent by Jacobi-sum reconstruction when $p-1$, or another cyclotomic value $\Phi_r(p)$, has a divisor $q$ in a suitable range: deterministically in $\widetilde O(q^c+\sqrt{p/q})$ bit operations for a supplied $q\mid p-1$, and with expected bounds (Las Vegas setup) in the cyclotomic variants, which together cover all but an arbitrarily small proportion of primes. For arbitrary $p$ its deterministic bound improves the classical one by a logarithmic factor. This is the relevant route to boundary terms such as $a_L$. In this example, therefore, the partial sum up to the cutoff is a value of a truncated power on a curve, while one more term is a modular factorial. At the quarter point ($p\equiv1\pmod4$, $f=1-x^4/2$) both the prefix and the boundary term are accessible, the latter through Gauss's binomial congruence (Section~\ref{sec:binomial}).
+The equivalence in (ii) is a reduction in both directions; it proves no lower bound for either task and no complexity separation between $B_L$ and $B_{L+1}$. We know of no polynomial-time algorithm for $((p-2)/3)!\bmod p$. Classical deterministic methods use $\widetilde O(\sqrt p)$ field operations (Bostan, Gaudry \& Schost, 2007). Tal (2026) goes below the square-root exponent by Jacobi-sum reconstruction when $p-1$, or another cyclotomic value $\Phi_r(p)$, has a divisor $q$ in a suitable range: deterministically in $\widetilde O(q^c+\sqrt{p/q})$ bit operations for a supplied $q\mid p-1$, and with expected bounds (Las Vegas setup) in the cyclotomic variants, which together cover all but an arbitrarily small proportion of primes. For arbitrary $p$ its deterministic bound improves the classical one by a logarithmic factor. This is the relevant route to boundary terms such as $a_L$. In this example, therefore, the partial sum up to the cutoff is a value of a truncated power on a curve, while one more term is a modular factorial. At the quarter point ($p\equiv1\pmod4$, $f=1-x^4/2$) both the prefix and the boundary term are accessible, the latter through Gauss's binomial congruence (Section~\ref{sec:binomial}). Section~\ref{sec:torsion} shows that when the point $R$ of Theorem~\ref{thm:B} is a torsion point the evaluator gives closed forms; for example $\sum_{k=0}^{\lfloor p/3\rfloor}\binom{2k}{k}\equiv-\tfrac13$ or $\tfrac{1-2r}{3}\pmod p$ according as $p\equiv2$ or $1\pmod 3$, where $4p=r^2+27s^2$ (Theorem~\ref{thm:third-sum}).
 
 \subsection{Relation to previous work}
 The ingredients are classical. Miller (1986, 2004) introduced functions $f_{m,P}$ with prescribed divisors and their evaluation along an addition chain. Semaev (1998) differentiated Miller's recurrence to compute the logarithmic-derivative map on the $p$-torsion of an anomalous curve in $O(\log p)$ operations, and R\"uck (1999) extended this to divisor class groups, making the local-coefficient cocycle explicit; see also Galbraith (2012, Section~26.4.1). Differentiated Miller evaluation, and the cocycle in Lemma~\ref{lem:cocycle}, belong to this Semaev--R\"uck framework. The Cartier operator and its action on logarithmic differentials go back to Cartier (1957) and Serre (1958). Voloch (1990, 1997) identified the Artin--Schreier construction behind the high block with Verschiebung and obtained explicit $p$-descent; on a trace-one curve the relevant function is $yJ_W(x)$ up to normalization, and Theorem~\ref{thm:A} for $N=p$ identifies it with the Miller coefficient $\alpha_p$ in an explicit normalization (Remark~\ref{rem:order}). Cassels (1971) and Gunji (1976) studied the related logarithmic differentials and quasi-periods. The anomalous case is the setting of the discrete-logarithm attacks of Satoh and Araki (1998) and Smart (1999). For trace-free computation, the block-product methods of Bostan, Gaudry and Schost (2007) and Harvey (2007) apply, and Harvey and Sutherland (2014, 2016) treat many primes simultaneously.
@@ -450,11 +450,67 @@ Let $p=4n+1\ge17$ and $f=1-x^4/2$. The exponents $4i\le p-1$ are exactly $0\le i
 \begin{equation}\label{eq:quarter}
 B_n=T_f(1)-a_n,\qquad U_p(n)\equiv4B_n+\tfrac94\,a_n\pmod p .
 \end{equation}
-For example, at $p=97$ one finds $n=24$, $\tau_f=-18$, $a_n=79$, $B_n=33$ and $U_p(n)=43$. Here both the prefix and the boundary are available in polynomial time: Cornacchia needs a square root of $-1$, and Schoof's algorithm gives a deterministic alternative. This is the contrast with the rounded third mentioned in the introduction.
+For example, at $p=97$ one finds $n=24$, $\tau_f=-18$, $a_n=79$, $B_n=33$ and $U_p(n)=43$. Here both the prefix and the boundary are available in time polynomial in $\log p$, with trace preparation separate from the per-query cost. Cornacchia's route needs a square root of $-1$ modulo $p$, which is found in expected polynomial time from a quadratic nonresidue (deterministically under GRH); alternatively, Schoof's algorithm computes $\tau_f$ unconditionally and deterministically in polynomial time, after which $a_n\equiv\tau_f\pmod p$. The quarter point thus takes its boundary coefficient from classical complex-multiplication data, whereas the examples in Section~\ref{sec:torsion} simplify the Miller evaluation itself.
+
+\subsection{Torsion points and closed forms}\label{sec:torsion}
+For general inputs the evaluator of Theorem~\ref{thm:B} requires computing $\alpha_N(R)$. When $R$ has small order, the composition law \eqref{eq:compose} reduces this computation to a closed form. Throughout, $h=(p-1)/2$ and $H=[x^{p-1}]f^h$.
+
+\begin{proposition}[Torsion collapse]\label{prop:torsion}
+In the setting of Theorem~\ref{thm:B}, suppose that $R$ has order $m$ in $E_a(\F_p)$, and put $q=N/m$, an integer formed before reduction modulo $p$. Then $\alpha_N(R)=q\,\alpha_m(R)$ and
+\begin{equation}\label{eq:torsion}
+C_f(a)=\eps\Bigl(-\frac{g_1}{4}(N-2)-\frac{q}{2}\,\alpha_m(R)\Bigr),\qquad
+T_f(a)=\eps\Bigl(1-\frac{aNg_1}{4}-\frac{aq}{2}\,\alpha_m(R)\Bigr)\quad(a\neq0).
+\end{equation}
+Here $N\equiv1-\eps H\pmod p$; when $p\nmid m$ this also determines $q\equiv m^{-1}(1-\eps H)\pmod p$.
+\end{proposition}
+
+\begin{proof}
+Lagrange's theorem gives $m\mid N$, so $q\in\mathbb Z$. By \eqref{eq:compose} with $Q=R$, $\alpha_N(R)=q\,\alpha_m(R)+\alpha_q([m]R)=q\,\alpha_m(R)$; equivalently $f_{N,R}=c\,f_{m,R}^{\,q}$ for a nonzero constant $c$, because $[m]R=O$ makes $f_{q,O}$ constant, and constants do not change logarithmic derivatives. Substituting into \eqref{eq:single} and \eqref{eq:truncation} gives \eqref{eq:torsion}. Finally $N=p+1-\eps\tau_f\equiv1-\eps H$ by Lemma~\ref{lem:three}. If $p\mid m$, for instance $m=N=p$ at trace one, the residue of $q$ is not determined by $N\bmod p$; the formula still holds with the integer $q$.
+\end{proof}
+
+For $f=1-4z\,x^k$ the congruence $\binom{h}{i}(-4)^i\equiv\binom{2i}{i}$, valid for $0\le i\le h$ (see before \eqref{eq:coeffs}), gives $[x^{ki}]f^h=\binom{h}{i}(-4z)^i\equiv\binom{2i}{i}z^i$, so
+\[
+T_f(1)=S_k(z):=\sum_{i=0}^{\lfloor(p-1)/k\rfloor}\binom{2i}{i}z^i\qquad(k\in\{3,4\}).
+\]
+For $k=3$, $p>3$ and $f(1)\neq0$, the normalized twist at $a=1$ is a nonsingular curve $E_1:Y^2=X^3+B_g$. In both examples below $R$ has order $3$, and \eqref{eq:torsion} with $a=1$ and $m=3$ reduces to
+\begin{equation}\label{eq:eps2H}
+S_3(z)\equiv\eps\Bigl(1-\frac{2N}{3}\Bigr)\equiv\frac{\eps+2H}{3}\pmod p .
+\end{equation}
+
+\begin{theorem}\label{thm:third-sum}
+For every prime $p>3$,
+\[
+\sum_{k=0}^{\lfloor p/3\rfloor}\binom{2k}{k}\equiv
+\begin{cases}
+-\dfrac13\pmod p, & p\equiv2\pmod3,\\[2mm]
+\dfrac{1-2r}{3}\pmod p, & p\equiv1\pmod3,
+\end{cases}
+\]
+where, for $p\equiv1\pmod3$, $r,s\in\mathbb Z$ satisfy $4p=r^2+27s^2$ and $r\equiv1\pmod3$; the integer $r$ is signed and determined by these conditions.
+\end{theorem}
+
+\begin{proof}
+Take $k=3$, $z=1$ and $f=1-4x^3$, which is squarefree for $p>3$; the sum is $S_3(1)=T_f(1)$, since $\lfloor p/3\rfloor=\lfloor(p-1)/3\rfloor$. Here $f(1)=-3\neq0$, $\eps=\chi(-3)$, which is $1$ exactly when $p\equiv1\pmod3$, and $g_1=f'(1)/f(1)=4$. The normalized polynomial is $g(z)=1+4z+4z^2+\tfrac43z^3$, so \eqref{eq:R} gives $E_1:Y^2=X^3-\tfrac{16}{27}$ and $R=(\tfrac43,-\tfrac43)$. The tangent slope at $R$ is $-2$ and $[2]R=(\tfrac43,\tfrac43)=-R$; as $R\neq O$, $R$ has exact order $3$, and Algorithm~\ref{alg:miller} gives $\alpha_3(R)=-2+0=-2$. Then \eqref{eq:torsion} gives $S_3(1)=\eps(1-N+N/3)$, which is \eqref{eq:eps2H}. If $p\equiv2\pmod3$, then $\eps=-1$ and $H=0$ because $3\nmid p-1$, so $S_3(1)\equiv-\tfrac13$. If $p\equiv1\pmod3$, then $\eps=1$ and, with $L=(p-1)/3$, $H=\binom{h}{L}(-4)^L\equiv\binom{2L}{L}\equiv-r$ by Jacobi's congruence (Berndt, Evans \& Williams, 1998; Cosgrave \& Dilcher, 2010), so $S_3(1)\equiv(1-2r)/3$.
+\end{proof}
+
+\begin{example}[$z=-2$]\label{ex:z-2}
+For $f=1+8x^3$ one has $f(1)=9$, $\eps=1$, $g_1=\tfrac83$, $E_1:Y^2=X^3+\tfrac{64}{729}$ and $R=(0,\tfrac8{27})$. The tangent at $R$ is horizontal, so $[2]R=-R$; as $R\neq O$, $R$ has exact order $3$, and $\alpha_3(R)=0$. Then \eqref{eq:torsion} gives $S_3(-2)\equiv1-\tfrac{2N}{3}$, which is \eqref{eq:eps2H} with $\eps=1$. For $p\equiv2\pmod3$, $H=0$. For $p\equiv1\pmod3$, $L=(p-1)/3$ is even, so $H=\binom{h}{L}8^L\equiv(-2)^L\binom{2L}{L}\equiv-2^{(p-1)/3}r$, with $r$ as in Theorem~\ref{thm:third-sum}. Therefore, for every prime $p>3$,
+\[
+\sum_{k=0}^{\lfloor p/3\rfloor}\binom{2k}{k}(-2)^k\equiv
+\begin{cases}
+\dfrac13\pmod p, & p\equiv2\pmod3,\\[2mm]
+\dfrac{1-2\cdot2^{(p-1)/3}\,r}{3}\pmod p, & p\equiv1\pmod3.
+\end{cases}
+\]
+\end{example}
+
+\begin{remark}\label{rem:torsion-search}
+As discovery provenance only (the proof above establishes the result): Theorem~\ref{thm:third-sum} was first observed in a pre-registered integer-relation search. That search tested whether $S_k(z)$ is a combination with small rational coefficients of Fermat quotients, CM data and power-residue symbols. It covered $k\in\{3,4\}$, ten values of $z$ (including $z=\tfrac18$) and all residue classes modulo $24$, a total of $224$ combinations, and $z=1$ with $k=3$ was the only case that produced a relation. Proposition~\ref{prop:torsion} explains the relation that was found, and the negative results are consistent with it: over $\mathbb Q$, $R$ has order $3$ for $(k,z)=(3,1)$ and $(3,-2)$, whereas for the other $20$ combinations of $k\in\{3,4\}$ with those ten values and $z=-2$ it has no order up to $12$, hence infinite order by Mazur's theorem (Mazur, 1977). This does not prove that no closed form exists in those cases. The value $z=-2$ was not part of the search; Example~\ref{ex:z-2} was derived from the proposition and then checked. Neither statement has been located in the literature we examined, and both may be known. These special evaluations do not address the general rounded-third boundary problem of Corollary~\ref{cor:E}.
+\end{remark}
 
 \section{Numerical checks and open questions}\label{sec:checks}
 
-The accompanying script \texttt{cm\_verify.py} (pure Python~3, no dependencies) checks each identity against direct computation. Table~\ref{tab:checks} reports one full run, under CPython~3.13 on Linux x86\_64; its output is saved with the script as \texttt{cm\_verify\_output.txt}. All comparisons agreed. Rows marked $\dagger$ were added in this revision and use the seed 2026102202; the other rows use the seed 20261022. These are finite checks, not proofs. Earlier and larger campaigns, including disjoint confirmation samples, are documented separately in the companion report and are not counted here.
+The accompanying script \texttt{cm\_verify.py} (pure Python~3, no dependencies) checks each identity against direct computation. Table~\ref{tab:checks} reports one full run, under CPython~3.13 on Linux x86\_64; its output is saved with the script as \texttt{cm\_verify\_output.txt}. All comparisons agreed. Rows marked $\dagger$ use the seed 2026102202, rows marked $\ddagger$ (Section~\ref{sec:torsion}) are deterministic, and the other rows use the seed 20261022. These are finite checks, not proofs. Earlier and larger campaigns, including disjoint confirmation samples, are documented separately in the companion report and are not counted here.
 
 \begin{table}[ht]
 \centering
@@ -477,6 +533,7 @@ $\dagger$ \eqref{eq:coeffs} by polynomial powering, the ratio of consecutive $a_
 $\dagger$ Congruence \eqref{eq:Ucong} against definition \eqref{eq:U} for every $0\le L\le h$, same primes & 38{,}144\\
 Corollary~\ref{cor:E} and \eqref{eq:rt-U}: all 221 eligible primes $5\le p<3000$; part (i) also at the additional prime $1{,}000{,}211$ & 221${}+1$ primes\\
 Equation \eqref{eq:quarter}: all 210 eligible primes $13\le p<3000$ and the additional prime $1{,}000{,}033$ & 210${}+1$ primes\\
+$\ddagger$ Section~\ref{sec:torsion}: order of $R$ over $\mathbb Q$ for the 22 pairs $(k,z)$ of Remark~\ref{rem:torsion-search} and $\alpha_3(R)$ for $z=1,-2$, in exact arithmetic; Theorem~\ref{thm:third-sum} and Example~\ref{ex:z-2} by direct summation at all primes $5\le p<3000$ & 856\\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -486,6 +543,7 @@ Equation \eqref{eq:quarter}: all 210 eligible primes $13\le p<3000$ and the addi
 \item \emph{Branch poles.} At $f(a)=0$ the two simple poles merge into a pole of the second kind. Lemma~\ref{lem:three} still holds, but Theorem~\ref{thm:B} does not apply; an $O(\log p)$ evaluation of $J_f(a)$ there would need a further local coefficient. Of the methods in this paper, only the trace-free $\widetilde O(\sqrt p)$ route of Remark~\ref{rem:tracefree} covers branch poles.
 \item \emph{Higher genus.} The residue cancellation of Proposition~\ref{prop:regular} extends formally, with the Hasse invariant replaced by the Cartier--Manin matrix, but evaluation at one point gives only one linear functional of the holomorphic correction. We have not examined whether Miller-type chains on the Jacobian evaluate truncations of $f^{(p-1)/2}$ for $\deg f\ge5$.
 \item \emph{Extension fields and higher powers of $p$.} Proposition~\ref{prop:regular} holds over $\F_{p^k}$; the base-field simplification and the twist evaluator would need separate arguments there, which we have not given. All results here are modulo $p$; we have not examined lifts modulo $p^2$.
+\item \emph{Torsion families.} Which $(k,z)$, or more generally which $(f,a)$, make $R$ a torsion point, and do the resulting closed forms account for known congruences for truncated central-binomial sums? We have examined only the cases in Remark~\ref{rem:torsion-search}.
 \item \emph{Boundary terms.} For $p\equiv2\pmod 3$, is there a polynomial-time algorithm for $((p-2)/3)!\bmod p$, or equivalently, by Corollary~\ref{cor:E}, for $B_{(p+4)/3}$? The methods discussed here do not provide one.
 \end{enumerate}
 
@@ -547,6 +605,8 @@ Voloch (1997) defines quasi-periods on an ordinary curve by $z(P+P_0)=z(P)+\eta(
 \setlength{\leftskip}{1.5em}
 \setlength{\parskip}{1.5pt}
 
+Berndt, B. C., Evans, R. J., \& Williams, K. S. (1998). \emph{Gauss and Jacobi sums}. Wiley.
+
 Bostan, A., Gaudry, P., \& Schost, \'E. (2007). Linear recurrences with polynomial coefficients and application to integer factorization and Cartier--Manin operator. \emph{SIAM Journal on Computing, 36}(6), 1777--1806. \url{https://doi.org/10.1137/S0097539704443793}
 
 Cartier, P. (1957). Une nouvelle op\'eration sur les formes diff\'erentielles. \emph{Comptes Rendus de l'Acad\'emie des Sciences, 244}, 426--428.
@@ -570,6 +630,8 @@ Harvey, D., \& Sutherland, A. V. (2014). Computing Hasse--Witt matrices of hyper
 Harvey, D., \& Sutherland, A. V. (2016). Computing Hasse--Witt matrices of hyperelliptic curves in average polynomial time, II. In \emph{Frobenius distributions: Lang--Trotter and Sato--Tate conjectures} (Contemporary Mathematics, Vol. 663). American Mathematical Society. \url{https://doi.org/10.1090/conm/663/13352}
 
 Jordan, D. (2026). \emph{Computational companion to Cartier--Miller evaluation} [Technical report and reproducibility package]. \url{https://github.com/bbrhuft/Cartier-Miller-evaluation-of-genus-one-coefficient-sums}
+
+Mazur, B. (1977). Modular curves and the Eisenstein ideal. \emph{Publications Math\'ematiques de l'IH\'ES, 47}, 33--186. \url{https://doi.org/10.1007/BF02684339}
 
 Miller, V. S. (1986). \emph{Short programs for functions on curves} [Unpublished manuscript]. \url{https://crypto.stanford.edu/miller/miller.pdf}
 

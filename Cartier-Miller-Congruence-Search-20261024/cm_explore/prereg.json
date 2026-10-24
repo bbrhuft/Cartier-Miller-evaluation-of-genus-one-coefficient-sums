@@ -1,0 +1,49 @@
+{
+  "title": "Cartier-Miller congruence experiment: truncated central-binomial sums S_k(z)",
+  "registered": "2026-10-24",
+  "target": "S_k(z) = sum_{i=0}^{floor((p-1)/k)} binom(2i,i) z^i mod p, computed as T_f(1), f = 1 - 4 z x^k (Corollary 4.2)",
+  "k_values": [3, 4],
+  "round1_z": ["1/8"],
+  "round2_z": ["-1/8", "1/16", "-1/16", "1/32", "1/2", "-1/2", "1", "-1", "2"],
+  "residue_classes_mod_24": [1, 5, 7, 11, 13, 17, 19, 23],
+  "round2_stratify_by_legendre_of": "odd primes l != 3 dividing numerator/denominator of z or 1-4z",
+  "basis": {
+    "all": ["1", "q2", "q3", "q5", "q7", "q2^2", "q2*q3", "q3^2"],
+    "p=1 mod 4": ["u", "1/u", "u^2", "rho", "rho*u", "rho/u", "u*q2", "u*q3"],
+    "p=1 mod 3": ["r", "1/r", "r^2", "w", "w*r", "w^2*r", "r*q2", "r*q3"],
+    "p=2 mod 3": ["g", "g^2", "g*q2", "g^2*q2"],
+    "round 2 extra, for each l in ell_set(z)": ["l^((p-1)/4) if p=1 mod 4", "l^((p-1)/3) if p=1 mod 3", "l^((2p-1)/3) if p=2 mod 3"],
+    "definitions": {
+      "q_a": "(a^(p-1) - 1)/p mod p",
+      "u": "p = u^2 + s^2, u odd, u = 1 mod 4",
+      "rho": "2^((p-1)/4) mod p",
+      "r": "4p = r^2 + 27 s^2, r = 1 mod 3",
+      "w": "2^((p-1)/3) mod p",
+      "g": "2^((2p-1)/3) mod p (unique cube root of 2)"
+    }
+  },
+  "discovery": {
+    "seed": 20261024,
+    "primes_per_run": 40,
+    "prime_bits": 48,
+    "height_bound_H": 10000,
+    "gap_factor": 1e10,
+    "dependency_pruning": "before each run, relations among basis columns alone with sup-norm <= H and gap >= gap_factor are removed by dropping the last involved element; logged"
+  },
+  "confirmation": {
+    "seed": 20261025,
+    "primes": [[64, 1000], [128, 100], [256, 10]],
+    "rule": "a candidate is confirmed only if it holds at every confirmation prime; candidates are frozen (SHA-256) before confirmation"
+  },
+  "stage0": {
+    "seed": 20261023,
+    "direct_check_all_primes_below": 2000,
+    "direct_check_random_primes": {"count": 10, "range": [100000, 1000000]},
+    "trace_brute_force_primes_below": 600,
+    "planted_coefficients": "numerators in [-50, 50], denominators in {1, 2, 3, 4, 6}",
+    "confirmation_size_check": "2 primes per class and k at each confirmation size: CM data identities, cube/4th roots of unity, Fermat quotient, and target evaluation without trace ambiguity",
+    "pass_rule": "zero mismatches; every planted relation recovered exactly; no candidate from random targets; no failures at confirmation sizes"
+  },
+  "stopping_rule": "stop when Round 1 and Round 2 are exhausted or after 8 hours of compute; a confirmed relation ends the search for that target; no unregistered additions (new ideas go to a separately frozen Round 3)",
+  "smoke_test_seeds_not_used_for_results": {"discovery": 1, "confirmation": 2}
+}
