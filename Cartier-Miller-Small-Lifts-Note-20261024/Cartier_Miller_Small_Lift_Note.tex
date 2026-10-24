@@ -63,9 +63,9 @@ Let $f\in\Q[x]$ be a squarefree cubic or quartic and $a\in\Q$ with $f(a)\neq0$. 
 g(z)=\frac{f(a+z)}{f(a)}=1+g_1z+g_2z^2+g_3z^3+g_4z^4,
 \end{equation}
 with $g_4=0$ for a cubic. Taking $(0,1)$ as origin on $v^2=g(z)$ gives the short model $E_a:Y^2=X^3+A_gX+B_g$, and $(0,-1)$ maps to the point
-\[
+\begin{equation}\label{eq:R}
 R_a=\Bigl(\tfrac14g_1^2-\tfrac23g_2,\ -g_3+\tfrac12g_1g_2-\tfrac18g_1^3\Bigr)\in E_a(\Q),
-\]
+\end{equation}
 with $A_g,B_g$ as in Jordan (2026, equation~(4.2)). Call a prime $p$ \emph{admissible} for $(f,a)$ if $p\ge5$, the coefficients of $f$ and $a$ are $p$-integral, the leading coefficient and discriminant of $f$ are $p$-adic units, and $f(a)\not\equiv0\pmod p$. For admissible $p$ put $\eps=\chi(f(a))$ and $N=p+1-\eps\tau_f=\#E_a(\F_p)$. On $E_a$ use the uniformizer $t=-X/Y$ at the origin $O$. For a point $P$ and $m\ge1$, let $f_{m,P}$ be a Miller function with $\divisor(f_{m,P})=m(P)-([m]P)-(m-1)(O)$, and put
 \begin{equation}\label{eq:alpha}
 \alpha_m(P)=[t^0]\,\frac{d\log f_{m,P}}{dt},
@@ -78,9 +78,9 @@ For every admissible prime $p$, $C_f(a)=\eps\bigl(-\tfrac{g_1}{4}(N-2)-\tfrac12\
 
 \begin{proposition}[torsion implies a closed form]\label{prop:known}
 Suppose $R_a$ has finite order $m$ in $E_a(\Q)$, and let $\alpha_m(R_a)\in\Q$ be computed by the Miller chain over $\Q$. Put
-\[
+\begin{equation}\label{eq:Adef}
 A=\frac{g_1}{4}-\frac{\alpha_m(R_a)}{2m},\qquad B=\frac{g_1}{4}+\frac{\alpha_m(R_a)}{2m}.
-\]
+\end{equation}
 Then for every admissible prime $p$ with $p\nmid m$ and $A,B,g_1$ $p$-integral,
 \begin{equation}\label{eq:AB}
 C_f(a)\equiv A\,\eps+B\,\tau_f\pmod p .
@@ -89,10 +89,11 @@ C_f(a)\equiv A\,\eps+B\,\tau_f\pmod p .
 
 \begin{proof}
 At an admissible prime $E_a$ has good reduction, and reduction is injective on torsion of order prime to $p$, so $R_a$ has order exactly $m$ in $E_a(\F_p)$ and the Miller chain for $\alpha_m$ reduces modulo $p$ step by step. By Jordan (2026, Proposition~6.2), $\alpha_N(R_a)=q\,\alpha_m(R_a)$ with $q=N/m$, and $N\equiv1-\eps\tau_f\pmod p$. Substituting into Theorem~\ref{thm:B} and using $\eps^2=1$,
-\[
+\begin{equation}\label{eq:collapse}
 C_f(a)\equiv\eps\Bigl(\frac{g_1}{4}(1+\eps\tau_f)-\frac{(1-\eps\tau_f)\,\alpha_m}{2m}\Bigr)
-=\Bigl(\frac{g_1}{4}-\frac{\alpha_m}{2m}\Bigr)\eps+\Bigl(\frac{g_1}{4}+\frac{\alpha_m}{2m}\Bigr)\tau_f .\qedhere
-\]
+=\Bigl(\frac{g_1}{4}-\frac{\alpha_m}{2m}\Bigr)\eps+\Bigl(\frac{g_1}{4}+\frac{\alpha_m}{2m}\Bigr)\tau_f ,
+\end{equation}
+which is \eqref{eq:AB} with $A,B$ as in \eqref{eq:Adef}.
 \end{proof}
 
 Since $|\tau_f|\le2\sqrt p$ by Hasse's bound, clearing the denominator $D$ of $A$ and $B$ shows that $C_f(a)\equiv u/D$ with $|u|=O(\sqrt p)$.
@@ -113,25 +114,25 @@ Write $\mathcal C_p$ for the Cartier operator on differentials in characteristic
 
 \begin{lemma}[Cartier form of the curve-order identity]\label{lem:cartier}
 Let $p\ge5$, let $W\in\F_p[X]$ be a monic squarefree cubic and $E:Y^2=W(X)$ the corresponding elliptic curve, with $N=\#E(\F_p)$, and let $P=(r,s)\in E(\F_p)$ with $s\neq0$. Put $\omega_0=dX/(2Y)$ and
-\[
+\begin{equation}\label{eq:theta}
 \vartheta_P=\frac{Y+s}{X-r}\,\omega_0,
-\]
+\end{equation}
 a differential with simple poles at $P$ and $O$ only, of residues $+1$ and $-1$. Then
-\[
+\begin{equation}\label{eq:cartier-id}
 \mathcal C_p(\omega_0)=H_E\,\omega_0,\qquad \mathcal C_p(\vartheta_P)-\vartheta_P=\alpha_N(P)\,\omega_0,
-\]
+\end{equation}
 where $H_E=[X^{p-1}]W^{(p-1)/2}$ is the Hasse invariant, so that $N\equiv1-H_E\pmod p$.
 \end{lemma}
 
 \begin{proof}
 Put $h=(p-1)/2$ and write $W^h=U+H_EX^{p-1}+X^pJ_W$ with $\deg U\le p-2$, as in Jordan (2026, Theorem~A). Since $dX/Y=W^h\,dX/Y^p$ and $\mathcal C_p$ is $p^{-1}$-linear, $\mathcal C_p(g\,dX/Y)=\mathcal C_p(gW^h\,dX)/Y$ for $g\in\F_p(X)$; with $g=1$ this gives $\mathcal C_p(\omega_0)=H_E\omega_0$, and $H_E\equiv\tau_E=p+1-N$. Next,
-\[
+\begin{equation}\label{eq:theta-split}
 \vartheta_P=\frac12\,\frac{dX}{X-r}+\frac s2\,\frac{dX}{(X-r)Y}.
-\]
-The first term is half a logarithmic differential, and $\tfrac12\in\F_p$, so $\mathcal C_p$ fixes it. For the second, $W^h/(X-r)=W^h(r)/(X-r)+q(X)$ with $q=(W^h-W^h(r))/(X-r)$ a polynomial of degree $3h-1<2p-1$, and $W^h(r)=s^{p-1}=1$. The operator fixes $dX/(X-r)$, and $\mathcal C_p(q\,dX)=[X^{p-1}]q\;dX=J_W(r)\,dX$, because $[X^{p-1}]\,(X^k-r^k)/(X-r)=r^{k-p}$ for $k\ge p$ and vanishes for $k<p$. Hence
-\[
+\end{equation}
+The first term of \eqref{eq:theta-split} is half a logarithmic differential, and $\tfrac12\in\F_p$, so $\mathcal C_p$ fixes it. For the second, $W^h/(X-r)=W^h(r)/(X-r)+q(X)$ with $q=(W^h-W^h(r))/(X-r)$ a polynomial of degree $3h-1<2p-1$, and $W^h(r)=s^{p-1}=1$. The operator fixes $dX/(X-r)$, and $\mathcal C_p(q\,dX)=[X^{p-1}]q\;dX=J_W(r)\,dX$, because $[X^{p-1}]\,(X^k-r^k)/(X-r)=r^{k-p}$ for $k\ge p$ and vanishes for $k<p$. Hence
+\begin{equation}\label{eq:cartier-second}
 \mathcal C_p\Bigl(\frac s2\,\frac{dX}{(X-r)Y}\Bigr)=\frac s2\Bigl(\frac1{X-r}+J_W(r)\Bigr)\frac{dX}{Y},
-\]
+\end{equation}
 and $\mathcal C_p(\vartheta_P)-\vartheta_P=s\,J_W(r)\,\omega_0=\alpha_N(P)\,\omega_0$ by Theorem~A of Jordan (2026), which holds for every $N$, including $p\mid N$.
 \end{proof}
 
@@ -140,13 +141,13 @@ Let $f\in\Q[x]$ be a squarefree cubic or quartic, $a\in\Q$ with $f(a)\neq0$, and
 \end{theorem}
 
 \begin{proof}
-Write $E=E_a$ and $P=R_a=(r,s)$. If $s=0$, then $P$ has order $2$. Otherwise put $c=B-A$ and $\eta=\vartheta_P+c\,\omega_0$, a rational differential on $E$ defined over $\Q$, with simple poles at $P$ and $O$ only, of residues $+1$ and $-1$. Let $L=\mathcal O_E\bigl(-(P)+(O)\bigr)$ and $\nabla\varphi=d\varphi-\varphi\,\eta$. At $P$, a local generator of $L$ is a uniformizer $\pi$, and $\nabla\pi=-\pi\,(\eta-d\pi/\pi)$ with $\eta-d\pi/\pi$ regular; at $O$ the generator $\pi^{-1}$ behaves in the same way, since the residue there is $-1$. So $\nabla$ is a regular connection on $L$, flat because $E$ is a curve. The pair $(L,\nabla)$ is defined over $\Q$ and extends to a smooth model of $E$ over $\Z[1/M]$ for a suitable integer $M$.
+Write $E=E_a$ and $P=R_a=(r,s)$. If $s=0$, then $P$ has order $2$. Otherwise put $c=B-A$ and $\eta=\vartheta_P+c\,\omega_0$, with $\vartheta_P$ as in \eqref{eq:theta}, a rational differential on $E$ defined over $\Q$, with simple poles at $P$ and $O$ only, of residues $+1$ and $-1$. Let $L=\mathcal O_E\bigl(-(P)+(O)\bigr)$ and $\nabla\varphi=d\varphi-\varphi\,\eta$. At $P$, a local generator of $L$ is a uniformizer $\pi$, and $\nabla\pi=-\pi\,(\eta-d\pi/\pi)$ with $\eta-d\pi/\pi$ regular; at $O$ the generator $\pi^{-1}$ behaves in the same way, since the residue there is $-1$. So $\nabla$ is a regular connection on $L$, flat because $E$ is a curve. The pair $(L,\nabla)$ is defined over $\Q$ and extends to a smooth model of $E$ over $\Z[1/M]$ for a suitable integer $M$.
 
-Let $p\nmid M$ be an admissible prime at which \eqref{eq:AB} holds. By \eqref{eq:alpha-rel}, $\alpha_N(P)\equiv cN$, and Lemma~\ref{lem:cartier} gives, in characteristic $p$,
-\[
+Let $p\nmid M$ be an admissible prime at which \eqref{eq:AB} holds. By \eqref{eq:alpha-rel}, $\alpha_N(P)\equiv cN$, and \eqref{eq:cartier-id} gives, in characteristic $p$,
+\begin{equation}\label{eq:eta-fixed}
 (\mathcal C_p-1)\,\eta=\bigl(\alpha_N(P)+c\,(H_E-1)\bigr)\,\omega_0=\bigl(\alpha_N(P)-cN\bigr)\,\omega_0=0 .
-\]
-Since $\mathcal C_p(\eta)=\eta$, Cartier's theorem on logarithmic differentials gives $\eta=dh/h$ for some $h$ in the function field (Cartier, 1957; Katz, 1970, Section~7). Then $\nabla h=dh-h\eta=0$, so $h$ is a rational horizontal basis of $d-\eta$, and the $p$-curvature vanishes at the generic point; compare the Cartier descent for connections of zero $p$-curvature (Katz, 1970, Theorem~5.1). Since the $p$-curvature is $\mathcal O$-linear and $\nabla$ is regular, it then vanishes everywhere. Thus the reduction of $(L,\nabla)$ has vanishing $p$-curvature at all but finitely many primes.
+\end{equation}
+Since $\mathcal C_p(\eta)=\eta$ by \eqref{eq:eta-fixed}, Cartier's theorem on logarithmic differentials gives $\eta=dh/h$ for some $h$ in the function field (Cartier, 1957; Katz, 1970, Section~7). Then $\nabla h=dh-h\eta=0$, so $h$ is a rational horizontal basis of $d-\eta$, and the $p$-curvature vanishes at the generic point; compare the Cartier descent for connections of zero $p$-curvature (Katz, 1970, Theorem~5.1). Since the $p$-curvature is $\mathcal O$-linear and $\nabla$ is regular, it then vanishes everywhere. Thus the reduction of $(L,\nabla)$ has vanishing $p$-curvature at all but finitely many primes.
 
 A line bundle with connection is a principal $\mathbb G_m$-bundle with connection, and $\mathbb G_m$ is solvable. By Bost (2001, Theorem~2.9), there is a finite \'etale covering $\pi:Y\to E$ on which $(L,\nabla)$ becomes trivial; in particular $\pi^*L\simeq\mathcal O_Y$. If $\pi$ has degree $d$, then $L^{\otimes d}\simeq\mathrm{Nm}_\pi(\pi^*L)\simeq\mathcal O_E$. The class of $(P)-(O)$ is therefore $d$-torsion in $\mathrm{Pic}^0(E)$, and under $E(\overline{\Q})\simeq\mathrm{Pic}^0(E_{\overline{\Q}})$ this gives $[d]P=O$.
 \end{proof}
@@ -178,22 +179,22 @@ This remains conjectural. For balanced relations, Theorem~\ref{thm:balanced} sho
 
 \begin{definition}\label{def:theta}
 For $x\in\F_p^\times$ represented in $[1,p-1]$, let $x/p=[0;a_1,\dots,a_n]$ be the canonical finite continued fraction (with $a_n\ge2$), let $a_{\max}=\max_i a_i$, and define
-\[
+\begin{equation}\label{eq:theta-def}
 \theta_p(x)=1-\frac{\log a_{\max}}{\log p},\qquad\theta_p(0)=0.
-\]
+\end{equation}
 If $a_{\max}=a_{k+1}$ and $h_k/q_k$ is the preceding convergent, the associated lift is $x\equiv u/d$ with $d=q_k$ and $u=q_kx-h_kp$. Define also the minimal lift size of $x\in\F_p^\times$ by
-\[
+\begin{equation}\label{eq:Sp}
 S_p(x)=\min\bigl\{|u|d:\ d\ge1,\ p\nmid d,\ u\in\Z\setminus\{0\},\ u\equiv dx\ (\mathrm{mod}\ p)\bigr\},
-\]
+\end{equation}
 and set $S_p(0)=0$, consistently with $\theta_p(0)=0$.
 \end{definition}
 
 \begin{lemma}\label{lem:lift}
 For $x\in\F_p^\times$,
-\[
+\begin{equation}\label{eq:lift-bounds}
 \frac{p}{a_{\max}+2}<S_p(x)\le\frac{p}{a_{\max}},\qquad\text{hence}\qquad
 \frac{\log S_p(x)}{\log p}\le\theta_p(x)<\frac{\log S_p(x)+\log3}{\log p}.
-\]
+\end{equation}
 \end{lemma}
 
 \begin{proof}
@@ -208,16 +209,16 @@ Under Proposition~\ref{prop:known}, $S_p(C_f(a))=O(\sqrt p)$, so Lemma~\ref{lem:
 
 \begin{lemma}\label{lem:count}
 Let $X$ be uniform on $\F_p^\times$ and $1\le T<p$. Then
-\[
+\begin{equation}\label{eq:count}
 \Pr\bigl(S_p(X)\le T\bigr)\le\frac{2}{p-1}\sum_{d=1}^{\lfloor T\rfloor}\Bigl\lfloor\frac Td\Bigr\rfloor\le\frac{2T(1+\log T)}{p-1}.
-\]
+\end{equation}
 \end{lemma}
 
 \begin{proof}
 Every $x$ with $S_p(x)\le T$ is $u/d$ for some $1\le d\le T$ and $1\le|u|\le T/d$, and each denominator $d$ contributes at most $2\lfloor T/d\rfloor$ numerators; repeated representations only overcount. Finally $\sum_{d\le T}T/d\le T(1+\log T)$.
 \end{proof}
 
-With $T=p^{3/4}$, Lemmas~\ref{lem:lift} and~\ref{lem:count} give, for a uniform nonzero residue,
+With $T=p^{3/4}$, \eqref{eq:lift-bounds} and \eqref{eq:count} give, for a uniform nonzero residue,
 \begin{equation}\label{eq:fp}
 \Pr\bigl(\theta_p\le\tfrac34\bigr)\le\frac{2p^{3/4}\bigl(1+\tfrac34\log p\bigr)}{p-1}\approx1.5\cdot10^{-17}\qquad(\log_2p\approx255.6),
 \end{equation}
@@ -240,10 +241,10 @@ All choices below were frozen in a pre-registration file before the run, togethe
 \paragraph{Evaluation and classification.} For each pair and prime, $C_f(a)$ was evaluated by Theorem~\ref{thm:B}, with the chain required to return $[N]R_a=O$, and $\theta_p$ computed by Definition~\ref{def:theta}. A pair was classed LIFT if $\theta_p\le3/4$ at all three primes, NONE if $\theta_p>3/4$ at all three, and MIXED otherwise.
 
 \paragraph{Relation recovery.} For pairs not classed NONE, with $x_i=C_f(a)$, $\eps_i$ and $\tau_i$ at the primes $p_1,p_2,p_3$, an integer vector $(D,a_1,a_2)$ with $D\neq0$ satisfying
-\[
+\begin{equation}\label{eq:fit}
 Dx_i\equiv a_1\eps_i+a_2\tau_i\pmod{p_i}\qquad(i=1,2,3)
-\]
-was sought by lattice reduction modulo $p_1p_2p_3$ (Lenstra, Lenstra \& Lov\'asz, 1982), normalized to $D>0$, and accepted if its entries were at most $10^6$ in absolute value. The recovered relation is then $(A,B)=(a_1/D,\,a_2/D)$ in lowest terms, and \emph{recovery of the registered relation} means equality of these rationals with the registered $(A,B)$.
+\end{equation}
+was sought by lattice reduction modulo $p_1p_2p_3$ (Lenstra, Lenstra \& Lov\'asz, 1982), normalized to $D>0$, and accepted if its entries were at most $10^6$ in absolute value. The relation recovered from \eqref{eq:fit} is then $(A,B)=(a_1/D,\,a_2/D)$ in lowest terms, and \emph{recovery of the registered relation} means equality of these rationals with the registered $(A,B)$.
 
 \paragraph{Confirmation and verdict.} Non-torsion pairs classed LIFT or MIXED were to be frozen by SHA-256 and retested at five fresh $256$-bit primes; a pair LIFT at all five would falsify H4. A torsion pair not classed LIFT, or with a relation other than the registered one, would make the run invalid.
 
@@ -278,7 +279,7 @@ Flagged for confirmation & --- & $0$\\
 \caption{Survey at three $256$-bit primes. The $30$ values $\theta_p=0$ are the ten pairs with $C_f(a)\equiv0$ (Example~\ref{ex:orders}).}\label{tab:summary}
 \end{table}
 
-The largest $\theta_p$ among torsion pairs was $0.508$, $0.512$, $0.519$ and $0.512$ for orders $2$, $3$, $5$ and $6$. By Lemma~\ref{lem:lift}, $\theta_p\le0.519$ gives $S_p\le p^{0.519}$ and $\theta_p\ge0.9235$ gives $S_p>p^{0.9235}/3$. Since $\log_2p\ge255.5$ for all three primes, at each prime the minimal lift size $S_p(C_f(a))$ of every non-torsion pair exceeds that of every torsion pair with nonzero residue by a factor greater than $p^{0.4045}/3>2^{101}$; the ten torsion pairs with $C_f(a)\equiv0$ have $S_p=0$ and are excluded from this ratio. Assuming the computed residues are correct, the bound $\theta_p\ge0.9235$ and Lemma~\ref{lem:lift} exclude $S_p\le p^{3/4}$ for every evaluated non-torsion residue. This is a finite computational conclusion; a NONE classification close to the threshold would not by itself give the same exclusion, and nothing here bears directly on the asymptotic conjecture. The smallest of the $7{,}764$ non-torsion values was $0.9235$, comparable with the smallest value, $0.919$, in a simulation of $7{,}764$ uniform residues modulo the first prime; comparing minima alone does not establish agreement of distributions. Under the uniform model, \eqref{eq:fp} and a union bound put the probability of any accidental LIFT value among the $7{,}764$ below $1.3\cdot10^{-13}$. A random sample of $40$ pairs was re-evaluated independently from the saved traces, reproducing every $\theta_p$. The verdict under the registered rules was that H4 is supported.
+The largest $\theta_p$ among torsion pairs was $0.508$, $0.512$, $0.519$ and $0.512$ for orders $2$, $3$, $5$ and $6$. By \eqref{eq:lift-bounds}, $\theta_p\le0.519$ gives $S_p\le p^{0.519}$ and $\theta_p\ge0.9235$ gives $S_p>p^{0.9235}/3$. Since $\log_2p\ge255.5$ for all three primes, at each prime the minimal lift size $S_p(C_f(a))$ of every non-torsion pair exceeds that of every torsion pair with nonzero residue by a factor greater than $p^{0.4045}/3>2^{101}$; the ten torsion pairs with $C_f(a)\equiv0$ have $S_p=0$ and are excluded from this ratio. Assuming the computed residues are correct, the bound $\theta_p\ge0.9235$ and Lemma~\ref{lem:lift} exclude $S_p\le p^{3/4}$ for every evaluated non-torsion residue. This is a finite computational conclusion; a NONE classification close to the threshold would not by itself give the same exclusion, and nothing here bears directly on the asymptotic conjecture. The smallest of the $7{,}764$ non-torsion values was $0.9235$, comparable with the smallest value, $0.919$, in a simulation of $7{,}764$ uniform residues modulo the first prime; comparing minima alone does not establish agreement of distributions. Under the uniform model, \eqref{eq:fp} and a union bound put the probability of any accidental LIFT value among the $7{,}764$ below $1.3\cdot10^{-13}$. A random sample of $40$ pairs was re-evaluated independently from the saved traces, reproducing every $\theta_p$. The verdict under the registered rules was that H4 is supported.
 
 \section{Discussion and limitations}\label{sec:discussion}
 
