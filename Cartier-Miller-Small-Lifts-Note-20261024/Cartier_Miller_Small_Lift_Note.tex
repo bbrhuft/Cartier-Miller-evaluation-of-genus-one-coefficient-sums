@@ -1,0 +1,349 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage{microtype,booktabs,enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[hyphens]{url}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage{xurl}
+
+\numberwithin{equation}{section}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\eps}{\varepsilon}
+\DeclareMathOperator{\divisor}{div}
+
+\hypersetup{pdfauthor={David Jordan},pdftitle={Small rational lifts of reciprocal character sums at 256-bit primes}}
+
+\title{Small rational lifts of reciprocal character sums\\ at 256-bit primes: an empirical torsion dichotomy}
+\author{David Jordan\\[2pt]\small\href{mailto:David.Jordan@mu.ie}{David.Jordan@mu.ie}}
+\date{Draft, 24 October 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+For a squarefree cubic or quartic $f$ over $\Q$ and a rational pole $a$, the reciprocal character sum $C_f(a)=\sum_{x\neq a}\chi(f(x))/(x-a)\in\F_p$ can be evaluated with one differentiated Miller chain once the trace of Frobenius is known. When the associated twist point $R_a$ has finite order over $\Q$, a torsion-collapse formula gives $C_f(a)\equiv A\eps+B\tau\pmod p$ for fixed rationals $A,B$, where $\eps=\chi(f(a))$ and $\tau$ is the trace, so the residue is the reduction of a rational number $u/d$ with $|u|d=O(\sqrt p)$. We ask whether anything else produces such small rational lifts. They can be detected without a basis of guessed quantities, from the continued fraction of $C_f(a)/p$, and at primes of cryptographic size, where the Miller-chain evaluator still runs in milliseconds, a single evaluation gives strong discrimination against a uniform-residue model. We report a pre-registered survey of $2{,}668$ pairs $(f,a)$ over $184$ curves, most without complex multiplication, each evaluated at three random $256$-bit primes. Small lifts occurred at exactly the $80$ pairs with $R_a$ torsion (orders $2$, $3$, $5$ and $6$), whose recovered relations equalled the predicted $(A,B)$, and at none of the $2{,}588$ others; for nonzero residues the minimal lift sizes of the two groups were separated by more than $100$ bits. Every torsion relation is \emph{balanced}, meaning $A+B=g_1/2$ with $g_1=f'(a)/f(a)$. We prove a uniform converse for balanced relations: if one holds at all but finitely many admissible primes, then $R_a$ is torsion. The proof combines a Cartier-operator form of the curve-order identity with Bost's theorem on the Grothendieck--Katz conjecture for solvable groups. The general unbalanced uniform converse is not established here. The density-zero converse that we state as a conjecture would follow from an equidistribution conjecture of Katz; the survey is consistent with it but cannot test an asymptotic statement.
+\end{abstract}
+
+\section{Introduction}\label{sec:intro}
+
+Let $p\ge5$ be prime, $\chi$ the quadratic character of $\F_p$, and $f\in\F_p[x]$ a squarefree cubic or quartic. For $a\in\F_p$ with $f(a)\neq0$ put
+\begin{equation}\label{eq:C}
+C_f(a)=\sum_{x\in\F_p,\ x\neq a}\frac{\chi(f(x))}{x-a}\in\F_p .
+\end{equation}
+Theorem~B of Jordan (2026) evaluates $C_f(a)$ with one differentiated Miller chain (Miller, 2004) of length $O(\log p)$ on a quadratic twist, once the trace of Frobenius $\tau_f$ of $v^2=f(x)$ is known; the trace is computed once per curve and serves every pole $a$. When the twist point $R_a$ is torsion, the chain collapses and $C_f(a)$ becomes a fixed rational combination of $\eps=\chi(f(a))$ and $\tau_f$ (Jordan, 2026, Proposition~6.2). Theorem~6.3 of that paper, a closed form for $\sum_{k\le p/3}\binom{2k}{k}\bmod p$, arises this way.
+
+This note asks whether torsion is the only source of such closed forms. Any closed form of that shape makes $C_f(a)$ the reduction of a rational number $u/d$ with $|u|d=O(\sqrt p)$, whereas few residues have so small a representation (Lemma~\ref{lem:count}). The question can therefore be examined without guessing which $p$-dependent quantities might appear, by measuring the smallest $|u|d$ with $C_f(a)\equiv u/d$. Section~\ref{sec:test} makes this precise with continued fractions.
+
+Part of the converse can be proved. Every relation produced by torsion is balanced, in the sense that $A+B=g_1/2$, which is equivalent to $\alpha_N(R_a)\equiv c\,N\pmod p$ for a fixed constant $c$. Theorem~\ref{thm:balanced} shows that if a balanced relation holds at all but finitely many admissible primes, then $R_a$ is torsion. The argument views $\alpha_N(R_a)$ through the Cartier operator, as the obstruction to a rank-one connection on $E_a$ having vanishing $p$-curvature, and then applies Bost's theorem (Bost, 2001). It says nothing about relations holding only on a set of primes of positive density, about unbalanced relations, or about lifts outside the span of $\eps$ and $\tau_f$; the survey addresses the last two empirically, at individual large primes.
+
+The discrimination this gives grows with $p$. By Lemma~\ref{lem:count}, a uniform residue has a lift with $|u|d\le10\sqrt p$ with probability at most about $0.2$ at $p\approx10^6$, so a lift of that size would have to recur over many primes before it stood out, but with probability below $10^{-35}$ at $p\approx2^{256}$, where one evaluation gives strong discrimination against a uniform-residue model. At such primes direct summation of \eqref{eq:C} needs about $p$ terms, and the standard Bostan--Gaudry--Schost recurrence route (Bostan, Gaudry \& Schost, 2007) about $2^{128}$ field operations per value, with logarithmic factors suppressed; the Miller chain needs a few hundred curve operations. The survey reported here comprised $8{,}004$ evaluations at $256$-bit primes, which took $83$~s in pure Python on a laptop after $552$ point counts that took $1{,}151$~s.
+
+Section~\ref{sec:setting} recalls the evaluator and the known direction and proves the balanced converse, Section~\ref{sec:test} gives the size test, Section~\ref{sec:design} the pre-registered design, Section~\ref{sec:results} the results and Section~\ref{sec:discussion} the limitations.
+
+\section{Setting and the known direction}\label{sec:setting}
+
+Let $f\in\Q[x]$ be a squarefree cubic or quartic and $a\in\Q$ with $f(a)\neq0$. Write
+\begin{equation}\label{eq:g}
+g(z)=\frac{f(a+z)}{f(a)}=1+g_1z+g_2z^2+g_3z^3+g_4z^4,
+\end{equation}
+with $g_4=0$ for a cubic. Taking $(0,1)$ as origin on $v^2=g(z)$ gives the short model $E_a:Y^2=X^3+A_gX+B_g$, and $(0,-1)$ maps to the point
+\[
+R_a=\Bigl(\tfrac14g_1^2-\tfrac23g_2,\ -g_3+\tfrac12g_1g_2-\tfrac18g_1^3\Bigr)\in E_a(\Q),
+\]
+with $A_g,B_g$ as in Jordan (2026, equation~(4.2)). Call a prime $p$ \emph{admissible} for $(f,a)$ if $p\ge5$, the coefficients of $f$ and $a$ are $p$-integral, the leading coefficient and discriminant of $f$ are $p$-adic units, and $f(a)\not\equiv0\pmod p$. For admissible $p$ put $\eps=\chi(f(a))$ and $N=p+1-\eps\tau_f=\#E_a(\F_p)$. On $E_a$ use the uniformizer $t=-X/Y$ at the origin $O$. For a point $P$ and $m\ge1$, let $f_{m,P}$ be a Miller function with $\divisor(f_{m,P})=m(P)-([m]P)-(m-1)(O)$, and put
+\begin{equation}\label{eq:alpha}
+\alpha_m(P)=[t^0]\,\frac{d\log f_{m,P}}{dt},
+\end{equation}
+the constant Laurent coefficient of its logarithmic derivative at $O$, as in Jordan (2026, equation~(1.3)). It is independent of the scalar normalization of $f_{m,P}$ and is computed by the differentiated Miller chain.
+
+\begin{theorem}[Jordan, 2026, Theorem~B]\label{thm:B}
+For every admissible prime $p$, $C_f(a)=\eps\bigl(-\tfrac{g_1}{4}(N-2)-\tfrac12\alpha_N(R_a)\bigr)$ in $\F_p$.
+\end{theorem}
+
+\begin{proposition}[torsion implies a closed form]\label{prop:known}
+Suppose $R_a$ has finite order $m$ in $E_a(\Q)$, and let $\alpha_m(R_a)\in\Q$ be computed by the Miller chain over $\Q$. Put
+\[
+A=\frac{g_1}{4}-\frac{\alpha_m(R_a)}{2m},\qquad B=\frac{g_1}{4}+\frac{\alpha_m(R_a)}{2m}.
+\]
+Then for every admissible prime $p$ with $p\nmid m$ and $A,B,g_1$ $p$-integral,
+\begin{equation}\label{eq:AB}
+C_f(a)\equiv A\,\eps+B\,\tau_f\pmod p .
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+At an admissible prime $E_a$ has good reduction, and reduction is injective on torsion of order prime to $p$, so $R_a$ has order exactly $m$ in $E_a(\F_p)$ and the Miller chain for $\alpha_m$ reduces modulo $p$ step by step. By Jordan (2026, Proposition~6.2), $\alpha_N(R_a)=q\,\alpha_m(R_a)$ with $q=N/m$, and $N\equiv1-\eps\tau_f\pmod p$. Substituting into Theorem~\ref{thm:B} and using $\eps^2=1$,
+\[
+C_f(a)\equiv\eps\Bigl(\frac{g_1}{4}(1+\eps\tau_f)-\frac{(1-\eps\tau_f)\,\alpha_m}{2m}\Bigr)
+=\Bigl(\frac{g_1}{4}-\frac{\alpha_m}{2m}\Bigr)\eps+\Bigl(\frac{g_1}{4}+\frac{\alpha_m}{2m}\Bigr)\tau_f .\qedhere
+\]
+\end{proof}
+
+Since $|\tau_f|\le2\sqrt p$ by Hasse's bound, clearing the denominator $D$ of $A$ and $B$ shows that $C_f(a)\equiv u/D$ with $|u|=O(\sqrt p)$.
+
+\begin{definition}\label{def:balanced}
+A relation \eqref{eq:AB} with fixed $A,B\in\Q$ is \emph{balanced} if $A+B=g_1/2$.
+\end{definition}
+
+Every relation supplied by Proposition~\ref{prop:known} is balanced. At an admissible prime, Theorem~\ref{thm:B}, $\eps^2=1$ and $N-2\equiv-1-\eps\tau_f$ show that \eqref{eq:AB} is equivalent to
+\begin{equation}\label{eq:alpha-rel}
+\alpha_N(R_a)\equiv\Bigl(\frac{g_1}{2}-2A\Bigr)+\Bigl(\frac{g_1}{2}-2B\Bigr)\eps\tau_f\pmod p .
+\end{equation}
+Since $N\equiv1-\eps\tau_f$, a balanced relation is therefore exactly a congruence $\alpha_N(R_a)\equiv c\,N\pmod p$ with the fixed constant $c=B-A$; in the torsion case $c=\alpha_m(R_a)/m$.
+
+\subsection{A uniform converse for balanced relations}\label{sec:balanced}
+
+Write $\mathcal C_p$ for the Cartier operator on differentials in characteristic $p$. It is $p^{-1}$-linear, fixes logarithmic differentials $dg/g$, and satisfies $\mathcal C_p\bigl(\sum_nb_nX^n\,dX\bigr)=\sum_jb_{pj+p-1}^{1/p}X^j\,dX$ (Cartier, 1957; Jordan, 2026, Section~2.2).
+
+\begin{lemma}[Cartier form of the curve-order identity]\label{lem:cartier}
+Let $p\ge5$, let $W\in\F_p[X]$ be a monic squarefree cubic and $E:Y^2=W(X)$ the corresponding elliptic curve, with $N=\#E(\F_p)$, and let $P=(r,s)\in E(\F_p)$ with $s\neq0$. Put $\omega_0=dX/(2Y)$ and
+\[
+\vartheta_P=\frac{Y+s}{X-r}\,\omega_0,
+\]
+a differential with simple poles at $P$ and $O$ only, of residues $+1$ and $-1$. Then
+\[
+\mathcal C_p(\omega_0)=H_E\,\omega_0,\qquad \mathcal C_p(\vartheta_P)-\vartheta_P=\alpha_N(P)\,\omega_0,
+\]
+where $H_E=[X^{p-1}]W^{(p-1)/2}$ is the Hasse invariant, so that $N\equiv1-H_E\pmod p$.
+\end{lemma}
+
+\begin{proof}
+Put $h=(p-1)/2$ and write $W^h=U+H_EX^{p-1}+X^pJ_W$ with $\deg U\le p-2$, as in Jordan (2026, Theorem~A). Since $dX/Y=W^h\,dX/Y^p$ and $\mathcal C_p$ is $p^{-1}$-linear, $\mathcal C_p(g\,dX/Y)=\mathcal C_p(gW^h\,dX)/Y$ for $g\in\F_p(X)$; with $g=1$ this gives $\mathcal C_p(\omega_0)=H_E\omega_0$, and $H_E\equiv\tau_E=p+1-N$. Next,
+\[
+\vartheta_P=\frac12\,\frac{dX}{X-r}+\frac s2\,\frac{dX}{(X-r)Y}.
+\]
+The first term is half a logarithmic differential, and $\tfrac12\in\F_p$, so $\mathcal C_p$ fixes it. For the second, $W^h/(X-r)=W^h(r)/(X-r)+q(X)$ with $q=(W^h-W^h(r))/(X-r)$ a polynomial of degree $3h-1<2p-1$, and $W^h(r)=s^{p-1}=1$. The operator fixes $dX/(X-r)$, and $\mathcal C_p(q\,dX)=[X^{p-1}]q\;dX=J_W(r)\,dX$, because $[X^{p-1}]\,(X^k-r^k)/(X-r)=r^{k-p}$ for $k\ge p$ and vanishes for $k<p$. Hence
+\[
+\mathcal C_p\Bigl(\frac s2\,\frac{dX}{(X-r)Y}\Bigr)=\frac s2\Bigl(\frac1{X-r}+J_W(r)\Bigr)\frac{dX}{Y},
+\]
+and $\mathcal C_p(\vartheta_P)-\vartheta_P=s\,J_W(r)\,\omega_0=\alpha_N(P)\,\omega_0$ by Theorem~A of Jordan (2026), which holds for every $N$, including $p\mid N$.
+\end{proof}
+
+\begin{theorem}[uniform converse for balanced relations]\label{thm:balanced}
+Let $f\in\Q[x]$ be a squarefree cubic or quartic, $a\in\Q$ with $f(a)\neq0$, and $A,B\in\Q$ with $A+B=g_1/2$. If \eqref{eq:AB} holds at all but finitely many admissible primes, then $R_a$ has finite order in $E_a(\Q)$. Consequently, by Proposition~\ref{prop:known}, $R_a$ is torsion if and only if some balanced relation holds at all but finitely many admissible primes.
+\end{theorem}
+
+\begin{proof}
+Write $E=E_a$ and $P=R_a=(r,s)$. If $s=0$, then $P$ has order $2$. Otherwise put $c=B-A$ and $\eta=\vartheta_P+c\,\omega_0$, a rational differential on $E$ defined over $\Q$, with simple poles at $P$ and $O$ only, of residues $+1$ and $-1$. Let $L=\mathcal O_E\bigl(-(P)+(O)\bigr)$ and $\nabla\varphi=d\varphi-\varphi\,\eta$. At $P$, a local generator of $L$ is a uniformizer $\pi$, and $\nabla\pi=-\pi\,(\eta-d\pi/\pi)$ with $\eta-d\pi/\pi$ regular; at $O$ the generator $\pi^{-1}$ behaves in the same way, since the residue there is $-1$. So $\nabla$ is a regular connection on $L$, flat because $E$ is a curve. The pair $(L,\nabla)$ is defined over $\Q$ and extends to a smooth model of $E$ over $\Z[1/M]$ for a suitable integer $M$.
+
+Let $p\nmid M$ be an admissible prime at which \eqref{eq:AB} holds. By \eqref{eq:alpha-rel}, $\alpha_N(P)\equiv cN$, and Lemma~\ref{lem:cartier} gives, in characteristic $p$,
+\[
+(\mathcal C_p-1)\,\eta=\bigl(\alpha_N(P)+c\,(H_E-1)\bigr)\,\omega_0=\bigl(\alpha_N(P)-cN\bigr)\,\omega_0=0 .
+\]
+Since $\mathcal C_p(\eta)=\eta$, Cartier's theorem on logarithmic differentials gives $\eta=dh/h$ for some $h$ in the function field (Cartier, 1957; Katz, 1970, Section~7). Then $\nabla h=dh-h\eta=0$, so $h$ is a rational horizontal basis of $d-\eta$, and the $p$-curvature vanishes at the generic point; compare the Cartier descent for connections of zero $p$-curvature (Katz, 1970, Theorem~5.1). Since the $p$-curvature is $\mathcal O$-linear and $\nabla$ is regular, it then vanishes everywhere. Thus the reduction of $(L,\nabla)$ has vanishing $p$-curvature at all but finitely many primes.
+
+A line bundle with connection is a principal $\mathbb G_m$-bundle with connection, and $\mathbb G_m$ is solvable. By Bost (2001, Theorem~2.9), there is a finite \'etale covering $\pi:Y\to E$ on which $(L,\nabla)$ becomes trivial; in particular $\pi^*L\simeq\mathcal O_Y$. If $\pi$ has degree $d$, then $L^{\otimes d}\simeq\mathrm{Nm}_\pi(\pi^*L)\simeq\mathcal O_E$. The class of $(P)-(O)$ is therefore $d$-torsion in $\mathrm{Pic}^0(E)$, and under $E(\overline{\Q})\simeq\mathrm{Pic}^0(E_{\overline{\Q}})$ this gives $[d]P=O$.
+\end{proof}
+
+\begin{remark}\label{rem:balanced-scope}
+The theorem is uniform: it needs the relation at all but finitely many primes. For an unbalanced relation, \eqref{eq:alpha-rel} gives $\alpha_N(R_a)\equiv cN+c'$ with a fixed $c'\neq0$, so $(\mathcal C_p-1)\eta=c'\omega_0\neq0$ and the argument does not apply; the general unbalanced uniform converse is not established here. The theorem also says nothing about relations holding on a set of primes of positive density, or about small lifts outside the span of $\eps$ and $\tau_f$. The argument assembles known results, and its conclusion may be familiar to specialists; it was identified in an AI-assisted literature review and audit, and has not yet been reviewed by a specialist.
+\end{remark}
+
+\begin{example}\label{ex:orders}
+Each of the following was checked by direct summation of \eqref{eq:C} and a brute-force trace at every admissible prime in the stated range (all primes $7\le p<3000$ for (i)--(iii), and $7\le p<2000$ for (iv); the inadmissible primes $p=7$ in (ii), where $f(3)=7$ and the discriminant is $49$, and $p=11$ in (iii), where the discriminant is $-44$, fall outside the statement). Each is also an instance of Proposition~\ref{prop:known}, with the stated order of $R_a$ computed exactly over $\Q$.
+\begin{enumerate}[label=(\roman*),leftmargin=2em,itemsep=2pt]
+\item Order $2$: $f=x^3-2x^2+2x-1$, $a=0$: $C_f(0)\equiv-\tfrac12(\eps+\tau_f)$.
+\item Order $3$: $f=x^3-2x^2-x+1$, $a=3$: $C_f(3)\equiv\tfrac13(2\eps+\tau_f)$.
+\item Order $5$: $f=x^3-2x^2+2$, $a=0$: $\displaystyle\sum_{x\neq0}\frac{\chi(x^3-2x^2+2)}{x}\equiv\frac{\chi(2)-\tau_f}{5}$.
+\item Order $6$: $f=x^4-x^2-1$, $a=1$: $C_f(1)\equiv\tfrac13(\tau_f-4\chi(-1))$.
+\end{enumerate}
+Ten pairs in the grid of Section~\ref{sec:design} have $A=B=0$, so that $C_f(a)\equiv0$; for example $f=x^3+d$ at $a=0$ (for $p\equiv1\pmod3$ the substitution $x\mapsto\omega x$ by a cube root of unity forces vanishing, and the proposition gives it for all admissible $p$), and even quartics at $a=0$, where $x\mapsto-x$ forces it.
+\end{example}
+
+Theorem~\ref{thm:balanced} settles the uniform converse for balanced relations. A much stronger converse, that for $R_a$ of infinite order no fixed relation \eqref{eq:AB} holds at infinitely many primes, is stronger than any heuristic we can offer: if $C_f(a)$ behaved like a uniform residue, a fixed relation would hold at $p$ with probability about $1/p$, and since $\sum_p1/p$ diverges, an independence assumption would predict infinitely many accidental coincidences on a set of density zero. We therefore state the converse in density form.
+
+\begin{conjecture}\label{conj}
+Let $f\in\Q[x]$ be a squarefree cubic or quartic and $a\in\Q$ with $f(a)\neq0$, and suppose $R_a$ has infinite order in $E_a(\Q)$. Then for all $A,B\in\Q$, the set of admissible primes $p$ at which \eqref{eq:AB} holds has relative natural density zero among admissible primes.
+\end{conjecture}
+
+This remains conjectural. For balanced relations, Theorem~\ref{thm:balanced} shows only that the set of admissible primes at which \eqref{eq:AB} fails is infinite; Conjecture~\ref{conj} asks for the much stronger statement that the set where it holds has density zero, and for unbalanced relations nothing is proved. The survey of Section~\ref{sec:design} addresses a different, finite question: whether, at three sampled primes, $C_f(a)$ is the reduction of \emph{any} rational $u/d$ with small $|u|d$. A small lift at a non-torsion pair would point to structure beyond Proposition~\ref{prop:known}. The absence of such lifts is consistent with Conjecture~\ref{conj} but does not bear directly on an asymptotic density statement.
+
+\section{A basis-free size test}\label{sec:test}
+
+\begin{definition}\label{def:theta}
+For $x\in\F_p^\times$ represented in $[1,p-1]$, let $x/p=[0;a_1,\dots,a_n]$ be the canonical finite continued fraction (with $a_n\ge2$), let $a_{\max}=\max_i a_i$, and define
+\[
+\theta_p(x)=1-\frac{\log a_{\max}}{\log p},\qquad\theta_p(0)=0.
+\]
+If $a_{\max}=a_{k+1}$ and $h_k/q_k$ is the preceding convergent, the associated lift is $x\equiv u/d$ with $d=q_k$ and $u=q_kx-h_kp$. Define also the minimal lift size of $x\in\F_p^\times$ by
+\[
+S_p(x)=\min\bigl\{|u|d:\ d\ge1,\ p\nmid d,\ u\in\Z\setminus\{0\},\ u\equiv dx\ (\mathrm{mod}\ p)\bigr\},
+\]
+and set $S_p(0)=0$, consistently with $\theta_p(0)=0$.
+\end{definition}
+
+\begin{lemma}\label{lem:lift}
+For $x\in\F_p^\times$,
+\[
+\frac{p}{a_{\max}+2}<S_p(x)\le\frac{p}{a_{\max}},\qquad\text{hence}\qquad
+\frac{\log S_p(x)}{\log p}\le\theta_p(x)<\frac{\log S_p(x)+\log3}{\log p}.
+\]
+\end{lemma}
+
+\begin{proof}
+Upper bound. Let $a_{\max}=a_{k+1}$, with $k<n$. Then $1\le q_k<q_n=p$, so $p\nmid q_k$, and $x/p\neq h_k/q_k$, so $u=q_kx-h_kp\neq0$. From $|x/p-h_k/q_k|\le1/(q_kq_{k+1})$, with equality when $k=n-1$, and $q_{k+1}\ge a_{k+1}q_k$ we get $|u|q_k\le pq_k/q_{k+1}\le p/a_{k+1}$.
+
+Lower bound. Let $(u,d)$ attain $S_p(x)$. Taking $d=1$ and $u$ the centred representative of $x$ shows $S_p(x)<p/2$, so $|u|d<p/2$. Write $dx-u=kp$; then $|x/p-k/d|=|u|/(dp)<1/(2d^2)$. Reduce $k/d$ to lowest terms $h/q$ with $q\le d$. Then $|x/p-h/q|<1/(2q^2)$, so $h/q$ is a convergent $h_j/q_j$ by Legendre's criterion (Hardy \& Wright, 2008), with $j<n$ because $u\neq0$. The error formula $|x/p-h_j/q_j|=1/\bigl(q_j(\alpha_{j+1}q_j+q_{j-1})\bigr)$, where the complete quotient satisfies $\alpha_{j+1}<a_{j+1}+1$ (or $\alpha_n=a_n$) and $q_{j-1}\le q_j$ (Khinchin, 1964), gives $|x/p-h_j/q_j|>1/\bigl(q^2(a_{j+1}+2)\bigr)$. Hence $|u|d>d^2p/\bigl(q^2(a_{j+1}+2)\bigr)\ge p/(a_{\max}+2)$.
+
+The bounds on $\theta_p$ follow by taking logarithms and using $a_{\max}+2\le3a_{\max}$.
+\end{proof}
+
+Under Proposition~\ref{prop:known}, $S_p(C_f(a))=O(\sqrt p)$, so Lemma~\ref{lem:lift} gives $\theta_p(C_f(a))\le\tfrac12+O(1/\log p)$. The statistic can be smaller still when the trace is small, when the $\tau$ coefficient vanishes (then $C_f(a)$ is a fixed rational and $\theta_p\approx0$), or when an unusually small alternative lift exists; the zero residue has $S_p=\theta_p=0$ by convention. The registered threshold $\theta_p\le3/4$ implies $S_p\le p^{3/4}$; conversely $S_p\le p^{3/4}/3$ implies $\theta_p<3/4$, so the two criteria differ only in a narrow boundary band.
+
+\begin{lemma}\label{lem:count}
+Let $X$ be uniform on $\F_p^\times$ and $1\le T<p$. Then
+\[
+\Pr\bigl(S_p(X)\le T\bigr)\le\frac{2}{p-1}\sum_{d=1}^{\lfloor T\rfloor}\Bigl\lfloor\frac Td\Bigr\rfloor\le\frac{2T(1+\log T)}{p-1}.
+\]
+\end{lemma}
+
+\begin{proof}
+Every $x$ with $S_p(x)\le T$ is $u/d$ for some $1\le d\le T$ and $1\le|u|\le T/d$, and each denominator $d$ contributes at most $2\lfloor T/d\rfloor$ numerators; repeated representations only overcount. Finally $\sum_{d\le T}T/d\le T(1+\log T)$.
+\end{proof}
+
+With $T=p^{3/4}$, Lemmas~\ref{lem:lift} and~\ref{lem:count} give, for a uniform nonzero residue,
+\begin{equation}\label{eq:fp}
+\Pr\bigl(\theta_p\le\tfrac34\bigr)\le\frac{2p^{3/4}\bigl(1+\tfrac34\log p\bigr)}{p-1}\approx1.5\cdot10^{-17}\qquad(\log_2p\approx255.6),
+\end{equation}
+with values $1.48$--$1.56\cdot10^{-17}$ at the three primes of the survey. A uniform residue on all of $\F_p$ is zero with the additional probability $1/p$. Inequality~\eqref{eq:fp} is rigorous for uniform residues; that the sums $C_f(a)$ at non-torsion pairs behave like uniform residues is an unproved modelling assumption.
+
+\begin{remark}\label{rem:small}
+Large primes give much sharper discrimination per evaluation. A torsion lift has $S_p\le C\sqrt p$ with $C$ depending on $D$, $A$ and $B$, and by Lemma~\ref{lem:count}, when $1\le C\sqrt p<p$, a uniform residue shares this property with probability at most $2C\sqrt p\,(1+\log(C\sqrt p))/(p-1)$. At small primes this upper bound is not small and the constant $C$ may be comparable with $\sqrt p$, so accidental candidates are common and a lift would have to be confirmed over many primes. At $p\approx2^{256}$ one evaluation gives strong discrimination against the uniform-residue model, although a single small lift would not by itself establish torsion, a persistent formula or any asymptotic statement. A search restricted to guessed quantities, such as $\eps$ and $\tau_f$, remains feasible at small primes by direct summation and a relation search across primes, but it detects only relations among the quantities included. Recovering rationals from residues by size is classical (Wang, Guy \& Davenport, 1982).
+\end{remark}
+
+\section{Pre-registered design}\label{sec:design}
+
+All choices below were frozen in a pre-registration file before the run, together with the predicted pair of rationals $(A,B)$ for every torsion pair. The run used fixed seeds and the code was fingerprinted by SHA-256.
+
+\paragraph{Grid.} The curves are the squarefree monic cubics $x^3+bx^2+cx+d$ with $b,c,d\in\{-2,\dots,2\}$ ($116$ curves) and the squarefree monic quartics $x^4+bx^3+cx^2+dx+e$ with $b,c,d,e\in\{-1,0,1\}$ ($68$ curves). The poles are $a\in\{0,\pm1,\pm2,\pm3,\pm\tfrac12,\pm\tfrac13,\pm\tfrac32,\pm\tfrac23\}$ with $f(a)\neq0$. This gives $2{,}668$ pairs $(f,a)$.
+
+\paragraph{Registered hypothesis and predictions.} The order of $R_a$ over $\Q$ was computed exactly, by testing $[m]R_a=O$ for $1\le m\le12$ in rational arithmetic; by Mazur's theorem (Mazur, 1977), a point of $E_a(\Q)$ that passes no such test has infinite order. Eighty pairs have $R_a$ torsion: $38$ of order $2$, $26$ of order $3$, $12$ of order $5$ and $4$ of order $6$. For each, $(A,B)$ was computed from Proposition~\ref{prop:known} and registered. The registered hypothesis (H4) was: \emph{for every registered pair, $C_f(a)$ has a small lift (class LIFT below) if and only if $R_a$ has finite order over $\Q$}, with the predictions that all $80$ torsion pairs are LIFT with fitted relation equal to the registered $(A,B)$ and that all other pairs are NONE. This operational hypothesis concerns the sampled primes only; it is distinct from Conjecture~\ref{conj}, which concerns asymptotic density and was formulated in this note afterwards.
+
+\paragraph{Primes and traces.} Three random $256$-bit primes were drawn from a registered seed and used for every pair. For each curve and prime, the trace was obtained from PARI/GP (The PARI Group, n.d.; version 2.19.0) by \texttt{ellap} on the twist $E_{a_0}$ at a fixed reference pole $a_0$, using the sign rule $\tau_g=\eps\tau_f$ of Jordan (2026). As an independent consistency check on each supplied trace, not a certificate of the point count, the run verified $[p+1-\tau_g]P=O$ at four random points of $E_{a_0}(\F_p)$, and was to stop on any failure.
+
+\paragraph{Evaluation and classification.} For each pair and prime, $C_f(a)$ was evaluated by Theorem~\ref{thm:B}, with the chain required to return $[N]R_a=O$, and $\theta_p$ computed by Definition~\ref{def:theta}. A pair was classed LIFT if $\theta_p\le3/4$ at all three primes, NONE if $\theta_p>3/4$ at all three, and MIXED otherwise.
+
+\paragraph{Relation recovery.} For pairs not classed NONE, with $x_i=C_f(a)$, $\eps_i$ and $\tau_i$ at the primes $p_1,p_2,p_3$, an integer vector $(D,a_1,a_2)$ with $D\neq0$ satisfying
+\[
+Dx_i\equiv a_1\eps_i+a_2\tau_i\pmod{p_i}\qquad(i=1,2,3)
+\]
+was sought by lattice reduction modulo $p_1p_2p_3$ (Lenstra, Lenstra \& Lov\'asz, 1982), normalized to $D>0$, and accepted if its entries were at most $10^6$ in absolute value. The recovered relation is then $(A,B)=(a_1/D,\,a_2/D)$ in lowest terms, and \emph{recovery of the registered relation} means equality of these rationals with the registered $(A,B)$.
+
+\paragraph{Confirmation and verdict.} Non-torsion pairs classed LIFT or MIXED were to be frozen by SHA-256 and retested at five fresh $256$-bit primes; a pair LIFT at all five would falsify H4. A torsion pair not classed LIFT, or with a relation other than the registered one, would make the run invalid.
+
+\paragraph{Stage 0.} Before the survey the run checked:
+\begin{enumerate}[label=(\alph*),leftmargin=2em,itemsep=1pt]
+\item that the grid and all $80$ predictions, recomputed, equal the registered ones;
+\item the PARI traces, through the same interface and sign rule, against brute-force point counts at the $20$ primes $101\le p\le197$: $3{,}678$ comparisons, namely every curve at every prime except the two curves $x^3-x^2+x+2$ and $x^3+x^2+x-2$ at $p=139$, both of discriminant $-139$, which the code excludes because they are not squarefree modulo $139$;
+\item Theorem~\ref{thm:B} against direct summation of \eqref{eq:C} for every pair at five primes in $[500,1000]$ ($13{,}340$ comparisons);
+\item relation \eqref{eq:AB} for every torsion pair at those primes ($400$ comparisons);
+\item an implementation check of the statistic at $256$-bit primes: $2{,}000$ uniform random residues, none of which may have $\theta_p\le3/4$, and $2{,}000$ planted lifts $u/d$ with $|u|<2^{140}$ and $d\le10^4$, all of which must have $\theta_p\le3/4$ with the lift recovered in reduced rational form.
+\end{enumerate}
+
+\paragraph{Execution and disclosure.} The run was carried out by the author on a Windows~11 laptop (CPython 3.12.10, python-flint 0.9.0, PARI/GP 2.19.0) and took $1{,}298$~s, of which $1{,}151$~s were point counts and $83$~s the evaluations. Before release the package was smoke-tested on the torsion pairs only, at $128$-bit primes and with separate seeds; no non-torsion pair of the grid was evaluated at a large prime before the run.
+
+\section{Results}\label{sec:results}
+
+Stage 0 passed with no mismatches in any of (a)--(d), no random residue flagged and no planted lift missed or misread. All $552$ traces passed the consistency check; six of them were also recomputed afterwards with PARI/GP 2.15.4 on a different machine, with identical results. Table~\ref{tab:summary} summarizes the survey.
+
+\begin{table}[ht]
+\centering
+\begin{tabular}{lcc}
+\toprule
+ & Torsion pairs & Non-torsion pairs\\
+\midrule
+Pairs & $80$ & $2{,}588$\\
+Classification & $80$ LIFT & $2{,}588$ NONE\\
+$\theta_p$ at the three primes & $\le0.519$ ($0$ in $30$ values) & $\ge0.9235$ (median $0.968$)\\
+Recovered relation & $80/80$ as registered & none sought\\
+Flagged for confirmation & --- & $0$\\
+\bottomrule
+\end{tabular}
+\caption{Survey at three $256$-bit primes. The $30$ values $\theta_p=0$ are the ten pairs with $C_f(a)\equiv0$ (Example~\ref{ex:orders}).}\label{tab:summary}
+\end{table}
+
+The largest $\theta_p$ among torsion pairs was $0.508$, $0.512$, $0.519$ and $0.512$ for orders $2$, $3$, $5$ and $6$. By Lemma~\ref{lem:lift}, $\theta_p\le0.519$ gives $S_p\le p^{0.519}$ and $\theta_p\ge0.9235$ gives $S_p>p^{0.9235}/3$. Since $\log_2p\ge255.5$ for all three primes, at each prime the minimal lift size $S_p(C_f(a))$ of every non-torsion pair exceeds that of every torsion pair with nonzero residue by a factor greater than $p^{0.4045}/3>2^{101}$; the ten torsion pairs with $C_f(a)\equiv0$ have $S_p=0$ and are excluded from this ratio. Assuming the computed residues are correct, the bound $\theta_p\ge0.9235$ and Lemma~\ref{lem:lift} exclude $S_p\le p^{3/4}$ for every evaluated non-torsion residue. This is a finite computational conclusion; a NONE classification close to the threshold would not by itself give the same exclusion, and nothing here bears directly on the asymptotic conjecture. The smallest of the $7{,}764$ non-torsion values was $0.9235$, comparable with the smallest value, $0.919$, in a simulation of $7{,}764$ uniform residues modulo the first prime; comparing minima alone does not establish agreement of distributions. Under the uniform model, \eqref{eq:fp} and a union bound put the probability of any accidental LIFT value among the $7{,}764$ below $1.3\cdot10^{-13}$. A random sample of $40$ pairs was re-evaluated independently from the saved traces, reproducing every $\theta_p$. The verdict under the registered rules was that H4 is supported.
+
+\section{Discussion and limitations}\label{sec:discussion}
+
+Among the pairs tested, $C_f(a)$ had a small rational lift at the sampled primes exactly when $R_a$ is torsion over $\Q$, and the lift was then the one Proposition~\ref{prop:known} predicts. This is consistent with Conjecture~\ref{conj}, and with the heuristic that the Miller coefficient $\alpha_N(R_a)$ of a point of infinite order carries no small rational structure. It does not resolve the conjecture, which is an asymptotic statement about density. The two kinds of evidence are complementary: Theorem~\ref{thm:balanced} proves the uniform statement for balanced relations, whereas the survey examined individual large primes, without a basis and without the balance condition. The torsion cases of order $5$ and $6$ are explicit instances of the proposition, not new theorems in any deeper sense.
+
+\paragraph{Relation to Katz's universal extensions.} The coefficient $\alpha_N(R_a)$ is an invariant already studied by Katz (2014). For an elliptic curve with a rational point $P$, Katz uses the differential $\omega_D=\tfrac12\,\frac{y+b}{x-a}\,\frac{dx}{y}$, which is exactly our $\vartheta_P$, and defines $\omega_p(P^\#)=N_p\,\omega_D-dg_p/g_p$ with $\divisor(g_p)=N_p(P)-N_p(O)$: the reduction of a lift $P^\#$ of $P$ to the universal vectorial extension, multiplied by $N_p$. Katz shows that $\omega_p(P^\#)=(1-\mathcal C)(\omega_D)$ in characteristic $p$, first for $p\nmid N_p$ (Katz, 2014, Lemma~8.1) and then in general, including $p\mid N_p$ (Katz, 2014, Remark~8.2 and Theorem~10.1, where $dg_p/g_p=(\mathcal C-a_p)\,\omega_D$ with $a_p=p+1-N_p$). Combined with Lemma~\ref{lem:cartier}, which is the same Cartier identity derived here from Theorem~A of Jordan (2026), this gives $\omega_p(P^\#)=-\alpha_{N_p}(P)\,\omega_0=-\tfrac12\alpha_{N_p}(P)\,dx/y$; in Katz's basis $dx/y$, rather than our $\omega_0=dx/(2y)$, the coefficient is therefore $c_p=-\alpha_{N_p}(P)/2$. Katz conjectures that, when $P$ has infinite order, the normalized sequence $\omega_p(P^\#)/p$ is equidistributed in $\mathbb R/\Z$ (Katz, 2014, Conjecture~5.1), and he relates this to an older uniform torsion conjecture (Katz, 1972, Conjecture~7.5.11) under the assumption that $p\nmid N_p$ for all good $p$ (Katz, 2014, Section~6); we do not claim that Theorem~\ref{thm:balanced} is equivalent to that older conjecture in general. Katz's equidistribution conjecture would imply Conjecture~\ref{conj}. Indeed, by \eqref{eq:alpha-rel} a fixed relation \eqref{eq:AB} gives $\alpha_N(R_a)\equiv\kappa_1+\kappa_2\eps\tau_f$ with fixed rationals $\kappa_1,\kappa_2$. Choose a positive integer $D$ such that $D\kappa_1/2$ and $D\kappa_2/2$ are integers $k_1,k_2$. Then $D$ times the Katz coefficient $c_p=-\alpha_N(R_a)/2$ of $(E_a,R_a)$ is congruent modulo $p$ to $-(k_1+k_2\eps\tau_f)$, an integer of absolute value at most $|k_1|+2|k_2|\sqrt p$ by Hasse's bound. Hence, at every prime where the relation holds, $c_p/p$ lies within $(|k_1|+2|k_2|\sqrt p)/(Dp)$ of a point $j/D$ modulo $1$. For any $\delta>0$ these points eventually lie in a fixed union of $D$ intervals of total length $\delta$, so equidistribution bounds the upper density of such primes by $\delta$, for every $\delta$. The modulo-$p^2$ elliptic Wieferich quotients of Silverman (1988) and Voloch (2000) are a different invariant; we have not analysed their relation to $\alpha_N$, and nothing here identifies the two.
+
+\paragraph{What made the survey possible.} The survey depended on evaluating $C_f(a)$ at $256$-bit primes. Direct summation of \eqref{eq:C} would need about $10^{77}$ terms per value. The standard trace-free route through Bostan--Gaudry--Schost recurrences (Bostan, Gaudry \& Schost, 2007) would need about $2^{128}$ field operations per value, with logarithmic factors suppressed. At an assumed $10^9$ field operations per second that is about $1.1\cdot10^{22}$ years, and the usual square-root storage, about $2^{128}$ field elements, is about $1.1\cdot10^{40}$ bytes at $32$ bytes per element. These are algorithm-specific estimates for that route, not lower bounds over all possible methods. We know of no standard package that evaluates $C_f(a)$ at an arbitrary pole. Semaev (1998) used a differentiated Miller recurrence to compute the logarithmic-derivative map on the $p$-torsion of elliptic curves in characteristic $p$, and R\"uck (1999) extended this to divisor class groups of curves of arbitrary genus. Theorem~\ref{thm:B} builds on that framework but runs the chain at the full curve order $N=\#E_a(\F_p)$, for any trace. In the survey, standard point counting supplied the traces ($1{,}151$~s for $552$ traces), and the differentiated evaluator then supplied all $8{,}004$ sums in $83$~s, about $10$~ms each in pure Python, with each trace serving every pole of its curve. A search restricted to guessed quantities, testing \eqref{eq:AB} for fixed rationals, could have been run without Theorem~\ref{thm:B}, by direct summation at many primes near $10^6$ and a relation search across them, as in the search that led to Theorem~6.3 of Jordan (2026). A basis-free size test at such primes would need many repeated evaluations per pair (Remark~\ref{rem:small}). The evaluator made a single-prime, basis-free test practical, one that would also have detected lifts involving quantities that no one thought to include in a basis.
+
+The evidence has the following limits.
+\begin{itemize}[leftmargin=1.5em,itemsep=2pt]
+\item \emph{Independence.} Translations $x\mapsto x+c$ give identical sums, and $x\mapsto-x$ changes only the sign. The $2{,}588$ non-torsion pairs give $1{,}834$ distinct values up to sign at the three primes. The $184$ curves show $54$ distinct signatures $(|\tau_f|)$ at the three primes; distinct signatures exclude equivalence up to isogeny and quadratic twist, but matching signatures at three primes do not establish it, and we have not classified the curves further.
+\item \emph{Scope of the test.} Only rational representatives with small numerator--denominator product are detected, with the threshold $\theta_p\le3/4$, which implies $S_p\le p^{3/4}$. A residue equal to the reduction of a small algebraic number in a fixed number field, or to a combination involving $p$-dependent quantities other than $\eps$ and $\tau_f$ with large coefficients, would not be seen.
+\item \emph{Finite evidence.} Each pair was tested at three primes of one size, and the grid has small height. A NONE classification is strong evidence that no small lift exists at those primes, but proves nothing in general.
+\item \emph{Modelling assumption.} The bound \eqref{eq:fp} is rigorous for uniform residues; that non-torsion sums behave like uniform residues is not proved. The $2{,}000$-sample calibration checks the implementation and gross behaviour of the statistic; it cannot validate probabilities near $10^{-17}$.
+\item \emph{Novelty and review.} An AI-assisted literature review located the ingredients of Theorem~\ref{thm:balanced} (Cartier, 1957; Katz, 1970; Bost, 2001) and the closely related work of Katz (2014) described above, but no explicit statement of Theorem~\ref{thm:balanced} or of Conjecture~\ref{conj}; that review was not exhaustive, and the proof of Theorem~\ref{thm:balanced} awaits specialist review.
+\end{itemize}
+
+The method is the main point. Where an evaluator reaches residues at primes of cryptographic size, size alone becomes a sharp, basis-free detector of hidden rational structure. The same test could be applied to the truncations $T_f(\mu)$ of Jordan (2026), to other stopping families, or to higher genus wherever comparable evaluators exist.
+
+\section*{Status, AI assistance and data}
+This note is unrefereed. Generative AI was used extensively, under the author's direction, in designing the experiment, writing the code, checking results, reviewing the literature, assembling the proof of Theorem~\ref{thm:balanced} from published theorems, and preparing the note. The code (\texttt{cm\_round4}, building on \texttt{cm\_explore}), its pre-registration and the complete run records, including traces, per-pair statistics and fingerprints, are available from the author; the evaluator and its paper are at \url{https://github.com/bbrhuft/Cartier-Miller-evaluation-of-genus-one-coefficient-sums}.
+
+\section*{References}
+\begingroup\small
+\makeatletter\@afterindenttrue\makeatother
+\setlength{\parindent}{-1.5em}
+\setlength{\leftskip}{1.5em}
+\setlength{\parskip}{1.5pt}
+
+Bost, J.-B. (2001). Algebraic leaves of algebraic foliations over number fields. \emph{Publications Math\'ematiques de l'IH\'ES, 93}, 161--221. \url{https://doi.org/10.1007/s10240-001-8191-3}
+
+Bostan, A., Gaudry, P., \& Schost, \'E. (2007). Linear recurrences with polynomial coefficients and application to integer factorization and Cartier--Manin operator. \emph{SIAM Journal on Computing, 36}(6), 1777--1806. \url{https://doi.org/10.1137/S0097539704443793}
+
+Cartier, P. (1957). Une nouvelle op\'eration sur les formes diff\'erentielles. \emph{Comptes Rendus de l'Acad\'emie des Sciences, 244}, 426--428.
+
+Hardy, G. H., \& Wright, E. M. (2008). \emph{An introduction to the theory of numbers} (6th ed., revised by D. R. Heath-Brown \& J. H. Silverman). Oxford University Press.
+
+Jordan, D. (2026). \emph{Cartier--Miller evaluation of genus-one coefficient sums} [Draft of 24 October 2026]. \url{https://github.com/bbrhuft/Cartier-Miller-evaluation-of-genus-one-coefficient-sums}
+
+Katz, N. M. (1970). Nilpotent connections and the monodromy theorem: Applications of a result of Turrittin. \emph{Publications Math\'ematiques de l'IH\'ES, 39}, 175--232.
+
+Katz, N. M. (1972). Algebraic solutions of differential equations ($p$-curvature and the Hodge filtration). \emph{Inventiones Mathematicae, 18}, 1--118.
+
+Katz, N. M. (2014). Equidistribution questions for universal extensions. \emph{Experimental Mathematics, 23}(4), 452--464. \url{https://doi.org/10.1080/10586458.2014.947052}
+
+Khinchin, A. Ya. (1964). \emph{Continued fractions}. University of Chicago Press.
+
+Lenstra, A. K., Lenstra, H. W., Jr., \& Lov\'asz, L. (1982). Factoring polynomials with rational coefficients. \emph{Mathematische Annalen, 261}(4), 515--534. \url{https://doi.org/10.1007/BF01457454}
+
+Mazur, B. (1977). Modular curves and the Eisenstein ideal. \emph{Publications Math\'ematiques de l'IH\'ES, 47}, 33--186. \url{https://doi.org/10.1007/BF02684339}
+
+Miller, V. S. (2004). The Weil pairing, and its efficient calculation. \emph{Journal of Cryptology, 17}(4), 235--261. \url{https://doi.org/10.1007/s00145-004-0315-8}
+
+R\"uck, H.-G. (1999). On the discrete logarithm in the divisor class group of curves. \emph{Mathematics of Computation, 68}(226), 805--806. \url{https://doi.org/10.1090/S0025-5718-99-01043-1}
+
+Semaev, I. A. (1998). Evaluation of discrete logarithms in a group of $p$-torsion points of an elliptic curve in characteristic $p$. \emph{Mathematics of Computation, 67}(221), 353--356. \url{https://doi.org/10.1090/S0025-5718-98-00887-4}
+
+Silverman, J. H. (1988). Wieferich's criterion and the $abc$-conjecture. \emph{Journal of Number Theory, 30}(2), 226--237.
+
+The PARI Group. (n.d.). \emph{PARI/GP} (Version 2.19.0) [Computer software]. Universit\'e de Bordeaux. \url{https://pari.math.u-bordeaux.fr/}
+
+Voloch, J. F. (2000). Elliptic Wieferich primes. \emph{Journal of Number Theory, 81}(2), 205--209.
+
+Wang, P. S., Guy, M. J. T., \& Davenport, J. H. (1982). P-adic reconstruction of rational numbers. \emph{ACM SIGSAM Bulletin, 16}(2), 2--3.
+
+\endgroup
+\end{document}
