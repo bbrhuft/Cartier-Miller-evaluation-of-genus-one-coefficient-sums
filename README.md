@@ -137,7 +137,7 @@ When the point $R$ on the twist used by Theorem B has finite order $m$ over $\ma
 $$
 \sum_{k=0}^{\lfloor p/3\rfloor}\binom{2k}{k}\equiv
 \begin{cases}
--\tfrac13 \pmod p, & p\equiv2\pmod3,\\[2pt]
+-\tfrac13 \pmod p, & p\equiv2\pmod3,\
 \tfrac{1-2r}{3} \pmod p, & p\equiv1\pmod3,
 \end{cases}
 $$
