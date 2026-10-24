@@ -1,6 +1,6 @@
-# Verification for the 22 October 2026 paper
+# Verification for the paper (current draft 24 October 2026)
 
-This folder accompanies [`Cartier_Miller_Paper_Rewrite_Corrected_20261022.pdf`](../Cartier_Miller_Paper_Rewrite_Corrected_20261022.pdf) (current draft dated 24 October 2026). The search that led to Section 6.3 is in [`../Cartier-Miller-Congruence-Search-20261024/`](../Cartier-Miller-Congruence-Search-20261024/).
+This folder accompanies [`Cartier_Miller_Paper_Rewrite_Corrected_20261024.pdf`](../Cartier_Miller_Paper_Rewrite_Corrected_20261024.pdf), the draft dated 24 October 2026. The folder keeps its original 22 October name, after the first version of the rewrite. The search that led to Section 6.3 is in [`../Cartier-Miller-Congruence-Search-20261024/`](../Cartier-Miller-Congruence-Search-20261024/).
 
 | File | Contents |
 |---|---|

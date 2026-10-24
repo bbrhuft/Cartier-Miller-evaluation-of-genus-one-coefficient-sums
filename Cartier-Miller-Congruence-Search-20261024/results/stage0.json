@@ -1,0 +1,45 @@
+{
+ "environment": {
+  "python": "3.12.10",
+  "implementation": "CPython",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python_flint": "0.9.0",
+  "code_sha256": "985252540ac4cd2295418e7f9bfb03820e21c1aed972a57e5954705577ded5a8"
+ },
+ "direct_check": {
+  "comparisons": 6133,
+  "mismatches": 0,
+  "ambiguous_skipped": 47,
+  "random_large_primes": [
+   311897,
+   314189,
+   120779,
+   373157,
+   844643,
+   850043,
+   260413,
+   351041,
+   778507,
+   570733
+  ]
+ },
+ "trace_check": {
+  "comparisons": 2053,
+  "mismatches": 0,
+  "ambiguous_skipped": 47
+ },
+ "planted": {
+  "runs": 112,
+  "recovered": 112
+ },
+ "null": {
+  "runs": 112,
+  "false_candidates": 0
+ },
+ "basis_dependencies_pruned": [],
+ "confirmation_size_check": {
+  "primes": 96,
+  "failures": 0
+ },
+ "passed": true
+}

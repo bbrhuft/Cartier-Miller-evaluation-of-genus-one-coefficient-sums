@@ -1,0 +1,11 @@
+{
+ "candidates_sha256": "b7c628f1299ef390f40b4fc1df1c7eb6633881f4ab0e08083d45ad4c85f6b5cb",
+ "frozen_at_utc": "2026-10-24T00:36:18Z",
+ "environment": {
+  "python": "3.12.10",
+  "implementation": "CPython",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python_flint": "0.9.0",
+  "code_sha256": "985252540ac4cd2295418e7f9bfb03820e21c1aed972a57e5954705577ded5a8"
+ }
+}

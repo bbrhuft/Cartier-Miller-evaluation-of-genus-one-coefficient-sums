@@ -1,6 +1,6 @@
 # Pre-registered congruence search (24 October 2026)
 
-This folder holds the code and run records behind Remark 6.5 of [`Cartier_Miller_Paper_Rewrite_Corrected_20261022.pdf`](../Cartier_Miller_Paper_Rewrite_Corrected_20261022.pdf) (draft dated 24 October 2026). It documents how Theorem 6.3 was **found**. The theorem is **established by the proof** in Section 6.3, not by this search.
+This folder holds the code and run records behind Remark 6.5 of [`Cartier_Miller_Paper_Rewrite_Corrected_20261024.pdf`](../Cartier_Miller_Paper_Rewrite_Corrected_20261024.pdf) (draft dated 24 October 2026). It documents how Theorem 6.3 was **found**. The theorem is **established by the proof** in Section 6.3, not by this search.
 
 ## What the search asked
 
@@ -42,9 +42,14 @@ The z = −2 case of Example 6.4 was **not** part of the search. It was derived 
 | `cm_explore/prereg.json` | Pre-registration: targets, bases, seeds, thresholds and stopping rule |
 | `results/log.txt` | Full log of the run (Windows 11, CPython 3.12.10, python-flint 0.9.0); its first line records the fingerprint above |
 | `results/SUMMARY.md` | One-page summary written by the run |
+| `results/stage0.json` | Stage 0 results: environment, direct and trace checks, planted and null runs, confirmation-size check (`"passed": true`) |
+| `results/round1_runs.json` | Per-run records for round 1 (16 runs, z = 1/8): primes, basis, dimension, shortest-vector sup-norm, log₁₀ gap and candidate flag |
+| `results/round2_runs.json` | The same records for round 2 (208 runs) |
+| `results/candidates.json` | The eight candidates as frozen before confirmation |
+| `results/freeze.json` | SHA-256 of `candidates.json`, freeze time (2026-10-24T00:36:18Z) and environment |
 | `results/confirmation.json` | The eight candidates, their relation vectors and bases, and their confirmation status |
 
-The run also wrote `stage0.json`, `round1_runs.json`, `round2_runs.json`, `candidates.json` and `freeze.json`. These are not included here, and rerunning reproduces them.
+These are the complete outputs of the run. To check that the candidates were frozen before confirmation, compare `sha256sum results/candidates.json` with `candidates_sha256` in `freeze.json`. Both are `b7c628f1299ef390f40b4fc1df1c7eb6633881f4ab0e08083d45ad4c85f6b5cb`. Rerunning reproduces every file except the timestamps.
 
 ## Reproducing
 

@@ -2,7 +2,7 @@
 
 A research manuscript and computational project is shared for independent mathematical review and possible collaboration.
 
-**Current version (22 October 2026):** [`Cartier_Miller_Paper_Rewrite_Corrected_20261022.pdf`](Cartier_Miller_Paper_Rewrite_Corrected_20261022.pdf), a shortened 15-page rewrite. Its LaTeX source, verification script and saved output are in [`Cartier-Miller-Verification-20261022/`](Cartier-Miller-Verification-20261022/). It supersedes `Cartier_Miller_Paper_Revised_20261022.pdf` and the earlier dated PDFs, which are kept for the record. Boundary methods and benchmark protocols are in [`Cartier_Miller_Computational_Companion_20261022.pdf`](Cartier_Miller_Computational_Companion_20261022.pdf).
+**Current version (draft of 24 October 2026):** [`Cartier_Miller_Paper_Rewrite_Corrected_20261024.pdf`](Cartier_Miller_Paper_Rewrite_Corrected_20261024.pdf), a shortened 17-page rewrite. It adds Section 6.3, closed forms for sums whose twist point is torsion (see [below](#torsion-closed-forms-section-63)). Its LaTeX source, verification script and saved output are in [`Cartier-Miller-Verification-20261022/`](Cartier-Miller-Verification-20261022/). The pre-registered search that led to Section 6.3, with its code and complete run records, is in [`Cartier-Miller-Congruence-Search-20261024/`](Cartier-Miller-Congruence-Search-20261024/). The draft supersedes the 22 October rewrite (same filename stem, previously dated `_20261022`), `Cartier_Miller_Paper_Revised_20261022.pdf` and the earlier dated PDFs, which are kept for the record. Boundary methods and benchmark protocols are in [`Cartier_Miller_Computational_Companion_20261022.pdf`](Cartier_Miller_Computational_Companion_20261022.pdf).
 
 Let $p\ge5$ be prime and $f\in\mathbb F_p[x]$ a squarefree cubic or quartic. Building on the differentiated Miller chains of Semaev and Rück, the paper shows that, once the trace of Frobenius of $v^2=f(x)$ is known, one chain of $O(\log p)$ field operations on a quadratic twist evaluates the truncation $T_f=f^{(p-1)/2}\bmod x^p$ at any $\mu\in\mathbb F_p^\times$ with $f(\mu)\ne0$, and the reciprocal character sum $\sum_{x\ne a}\chi(f(x))/(x-a)\in\mathbb F_p$ at any $a$ with $f(a)\ne0$. Combined with Schoof's algorithm this gives deterministic polynomial time in $\log p$.
 
@@ -81,7 +81,7 @@ For constant-plus-simple-pole weights over a complete excluded set (Theorem 4.4)
 
 ## Worked application: the original quarter-point sum
 
-For $p=4n+1\geq17$, define
+For $p=4n+1\geq13$, define
 
 $$
 a_i=\binom{2i}{i}8^{-i},
@@ -130,6 +130,22 @@ For $p\equiv2\pmod3$ the index $(p-1)/3$ is not an integer. Put $L=(p+1)/3$ and 
 
 The reduction runs in both directions; it proves no lower bound and no complexity separation. No polynomial-time algorithm for $((p-2)/3)!\bmod p$ is known to us. Classical methods take $\tilde O(\sqrt p)$ operations. Tal (2026, ECCC TR26-211) goes below the square-root exponent by Jacobi-sum reconstruction when $p-1$, or another cyclotomic value, has a divisor in a suitable range. The companion and the extensions folder describe exact boundary methods. These include a certified Jacobi-sum backend that, at the nine primes where it was selected, made complete evaluation 1.67–6.52× faster than a native factorial, with cost still of square-root type for a fixed conductor.
 
+## Torsion closed forms (Section 6.3)
+
+When the point $R$ on the twist used by Theorem B has finite order $m$ over $\mathbb Q$, the evaluator collapses. Writing $N$ for the curve order and $q=N/m$, Proposition 6.2 gives $\alpha_N(R)=q\,\alpha_m(R)$, so the sum is a fixed rational combination of $\varepsilon$ and the trace, with no Miller chain at all. The paper's main example (Theorem 6.3) is the central-binomial sum to the third point:
+
+$$
+\sum_{k=0}^{\lfloor p/3\rfloor}\binom{2k}{k}\equiv
+\begin{cases}
+-\tfrac13 \pmod p, & p\equiv2\pmod3,\\[2pt]
+\tfrac{1-2r}{3} \pmod p, & p\equiv1\pmod3,
+\end{cases}
+$$
+
+where $4p=r^2+27s^2$ and $r\equiv1\pmod3$. The proof uses the point $R=(4/3,-4/3)$ on $Y^2=X^3-16/27$, which has order 3 with $\alpha_3(R)=-2$, together with Jacobi's congruence $\binom{2L}{L}\equiv-r$. Example 6.4 treats the weight $z=-2$, which the same proposition gives as $\tfrac13$ for $p\equiv2\pmod3$ and $\bigl(1-2\cdot2^{(p-1)/3}r\bigr)/3$ for $p\equiv1\pmod3$.
+
+Remark 6.5 records how Theorem 6.3 was found. A pre-registered search ([`Cartier-Miller-Congruence-Search-20261024/`](Cartier-Miller-Congruence-Search-20261024/)) tested 224 residue-class runs by lattice reduction. Its candidates were frozen by SHA-256 and confirmed at 1,110 fresh primes of 64–256 bits; the folder includes the code, the pre-registration and every run record, including the freeze hash. The search shows only how the congruence was **discovered**: the result rests on the proof in Section 6.3. Example 6.4 was derived afterwards, not found by the search. We found the congruence in none of the papers on partial central-binomial sums that we checked (Sun, Tauraso, Mattarei and others), but that search was not exhaustive, and novelty is not claimed.
+
 ## Validation and benchmarks
 
 The current paper's Table 2 reports one full run of [`Cartier-Miller-Verification-20261022/cm_verify.py`](Cartier-Miller-Verification-20261022/cm_verify.py), a pure-Python script with fixed seeds whose saved output is in the same folder. All comparisons agreed, including:
@@ -139,7 +155,8 @@ The current paper's Table 2 reports one full run of [`Cartier-Miller-Verificatio
 - Theorem B at 20,837 nonbranch poles, 303 of them at $a=0$;
 - Theorem D at 2,739 arguments, 69 of them exceptional;
 - Corollary E at all 221 eligible primes below 3000 plus $p=1{,}000{,}211$;
-- the quarter-point formula at all 209 eligible primes below 3000 plus $p=1{,}000{,}033$.
+- the quarter-point formula at all 210 eligible primes $13\le p<3000$ plus $p=1{,}000{,}033$;
+- for Section 6.3, the order of $R$ over $\mathbb Q$ for 22 pairs $(k,z)$, $\alpha_3(R)$ for $z=1$ and $-2$, and Theorem 6.3 and Example 6.4 by direct summation at all 428 primes $5\le p<3000$ (856 comparisons).
 
 These are finite checks, not proofs. Earlier and larger campaigns, with disjoint confirmation samples, are documented in the companion and the dated folders.
 
